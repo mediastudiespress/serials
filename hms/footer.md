@@ -1,6 +1,8 @@
 *Copy and paste into a text block, after a preview (in Drafts?)*
 
+## add privacy policy!
 
+<hr>
 
 <br>
 
