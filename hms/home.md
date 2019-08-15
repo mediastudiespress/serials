@@ -1,5 +1,3 @@
-## An open access, refereed academic journal
-
 *History of Media Studies* is an open access, refereed academic journal dedicated to scholarship on the history of media, film, and communication research and education. The journal publishes high-quality, original articles, reviews, and commentary on the history of media research, as this interdisciplinary area has intersected with other social science and humanities fields. 
 
 *History of Media Studies* has three overlapping aims. The first is to address the absence of publishing outlets for rigorous work on the history of the overlapping fields of film studies, communication research, media studies, and speech & rhetoric. The second purpose is to provide a platform for scholarship on these fields' complex institutional histories from around the world, as a complement to work with a more traditional, intellectual-history orientation centered on North America and Western Europe. The final aim is to take advantage of the latest advances in online, open access publishing, on the assumption that media scholars should be experimenting with new forms of scholarly communication.
