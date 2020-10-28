@@ -2,6 +2,7 @@
 
 * [David W. Park](https://www.lakeforest.edu/academics/faculty/park/), *Lake Forest College*
 * [Jefferson Pooley](https://jeffpooley.com), *Muhlenberg College*
+* [Peter Simonson](https://www.colorado.edu/cmci/people/communication/peter-simonson), *University of Colorado, Boulder*
 
 ## Editorial Board
 
@@ -11,7 +12,6 @@
 * [Wendy Leeds-Hurwitz](https://www.uwp.edu/learn/instructorprofiles/facultystaffdetail.cfm?uid=leedshur&emeritus=1), *University of Wisconsin-Parkside*
 * [Maria Löblich](https://www.polsoz.fu-berlin.de/en/kommwiss/arbeitsstellen/kommunikationsgeschichte/Mitarbeiter_innen/mloeblich/index.html), *Free University of Berlin*
 * [Michael Meyen](https://www.en.ifkw.uni-muenchen.de/staff/full_professors/meyen_michael/index.html), *University of Munich*
-* [Peter Simonson](https://www.colorado.edu/cmci/people/communication/peter-simonson), *University of Colorado, Boulder*
 * [Ira Wagman](https://carleton.ca/sjc/profile/wagman-ira/), *Carleton University*
 * [Thomas Wiedemann](https://www.en.ifkw.uni-muenchen.de/staff/academic_staff/wiedemann_thomas/index.html), *University of Munich*
 

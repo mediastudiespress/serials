@@ -10,6 +10,7 @@ The purpose of this repository is to provide models and resources for other scho
 
 * [Jefferson Pooley](http://jeffpooley.com), co-editor of *History of Media Studies*, director of mediastudies.press, and professor of media & communication, Muhlenberg College (Allentown, PA, USA)
 * [David W. Park](https://www.lakeforest.edu/academics/faculty/park/), co-editor of *History of Media Studies* and professor of communication, Lake Forest College (Lake Forest, IL, USA)
+* [Peter Simonson](https://www.colorado.edu/cmci/people/communication/peter-simonson), *University of Colorado, Boulder*
 
 ## Licenses
 
