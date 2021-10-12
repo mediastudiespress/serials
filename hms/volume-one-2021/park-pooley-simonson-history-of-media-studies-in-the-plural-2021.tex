@@ -1,0 +1,690 @@
+% see the original template for more detail about bibliography, tables, etc: https://www.overleaf.com/latex/templates/handout-design-inspired-by-edward-tufte/dtsbhhkvghzz
+
+\documentclass{tufte-handout}
+
+%\geometry{showframe}% for debugging purposes -- displays the margins
+
+\usepackage{amsmath}
+
+\usepackage{hyperref}
+
+\usepackage{fancyhdr}
+
+\usepackage{hanging}
+
+\hypersetup{colorlinks=true,allcolors=[RGB]{97,15,11}}
+
+\fancyfoot[L]{\emph{History of Media Studies}, vol. 1, 2021}
+
+
+% Set up the images/graphics package
+\usepackage{graphicx}
+\setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
+\graphicspath{{graphics/}}
+
+\title[History of Media Studies, in the Plural]{History of Media Studies, in the Plural} % longtitle shouldn't be necessary
+
+% The following package makes prettier tables.  We're all about the bling!
+\usepackage{booktabs}
+
+% The units package provides nice, non-stacked fractions and better spacing
+% for units.
+\usepackage{units}
+
+% The fancyvrb package lets us customize the formatting of verbatim
+% environments.  We use a slightly smaller font.
+\usepackage{fancyvrb}
+\fvset{fontsize=\normalsize}
+
+% Small sections of multiple columns
+\usepackage{multicol}
+
+% Provides paragraphs of dummy text
+\usepackage{lipsum}
+
+% These commands are used to pretty-print LaTeX commands
+\newcommand{\doccmd}[1]{\texttt{\textbackslash#1}}% command name -- adds backslash automatically
+\newcommand{\docopt}[1]{\ensuremath{\langle}\textrm{\textit{#1}}\ensuremath{\rangle}}% optional command argument
+\newcommand{\docarg}[1]{\textrm{\textit{#1}}}% (required) command argument
+\newenvironment{docspec}{\begin{quote}\noindent}{\end{quote}}% command specification environment
+\newcommand{\docenv}[1]{\textsf{#1}}% environment name
+\newcommand{\docpkg}[1]{\texttt{#1}}% package name
+\newcommand{\doccls}[1]{\texttt{#1}}% document class name
+\newcommand{\docclsopt}[1]{\texttt{#1}}% document class option name
+
+
+\begin{document}
+
+\begin{titlepage}
+
+\begin{fullwidth}
+\noindent\LARGE\emph{Launch essay
+} \hspace{85mm}\includegraphics[height=1cm]{logo3.png}\\
+\noindent\hrulefill\\
+\vspace*{1em}
+\noindent{\Huge{History of Media Studies, in the Plural\par}}
+
+\vspace*{1.5em}
+
+\noindent\LARGE{David W. Park}\par}\marginnote{\emph{David W. Park, ``History of Media\\\noindent Studies, in the Plural,'' \emph{History of \\\noindent Media Studies} 1 (2021). \href{https://doi.org/10.32376/d895a0ea.a2cf5b66}{https://doi.org/ 10.32376/d895a0ea.a2cf5b66}} \vspace*{0.75em}}
+\vspace*{0.5em}
+\noindent{{\large\emph{park@lfc.edu}, \href{mailto:Lake Forest College}{Lake Forest College}\par}} \marginnote{\href{https://creativecommons.org/licenses/by-nc/4.0/}{\includegraphics[height=0.5cm]{by-nc.png}}}
+
+\vspace*{0.75em}
+
+\noindent{\LARGE{Jefferson Pooley} \href{https://orcid.org/0000-0002-3674-1930}{\includegraphics[height=0.5cm]{orcid.png}}\par}
+\vspace*{0.5em}
+\noindent{{\large\emph{pooley@muhlenber.edu}, \href{mailto:Muhlenberg College}{Muhlenberg College}\par}}
+
+\vspace*{0.75em}
+
+\noindent{\LARGE{Peter Simonson} \href{https://orcid.org/0000-0001-7156-467X}{\includegraphics[height=0.5cm]{orcid.png}}\par}
+\vspace*{0.5em}
+\noindent{{\large\emph{University of Colorado Boulder}, \href{mailto:peter.simonson@colorado.edu}{peter.simonson@colorado.edu}\par}}
+
+\end{fullwidth}
+
+\vspace*{1em}
+
+
+\newthought{We launch} \emph{History of Media Studies} with a concession that is also
+a confession: The journal's object, the history of media studies, is
+porous and tensile, verging on shapeless. The main reason is that
+``media studies'' itself has no agreed-upon referent. The phrase only
+gained traction---as a singular, field-designating noun---in the late
+1960s and 1970s, long after the study of media and communication had
+taken variable root in the university. There were ``media studies'' in
+the plural, but no such thing as a field by that name. Even today, many
+academics who work on topics related to media and communication would,
+if asked to name their field, give some other answer. Self-described
+``media studies'' scholars, meanwhile, might squint quizzically at the
+field-definitions of their putative peers.
+
+We take the term's slippages to be an editorial advantage. The journal's
+premise is that what counts as the history of media studies is itself up
+for grabs. The task of our authors, put another way, is to define the
+field's scope, through the accretion of their articles'
+arguments-by-example. There are disciplinary labels with more stable
+referents---``communication research'' and ``cinema studies'' are
+two---but they are each partial enclosures. So one virtue of ``media
+studies'' is that it is porous and tensile.
+
+Another virtue comes by way of the media concept itself. With roots
+dating back to at least the Enlightenment, \emph{medium} and \emph{mediation}
+
+\enlargethispage{2\baselineskip}
+
+\vspace*{2em}
+
+\noindent{\emph{History of Media Studies}, vol. 1, 2021}
+
+
+ \end{titlepage}
+
+
+\noindent have become increasingly fundamental to understanding
+the social textures of the modern
+world.\footnote{John Guillory, ``Enlightening Mediation,'' in \emph{This is
+  Enlightenment}, ed. \emph{} Clifford Siskin and William Warner
+  (Chicago: University of Chicago Press, 2010).
+} They are capacious
+concepts, at the center of all communicative processes---tied in one way
+to their materiality, in another to processes of representation,
+articulation, translation, and standing-between. The dominant, plural
+form of ``media''---as commercial organs of mass communication---only
+took hold in the 1950s, at the height of the broadcast
+era.\footnote{Anna Shechtman, ``Command of Media's Metaphors,''~\emph{Critical
+  Inquiry}~47, no. 4 (2021).
+} We invoke ``media'' in its
+rich, catholic sense, as an invitation to ventilate what the history of
+its study might be.
+
+As a baseline, we expect to publish work that spans the history of the
+humanities and the social sciences. Scholarship on the history of
+communication research, cultural studies, film studies, information
+science, journalism studies, speech, and rhetoric will, we anticipate,
+feature in the editorial mix. Many of the subjects, discourses, and
+institutions that our authors investigate won't slot so easily. Scholars
+of media have identified with dozens of other disciplines, across local
+and national contexts barely represented in the published literature.
+Many students of media, moreover, were never affiliated with
+universities---working instead for commercial firms, government
+agencies, or nonprofit groups, or embedded within social movements. Our
+aim is to publish their stories too.
+
+\hypertarget{exclusions-in-the-historiography-of-media-studies}{%
+\section{Exclusions in the Historiography of Media
+Studies}\label{exclusions-in-the-historiography-of-media-studies}}
+
+The mission of the journal is shaped by the historical moment. Our
+fields are belatedly reckoning with the legacies and ongoing
+consequences of an intersecting array of structural inequities: their
+whiteness and patriarchy; the hegemonies of the English language and of
+US forms of thinking and research; the longstanding effects of
+colonialism and anti-Blackness; the many forms of hierarchy and
+exclusion emanating from cores and peripheries around the globe; and the
+neoliberal colonization of universities and academic publishing, to name
+some of the most prominent. To this point, the bulk of critical writing
+on these subjects has rightly focused on their contemporary
+manifestations. \emph{History of Media Studies} aims to provide a forum,
+too, for investigating the historical dynamics through which the media
+studies fields have reached this point---both in terms of dominant
+social patterns that have defined them and the mix of critical
+consciousness and alternative practices that might yield other ways of
+advancing our intellectual work. Beyond publishing such genealogies of
+the present, the journal is also committed to its own alternative
+practices and to supporting collective efforts that have energized the
+present moment.
+\newpage
+\emph{History of Media Studies} aims to contribute to what might be
+called the de-centering of the centers within these interrelated
+patterns of marginalization. This will not be easy or straightforward
+work. The inherited habits of the field are lodged deep in its
+practices---and in the bodies and minds of those of us who work in it.
+Those habits cut across geopolitics, language, ideology, political
+economy, and the intersectionalities of social identity. All of these
+continue to unfold at a particularly perilous time in history, when deep
+inequalities, political crises, and climate change threaten the
+possibility of a shared, livable future on the planet. We have few
+illusions about the significance of a new scholarly journal in these
+contexts, and we do not want to overstate the importance of efforts it
+makes. That said, we believe that journals refract the wider practices
+and distortions of academic fields in microcosm, and they should do
+their parts in addressing broader calls of the present. A new journal
+can open at least modest space for thinking and doing things
+differently, serving as a small laboratory that might inform efforts
+elsewhere.
+
+One might wonder how a journal whose founding editors are three white
+cis-men from the United States can in good faith hope to contribute to
+those efforts. We take those doubts seriously and in fact share them.
+The short response is that we could not hope to do much on our own. We
+resonate with Mohan Dutta's argument that we must design and enact
+different kinds of communication if we are to transform the inherited
+ways of producing scholarship and constituting our
+fields.\footnote{Mohan J. Dutta, ``Whiteness, Internationalization, and Erasure:
+  Decolonizing Futures from the Global South,'' \emph{Communication and
+  Critical/Cultural Studies} 17, no. 2 (2020).
+} In the \emph{History of
+Media Studies} project, that begins with our
+\href{https://hms.mediastudies.press/editorial}{Editorial Board}, which
+will be a more participatory body than many such entities, actively
+shaping the work we do and how we do it. We are very fortunate to have a
+geographically diverse and remarkably talented board, whose membership
+will continue to grow. The
+\href{https://hms.mediastudies.press/launch-essays}{launch essays}
+they've written here are the most visible signs of their guiding
+participation in this endeavor, but by no means the only ones. Board
+members are helping us to imagine and implement a journal guided by the
+ideals of care, craft, and collegial friendship across borders, directed
+toward investigating the history of media studies in all its
+complexities around the world. In that context, the editors of
+\emph{History of Media Studies} see our roles as facilitators of a
+collective process of bringing something new into the world. We are
+committed to leveraging structural privileges we might have to aid that
+endeavor and moving forward through dialogical openness to difference
+and critique.
+
+The Colombian-born anthropologist Alberto Escobar, inspired by the
+Mexican Zapatistas, has advocated for designing a world for ``the
+pluriverse, \emph{a world where many worlds
+fit}.''\footnote{Alberto Escobar, \emph{Designs for the Pluriverse: Radical
+  Interdependence, Autonomy, and the Making of Worlds} (Durham, NC: Duke
+  University Press, 2018), xvi.
+} What would histories of
+media studies written for a pluriverse entail, and how might the journal
+be designed to facilitate them? We don't pretend to know, but we are
+eager to create spaces for experimentation, and we have a few
+commitments at this early juncture. One pertains to language, which, as
+Susana Martínez Guillem writes, is ``a fundamental axis of power
+relations'' that should be featured in efforts to re-shape the
+contemporary field.\footnote{Susan Martínez Guillem, ``Sacando la Lengua in Rhetorical Theory and
+  Criticism,'' \emph{Rhetoric, Politics \& Culture} 1, no. 1 (2021), 45.
+  See also Silvio Waisbord, ``Communication Studies without Frontiers?
+  Translation and Cosmopolitanism across Academic Cultures,''
+  \emph{International Journal of Communication} 10 (2016); and Ana
+  Cristina Suzina, ``English as \emph{Lingua Franca}: On the
+  Sterilisation of Scientific Work,'' \emph{Media, Culture \& Society}
+  43, no. 1 (2021).
+} The
+marginalization of scholars and scholarship operating in languages
+outside of English is obvious to anyone outside the English-only center
+of US-dominated academic fields. As one modest step in a different
+direction, \emph{History of Media Studies} will review and publish
+manuscripts in Spanish as well as English, and we hope to expand beyond
+those two languages in the future.
+
+A second commitment is to support the writing of histories of media
+studies from around the world, particularly from the Global South and
+other regions that have been peripheral, at best, in the
+English-language historiography to date. This means more than simply
+generating a fuller record of the history of media studies around the
+globe, though we believe that's an important goal. It also means
+supporting historiographical analogues of ``theory from the South'' that
+might reorient received ways of writing histories of media studies, or
+at least help create the sorts of ``common spaces with room for
+differentiation'' advocated by proponents of academic
+cosmopolitanism.\footnote{Jean Comaroff and John Comaroff, \emph{Theory from the South: Or How
+  Euro-America is Evolving toward Africa} (New York: Routledge, 2012);
+  and Hanan Badr and Sarah Anne Ganter, ``Towards Cosmopolitan Media and
+  Communication Studies: Bringing Diverse Epistemic Perspectives into
+  the Field,'' \emph{Global Media Journal (German Edition)} 11, no. 1
+  (2021).
+} This must be done
+in ways that don't perpetuate the practice of scholars from the Global
+North talking about Southern contexts without including voices from the
+regions.\footnote{Sarah Anne Ganter and Félix Ortega, ``The Invisibility of Latin
+  American Scholarship in European Media and Communication Studies:
+  Challenges and Opportunities of De-Westernization and Academic
+  Cosmopolitanism,'' \emph{International Journal of Communication} 13
+  \emph{} (2019).
+} The commitment also
+entails ``provincializing'' the traditionally unmarked particularities
+that have masqueraded as universals, or at least as the
+taken-for-granted baseline---histories that, intentionally or not, have
+presented themselves as histories of \emph{the} field, when they are
+really the histories of a handful of successful, institutionally
+well-placed, and overwhelmingly male scholars who either published in
+English or were prominent enough to have their work translated.
+
+This in turn opens to a third commitment of the journal: to focus not
+just on media studies as it has developed within academic institutions,
+be they core or peripheral, but also on what we call
+``alter-traditions'' of reflective inquiry about media, again broadly
+conceived. What conceptualizations, educational practices, normative
+frameworks, and forms of reflective social practice about media have
+developed outside the academy? Some of these traditions are of course
+embedded in the commercial sector, and others trace their origins to the
+work of prominent religious organizations like the Catholic Church.
+\emph{History of Media Studies} encourages research that brings these
+histories into closer conversation with histories of academic media
+studies; but we particularly encourage work that excavates the
+alter-traditions of Indigenous and other subaltern groups and the
+reflective cultural practices that represent less-recognized varieties
+of media study---a body of work that Latin Americans and other scholars
+from the Global South have been at the forefront of producing, often
+connected to other kinds of decolonial
+efforts.\footnote{See, for instance, Claudia Magallanes Blanco and José Manuel Ramos
+  Rodríguez, eds., \emph{Miradas Propias: Pueblos Indígenas,
+  Comunicación y Medios en la Sociedad Global} (Quito: Ediciones
+  CIESPAL, 2016); and Erick R. Torrico Villanueva, ``La Comunicación
+  Decolonial, Perspectiva In/Surgente,'' \emph{Revista Latinoamericana
+  de Ciencias de la Comunicación} 15, no. 28 (2018).
+}
+
+\hypertarget{beyond-open-access}{%
+\section{Beyond Open Access}\label{beyond-open-access}}
+
+The journal's mission commitments extend to its mode and manner of
+publication. \emph{History of Media Studies} is open access (OA), which
+means that readers don't pay for articles or subscriptions. In that
+respect, \emph{History of Media Studies} resembles many newer journals,
+even some launched by the big five commercial publishers. The
+difference, a crucial one for us, is author fees: We don't charge any,
+on principle. Many open access journals, even those published by
+scholarly societies, require authors to pay an ``article processing
+charge'' (APC) that typically runs \$3,000 to \$5,000. Open access for
+readers, we believe, should not be traded for new barriers to
+authorship. Instead of author fees, we support our operations through
+what is commonly called \emph{collective funding}: direct support from
+libraries and foundations.\footnote{\emph{History of Media Studies} is participating in a new approach to
+  bring nonprofit publishers and library funders together on a web-based
+  matching platform. The idea is that librarians and other funders can
+  support publishers on the basis of shared values. The journal is among
+  the participants in the Open Access Community Investment Program
+  (OACIP), organized by the North American library consortium LYRASIS.
+  On the idea of mission-aligned funding exchanges, see Jefferson
+  Pooley, ``Collective Funding to Reclaim Scholarly Publishing,''
+  \emph{The Commonplace}, August 16, 2021,
+  \url{https://commonplace.knowledgefutures.org/pub/erpw9udj}.
+} What
+collective funding means is that our submissions are evaluated on their
+editorial merits, without regard to personal or institutional wealth.
+Among other things, this fee-free status supports our mission to publish
+authors and topics from around the world---since most scholars outside a
+handful of rich North American institutions and wealthy European
+countries can't afford APCs.
+
+In line with our no-fee policy, we interpret ``open access'' in a more
+demanding, value-laden way than the typical scholarly outlet. We believe
+that ownership and governance matter---that sustainable OA publishing
+should be nonprofit, community-led, and transparent. Together with our
+scholar-led publisher,
+\href{https://mediastudies.press}{mediastudies.press}, we subscribe to
+Jean-Sebastian Caux's ``Genuine Open Access
+Principles.''\footnote{See ``Open Access Principles,''
+  \href{http://mediastudies.press}{mediastudies.press},
+  \url{https://www.mediastudies.press/oa-principles}; and Jean-Sébastien
+  Caux, ``Genuine Open Access Principles,'' Jean-Sébastien Caux,
+  \url{https://jscaux.org/blog/post/2018/05/05/genuine-open-access/}.
+} We are committed to
+using open infrastructure wherever possible, which extends to the
+publishing software itself: PubPub, the MIT-linked open-source platform
+premised on reclaiming scholarly communication for the academic
+community.\footnote{PubPub is a project of the nonprofit Knowledge Futures Group, which
+  emerged from a partnership between MIT Press and the MIT Media Lab.
+  See ``Our Mission,'' PubPub, \url{https://www.pubpub.org/about}. On
+  the Knowledge Futures Group's vision for scholarly publishing, see
+  Gabriel Stein et al., ``Clarivate, ProQuest, and our Resistance to
+  Commercializing Knowledge,'' \emph{The Commonplace},
+} Our governance and
+finances are transparent and open for scrutiny, with a special accent on
+our scholar-led operations.\textsuperscript{12}
+
+Our plans to limit the volume of articles we publish---typically no more
+than ten a year---is a deliberate means to a value-oriented end. As
+editors, we can afford to take a slow, care-based approach to authors
+and their submissions. We think of this as a craft ideal, one that
+consciously resists the harried facelessness that drives most commercial
+journals.\textsuperscript{13} \emph{History of Media
+Studies} substitutes artisanal editing and humane peer review for
+ScholarOne and the metric tide. Our\marginnote{May 18, 2021,
+  \url{https://commonplace.knowledgefutures.org/pub/kp81ylos/}.} author \marginnote{\textsuperscript{12} See ``Transparency,''
+  \href{http://mediastudies.press}{mediastudies.press},
+  \url{https://www.mediastudies.press/transparency}.
+}
+ reports,\marginnote{\textsuperscript{13} For an astute reflection on the interplay between commercial capture
+  and editors' own post-defeat malaise and capitulation, see Mark
+  Gibson, ``Editing After Exit--Alienation and Counter--Alienation in
+  the Cultures of Cultural Studies Journals,'' \emph{Continuum} 35, no.
+  3 (2021).
+} as one example,
+don't merely include download and citation counts, but also quoted
+passages and citation contexts.
+
+The issue of metrics raises what is, for us, an important point. We
+believe that our care-based ethic is compatible with both editorial
+quality and best practices in scholarly publishing. Every article
+receives a Creative Commons license and a DOI, with downloads available
+in PDF and seven other formats, including machine-readable JATS XML with
+swift and accurate Google Scholar
+indexing.\setcounter{footnote}{13}\footnote{Indeed, \emph{History of Media Studies}, on launch, meets all the
+  compliance criteria for the European funders' ``Plan S,'' including
+  the technical requirements. See cOAlition S, ``Plan S Principles,''
+  Plan S, \url{https://www.coalition-s.org/plan_s_principles/}. The
+  journal's publisher,
+  \href{http://mediastudies.press}{mediastudies.press}, is a member of
+  Crossref, the Open Access Scholarly Publishing Association (OASPA) and
+  the Radical Open Access collective, with vetted affiliations including
+  the Directory of Open Access Books (DOAB), Project MUSE, and OAPEN.
+  History of Media Studies will apply for listing in the Directory of
+  Open Access Journals (DOAJ) and membership in the Committee on
+  Publication Ethics (COPE), when eligible after one year of operation.
+  See ``About this Journal,'' \emph{History of Media Studies}, 2021,
+  \url{https://hms.mediastudies.press/about}.
+} The journal's copy
+editors are skilled line-editors too, with masthead and article-level
+credit in recognition of their vital work.
+
+Among our aims is to help broaden what a scholarly article looks like.
+We chose the PubPub platform, in part, for its extensive support for
+multimedia formats, on the assumption that historians of media studies
+might illuminate these fields' pasts in dialogue with new forms of
+scholarly communication. Consider the typical archives-based historical
+paper: We envision publishing archival documents and other supporting
+media within the articles that cite them. We plan to publish archival
+collections and half-forgotten public domain works too, anchored by new
+introductions. We will even re-publish refereed, openly licensed work
+appearing elsewhere, with linked ``Replies'' solicited for these
+``overlay'' works as well as for original articles. The journal is open
+to entire submissions whose arguments are rendered in audio, video, and
+other non-textual forms.
+
+\emph{History of Media Studies}' slow-scholarship values also guide our
+approach to peer review. We are committed to a humane, developmental
+review process, with the goal to improve manuscripts through collegial
+exchange. Inspired by the example of \emph{Public Philosophy}, we see
+our role as more than reviewer-herders in service of a one-off
+decision.\footnote{See ``Formative Peer Review (FPR),'' \emph{Public Philosophy Journal},
+  \url{https://publicphilosophyjournal.org/overview/}.
+} We aim to cultivate in
+reviewers, too, an ethos of ongoing, supportive involvement with an
+author and her manuscript. \emph{History of Media Studies} employs
+double-anonymous review by default, but encourages more open modes at
+authors' discretion. For example, we support \emph{signed review}, in
+which reviewers sign their comments and may continue to consult with
+authors throughout the revision process. We will also experiment with
+\emph{community review}, in which an article draft gets published early
+in the process, with public, signed comments encouraged---and with
+iterative revisions supported by PubPub's robust versioning
+support.\footnote{See ``Peer Review,'' \emph{History of Media Studies},
+  \url{https://hms.mediastudies.press/peer-review.}
+}
+
+Among our goals is to help foster a far-flung community of scholars
+working on the history of media studies and its sister fields. We
+maintain, in cooperation with the journal, a working group on the
+History of Media Studies. At each monthly session, a scholar presents on
+a work-in progress in remote sessions attended by academics from around
+the world. The same welcoming, developmental culture informs the working
+group, as an extension of the journal's editorial
+ethos.\footnote{ The working group is hosted by the Consortium for History of Science,
+  Technology and Medicine (CHSTM). See ``Working Group on the History of
+  Media Studies,'' \emph{History of Media Studies},
+  \url{https://hms.mediastudies.press/working-group}.}
+
+\hypertarget{a-new-journal}{%
+\section{A New Journal}\label{a-new-journal}}
+
+The fifteen short essays in this launch series, authored by Editorial
+Board members, reflect the values we've outlined here. The journal's
+commitment to attend to structural inequities and exclusions is
+reflected across many of the launch essays. Wendy Willems, in her
+contribution, marks a painful irony in recent attempts to de-Westernize
+and decolonize media studies, which have often silenced the actual
+histories of the field outside the Global North and longstanding
+decolonial struggles in the African diaspora. She warns of the dangers
+of decolonization ``becoming an empty metaphor'' and challenges
+historians of the field to move beyond mere inclusion to consider ``how
+the act of including different vantage points challenges, subverts and
+problematizes'' dominant understandings of the field. Armond Towns
+stakes out complementary ground, reviving a vigorous tradition of Black
+studies that has been occluded by scholarship that ``situated Black life
+solely in \emph{reaction} to white racism,'' and that can be renewed
+through an ``alternative epistemological project that\ldots would
+require the reorganization of the world as it currently sits.'' He asks
+us to read the history of media and communication studies alongside the
+history of Black studies and see how some currents of the former
+``developed in fear of Black and decolonial revolution.'' Decentering
+the white, Euro-American North from different geo-intellectual ground,
+Liu Hailong and Qin Yidan ask, ``What would have been different if
+communication study had been born in China?'' This opens into their
+discussion of the particularities of the Chinese field and the
+possibilities that its recent turn toward media embedded in Chinese
+experience might signal fresh beginnings.
+
+Other essays in the series take up the geopolitical de-centering of the
+Global North from different perspectives. Mohammad Ayish's contribution
+situates the history of media studies in the Arab world's technological,
+political, and socio-cultural contexts, tracking a shift from a
+development to an empowerment frame. He draws out transnational and
+cross-regional entanglements that displace the nation-state as
+historical locus. In his careful consideration of media studies in
+Argentina, Mariano Zarowsky reminds us that ``to speak of a field of
+knowledge'' such as media studies ``implies studying a \emph{process of
+formation} rather than starting from pre-existing entities.'' He brings
+this process of formation to ground-level, highlighting the importance
+of ``temporal formations and specific biographical contexts,'' as well
+as the interaction of regional articulations with global processes. In
+his essay, Shiv Ganesh outlines a program for an ``area-focused
+approach'' to the history of media studies, with the aim to challenge
+the twinned ills of ``theoretical universalization and methodological
+parochialism'' in these fields. He illustrates the value of the approach
+with the South Asian case, staking out ground to find alternatives to
+casting ``anything outside Euro-American history being defined largely
+in terms of its difference.'' The biography, thought, and rich legacies
+of Jesús Martín-Barbero are the focus of Raúl Fuentes Navarro's essay.
+Martín-Barbero's \emph{De los Medios a las Mediaciones,} Fuentes Navarro
+argues, would define Latin America ``as distinct among Western cultural
+and linguistic regions.'' A foundational work in the Ibero-American
+world that has shaped thinking since its publication in 1987, the book
+also provides a map for needed historiography of the field in the
+region.
+
+Many of the launch essays concern prescriptions and adjustments in
+historiographical focus or technique. Stefanie Averbeck-Lietz, for
+instance, probes a project on journalism about the League of Nations to
+draw out the marginal place of historical methods in German
+communication and media studies. Along the way, she challenges us to
+think about the methods by which we write histories of the field and the
+histories of those methods themselves. Thomas Wiedemann and Michael
+Meyen, in their essay, reflect on a major German-language
+project---\emph{Biografisches Lexikon der Kommunikationswissenschaft} or
+BLexKom---that they help steward. They trace the historiographical
+promise and peril that the initiative has exposed, including questions
+of whose story gets told and by whom. Sarah Cordonnier touches on
+similar themes in her survey of the historiography of French media
+research, identifying elisions and ``black holes'' in the literature.
+She raises big questions about how to write histories of a field with so
+many permutations, and whether we can find a way to become
+``\,`contemporaries in discipline' in spite of all the differences.'' In
+her contribution, Wendy Leeds-Hurwitz makes the case for ``theory
+groups'' as a prism for doing history, one that reveals the social
+infrastructures that support visibility and influence. She implicitly
+responds to the question of method that Averbeck-Lietz raises, making
+space for using group communication theory to understand the social life
+of ideas.
+
+Other essays point to productive slippages of the ``media studies''
+label that the journal hopes to amplify. Sue Collins, in her
+contribution, shows how the study of mediated authority exposes the
+limits of what ``communication'' or ``film studies'' alone could do for
+us. She advocates that ``the history of communication and media studies
+better integrate film and cultural histories into its corpus.'' In a
+similar spirit, Filipa Subtil forcefully demonstrates that the
+philosophy of technology tacitly subtends the history of media studies
+in ways that should challenge our preconceptions regarding what media
+are. She urges us to remedy a situation where, with a few exceptions,
+``historians of media studies have not granted enough attention to the
+question of technology.'' Maria Löblich, meanwhile, provocatively blurs
+the lines between the history of communication studies and the
+phenomenon of collective identity, allowing cross fertilization of those
+two scholarly fields. Löblich's project, both analytic and
+reconstructive, allows us to think about ``how communication studies
+were historically tied to symbolic systems in society and what degree of
+autonomy they had.'' Finally, Ira Wagman challenges us to ``trouble the
+history of `media studies' in as many contexts as possible,'' drawing
+out the \emph{Miranda Prorsus} (the 1957 Papal encyclical on motion
+pictures, television, and radio) as an illustration of religion as one
+such context. In so doing, he offers an excellent example of histories
+that examine the conceptualization and study of media outside academic
+contexts.
+
+Both individually and as a group, the Editorial Board's launch essays at
+once exemplify dimensions of the journal's mission and develop it in
+ways that exceed the imaginations of the editors who formulated it.
+Plurality has unique potential. Here it is manifest through writing that
+arises from scholarly lives animated by diverse problematics, thought
+styles, languages, political cultures, and institutional contexts. We
+are grateful for their creative responses to our invitation, which we
+hope you will read and circulate freely, in the spirit of open access.
+
+
+
+
+
+\section{Bibliography}\label{bibliography}
+
+\begin{hangparas}{.25in}{1} 
+
+
+
+``About this Journal.''~\emph{History of Media
+Studies}.~\url{https://hms.mediastudies.press/about}.
+
+Badr, Hanan, and Sarah Anne Ganter. ``Towards Cosmopolitan Media and
+Communication Studies: Bringing Diverse Epistemic Perspectives into the
+Field.''~\emph{Global Media Journal (German Edition)}~11, no. 1 (2021):
+1--3. \url{https://doi.org/10.22032/dbt.49164}.
+
+Caux, Jean-Sébastien. ``Genuine Open Access Principles.'' Jean-Sébastien
+Caux.~\href{https://jscaux.org/blog/post/2018/05/05/genuine-open-access/}{https://jscaux.org/blog/post/2018/05/05/genuine-open-access}.
+
+cOAlition S. ``Plan S Principles.'' Plan
+S.~\url{https://www.coalition-s.org/plan_s_principles/}
+
+Comaroff, Jean, and John Comaroff.~\emph{Theory from the South: Or How
+Euro-America is Evolving toward Africa}. New York: Routledge, 2012.
+
+
+Dutta, Mohan J. ``Whiteness, Internationalization, and Erasure:
+Decolonizing Futures from the Global South.''~\emph{Communication and
+Critical/Cultural Studies} 17, no. 2 (2020): 228--35.
+\url{https://doi.org/10.1080/14791420.2020.1770825}.
+
+Escobar,~Alberto. \emph{Designs for the Pluriverse: Radical
+Interdependence, Autonomy, and the Making of Worlds}. Durham, NC: Duke
+University Press, 2018.
+
+``Formative Peer Review (FPR).''~\emph{Public Philosophy Journal}.
+\url{https://publicphilosophyjournal.org/overview/}.
+
+Ganter, Sarah Anne, and Félix Ortega. ``The Invisibility of Latin
+American Scholarship in European Media and Communication Studies:
+Challenges and Opportunities of De-Westernization and Academic
+Cosmopolitanism,''~\emph{International Journal of Communication} 13
+(2019): 68--91. \url{https://ijoc.org/index.php/ijoc/article/view/8449}.
+
+Gibson, Mark. ``Editing After Exit--Alienation and Counter--Alienation
+in the Cultures of Cultural Studies Journals.''~\emph{Continuum}~35, no.
+3 (2021): 356--68. \url{https://doi.org/10.1080/10304312.2021.1902159}.
+
+Guillory, John. ``Enlightening Mediation.'' In~\emph{This is
+Enlightenment}, edited by Clifford Siskin and William Warner, 37--66.
+Chicago: University of Chicago Press, 2010.
+
+Magallanes Blanco, Claudia, and José Manuel Ramos Rodríguez,
+eds.~\emph{Miradas Propias: Pueblos Indígenas, Comunicación y Medios en
+la Sociedad Global}. Quito: Ediciones CIESPAL, 2016.
+
+Martínez Guillem, Susan. ``Sacando la Lengua in Rhetorical Theory and
+Criticism.''~\emph{Rhetoric, Politics \& Culture} 1, no. 1 (2021):
+45--54.
+
+``Open Access
+Principles.''~mediastudies.press.~\url{https://www.mediastudies.press/oa-principles}.
+
+``Our Mission.'' PubPub.~\url{https://www.pubpub.org/about}.
+
+``Peer Review.''~\emph{History of Media
+Studies}.~\url{https://hms.mediastudies.press/peer-review}.
+
+Pooley, Jefferson. ``Collective Funding to Reclaim Scholarly
+Publishing,''~\emph{The Commonplace}. August 16,
+2021.~\url{https://commonplace.knowledgefutures.org/pub/erpw9udj}.
+
+Shechtman, Anna. ``Command of Media's Metaphors.''~\emph{Critical
+Inquiry}~47, no. 4 (2021): 644--74.
+\url{https://doi.org/10.1086/714512}.
+
+Stein, Gabriel, Travis Rich, Zach Verdin, and Catherine Ahearn.
+``Clarivate, ProQuest, and our Resistance to Commercializing
+Knowledge.''~\emph{The Commonplace}. May 18,
+2021.~\url{https://commonplace.knowledgefutures.org/pub/kp81ylos/}.
+
+Suzina, Ana Cristina. ``English as~\emph{Lingua Franca}: On the
+Sterilisation of Scientific Work,''~\emph{Media, Culture \& Society} 43,
+no. 1 (2021): 171--79. \url{https://doi.org/10.1177/0163443720957906}.
+
+Torrico Villanueva, Erick R. ``La Comunicación Decolonial, Perspectiva
+In/Surgente.''~\emph{Revista Latinoamericana de Ciencias de la
+Comunicación}~15, no. 28 (2018): 74--81.
+\url{http://revista.pubalaic.org/index.php/alaic/article/view/1150}.
+
+``Transparency.''~mediastudies.press.
+\url{https://www.mediastudies.press/transparency}
+
+Waisbord, Silvio. ``Communication Studies without Frontiers? Translation
+and Cosmopolitanism across Academic Cultures.''~\emph{International
+Journal of Communication} 10 (2016): 868--86.
+\url{https://ijoc.org/index.php/ijoc/article/view/3483}.
+
+``Working Group on the History of Media Studies.''~\emph{History of
+Media Studies}. \url{https://hms.mediastudies.press/working-group}.
+
+
+
+\end{hangparas}
+
+
+\end{document}
