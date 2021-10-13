@@ -16,4 +16,4 @@
 - [ ] change the citation style to Chicago 
 - [ ] change the license to CC BY-NC (unless author has chosen otherwise )
 - [ ] Save changes
-- [ ] read through once, and send to authors, along with the guide/email to create a PubPub account 
+- [ ] if everything looks good, move to [Last author check](shortcuts://run-shortcut?name=Last%20author%20check) Shortcut 
