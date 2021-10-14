@@ -1,6 +1,6 @@
 # Create pdf from latex
 
-#pre-publication
+#pre-publication #latex-and-pdf
 
 - [ ] export the latex on PubPub
 - [ ] replace the values in the lines below or, better yet, run the Shortcut again and choose **Pull info from Airtable**
