@@ -24,7 +24,7 @@
 
 <P style="page-break-before: always"> 
 
-### 5. Click on Create Account. You will be taken to the History of Media Studies home page. If you want to edit or add to your profile, select the avatar in the righthard corner (see red-box annotation). Once you let us know that you've created an account, we will assign your authorship to your article.
+### 5. Click on Create Account. You will be taken to the History of Media Studies home page. If you want to edit or add to your profile, select the avatar in the right-hand corner (see red-box annotation). Once you let us know that you've created an account, we will assign your authorship to your article.
 
 ![](images/6.png)
 
