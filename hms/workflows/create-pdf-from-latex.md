@@ -16,7 +16,8 @@
 - [ ] rename with doi (replacing slash with dash).pdf and commit to /volume-one-2021
 - [ ] paste the latex from overleaf into a new .tex file with the same name
 - [ ] navigate to article's Pub Settings and upload pdf
-- [ ] move the Pub to published in the [Kanban](x-icabmobile://x-callback-url/open?url=https://airtable.com/appXhmKzo4WMgQJnn/tblkbjPK1lfVmbzhY/viwXhseji8rljOBvU?blocks=hide)
+- [ ] Test the PDF, copy the reference info, Open the Download Button Pages document, paste in, check for size/fit/formatting (e.g., italics), make link red (custom), screenshot, save to file, upload as an image in a new draft, make full-width, add the download url, and re-release
+- [ ] move the Pub to 'Published' in the [Kanban](x-icabmobile://x-callback-url/open?url=https://airtable.com/appXhmKzo4WMgQJnn/tblkbjPK1lfVmbzhY/viwXhseji8rljOBvU?blocks=hide)
 - [ ] email reply to author
 
 ## Replace these values
