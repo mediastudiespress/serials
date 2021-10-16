@@ -1,0 +1,463 @@
+% see the original template for more detail about bibliography, tables, etc: https://www.overleaf.com/latex/templates/handout-design-inspired-by-edward-tufte/dtsbhhkvghzz
+
+\documentclass{tufte-handout}
+
+%\geometry{showframe}% for debugging purposes -- displays the margins
+
+\usepackage{amsmath}
+
+\usepackage{hyperref}
+
+\usepackage{fancyhdr}
+
+\usepackage{hanging}
+
+\hypersetup{colorlinks=true,allcolors=[RGB]{97,15,11}}
+
+\fancyfoot[L]{\emph{History of Media Studies}, vol. 1, 2021}
+
+
+% Set up the images/graphics package
+\usepackage{graphicx}
+\setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
+\graphicspath{{graphics/}}
+
+\title[Biographical Encyclopedia of Communication Study]{Biographical Encyclopedia of Communication Study: Fostering Historiography and Memory in the Field} % longtitle shouldn't be necessary
+
+% The following package makes prettier tables.  We're all about the bling!
+\usepackage{booktabs}
+
+% The units package provides nice, non-stacked fractions and better spacing
+% for units.
+\usepackage{units}
+
+% The fancyvrb package lets us customize the formatting of verbatim
+% environments.  We use a slightly smaller font.
+\usepackage{fancyvrb}
+\fvset{fontsize=\normalsize}
+
+% Small sections of multiple columns
+\usepackage{multicol}
+
+% Provides paragraphs of dummy text
+\usepackage{lipsum}
+
+% These commands are used to pretty-print LaTeX commands
+\newcommand{\doccmd}[1]{\texttt{\textbackslash#1}}% command name -- adds backslash automatically
+\newcommand{\docopt}[1]{\ensuremath{\langle}\textrm{\textit{#1}}\ensuremath{\rangle}}% optional command argument
+\newcommand{\docarg}[1]{\textrm{\textit{#1}}}% (required) command argument
+\newenvironment{docspec}{\begin{quote}\noindent}{\end{quote}}% command specification environment
+\newcommand{\docenv}[1]{\textsf{#1}}% environment name
+\newcommand{\docpkg}[1]{\texttt{#1}}% package name
+\newcommand{\doccls}[1]{\texttt{#1}}% document class name
+\newcommand{\docclsopt}[1]{\texttt{#1}}% document class option name
+
+
+\begin{document}
+
+\begin{titlepage}
+
+\begin{fullwidth}
+\noindent\LARGE\emph{Launch essay
+} \hspace{85mm}\includegraphics[height=1cm]{logo3.png}\\
+\noindent\hrulefill\\
+\vspace*{1em}
+\noindent{\Huge{Biographical Encyclopedia of\\\noindent Communication Study: Fostering\\\noindent Historiography and Memory in the Field\par}}
+
+\vspace*{1.5em}
+
+\noindent\LARGE{Thomas Wiedemann}\par}\marginnote{\emph{Thomas Wiedemann and Michael Meyen, ``Biographical Encyclopedia of Communication Study: Fostering Historiography and Memory in the Field,'' \emph{History of Media Studies} 1 (2021), \href{https://doi.org/10.32376/d895a0ea.74443024}{https://doi.org/ 10.32376/d895a0ea.74443024}.} \vspace*{0.75em}}
+\vspace*{0.5em}
+\noindent{{\large\emph{Ludwig Maximillian Universität München},\\\noindent \href{mailto:thomas.wiedemann@ifkw.lmu.de}{thomas.wiedemann@ifkw.lmu.de}\par}} \marginnote{\href{https://creativecommons.org/licenses/by-nc/4.0/}{\includegraphics[height=0.5cm]{by-nc.png}}}
+
+\vspace*{0.75em} 
+
+\noindent{\LARGE{Michael Meyen}\par}
+\vspace*{0.5em}
+\noindent{{\large\emph{Ludwig Maximillian Universität München},\\\noindent \href{mailto:michael.meyen@ifkw.lmu.de}{michael.meyen@ifkw.lmu.de}\par}}
+
+% \vspace*{0.75em} % third author
+
+% \noindent{\LARGE{<<author 3 name>>}\par}
+\vspace*{0.5em}
+% \noindent{{\large\emph{<<author 3 affiliation>>}, \href{mailto:<<author 3 email>>}{<<author 3 email>>}\par}}
+
+\end{fullwidth}
+
+\vspace*{1em}
+
+
+\newthought{This essay reflects} our work and experience as editors of the
+\emph{Biographical Encyclopedia of Communication Study}
+(\emph{Biografisches Lexikon der Kommunikationswissenschaft}, or
+BLexKom),\footnote{BLexKom is supported by the publisher Herbert von Halem, Cologne, and
+  designed as an open-access platform. It is available online at
+  \url{http://blexkom.halemverlag.de}.
+} which presents the main
+protagonists in the German-speaking communication field from its
+beginnings until today and simultaneously showcases the literature on
+the field's history. Considering our project as a work in progress that
+encourages scholars to contribute, we launched BLexKom in 2013 with a
+small number of entries (about 20) and some additional interview
+material. Since then, BLexKom has grown tremendously in size and
+dimension. We now count more than 140 biographical entries and several
+dozen in-depth interviews. We also integrated supplementary formats and
+sections into our platform, including research papers, canonic texts,
+autobiographical reflections, features (e.g., on journalism education in
+the German Democratic Republic), and obituaries.
+
+This essay aims to provide a deeper insight into the BLexKom project,
+whose relevance extends well beyond the German case. To be clear, we do
+not consider BLexKom as a research output per se, nor do we think of it
+as the only legitimate history of communication
+\enlargethispage{2\baselineskip}
+
+\vspace*{2em}
+
+\noindent{\emph{History of Media Studies}, vol. 1, 2021}
+
+
+
+
+ \end{titlepage}
+
+
+
+\noindent as an academic
+discipline in Germany. Instead, by offering as many sources as possible,
+we designed our platform in an effort to foster research on the
+discipline's development, appearance, and orientation, and to stimulate
+memory processes in the field. To support this claim and make the
+argument for BLexKom plausible, it is first necessary to describe the
+theoretical alignment of our project and make its conceptualization
+comprehensible. Second, it seems equally important to discuss our role
+as editors, in particular regarding the challenges associated with our
+decision-making as source providers. Beyond that, we believe that our
+experience with BLexKom might hold interest for research projects that
+deal with the history of communication studies in different contexts,
+especially more contemporary ones. We therefore, third, report in this
+essay on the reactions and, in particular, on the critical feedback from
+the community, which has in turn triggered self-reflection processes for
+us. After all, BLexKom does not leave people indifferent, and perhaps
+this is something we should consider when reasoning on the difficult
+situation of specialized historiography in communication
+studies,\footnote{Jefferson Pooley, ``The Declining Significance of Disciplinary Memory:
+  The Case of Communication Research,'' in \emph{Handbuch
+  kommunikationswissenschaftliche Erinnerungsforschung}, ed. Christian
+  Pentzold and Christine Lohmeier (Berlin: de Gruyter, in press).
+} which, to a certain
+extent, may also apply to the social sciences in general.
+
+\hypertarget{theoretical-alignment-of-blexkom}{%
+\section{Theoretical Alignment of
+BLexKom}\label{theoretical-alignment-of-blexkom}}
+
+Although BLexKom includes different formats that allow foci on
+intellectual and institutional approaches as well, the encyclopedia
+platform is mainly conceptualized as a biographical window onto the
+history of communication studies. This does not mean reproducing the
+myths about the so-called founding fathers of the discipline, which have
+been criticized as ``thin
+hagiography''\footnote{Jefferson Pooley and David W. Park, Introduction to \emph{The History
+  of Media and Communication Research: Contested Memories}, ed. David W.
+  Park and Jefferson Pooley (New York: Peter Lang, 2008), 4.
+} and
+``great-men-make-history-tales''\footnote{Maria Löblich and Andreas M. Scheu, ``Writing the History of
+  Communication Studies: A Sociology of Science Approach,''
+  \emph{Communication Theory} 21, no. 1 (2011): 4.
+}---the
+case of Elisabeth Noelle-Neumann, to give just one example, makes clear
+that the literature on the history of the German field is far from an
+exception to the rule here.\footnote{Hans Mathias Kepplinger, ``Political Correctness and Academic
+  Principles: A Reply to Simpson,'' \emph{Journal of Communication} 47,
+  no. 4 (1997): 102--7.
+} More
+precisely, BLexKom draws on the sociology of science's assumption that
+the development of an academic discipline results from cognitive and
+social parameters.\footnote{Pierre Bourdieu, \emph{Science of Science and Reflexivity} (Chicago:
+  Chicago University Press, 2004).
+} We additionally
+assume that this development always reflects the background of its most
+important figures and the structures they are or were confronted with.
+What is more, considering the impact of dominant agents, so to speak,
+proves particularly relevant for a small and rather new academic field
+such as communication studies, which remained underdeveloped and without
+major prestige during most of its existence and, in many parts of the
+world, for a long time was mainly a product of external influences.
+
+That said, many historians of communication studies would agree that
+beyond anniversaries and the need for legitimization by tradition, the
+founders and early figures of the discipline, especially in the German
+context, have fallen into oblivion. Karl Bücher, for example, who
+launched the country's first communication department at Leipzig
+University in 1916,\footnote{Hanno Hardt, \emph{Social Theories of the Press: Constituents of
+  Communication Research, 1840s to 1920s} (Lanham, MD: Rowman \&
+  Littlefield, 2001), 99--131; Thomas Wiedemann, Michael Meyen, and Iván
+  Lacasa-Mas, ``One Hundred Years Communication Study in Europe: Karl
+  Bücher's Impact on the Discipline's Reflexive Project,'' \emph{Studies
+  in Communication and Media} 7, no. 1 (2018): 13--16.
+} or Walter
+Hagemann, at the top of the West German field after World War
+II,\footnote{Thomas Wiedemann, ``Practical Orientation as a Survival Strategy: The
+  Development of \emph{Publizistikwissenschaft} by Walter Hagemann,'' in
+  \emph{The International History of Communication Study}, ed. Peter
+  Simonson and David W. Park (New York: Routledge, 2016), 116--21.
+} are no longer cited, and
+today's students rarely know the circumstances these distant ancestors
+dealt with. Of course, beginning in the mid-1950s, the shift to an
+empirical social scientific discipline changed terminology, theories,
+research objects, and methods.\footnote{Maria Löblich, ``German Publizistikwissenschaft and Its Shift from a
+  Humanistic to an Empirical Social Scientific Discipline: Elisabeth
+  Noelle-Neumann, Emil Dovifat and the Publizistik Debate,''
+  \emph{European Journal of Communication} 22, no. 1 (2007): 81--84.
+} For
+empirically oriented communication scholars in Germany, the United
+States became the most important point of reference. Furthermore, the
+distance to once leading protagonists of the field was amplified by the
+tendency of minimizing subjectivity and personal traces in research
+output and theoretical approaches. Consequently, students also learn
+little about the authors of even current texts.
+
+If one argues with Jan Assmann's concept of memory, this seems
+unsurprising, because only a small part of the \emph{communicative
+memory} (the recent past shared by contemporaries) passes over into the
+\emph{cultural memory} (the absolute past fixed in storage media such as
+texts, icons, rituals, and performances). Once there, most of it remains
+in the ``archive'' (the canon that is available but not really present),
+whereas just a few references to the past are strategically used and
+serve as frames of orientation and
+identification.\footnote{Jan Assmann, ``Communicative and Cultural Memory,'' in \emph{Cultural
+  Memory Studies: An International and Interdisciplinary Handbook}, ed.
+  Astrid Erll and Ansgar Nünning (Berlin: de Gruyter, 2008), 109--18.
+} Such processes
+clearly also take place in academic fields, especially if they exhibit a
+high degree of heterogeneity and interdisciplinarity, which is, in a
+global perspective, still the case for communication studies. Within
+this framework, we see BLexKom as a research tool against oblivion that
+moves beyond enriching the archive. Since the biographical entries and
+the interview material, in particular, facilitate links between field
+agents, intellectual orientations, institutional traditions, and
+research communities that sometimes extend beyond specific content or
+citation, they might have an effect on the discipline's cultural memory
+as a whole---and even stimulate the communicative memory once again.
+
+\emph{Decision-Making as Source Providers}
+
+The biographical entries with information about German communication
+scholars' origin, socialization, career steps, and key publications---at
+an average length of about 800 words---form the heart of BLexKom. Our
+long-term aspiration is to eventually include all scholars who teach or
+taught as full professors at university departments listed by the German
+Communication Association (Deutsche Gesellschaft für Publizistik- und
+Kommunikationswissenschaft) and the corresponding associations in
+Austria and Switzerland. Using these classifications to sketch the
+discipline's core is, of course, anything but unproblematic. We
+therefore added two more selection criteria: communication scholars who,
+first, hold or held a habilitation in the field, or, second, made an
+important contribution to the discipline such as an outstanding
+literature reference, which brings us to around 300 targeted
+encyclopedia entries. Targeting the main protagonists of the discipline
+with such a sample undeniably runs the risk of marginalizing those
+figures who focused on teaching, did not complete their habilitations,
+or failed to secure professorships. Yet, without any judgement, we
+assume that managing to give the discipline a face requires resources,
+and that means a permanent employment contract with a university and a
+minimum of purely academic reputation (i.e., for the German case,
+qualification degrees and publications).
+
+In comparison, the selection criteria for our interview section are less
+rigid: We regularly ask renowned representatives of the field for an
+interview---very often on the occasion of their retirement, which allows
+a less inhibited look back. According to BLexKom's theoretical
+background (in particular, Pierre Bourdieu's sociology), these
+interviews of about 6,000 words systematically explore habitus patterns
+and capital resources and, furthermore, provide insights into the logic
+of the field. Nevertheless, we must take them for what they are:
+subjective reports shaped by personal interests that form part of each
+interviewee's ``story about the
+self,''\footnote{Anthony Giddens, \emph{Modernity and Self-Identity: Self and Society
+  in the Late Modern Age} (Stanford, CA: Stanford University Press,
+  1991), 54.
+} which underlines the
+source character of BLexKom. Consequently, working with such research
+material requires a high degree of critical interpretation.
+
+Even though we have established an editorial board and rely on the
+publisher's help in case of technical difficulties, we perform our
+duties as editors of BLexKom on a large scale. More specifically, we see
+ourselves as responsible for producing or soliciting new content,
+acquiring portrait photos and additional image material, doing the
+editorial work, and ensuring the timely publication of articles and
+updates, as well as quality management and website maintenance.
+Moreover, the advantages of an online platform give us the opportunity
+to think about innovations from time to time. When we launched our
+encyclopedia project eight years ago, for example, we hadn't even
+thought of sections like features or obituaries, which now attract a
+considerable number of clicks.
+
+Our editorial activities of course also confront challenges that
+sometimes make a pragmatic approach necessary. In particular, given the
+unfinished nature of BLexKom, we have felt obliged to continuously
+increase the number of biographical entries and fill at least the most
+significant lacunae of the encyclopedia, especially at the beginning. As
+a consequence, despite the spirit of teamwork in our project and the
+fact that BlexKom counts almost seventy authors to date, we have written
+quite a few contributions ourselves. Writing an encyclopedia entry
+requires more than superficial knowledge of the history and structures
+of the field, as well as the right mixture of proximity and distance
+toward the communication scholar in question. Put differently, just
+another promotion tool with biographical information and mission
+statements is not compatible with BLexKom's vision, which is why we have
+decided not to have the encyclopedia entries authorized (unlike the
+interviews).
+
+\hypertarget{reactions-from-the-field-and-lessons-learned}{%
+\section{Reactions from the Field and Lessons
+Learned}\label{reactions-from-the-field-and-lessons-learned}}
+
+Our encyclopedia project has received both encouraging feedback and
+criticism. The latter, which is probably more interesting here,
+referred, first, to BLexKom's agent-oriented approach, which (according
+to the critique) could crowd out the knowledge gained through
+intellectual and institutional histories. In addition, some commentators
+regarded the encyclopedia entries' personal information as too private,
+even irrelevant. Linked to this, some readers raised the concern that
+our interviews positioned interviewees in a particular way and that
+their statements were highly subjective, sometimes even false.
+
+A second set of criticisms referred to the distorting effect that
+resulted from our project's work-in-progress character, especially in
+the early years, with many blind spots and, unfortunately, a
+considerable gender bias in the number of entries. Furthermore, some
+critics viewed the platform as too closely related to our own academic
+environment.
+
+In a third pattern, critics lingered on the supposed power of BLexKom
+when writing communication study's history, and thus on the monopoly
+position of our project. In short, they asked: Who defines what may
+belong to the field's memory, and does BLexKom not first need to be
+officially legitimized by the German Communication Association, with all
+possible implications?
+
+Similar concerns will likely confront many research projects that strive
+for a look behind the scenes of a discipline's development, especially
+when they do not always follow established paths and frameworks, or even
+scratch the \emph{illusio} of the
+field.\footnote{ Bourdieu, \emph{Science of Science and Reflexivity}.} And indeed, there is no
+denying that BLexKom, with a sociological and historical sense of the
+field, offers some ammunition. Regarding our project, we met the
+criticisms received by committing to even greater transparency,
+openness, and self-reflection, which included initiating a two-day
+workshop in 2016 that allowed for an detailed discussion of the points
+of critique.
+
+Beyond that, as a response to these criticisms (at the workshop and
+otherwise), we endeavored to provide further information about the
+sociology of science approach central to our biographical encyclopedia
+project, and to make clear that the collected interviews are also in
+line with our theoretical background and thus have a strictly scientific
+character. We further illustrated, by integrating additional sections
+into our platform (open as well to historiographical texts dealing with
+ideas and theories or with organizations and institutional settings),
+that BLexKom's focus on agents by no means intended to ignore the
+importance of other perspectives on the discipline's history and
+structures. Perhaps these complementary research pieces written by
+several historians of the field might also serve to re-emphasize the
+source character of BLexKom's encyclopedia entries and interviews.
+
+Another response to the criticisms was, as mentioned, that we worked
+even harder to quickly eliminate as many obvious encyclopedia gaps as
+possible and to ensure a well-balanced and diverse spectrum of
+portraits, which certainly became easier as the number of biographical
+entries grew over the years. Related to this, we strove to increase the
+number of authors on our platform, especially with scholars further away
+from us and outside our close network (including, of course, colleagues
+from Austria and Switzerland).
+
+To counter the power/monopoly position of BLexKom, we further decided to
+share responsibilities and to establish an editorial board consisting of
+four experts on the history of the German-speaking communications field,
+which gives our project a broader footing. In addition, we repeatedly
+presented BLexKom to the scientific community, explaining our approach,
+disclosing our decisions as editors, and providing deeper insights into
+the creation of content. We particularly stressed the team spirit behind
+our project and called for collaboration---if not with original
+contributions, then at least with comments and feedback, corrections and
+additional hints, but also with suggestions for further entries and
+other relevant research material.
+
+Today, BLexKom remains an independent platform based exclusively on
+academic expertise that sometimes even involves students' research
+projects. According to its objective, we hope that BLexKom will foster
+research and become recognized for what it intends to be: an inspiring,
+at times critical, but in any case essential service to the community of
+German communication studies.
+
+
+
+
+
+
+
+\section{Bibliography}\label{bibliography}
+
+\begin{hangparas}{.25in}{1} 
+
+
+
+Assmann, Jan. ``Communicative and Cultural Memory.'' In \emph{Cultural
+Memory Studies: An International and Interdisciplinary Handbook}, edited
+by Astrid Erll and Ansgar Nünning, 109--18. Berlin: de Gruyter, 2008.
+
+Bourdieu, Pierre. \emph{Science of Science and Reflexivity}. Chicago:
+Chicago University Press, 2004.
+
+Giddens, Anthony. \emph{Modernity and Self-Identity: Self and Society in
+the Late Modern Age}. Stanford, CA: Stanford University Press, 1991.
+
+Hardt, Hanno. \emph{Social Theories of the Press: Constituents of
+Communication Research, 1840s to 1920s}. Lanham, MD: Rowman \&
+Littlefield, 2001.
+
+Kepplinger, Hans Mathias. ``Political Correctness and Academic
+Principles: A Reply to Simpson.'' \emph{Journal of Communication} 47,
+no. 4 (1997): 102--7.
+\url{https://doi.org/10.1111/j.1460-2466.1997.tb02728.x}.
+
+Löblich, Maria. ``German Publizistikwissenschaft and Its Shift from a
+Humanistic to an Empirical Social Scientific Discipline: Elisabeth
+Noelle-Neumann, Emil Dovifat and the Publizistik Debate.''
+\emph{European Journal of Communication} 22, no. 1 (2007): 69--88.
+\url{https://doi.org/10.1177\%2F0267323107073748}.
+
+Löblich, Maria, and Andreas M. Scheu. ``Writing the History of
+Communication Studies: A Sociology of Science Approach.''
+\emph{Communication Theory} 21, no. 1 (2011): 1--22.
+\url{https://doi.org/10.1111/j.1468-2885.2010.01373.x}.
+
+Pooley, Jefferson. ``The Declining Significance of Disciplinary Memory:
+The Case of Communication Research.'' In \emph{Handbuch
+kommunikationswissenschaftliche Erinnerungsforschung}, edited by
+Christian Pentzold and Christine Lohmeier. Berlin: de Gruyter, in press.
+
+Pooley, Jefferson, and David W. Park. Introduction to \emph{The History
+of Media and Communication Research: Contested Memories}, edited by
+David W. Park and Jefferson Pooley, 1--15. New York: Peter Lang, 2008.
+
+Wiedemann, Thomas. ``Practical Orientation as a Survival Strategy: The
+Development of \emph{Publizistikwissenschaft} by Walter Hagemann.'' In
+\emph{The International History of Communication Study}, edited by Peter
+Simonson and David W. Park, 109--29. New York: Routledge, 2016.
+
+Wiedemann, Thomas, Michael Meyen, and Iván Lacasa-Mas. ``One Hundred
+Years Communication Study in Europe: Karl Bücher's Impact on the
+Discipline's Reflexive Project.'' \emph{Studies in Communication and
+Media} 7, no. 1 (2018): 7--30.
+\href{http://dx.doi.org/10.5771/2192-4007-2018-1-6}{https://doi.org/10.5771/2192-4007-2018-1-6}.
+
+
+
+\end{hangparas}
+
+
+\end{document}
