@@ -1,0 +1,528 @@
+% see the original template for more detail about bibliography, tables, etc: https://www.overleaf.com/latex/templates/handout-design-inspired-by-edward-tufte/dtsbhhkvghzz
+
+\documentclass{tufte-handout}
+
+%\geometry{showframe}% for debugging purposes -- displays the margins
+
+\usepackage{amsmath}
+
+\usepackage{hyperref}
+
+\usepackage{fancyhdr}
+
+\usepackage{hanging}
+
+\hypersetup{colorlinks=true,allcolors=[RGB]{97,15,11}}
+
+\fancyfoot[L]{\emph{History of Media Studies}, vol. 1, 2021}
+
+
+% Set up the images/graphics package
+\usepackage{graphicx}
+\setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
+\graphicspath{{graphics/}}
+
+\title[Against the `Vocation of Autopsy']{Against the `Vocation of Autopsy': Blackness and/in US Communication Histories} % longtitle shouldn't be necessary
+
+% The following package makes prettier tables.  We're all about the bling!
+\usepackage{booktabs}
+
+% The units package provides nice, non-stacked fractions and better spacing
+% for units.
+\usepackage{units}
+
+% The fancyvrb package lets us customize the formatting of verbatim
+% environments.  We use a slightly smaller font.
+\usepackage{fancyvrb}
+\fvset{fontsize=\normalsize}
+
+% Small sections of multiple columns
+\usepackage{multicol}
+
+% Provides paragraphs of dummy text
+\usepackage{lipsum}
+
+% These commands are used to pretty-print LaTeX commands
+\newcommand{\doccmd}[1]{\texttt{\textbackslash#1}}% command name -- adds backslash automatically
+\newcommand{\docopt}[1]{\ensuremath{\langle}\textrm{\textit{#1}}\ensuremath{\rangle}}% optional command argument
+\newcommand{\docarg}[1]{\textrm{\textit{#1}}}% (required) command argument
+\newenvironment{docspec}{\begin{quote}\noindent}{\end{quote}}% command specification environment
+\newcommand{\docenv}[1]{\textsf{#1}}% environment name
+\newcommand{\docpkg}[1]{\texttt{#1}}% package name
+\newcommand{\doccls}[1]{\texttt{#1}}% document class name
+\newcommand{\docclsopt}[1]{\texttt{#1}}% document class option name
+
+
+\begin{document}
+
+\begin{titlepage}
+
+\begin{fullwidth}
+\noindent\LARGE\emph{Launch essay
+} \hspace{85mm}\includegraphics[height=1cm]{logo3.png}\\
+\noindent\hrulefill\\
+\vspace*{1em}
+\noindent{\Huge{Against the `Vocation of Autopsy': Blackness and/in US Communication Histories\par}}
+
+\vspace*{1.5em}
+
+\noindent\LARGE{Armond R. Towns}\par}\marginnote{\emph{Armond R. Towns, ``Against the `Vocation of Autopsy': Blackness and/in US Communication Histories,'' \emph{History of Media Studies} 1 (2021), \href{https://doi.org/10.32376/d895a0ea.89f81da7}{https://doi.org/ 10.32376/d895a0ea.89f81da7}.} \vspace*{0.75em}}
+\vspace*{0.5em}
+\noindent{{\large\emph{Carleton University}, \href{mailto:armondtowns@cunet.carleton.ca}{armondtowns@cunet.carleton.ca}\par}} \marginnote{\href{https://creativecommons.org/licenses/by-nc/4.0/}{\includegraphics[height=0.5cm]{by-nc.png}}}
+
+% \vspace*{0.75em} % second author
+
+% \noindent{\LARGE{<<author 2 name>>}\par}
+% \vspace*{0.5em}
+% \noindent{{\large\emph{<<author 2 affiliation>>}, \href{mailto:<<author 2 email>>}{<<author 2 email>>}\par}}
+
+% \vspace*{0.75em} % third author
+
+% \noindent{\LARGE{<<author 3 name>>}\par}
+% \vspace*{0.5em}
+% \noindent{{\large\emph{<<author 3 affiliation>>}, \href{mailto:<<author 3 email>>}{<<author 3 email>>}\par}}
+
+\end{fullwidth}
+
+\vspace*{1em}
+
+
+\newthought{The January 1970} National Development Project (NDP) on Rhetoric (also
+known as Wingspread) in Wisconsin has been celebrated as important to
+the contemporary development of media, rhetoric, speech, and
+communication in the United States (just called ``communication
+studies'' going forward). Organized by prominent scholars like Lloyd
+Bitzer and Edwin Black,\footnote{``Critical Moments in NCA's History,'' \emph{Spectra: The Magazine of
+  the National}
+  \emph{Communication Association} 50, nos. 1-- 2 (2014): 30--36.
+} the
+conference, as Peter Simonson argues, was deemed central to a
+``collective effort to bend rhetorical theory toward the social problems
+of the day,'' ``presumably'' guided by ``designated thought leaders
+gathered at the conference.''\footnote{Peter Simonson, ``The Short History of Rhetorical Theory,''
+  \emph{Philosophy \& Rhetoric}, 53, no. 1 (2020): 83.
+} A
+year later, the NDP conference proceedings were published as the book,
+\emph{The Prospect of Rhetoric: Report of the National Development
+Project},\footnote{Lloyd Bitzer and Edwin Black, \emph{The Prospect of Rhetoric: Report
+  of the National Development Project} (Englewood Cliffs, NJ:
+  Prentice-Hall, 1971).
+} a text still used today.
+
+Though to less fanfare, in May 1970, the NDP's National Conference on
+Rhetoric (NCR) in Illinois would meet to discuss Wingspread's
+presentations.\footnote{I am pulling this largely from Bitzer and Black's \emph{The Prospect
+  of Rhetoric}, as well as the final report of the NDP, both of which note the importance of two national development project conferences,
+  the Wingspread and the National Conference on Rhetoric.
+} Occurring just days
+after the Kent State massacre, the Illinois conference invited two
+important conference attendees, Arthur Smith (now Molefi Kete Asante)
+and Lyndrey Niles.\footnote{Simonson, ``Short History of Rhetorical Theory,'' 84.
+} Though they
+went unmentioned in Lloyd Bitzer's final NDP report (on both Wingspread
+and the NCR), Asante and Niles undoubtedly influenced the call that
+emerged from this report for study to ``be undertaken on the nature of
+invention in non-western cultures'' and for Black Panther Party speeches
+to be deemed rhetorical artifacts.\footnote{Lloyd Bitzer, \emph{Final Report of the National Development Project
+  on Rhetoric} (New York: Speech Association of America, 1970), 13.
+}
+Here, we can see how Black scholars played critical roles in expanding
+communication studies' approach to race, racism, colonialism, and
+Pan-Africanism. Asante and Niles used their platform in Illinois to
+argue
+\enlargethispage{2\baselineskip}
+
+\vspace*{2em}
+
+\noindent{\emph{History of Media Studies}, vol. 1, 2021}
+
+
+ \end{titlepage}
+ 
+\noindent that communication studies was situated in a particular
+conjuncture that the field could no longer ignore: worldwide decolonial,
+Black radical struggle.\footnote{Reynaldo Anderson, Marnel Niles Goins, and Sheena Howard, ``Liberalism
+  and Its Discontents: Black Rhetoric and the Cultural Transformation of
+  Rhetorical Studies in the Twentieth Century,'' in \emph{A Century of
+  Communication Studies: The Unfinished Conversation}, ed. Pat Gehrke
+  and Keith William (New York: Routledge, 2015), 174.
+} A few
+examples of the Black and decolonial context, in relation to the United
+States, will suffice: Black street rebellions raged in U.S. inner cities
+of the 1960s and 1970s, often in reaction to racist police brutality;
+just off the U.S. coast, in the late 1950s, Fidel Castro led the
+revolutionary transformation of Cuba from a U.S. protectorate/colony to
+an independent, socialist project; the Vietnam War was in full swing, as
+the North Vietnamese fought to break U.S. neocolonial aspirations; in
+1957, Kwame Nkrumah led Ghana to independence from British colonial
+rule, a rule that the United States backed against Nkrumah; and, the
+early 1960s saw the establishment of the Sandinista National Liberation
+Front, organizing socialist resistance to U.S. occupation in Nicaragua.
+
+Many Black communication studies scholars viewed their actions as in
+line with these larger radical politics, but they were far from dominant
+in the field. In the mid- to late twentieth century, as NDP rhetorical
+scholars connected with post--World War II communications scholars to
+form what became U.S. communication
+studies,\footnote{In 1970, the Speech Association of America, which ran the NDP, became
+  the Speech Communication Association, signifying the increased
+  importance given to more communication studies scholarship. Of course,
+  today speech has dropped completely out of the association's name,
+  which is now the National Communication Association.
+} the new discipline gained
+a mixture of conservative and progressive thought. In 1969, for example,
+while scholars like Asante, Lucia Hawthorne, and Jack Daniel created the
+Speech Association of America's (SAA) Black
+Caucus,\footnote{For more on this, see Anderson, Goins, and Howard, ``Liberalism and
+  Its Discontents,'' 174; and Jack Daniel, \emph{Changing the Players
+  and the Game: A Personal Account of the Speech Communication
+  Association Black Caucus Origins} (Annandale, CA: Speech Communication
+  Association, 1995), 11.
+} other communication
+scholars weaponized their World War II training in propaganda against
+the new enemy: Cold War
+socialism.\footnote{Jefferson Pooley, ``The New History of Mass Communication Research,''
+  in \emph{The History of Media and Communication Research: Contested
+  Memories}, ed. David W. Park and Jefferson Pooley (New York: Peter
+  Lang, 2008), 43--69.
+} Some of this
+conservative thought would be challenged in the Black Caucus, which
+worked to produce a supportive hub for Black communication scholars,
+increase opportunities for Black students to enter graduate schools, and
+to assist in understanding Black modes of knowing and communicating.
+Niles and Asante used the NCR to extend what the Black Caucus was
+already arguing: a field organized in highly Western terms could no
+longer afford to ignore how Black thought existed beyond Westernism.
+
+Thus, to reduce these scholars to communication studies may prove too
+simplistic. At the Illinois conference, we see an intersection between
+communication studies and Black studies---the mid-twentieth-century
+field that called for the valorization of Black people's epistemologies
+and the material transformation of Black lives worldwide. For the
+important Black studies scholar Walter Rodney, the call to theorize
+Black epistemologies exceeded the Western concept of ``the Negro,''
+speaking to \emph{Black people}, who were potentially all the
+``non-whites---the hundreds of millions of people whose homelands are in
+Asia and Africa, with another few millions in the
+Americas.''\footnote{This is, of course, also the time when the word \emph{Negro} would be
+  replaced by \emph{Black} in the United States as a new mode of
+  self-identification. For more on this, see Walter Rodney, \emph{The
+  Groundings with My Brothers} (London: Bogle-L'Ouverture Publications,
+  1996), 16.
+} We should take
+seriously Rodney's words: blackness was not solely a racial
+identity---reliant on white, racist classifications of
+African-descendent peoples (the Negro)---but a politico-economic
+relation for revolutionary purposes (a new proletariat). Here, white
+people's racial classifications could tell us little about blackness.
+Likewise, Asante and Niles argued that racism was but \emph{one} element
+of study that communication scholars could focus on, not the only one.
+As Asante suggested at the 1972 Black Communication Conference, in
+addition to racism, Black communication could focus on topics as diverse
+as the study of nonverbal communication, because ``it is possible that
+the kinesic norms of blacks will differ from those of
+whites.''\footnote{Molefi Asante, ``Theoretical Research Issues in Black Communication,''
+  1972, \url{https://files.eric.ed.gov/fulltext/ED082250.pdf}, 8.
+}
+
+To study solely racism may lead to what another important Black studies
+scholar, Vincent Harding, called ``the vocation of autopsy,'' which
+situated Black life solely in \emph{reaction} to white racism. In his
+1974 essay, ``The Vocation of the Black Scholar,'' Harding argued that
+autopsy was the domain of white constructs of Black people (the Negro),
+amounting to the ``analysis of human history without
+celebration.''\footnote{Vincent Harding, ``The Vocation of the Black Scholar and the Struggles
+  of the Black Community,'' in \emph{Education and Black Struggle: Notes
+  from the Colonized World}, ed. Vincent Harding and Julius Nyerere
+  (Cambridge, MA: Harvard Educational Review, 1974), 9.
+} Further, part of
+the Black scholar's vocation was to break away from reacting to white
+people. In contrast to the vocation of the Black scholar, autopsy was a
+vocation that, whether progressive or conservative, centered white
+definitions of Black people, deeming us as wholly different from all
+other people (incommunicable), inhibiting revolutionary, collective
+action. Rather than use white definitions, Black studies sought to
+create a world in which Black people served as legitimate creators of
+knowledge of and about ourselves---which may end up saving
+\emph{everyone}.
+
+Asante and Niles were not mere bystanders in this larger Black studies
+movement, but full participants. Niles, a graduate of Temple University,
+would see the Black student movement firsthand, via the establishment of
+Temple's Black studies department ``by the administration in 1969 as a
+response to intense demands of the black students on
+campus.''\footnote{Mario Small, ``Departmental Conditions and the Emergence of New
+  Disciplines: Two Cases in the Legitimation of African-American
+  Studies,'' \emph{Theory and Society} 28, no. 5 (1999): 669.
+} That same year, Niles
+would garner praise for his leadership of the SAA's Summer Conference,
+where he led a workshop on Black
+rhetoric.\footnote{Lyndrey Niles, ``Report of Workshop A: Black Rhetoric,'' in
+  \emph{Proceedings: Speech Association of America Summer Conference V
+  Theme: Research and Action}, ed. James Roever (New York: Speech
+  Communication Association, 1969), 3--7,
+  \url{https://files.eric.ed.gov/fulltext/ED042785.pdf}
+} In 1973, Niles brought
+together communication studies and Black studies in his completed
+dissertation, ``The Status of Speech Communication Programs at
+Predominantly Black Four Year Colleges:
+1971--1972.''\footnote{Lyndrey Niles, ``The Status of Speech Communication Programs at
+  Predominately Black Four Year Colleges: 1971--1972'' (PhD diss.,
+  Temple University, 1973).
+} And of course,
+Asante would go on to become one of the most prolific and important
+Black studies scholars of the twentieth and twenty-first
+centuries.\textsuperscript{17}
+
+All of this is to say that the presence of Black studies scholars at the
+NCR cannot be deemed as a call for the study of solely racism in
+communication studies, an area of study that remains important yet
+overemphasized today. Instead, their presence was also a call to study
+Black modes of knowing and communicating in the world. We cannot read
+the 1960s\marginnote{\textsuperscript{17} Some of Asante's many accomplishments include starting the first Black
+  studies PhD program at Temple University, as well as his leadership in
+  Black studies at the University of California, Los Angeles. For more
+  on this, see Ronald Jackson and Sonja Givens, \emph{Black Pioneers in
+  Communication Research} (Thousand Oaks, CA: Sage, 2016); and Small,
+  ``Departmental Conditions and the Emergence of New Disciplines,'' 670.
+}\setcounter{footnote}{17} and 1970s as truly about social death, as per contemporary
+theorizations.\footnote{I do not mean social death, in the Orlando Patterson sense, but social
+  death as it is being used in some circles of Black studies,
+  particularly building off the work of Frank Wilderson, which, of
+  course, pulls from Patterson. For more of this Black studies reading
+  of social death, particularly in communication studies, see Lisa
+  Corrigan, \emph{Black Feelings: Race and Affect in the Long Sixties}
+  (Oxford: University of Mississippi Press, 2020); Casey Ryan Kelly,
+  ``White Pain,'' \emph{Quarterly Journal of Speech}, 107, no. 2 (2021):
+  209--33; Ashely Noel Mack and Bryan McCann, ``\,`Harvey Weinstein,
+  Monster': Antiblackness and the Myth of the Monstrous Rapist,''
+  \emph{Communication and Critical/Cultural Studies}, 18, no. 2 (2021):
+  103--20; and Frank Wilderson, \emph{Red, White \& Black: Cinema and
+  the Structure of U.S. Antagonisms} (Durham, NC: Duke University Press,
+  2010).
+} In other words, we
+cannot argue that Black people in the mid-twentieth century were
+illustrating that Black death was constitutive of white life, that
+blackness always lies in \emph{reaction} to whiteness. Instead, as Adom
+Getachew and Karuna Mantena
+argue,\footnote{Adom Getachew and Karuna Mantena, ``Anticolonialism and the
+  Decolonization of Political Theory,'' \emph{Critical Times} (2021),
+  \href{http://doi.org/10.1215/26410478-9355193}{doi.org/10.1215/26410478-9355193}.
+} we should take heed of the
+1960s and 1970s conjuncture, one in which blackness was deemed
+\emph{not} Negroness, in which Black people thought \emph{beyond} the
+West. This Black radical, decolonial, and socialist struggle (i.e., new
+global solidarities, \emph{not} incommunicabilities) appeared, to some
+at least, to be on the verge of toppling the West. It is in this context
+that Black studies entered the university (though it existed well before
+and far beyond the university). At the NCR, Black scholars expressed
+this Black studies tradition: they argued that Black people have
+alternative modes of thinking, knowing, \emph{and} communicating, toward
+a better world.
+
+The question we must ask today is simple: Do we currently have a
+widespread proliferation of Black (and other) modes of knowing in
+communication studies? Founded in
+1988,\footnote{``Editor's Introduction,'' \emph{Howard Journal of Communications} 1,
+  no. 1 (1988): 1--2.
+} the \emph{Howard Journal of
+Communications} may constitute our closest, most consistent example of a
+United States--based communication publication that centers people of
+color in ways that exceeds racism as the defining aspect of our lives.
+Yet beyond \emph{Howard}, much of communication studies that centers
+people of color, written by scholars of \emph{all} races, remain largely
+in Harding's vocation of autopsy---the promotion of Black death as
+synonymous with white life. In addition, much of these studies
+self-classify as ``Black studies.'' But I contend that to reduce Black
+studies to \emph{solely} the study of racism is antithetical to Black
+studies. Doing so ensures that we cannot leave white people or white
+theorizing behind; instead, it recenters whiteness as a motivator of
+\emph{all} aspects of Black life. Of course, few Black people live life
+obsessed with what white people think about us; those who do may find
+themselves in largely white, middle-class spaces---not representative of
+the experience of Black people worldwide. One can imagine that if Black
+studies were reduced to individual racisms faced by bourgeois Black
+academics, not the material conditions of capitalism that organize Black
+life, then a host of white scholars could situate themselves as experts
+on Black life---as blackness here would be reduced to other white
+people's racism. The Black Caucus predicted this, stating that in the
+1960s, their members sought to create the Black Rhetoric Institute to
+ease their own paranoia ``regarding the possibility of White scholars
+taking what we {[}Black scholars{]} had taught them, and using their
+access to the `means of production' to dominate the field of Black
+Rhetoric.''\footnote{Daniel, \emph{Changing the Players and the Games}, 12.
+} But, as the Black
+Caucus argued, to study Black ways of knowing did not mean they sought
+to solely react to racism, but to accept that racism constituted only
+one component of what it meant to be Black. Aside from the \emph{Howard}
+journal, do we, as a field, have such ways of thinking about blackness,
+beyond current understandings of whiteness and racism? I have found
+little.
+
+To be clear, I am not arguing that white communication studies scholars
+cannot, or should not, study race, racism, whiteness, or blackness (they
+must). I am also not arguing that only white scholars spread the
+vocation of autopsy in the field (they are not alone). Instead, my
+concern is with why limited reads of race, racism, and whiteness are
+deemed \emph{Black studies} in communication? And do such reductive
+reads of Black studies signify a communication studies that cherry-picks
+recent Black studies as representative of \emph{all} Black
+studies?\footnote{To be clear, this is not to say that \emph{all} communication studies
+  centers white racism. Scholars like Ronald Jackson, Herman Gray,
+  Reynaldo Anderson, Marnel Niles Goins, Sheena Howard, and others have
+  done a good job of digging into this history of Black studies from
+  multiple angles. And of course, some of the founders of the Black
+  Caucus, such as Asante, Dorthy Pennington, Jack Daniel, Lucia
+  Hawthorne, Melbourne Cummings, and others, provide us with a
+  foundation for Black studies. Yet there is a more recent trend of
+  reducing blackness to race that I am speaking to here.
+} Rather than just race
+studies, we need a Black studies read of race, one not obsessed with
+death, or apocalyptic ends, but with alternative epistemological
+projects that, if taken seriously, would require the reorganization of
+the world as it currently sits.
+
+The historicization of Black studies that I am trying to do, with
+admittedly not enough space, may reform what communication history
+means, particularly as we remember that Black studies scholars attended
+the NCR. What if, instead of taking limited reads of race, racism, and
+whiteness as a starting point for U.S. communication studies on people
+of color (the autopsy), we took Black studies as the starting point to
+rewrite histories of communication studies? To do so requires new
+histories, ones that consider communication studies in context. For
+example, the post--World War II, mid- to late-twentieth-century creation
+of a new academic discipline called ``communication studies'' (via the
+merger of rhetoric, communication, media studies, and more) is
+inseparable from the Black and decolonial struggle at the time,
+particularly given that some of the Black Caucus's peers weaponized
+their capitalistic positions and actions against
+socialism.\footnote{Importantly, this discussion of socialism-as-enemy in communication
+  studies lies largely with the social scientific, World War II
+  communications scholars, not as much with the NDP rhetoric scholars,
+  who, at the time, might be considered largely ``liberal.'' However,
+  what I am trying to speak to is how communications scholars would
+  slowly join with the NDP scholars to create a new field called
+  communication studies, toward the mid- to late-twentieth century. It
+  is this merger that, I argue, ensures that today's U.S. field was
+  built off Cold War concerns. For more on the earlier, social
+  scientific communications prior to the merger, see Christopher
+  Simpson, ``Universities, Empire, and the Production of Knowledge: An
+  Introduction,'' in \emph{Universities and Empire: Money and Politics
+  in the Social Sciences during the Cold War}, ed. Christopher Simpson
+  (New York: The New Press, 1999), xii.
+} To understand
+mid-twentieth-century Black studies, which often championed socialism in
+a fight against capitalism and racism, means to consider Black studies
+as a threat \emph{both} to the United States' capitalistic order
+\emph{and} to communication studies. To read the history of Black
+studies alongside communication history may point us to uncomfortable
+understandings: that at least some mid-twentieth-century communication
+studies developed in fear of Black and decolonial revolution. Thus, to
+accept Black studies as the new starting point may undo communication
+studies (and communication-as-autopsy) and make it anew. It would be
+truly, as Jefferson Pooley argues, a time for new histories of the
+field.\footnote{ Pooley, ``New History of Mass Communication Research.''}
+
+
+
+
+
+
+
+\section{Bibliography}\label{bibliography}
+
+\begin{hangparas}{.25in}{1} 
+
+
+
+Anderson, Reynaldo, Marnel Niles Goins, and Sheena Howard. ``Liberalism
+and Its Discontents: Black Rhetoric and the Cultural Transformation of
+Rhetorical Studies in the Twentieth Century.'' In \emph{A Century of
+Communication Studies: The Unfinished Conversation}, edited by Pat
+Gehrke and Keith William, 166--86. New York: Routledge, 2015.
+
+Asante, Molefi. ``Theoretical Research Issues in Black Communication.''
+1972. 1--13. \url{https://files.eric.ed.gov/fulltext/ED082250.pdf}.
+
+Bitzer, Lloyd. \emph{Final Report of the National Development Project on
+Rhetoric}. New York: Speech Association of America, 1970.
+
+Bitzer, Lloyd, and Edwin Black. \emph{The Prospect of Rhetoric: Report
+of the National Development Project}. Englewood Cliffs, NJ:
+Prentice-Hall, 1971.
+
+Corrigan, Lisa. \emph{Black Feelings: Race and Affect in the Long
+Sixties}. Oxford: University of Mississippi Press, 2020.
+
+``Critical Moments in NCA's History.'' \emph{Spectra: The Magazine of
+the National Communication Association} 50, nos. 1--2 (2014): 30--36,
+\url{https://www.natcom.org/sites/default/files/publications/NCA_Spectra_2014_March-May.pdf}.
+
+Daniel, Jack. \emph{Changing the Players and the Game: A Personal
+Account of the Speech Communication Association Black Caucus Origins.}
+Annandale, CA: Speech Communication Association, 1995.
+
+``Editor's Introduction.'' \emph{Howard Journal of Communications} 1,
+no. 1 (1988): 1--2.
+
+Getachew, Adom, and Karuna Mantena. ``Anticolonialism and the
+Decolonization of Political Theory.'' \emph{Critical Times} (2021): n.p.
+\url{https://doi.org/10.1215/26410478-9355193}.
+
+Harding, Vincent. ``The Vocation of the Black Scholar and the Struggles
+of the Black Community.'' In \emph{Education and Black Struggle: Notes
+from the Colonized World}, edited by Vincent Harding and Julius Nyerere,
+3--29. Cambridge, MA: Harvard Educational Review, 1974.
+
+Jackson, Ronald, and Sonja Givens. \emph{Black Pioneers in Communication
+Research}. Thousand Oaks, CA: Sage, 2016.
+
+Kelly, Casey Ryan. ``White Pain.'' \emph{Quarterly Journal of Speech}
+107, no. 2 (2021): 209--33.
+\url{https://doi.org/10.1080/00335630.2021.1903537}.
+
+Mack, Ashely Noel, and Bryan McCann. ``\,`Harvey Weinstein, Monster':
+Antiblackness and the Myth of the Monstrous Rapist.''
+\emph{Communication and Critical/Cultural Studies}, 18, no. 2 (2021):
+103--20. \url{https://doi.org/10.1080/14791420.2020.1854802}.
+
+Niles, Lyndrey. ``The Status of Speech Communication Programs at
+Predominately Black Four Year Colleges: 1971--1972.'' PhD diss., Temple
+University, 1973.
+
+---------. ``Report of Workshop A: Black Rhetoric.'' In
+\emph{Proceedings: Speech Association of America Summer Conference V
+Theme: Research and Action}, edited by James Roever, 3--7. New York:
+Speech Communication Association, 1969.
+
+Pooley, Jefferson. ``The New History of Mass Communication Research.''
+In \emph{The History of Media and Communication Research: Contested
+Memories}, edited by David W. Park and Jefferson Pooley, 43--69. New
+York: Peter Lang, 2008.
+
+Rodney, Walter. \emph{The Groundings with My Brothers}. London:
+Bogle-L'Ouverture Publications, 1996.
+
+Simonson, Peter. ``The Short History of Rhetorical Theory.''
+\emph{Philosophy \& Rhetoric} 53, no. 1 (2020): 75--88.
+\url{https://doi.org/10.5325/philrhet.53.1.0075}.
+
+Simpson, Christopher. ``Universities, Empire, and the Production of
+Knowledge: An Introduction.'' In \emph{Universities and Empire: Money
+and Politics in the Social Sciences during the Cold War}, edited by
+Christopher Simpson, xi--xxx. New York: The New Press, 1999.
+
+Small, Mario. ``Departmental Conditions and the Emergence of New
+Disciplines: Two Cases in the Legitimation of African-American
+Studies.'' \emph{Theory and Society} 28, no. 5 (1999): 659--707.
+\url{https://www.jstor.org/stable/3108589}.
+
+Wilderson, Frank. \emph{Red, White \& Black: Cinema and the Structure of
+U.S. Antagonisms}. Durham, NC: Duke University Press, 2010.
+
+
+
+\end{hangparas}
+
+
+\end{document}
