@@ -1,0 +1,574 @@
+% see the original template for more detail about bibliography, tables, etc: https://www.overleaf.com/latex/templates/handout-design-inspired-by-edward-tufte/dtsbhhkvghzz
+
+\documentclass{tufte-handout}
+
+%\geometry{showframe}% for debugging purposes -- displays the margins
+
+\usepackage{amsmath}
+
+\usepackage{hyperref}
+
+\usepackage{fancyhdr}
+
+\usepackage{hanging}
+
+\hypersetup{colorlinks=true,allcolors=[RGB]{97,15,11}}
+
+\fancyfoot[L]{\emph{History of Media Studies}, vol. 1, 2021}
+
+
+% Set up the images/graphics package
+\usepackage{graphicx}
+\setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
+\graphicspath{{graphics/}}
+
+\title[Can the History of Communication and Media Research?]{Can the History of Communication and Media Research Proceed without the Philosophy of Technology?} % longtitle shouldn't be necessary
+
+% The following package makes prettier tables.  We're all about the bling!
+\usepackage{booktabs}
+
+% The units package provides nice, non-stacked fractions and better spacing
+% for units.
+\usepackage{units}
+
+% The fancyvrb package lets us customize the formatting of verbatim
+% environments.  We use a slightly smaller font.
+\usepackage{fancyvrb}
+\fvset{fontsize=\normalsize}
+
+% Small sections of multiple columns
+\usepackage{multicol}
+
+% Provides paragraphs of dummy text
+\usepackage{lipsum}
+
+% These commands are used to pretty-print LaTeX commands
+\newcommand{\doccmd}[1]{\texttt{\textbackslash#1}}% command name -- adds backslash automatically
+\newcommand{\docopt}[1]{\ensuremath{\langle}\textrm{\textit{#1}}\ensuremath{\rangle}}% optional command argument
+\newcommand{\docarg}[1]{\textrm{\textit{#1}}}% (required) command argument
+\newenvironment{docspec}{\begin{quote}\noindent}{\end{quote}}% command specification environment
+\newcommand{\docenv}[1]{\textsf{#1}}% environment name
+\newcommand{\docpkg}[1]{\texttt{#1}}% package name
+\newcommand{\doccls}[1]{\texttt{#1}}% document class name
+\newcommand{\docclsopt}[1]{\texttt{#1}}% document class option name
+
+
+\begin{document}
+
+\begin{titlepage}
+
+\begin{fullwidth}
+\noindent\LARGE\emph{Launch essay
+} \hspace{85mm}\includegraphics[height=1cm]{logo3.png}\\
+\noindent\hrulefill\\
+\vspace*{1em}
+\noindent{\Huge{Can the History of Communication and\\\noindent Media Research Proceed without the\\\noindent Philosophy of Technology?\par}}
+
+\vspace*{1.5em}
+
+\noindent\LARGE{Filipa Subtil} \href{https://orcid.org/0000-0003-2556-2192}{\includegraphics[height=0.5cm]{orcid.png}}\par}\marginnote{\emph{Filipa Subtil, ``Can the History of Communication and Media Research Proceed without the Philosophy of Technology?,'' \emph{History of Media Studies} 1 (2021), \href{https://doi.org/10.32376/d895a0ea.dab6ca65}{https://doi.org/ 10.32376/d895a0ea.dab6ca65}.} \vspace*{0.75em}}
+\vspace*{0.5em}
+\noindent{{\large\emph{Instituto Politécnico de Lisboa}, \href{mailto:fsubtil@escs.ipl.pt}{fsubtil@escs.ipl.pt}\par}} \marginnote{\href{https://creativecommons.org/licenses/by-nc/4.0/}{\includegraphics[height=0.5cm]{by-nc.png}}}
+
+% \vspace*{0.75em} % second author
+
+% \noindent{\LARGE{<<author 2 name>>}\par}
+% \vspace*{0.5em}
+% \noindent{{\large\emph{<<author 2 affiliation>>}, \href{mailto:<<author 2 email>>}{<<author 2 email>>}\par}}
+
+% \vspace*{0.75em} % third author
+
+% \noindent{\LARGE{<<author 3 name>>}\par}
+% \vspace*{0.5em}
+% \noindent{{\large\emph{<<author 3 affiliation>>}, \href{mailto:<<author 3 email>>}{<<author 3 email>>}\par}}
+
+\end{fullwidth}
+
+\vspace*{1em}
+
+
+\newthought{Historians of communication} and media studies have never been very
+interested in technology, but surely there is thinking about technology
+in media studies, even if it is not often explicit. Consider the case of
+uses and gratifications research as developed by Herta Herzog and later
+elaborated by Elihu Katz, which tended to regard psychological and
+sociological variables as real and primary, and the media as a
+second-hand factor and manifestation of those variables. Does this
+approach not contain the assumption that media technologies are merely
+technical things used to accomplish certain ends? And consequently, that
+these things are value-neutral---that technological objects do not play
+a primary role in culture? Consider the case of Harold A. Innis: Does he
+deserve the pejorative ``technological determinist'' for emphasizing
+that the specific technological characteristics of a prevalent medium in
+a given society condition the social practices of communication,
+institutions, and systems of social organization and
+power?\footnote{Harold A. Innis, \emph{Empire and Communications} (Toronto: University
+  of Toronto Press, 1970); Harold A. Innis, \emph{The Bias of
+  Communication} (Toronto: University of Toronto Press, 1999).
+} Is it plausible to think
+that certain technologies might themselves have political properties?
+
+And how to evaluate the approach of the \emph{technische Medien} of
+Friedrich A. Kittler, as he writes in the preface to \emph{Gramophone,
+Film, Typewriter} that the ``media determine our situation'' and ``what
+remains of people is what media can store and
+communicate''?\footnote{Friedrich A. Kittler, \emph{Gramophone, Film, Typewriter} (Stanford,
+  CA: Stanford University Press, 1999), xxxix.
+} Should we take his
+thesis that our knowledge is critically dependent on the cultural
+techniques we invent? These questions have been hanging over the history
+of communication and media research for a long time. They have become
+even more pressing with the emergence 
+
+\enlargethispage{2\baselineskip}
+
+\vspace*{2em}
+
+\noindent{\emph{History of Media Studies}, vol. 1, 2021}
+
+
+
+
+ \end{titlepage}
+
+
+\noindent of computer networks,
+digitalization, and digital algorithmic calculation devices.
+
+This essay is based on the observation that, while many philosophers and
+theorists of technology are studying the media and importing ideas from
+media studies into the philosophy of
+technology,\footnote{Among others, see Günther Anders, ``The World as Phantom and as
+  Matrix,'' Dissent 3, no.1 (1956); Langdon Winner, ``Mythinformation,''
+  in \emph{The Whale and Reactor: A Search for Limits in an Age of High
+  Technology} (Chicago: University of Chicago Press, 1989); Albert
+  Borgmann, \emph{Holding On to Reality: The Nature of Information at
+  the Turn of the Millennium} (Chicago: University of Chicago Press,
+  1999); Pierre Musso, \emph{Télécommunications et Philosophie des
+  Réseaux} (Paris: PUF, 1997); Pierre Musso, \emph{Critique des Réseaux}
+  (Paris: PUF, 2003); and Don Ihde, \emph{Listening and Voice} (Albany:
+  State University of New York Press, 2007).
+} historians of media
+studies have not granted enough attention to the question of technology.
+A rare exception was a recent forum organized by Lana Rakow in
+\emph{Journalism \& Mass Communication
+Quarterly.}\footnote{Lana Rakow, ed., ``Philosophy of Technology: Who is in the Saddle?''
+  (Invited Forum), \emph{Journalism \& Mass Communication Quarterly} 96,
+  no. 2 (2019). The forum is composed of short texts authored by Lana
+  Rakow, Jeremy Swartz, Carolyn Marvin, Robert K. Logan, and Beth
+  Coleman.
+} The fact is that
+historians of media and communication research have not grappled with
+the ideological and philosophical assumptions around technology that are
+present in the work of the field's major historical figures. I contend
+that we must start a dialogue with the philosophy of technology, and
+with the social studies of science and technology, in order to analyze
+the discipline's unconscious and embedded presuppositions about the
+relationship between technology and media. Looking for other ways to
+question technology could pave the way for research that is historical
+and theoretically founded on the structural transformations of
+communication in the modern era.
+
+With this prospect in mind, I present notes that lead to a reflection
+about the history of communication and media studies, and future paths
+for research, which draws on the contributions that philosophers of
+technology have made to thinking about media technologies. In these
+notes, I focus on two crucial problems: (1) definitions of technology
+and (2) the modern relationship between myth/utopia and communication
+technologies.
+
+\hypertarget{defining-technology-derivative-agent-central-actor-trickster}{%
+\section{Defining Technology: Derivative Agent? Central Actor?
+Trickster?}\label{defining-technology-derivative-agent-central-actor-trickster}}
+
+
+The definition of technology most deeply rooted in modern life is that
+technologies are means to free human beings from their limitations and
+to positively transform human life. They are instruments, tools,
+artifacts, things to accomplish desired ends. Admittedly, technical
+objects can be used for good or for evil, but it is their use that may
+be improper, not the instrument, tool, or artifact itself. According to
+this perspective, technology is a value-neutral human product. There is
+no reason to question technology, but only its use, or at most, the
+context in which it is submersed. This notion has accompanied the modern
+world's bet on the expansion of technological capacity. This
+expansion---that is, an increase in human power---has been viewed as a
+necessary condition for humans to solve the most diverse problems and
+even to establish a materially abundant and harmonious society. It is
+part of the modern belief in Progress, a \newpage
+\noindent collective mentality that
+understands History as a record of the improvement of the conditions of
+human life.\footnote{Leo Marx, ``The Domination of Nature and the Redefinition of
+  Progress,'' in \emph{Progress: Fact or Illusion}, ed. Leo Marx and
+  Bruce Mazlish (Ann Arbor: University of Michigan Press, 1996).
+}
+
+The conception of technology as a means is implicit in many studies
+based on the analysis of the uses and appropriations of the media and,
+to some extent, their effects. In truth, it must be recognized that
+technology develops by interacting with social and economic processes
+and forces. It is also undeniable that different uses or appropriations
+of media and technologies exist. The same point can be made about the
+effects of technologies, which may be driven by users' utilization or
+social policies. Without a doubt, it is the sociological milieu of the
+audience which conditions the use of media, and human perception is an
+active process of organization and structuring. But analysis of use, as
+a method, is fundamentally blind to the cultural (as opposed to merely
+sociological) nature of human life. That is to say, humans have a basic
+cultural disposition to filter experiences in symbolic forms, as
+Clifford Geertz\footnote{Clifford Geertz,~\emph{The Interpretation of Cultures}~(New
+  York:~Basic Books, 1973).
+} and the tradition
+of cultural studies has clarified so well. To this shortcoming we add
+another: If this approach to analysis based on uses and effects has
+tended to be reductionist because it does not recognize the central
+place that culture occupies in the life of symbolic beings, it has also
+tended to be reductionist because it has not understood technology
+(material culture) as an actor itself, a means and also an end.
+
+In philosophical thinking about technology, Langdon Winner has been a
+prominent voice in rejecting the exaggerated application of the social
+determinist perspective.\footnote{Langdon Winner, \emph{Autonomous Technology: Technics-out-of Control
+  as a Theme in Political Thought} (Cambridge, MA: MIT Press 1978);
+  Langdon Winner, \emph{The Whale and the Reactor: A Search for Limits
+  in an Age of High Technology} (Chicago: University of Chicago Press,
+  1989).
+} Instead
+of reducing technical artifacts to the interaction of social forces, he
+has urged that attention be paid to the characteristics of technical
+objects and to the significance of those characteristics. He sees his
+thinking in connection with the philosophical precept of Edmund Husserl,
+of returning to things, and combines that principle with influences from
+Ludwig Wittgenstein, Karl Marx, Lewis Mumford, and Jacques Ellul. In
+1986, Winner argued that artifacts can contain political properties and
+that technologies enhance ``forms of life.'' He provided various
+examples to show that certain technologies were prepared beforehand to
+favor certain social interests and patterns of
+power.\footnote{See Langdon Winner, ''Do Artefacts Have Politics?'' in \emph{The Whale
+  and Reactor}: \emph{A Search for Limits in an Age of High Technology}
+  (Chicago: University of Chicago Press, 1989).
+} More than three decades
+later, this idea is very evident when we realize that, for example,
+fossil fuels and green energies are articulated with very different
+values and interests---or even when we realize the biases of the
+algorithms that guide us in many decisions through an infrastructure of
+calculations. It is also more evident today that societies can choose
+technological structures that can, in turn, variously influence the ways
+of working, traveling, consuming, communicating, and deciding.
+
+Another thinker about technology, Carl Mitcham, distinguishes two ways,
+two ideal types, of thinking about technology and its relation to human
+life in general. There is, first, the engineering approach, which sees
+technology as the core of what it is to be human, and therefore sees no
+problem with the expansion of technology into all areas of life. The
+second approach is the humanities-rooted philosophy of technology, which
+asserts there are other legitimate forms of knowing, acting, and being
+in the world, other than the technological
+sort.\footnote{Carl Mitcham,~\emph{Thinking through Technology: The Path between
+  Engineering and Philosophy} (Chicago: University of Chicago Press,
+  1994).
+} Mitcham, who is versed in
+both engineering thought and thinkers such as Martin Heidegger, José
+Ortega y Gasset, and Ivan Illich, defends a complex notion of technology
+and maintains that it has four dimensions: object, knowledge, activity,
+and volition. Thus, technology is a mere thing, but it is also a thing
+to think with, a thing to act with, and a thing that influences the
+shape of culture. For both Winner and Mitcham, a value-neutral vision of
+technology prevents its inscription in culture, its critical analysis,
+and leads to the neglect of the intentions---the social, economic and
+political interests---of those who design, develop, finance, and control
+it.
+
+We find these definitions of technology in the work of media theorist
+James W. Carey, who writes that technology is more than a ``group of
+purposeful instruments''; they are ``things that shape the self and the
+mind,'' that ``serve as instruments of
+action.''\footnote{James W. Carey, ``Afterword: The Culture in Question,'' in \emph{James
+  W. Carey. A Critical Reader}, ed. Eve Stryker Munson and Catherine A.
+  Warren (Minneapolis: University of Minnesota Press, 1997), 316.
+} He emphasizes that in
+all industrial societies, and particularly in the US, technology is
+``also the central character and actor in our {[}North Americans'{]}
+social drama, and an end as well as a
+means.''\footnote{Carey, ``Afterword,'' 316.
+} Moreover, Carey goes as
+far as to say that technology ``plays the role of the trickster in
+American culture,''\footnote{Carey, ``Afterword,'' 316.
+} given that
+machines are not only believed to ``make history,'' but they also ``play
+\ldots{} the role of a superlegislator with a dominating voice in the
+conversation of the culture.''\footnote{Carey, ``Afterword,'' 317.
+}
+Could Carey's communication-as-culture approach be inserted into the
+tradition that Mitcham calls the philosophy of technology in the
+humanities? It should be noted that Carey, whose relationship with the
+work of Innis was not a marriage of convenience, defended in his famed
+1983 essay on the telegraph the claim that a thorough treatment of the
+consequences of that instrument would demonstrate that it altered the
+spatial and temporal boundaries of human interaction and brought about
+new forms of language, ordinary knowledge, structures of social
+relations, and economic and political
+power.\footnote{James W. Carey, ``Technology and Ideology: The Case of the
+  Telegraph,'' in \emph{Communication as Culture. Essays on Media and
+  Society}, Rev. Ed. (New York: Routledge, 2009). See also, Filipa
+  Subtil, ``Du Télégraphe à Internet: Enjeux Politiques Liés au
+  Technologies de l'Information,'' in \emph{La Contribution en Ligne.
+  Pratiques Participatives à l'Ére du Capitalisme Informationnel}, eds.
+  Serge Proulx, José L. Garcia, and Lorna Heaton (Montreal: Les Presses
+  d'Université du Québec, 2014).
+} In turn, we can ask
+whether and to what extent the engineering perspective of technology, as
+defined by Mitcham, may be unconsciously incorporated into the thinking
+of communication and media research that, contrary to Carey, does not
+consider technology as a cultural and political force and thus
+undermines the neutral vision of technology. In order to understand the
+media, is the philosophy of technology necessary?
+
+\hypertarget{the-question-of-the-demythologization-of-the-technological-communicational-utopia}{%
+\section{The Question of the Demythologization of the
+Technological-Communicational
+Utopia}\label{the-question-of-the-demythologization-of-the-technological-communicational-utopia}}
+
+The relationship between communication technologies, myth, and utopia is
+another major topic in the question of technology. Social reality is not
+only composed of what is in force, but also by hopes, ideas, myths, and
+utopias---and technology in the modern world has appeared as the
+necessary resource for the achievement of the continued improvement of
+human life and the social world. In \emph{The Prophets of Paris,} the
+historian Frank E. Manuel shows us how Turgot, Condorcet, Saint-Simon,
+Fourier, Comte, and their followers were heralds of Progress as an
+idealization of perfectible societies and had solutions for the ills and
+problems of a wretched mankind.\footnote{Frank E. Manuel, \emph{The Prophets of Paris} (New York: Harper
+  Torchbooks, 1962). See also Frank E. Manuel and Fritzie P. Manuel,
+  \emph{Utopian Thought in the Western World} (Cambridge, MA: Harvard
+  University Press, 1979).
+}
+Saint-Simon, one of Marx's utopian socialists and one of his
+inspirations, was inclined toward a Promethean and technocratic version
+of Progress. In France, the philosopher Pierre Musso has distinguished
+himself for arguing that the imaginary of the Internet and cyberculture
+go back to the great Saint-Simonian utopian project of universal
+interconnection made possible by
+technologies.\footnote{Pierre Musso, \emph{Télécommunications et Philosophie des Réseaux}
+  (Paris: PUF, 1997); Pierre Musso, \emph{Critique des Réseaux} (Paris:
+  PUF, 2003); and Pierre Musso, dir. \emph{Réseaux et Société} (Paris:
+  PUF, 2003). About Musso, see José L. Garcia, ed., \emph{Pierre Musso
+  and the Network Society: From Saint-Simonianism to the Internet}
+  (Cham: Springer, 2016).
+} In the US, Leo Marx
+pointed to the interactions between culture, utopia, and technology
+after the waning of the country's pastoral self-image through the
+concept of ``technological sublime.'' Carey followed this lead and
+appropriated this concept in the two texts he wrote with John J.
+Quirk\footnote{James W. Carey and John J. Quirk, ``The Mythos of Electronic
+  Revolution,'' in \emph{Communication as Culture. Essays on Media and
+  Society}, Rev. Ed. (New York: Routledge, 2009); James W. Carey and
+  John J. Quirk, ``The History of the Future,'' in \emph{Communication
+  as Culture. Essays on Media and Society}. Rev. Ed. (New York:
+  Routledge, 2009).
+} for ``a project of
+de-mystification,'' as Jefferson
+Pooley\footnote{Jefferson D. Pooley, \emph{James W. Carey and Communication Research:
+  Reputation at the University's Margins} (New York: Peter Lang, 2016),
+  65.
+} clarified, of the sublime
+electronic rhetoric as an ideology of the future. To demythologize the
+computer revolution was also Winner's purpose in
+``Mythinformation.''\footnote{Langdon Winner, ``Mythinformation,'' in \emph{The Whale and Reactor}:
+  \emph{A Search for Limits in an Age of High Technology} (Chicago:
+  University of Chicago Press, 1989).
+} More
+recently, Vincent Mosco proposed the expression ``digital sublime'' in
+order to dismantle the myths and power of
+cyberspace.\footnote{Vincent Mosco, \emph{The} \emph{Digital Sublime}: \emph{Myth, Power,
+  and Cyberspace} (Cambridge, MA: MIT Press, 2004).
+}
+
+However, we actually find the most robust tradition of demystifying the
+technological-communicational utopia in a vast gallery of French media
+theorists. Lucien Sfez,\footnote{Lucien Sfez, \emph{Technique et Idéologie. Un Enjeu de Pouvoir}
+  (Paris: \href{https://fr.wikipedia.org/wiki/Le_Seuil}{Le
+  Seuil},~\href{https://fr.wikipedia.org/wiki/2002}{2002}).
+} who was
+Pierre Musso's doctoral dissertation adviser, took decisive steps on a
+path that includes Armand
+Mattelart,\footnote{Armand Mattelart, \emph{Histoire de l'Utopie Planétaire: De la Cité
+  Prophétique à la Société Globale} (Paris: PUF, 1999).
+} Philipe
+Breton,\textsuperscript{23} Patrick
+Flichy,\textsuperscript{24} and Dominique
+Cardon.\textsuperscript{25} These theorists steer
+away from the cybernetic tradition of Norbert Wiener regarding the
+supposed similarity between nervous systems and electronic machines;
+from the ``network society'' of Manuel Castells, where the logic of a
+network is the new social morphology of
+societies;\textsuperscript{26} and from the image of
+the Internet as a ``collective intelligence,'' ``thinking network,'' or
+``planetary brain'' of Pierre
+Lévy.\textsuperscript{27} Among the cited French
+theorists, we find one of the most systematic attempts to delegitimize
+the technological utopias of communication. They accentuate and at the
+same time call into question the fascination that these utopias have
+been able to mobilize. They\marginnote{\textsuperscript{23} Philippe Breton,~\emph{L'Utopie de la Communication. L'Émergence de
+  l'Homme sans Intérieur} (Paris: La Découverte, 1992).
+} have\marginnote{\textsuperscript{24} Patrick Flichy, \emph{Une Histoire de la Communication Moderne. Espace
+  Public et Vie Privée} (Paris: La Découverte, 1991).
+} shown\marginnote{\textsuperscript{25} Dominique Cardon, \emph{À Quoi Rêvent les Algorithmes. Nos Vies à
+  l'Heure des Big Data} (Paris: Seuil, 2015).
+} us\marginnote{\textsuperscript{26} Manuel Castells, \emph{The Information Age: Economy, Society, and
+  Culture} (Oxford: Blackwell, 1996, 1997, 1998).
+} how\marginnote{\textsuperscript{27} Pierre Levy, \emph{L'Intelligence Collective. Pour une Anthropologie
+  du Cyberespace} (Paris: La Découverte,~1994).} many new technologies of
+the past have fallen very short of the unreasonable expectations that
+were placed on them, how they failed in their promises of achieving a
+promising future for all of humanity, bringing instead new plagues to
+our societies: mass manipulation, symbolic violence, incentive to
+consumerism, addictive behaviors, simulacra, and loss of meaning.
+
+In conclusion: Refusing the naive paths of denying technology or
+enthusiastically embracing it, is it not imperative to study how media
+technologies and modes of communication and our social aspirations have
+been articulated? In order to answer this question, this text proposes
+that the field (1) should be more attendant to the explicit (and often
+implicit) views of technology contained in past media scholarship; and
+(2) should broaden our understanding of what counts as ``history of
+media studies'' to include the corpus of work by philosophers of
+technology.~
+
+
+
+
+
+
+
+\section{Bibliography}\label{bibliography}
+
+\begin{hangparas}{.25in}{1} 
+
+
+
+Anders, Günther. ``The World as Phantom and as Matrix.'' \emph{Dissent}
+3, no.1 (1956), 14--24.
+
+Borgmann, Albert. \emph{Holding On to Reality: The Nature of Information
+at the Turn of the Millennium}. Chicago: University of Chicago Press,
+1999.
+
+Breton, Philippe.~\emph{L'Utopie de la Communication. L'Émergence de
+l'Homme sans Intérieur}. Paris: La Découverte, 1992.
+
+Cardon, Dominique. \emph{À Quoi Rêvent les Algorithmes. Nos Vies à
+l'Heure des Big Data.} Paris: Seuil, 2015.
+
+Carey, James W. ``Afterword: The Culture in Question.'' In \emph{James
+W. Carey. A Critical Reader}. Edited by Eve Stryker Munson and Catherine
+A. Warren, 308--339. Minneapolis: University of Minnesota Press, 1997.
+
+---------. ``Technology and Ideology: the Case of the Telegraph.'' In
+\emph{Communication as Culture. Essays on Media and Society}. Revised
+Edition, 155--77. New York: Routledge, 2009.
+
+Carey, James W., and John J. Quirk. ``The Mythos of Electronic
+Revolution.'' In \emph{Communication as Culture. Essays on Media and
+Society}. Revised Edition, 87--108. New York: Routledge, 2009.
+
+---------. ``The History of the Future.'' In \emph{Communication as
+Culture. Essays on Media and Society}. Revised Edition, 133--54. New
+York: Routledge, 2009.
+
+Castells, Manuel\emph{. The Information Age: Economy, Society, and
+Culture}. Oxford: Blackwell, 1996, 1997, 1998.
+
+Flichy, Patrick. \emph{Une Histoire de la Communication Moderne. Espace
+Public et Vie Privée}. Paris: La Découverte, 1991.
+
+Garcia, José L., ed. \emph{Pierre Musso and the Network Society: From
+Saint-Simonianism to the Internet}. Cham: Springer, 2016.
+
+Geertz,~Clifford. \emph{The Interpretation of Cultures}. New York:~Basic
+Books, 1973.
+
+Innis, Harold A. \emph{Empire and Communications}. Toronto: University
+of Toronto Press, 1970.
+
+---------. \emph{The Bias of Communication}. Toronto: University of
+Toronto Press, 1999.
+
+Kittler, Friedrich A. \emph{Gramophone, Film, Typewriter.} Stanford, CA:
+Stanford University Press, 1999.
+
+Levy, Pierre. \emph{L'Intelligence Collective. Pour une Anthropologie du
+Cyberespace.} Paris: La Découverte,~1994.
+
+Pooley, Jefferson D. \emph{James W. Carey and Communication Research:
+Reputation at the University's Margins}. New York: Peter Lang, 2016.
+
+Manuel, Frank E. \emph{The Prophets of Paris.} New York: Harper
+Torchbooks, 1962.
+
+Manuel, Frank E., and Fritzie P. Manuel. \emph{Utopian Thought in the
+Western World.} Cambridge, MA: Harvard University Press, 1979.
+
+Marx, Leo. ``The Domination of Nature and the Redefinition of
+Progress.'' In Progress: Fact or Illusion, edited by Leo Marx and Bruce
+Mazlish, 201--18. Ann Arbor: University of Michigan Press, 1996.
+
+---------. \emph{The Machine in the Garden. Technology and the Pastoral
+Ideal in America}. Oxford: Oxford University Press, 2000.
+
+Mattelart, Armand. \emph{Histoire de l'Utopie Planétaire: De la Cité
+Prophétique à la Société Globale}. Paris: PUF, 1999.
+
+Mitcham, Carl.~\emph{Thinking through Technology: The Path between
+Engineering and Philosophy}. Chicago: University of Chicago Press, 1994.
+
+Mosco, Vincent. \emph{The} \emph{Digital Sublime}: \emph{Myth, Power,
+and Cyberspace}. Cambridge, MA: MIT Press, 2004.
+
+Musso, Pierre. \emph{Télécommunications et Philosophie des Réseaux}.
+Paris: PUF, 1997.
+
+---------. \emph{Critique des Réseaux}. Paris: PUF, 2003.
+
+---------, dir. \emph{Réseaux et Société}. Paris: PUF, 2003.
+
+Rakow, Lana, ed. ``Philosophy of Technology: Who is in the Saddle?''
+(Invited Forum). \emph{Journalism \& Mass Communication Quarterly} 96,
+no. 2 (2019), 351--66.
+\url{https://doi.org/10.1177\%2F1077699019841380}.
+
+Sfez, Lucien. \emph{Technique et Idéologie. Un Enjeu de Pouvoir}. Paris:
+Le Seuil,~2002.
+
+Subtil, Filipa. ``Du Télégraphe à Internet: Enjeux Politiques liés au
+Technologies de l'Information.'' In \emph{La Contribution en Ligne.
+Pratiques Participatives à l'Ére du Capitalisme Informationnel}, edited
+by Serge Proulx, José L. Garcia, and Lorna Heaton, 115-125. Montreal:
+Les Presses d'Université du Québec, 2014.
+
+Winner, Langdon. \emph{The Whale and the Reactor: A Search for Limits in
+an Age of High Technology}. Chicago: University of Chicago Press, 1989.
+
+---------. \emph{Autonomous Technology: Technics-out-of Control as a
+Theme in Political Thought}. Cambridge: MIT Press 1978.
+
+
+
+
+
+
+
+\end{hangparas}
+
+\vspace*{1.5em}
+
+\textbf{Acknowledgements:} The author would like to thank the editors
+for their attentive reading, comments, and suggestions.
+
+\vspace*{0.75em}
+
+\noindent\textbf{Funding:} This work is financed by Portuguese national funds
+through FCT---Foundation for Science and Technology, through the scope
+of the project Refª UIDB/05021/2020.
+
+\end{document}
