@@ -8,7 +8,7 @@
 - [ ] move the title, and add the author (placeholder, if and until the author creates a PubPub account)
 - [ ] Check the headers, as Header 2's
 - [ ] open up the Word document, check for figures and headers
-- [ ] [activate links in footnotes and references]
+- [ ] activate links in footnotes and references; check for missing DOIs and replace any 'Ibids'
 - [ ] add to collection — at least the current Volume - Year, maybe also a Tag collection if it is a Special Section
 - [ ] in pub settings, add custom link: last name first author, first two substantive word, as in loblich-collective-memory
 - [ ] [add in custom publication date if all being published at once]
