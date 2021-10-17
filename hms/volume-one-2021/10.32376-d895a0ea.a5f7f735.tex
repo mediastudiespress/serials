@@ -1,0 +1,546 @@
+% see the original template for more detail about bibliography, tables, etc: https://www.overleaf.com/latex/templates/handout-design-inspired-by-edward-tufte/dtsbhhkvghzz
+
+\documentclass{tufte-handout}
+
+%\geometry{showframe}% for debugging purposes -- displays the margins
+
+\usepackage{amsmath}
+
+\usepackage{hyperref}
+
+\usepackage{fancyhdr}
+
+\usepackage{hanging}
+
+\hypersetup{colorlinks=true,allcolors=[RGB]{97,15,11}}
+
+\fancyfoot[L]{\emph{History of Media Studies}, vol. 1, 2021}
+
+
+% Set up the images/graphics package
+\usepackage{graphicx}
+\setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
+\graphicspath{{graphics/}}
+
+\title[Communication Research in Latin America]{Communication Research in Latin America: Will the "Nocturnal Map" Survive or Fade Away?} % longtitle shouldn't be necessary
+
+% The following package makes prettier tables.  We're all about the bling!
+\usepackage{booktabs}
+
+% The units package provides nice, non-stacked fractions and better spacing
+% for units.
+\usepackage{units}
+
+% The fancyvrb package lets us customize the formatting of verbatim
+% environments.  We use a slightly smaller font.
+\usepackage{fancyvrb}
+\fvset{fontsize=\normalsize}
+
+% Small sections of multiple columns
+\usepackage{multicol}
+
+% Provides paragraphs of dummy text
+\usepackage{lipsum}
+
+% These commands are used to pretty-print LaTeX commands
+\newcommand{\doccmd}[1]{\texttt{\textbackslash#1}}% command name -- adds backslash automatically
+\newcommand{\docopt}[1]{\ensuremath{\langle}\textrm{\textit{#1}}\ensuremath{\rangle}}% optional command argument
+\newcommand{\docarg}[1]{\textrm{\textit{#1}}}% (required) command argument
+\newenvironment{docspec}{\begin{quote}\noindent}{\end{quote}}% command specification environment
+\newcommand{\docenv}[1]{\textsf{#1}}% environment name
+\newcommand{\docpkg}[1]{\texttt{#1}}% package name
+\newcommand{\doccls}[1]{\texttt{#1}}% document class name
+\newcommand{\docclsopt}[1]{\texttt{#1}}% document class option name
+
+
+\begin{document}
+
+\begin{titlepage}
+
+\begin{fullwidth}
+\noindent\LARGE\emph{Launch essay
+} \hspace{85mm}\includegraphics[height=1cm]{logo3.png}\\
+\noindent\hrulefill\\
+\vspace*{1em}
+\noindent{\Huge{Communication Research in Latin America: Will the "Nocturnal Map" Survive or Fade Away?\par}}
+
+\vspace*{1.5em}
+
+\noindent\LARGE{Raúl Fuentes Navarro}\par}\marginnote{\emph{Raúl Fuentes Navarro, ``Communication Research in Latin America: Will the "Nocturnal Map" Survive or Fade Away?'' \emph{History of Media Studies} 1 (2021), \href{https://doi.org/10.32376/d895a0ea.a5f7f735}{https://doi.org/ 10.32376/d895a0ea.a5f7f735}.} \vspace*{0.75em}}
+\vspace*{0.5em}
+\noindent{{\large\emph{Universidad de Guadalajara}, \href{mailto:raul@iteso.mx}{raul@iteso.mx}\par}} \marginnote{\href{https://creativecommons.org/licenses/by-nc/4.0/}{\includegraphics[height=0.5cm]{by-nc.png}}}
+
+% \vspace*{0.75em} % second author
+
+% \noindent{\LARGE{<<author 2 name>>}\par}
+% \vspace*{0.5em}
+% \noindent{{\large\emph{<<author 2 affiliation>>}, \href{mailto:<<author 2 email>>}{<<author 2 email>>}\par}}
+
+% \vspace*{0.75em} % third author
+
+% \noindent{\LARGE{<<author 3 name>>}\par}
+% \vspace*{0.5em}
+% \noindent{{\large\emph{<<author 3 affiliation>>}, \href{mailto:<<author 3 email>>}{<<author 3 email>>}\par}}
+
+\end{fullwidth}
+
+\vspace*{1em}
+
+
+\newthought{On June 12,} 2021, at the age of 83, Jesús Martín-Barbero passed away,
+defeated by COVID-19 and a complex variety of diseases and pains. For
+decades, his health had not been at its best: among other infirmities,
+he had endured chronic cardiac and muscular problems. But the recent
+death of his wife, Elvira, undoubtedly caused the worst of his
+suffering, for with her he lost his lifetime emotional and practical
+support. May they both rest in peace.
+
+Although I do not intend this text as an obituary note, some questions
+concerning Martín-Barbero's legacy to the field of communication studies
+cannot be ignored or postponed. In this context, this article
+principally aims to reiterate some of the issues and enlightenments that
+have emerged from long-term readings and conversations with him, and to
+project them beyond the Latin American academic
+field.\footnote{Raúl Fuentes-Navarro, \emph{Un campo cargado de futuro: El estudio de
+  la comunicación en América Latina} (Mexico City: FELAFACS, 1992); Raúl
+  Fuentes-Navarro, ``Institutionalization and Internationalization of
+  the Field of Communication Studies in Mexico and Latin America,'' in
+  \emph{The International History of Communication Study}, ed. Peter
+  Simonson and David W. Park (New York: Routledge, 2016).
+}
+
+Among Martín-Barbero's theoretical and epistemological
+contributions,\footnote{Carlos A. Scolari, ``From (New) Media to (Hyper)Mediations: Recovering
+  Jesús Martín-Barbero's Mediation Theory in the Age of Digital
+  Communication and Cultural Convergence,'' \emph{Information,
+  Communication \& Society} 18, no. 9 (2015); Maria Immacolata Vassallo}
+his claims for the
+recognition of communication as a strategic factor in every
+sociocultural dimension were explicitly aimed at political and ethical
+debates, formulated in terms of a historical understanding of
+interdeterminant processes.\textsuperscript{3}
+Following Paulo Freire's example (but Paul Ricœur's as well),
+Martín-Barbero developed some of his work's core concepts in a
+metaphorical mode. In this sense, the ``nocturnal map to explore the new
+field,''\textsuperscript{4} drawn in the final pages
+of his canonic book \emph{De los medios a las mediaciones} (\emph{From
+the Media to Mediations}), condenses the sense of the work done and the
+effort required, of the ``history re-known, and the future
+sought,''\textsuperscript{5} as a process of culture
+lived in common, mediated by the reading.
+
+\enlargethispage{3\baselineskip}
+
+\vspace*{2em}
+
+\noindent{\emph{History of Media Studies}, vol. 1, 2021}
+
+
+
+
+ \end{titlepage}
+
+
+
+
+
+The\marginnote{de Lopes, ``The Barberian Theory of Communication,'' \emph{MATRIZes}
+  12, no. 1 (2018).
+}  book\marginnote{\textsuperscript{3} Jesús Martín-Barbero, ``A Latin American Perspective on
+  Communication/Cultural Mediation,'' \emph{Global Media and
+  Communication} 2, no. 3 (2006).
+} was\marginnote{\textsuperscript{4} Martín-Barbero took the expression ``nocturnal map'' from Antoine de
+  Saint-Exupéry, \emph{Piloto de guerra} (Madrid: Ediciones CS, 1969).
+} written\marginnote{\textsuperscript{5} Jesús Martín-Barbero, \emph{De los medios a las mediaciones:
+  Comunicación, cultura y hegemonía} (Mexico City: Gustavo Gili, 1987).
+  All translations from the Spanish of this edition are the author's.
+}\setcounter{footnote}{5} ``accepting that since times are not for
+synthesis,'' there are ``many areas of everyday reality that are still
+to be explored, zones into whose exploration we cannot advance except by
+groping or only with a nocturnal map.'' Such a map would serve to
+investigate ``no other things but domination, production and work, but
+seen from the other side: that of the gaps, consumption and pleasure. A
+map not for escape, but for the recognition of the situation from
+mediations and subjects.''\footnote{Martín-Barbero, \emph{De los medios a las mediaciones}, 229.
+} The
+metaphor meant so much to Martín-Barbero that he later adopted the
+nickname ``mestizo cartographer.''\footnote{Jesús Martín-Barbero, ``Aventuras de un cartógrafo mestizo en el campo
+  de la comunicación,'' \emph{Panorama económico} 7, no. 7 (1999), 12.
+}
+
+Jesús Martín-Barbero was a Colombian---or better, a Latin
+American---philosopher, born in Spain and educated in Belgium and
+France, who ``discovered'' communication practices in Colombia and
+decided to convert himself into a scholar in this field. He took
+semiology as his first approach, but soon he began to think of
+communication trans-disciplinarily. When \emph{De los medios a las
+mediaciones} first appeared in 1987, Martín-Barbero was already a
+well-known and respected educator and researcher of communication and
+culture throughout the Spanish-language world. The book heightened his
+recognition, making him the leading scholar of the field in
+Ibero-America (i.e., Latin America plus Spain and Portugal). The work's
+translation into English (1993), Portuguese (1997), and French (2002)
+broadened his international
+renown.\footnote{Jesús Martín-Barbero, \emph{Communication, Culture and Hegemony: From
+  the Media to Mediations}, trans. Elizabeth Fox and Robert A. White
+  (London: Sage, 1993); \emph{Dos meios às mediações: Comunicação,
+  cultura e hegemonia} (Rio de Janeiro: UFRJ, 1997); \emph{Des médias
+  aux médiations: Communication, culture et hégémonie} (Paris: CNRS,
+  2002).
+}
+
+In an early review of the book,\footnote{Raúl Fuentes-Navarro, ``Pensar la comunicación desde la cultura,''
+  \emph{Signo y pensamiento} 8, no. 14 (1989).
+} I
+brought out two reading keys explicitly stated by the author in its
+first pages. One was his call to ``lose the object in order to gain the
+process''---departing from mediations and subjects, not from mass
+culture or the media, and taking historical dynamics as the axis for the
+study of cultural processes that ``articulate communicative practices
+with social movements.''\footnote{Martín-Barbero, \emph{Communication, Culture and Hegemony}, 187.
+} The
+other key lay in the articulating model he proposed, and its application
+to the reading process itself: the book is presented as an instrumental
+element of mediation between subjects, practices, and projects of
+transformation, which simultaneously turns out to be a historical
+recount and, as such, a meta research-oriented
+device.\footnote{Raúl Fuentes-Navarro, ``Investigación y meta-investigación sobre
+  comunicación en América Latina,'' \emph{MATRIZes} 13, no. 1 (2019).
+} \emph{De los medios a las
+mediaciones} thus conveys, under its complex discursive structure,
+original contributions to the historiography of media and communication
+practices and cultures, as well as to the history of the academic field.
+Yet even more, for Latin America, it has played the role of an
+influential, reflexive work, like others from the decade, one that would
+define the area as distinct among Western cultural and linguistic
+regions.\footnote{Among the other works were, Armand Mattelart, \emph{L'invention de la
+  communication} (Paris: La Découverte, 1994); and John Durham Peters,
+  \emph{Speaking into the Air: A History of the Idea of Communication}
+  (Chicago: University of Chicago Press, 1999).
+}
+
+\emph{From the Media to Mediations} (or, \emph{Communication, Culture
+and Hegemony}, the title the editors of the English translation chose,
+unfortunately inverting the original title and subtitle) consists of
+three parts. The first, ``The People and the Masses in Culture: The
+Highlights of the Debate,'' unfolds an erudite recovery of Antonio
+Gramsci, Raymond Williams, Pierre Bourdieu, and Michel de Certeau, among
+other authors, to give an account of the current state of the debate on
+culture, while also laying the foundations to advance Martín-Barbero's
+own proposals for \emph{hegemony} as the key concept for thinking the
+sociocultural mediations of communication.
+
+The second part of the book, titled ``The Historical Matrices of Mass
+Mediation,'' incorporates work Martín-Barbero had previously
+disseminated in widely cited articles, papers, and lectures---though his
+proposals make more sense as a whole in the book, where they clarify and
+complement each other. Finally, the third part focuses on the problems
+and research proposals that, without the previous one hundred and fifty
+pages, would solidly sustain their relevance, but that acquire much
+greater weight with them. Titled ``Modernization and Mass Mediation in
+Latin America,'' this section aims to integrate reflection on ``Latin
+America as a space of debate and
+combat.''\footnote{Martín-Barbero, \emph{De los medios a las mediaciones}, 163.
+} It divides into two
+chapters, first, ``The Processes: From Nationalisms to Transnationals,''
+and second, ``The Methods: From Media to Mediations.'' Here unfolds the
+core of Martín-Barbero's legacy to the field: the methodological shift
+``from media to mediations'' and the continuing process of ``mapping
+out'' those mediations as heuristic tools and empirical references in a
+dynamic transdisciplinary model of ``communication within culture and
+culture within politics.''\footnote{Martín-Barbero, \emph{De los medios a las mediaciones,} 228.
+}
+
+\begin{quote}
+The significance of the theoretical and methodological shift indicated
+in this chapter's title is already broadly illustrated in the
+description of the historical transformations outlined above. . . . Over
+the last few years, a Latin American movement, dissolving
+pseudo-theoretical issues and cutting through ideological inertias, has
+opened up a new way of thinking about the constitution of mass society,
+namely, from the perspective of transformations in subaltern cultures.
+Communication in Latin America has been profoundly affected by external
+transnationalization but also by the emergence of new social actors and
+new cultural identities. Thus, communication has become a strategic
+arena for the analysis of the obstacles and contradictions that move
+these societies, now at the crossroads between accelerated
+underdevelopment and compulsive modernization. Because communication is
+the meeting point of so many new conflicting and integrating forces, the
+centre of the debate has shifted from media to
+mediations.\footnote{Martín-Barbero, \emph{Communication, Culture and Hegemony}, 187.
+}
+\end{quote}
+
+Ten, and then twenty and thirty years after the book's publication,
+several scholarly communities celebrated the continuing interest in and
+influence of \emph{De los medios a las mediaciones} with special issues
+of their books and journals.\footnote{María Cristina Laverde and Rossana Reguillo, eds., \emph{Mapas
+  nocturnos: Diálogos con la obra de Jesús Martín-Barbero} (Santafé de
+  Bogotá: Universidad Cen-} From
+diverse angles and countries, a good number of scholars, including
+myself,\textsuperscript{17} provided empirical
+information and critical interpretations about the multiple and
+contradictory\marginnote{tral/Siglo del Hombre editores, 1998); Miquel
+  de Moragas, José Luis Terrón, and Omar Rincón, eds., \emph{``De los
+  medios a las mediaciones'' de Jesús Martín-Barbero: Treinta años
+  después} (Bellaterra: Institut de la Comunicació, Universitat Autònoma
+  de Barcelona, 2017); ``Jesús Martín-Barbero: Treinta años de \emph{De
+  los medios a las mediaciones},'' special issue, \emph{MATRIZes} 12,
+  no. 1 (2018); ``Más allá de las mediaciones y la hibridación,''
+  special issue, \emph{Versión: Estudios de comunicación y política,}
+  no. 3 (2019).
+} processes\marginnote{\texsuperscript{17} Raúl Fuentes-Navarro, ``Un texto cargado de futuro: Apropiaciones y
+  proyecciones de \emph{De los medios a las mediaciones} en América
+  Latina,'' in Laverde and Reguillo, \emph{Mapas nocturnos}; Raúl
+  Fuentes-Navarro, ``Apropiaciones y proyecciones de \emph{De los medios
+  a las mediaciones} en el campo académico de la comunicación: Una
+  revisión de su impacto, veinte años después,'' \emph{Anuario CONEICC
+  de Investigación de la Comunicación} 14 (2007); Raúl Fuentes-Navarro,
+  ``\emph{De los medios a las mediaciones}: Reflexiones en sus treinta
+  años, desde una perspectiva sociocultural,'' in Moragas, Terrón, and
+  Rincón, \emph{``De los medios a las mediaciones'' de Jesús
+  Martín-Barbero}.
+}\setcounter{footnote}{17} of reading and assimilating Martín-Barbero's
+proposals. Without ever going through revisions beyond new prologues
+across its six Spanish editions,\footnote{Jesús Martín-Barbero, ``\emph{From the Media to Mediations}---Three
+  Introductions,'' \emph{MATRIZes} 12, no. 1 (2018).
+}
+the book remains an indispensable reference in many articles, essays,
+course bibliographies, and graduate theses---as it has been, almost
+without variation, for more than three decades.
+
+In the many interventions of his career, Martín-Barbero expressed his
+vision that two opposing foundational conceptions characterized Latin
+American communication studies, and the necessity to surpass them: ``On
+the one hand, there was the Functional paradigm,'' which related the
+study of communication to the diffusion of innovations; and ``on the
+other hand, there was the Theory of Dependence,'' which asserted that
+mass communication formed ``part of the process that included the
+domination that Latin American countries had to put up with.'' The
+arguments behind Martín-Barbero's defense of his position about the
+field's strategies to cope with the changing configurations of the
+communication-culture-politics dimensions of Latin American societies
+became progressively explicit and coherent as he debated, sometimes
+fiercely, with leaders and followers of other schools of thought,
+especially some critical political economists and idealistic
+postmodernists. The history of the field he traced, as well as the
+theoretical and methodological approach he sustained, became one of the
+most influential sources of the ``Latin American school of thought.'' It
+shaped both research practices and the academic training of
+professionals trying ``to understand the role played by communication
+processes and the mass media in the changes that were taking place in
+Latin America'' (and elsewhere) before and after the turn of the
+century.\footnote{Jesús Martín-Barbero, ``Communication as an Academic Field: Latin
+  America,'' in \emph{The International Encyclopedia of Communication},
+  ed. Wolfgang Donsbach (New York: Wiley, 2008). For the ``elsewhere,''
+  see Nick Couldry and Andreas Hepp, ``Conceptualizing Mediatization:
+  Contexts, Traditions, Arguments,'' \emph{Communication Theory} 23, no.
+  3 (2013).
+}
+
+But the growing distance between research on the rapidly evolving
+communication and sociocultural mediations, on the one
+hand,\footnote{``When a certain communicational product (television news, telenovela,
+  advertising) is the object of study, from its \emph{industrial
+  format}, the researcher can trigger elements of its \emph{narrative}
+  in articulation with the \emph{logics of production} exploring the
+  \emph{technicity}. He can also articulate the communicational
+  phenomenon with the \emph{competences of reception} through the
+  mediations of \emph{rituality} or \emph{sensoriality}. It is therefore
+  a matter to draw up a specific strategic use of the maps of mediations
+  for specific empirical research'' (Vassallo de Lopes, ``The Barberian
+  Theory of Communication,'' 60--61).
+} and the implications of
+this approach for professional training within universities ever more
+dependent on the market economy, on the other, have steadily heightened
+the constitutive ``tensions'' subtending the field. Martín-Barbero often
+expressed his commitment to the study of mass communication and the
+shift that ``prevents it from being conceived as a simple matter of
+markets and consumption, thus demanding the analysis of communication as
+a decisive space in which the public sphere is being redefined and
+democracy is being
+reconstituted.''\textsuperscript{21}
+
+Taking such an emphasis on \emph{praxis}, along with ``nocturnal maps''
+and similar heuristic approaches as constitutive axes for Latin American
+academic production on communication, we could describe the recent
+history of the field in the region as marked by a ``disintegrated
+internationalization,''\textsuperscript{22} one
+related to ``the stark contrast between the progressive\marginnote{\textsuperscript{21} Martín-Barbero, ``A Latin American Perspective on
+  Communication/Cultural Mediation,'' 284.
+}
+institutionalization\marginnote{\textsuperscript{22} Raúl Fuentes-Navarro, ``La investigación de la comunicación en América
+  Latina: Una internacionalización desintegrada,'' \emph{Oficios
+  terrestres}, no. 31 (2014).
+}\setcounter{footnote}{22} of the field,'' on the one hand, and ``its scant
+influence beyond the Ibero-American and Hispanic academic spaces'' and
+``waning'' dialogue with other academic communities, on the
+other.\footnote{Florencia Enghel and Martín Becerra, ``(Re)Situating Latin America in
+  International Communication Theory,'' \emph{Communication Theory} 28,
+  no. 2 (2018); Florencia Enghel and Martín Becerra, ``How to
+  Incorporate Latin American Communication Studies into Northern/Western
+  Circles? Reflections on Academic Pluralism as Co-production,'' in
+  \emph{Media and Governance in Latin America: Toward a Plurality of
+  Voices}, ed. Ximena Orchard, Sara Garcia Santamaria, Julieta Brambila,
+  and Jairo Lugo-Ocando (New York: Peter Lang, 2020).
+} These are lines of ongoing
+and emerging debates, in which history provides a key dimension.
+
+Martín-Barbero's foundational work and the critical assimilation and
+development of his legacy by peers and successors seem crucial for the
+most needed (re)interpretations and (re)orientations of the historical
+processes of consolidation of the field of communication studies in
+Latin America. Hopefully, it can also guide the consolidation of an
+enriched historiography of those questions, advancing toward some
+``daytime mediations'' and more productive dialogues with other
+international and regional communities and academic cultures. In a brief
+but deep and luminous essay, signed in 2019, Martín-Barbero reflected on
+the transformations of his work, ``traversed by history and culture,''
+and arrived at the following certitude: ``What it leads us to and what
+configuration we give to the world today depends entirely on how
+creatively and critically we confront those spaces that, otherwise,
+remain entirely conquered by the same history of progress and the same
+capitalist temporality of which we are
+heirs.''\footnote{ Jesús Martín-Barbero, ``Mapas nocturnos y mediaciones diurnas,''
+  \emph{Philosophical Readings} 11, no. 3 (2019).}
+
+
+
+
+
+\section{Bibliography}\label{bibliography}
+
+\begin{hangparas}{.25in}{1} 
+
+
+
+Couldry, Nick, and Andreas Hepp. ``Conceptualizing Mediatization:
+Contexts, Traditions, Arguments.'' \emph{Communication Theory} 23, no. 3
+(2013): 191--202. \url{https://doi.org/10.1111/comt.12019}.
+
+Enghel, Florencia, and Martín Becerra. ``(Re)Situating Latin America in
+International Communication Theory.'' \emph{Communication Theory} 28,
+no. 2 (2018): 111--30.
+\url{https://academic.oup.com/ct/article-abstract/28/2/111/4994890}.
+
+---------. ``How to Incorporate Latin American Communication Studies
+into Northern/Western Circles? Reflections on Academic Pluralism as
+Co-production.'' In \emph{Media and Governance in Latin America: Toward
+a Plurality of Voices}, edited by Ximena Orchard, Sara Garcia
+Santamaria, Julieta Brambila, and Jairo Lugo-Ocando, 59--73. New York:
+Peter Lang, 2020.
+
+Fuentes-Navarro, Raúl. ``Pensar la comunicación desde la cultura.''
+\emph{Signo y pensamiento} 8, no. 14 (1989): 119--27.
+\url{https://revistas.javeriana.edu.co/index.php/signoypensamiento/article/view/3502}.
+
+---------. \emph{Un campo cargado de futuro: El estudio de la
+comunicación en América Latina}. Mexico City: FELAFACS, 1992.
+
+---------. ``Un texto cargado de futuro: Apropiaciones y proyecciones de
+\emph{De los medios a las mediaciones} en América Latina.'' In
+\emph{Mapas nocturnos: Diálogos con la obra de Jesús Martín-Barbero},
+edited by María Cristina Laverde and Rossana Reguillo, 181--97. Santafé
+de Bogotá: Universidad Central/Siglo del Hombre editores, 1998.
+
+---------. ``Apropiaciones y proyecciones de \emph{De los medios a las
+mediaciones} en el campo académico de la comunicación: Una revisión de
+su impacto, veinte años después.'' \emph{Anuario CONEICC de
+Investigación de la Comunicación} 14 (2007): 149--66.
+
+---------. ``La investigación de la comunicación en América Latina: Una
+internacionalización desintegrada.'' \emph{Oficios terrestres}, no. 31
+(2014): 11--22.
+\url{https://perio.unlp.edu.ar/ojs/index.php/oficiosterrestres/article/view/2424/2154}.
+
+---------. ``Institutionalization and Internationalization of the Field
+of Communication Studies in Mexico and Latin America.'' In \emph{The
+International History of Communication Study}, edited by Peter Simonson
+and David W. Park, 325--45. New York: Routledge, 2016.
+
+---------. ``\emph{De los medios a las mediaciones}: Reflexiones en sus
+treinta años, desde una perspectiva sociocultural.'' In \emph{``De los
+medios a las mediaciones'' de Jesús Martín-Barbero}, edited by Miquel de
+Moragas, José Luis Terrón, and Omar Rincón, 118--20. Bellaterra:
+Institut de la Comunicació, Universitat Autònoma de Barcelona, 2017.
+
+---------. ``Investigación y meta-investigación sobre comunicación en
+América Latina.'' \emph{MATRIZes} 13, no. 1 (2019): 27--48.
+\url{http://dx.doi.org/10.11606/issn.1982-8160.v13i1p27-48}.
+
+``Jesús Martín-Barbero: Treinta años de \emph{De los medios a las
+mediaciones}.'' Special issue, \emph{MATRIZes} 12, no. 1 (2018).
+\url{https://www.revistas.usp.br/matrizes/issue/view/10638}.
+
+Laverde, María Cristina, and Rossana Reguillo, eds. \emph{Mapas
+nocturnos: Diálogos con la obra de Jesús Martín-Barbero}. Santafé de
+Bogotá: Universidad Central/Siglo del Hombre editores, 1998.
+
+Martín-Barbero, Jesús. \emph{De los medios a las mediaciones:
+Comunicación, cultura y hegemonía}. Mexico City: Gustavo Gili, 1987.
+
+---------. \emph{Communication, Culture, and Hegemony: From the Media to
+Mediations}. Trans. Elizabeth Fox and Robert A. White. London: Sage,
+1993.
+
+---------. \emph{Dos meios às mediações: Comunicação, cultura e
+hegemonia}. Rio de Janeiro: UFRJ, 1997.
+
+---------. ``Aventuras de un cartógrafo mestizo en el campo de la
+comunicación.'' \emph{Panorama económico} 7, no. 7 (1999): 12--23.
+\url{https://doi.org/10.32997/2463-0470-vol.7-num.7-1999-528}.
+
+---------. \emph{Des médias aux médiations: Communication, culture et
+hégémonie}. Paris: CNRS, 2002.
+
+---------. ``A Latin American Perspective on Communication/Cultural
+Mediation.'' \emph{Global Media and Communication} 2, no. 3 (2006):
+279--97.
+\url{https://journals.sagepub.com/doi/10.1177/1742766506069579}.
+
+---------. ``Communication as an Academic Field: Latin America.'' In
+\emph{The International Encyclopedia of Communication}, edited by
+Wolfgang Donsbach, 614--20. New York: Wiley, 2008.
+
+---------. ``\emph{From the Media to Mediations}---Three
+Introductions.'' \emph{MATRIZes} 12, no. 1 (2018): 9--31.
+\url{http://dx.doi.org/10.11606/issn.1982-8160.v12i1p9-31}.
+
+---------. ``Mapas nocturnos y mediaciones diurnas.''
+\emph{Philosophical Readings} 11, no. 3 (2019): 193--98.
+\url{https://doi.org/10.5281/zenodo.3560373}.
+
+``Más allá de las mediaciones y la hibridación.'' Special issue,
+\emph{Versión: Estudios de comunicación y política,} no. 3 (2019).
+\url{https://versionojs.xoc.uam.mx/index.php/version/issue/view/151\#pkp_content_nav}.
+
+Mattelart, Armand. \emph{L'invention de la communication}. Paris: La
+Découverte, 1994.
+
+Moragas, Miquel de, José Luis Terrón, and Omar Rincón, eds. \emph{``De
+los medios a las mediaciones'' de Jesús Martín-Barbero: Treinta años
+después}. Bellaterra: Institut de la Comunicació, Universitat Autònoma
+de Barcelona, 2017.
+
+Peters, John Durham. \emph{Speaking into the Air: A History of the Idea
+of Communication}. Chicago: University of Chicago Press, 1999.
+
+Saint-Exupéry, Antoine de. \emph{Piloto de guerra}. Madrid: Ediciones
+CS, 1969.
+
+Scolari, Carlos A. ``From (New) Media to (Hyper)Mediations: Recovering
+Jesús Martín-Barbero's Mediation Theory in the Age of Digital
+Communication and Cultural Convergence.'' \emph{Information,
+Communication \& Society} 18, no. 9 (2015): 1092--107.
+\url{https://repositori.upf.edu/bitstream/handle/10230/27654/scolari_infcomsoc_from.pdf?sequence=1}.
+
+Vassallo de Lopes, Maria Immacolata. ``The Barberian Theory of
+Communication.'' \emph{MATRIZes} 12, no. 1 (2018): 39--63.
+\url{http://dx.doi.org/10.11606/issn.1982-8160.v12i1p39-63}.
+
+
+
+\end{hangparas}
+
+
+\end{document}
