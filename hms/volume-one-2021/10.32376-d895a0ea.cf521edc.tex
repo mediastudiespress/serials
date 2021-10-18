@@ -1,0 +1,680 @@
+% see the original template for more detail about bibliography, tables, etc: https://www.overleaf.com/latex/templates/handout-design-inspired-by-edward-tufte/dtsbhhkvghzz
+
+\documentclass{tufte-handout}
+
+%\geometry{showframe}% for debugging purposes -- displays the margins
+
+\usepackage{amsmath}
+
+\usepackage{hyperref}
+
+\usepackage{fancyhdr}
+
+\usepackage{hanging}
+
+\hypersetup{colorlinks=true,allcolors=[RGB]{97,15,11}}
+
+\fancyfoot[L]{\emph{History of Media Studies}, vol. 1, 2021}
+
+
+% Set up the images/graphics package
+\usepackage{graphicx}
+\setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
+\graphicspath{{graphics/}}
+
+\title[Collective Identity and the History of Communication Studies]{Collective Identity and the History of Communication Studies} % longtitle shouldn't be necessary
+
+% The following package makes prettier tables.  We're all about the bling!
+\usepackage{booktabs}
+
+% The units package provides nice, non-stacked fractions and better spacing
+% for units.
+\usepackage{units}
+
+% The fancyvrb package lets us customize the formatting of verbatim
+% environments.  We use a slightly smaller font.
+\usepackage{fancyvrb}
+\fvset{fontsize=\normalsize}
+
+% Small sections of multiple columns
+\usepackage{multicol}
+
+% Provides paragraphs of dummy text
+\usepackage{lipsum}
+
+% These commands are used to pretty-print LaTeX commands
+\newcommand{\doccmd}[1]{\texttt{\textbackslash#1}}% command name -- adds backslash automatically
+\newcommand{\docopt}[1]{\ensuremath{\langle}\textrm{\textit{#1}}\ensuremath{\rangle}}% optional command argument
+\newcommand{\docarg}[1]{\textrm{\textit{#1}}}% (required) command argument
+\newenvironment{docspec}{\begin{quote}\noindent}{\end{quote}}% command specification environment
+\newcommand{\docenv}[1]{\textsf{#1}}% environment name
+\newcommand{\docpkg}[1]{\texttt{#1}}% package name
+\newcommand{\doccls}[1]{\texttt{#1}}% document class name
+\newcommand{\docclsopt}[1]{\texttt{#1}}% document class option name
+
+
+\begin{document}
+
+\begin{titlepage}
+
+\begin{fullwidth}
+\noindent\LARGE\emph{Launch essay
+} \hspace{85mm}\includegraphics[height=1cm]{logo3.png}\\
+\noindent\hrulefill\\
+\vspace*{1em}
+\noindent{\Huge{Collective Identity and the History of\\\noindent Communication Studies \par}}
+
+\vspace*{1.5em}
+
+\noindent\LARGE{Maria Löblich}\par}\marginnote{\emph{Maria Löblich, ``Collective Identity and the History of Communication Studies ,'' \emph{History of Media Studies} 1 (2021), \href{https://doi.org/10.32376/d895a0ea.cf521edc}{https://doi.org/ 10.32376/d895a0ea.cf521edc}.} \vspace*{0.75em}}
+\vspace*{0.5em}
+\noindent{{\large\emph{Frei Universität Berlin}, \href{mailto:maria.loeblich@fu-berlin.de}{maria.loeblich@fu-berlin.de}\par}} \marginnote{\href{https://creativecommons.org/licenses/by-nc/4.0/}{\includegraphics[height=0.5cm]{by-nc.png}}}
+
+% \vspace*{0.75em} % second author
+
+% \noindent{\LARGE{<<author 2 name>>}\par}
+% \vspace*{0.5em}
+% \noindent{{\large\emph{<<author 2 affiliation>>}, \href{mailto:<<author 2 email>>}{<<author 2 email>>}\par}}
+
+% \vspace*{0.75em} % third author
+
+% \noindent{\LARGE{<<author 3 name>>}\par}
+% \vspace*{0.5em}
+% \noindent{{\large\emph{<<author 3 affiliation>>}, \href{mailto:<<author 3 email>>}{<<author 3 email>>}\par}}
+
+\end{fullwidth}
+
+\vspace*{1em}
+
+
+\newthought{This essay explores} the role of collective identity in the history of
+communication studies. Collective identities are ideas about social
+belonging and values, about who we are and who the others are.
+Collective identities involve ideas of homogeneity and difference and
+involve issues of power and resource
+distribution.\footnote{Jan Assmann, \emph{Das kulturelle Gedächtnis. Schrift, Erinnerung und
+  politische Identität in frühen Hochkulturen} (München: C.H. Beck,
+  1992), 131; Shmuel Noah Eisenstadt and Bernhard Giesen, ``The
+  Construction of Collective Identity,'' \emph{European Journal of
+  Sociology} 36, no. 1 (1995): 77; Bonnie J. Dow, ``The Lessons of
+  History: Women's Studies in Communication Approaches 40,''
+  \emph{Women's Studies in Communication} 37 (2014): 260.
+} There are at least
+two aspects of the historical relation between communication studies and
+collective identity: (1) The history of communication studies is linked
+to public communication, where collective identities are discussed,
+defined, and ascribed to groups or collectives in society or in the
+world. Scholarly work in the past studied, tacitly reproduced, or
+questioned collective identity constructs made by the media. (2)
+Communication studies worldwide have been carriers of a
+``we-consciousness,''\footnote{Assmann, \emph{Das kulturelle Gedächtnis}, 131.
+} precondition
+for academic community-building and legitimacy work. Moreover,
+communication studies have been the object of identity ascriptions from
+the outside.
+
+Some historians and sociologists have criticized the concept of
+collective identity for the ideologically charged, manipulative use of
+this term in the twentieth century, for the lack of a theory, and for
+suggesting collective identity is something
+``natural.''\footnote{Eisenstadt and Giesen, ``The Construction of Collective Identity,''
+  74.
+} In communication
+studies, some have noted critically that some historical accounts have
+been whitewashing and mystifying the field's historiography. According
+to Simonson and Park, ``representatives of the dominant paradigms
+offered their own historical accounts'' when defining the significance
+of classic works or great male
+scholars.\footnote{Peter Simonson and David W. Park, ``Introduction. On the History of
+  Communication Study,'' in \emph{The International History of
+  Communication Study}, eds. Peter Simonson and David W. Park (New York:
+  Routledge, 2016), 4--5; cf. Jefferson Pooley and David W. Park,
+  ``Introduction,'' in \emph{The History of Media and Communication
+  Research. Contested Memories}, eds. David W. Park and Jefferson Pooley
+  (New York: Lang, 2008), 1--4.
+} Wahl-Jorgensen has
+written about the ``tale of coherence'' that those accounts provided by
+glossing over separations and differences which were typi-
+
+\enlargethispage{2\baselineskip}
+
+\vspace*{2em}
+
+\noindent{\emph{History of Media Studies}, vol. 1, 2021}
+
+
+
+
+ \end{titlepage}
+
+
+\noindent cal for the
+development of ``the messy field of mass communication
+study.''\footnote{Karin Wahl-Jorgensen, ``Rebellion and Ritual in Disciplinary Histories
+  of U.S. Mass Communication Study: Looking for `The Reflexive
+  Turn,'\,'' \emph{Mass Communication \& Society} 3, no. 1 (2000): 90,
+  98.
+}
+
+What is this ``plastic phrase,''\footnote{Dietmar Rost, ``Reviewed Work(s): Kollektive Identität. Heimliche
+  Quellen einer unheimlichen Konjunktur by Lutz Niethammer,``
+  \emph{Historical Social Research}. 28, no. 4 (2003): 188.
+}
+collective identity, worth? This essay does not intend to prescribe a
+disciplinary collective identity but rather to suggest reflecting on the
+analytical potential of this concept. Regarding theory, this essay is
+based on the sociology of Pierre Bourdieu and the works of Jan Assmann,
+the German Egyptologist. Their theoretical tools (personal and
+collective identity, cultural memory, symbolic power, habitus, capital,
+and field) lead to an understanding of collective identity as a social
+construct that contains selected and formed ideas about a collective as
+well as its memories of the past. Collective identities are constructed
+in symbolic practices, rooted in habitus--capital--field constellations,
+and linked to power. They may lead to inclusion and exclusion.
+Collective identity reveals how communication studies were historically
+tied to symbolic systems in society and what degree of autonomy they
+had.\footnote{Assmann, \emph{Das kulturelle Gedächtnis}, 132; Jan Assmann and John
+  Czaplicka, ``Collective Memory and Cultural Identity,'' \emph{New
+  German Critique} 65 (1995): 130; Pierre Bourdieu, \emph{Language and
+  Symbolic Power} (Cambridge: Polity Press, 1992), 167.
+} The aim of the historiography
+suggested here is to determine which symbolic formation of a ``we'' and
+``the others'' the discipline has contributed to over the course of
+time.\footnote{Eisenstadt and Giesen, \emph{The Construction of Collective Identity},
+  74.
+} This applies to groups in
+society and to the discipline itself.
+
+Studying the exclusion or marginalization of theories and groups in the
+history of the field helps to discover and recover forgotten or
+marginalized alternative ways of thinking and approaches to media and
+communication. Moreover, it enables us to reflect on the discipline's
+involvement in political and manipulatory uses of the normative concepts
+of collective identities. An example of such an involvement is German
+communication studies and its past in National
+Socialism.\footnote{Christopher Simpson, ``Elisabeth Noelle-Neumann's `Spiral of Silence'
+  and the Historical Context of Communication Theory,'' \emph{Journal of
+  Communication} 46 (1996).
+}
+
+The concept of collective identity is not a typical concept deployed in
+research on inclusion and exclusion in the discipline---for example, in
+feminist and cosmopolitan approaches. But it could complement and, to
+some extent, bundle such perspectives because there is the shared
+concern to reveal and discuss ``asymmetries for exclusion or inclusion
+of scholarly voices'' and other voices in
+society.\footnote{Hanan Badr and Sarah Anne Ganter, ``Towards Cosmopolitan Media and
+  Communication Studies: Bringing Diverse Epistemic Perspectives into
+  the Field.'' \emph{Global Media Journal,} \emph{German Edition} 11,
+  no. 1 (2021): 2; cf. Lana F. Rakow, ``Feminist Historiography and the
+  Field,'' in \emph{The History of Media and Communication Research:
+  Contested Memories}, eds. David W. Park and Jefferson Pooley (New
+  York: Peter Lang, 2008); Martina Thiele, ``Female Academics in
+  Communication Science and the Post-War Reconstruction Generation in
+  Austria and Germany,'' in \emph{The International History of
+  Communication Study,} eds. Peter Simonson and David W. Park (New York:
+  Routledge, 2016).
+}
+
+\hypertarget{historical-perspectives-on-collective-identity-and-communication-studies}{%
+\section{Historical Perspectives on Collective Identity and
+Communication
+Studies}\label{historical-perspectives-on-collective-identity-and-communication-studies}}
+
+There are at least two ways the usage of the term collective identity
+can be distinguished. In the first, which involves \emph{reconstructive}
+understanding, collective identity describes the idea a group develops
+of itself by identifying similar self-views and worldviews, experiences,
+and expectations on the part of single members of the group. In the
+second, there is a \emph{prescriptive} use of the term. It ascribes
+common characteristics, historical continuity, and coherence to members
+of a group. However, this group may be merely imagined. Collective
+identity in this case is a construct detached from the memories, values,
+and orientations of individuals. Normative collective identity concepts
+are predetermined to serve political
+interests.\footnote{Assmann, \emph{Das kulturelle Gedächtnis}, 132; Jürgen Straub,
+  ``Personale und kollektive Identität. Zur Analyse eines theoretischen
+  Begriffs,'' in \emph{Identitäten. Erinnerung, Geschichte, Identität},
+  eds. Aleida Assmann and Heidrun Friese (Frankfurt am Main: Suhrkamp,
+  1998), 98--99, 102.
+}
+
+These two perspectives can be discussed in terms of what their (1)
+\emph{analytical value} is for historical studies on communication
+studies. (2) Moreover, knowing that there are reconstructive and
+prescriptive ways of understanding collective identity can be helpful to
+classify findings. In this case, prescriptive and reconstructive
+perspectives are the \emph{result of historical analysis}. (1) The
+\emph{analytical} value of a prescriptive usage is low because this
+usage aims at pushing a certain normative idea of a collective.
+Therefore, I suggest applying the reconstructive perspective as an
+analytical tool. There are two subject matters which can be studied by
+applying the reconstructive perspective: firstly, collective identities
+in studies about public communication and secondly, collective
+identities of communication studies. These two subject matters are
+described below. (2) A reconstructive understanding will have to
+classify in which way the discipline has used the concept of collective
+identity at different moments in history. Has it been the reconstructive
+or the prescriptive way, or yet another way, and what were the reasons
+for this? The reconstructive or the prescriptive use of collective
+identity therefore \emph{might be the result of historical analysis}.
+
+Arguing that a prescriptive perspective on collective identity is a
+normative one, shall not point to the conclusion that my whole essay is
+free of normative charge. Focusing on issues such as exclusion and
+inclusion, like I do here, is, of course, a normative decision.
+
+\hypertarget{subject-matter-1-collective-identities-in-studies-about-public-communication}{%
+\section{Subject Matter 1: Collective Identities in Studies about
+Public\\\noindent Communication}\label{subject-matter-1-collective-identities-in-studies-about-public-communication}}
+
+In terms of collective identity construction, the media have held
+``positions of power'' because, depending on the particular media
+system, they have shaped prevailing societal representations of groups
+and perpetuated cognitive representations of those
+groups.\footnote{Jake Harwood and Abhik Roy, ``Social Identity Theory and Mass
+  Communication Research,'' in \emph{Language as Social Action.
+  Intergroup Communication}, eds. Jake Harwood and Howard Giles (New
+  York: Peter Lang, 2005), 191.
+} Communication studies'
+work gives insights into how the discipline has been linked to
+collective identity construction in public communication. But the
+patterns of social categorization and boundary construction that have
+appeared in publications are not the only objects of historiography.
+Such a history could also reveal to what extent research fields such as
+media usage, media effects, and media content reproduced or questioned
+the dominant principles of division perpetuated by the media or by
+politics. Are there recurring ideas, approaches, and methodological
+principles within the ``specific symbolic
+universe''\footnote{Bourdieu, \emph{Language and Symbolic Power}, 124.
+} of communication
+studies that legitimated or opposed societal exclusion and inclusion
+(e.g., regarding class, geography/``first'' and ``third'' worlds,
+nations, gender, ethnicity)? Using stereotypes has always been integral
+to the symbolic practices of media audiences in Europe---for instance,
+cinema audiences. Women, children, or subordinate classes have been
+ascribed characteristics such as being emotional, pleasure-seeking, and
+suggestible. Such descriptions were incorporated into early theories on
+cinema.\footnote{Richard Butsch, ``Audiences and Publics, Media and Public Spheres.''
+  In \emph{The Handbook of Media Audiences}, ed. Virginia Nightingale
+  (Chichester and Malden, MA: Wiley-Blackwell, 2011), 156.
+} Audience studies about
+socialist countries largely applied citizen/consumer categorizations
+derived from Western systems. The experiences and living conditions of
+users in the East were obviously ``never made part of this
+narrative.''\footnote{Irena Reifová, ``A Study in the History of Meaning-making: Watching
+  Socialist Television Serials in the Former Czechoslovakia,''
+  \emph{European Journal of Communication} 30, no. 1 (2015), 80.
+} Dichotomies such as
+citizen/consumer or active/passive defined what was the established
+ideal at a given moment of history: ``What is good, deserves reward,
+power, privilege.''\footnote{Richard Butsch, \emph{The Making of American Audiences. From State to
+  Television, 1750--1990} (Cambridge: Cambridge University Press, 2000),
+  2.
+} They are
+linked to hegemonic symbolic
+systems.\footnote{Bourdieu, \emph{Language and Symbolic Power}, 132.
+} To understand the
+mechanisms of symbolic power, analysis must include who published where,
+with what habitus, social position, and geopolitical location: Who got
+to speak for the field and shaped its contours, in which local,
+national, and global settings?\footnote{Badr and Ganter, ``Towards Cosmopolitan Media and Communication
+  Studies,'' 2.
+}
+
+\hypertarget{subject-matter-2-collective-identities-of-communication-studies}{%
+\section{Subject Matter 2: Collective Identities of Communication
+Studies}\label{subject-matter-2-collective-identities-of-communication-studies}}
+
+This perspective sheds light on the way communication studies
+collectives constructed a ``we'' for themselves that, for some time, was
+binding. It gives insights into what past they invented for themselves
+and which members of these collectives held symbolic power in such
+self-definitions. ``Great men, great events, great places'' have been
+used, for instance, in the North American and Western European context
+to form a historical canon.\footnote{Rakow, ``Feminist Historiography and the Field,'' 115; cf. Katharina
+  Wischmeyer, ``\,`Ungleich unter Gleichen`. Frauen am Berliner Institut
+  für Publizistik und der Fall Elke Baur,'' in \emph{`Regierungszeit des
+  Mittelbaus'? Annäherungen an die Berliner Publizistikwissenschaft nach
+  der Studentenbewegung,} eds. Maria Löblich and Niklas Venema (Köln:
+  Halem, 2020).
+}
+Collective identity construction in the academic world may serve the
+purpose of self-reflection (one's own cognitive and social principles),
+of integrating members, and of legitimating the field to the outside.
+Furthermore, this perspective reveals structures and practices regarding
+boundary construction and exclusion. Social categories such as class,
+ethnicity, and gender charged with specific value judgments at different
+moments in history shaped appointment and employment procedures,
+curriculum building, distribution of seats and positions in committees
+and associations, and informal academic
+networks.\footnote{Dow, ``The Lessons of History''; Martina Thiele, ``Female Academics in
+  Communication Science.''
+} What were the
+consequences for the institutionalization of perspectives, ideas, and
+theories? Furthermore, the field was influenced by larger collective
+identity processes regarding nations and regions. The regionalization of
+social sciences in Latin America would serve as an example. When ``the
+notion of the Latin American unity'' was no longer based on shared
+colonization aftereffects and common languages but on the idea to ``make
+sense of each nation or sub-region,'' promoted by political movements, a
+new ideal of ``(Latin) Americanism'' also shaped ideas regarding
+cooperation and integration of social scientific communities in
+different Latin American
+countries.\footnote{Gustavo Sorá and Alejandro Blanco, ``Unity and Fragmentation in the
+  Social Sciences in Latin America,'' in \emph{The Social and Human
+  Sciences in Global Power Relations. Socio-Historical Studies of the
+  Social and Human Sciences}, eds. Johan Heilbron, Gustavo Sorá and
+  Thibaud Boncourt (Cham: Springer International Publishing, 2009), 128.
+}
+
+\hypertarget{an-example-from-germany}{%
+\section{An Example from Germany}\label{an-example-from-germany}}
+
+The German media discourse on East Germany provides an example of how a
+prescriptive collective identity in public communication was reproduced
+in scholarly works. A one-sided, negative interpretation of the German
+Democratic Republic (GDR) was constructed in the national media after
+1989 and has largely prevailed until today. It typically reduced the
+socialist country to dictatorship, to persons killed at the borders, and
+to the Fall of the Berlin Wall.\footnote{Hans-Jörg Stiehler, ``\,`Eine eigenartige Wendung.' Warum die
+  überregionale Presse in Ostdeutschland scheitert. Gespräch mit
+  Hans-Jörg Stiehler,'' in \emph{Wie die Medien zur Freiheit kamen. Zum
+  Wandel der ostdeutschen Medienlandschaft seit dem Untergang der DDR,}
+  eds. Michael Haller and Lutz Mükke (Köln: Halem, 2010), 254; Michael
+  Meyen, ``\emph{Wir haben freier gelebt.`` Die DDR im kollektiven
+  Gedächtnis der Deutschen} (Bielefeld: transcript, 2013).
+}
+The events of 1989 were framed as the East German way out of
+``dictatorship'' and into ``freedom,'' for the most part excluding the
+everyday experiences in the GDR. The German reunification was recounted
+as a story of success.\footnote{Markus Böick, Constantin Goschler, and Ralph Jessen, ``Die deutsche
+  Einheit als Geschichte der Gegenwart: Einleitung,'' in \emph{Jahrbuch
+  Deutsche Einheit} \emph{2020} (Berlin: Ch. Links, 2020); Martin
+  Sabrow, ``\,`1989' als Erzählung'' (Bonn: Bundeszentrale für
+  politische Bildung, 2021).
+} East
+Germans became the ``others,'' whose behavior had to be explained to
+``us,'' the majoritarian West German
+society.\footnote{Thomas Ahbe, ``Die Ost-Diskurse als Strukturen der Nobilitierung und
+  Marginalisierung von Wissen,'' in \emph{Die Ostdeutschen in den
+  Medien. Das Bild von den Anderen nach 1990}, eds\emph{.} Thomas Ahbe,
+  Rainer Gries, and Wolfgang Schmale (Leipzig: Leipziger
+  Universitätsverlag, 2009), 59--112.
+} Even today, critics say
+that media coverage about East Germany is pejorative and unbalanced. Its
+issues have been right-wing radicalism, under-education in terms of
+democracy, and the inability to cope with a market society. The national
+press located in West Germany and under West German ownership held the
+interpretive primacy of these ``delegitimating
+discourses.''\footnote{Stiehler, ``\,`Eine eigenartige Wendung,'\,'' 254.
+}
+
+Central elements of these discourses appeared in communication studies.
+Insofar as communication studies after the political turn dealt with
+East Germany at all, publications focused on press concentration and on
+the adjustment of East German journalists to the requirements and norms
+of the Western media system. Some examples demonstrate that these
+sources are worth historicizing. They contain similar descriptions of
+``the other'' German. Methodically, they did not aim at including the
+remembrances and experiences of East Germans. ``In the communities of
+the former GDR,'' reads one study, ``. . . there is a lack of democratic
+and participatory traditions.''\footnote{Beate Schneider and Dieter Stürzebecher, \emph{Wenn das Blatt sich
+  wendet. Die Tagespresse in den neuen Bundesländern} (Baden-Baden:
+  Nomos, 1998), 212.
+}
+East German local communication, reads another, was characterized by ``a
+fixation on the state and
+authority.''\footnote{Schneider and Stürzebecher, \emph{Wenn das Blatt sich wendet,} 220.
+} Another study
+examined to what extent East German journalists had the ``capability to
+investigate.''\footnote{Claudia Mast, Klaus Haasis, and Matthias Weigert, \emph{Medien und
+  Journalismus im Umbruch. Konzepte und Erfahrungen von
+  Medienunternehmen, Verbänden und Redakteuren in den neuen
+  Bundesländern}, in \emph{Journalismus in den}}
+  It also
+investigated their ``profiles of
+performance''\textsuperscript{29} and whether they
+could ``cope'' with the ``density of work'' that the market organization
+involved.\textsuperscript{30} Book titles at the end
+of the second decade after reunification still reproduced the dominant
+narratives regarding 1989 and 1990 (e.g., \emph{How the Media Came to
+Freedom}\textsuperscript{31} and \emph{Media Freedom
+after the Political Turn}\textsuperscript{32}).
+
+The\marginnote{\emph{neuen Ländern: ein
+  Berufsstand. zwischen Aufbruch und Anpassung}, eds. Frank Böckelmann,
+  Claudia Mast and Beate Schneider (Konstanz: Universitätsverlag, 1994),
+  256.
+} social\marginnote{\textsuperscript{29} Mast, Haasis, and Weigert, \emph{Medien und Journalismus im Umbruch},
+  291.
+} field\marginnote{\textsuperscript{30} Mast, Haasis, and Weigert, \emph{Medien und Journalismus im Umbruch},
+  293.
+} structure\marginnote{\textsuperscript{31} Michael Haller and Lutz Mükke (eds.), \emph{Wie die Medien zur
+  Freiheit kamen. Zum Wandel der ostdeutschen Medienlandschaft seit dem
+  Untergang der DDR} (Köln: Halem, 2010).
+} of\marginnote{\textsuperscript{32} Marcel Machill, Markus Beiler and Johannes Gerstenberg,
+  \emph{Medienfreiheit nach der Wende Entwicklung von Medienlandschaft,
+  Medienpolitik und Journalismus in Ostdeutschland} (Konstanz: UVK,
+  2010).
+}\setcounter{footnote}{32} communication studies and the habitus of
+representatives, which can only be described roughly here, help to
+understand these ascriptions. Throughout the 1990s, new institutes were
+founded in East Germany. West German scholars were appointed as
+professors. GDR professors and most academic staff had to leave the
+institute in Leipzig, which had been the center for journalism education
+in the GDR.\footnote{Michael Meyen, ``Der Ost-West-Gipfel vom Mai 1990,'' in
+  \emph{Biografisches Lexikon der Kommunikationswissenschaft,} eds.
+  Michael Meyen and Thomas Wiedemann (Köln: Halem, 2020).
+} Communication studies
+after 1989 has been primarily involved in quantitative mass
+communication research. This paradigm had been dominant in the Federal
+Republic of Germany since the 1960s. It led the discipline in West
+Germany out of its crisis after National Socialism by demonstrating
+allegiance to the United States, the alleged role model of democracy.
+Walter J. Schütz (1930--2013, a founding member of the West German
+communication studies' association in 1963, federal ministry official
+involved in grant decisions, newspaper statistician), remembered that he
+opposed several times the admission of those people ``who had
+represented the system of media control'' to the
+association.\footnote{Walter J. Schütz, ``Ich habe immer von Selbstausbeutung gelebt,'' in
+  ``\emph{Ich habe dieses Fach erfunden.'' Wie die
+  Kommunikationswissenschaft an die deutschsprachigen Universitäten
+  kam,} eds. Michael Meyen and Maria Löblich (Köln: Halem, 2007), 55.
+} Altogether, there
+were limits in the interest of researching GDR media and East German
+media development.\footnote{ Mandy Tröger, \emph{Pressefrühling und Profit}. \emph{Wie westdeutsche
+  Verlage 1989/1990 den Osten eroberten} (Köln: Halem, 2019), 35.}
+
+\hypertarget{conclusion}{%
+\section{Conclusion}\label{conclusion}}
+
+Communication studies, viewed through the collective identity lens, has
+its historical narratives about ``we'' and ``the others.'' These
+narratives are featured in publications, for instance, about media
+audiences. Ideas of homogeneity and difference have also been developed
+for the scholarly community itself. They may enable integration (and
+communication studies' favorable presentation in the public), but may
+also lead to exclusion and marginalization. Using the theories of Pierre
+Bourdieu and Jan Assmann, communication (and communication research)
+related to collective identities can be understood as social constructs
+which are formed by symbolic power, habitus, capital, field structures,
+personal identity, and cultural memory.
+
+The aim of the historiography suggested here is to determine to which
+symbolic formation of a ``we'' and ``the others,'' in and outside the
+media, the discipline has contributed. As such formations have their
+normative side, such a historiography helps to understand particular
+power relations within and outside the field. It reveals, furthermore,
+what degree of autonomy communication studies had and which dependencies
+it shaped in the course of time.
+
+
+
+
+
+\newpage
+
+\section{Bibliography}\label{bibliography}
+
+\begin{hangparas}{.25in}{1} 
+
+
+
+Ahbe, Thomas. ``Die Ost-Diskurse als Strukturen der Nobilitierung und
+Marginalisierung von Wissen,`` in \emph{Die Ostdeutschen in den Medien.
+Das Bild von den Anderen nach 1990,} edited by Thomas Ahbe, Rainer
+Gries, and Wolfgang Schmale, 59--12. Leipzig: Leipziger
+Universitätsverlag, 2009.
+
+Assmann, Jan. \emph{Das kulturelle Gedächtnis. Schrift, Erinnerung und
+politische Identität in frühen Hochkulturen}. München: C. H. Beck, 1992.
+
+Assmann, Jan, and John Czaplicka. ``Collective Memory and Cultural
+Identity.'' \emph{New German Critique} 65 (1995): 125--33.
+\url{https://doi.org/10.2307/488538}.
+
+Badr, Hanan and Sarah Anne Ganter. ``Towards Cosmopolitan Media and
+Communication Studies: Bringing Diverse Epistemic Perspectives into the
+Field.'' \emph{Global Media Journal}. \emph{German Edition} 11, no. 1
+(2021). \url{https://doi.org/10.22032/dbt.491642021}.
+
+Böick, Markus, Constantin Goschler, and Ralph Jessen. ``Die deutsche
+Einheit als Geschichte der Gegenwart: Einleitung.'' In \emph{Jahrbuch
+Deutsche Einheit} \emph{2020}. 9-23. Berlin: Christoph Links, 2020.
+
+Bourdieu, Pierre. \emph{Language and Symbolic Power}. Cambridge: Polity
+Press, 1992.
+
+Butsch, Richard. \emph{The Making of American Audiences. From State to
+Television, 1750-1990.} Cambridge: Cambridge University Press, 2000.
+
+Butsch, Richard. ``Audiences and Publics, Media and Public Spheres.'' In
+\emph{The Handbook of Media Audiences}, edited by Virginia Nightingale,
+149--68. Malden, MA: Wiley-Blackwell, 2011.
+
+Dow, Bonnie J. ``The Lessons of History: Women's Studies in
+Communication Approaches 40.'' \emph{Women's Studies in Communication}
+37 (2014): 259--61. \url{https://doi.org/10.1080/07491409.2014.955431}.
+
+Eisenstadt, Shmuel Noah, and Bernhard Giesen. ``The Construction of
+Collective Identity.'' \emph{European Journal of Sociology} 36, no. 1
+(1995): 72--102. \url{https://doi.org/10.1017/S0003975600007116}.
+
+Haller, Michael, and Lutz Mükke, eds. \emph{Wie die Medien zur Freiheit
+kamen. Zum Wandel der ostdeutschen Medienlandschaft seit dem Untergang
+der DDR}. Köln: Halem, 2010.
+
+Harwood, Jake, and Abhik Roy. ``Social Identity Theory and Mass
+Communication Research.'' In \emph{Language as Social Action. Intergroup
+communication}, edited by Jake Harwood and Howard Giles, 189--211. New
+York: Peter Lang, 2005.
+
+Machill, Marcel, Markus Beiler, and Johannes Gerstenberg.
+\emph{Medienfreiheit nach der Wende Entwicklung von Medienlandschaft,
+Medienpolitik und Journalismus in Ostdeutschland}. Konstanz: UVK, 2010.
+
+Mast, Claudia, Klaus Haasis, and Matthias Weigert. ``Medien und
+Journalismus im Umbruch. Konzepte und Erfahrungen von Medienunternehmen,
+Verbänden und Redakteuren in den neuen Bundesländern.'' In
+\emph{Journalismus in den neuen Ländern: ein Berufsstand. zwischen
+Aufbruch und Anpassung}, edited by Frank Böckelmann, Claudia Mast and
+Beate Schneider, 231--450. Konstanz: Universitätsverlag, 1994.
+
+Meyen, Michael. ``\emph{Wir haben freier gelebt.'' Die DDR im
+kollektiven Gedächtnis der Deutschen}. Transcript. Bielefeld, 2013.
+
+Meyen, Michael. ``Der Ost-West-Gipfel vom Mai 1990.'' In
+\emph{Biografisches Lexikon der Kommunikationswissenschaft,} edited by
+Michael Meyen and Thomas Wiedemann. Köln: Halem, 2020.
+\url{http://blexkom.halemverlag.de/ost-west-gipfel}.
+
+Pooley, Jefferson, and David W. Park. ``Introduction.'' In \emph{The
+History of Media and Communication Research. Contested Memories}, edited
+by David W. Park and Jefferson Pooley, 1--15. New York: Peter Lang,
+2008.
+
+Rakow, Lana F. ``Feminist Historiography and the Field.'' In \emph{The
+History of Media and Communication Research. Contested Memories}, edited
+by David W. Park and Jefferson Pooley, 113--39. New York: Peter Lang,
+2008.
+
+Reifová, Irena. ``A Study in the History of Meaning-making: Watching
+Socialist Television Serials in the Former Czechoslovakia.''
+\emph{European Journal of Communication} 30, no. 1 (2015): 79--94.
+
+Rost, Dietmar. ``Reviewed Work(s): Kollektive Identität. Heimliche
+Quellen einer unheimlichen Konjunktur by Lutz Niethammer.''
+\emph{Historical Social Research} 28, no. 4 (2003): 188--202.
+
+Sabrow, Martin. \emph{``1989'' als Erzählung}. Bonn: Bundeszentrale für
+politische Bildung, 2021.
+\url{http://www.bpb.de/apuz/295464/1989-als-erzaehlung}.
+
+Schneider, Beate, and Dieter Stürzebecher. \emph{Wenn das Blatt sich
+wendet. Die Tagespresse in den neuen Bundesländern}. Baden-Baden: Nomos,
+1998.
+
+Schütz, Walter J. ``Ich habe immer von Selbstausbeutung gelebt.'' In
+``\emph{Ich habe dieses Fach erfunden.'' Wie die
+Kommunikationswissenschaft an die deutschsprachigen Universitäten kam,}
+edited by Michael Meyen and Maria Löblich, 33--58. Köln: Halem, 2007.
+
+Simonson, Peter, and David W. Park. ``Introduction: On the History of
+Communication Study.'' In \emph{The International History of
+Communication Study}, edited by Peter Simonson and David W. Park, 1--22.
+New York: Routledge, 2016.
+
+Simpson, Christopher. ``Elisabeth Noelle-Neumann's `Spiral of Silence'
+and the Historical Context of Communication Theory.'' \emph{Journal of
+Communication} 46 (1996): 149--73.
+\url{https://doi.org/10.1111/j.1460-2466.1996.tb01494.x}.
+
+Sorá, Gustavo, and Alejandro Blanco. ``Unity and Fragmentation in the
+Social Sciences in Latin America.'' In \emph{The Social and Human
+Sciences in Global Power Relations. Socio-Historical Studies of the
+Social and Human Sciences}, edited by Johan Heilbron, Gustavo Sorá and
+Thibaud Boncourt, 127--52. Cham: Springer International Publishing,
+2009.
+
+Stiehler, Hans-Jörg. ``\,`Eine eigenartige Wendung.' Warum die
+überregionale Presse in Ostdeutschland scheitert. Gespräch mit Hans-Jörg
+Stiehler.'' In \emph{Wie die Medien zur Freiheit kamen. Zum Wandel der
+ostdeutschen Medienlandschaft seit dem Untergang der DDR,} edited by
+Michael Haller and Lutz Mükke, 248--60. Köln: Halem, 2010.
+
+Straub, Jürgen. ``Personale und kollektive Identität. Zur Analyse eines
+theoretischen Begriffs.'' In \emph{Identitäten: Erinnerung, Geschichte,
+Identität}, edited by Aleida Assmann and Heidrun Friese, 73--104.
+Frankfurt am Main: Suhrkamp, 1998.
+
+Thiele, Martina. ``Female Academics in Communication Science and the
+Post-War Reconstruction Generation in Austria and Germany.'' In
+\emph{The International History of Communication Study,} edited by Peter
+Simonson and David W. Park, 130--50. New York: Routledge, 2016.
+
+Tröger, Mandy. \emph{Pressefrühling und Profit}. \emph{Wie westdeutsche
+Verlage 1989/1990 den Osten eroberten}. Köln: Halem, 2019.
+
+Wahl-Jorgensen, Karin. ``Rebellion and Ritual in Disciplinary Histories
+of U.S. Mass Communication Study: Looking for `The Reflexive Turn.'\,''
+\emph{Mass Communication \& Society} 3, no. 1 (2000): 87--115.
+\url{https://doi.org/10.1207/S15327825MCS0301_05}.
+
+Wendelin, Manuel, and Elisabeth Noelle-Neumann. \emph{Biografisches
+Lexikon der Kommunikationswissenschaft,} edited by Michael Meyen and
+Thomas Wiedemann. Köln: Halem, 2013.
+\url{http://blexkom.halemverlag.de/elisabeth-noelle-neumann}.
+
+Wischmeyer, Katharina. ``\,`Ungleich unter Gleichen.' Frauen am Berliner
+Institut für Publizistik und der Fall Elke Baur.'' In
+\emph{``Regierungszeit des Mittelbaus?'' Annäherungen an die Berliner
+Publizistikwissenschaft nach der Studentenbewegung}, edited by Maria
+Löblich and Niklas Venema, 431--50. Köln: Halem, 2020.
+
+
+
+\end{hangparas}
+
+
+\end{document}
