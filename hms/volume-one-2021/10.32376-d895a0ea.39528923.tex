@@ -1,0 +1,531 @@
+% see the original template for more detail about bibliography, tables, etc: https://www.overleaf.com/latex/templates/handout-design-inspired-by-edward-tufte/dtsbhhkvghzz
+
+\documentclass{tufte-handout}
+
+%\geometry{showframe}% for debugging purposes -- displays the margins
+
+\usepackage{amsmath}
+
+\usepackage{hyperref}
+
+\usepackage{fancyhdr}
+
+\usepackage{hanging}
+
+\hypersetup{colorlinks=true,allcolors=[RGB]{97,15,11}}
+
+\fancyfoot[L]{\emph{History of Media Studies}, vol. 1, 2021}
+
+
+% Set up the images/graphics package
+\usepackage{graphicx}
+\setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
+\graphicspath{{graphics/}}
+
+\title[Recuperating Areas]{Recuperating Areas: Research on Media and Communication History and South Asian Studies} % longtitle shouldn't be necessary
+
+% The following package makes prettier tables.  We're all about the bling!
+\usepackage{booktabs}
+
+% The units package provides nice, non-stacked fractions and better spacing
+% for units.
+\usepackage{units}
+
+% The fancyvrb package lets us customize the formatting of verbatim
+% environments.  We use a slightly smaller font.
+\usepackage{fancyvrb}
+\fvset{fontsize=\normalsize}
+
+% Small sections of multiple columns
+\usepackage{multicol}
+
+% Provides paragraphs of dummy text
+\usepackage{lipsum}
+
+% These commands are used to pretty-print LaTeX commands
+\newcommand{\doccmd}[1]{\texttt{\textbackslash#1}}% command name -- adds backslash automatically
+\newcommand{\docopt}[1]{\ensuremath{\langle}\textrm{\textit{#1}}\ensuremath{\rangle}}% optional command argument
+\newcommand{\docarg}[1]{\textrm{\textit{#1}}}% (required) command argument
+\newenvironment{docspec}{\begin{quote}\noindent}{\end{quote}}% command specification environment
+\newcommand{\docenv}[1]{\textsf{#1}}% environment name
+\newcommand{\docpkg}[1]{\texttt{#1}}% package name
+\newcommand{\doccls}[1]{\texttt{#1}}% document class name
+\newcommand{\docclsopt}[1]{\texttt{#1}}% document class option name
+
+
+\begin{document}
+
+\begin{titlepage}
+
+\begin{fullwidth}
+\noindent\LARGE\emph{Launch essay
+} \hspace{85mm}\includegraphics[height=1cm]{logo3.png}\\
+\noindent\hrulefill\\
+\vspace*{1em}
+\noindent{\Huge{Recuperating Areas: Research on Media and Communication History and South Asian Studies\par}}
+
+\vspace*{1.5em}
+
+\noindent\LARGE{Shiv Ganesh\par}\marginnote{\emph{Shiv Ganesh, ``Recuperating Areas: Research on Media and Communication History and South Asian Studies,'' \emph{History of Media Studies} 1 (2021), \href{https://doi.org/10.32376/d895a0ea.39528923}{https://doi.org/ 10.32376/d895a0ea.39528923}.} \vspace*{0.75em}}
+\vspace*{0.5em}
+\noindent{{\large\emph{University of Texas at Austin}, \href{mailto:shiv.ganesh@austin.utexas.edu}{shiv.ganesh@austin.utexas.edu}\par}} \marginnote{\href{https://creativecommons.org/licenses/by-nc/4.0/}{\includegraphics[height=0.5cm]{by-nc.png}}}
+
+% \vspace*{0.75em} % second author
+
+% \noindent{\LARGE{<<author 2 name>>}\par}
+% \vspace*{0.5em}
+% \noindent{{\large\emph{<<author 2 affiliation>>}, \href{mailto:<<author 2 email>>}{<<author 2 email>>}\par}}
+
+% \vspace*{0.75em} % third author
+
+% \noindent{\LARGE{<<author 3 name>>}\par}
+% \vspace*{0.5em}
+% \noindent{{\large\emph{<<author 3 affiliation>>}, \href{mailto:<<author 3 email>>}{<<author 3 email>>}\par}}
+
+\end{fullwidth}
+
+\vspace*{1em}
+
+
+\newthought{In this short} piece I argue, as provocation, that a recuperated
+area-focused approach to the history of research on media and
+communication can remedy the twin problems of theoretical
+universalization and methodological parochialism that continue to
+persist in the field despite decades of critique. The former, of course,
+implicates the modernist project of developing theories of communication
+that stretch to explain much of the complexity of human behavior, and
+the latter involves the problematic assumption that what works well by
+way of technique in one place ought to be reproducible in others.
+
+The need to do this is particularly urgent for scholars who are invested
+both in historicizing communication as well as the history of
+communication research per se. This is precisely because social
+scientific disciplines that seek to produce general laws about the world
+tend to be ahistorical and produce a kind of amnesia about the specific
+historical and cultural origins of concepts themselves, whether those
+are attribution theories, hypotheses about behavioral change, or even
+the concept of behavior itself. In contrast, contemporary area studies
+are by definition and character interdisciplinary; have objects of study
+that, at least at first blush, are spatially and temporally bounded; and
+in the current moment, mitigate historical disciplinary impulses towards
+theoretical colonization as well as methodological blinkers.
+
+It is crucial to note, however, that the history of area studies is
+itself steeped in problematic discourses of containment. Said's famous
+critique of area studies argued that it was a manifestly orientalist
+
+
+\enlargethispage{2\baselineskip}
+
+\vspace*{2em}
+
+\noindent{\emph{History of Media Studies}, vol. 1, 2021}
+
+
+
+
+ \end{titlepage}
+
+
+
+\noindent practice, where western experts produce knowledge about others, based on
+geographical and epistemic categories that suited the administrative
+calculus of Cold War politics: hence the revolving door in the
+midcentury United States between directors of area studies programs and
+the Federal Administration, especially the Department of
+State.\footnote{For cogent critiques of the history of area studies, see
+  Hossein Khosrowjah, ``A Brief History of Area Studies and
+  International Studies,'' \emph{Arab Studies Quarterly} 31, nos. 3--4
+  (2011); and Vicente Rafael, ``The Cultures of Area Studies in the
+  United States'' \emph{Social Text} 41 (Winter 1994).} Yet, the very
+critique of these political and ideological configurations opened up
+fresh directions for inquiry and resulted in the increased uptake of
+work on transnationalism, coloniality, feminism, race, ethnicity, and
+sexuality in those very areas, often by scholars whose demographic
+profiles, political commitments and epistemic sensibilities were very
+different from those that preceded them.\footnote{See, for example,
+  Laurie Sears's assessment of contemporary Southeast Asian studies in
+  the essay ``Postcolonial Identities, Feminist Criticism and Southeast
+  Asian Studies,'' in \emph{Knowing Southeast Asian Subjects}, ed.
+  Laurie Sears (Seattle: University of Washington Press, 2007).} Because
+of this, these former Cold War monikers themselves now sometimes
+function as resistant categories. The term ``South Asia'' for example,
+unlike other areas such as ``Indic Studies'' or ``Indology,'' ensures
+that accounts of subcontinental politics and social life pay more
+scrupulous attention to political hegemonies, historical divides, and
+religious strife.
+
+So rather than dispense with the notion of an area itself, I adopt as my
+first investment a recuperated area approach that is suited to advance
+how we view the histories of research on media and communication
+studies. This view does not implicate any unified categories for
+knowledge production; rather, it embraces transnationalism and the
+provisionality of borders, presumes epistemic multiplicity, and
+privileges knowledge production that is attuned sharply to transnational
+epistemic inequities. Further, it tilts towards privileging local and
+Indigenous knowledge production; and critically, draws inspiration from
+Chandra Mohanty's cogent decolonizing gesture, and treats the US itself
+as an area.\footnote{See Chandra Talpade Mohanty, ``Under Western Eyes
+  Revisited: Feminist Solidarity through Anticapitalist Struggles,''
+  \emph{Signs: Journal of Women in Culture and Society} 28, no. 2
+  (2002).}
+
+My second investment in this piece is to speculate about how, in telling
+the history of media and communication research, one might also usefully
+problematize this history itself. I realize this impulse is shared by
+virtually every scholar who historicizes the history of communication
+inquiry and practice, but it assumes particular significance if one is
+to step outside the largely American and European ambits in which such
+histories are narrated, internalized, and ultimately, reified. This is
+precisely what contemporary area studies approaches militate against.
+South Asia has a rich history of media and communication studies which,
+while available in English, is considerably under-cited by media
+historians in the west, except when references are made to communication
+or media research ``outside'' the west. This, in turn, results in
+anything outside Euro-American history being defined largely in terms of
+its difference. For instance, Robert Oliver's \emph{Communication and
+Culture in Ancient India and China}, while in many ways a scrupulous
+account of the place of rhetoric in the old and complex history of these
+two irreducibly different parts of the world, compromises itself by
+explicitly defining ``Eastern'' rhetoric in terms of its difference with
+the western tradition.\footnote{Robert Oliver, \emph{Communication and
+  Culture in Ancient India and China} (Syracuse: Syracuse University
+  Press, 1971).} The approach I describe pushes back on this sort of
+deep orientalism because it insists that western frameworks
+provincialize their own work.
+
+South Asian Studies are an interesting staging ground upon which to rest
+an area-focused view of research on communication and media history.
+There are many ways to write the history of research on media and
+communication studies in South Asia, as there are multiple senses in
+which one can apprehend what counts as ``communication
+history''---ranging from accounting for the trajectory of a predefined
+body of work, to looking at what is constituted as communication across
+a range of scholarship, to reviewing how media and communication
+scholarship itself recounts the history of media.\footnote{Peter
+  Simonson et al., ``The History of Communication History,'' in
+  \emph{The Handbook of Communication History}, eds. Peter Simonson et
+  al. (New York: Routledge, 2013).} Four approaches appear to be
+particularly salient in South Asia, each of which inevitably involves
+different kinds of inclusions and exclusions: a history of process, of
+specific media, of institutions, and of events (as opposed to, say, a
+focus on theories, methods, levels of analysis, or schools of thought).
+Of particular note is the fact that scholarly engagement with a
+particular kind of communication or media history has inevitably been
+accompanied by a scholarly review of the history of that engagement.
+
+A focus on \emph{process} entails examinations of the role that
+modernist logics of development, rationalization, and governmentality
+have played in the highly uneven and split growth of media and
+communication systems. A case in point is Bella Mody's analysis of the
+development of telecommunications in India, particularly its
+(neo)liberalization and privatization in the 1980s and 1990s, which she
+argues paradoxically reinscribed the power of the state.\footnote{Bella
+  Mody, ``State Consolidation through Liberalization of
+  Telecommunications Services in India,'' \emph{Journal of
+  Communication} 45, no 4 (1995): 115.} Pradip Thomas's programmatic
+work on participatory development communication also documents the
+impact of modernist processes of rationalization and commodification
+upon community-based organizing efforts, focusing particularly upon
+research that illuminates how radical change can be domesticated by
+institutionalized NGO structures that rationalize, bureaucratize, and
+ultimately depoliticize potentially transformative movements.\footnote{Pradip
+  Thomas, \emph{Participatory Development Communication: Philosophical
+  Premises}. (New Delhi: Sage Publications, 1994). Also, Pradip Thomas,
+  ``Development Communication and Social Change in Historical Context,''
+  in \emph{The Handbook of Development Communication and Social Change},
+  eds. Karin Wilkins, Thomas Tufte, and Rafael Obregon (Oxford: John
+  Wiley \& Sons, 2014).}
+
+Another approach to writing a South Asian history of media and
+communication research is \emph{medium-focused.} Some scholars have
+focused on the emergence of print media in the region, the first ever
+newspaper being \emph{Hicky's Bengal Gazette}, published in 1780 by a
+renegade Irishman, which vigorously criticized Warren Hastings for two
+years before the East India Company seized control of it two years
+later.\footnote{Andrew Otis\emph{, Hicky's Bengal Gazette: The Untold
+  Story of India's First Newspaper} (New Delhi: Westland Publications,
+  2018).} Akhtar and his colleagues have analyzed how nineteenth century
+vernacular press in the subcontinent both supported and critiqued the
+British Raj\footnote{M. Javaid Akhtar, Azra Asghar Ali, and Shahnaz
+  Akhtar. ``The Role of Vernacular Press in the Subcontinent During the
+  British Rule: A Study of Perceptions,'' \emph{Pakistan Journal of
+  Social Sciences} 30, no. 1 (2010).} and, like others, have discussed
+its pivotal role in developing and creating community and public
+consciousness that often crossed caste and religious lines.\footnote{Nazakat
+  Hussain, ``Role of Vernacular Press During British Rule in India,''
+  \emph{International Education and Research Journal} 3, no. 5 (2017);
+  and John Vilanilam, \emph{Communication in India: A Sociological
+  Perspective} (New Delhi: Sage Publications, 2005).} A myriad of other
+scholars have discussed the emergence of television in India and its
+central role in modern politics.\footnote{Nalin Mehta, ed.,
+  \emph{Television in India: Satellites, Politics and Cultural Change}
+  (London: Routledge, 2008).} And there has been considerable attention
+paid in the last two decades to digital media; quite possibly the first
+book on the subject, \emph{India's Information Revolution}, was authored
+by Arvind Singhal and Everett Rogers in 1988.\footnote{Arvind Singhal
+  and Everett Rogers, \emph{India's Information Revolution} (New Delhi:
+  Sage Publications, 1989).} Histories of communication studies in South
+Asia are implicitly, and sometimes explicitly, built around the history
+of the study of any (or all) of these media.
+
+A third approach to scholarship on media and communication history is
+\emph{institutional.} Commentary in the journal \emph{Economic and
+Political Weekly}, for example, has vigorously analyzed the role of the
+Press Council of India since its establishment in 1966, alternately
+bemoaning its power in the 1970s and critiquing its impotence in the
+current era. Other scholars have written about the establishment of the
+Indian Institute of Mass Communication in 1965 by the Ministry of
+Broadcasting and Information.\footnote{Keval Kumar, \emph{Mass
+  Communication in India,} 5th ed. (Mumbai: Jaico Publishing House,
+  2020).} While these accounts often focus upon the history of specific
+media and research institutions, they implicitly and sometimes
+explicitly attend to the intellectual history that lies behind those
+institutions. In a 1989 special issue of \emph{Media, Culture \&
+Society} on Indian media and mass communication research, for instance,
+Vasudeva and Chakravarty analyze the epistemology produced by the
+Institute, examining the lasting influence of Nehruvian ``scientific
+temper'' upon the production of research.\footnote{Sunita Vasudeva and
+  Pradip Chakravarty, ``The Epistemology of Indian Mass Communication
+  Research,'' \emph{Media, Culture \& Society} 11, no. 3 (1989).}
+
+A final approach to the history of media and communication research is
+event-based. Creating event-histories provides a glimpse into the
+unfolding temporal impact of specific kinds of media. Rajagopal's
+analysis of the rise of right-wing Hindu politics, for example, was
+based on a deft analysis of the impact that highly watched, multi-year
+serializations of the Hindu epics \emph{Ramayana} and \emph{Mahabharata}
+had on publics across the country during a period when the state-funded
+broadcaster, Doordarshan, was moving away from its avowed emphasis on
+information and education, and towards entertainment.\footnote{Arvind
+  Rajagopal, \emph{Politics after Television: Hindu Nationalism and the
+  Reshaping of the Public in India}, (Cambridge: Cambridge University
+  Press, 2001).} Contemporary studies of the impact of \emph{Ramayana}
+(including a recent re-telecast during the 2020 Covid-19 lockdown)
+almost always recount the multiple strands of commentary and scholarship
+that have accompanied the broadcast of the series over the last four
+decades.\footnote{See, for example, Ahutosh Kumar Pandey and Amitabh
+  Srivastava, ``Effects of Retelecast of TV Serial Ramayana on Indian
+  Audience During Lockdown: A Survey-Based Study,'' \emph{Journal of
+  Critical Reviews} 7, no. 19 (2020).}
+
+One pivotal and highly studied event in the history of media and
+communication research in the subcontinent occurred during the 1970s,
+and recounting it provides a window not only into how media and
+communication research unfolded in the subcontinent, but also
+illustrates the insight that an area-oriented approach can bring to
+research on communication and media history. In 1975, after nearly a
+decade of negotiation and preparation under the leadership of Dr. Vikram
+Sarabhai, popularly considered the founder of India's Space Program, and
+the signing of a 1969 agreement between the United States and India,
+NASA used its ATS-6 technology satellite to beam television programs
+about agriculture, family planning, and national integration from ground
+stations in Ahmedabad and Delhi to over 2,400 villages in six different
+parts of India.\footnote{Noshir Contractor, Arvind Singhal, and Everett
+  M. Rogers. ``Metatheoretical Perspectives on Satellite Television and
+  Development in India,'' \emph{Journal of Broadcasting \& Electronic
+  Media} 31, no. 2 (1988).} These areas were specially selected because
+they were largely rural, impoverished, and home to Dalit and Adivasi
+communities. M.S. Gore, the Director of the Tata Institute of Social
+Sciences was commissioned to lead field studies of the impact that the
+broadcasts were having on communities. The experiment was called
+Satellite Instructional Television Experiment---more popularly, SITE.
+
+The experiment continued for a full year and was discontinued by NASA in
+1976 despite protests from a number of groups across South Asia,
+including Arthur C. Clarke in Sri Lanka.\footnote{Raman Srinivasan, ``No
+  Free Launch: Designing the Indian National Satellite,'' in
+  \emph{Beyond the Ionosphere: Fifty Years of Satellite Communication},
+  ed. Andrew J Butrica (NASA: NASA History Series, 1997).} As many as
+nine hundred people per television set watched SITE programming
+(although that number dwindled to about ninety people per television set
+in 1976). SITE is fascinating not only because it launched an entire
+generation of studies of television impacts in India, but also because
+it began the development of television and research on it across every
+country in South Asia. SITE sparked an intense amount of academic study
+of the relationship between television and social change. Scholars have
+heralded it as the largest television experiment in the world, and
+others have referred to it as the most heavily studied communication
+event in history.\footnote{John Vilanilam, \emph{Communication in India:
+  A Sociological Perspective} (New Delhi: Sage Publications, 2005): 147.}
+
+SITE has, of course, come in for considerable criticism. Many scholars
+have critiqued the impoverished view of television and its impact
+embedded in the study, as well as the unabashed elitism, itself a
+product of Cold War politics, that led to the creation of the experiment
+in the first place. As Siddiqi has recently argued, the experiment, a
+collaboration between elite groups in two different parts of the world,
+inevitably positioned rural communities in different parts of the
+country, often Dalit and Adivasi, as inactive recipients of knowledge,
+and in this sense, served to reinforce two starkly different images of
+India---one tech savvy, and the other deeply impoverished---that persist
+to this day.\footnote{Asif A. Siddiqi, ``Whose India? SITE and the
+  Origins of Satellite Television in India,'' \emph{History and
+  Technology} 36, nos. 3-4 (2020).} More deeply, perhaps, SITE also
+makes visible the fact that much communication and media research in the
+country continues to be generated by Savarna upper-caste scholars, with
+Dalits either reduced to passive objects of research, and caste, more
+often than not, elided altogether as a subject of inquiry.
+
+SITE can also be understood as helping reinscribe Indian hegemony in
+South Asia. This is not only because its scholarly research attracts
+greater international visibility in media and communication studies than
+does research from Sri Lanka, Bangladesh, Pakistan, Nepal, or Bhutan,
+but also because SITE is an integral part of a larger technology
+transfer project embedded in Cold War relationships and a rivalry with
+Pakistan that helped India accrue scientific and technological expertise
+at the expense of its neighbors.
+
+And finally, a lesson from the SITE experiment that underscores an
+argument for developing and promoting an area-based approach to
+communication and media studies: SITE demonstrates that, from the
+get-go, research and scholarship about media and communication, even
+when it focuses upon one area, is almost inevitably transnational in
+some form. SITE was not an experiment that was internal to India, nor
+even between the US and India; it was caught up in a set of geopolitical
+relationships between state (and subsequently corporate) actors, and it
+carries a lesson for media historians: namely, that areas are always
+constituted by externals. In this sense, all aspects of media and
+communication history are always already international. And while
+bifurcating ``US'' from ``international'' (i.e. non-US) media and
+communication history may have been a useful staging ground upon which
+to expand how one tells such history,\footnote{See, for example, Peter
+  Simonson and David W. Park, eds., \emph{The International History of
+  Communication Study} (New York: Routledge, 2015).} it is time to move
+beyond that. For instance, rather than think about what impact ``US''
+research has had on the world, it might behoove us to think more deeply
+about how US research itself has been constituted by externals, not only
+in terms of the tired relationship with ancient Greece in the speech
+communication wing of the discipline, but also in terms of the bodies of
+immigrants who have performed that research---the number of departments
+across the US which have relied upon graduate students who then became
+immigrants and then highly successful, US-based communication
+researchers in their own right. The history of communication studies is
+not static; it is composed of ``the flows of people, the intersecting
+trajectories of individuals and social networks, and the peopling of
+institutions.''\footnote{David Park and Meghan Grosse, ``International
+  Vectors in U.S. Graduate Education in Communication,'' in \emph{The
+  International History of Communication Study}, eds. Peter Simonson and
+  David W. Park (New York: Routledge, 2015), 303.} Acknowledging this
+means that we have to invert how we study areas---and that is exactly
+what the study of areas themselves helps us accomplish.
+
+
+
+
+
+
+
+\section{Bibliography}\label{bibliography}
+
+\begin{hangparas}{.25in}{1} 
+
+
+
+Akhtar, M. Javaid, Azra Asghar Ali, and Shahnaz Akhtar. ``The Role of
+Vernacular Press in the Subcontinent During the British Rule: A Study of
+Perceptions.'' \emph{Pakistan Journal of Social Sciences} 30, no. 1
+(2010): 71--84.
+
+Contractor, Noshir, Arvind Singhal, and Everett M. Rogers.
+``Metatheoretical Perspectives on Satellite Television and Development
+in India.'' \emph{Journal of Broadcasting \& Electronic Media} 31, no. 2
+(1988): 129--48. \url{https://doi.org/10.1080/08838158809386690}.
+
+Hussain, Nazakat. ``Role of Vernacular Press During British Rule in
+India.'' \emph{International Education and Research Journal} 3, no. 5
+(2017): 231--33.
+\url{http://ierj.in/journal/index.php/ierj/article/view/911}.
+
+Khosrowjah, Hossein. ``A Brief History of Area Studies and International
+Studies.'' \emph{Arab Studies Quarterly} 31, no. 3-4 (2011): 131--42.
+\href{h\%20https://www.jstor.org/stable/41858661}{https://www.jstor.org/stable/41858661}.
+
+Kumar, Keval. \emph{Mass Communication in India}. 5th ed. Mumbai: Jaico
+Publishing House, 2020.
+
+Nalin Mehta, ed. \emph{Television in India: Satellites, Politics and
+Cultural Change}. London: Routledge, 2008.
+
+Mody, Bella. ``State Consolidation through Liberalization of
+Telecommunications Services in India.'' \emph{Journal of Communication}
+45, no. 4 (1995): 107--24.
+\url{https://doi.org/10.1111/j.1460-2466.1995.tb00757.x}.
+
+Mohanty, Chandra Talpade. ``Under Western Eyes Revisited: Feminist
+Solidarity through Anticapitalist Struggles.'' \emph{Signs: Journal of
+Women in Culture and Society} 28, no. 2 (2002): 499--535.
+\url{https://doi.org/10.1086/342914}.
+
+Oliver, Robert. \emph{Communication and Culture in Ancient India and
+China}. Syracuse: Syracuse University Press, 1971.
+
+Otis, Andrew. \emph{Hicky's Bengal Gazette: The Untold Story of India's
+First Newspaper.} New Delhi: Westland Publications, 2018.
+
+Pandey, Ahutosh Kumar, and Amitabh Srivastava. ``Effects of Retelecast
+of TV Serial Ramayana on Indian Audience During Lockdown: A Survey-Based
+Study.'' \emph{Journal of Critical Reviews} 7, no. 19 (2020): 3470--77.
+
+Park, David, and Meghan Grosse. ``International Vectors in U.S. Graduate
+Education in Communication.'' In \emph{The International History of
+Communication Study}, edited by Peter Simonson and David W. Park,
+303--23. New York: Routledge, 2015.
+
+Rafael, Vicente. ``The Cultures of Area Studies in the United States.''
+\emph{Social Text} 41 (Winter 1994): 91--111.
+
+Rajagopal, Arvind. \emph{Politics after Television: Hindu Nationalism
+and the Reshaping of the Public in India}. Cambridge: Cambridge
+University Press, 2001.
+
+Sears, Laurie. ``Postcolonial Identities, Feminist Criticism and
+Southeast Asian Studies.'' In \emph{Knowing Southeast Asian Subjects},
+edited by Laurie Sears 35--75. Seattle: University of Washington Press,
+2007.
+
+Siddiqi, Asif A. ``Whose India? SITE and the Origins of Satellite
+Television in India.'' \emph{History and Technology} 36, no. 3--4
+(2020): 452--74. \url{https://doi.org/10.1080/07341512.2020.1864118}.
+
+Simonson, Peter, and David W. Park, eds. \emph{The International History
+of Communication Study}. New York: Routledge, 2015.
+
+Simonson, Peter, Janice Peck, Robert T. Craig, and John P. Jackson, Jr.
+``The History of Communication History.'' In \emph{The Handbook of
+Communication History}, edited by Peter Simonson, Janice Peck, Robert T.
+Craig, and John P. Jackson, Jr., 13--57. New York: Routledge, 2013.
+
+Simonson, Peter, Janice Peck, Robert T. Craig, and John P. Jackson, Jr.,
+eds. \emph{The Handbook of Communication History}. New York: Routledge,
+2013.
+
+Singhal, Arvind, and Everett Rogers. \emph{India's Information
+Revolution}. New Delhi: Sage Publications, 1989.
+
+Srinivasan, Raman. ``No Free Launch: Designing the Indian National
+Satellite.'' In \emph{Beyond the Ionosphere: Fifty Years of Satellite
+Communication}, edited by Andrew J Butrica. NASA: NASA History Series,
+1997.
+
+Thomas, Pradip. \emph{Participatory Development Communication:
+Philosophical Premises}. New Delhi: Sage Publications, 1994.
+
+---------. ``Development Communication and Social Change in Historical
+Context.'' In \emph{The Handbook of Development Communication and Social
+Change}, edited by Karin Wilkins, Thomas Tufte, and Rafael Obregon,
+7--19. Oxford: John Wiley \& Sons, 2014.
+
+Vasudeva, Sunita, and Pradip Chakravarty. ``The Epistemology of Indian
+Mass Communication Research.'' \emph{Media, Culture \& Society} 11, no.
+3 (1989): 415--33. \url{https://doi.org/10.1177/016344389011004005}.
+
+Vilanilam, John. \emph{Communication in India: A Sociological
+Perspective}. New Delhi: Sage Publications, 2005.
+
+
+
+\end{hangparas}
+
+
+\end{document}
