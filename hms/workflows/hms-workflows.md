@@ -12,6 +12,10 @@
 
 * [Upload copy-edited article to PubPub](/hms/workflows/upload-copy-edited-file-to-pubpub.md)
 
+## Fundraising
+
+* [Write a prospect note OACIP](/hms/workflows/write-a-prospect-note-oacip.md)
+
 ## Latex-and-pdf
 
 * [Create pdf from latex](/hms/workflows/create-pdf-from-latex.md)
