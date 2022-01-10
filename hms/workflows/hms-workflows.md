@@ -7,6 +7,7 @@
 ## Airtable
 
 * [Upload copy-edited article to PubPub](/hms/workflows/upload-copy-edited-file-to-pubpub.md)
+* [Prepare initial decision letter](/hms/workflows/prepare-initial-decision-letter.md)
 
 ## Copy-edit
 
@@ -36,3 +37,4 @@
 ## Review
 
 * [Second-round review](/hms/workflows/second-round-review.md)
+* [Prepare initial decision letter](/hms/workflows/prepare-initial-decision-letter.md)
