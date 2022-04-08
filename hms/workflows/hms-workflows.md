@@ -4,10 +4,15 @@
 
 ***
 
+## Submission
+
+* [Process new submission](/hms/workflows/process-new-submission.md)
+
 ## Airtable
 
 * [Upload copy-edited article to PubPub](/hms/workflows/upload-copy-edited-file-to-pubpub.md)
 * [Prepare initial decision letter](/hms/workflows/prepare-initial-decision-letter.md)
+* [Process new submission](/hms/workflows/process-new-submission.md) 
 
 ## Copy-edit
 
