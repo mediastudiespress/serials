@@ -1,0 +1,1973 @@
+% see the original template for more detail about bibliography, tables, etc: https://www.overleaf.com/latex/templates/handout-design-inspired-by-edward-tufte/dtsbhhkvghzz
+
+\documentclass{tufte-handout}
+
+%\geometry{showframe}% for debugging purposes -- displays the margins
+
+\usepackage{amsmath}
+
+\usepackage{CJKutf8}
+
+\usepackage{hyperref}
+
+\usepackage{fancyhdr}
+
+\usepackage{hanging}
+
+\hypersetup{colorlinks=true,allcolors=[RGB]{97,15,11}}
+
+\fancyfoot[L]{\emph{History of Media Studies}, vol. 2, 2022}
+
+
+% Set up the images/graphics package
+\usepackage{graphicx}
+\setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
+\graphicspath{{graphics/}}
+
+\title[Journalism via Systems Cybernetics]{Journalism via Systems Cybernetics: The Birth of the Chinese Communication Discipline and Post-Mao Press Reforms} % longtitle shouldn't be necessary
+
+% The following package makes prettier tables.  We're all about the bling!
+\usepackage{booktabs}
+
+% The units package provides nice, non-stacked fractions and better spacing
+% for units.
+\usepackage{units}
+
+% The fancyvrb package lets us customize the formatting of verbatim
+% environments.  We use a slightly smaller font.
+\usepackage{fancyvrb}
+\fvset{fontsize=\normalsize}
+
+% Small sections of multiple columns
+\usepackage{multicol}
+
+% Provides paragraphs of dummy text
+\usepackage{lipsum}
+
+% These commands are used to pretty-print LaTeX commands
+\newcommand{\doccmd}[1]{\texttt{\textbackslash#1}}% command name -- adds backslash automatically
+\newcommand{\docopt}[1]{\ensuremath{\langle}\textrm{\textit{#1}}\ensuremath{\rangle}}% optional command argument
+\newcommand{\docarg}[1]{\textrm{\textit{#1}}}% (required) command argument
+\newenvironment{docspec}{\begin{quote}\noindent}{\end{quote}}% command specification environment
+\newcommand{\docenv}[1]{\textsf{#1}}% environment name
+\newcommand{\docpkg}[1]{\texttt{#1}}% package name
+\newcommand{\doccls}[1]{\texttt{#1}}% document class name
+\newcommand{\docclsopt}[1]{\texttt{#1}}% document class option name
+
+
+\begin{document}
+
+\begin{titlepage}
+
+\begin{fullwidth}
+\noindent\LARGE\emph{Exclusions in the History of Media Studies
+} \hspace{25mm}\includegraphics[height=1cm]{logo3.png}\\
+\noindent\hrulefill\\
+\vspace*{1em}
+\noindent{\Huge{Journalism via Systems Cybernetics:\\\noindent The Birth of the Chinese Communication\\\noindent Discipline and Post-Mao Press Reforms\par}}
+
+\vspace*{1.5em}
+
+\noindent\LARGE{Angela Xiao Wu}\par}\marginnote{\emph{Angela Xiao Wu, ``Journalism via Systems Cybernetics: The Birth of the Chinese Communication Discipline and Post-Mao Press Reforms,'' \emph{History of Media Studies} 2 (2022), \href{https://doi.org/10.32376/d895a0ea.182c7595}{https://doi.org/ 10.32376/d895a0ea.182c7595}.} \vspace*{0.75em}}
+\vspace*{0.5em}
+\noindent{{\large\emph{New York University}, \href{mailto:angelaxwu@nyu.edu}{angelaxwu@nyu.edu}\par}} \marginnote{\href{https://creativecommons.org/licenses/by-nc/4.0/}{\includegraphics[height=0.5cm]{by-nc.png}}}
+
+% \vspace*{0.75em} % second author
+
+% \noindent{\LARGE{<<author 2 name>>}\par}
+% \vspace*{0.5em}
+% \noindent{{\large\emph{<<author 2 affiliation>>}, \href{mailto:<<author 2 email>>}{<<author 2 email>>}\par}}
+
+% \vspace*{0.75em} % third author
+
+% \noindent{\LARGE{<<author 3 name>>}\par}
+% \vspace*{0.5em}
+% \noindent{{\large\emph{<<author 3 affiliation>>}, \href{mailto:<<author 3 email>>}{<<author 3 email>>}\par}}
+
+\end{fullwidth}
+
+\vspace*{1em}
+
+\hypertarget{abstract}{%
+\section{Abstract}\label{abstract}}
+
+
+In China's reform era (1979--), to revitalize the newspaper for economic
+modernization, journalism scholars turned to American mass communication
+study after Wilbur Schramm's visit in 1982. This familiar story of the
+birth of the Chinese communication discipline missed a critical thread.
+Faced with constant political contractions, systems cybernetics crept
+in: The supposed founder of communication, Wilbur Schramm, spoke in
+Claude Shannon's name; China's ``King of Rocketry,'' Qian Xuesen,
+pledged to augment Norbert Wiener; and Engels's writing on dialectical
+materialism was seized upon as part of official Marxism. 1980s China is
+known for the revival of humanism. However, in the tightly controlled
+news sector, reformist scholars conjoined systems cybernetics and
+Engels's Marxist philosophy, dismantling the human subject in the
+process. This articulation of the epistemology and ethic of newsmaking,
+which has persisted to this day in the disciplinary assumptions of
+Chinese journalism-communication, allowed the regime to depart from
+Maoism and legitimate a state-managed marketization. Excavating an
+unknown episode in the global history of cybernetics, this revisionist
+study sheds new light on the post-Mao trajectories of journalism and
+media governance. It also dislodges the ossified binaries between
+science and political ideology, and between socialist centralism and
+capitalist liberalism, which are prevalent in (post-)Cold War
+narratives.
+
+
+
+
+
+\enlargethispage{2\baselineskip}
+
+\vspace*{2em}
+
+\noindent{\emph{History of Media Studies}, vol. 2, 2022}
+
+
+\end{titlepage}
+
+\begin{CJK*}{UTF8}{gbsn} 
+
+\newthought{In the warm spring} of 1982, as universities scrambled to reinvigorate
+themselves from the ruins of the Cultural Revolution, the
+People's
+Republic of China (PRC) welcomed the American
+scholar-educator-administrator Wilbur Schramm (1907--1987). This was a
+time when the press, journalism scholarship, and government propaganda
+units, which later functioned more discretely, were still intimately
+entwined. Overlapping groups of academic researchers, news workers, and
+cultural cadres comprised the media sectors' ``establishment
+intellectuals.''\footnote{Carol Hamrin and Timothy Cheek, \emph{China's
+  Establishment Intellectuals} (Armonk, NY: M. E. Sharpe, 1986).} To
+reinvent journalism and revitalize the newspaper, these media thinkers
+turned to Western communication study, more precisely, the American mass
+communication tradition represented by Schramm. Today, this turn is the
+familiar story of the disciplinary formation of Chinese communication
+study or \emph{chuanbo xue}.\footnote{To prevent confusion, the
+  discipline of communication focuses on humans not machines (e.g.,
+  ``telecommunications''). The Chinese term for the then-newly imported
+  concept of ``communication'' is \emph{chuanbo}, a translation that
+  evokes certain meanings while displacing others. \emph{Chuan} means
+  ``transmission'' and \emph{bo} ``to propagate far and wide.''
+  \emph{Chuanbo}'s closest English equivalent is perhaps
+  ``dissemination.'' While the English word ``communication'' connotes
+  exchange between actors not necessarily different in power,
+  \emph{chuanbo} centers on the ability to distribute to a wider
+  audience, assuming a powerful disseminator. \emph{Chuanbo} thus
+  conveys a narrow focus on the operations of broadcast media or ``mass
+  communication,'' a distinct though dominant subarea of communication
+  study. John Durham Peters, ``Institutional Sources of Intellectual
+  Poverty in Communication Research,'' \emph{Communication Research} 13,
+  no. 4 (1986). This terminological equivalence effectively steered the
+  Chinese field away from other communication phenomena. After all,
+  unlike ``anthropology'' or ``sociology,'' ``communication'' designates
+  the discipline's intellectual focus. Also notably, \emph{chuanbo}
+  suggests a proximity to \emph{xuanchuan}, the signature phrase for
+  doing socialist cultural work that is typically translated as
+  ``propaganda.'' However, Chinese \emph{xuanchuan} is really a broad,
+  non-pejorative concept that refers to authoritative entities making
+  something known to and resonant with the people. In the socialist
+  context, ``propagation'' is a closer phrase: to promote what one
+  believes to be true, with a centuries-long tradition wherein
+  scholar-officials ``propagated'' the dynasty's moral line in the
+  orthodox language of the day. Timothy Cheek, \emph{Propaganda and
+  Culture in Mao's China: Deng Tuo and the Intelligentsia} (London:
+  Clarendon Press, 1997).} While textbooks portray this formation as a
+moment of intense intellectual enlightenment, critical voices at the
+margin---mostly from scholars outside of China---consider it an
+unfortunate adoption of the positivist scholarship of liberal capitalism
+propelled by the resolution to negate socialist legacies.\textsuperscript{3}
+
+It is not an either-or story.
+
+This article illuminates a key component that is missing from existing
+accounts. During sporadic political contractions, systems cybernetics
+crept in: The supposed founder of American communication, Wilbur
+Schramm, spoke in Claude Shannon's name; China's ``King of Rocketry,''
+Qian Xuesen, pledged to augment Norbert Wiener; and good old Engels's
+writing on dialectical materialism was seized upon as part of official
+Marxism. In the (often overlooked) absence of a countervailing social
+science tradition, I demonstrate, the post-Mao discipline of
+journalism-communication has been profoundly shaped by systems
+cybernetics. By ``systems cybernetics'' I mean a highly infectious
+mixture of ideas from cybernetic and information theories that was,
+crucially, accompanied by gusto for system-level visions.
+
+This revisionist history of the Chinese communication discipline adds an
+important but neglected case to the global history of cybernetics and
+systems theory. For its interdisciplinary propositions, this set of
+knowledge acquired extraordinary political flexibility and appeal in the
+hands of historical actors. It fostered cross-pollination between
+knowledge fields in the postwar US,\textsuperscript{4} transcended the Cold War's divide as a ``neutral''
+toolbox,\textsuperscript{5}
+and helped inoculate Soviet sciences from ideological
+attacks.\textsuperscript{6} In
+China's ``post-Mao military-to-civilian conversation,'' systems
+cybernetics also informed the one-child policy.\textsuperscript{7} Complementing this extensive literature, I delineate the Chinese
+import of cybernetics through a kind of artful ``rediscovery'' of
+Friedrich Engels, exemplified in Qian Xuesen's writings. This history
+brings to the fore the resonance and overlapping genealogies\marginnote{\textsuperscript{3} E.g.,
+  Chunfeng Lin and John Nerone, ``The `Great Uncle of Dissemination':
+  Wilbur Schramm and Communication Study in China,'' in \emph{The
+  International History of Communication Study}, ed. Peter Simonson and
+  David W. Park (New York: Routledge, 2015); Hu Zhengrong, Ji Deqiang,
+  and Zhang Lei, ``Building the Nation-State: Journalism and
+  Communication Studies in China,'' in \emph{The International History
+  of Communication Study}, ed. Peter Simonson and David W. Park (New
+  York: Routledge, 2015; Yuezhi Zhao, ``批判研究与实证研究的对比分析''
+  {[}Comparing critical and empirical approaches{]},\emph{国际新闻界}
+  {[}Chinese journal of journalism and communication{]}, no. 11 (2006);
+  Liu Hailong 刘海龙,
+  ``\,`传播学'引进中的`失踪者'：从1978年--1989年批判学派的引介看中国早期的传播学观念''
+  {[}The `missing persons' in the import of communication{]}.
+  \emph{新闻与传播研究} {[}Journalism and communication{]}, no. 4
+  (2007).} between\marginnote{\textsuperscript{4} Peter Galison, ``The
+  Ontology of the Enemy: Norbert Wiener and the Cybernetic Vision,''
+  \emph{Critical Inquiry} 21, no. 1 (1994); Hunter Heyck, \emph{Age of
+  System: Understanding the Development of Modern Social Science}
+  (Baltimore, MD: Johns Hopkins University Press, 2015); Ronald R.
+  Kline, \emph{The Cybernetics Moment: Or Why We Call Our Age the
+  Information Age} (Baltimore, MD: Johns Hopkins University Press,
+  2015).}
+systems\marginnote{\textsuperscript{5} Eden Medina, \emph{Cybernetic Revolutionaries:
+  Technology and Politics in Allende's Chile} (Cambridge: MIT Press,
+  2014); Egle Rindzeviciute, \emph{The Power of Systems: How Policy
+  Sciences Opened Up the Cold War World} (Ithaca, NY: Cornell University
+  Press, 2016); Benjamin Peters, \emph{How Not to Network a Nation: The
+  Uneasy History of the Soviet Internet} (Cambridge: MIT Press, 2016).} cybernetics\marginnote{\textsuperscript{6} Slava Gerovitch, \emph{From Newspeak to Cyberspeak: A
+  History of Soviet Cybernetics} (Cambridge: MIT Press, 2004).} and\marginnote{\textsuperscript{7}\setcounter{footnote}{7} Susan
+  Greenhalgh, ``Missile Science, Population Science: The Origins of
+  China's One-Child Policy,'' \emph{China Quarterly}, no. 182 (2005):
+  253.} dialectical materialism,\footnote{Richard
+  Levins, ``Dialectics and Systems Theory,'' \emph{Science \& Society}
+  62, no. 3 (1998).} which have been written off in the history of
+science and technology because the Cold War lens views Marxist
+philosophy as ``ideology'' and ``unscientific.''\footnote{Alexei
+  Yurchak, ``Communist Proteins: Lenin's Skin, Astrobiology, and the
+  Origin of Life'' \emph{Kritika: Explorations in Russian and Eurasian
+  History} 20, no. 4 (2019). Also see Angus M. Taylor, ``Dialectics of
+  Nature or Dialectics of Practice?'' \emph{Dialectical Anthropology} 4,
+  no. 4 (1979).} With it, I highlight the structural and discursive
+conditions conducive for contemporary Chinese social governance to
+incorporate systems cybernetics, a broader historical process in need of
+collective research efforts.
+
+\end{CJK*}
+
+
+This is also a sociohistorical study of how the moral and political
+commitments of journalism, a normative interpretive institution, found
+their articulations in languages of science and technology. What
+unfolded as China transitioned to post-socialism, however, bears little
+resemblance to the historical discovery of objectivity in American
+journalism.\textsuperscript{10}
+In the Mao era, it was understood that, despite its claim to represent
+reality objectively, the capitalist nature of the Western press
+inevitably led to thoughtless reproduction of fragmented appearances,
+which was at best ``superficial truth'' (\emph{biaoxiang zhenshi}). The
+Chinese socialist press, in contrast, was aimed at assisting class
+struggle by delivering ``substantial truth'' (\emph{benzhi zhenshi}),
+which exposed the fundamental state and relationships of society
+according to official Marxist insights (i.e., ``the inherent logic of
+reality''). After Mao, Chinese journalism theory appropriated systems
+cybernetic ideas, but this appropriation never led to pronouncing any
+form of ``scientific objectivity'' in reporting. Rather, it held onto
+the cybernetic notion of ontology and, contingently, control.\textsuperscript{11} The
+rise of these normative conceptions of news media in the 1980s has been
+lost to the extant historiography on Chinese media reforms, which
+centers on media marketization and advocacy for liberal professionalism
+in the 1990s.
+
+Indeed, this history troubles not only the binary of science and
+political ideology, but also the binary of socialist centralism and
+capitalist liberalism that characterizes many post-socialist narratives.
+Known as China's ``New Enlightenment,'' the 1980s is defined by a
+``humanism fever''---beginning with Marxist humanism and taken over by
+liberal humanism.\textsuperscript{12} Even science's wide appeal in the 80s has been examined for
+breeding humanist values amenable to democratic politics. Many
+scientists, such as Fang Lizhi, became liberal dissidents and
+spearheaded the 1989 pro-democratic movement.\textsuperscript{13} In the
+meantime, critics on the left see the roots of China's neoliberalism:
+``the abstract concept of human subjectivity and the concept of human
+freedom and liberation, which played significant roles in the critique
+of Mao's socialist experiment, lack vigor in the face of the social
+crises encountered in the process of capitalist marketization and
+modernization.''\textsuperscript{14} What happened to
+the news sector, which the Party placed under its most intense,
+unwavering scrutiny, deviates from this\marginnote{\textsuperscript{10} Michael Schudson, \emph{Discovering The News: A
+  Social History Of American Newspapers} (New York: Basic Books, 1981).} understanding.\marginnote{\textsuperscript{11} See
+  Galison, ``Ontology of the Enemy''; Andrew Pickering, \emph{The
+  Cybernetic Brain: Sketches of Another Future} (Chicago: University of
+  Chicago Press, 2010); Fred Turner, \emph{From Counterculture to
+  Cyberculture: Stewart Brand, the Whole Earth Network, and the Rise of
+  Digital Utopianism} (Chicago: University of Chicago Press, 2008).} To\marginnote{\textsuperscript{12} Gloria Davies, ``Discursive Heat: Humanism in
+  1980s China,'' in \emph{A New Literary History of Modern China}, ed.
+  David Der-Wei Wang (Cambridge: Belknap Press/Harvard University Press,
+  2017).} battle\marginnote{\textsuperscript{13} Lyman H. Miller,
+  \emph{Science and Dissent in Post-Mao China: The Politics of
+  Knowledge} (Seattle: University of Washington Press, 1996).} Mao-era\marginnote{\textsuperscript{14}\setcounter{footnote}{14} Wang Hui, \emph{China's New Order: Society,
+  Politics, and Economy in Transition} (Cambridge: Harvard University
+  Press, 2003), 167; Lisa Rofel, \emph{Desiring China: Experiments in
+  Neoliberalism, Sexuality, and Public Culture} (Durham: Duke University
+  Press, 2007); Shu-Mei Shih, ``Is the Post in Postsocialism the Post in
+  Posthumanism?'' \emph{Social Text} 30, no. 1 (2012).}
+constrictions, reformist scholars wound up conjoining systems
+cybernetics and Engels's Marxist philosophy, dismantling rather than
+reviving the human subject in the process. This articulation of
+newsmaking's epistemological and ethical grounds allowed the Chinese
+Communist Party (CCP) to depart from Maoism and legitimate a
+state-managed marketization, with a far-reaching legacy.
+
+\hypertarget{knowledge-upgrade-for-party-journalism-communication-without-baggage}{%
+\section{Knowledge Upgrade for Party Journalism: Communication
+\\\noindent without
+Baggage}\label{knowledge-upgrade-for-party-journalism-communication-without-baggage}}
+
+\begin{CJK*}{UTF8}{gbsn} 
+
+From late April to early May of 1982, Wilbur Schramm visited the PRC in
+the company of his wife and Timothy Yu (1920--2012), translator and
+enabler of the ``icebreaking'' trip. Yu was Schramm's former student at
+Stanford and then-retired chair of Department of Journalism and
+Communication at the Chinese University of Hong Kong.\footnote{Much has
+  been written on this historic visit and the role of colonial Hong Kong
+  as the nodal point mediating the import of communication scholarship.
+  Timothy Yu et al., ``中国传播学研究破冰之旅的回顾：余也鲁教授访问记''
+  {[}Chinese communication study's icebreaking trip in retrospect{]},
+  \emph{新闻与传播研究} {[}Journalism and communication{]}, no. 4
+  (2012); Lin and Nerone, ``\,`Great Uncle of Dissemination': Wilbur
+  Schramm.''} In Beijing, thanks to a request put through by the Chinese
+Academy of Social Science (CASS), Schramm met Bo Yibo, Vice Premier in
+charge of science, technology, and finance.\footnote{Xiaoling 晓凌,
+  ``他们精心治学`` {[}They are devoted to scholarships{]},
+  \emph{新闻学会通讯} {[}Society of journalism letters{]}, no. 14
+  (1982).} Having led multiple UNESCO endeavors in Asia and the Middle
+East, Schramm's emphasis on communication for ``development''
+understandably appealed to the CCP leaders.\footnote{A rarely noted
+  detail was that, as a conservative veteran, Bo's unusual interest in
+  the subject had been cultivated by his son, Bo Xilai, who happened to
+  be among the first cohort of graduates studying at the CASS Journalism
+  Institute, launched in 1979. See Wang Yihong 王怡红and Hu Yiqing
+  胡翼青, eds.,\emph{中国传播学30年} {[}Chinese communication: thirty
+  years{]} (Beijing: Chinese Encyclopedia Press 中国大百科全书出版社,
+  2010), 613, 632. Three decades later, this princeling son, mayor of
+  Chongqing Municipality and a CCP Politburo member, was sensationally
+  purged by Xi's administration.} In the uncertain early-reform period,
+the Vice Premier's explicit support made Schramm's sermon for
+communication all the more phenomenal. Schramm delivered a speech to
+hundreds of scholars and propaganda cadres that packed the top-floor
+auditorium of the \emph{People's Daily}'s main building, then located on
+Wangfujing Street, a central area of Beijing studded with aristocratic
+residences from the Qing Dynasty. He also spoke at Renmin University and
+CASS.
+
+Schramm certainly knew how to strike a chord with his audience, which
+mostly consisted of scholar-educators who were experienced news workers
+in the Mao era and the first graduate student cohorts back to school,
+eager to learn and innovate. Before diving into his topic, he typically
+began by proudly retracing his past life as a reporter and an editor:
+``The blood of journalism flows in my veins. In other words, I am a
+newsman upside-down and inside-out.''\textsuperscript{18} Schramm
+then characterized journalism studies, supposedly concerned with one
+variety of human communication, as a subarea and ``precursor'' of
+communication study.\textsuperscript{19} He demonstrated this through an
+opportunistic telling of its American history: ``American journalism
+departments turned to communication, integrated it into their journalism
+education, and established communication research centers.''\textsuperscript{20}
+  
+\newpage
+
+This\marginnote{\textsuperscript{18} Wilbur Schramm,
+  ``美国"大众传播学"的四个奠基人'' {[}Four forefathers of American mass
+  communication{]}, \emph{国际新闻界} {[}Chinese journal of journalism
+  and communication{]}, no. 2 (1982): 2. Unless otherwise indicated,
+  this and subsequent translations were made by the author.} was\marginnote{\textsuperscript{19} Zhou Zhi 周致,
+  ``西方传播学的产生及其与新闻学的关系'' {[}Western communication's
+  origin and relations with journalism study{]}, in \emph{传播学简介}
+  {[}Introduction to communication study{]}, ed. 社科院新闻所世界室 CASS
+  Journalism Institute (Beijing: 人民日报出报社 People's Daily Press,
+  1983); Chen Chongshan 陈崇山, ``施拉姆的理论对我的指引'' {[}How
+  Schramm's theory guided me{]}, \emph{新闻与传播研究} {[}Journalism and
+  communication{]}, no. 4 (2012).} a\marginnote{\textsuperscript{20}\setcounter{footnote}{20} Xu
+  Yaokui 徐耀魁,
+  ``施拉姆对中国传播学研究的影响：纪念施拉姆来新闻研究所座谈30周年''
+  {[}Schramm's impacts on Chinese communication research{]},
+  \emph{新闻与传播研究} {[}Journalism and communication{]}, no. 4
+  (2012): 10.} far cry from his own past and future English writings.
+Schramm had always been explicit that it was the lavish resources from
+governments, commerce, and the military that drove the social sciences
+to splinter and form a separate foundation for communication as a
+discipline.\footnote{Schramm, ``The Unique Perspective of Communication:
+  A Retrospective View,'' \emph{Journal of Communication} 33, no. 3
+  (1983): 7. Also see Peters, ``Institutional Sources of Intellectual
+  Poverty.''} As ``skills departments,'' journalism coalesced with
+communication to increase their academic status.\footnote{Schramm,
+  ``Human Communication as a Field of Behavioral Science'' in
+  \emph{Human Communication as a Field of Study}, ed. Sarah Sanderson
+  King (Albany, NY: SUNY Press, 1989). Also see James W. Tankard Jr.,
+  ``The Theorists,'' in \emph{Makers of the Media Mind: Journalism
+  Educators and Their Ideas}, ed. William David Sloan (New York:
+  Routledge, 1990); James W. Carey, ``Some Personal Notes on US
+  Journalism Education,'' \emph{Journalism} 1, no. 1 (2000).} Many
+practice-oriented faculty, however, continued to view their
+research-focused colleagues as irrelevant for producing good
+journalism---a perennial tension once popularly referred to as the
+``green eyeshades vs. chi-squares'' division in journalism
+departments.\footnote{The green eyeshade is the headgear that used to be
+  worn by copy editors to cut the glare from the overhead lights. The
+  chi-square comes from a statistical test. Jake Highton, ``\,`Green
+  Eyeshade' Profs Still Live Uncomfortably with `Chi-Squares';
+  Convention Reaffirms Things Haven't Changed Much,'' \emph{Journalism
+  Educator} 44, no. 2 (1989).} Chi-squares failed to see much merit in
+letting green eyeshades play their games either: ``The fact that a
+single individual can teach courses in, say, magazine editing and
+research techniques in social psychology {[}a dominant approach of mass
+communication{]} is a tribute to human adaptability, not to a
+well-conceived academic discipline.''\footnote{Jeremy Tunstall, ``The
+  Trouble with U.S. Communication Research,'' \emph{Journal of
+  Communication} 33, no. 3 (1983): 93.} This jab was literally pages
+away from Schramm's own historical narrative in the \emph{Journal of
+Communication}, both drafted within months of the latter's China visit.
+In short, at American universities it was institutional politics that
+coupled journalism and mass communication, and their internal division
+persists. For the Chinese ears, however, Schramm changed this
+organizational story to one about inexorable intellectual development.
+The Chinese inquired keenly about whether turning to communication might
+hinder journalism studies. ``There is neither conflict nor tension
+between the two,'' assured Schramm, ``but only mutual enhancement. . . .
+Communication is journalism's flesh and blood.''\footnote{Schramm,
+  ``美国"大众传播学"的四个奠基人'' {[}Four forefathers{]}, 2.}
+  
+
+
+In fact, mass communication was indeed a godsend. In the early 1980s,
+the main hurdle faced by reform-minded journalism scholars was the
+incommensurability between ``Marxist proletarian (or socialist) theory
+of the press'' and its ``bourgeois'' counterpart. The two were
+considered incommensurable because the Maoist epistemology maintained
+that the norms of the press, or the press theory of a society, were
+determined by the given political economy. Therefore, to appropriate any
+journalistic norms from the ``Western bourgeois society'' invited
+ideological attacks. But thanks to its decontextualized abstraction, the
+Schrammian strand of mass communication provided a fresh start. Its
+circumscribed diagrams of the dissemination process invariably trace
+symbolic content from point A to point B. Whereas critical scholars
+across the Pacific increasingly recognized and critiqued this
+obliviousness to fundamental questions about the relationship between
+media and broader structures of power,\footnote{A string of such
+  reflexive essays appeared in ``Ferment in the Field,'' the 1983
+  landmark issue of the flagship \emph{Journal of Communication}.}
+early-reform China found it particularly palatable.
+
+What was remarkable about this affinity, if we can call it that, was
+that it resulted from American communication's own disciplinary
+formation during the Cold War. It was military and corporate patronage
+that spawned its growth, directing the discipline's latent assumptions
+about when and where the effects of mass media should be investigated.
+Meanwhile, communication scholarship persistently veils the capitalist
+and imperialist constitution of media operations, a kind of
+``ideological work'' performed in service of power.\footnote{Peters,
+  ``Institutional Sources of Intellectual Poverty''; Arvind Rajagopal,
+  ``Communicationism: Cold War Humanism,'' \emph{Critical Inquiry} 46,
+  no. 2 (2020).} In a sense, the relationship between American
+communication and China was epitomized by Schramm's own life. During
+World War II and the early years of the Cold War, he was deeply involved
+in US security establishments. He co-wrote \emph{Four Theories of the
+Press} (1956), which offered a typology of ideas that supposedly
+encapsulate both government and the press of a given society. It
+classified the Chinese press as a follower of the ``Soviet communist
+theory,'' described as an expanded version of the ``Authoritarian
+theory'' originating in feudal Europe.\footnote{Fred Siebert, Theodore
+  Peterson, and Wilbur Schramm, \emph{Four Theories of the Press: The
+  Authoritarian, Libertarian, Social Responsibility, and Soviet
+  Communist Concepts of What the Press Should Be and Do} (Champaign, IL:
+  University of Illinois Press, 1956).} In the late 1960s and 1970s, as
+he moved to the ``development paradigm'' of communication, Schramm
+became intrigued by China's economic growth and relied on his Taiwanese
+and Hong Kong students for material.\footnote{Wilbur Schramm, Godwin C.
+  Chu, and Frederick T. C. Yu, ``China's Experience with Development
+  Communication: How Transferable Is That?'' in \emph{Communication and
+  Development in China}, ed. Goodwin Chu et al. (Honolulu: East-West
+  Center, 1975). Also see Lin and Nerone, ``\,`Great Uncle of
+  Dissemination': Wilbur Schramm.''} During his time at CASS in 1982,
+the Chinese brought up his \emph{Four Theories} book. Did his
+classification change? As Timothy Yu recalls, ``To this Schramm
+responded humorously, `it's been decades and I almost forgot about this
+book. If I write it today, I wouldn't say China is authoritarian. I'd
+think of another phrase. I'll tell you once I have it.'\,''\footnote{Yu
+  et al., ``中国传播学研究破冰之旅的回顾：余也鲁教授访问记`` {[}Chinese
+  communication study's icebreaking trip in retrospect{]}, 7.}
+
+
+
+However, by opening itself up to communication in the 1980s, Chinese
+journalism studies did not embark on behaviorist empirical research on
+journalism phenomena because no such research paradigm was available.
+Early American communication PhDs typically did coursework in sociology,
+political science, and psychology departments, where social scientific
+methods were inculcated. These empirical scholars then assumed
+leadership roles in flourishing communication departments.\footnote{Everett
+  M. Rogers, ``Wilbur Schramm and the Establishment of Communication
+  Study,'' chap. 12 in \emph{History of Communication Study} (New York:
+  Free Press, 1997).} But Schramm himself had little experience in
+frontier research. His yearning, instead, was for the intellectual
+integration of communication as a field.\footnote{Even in the eyes of
+  his most ardent colleagues and protégés, Schramm's contribution to
+  communication study was more organizational than intellectual. Rogers,
+  \emph{History of Communication Study}; Emile G. McAnany, ``Wilbur
+  Schramm, 1907--1987: Roots of the Past, Seeds of the Present,''
+  \emph{Journal of Communication} 38, no. 4 (1988).} His preaching of
+communication study by and large glossed over the nitty-gritty of
+research design and execution. This omission of methodological issues
+went unnoticed in China due to the impoverished state of its social
+sciences.\footnote{Since the 1950s, the Mao regime had denounced Western
+  social sciences such as sociology, as well as probabilistic
+  statistics, as distorting social reality for capitalist domination.
+  Xin Liu, \emph{The Mirage of China: Anti-Humanism, Narcissism, and
+  Corporeality of the Contemporary World} (New York: Berghahn Books,
+  2012); Arunabh Ghosh, \emph{Making It Count: Statistics and Statecraft
+  in the Early People's Republic of China} (Princeton, NJ: Princeton
+  University Press, 2020).} The ``chi-square'' had been missing in the
+picture for decades; the Chinese socialist ``green eyeshades'' could not
+educate themselves about it even if they wanted to.\textsuperscript{34}
+
+As a result, it was Maoist press theoreticians and China's most
+ideologically entrenched literary workers who took over
+``communication'' as a resource for their own project: to envision and
+justify media's imminent reforms. The chief challenge in this
+appropriation has to do with values. Journalism is a socially grounded
+institution reputed\marginnote{\textsuperscript{34}\setcounter{footnote}{34} Little
+  wonder that Chinese communication considers its breakthrough in the
+  ``quantitative research tradition'' a study that conjured up a
+  mathematical formula for determining news values without even trying
+  it out on actual news. Chen Lidan 陈力丹 and Wang Yigao 王亦高,
+  ``我国新闻传播学量化研究的艰难起点'' {[}The fraught origins of
+  quantitative research in Chinese journalism-communication{]},
+  \emph{当代传播} {[}Contemporary communication{]}, no. 2 (2009); In
+  parallel, commentary and philosophical critique had long been seen as
+  ``qualitative research.'' Li Biao 李彪, ``新闻传播学研究方法的构造''
+  {[}Research methods of journalism-communication{]}, \emph{国际新闻界}
+  {[}Chinese journal of journalism and communication{]}, no. 1 (2008).} for its normative aspirations, whereas mass
+communication as a behaviorist research program ``presupposes the
+victory \ldots{} of means without ends.''\footnote{Allen Tate, quoted in
+  Carey, ``US Journalism Education,'' 21. Communication majors usually
+  join marketing, public relations, and audience analytics firms.
+  Whereas Carey calls out the ``economic'' end of American
+  communication, early-reform Chinese journalism education must look
+  elsewhere.} This means Chinese reformists had to search amidst
+whatever they took as communication for normative ``ends'' to supplant
+existing journalism ideals. This search was eventually completed on
+engineering terms, a turn seeded in Schramm's visit.
+
+\end{CJK*}
+
+
+\hypertarget{information-and-feedback-phasing-out-the-people}{%
+\section{Information and Feedback: Phasing out the
+People}\label{information-and-feedback-phasing-out-the-people}}
+
+\begin{CJK*}{UTF8}{gbsn} 
+
+To assert his vision of an all-encompassing communication study, Schramm
+presented an eclectic mix of concepts and ideas, among which were
+information theory and cybernetics. Absent sufficient context, the
+Chinese were left with an impression that communication study had its
+foundations in these areas. One and half years after his departure, in
+the winter of 1983, triggered by a broader intellectual advocacy for
+Marxist humanism, the CCP's conservative fraction struck out to curb the
+rapid spread of Western-inspired liberal ideas. Communication study was
+attacked for ``negating class struggle'' and being particularly
+dangerous as a potential replacement of Chinese socialist press theory.
+This ``Anti-Spiritual Pollution Campaign'' was short-lived but
+admonitory for sensitive domains such as journalism. Thought experiments
+in journalist periodicals started segueing along this impressionist link
+to systems cybernetics, blowing it out of proportion. Specifically, the
+narrow technical definitions of information and feedback were mobilized
+to define ``news value'' as leveraging journalism from propaganda, a
+feat indispensable for media reforms. This constitutes a significant
+divergence from its American counterpart.
+
+At CASS, Schramm declaimed that ``two physicists,'' Claude Shannon and
+Warren Weaver, established information theory in order to ``study the
+feedback phenomenon in the communication of human society'': ``Through
+their hands, information theory has migrated from natural sciences to
+social sciences. Their goal is to scientifically measure the circulation
+of information among people.''\footnote{Schramm, ``传学与新闻及其它''
+  {[}Communication study and journalism, and other issues{]},
+  \emph{新闻学会通讯} {[}Society of journalism letters{]}, no. 14
+  (1982): 20.} This, however, could only be a knowing
+mischaracterization. Schramm edited the composite book \emph{The
+Mathematical Theory of Communication} (1949) at the University of
+Illinois Press, which contains a reprint of Shannon's 1948 Bell Labs
+paper, preceded by Weaver's attempt to narrate the paper's intimidating
+mathematics in lay terms.\footnote{Shannon and Weaver, \emph{The
+  Mathematical Theory of Communication} (Champaign, IL: University of
+  Illinois Press, 1949).} Notably, whereas Shannon insisted on limiting
+the application of information theory to technical communication because
+the theory excludes the ``semiotic aspects,'' Weaver optimistically
+called to expand its reach to human communication.\footnote{Everett M.
+  Rogers and Thomas W. Valente, ``A History of Information Theory in
+  Communication Research,'' in \emph{Between Communication and
+  Information}, ed. Brent D. Ruben and Jorge R. Schement (New York:
+  Routledge, 2017); Kline, \emph{The Cybernetics Moment}, 126.} But
+actual attempts to conceptualize human communication through information
+theory began with Schramm,\footnote{Schramm, ``Information Theory and
+  Mass Communication,'' \emph{Journalism Quarterly} 32, no. 2 (1955).}
+and was extended in a few studies mainly produced by Schramm's own
+students.\footnote{Rogers, \emph{History of Communication Study}, 434,
+  440.}
+  
+The Shannon model of technical communication illustrates the
+transmission of a message from the source to the destination, which
+entails changing the message into the signal and converting it back upon
+reception. Admittedly, this model resembles the vision of dissemination
+in mass communication that features elements such as source, channel,
+message, and receiver. But Shannon's mathematical theory focuses on the
+channel capacity of technical systems such as the telephone system. It
+is also for this purpose that Shannon defines information as something
+that reduces uncertainty for mechanical functions (measured by its
+ability to eliminate alternate options). American mass communication
+scholarship, by contrast, is predominated by its focus on the effects of
+communication, typically indicated by the audience's opinion or
+behavioral change. This is not surprising, given that much of the field
+grew not to (re)structure media systems (which characterizes Chinese
+media reforms, as I will explain in greater detail below), but to aid
+administrative tasks faced by media organizations, government agencies,
+and corporations.
+
+Feedback is a key term in cybernetic theory developed by Norbert Wiener
+during wartime to improve anti-aircraft fire. To control a system
+through a feedback mechanism means the system's future conduct is
+constantly adjusted based on information of its past performance, so
+that the system continues to approximate its goal. ``Feedback'' was made
+popular as a construct in mass communication through the widely used
+textbook \emph{The Process of Communication} by David Berlo, one of the
+earliest communication doctorates under Schramm's
+supervision.\footnote{Berlo, \emph{The Process of Communication: An
+  Introduction to Theory and Practice} (New York: Holt, Rinehart and
+  Winston, 1960).} Berlo modified Shannon's original model by inserting
+``feedback'' (while also omitting ``noise''). Schramm further replicated
+this hybrid model in his own teaching and monographs as the ``Shannon
+model of communication'' (Fig. 1). This tinkering was, again, led by
+communication's preoccupation with effects; having ``feedback'' in a
+dissemination model represented progress from the one-way notion of mass
+communication to account for media producers' consideration of audience
+reactions when producing new content. But in reality, such consideration
+is neither inevitable nor predetermined.
+
+\begin{figure}
+    \centering
+\includegraphics{wu-figure-one.jpeg}
+    \caption{The ``Shannon model'' with ``feedback'' but no ``noise'' from
+\emph{传播学概论} {[}Introduction to Communication{]} (1984), 242, the
+Chinese translation of Schramm's coauthored volume \emph{Men, Women,
+Messages, and Media} (1982).}
+    \label{fig:one}
+\end{figure}
+
+
+Simply put, besides the ubiquity of colloquial usage of these terms in
+communication scholarship (and everyday life), the field of
+communication developed largely independently from information
+science,\footnote{Only toward the end of the 1980s did some
+  boundary-crossing start to appear. Brent Ruben, \emph{Between
+  Communication and Information} (Milton, United Kingdom: Routledge,
+  1993). No evidence shows that Chinese scholars ever picked up this
+  limited convergence in Anglophone academia.} and even more so from
+cybernetics.\footnote{Rogers, \emph{History of Communication Study},
+  chap. 10.} But the original engineering conceptions about information
+and feedback---such as optimizing channel capacity and utilizing signal
+transmission intrinsic to the system---quickly captured Chinese
+journalism scholarship.
+
+After several years of sparring, the debate over (socialist)
+``substantial truth'' versus (capitalist) ``superficial truth'' proved
+intellectually unproductive and politically precarious.\footnote{Exchanges
+  in a high-profile symposium on journalistic truth appeared in
+  \emph{新闻学刊} {[}Journalism{]}, no. 2 (1985), after which the
+  attempts to reconceptualize journalistic truths were largely aborted.}
+Journalism scholars concurred that issues about ``truth'' should be left
+to propaganda/propagation work, which was tasked with spreading the
+right thought. But what set journalism and propaganda apart? Or were
+they indeed different? Scholars used the Cultural Revolution to
+illustrate what happens when the two are treated as the same. Newspapers
+were filled with long, plodding polemics full of stock phrases and
+lengthy coverage of the party's guiding principles, government
+achievements, and the heroic deeds of exemplary individuals. Being
+``timely'' meant letting political consideration determine the ``right''
+moment of publicization. Even the above content easily took months to
+get in print. As the reform-era derision went, the press ended up
+supplying nothing but ``political ravings,'' losing touch with both the
+goings-on of the world and with the masses. This, theorized the
+reformers, was journalism abiding by ``political value'' alone. While
+both propagation and journalism should operate according to political
+value, what defined journalism was ``news value'' (\emph{xinwen jiazhi}
+or \emph{xinwenxing}).
+
+
+
+But describing worthy news as immediate, crisp, and fresh sounded too
+much like a submission to capitalist journalistic norms. A less
+vulnerable reform proposition, news value was spelled out in terms of
+``information''---both in Wiener's and in Shannon's senses. On one hand,
+according to Wiener, information as feedback of the cybernetic system is
+a signal automatically issued upon the system's recent performance; it
+is hence treated as epiphenomenal of the motion of things. To consider
+news as information so defined thus asserts that news can and should be
+\emph{non-ideological}, and that words can be transparent in delivering
+world happenings. On the other hand, following Shannon's definition, to
+best negate the amount of uncertainty in a decision-making situation, it
+is important to maximize the amount of information carried through
+limited channel capacity. Chinese scholars came up with various
+mathematical formulas to determine ``news information
+content.''\footnote{Arguably the first such attempt, later designated as
+  pioneering Jcomm's ``quantitative'' tradition, was Yu Guoming 喻国明,
+  ``新闻作品信息含量问题初探'' {[}Exploring news information content{]},
+  \emph{新闻学论集} {[}Annals of journalism studies{]} 8 (1984).} These
+collective efforts, though crammed with jargon and technicalities, were
+meant to drive slogans and bureaucratic trivialities out of newspaper
+pages. The new consensus dictated: ``The most essential function of news
+is to bring the latest occurrences (\emph{shishi}) to people in order to
+reduce their uncertainty about objective reality.''\footnote{Zheng
+  Xingdong 郑兴东, ``新闻价值相关论'' {[}Thesis on news value{]},
+  \emph{新闻学论集} {[}Annals of journalism studies{]} 11 (1987).}
+ 
+
+Articulating news value through the notion of information, which had
+never appeared in the vocabulary of China's socialist cultural work,
+marked a watershed.\footnote{Searches in the most comprehensive
+  scholarly database, CNKI, support my observation, although it should
+  be noted that my archives extend beyond digitized material. For
+  example, \emph{Annals of Journalism Studies} and
+  \emph{Journalism}---both key venues in the 1980s scholarly discourse
+  and both shut down after 1989 Tiananmen crackdown---remain in print
+  forms only.} While the aspiration for substantial truth hails the
+proletarian class---or more broadly, the people---as a collective
+subject, news value modelled after information is stripped of embodied
+experience and concerns about positionality. In 1987, the State Science
+and Technology Commission listed the media sector as ``information
+industries.'' In 1988, a nationwide polling of news workers on press
+reforms showed that more than two-thirds believed the primary function
+of journalism to be ``disseminating information,'' and nearly as many
+rejected the idea that all news should serve propagation
+purposes.\footnote{Chen Chongshan 陈崇山 and Mi Xiuling 弭秀玲,
+  eds.,\emph{中国传播效果透视} {[}Perspectives on media effects in
+  China{]} (Shenyang: Shenyang Publishing 沈阳出版社, 1989): 184.} This
+normative shift granted journalism some autonomy from the overarching
+propaganda imperative as a distinct field of practice.\footnote{See also
+  Timothy Cheek, ``Redefining Propaganda: Debates on the Role of
+  Journalism in Post-Mao Mainland China,'' \emph{Issues \& Studies} 25,
+  no. 2 (1989): 56.}
+
+In parallel, Chinese scholars appropriated ``feedback''---which Schramm
+claimed to be ``the most important social science concept'' that
+engineering science had contributed---to legitimate the functioning of
+the press beyond perimeters of the Party propaganda apparatus. At the
+time, the CASS scholar Chen Chongshan was preparing for Beijing Audience
+Survey, a pathbreaking exercise of representative sampling initially
+framed as following the Party's mass line: ``from the masses, to the
+masses.'' She explained this Maoist principle to Schramm and asked: ``Is
+this what you call `feedback'?'' Schramm confirmed.\footnote{Chen,
+  ``施拉姆的理论对我的指引'' {[}How Schramm's theory guided me{]},
+  \emph{新闻与传播研究} {[}Journalism and communication{]}, no. 4
+  (2012).} Thirty years later, in her reminiscence of the birth of the
+survey project, Chen Chongshan described her thinking of Mao-era
+journalism education and theory as
+
+\begin{quote}
+all about the objectives and techniques of news dissemination
+(\emph{chuanbo}), ignoring the role of the audience, ignoring their
+demand and opinion. This had led to the misalignment between the
+disseminator and the recipient. I {[}thus{]} suggested journalism theory
+research be turned ``upside down.'' First, we study the audience. Then,
+based on the law of how the audience receives news information, we
+determine the plan and techniques for dissemination, so that news
+dissemination and reception align with one another, achieving the
+optimal effects.\footnote{Wang and Hu, \emph{中国传播学30年} {[}Chinese
+  communication: thirty years{]}, 582--83.}
+\end{quote}
+
+\noindent On the surface, this might seem a matter of recognizing the agency and
+preferences of the audience (i.e., ``the feedback'') in a dissemination
+model.\footnote{Also see Zhang Yong, ``From Masses to Audience: Changing
+  Media Ideologies and Practices in Reform China,'' \emph{Journalism
+  Studies} 1, no. 4 (2000).} But it is an anachronism to suppose so.
+Moving from the Party's mass line to such a model took radical epistemic
+changes. (Chen's wording represented the language of Chinese
+journalism-communication that engineering grammars have since
+infested.)\footnote{For a striking contrast, see An's contemporaneous
+  account in ``研究我们的读者'' {[}Studying our readers{]}.} Contrary to
+how the reform discourse later paints it, the Mao-era press was not
+conceived in a top-down dissemination model. Indeed, it possessed the
+``Party character'' (\emph{dangxing}) that guides and educates the
+masses along party ideology. But simultaneously, it also assumed the
+``people's character'' (\emph{renminxing})---that is, it was intended as
+a site for the (proletarian) people to express their worldview and share
+their experiences engaging in social change.\footnote{Admittedly, ``the
+  people'' was always an abstract construct. Looking closely, one may
+  find complex sociopolitical and technical processes mediating the
+  ``people'' and what was in the newspaper. But it is crucial to
+  recognize the investment of Maoist politics in keeping the people
+  character alive, and that in real contestations this conception could
+  be mobilized as a source of enormous power.} If represented in a
+model, everything---the Party, the masses, the message---converges at
+the same spot: Within the press; there is no place for directional
+arrows. How is this possible? Because the epistemology of Maoism
+recognizes ``no natural or pre-existing collective unity, ready-made and
+handy.''\footnote{Liu, \emph{The Mirage of China}, 145.} Instead, it
+requires continuous struggles, both institutional and discursive, to
+bridge the singular and the collective of the people. This is the
+essence of the Maoist political project, and integral to it is the
+socialist press's constant striving for a simultaneous embodiment of the
+Party and the people characters.
+
+\end{CJK*}
+
+Therefore, the composite dissemination model, and the efflorescence of
+theoretical discussion that it ushered in, reflect Chinese journalism
+scholarship's enduring discursive efforts to externalize the people from
+the press as a distinct object for scrutiny. The Maoist charm, the
+holistic imagery of ``the press as the people,'' quickly dissipated. In
+its place was ``the press for the people,'' wherein the people ceased to
+manifest in the press but came into their own in front of the
+researcher, who then advised the press with their knowledge. As per
+official language, this might still qualify as the press's ``people's
+character,'' but we should note the underlying transformation in how the
+people are being served. In short, what transpired in the early 1980s
+was a (literally) ``scientific'' dissection that pulled much of the
+Maoist entanglement out of the press, pinning the audience down next to
+political directives; now press reforms would observe two distinct
+parameters.
+
+Doing so also effectively separated the people from the Party. The
+priority of journalism shifted from embodying and uniting the collective
+will through the party organ, as in Maoist representational politics, to
+producing information that acts on and preempts an existing collective.
+This collective, now external to the Party, awaited being ``studied.''
+Representing that collective's beliefs and desires, however, would face
+onerous political risks and implementation challenges. During the
+``Anti-Spiritual Pollution Campaign,'' Chen Chongshan's surveys were
+attacked after English media reported them as capitalist ``public
+opinion polls.'' Further, in determining what aspects of the audience to
+probe, researchers were participating in the very construction of that
+collective subject. The dilemma was this: Audience surveys were premised
+on the (newly) assumed misalignment between the press (organ of the
+Party) and its readers (the people), and no perfect execution existed
+when the mission was to flesh out such a misalignment.
+
+Toward the end of the 1980s, the eventual rise of what I call ``systems
+journalism'' bypassed this dilemma by phasing out the question of
+audience subjectivity altogether. ``Feedback'' became associated with
+abstracted spheres, specifically the economy, and the significance of
+journalism was defined not in relation to human faces, but to the
+interdependent systems that supposedly comprised society.
+
+\hypertarget{systems-cybernetics-in-reform-china-qian-xuesen-and-friedrich-engels}{%
+\section{Systems Cybernetics in Reform China: Qian Xuesen and\\\noindent Friedrich
+Engels}\label{systems-cybernetics-in-reform-china-qian-xuesen-and-friedrich-engels}}
+
+\begin{CJK*}{UTF8}{gbsn} 
+
+If Wilbur Schramm served as a key ingredient and a catalyst for the
+fusion of disparate ideas into ``systems journalism'' in China, a second
+key ingredient can be traced to certain engineering expertise uniquely
+preserved through the Mao era. In the 1960s and 1970s, the CCP promoted
+``socialist science,'' which instituted participation from the
+masses.\footnote{Sigrid Schmalzer, \emph{Red Revolution, Green
+  Revolution} (Chicago: University of Chicago Press, 2016).} The only
+group of highly specialized scientists shielded from these political
+imperatives (as well as discipline and punishment) were those working on
+military projects. Likewise, whereas cybernetics became a pervasive
+ideological force in shaping Soviet sciences,\footnote{Gerovitch,
+  \emph{From Newspeak to Cyberspeak.}} in China, Marxist theoreticians
+and ideologues, albeit somewhat informed of the Soviet trends, never
+managed to interfere with the work led by mostly US-trained
+scientists.\footnote{Peng Yongdong 彭永东, \emph{控制论的发生与传播研究}
+  {[}The origin and dissemination of cybernetics{]} (Taiyuan: Shanxi
+  Education Press 山西教育出版社, 2012), 168--196.} After 1978, the
+latter's expertise and more crucially their ethos of systems analysis,
+mounted the front stage and animated broader intellectual debates,
+popular science endeavors, and science fiction throughout the
+1980s.\footnote{See Xiao Liu, \emph{Information Fantasies: Precarious
+  Mediation in Postsocialist China} (Minneapolis: University of
+  Minnesota Press, 2019).} Absent the social sciences, defense
+scientists also cast strong influence over social policies for
+modernization.\footnote{Greenhalgh, ``Missile Science, Population
+  Science.''}
+
+The tide was led by Qian Xuesen (1911-2009), who was likely oblivious to
+Wilbur Schramm's visit and the fermentation in journalism scholarship.
+Known as H. S. Tsien in his American life, Qian was an aerodynamicist
+trained at MIT and an endowed professor at the California Institute of
+Technology conducting missile research for the US Army. Qian was
+persecuted under McCarthyism and managed to return to China in 1955.
+After the 1960 Sino-Soviet fallout and departure of Soviet advisors,
+Chinese military projects were entrusted to Qian and other returning
+scientists. The successful construction, in a just few years, of the
+carriers of atomic bombs, hydrogen bombs, and satellites earned him the
+title of ``King of Rocketry.'' Qian also played a major role in bringing
+cybernetics to China. In the early 1950s, after becoming a communist
+suspect and shut out of military research in the US, he turned to the
+design of mechanical and electronic systems using cybernetic theory,
+culminating in his groundbreaking monograph \emph{Engineering
+Cybernetics}.\footnote{Tsien, \emph{Engineering Cybernetics} (New York:
+  McGraw-Hill, 1954).} Its Chinese edition appeared in 1958, serving as
+a foundation for numerous research projects. As China reoriented itself
+for economic development and promoted ``modern'' science as a ``force of
+production,'' Qian's proven political fidelity and scientific prowess
+made him the post-Mao ``model intellectual.'' The state honored him as
+something of a national treasure.\footnote{Ning Wang, ``The Making of an
+  Intellectual Hero: Chinese Narratives of Qian Xuesen,'' \emph{China
+  Quarterly}, no. 206 (2011).} Systems cybernetic ideas began to
+overspill.
+
+
+
+In September 1978, Qian's landmark article ``The Techniques of
+Management and Organization: Systems Engineering,'' ran pages in
+\emph{Wenhui}, a major newspaper targeting educated readers.\footnote{Qian
+  Xuesen 钱学森, Xu Guozhi 许国志, and Shouyun Wang 王寿云,
+  ``组织管理的技术---系统工程`` {[}Techniques of organizational
+  management: systems engineering{]}, \emph{文汇报} {[}Wenhui{]},
+  September 27, 1978.} Building on their experience in directing massive
+military projects, Qian and his coauthors promoted ``systems
+engineering''---an array of techniques including systems analysis,
+management science, and operational research---as a key approach to
+develop the national economy.\footnote{Qian later confided that it was
+  the second author, Xu Guozhi, who penned the article and invoked
+  ``systems engineering'' as a category. Qian, ``我对系统学的认识历程''
+  {[}How I came to systematics{]}, in \emph{系统科学进展}
+  {[}Developments in systems science{]}, ed. Guo Lei郭雷(Beijing:
+  Science Publishing 科学出版社, 2017). Xu was a mechanical engineer and
+  mathematician whom Qian first met on the cruiser from America to
+  China. Ye Yonglie 叶永烈, \emph{走进钱学森} {[}Qian Xuesen: A
+  biography{]} (Shanghai: 上海交通大学出版社 Shanghai Jiao Tong
+  University Press, 2016), 440. But history prefers to not remember this
+  humble beginning; Qian Xuesen is seen as the brilliant mind behind it
+  all.} Soon after, Qian began to talk about social, on top of material,
+transformation, and especially addressed the relevance of cybernetics:
+
+\begin{quote}
+In 1948, Wiener considered the idea that {[}his{]} cybernetic theory may
+have social efficacy ``false hopes,'' and that ``extend{[}ing{]} to the
+fields of anthropology, of sociology, of economics, the methods of the
+natural sciences, in the hope of achieving a like measure of success in
+the social fields'' ``an excessive optimism.'' The modern development of
+cybernetic theory has proved that Wiener's 1948 view was too
+conservative. Applying engineering techniques to social domains is not
+``an excessive optimism,'' but a reality.\footnote{Qian Xuesen 钱学森and
+  Song Jian 宋健, \emph{工程控制论} {[}Engineering cybernetics{]}
+  (Beijing: Science Publishing 科学出版社, 1980), xiv. Also see Norbert
+  Wiener, \emph{Cybernetics or Control and Communication in the Animal}
+  (Cambridge: MIT Press, 1965), 162.}
+\end{quote}
+
+\noindent These words come from the preface of the latest and substantially
+expanded Chinese volumes of \emph{Engineering Cybernetics}. In contrast,
+in the original edition of \emph{Engineering Cybernetics}, he referenced
+the French origin of \emph{cybernétique} (``the science of civil
+government'') and remarked: ``{[}this{]} grandiose scheme of political
+sciences has not, and perhaps never will, come to fruition.''\footnote{Tsien,
+  \emph{Engineering Cybernetics}, vii.} Apparently, decades in China
+made him change his mind.
+
+By that time, Song Jian, Qian's disciple, colleague, and the new
+\emph{Engineering Cybernetics}'s coauthor, had used missile science to
+project population growth---with severe oversights---and led the CCP
+leadership onto the track of implementing the stringent one-child
+policy.\footnote{Greenhalgh, ``Missile Science, Population Science.''}
+This amounted to a concrete success of what Qian called ``social
+cybernetics,'' ``a new science'' for accelerating China's socialist
+modernization and the accompanying technological revolution.
+``Scientific decision-making'' cast in systems cybernetic language came
+to be framed as progressive governance. ``The scope of `engineering'
+keeps expanding,'' Song wrote complacently in a 1984 encyclopedia entry,
+``problems traditionally reserved for the social sciences can be solved
+through engineering methods; in all cases {[}using these methods{]}
+achieves more precise, prescient outcomes than leaving them to mere
+bureaucratic judgments.''\footnote{Song Jian 宋健, ``工程控制论''
+  {[}Engineering cybernetics{]}, \emph{系统工程理论与实践} {[}Systems
+  engineering theory \& practice{]}, no. 2 (1985): 3.} Two years later,
+Song became State Councilor, which ranks immediately below the Vice
+Premiers.
+
+Undergirding this ascension of systems cybernetics on the political
+stage and official culture were some crucial discursive gymnastics that
+also informed the formulation of systems journalism. Qian welded systems
+cybernetics to the official doctrine. Remarkably, he did it in a way
+that grafted ``modern'' technoscience, which the CCP now craved, onto
+convictions from its revolutionary past, and thus boosted regime
+legitimacy amid economic and political uncertainties. Qian's rootstock
+here, when looked at closely, were the ideas of Friedrich Engels, not
+Karl Marx, nor Mao Zedong.
+
+To correct Norbert Wiener's above-quoted reservation, for example, Qian
+resorted to Engels's \emph{Socialism: Utopian and Scientific}:
+
+\begin{quote}
+Engels once predicted, under the circumstances of socialism, ``anarchy
+in social production is replaced by conscious organization on a planned
+basis.'' The regulatory capacity of the socialist economy enables a
+self-sustaining economic system, which is essentially an automatic
+system. . . . The systemic dynamics that cybernetic theory tackles can
+be found in high-level systems (i.e., social systems). Therefore it is
+unreasonable to call the social efficacies of cybernetics ``false
+hopes.'' Instead, it is an actual hope that has already dawned on
+us.\footnote{Qian and Song, \emph{工程控制论} {[}Engineering
+  cybernetics{]}, xiv.}
+\end{quote}
+
+\noindent Engels's passion for science and technology, and inspired by these
+topics, his law-like prediction about history, were what made him so apt
+for promoting a systems cybernetic conception of society. In the PRC and
+the Soviet Union alike, Marx-Engels existed as a mystical joint identity
+for orthodox enunciation. The history of global Marxisms, however, shows
+that Marx's reception was usually mediated by Engels's ``defining
+influence.''\footnote{Terrell Carver, Gerard Bekerman, and Cecil L.
+  Eubanks, ``Marx and Engels. The Intellectual Relationship,''
+  \emph{Studies in Soviet Thought} 31, no. 4 (1986).} Rather than
+authoritative accounts of Marx's ideas, Engels's \emph{Dialectics of
+Nature} and \emph{Anti-Dühring} (particularly its last section,
+\emph{Socialism: Utopian and Scientific}) were immensely popular
+simplifications and extrapolations of Marx's often dense writings.
+Instead of giving voice to Marx posthumously, Engels was in fact
+elaborating his own. And it was a voice that centered on the subject
+that he, but not Marx, appeared genuinely interested in---natural
+science. According to Engels (in Marx's name), both the human and the
+natural are subject to the law of dialectics, and they make up a
+totality where history is made through human mastery of nature, pushing
+back its boundaries.\footnote{By contrast, Marx's arguments are largely
+  confined within the capitalist mode of production. Paul Thomas,
+  \emph{Marxism \& Scientific Socialism: From Engels to Althusser}
+  (Milton Park, United Kingdom: Taylor \& Francis, 2008), 39--40. Also
+  see Taylor, ``Dialectics of Nature or Dialectics of Practice?''} For
+example, according to Engels, the socialist replacement of anarchy with
+conscious planning (which Qian quoted) amounts to historical progress,
+for ``man finally . . . leaves the conditions of animal
+existence.''\footnote{Friedrich Engels, \emph{Herr Eugen Dühring's
+  Revolution in Science (Anti-Dühring)}, ed. C. P. Dutt, trans. Emile
+  Burns (New York: International Publishers, 1939), 318.} Inspired by
+Darwin, Engels upholds the victory of socialism and communism as the
+teleological logic of history.
+
+The Engels portion of the Marx-Engels orthodoxy was invoked for local
+needs. Neither the Russian nor Chinese Bolshevik Revolution followed
+Marx's original arguments. But Engels's scientific socialism proved much
+more assimilable in the ruling ideology of these Marxist
+regimes.\footnote{Thomas, \emph{Marxism \& Scientific Socialism}.}
+Stalin furthered this scientistic orientation by differentiating
+historical materialism from dialectical materialism, positing the former
+as the extension of the principles of the latter.\footnote{Joseph
+  Stalin, \emph{Dialectical and Historical Materialism} (Moscow: Foreign
+  Languages Publishing House, 1938).} This unequivocally implied the
+inferiority of the studies of history to the studies of
+science.\footnote{Taylor, ``Dialectics of Nature or Dialectics of
+  Practice?''} In early 1950s China, fixated on the lost skull of Peking
+Man and inspired by Engels's ``labor created humanity'' theory, the
+newly-in-power CCP enlisted the scientific elite to propagate the idea
+that the apes of China evolved into modern Chinese through hard labor, a
+belief that brought together the entire nation.\footnote{Sigrid
+  Schmalzer, \emph{The People's Peking Man: Popular Science and Human
+  Identity in Twentieth-Century China} (Chicago: University of Chicago
+  Press, 2009).} Although the USSR's augmentation of Engels had
+profoundly influenced the doctrine of Chinese communism, Mao himself did
+not care for all that talk about science and scientific laws. By
+contrast, Mao awarded huge weight to human will and agency; for the
+Maoist dialectics, history is unpredictable, always unfolding as the
+willful human subject struggles against the power structure: There is no
+end to the revolution.\footnote{Laikwan Pang, ``Dialectical
+  Materialism,'' in \emph{Afterlives of Chinese Communism: Political
+  Concepts from Mao to Xi}, ed. Christian Sorace, Ivan Franceschini, and
+  Nicholas Loubere (London: Verso Books, 2019).}
+
+In this sense, the reform rhetoric was the most efficient when official
+Marxism displayed the face of Engels and hid that of Mao. By resorting
+to Engels of the ``theory of Marx-Engels,'' epistemological consistency
+was maintained. This was how Qian built on Xu Guozhi's ideas. In late
+1979, he broadened Xu's initial notion of the ``system'' to include both
+human practices and natural processes. In 1985, during the launch of the
+Chinese Association for Systems Engineering, Qian outlined his vision
+for ``systems science,'' a synergistic whole that leveraged the ``messy
+assortment'' of related areas in the West to the plane of philosophy.
+Qian's systems science has three interdependent layers, moving from the
+most concrete techniques to the foundational \emph{basic science} that
+Qian called ``systematics'' (\emph{xitong xue}), which he bridged to
+Marxism (Fig. 2).\footnote{Qian, ``我对系统学的认识历程'' {[}How I came
+  to systematics{]}.} By ironing out this chain of articulations and
+using Engels as an interface, Qian demonstrated a dialectic relationship
+between the development of science and technology and that of Marxist
+philosophy. This insistence actually made Qian the conservative
+stronghold in the prolonged debates about whether Marxism might serve as
+the totalist structure for scientific knowledge.\footnote{Miller,
+  \emph{Science and Dissent.}} On the opposite side were relatively
+young scientists who advocated a non-instrumentalist view of science as
+intrinsically valuable and autonomous from Marxism.
+
+\begin{figure}
+    \centering
+    \includegraphics{wu-figure-two.png}
+    \caption{Qian Xuesen's Systems Science}
+    \label{fig:two}
+\end{figure}
+
+With his scheme of systems science, Qian undertook a grand journey to
+appropriate and reinterpret bits and pieces from a variety of fields
+including cognition, physiology, behavioral science, architecture,
+aesthetics, education, and ecology. He insisted on thinking across
+boundaries between machines and bodies, and nature and society,
+promoting a fundamentally posthumanist outlook.\footnote{For Qian's take
+  on \emph{qigong}, see Liu, n\emph{Information Fantasies}, chap. 1.}
+Qian's enormous state support and cultural prestige helped popularize a
+distinct way for conceptualizing the world: It framed all things in
+relation to larger complex, hierarchical, nested systems that are
+interconnected (co-variant) via flows of information (in a cybernetic
+sense). In an incidental and ironic manner, viewing society in terms of
+interdependent systems enabled an intellectual current free from the
+yoke of Marxist economic determinism.\footnote{See He Guimei 贺桂梅,
+  \emph{``新启蒙''知识档案------80年代中国文化研究} {[}Knowledge
+  archives of the ``New Enlightenment''{]} (Beijing: Peking University
+  Press 北京大学出版社, 2010): 309--33.}
+  
+\end{CJK*}
+
+
+\hypertarget{systems-journalism}{%
+\section{Systems Journalism}\label{systems-journalism}}
+
+\begin{CJK*}{UTF8}{gbsn} 
+
+In the aftermath of the 1983 Anti-Spiritual Pollution campaign and the
+suppression of American references to mass communication, journalism
+scholars similarly grafted systems cybernetics onto Engels's scientistic
+Marxism. Engels's general evolutionary take on the development of
+science and technology was leveraged to promote information technologies
+and press infrastructures as proxies for historical progress. His claim
+that motion in nature and human history, as well as the motion of
+thought, all abide by one unitary set of dialectic laws became the final
+seal to a view of news production, distribution, and consumption that
+leaves no role for human subjectivity.
+
+One of the first such pieces, entitled ``Information dissemination and
+historical materialism,'' performed acrobatics like Qian's systematics
+and in the process assimilated systems thinking in the
+scholarship.\footnote{Fan Dongsheng 范东升, ``信息传播与历史唯物论``
+  {[}Information communication and historical materialism{]},
+  \emph{新闻学刊} {[}Journalism{]}, no. 3 (1985).} Journalism was ``the
+subsystem of social information dissemination,'' the author specified,
+and hence was interwoven with other subsystems such as politics,
+economy, and ideology. He further opposed considering journalism part of
+the superstructure or ideology, a bold conclusion reached with seemingly
+Marxist analytics. Quoting Engels on the industrial revolution, he
+argued that because the press of a given society inherited the same
+relations and means of production, the relationship between the
+resulting information system and society should be more precisely
+described as ``isomorphic.'' This arc of arguments smacks of the
+cybernetic flavor of information (i.e., news as signals generated by a
+system in motion), glossing over the ideological negotiations by media
+owners and producers from certain class positions. Importantly, while
+the press as the subsystem processed output from the economic subsystem
+(rather than audience feedback), the press itself functioned as the
+feedback central to the evolution of the larger cybernetic system that
+is society. The author's objective was to push for press reforms by
+arguing that actively restructuring this crucial subsystem would effect
+desirable changes of the suprasystem.
+
+In response to student demonstrations demanding political---in addition
+to economic--- reform from January to May 1987, the CCP wielded another
+campaign to ``combat bourgeois liberalization.'' After this round of
+political contraction, major journalism periodicals saw a burst of works
+integrating systems cybernetics through Qian-styled ideological
+acrobatics. In 1988, a renowned annual academic publication,
+\emph{Annals of Journalism Studies}, dedicated the entire volume to
+``analyzing journalistic phenomena using `systems science.'\,'' Many
+even set out to reconstruct typical concepts and propositions from
+American communication in terms of systems cybernetics. ``Evidently,''
+wrote one, ``Schramm has underestimated the value of information theory,
+cybernetics, and systems theory in building the theoretical frameworks
+of {[}human{]} communication study.''\footnote{Wu Wenhu 吴文虎,
+  ``传播学理论架构初探'' {[}Exploring communication's theoretical
+  frameworks{]}, \emph{新闻学刊} {[}Journalism{]}, no. 5 (1986): 28.}
+
+In early 1989, a monograph entitled \emph{Systems theory of journalism}
+(\emph{xitonglilun xinwenxue}) came out, one of the first publications
+with similar titles. Using the vocabulary of Engels's materialist
+metaphysics, the author stated that news is the agentic reflection of
+the objective reality in the mind of the reporter: ``When both `natural
+information' and `cultural information' {[}of motion in nature and in
+society, respectively{]} come into contact with the reporter's thinking
+brain, news is the register left on his brain.''\footnote{Wang
+  Yimin王益民, \emph{系统理论新闻学} {[}Systems theory of journalism{]}
+  (Wuhan: Huazhong University of Science and Technology
+  华中理工大学出版社, 1989), 54--56.} The book went on to spell out news
+value using Engels's Darwinian-Marxist argumentation about humans'
+continued transformation of nature: Occurrences in news (\emph{xinwen
+shishi}), after coming to public attention, affect the public's inner
+world and spur action to change the material world; if these changes are
+positive, the news is deemed to have ``social effects,'' which was the
+ultimate measure of news value.\footnote{Wang, 110--14.} News value was
+no longer defined by how much information about world happenings it
+contained, as was argued when Shannon's formula was the main influence.
+It was now measured by the news's effects on the larger system.
+Depending on the selection of actual occurrences in the news, its
+dissemination could aid or hinder system functioning, by which the
+author meant the state-led modernization project. Importantly, in this
+conception, neither news production nor reception involves
+meaning-making or more generally, ``the anthropological principle of
+human interaction with the world.''\footnote{Taylor, ``Dialectics of
+  Nature or Dialectics of Practice?'' 290.}
+
+Yet the logic of systems journalism consolidated from a position of
+structural power. In the first Hong Kong journalism conference joined by
+mainland colleagues, local scholars were deeply impressed when the
+deputy director of the CASS Journalism Institute started drawing the
+plan for Chinese press reforms.\footnote{Leonard Chu 朱立,
+  ``香港新闻传播学界的成名与想象 (1927--2006)'' {[}Fame and imagination
+  in Hong Kong journalism and communication research{]},
+  \emph{国际新闻界} {[}Chinese journal of journalism and
+  communication{]}, no. 5 (2017): 85--108.} Commissioned by the central
+propaganda department, CASS surveyed newspapers across the country and
+mapped bureaucratic affiliations (all state-owned) and specialties of
+the rapidly expanding press universe (CASS 1986). Through reform,
+announced the team, this universe should develop into a ``party
+press-anchored, multi-layered press system'' that efficiently
+disseminates information to meet the variety of needs of economic
+modernization. Importantly, with the anchoring layer of party organs in
+place, the whole press system would allow localized management
+experimentation.\footnote{Xu Yaokui 徐耀魁et al.,
+  ``关于新闻体制改革的设想'' {[}Envisioning journalism reform{]},
+  \emph{新闻学刊} {[}Journalism{]}, no. 5 (1986).} In line with this
+general aspiration, other scholars pointed out that, as modernization
+begot exponential information growth, the conventional mode of linear
+media control hindered timely transmission and response to feedback.
+Employing concepts such as noise and filter, they advocated that each
+newspaper was itself a cybernetic subsystem that must have necessary
+decision-making power to adapt to its changing environment, so that the
+whole press system remains resilient and constantly improves information
+delivery for the suprasystem.\footnote{Yu Guoming 喻国明,
+  ``试论建立具有中国特色的社会主义新闻事业体制'' {[}Building Chinese
+  journalism with socialist characteristics{]}, \emph{新闻学刊}
+  {[}Journalism{]}, no. 1 (1986).} Put differently, the press needed
+some autonomy for ``self-organization'' in order to better fulfill its
+obligation as a state apparatus. At once strikingly totalistic and
+excitingly open-ended, this vision can only emerge from the center of a
+press universe where all the outlets are legible, responsive, and
+subject to large-scale coordination. It is also a vision of technocracy,
+held liable for the role of media in society and its ``subsystems.''
+
+These conditions hardly exist in liberal capitalist societies. Chinese
+journalism scholars had been enthralled by a bird's-eye perspective of
+mass media even before the CCP's repetitive censures against
+``liberal-capitalist'' influences (in 1983, 1987, and finally, 1989). In
+1982 they were introduced to ``The Structure and Function of
+Communication in Society'' by Harold Lasswell, a political scientist
+that Schramm canonized as a ``forefather'' of communication study.
+Inspired by postwar structural functionalism, this article discusses
+mass media by ``viewing {[}it{]} as a whole in relation to the entire
+social process.''\footnote{Lasswell, ``The Structure and Function of
+  Communication in Society,'' in \emph{The Communication of Ideas}, ed.
+  L. Bryson (New York: Harper and Row, 1948), 38.} This high-level
+conceptualization of media as an (oddly holistic) institution found
+resonance among Chinese scholars. In 1980s China, the dearth of such
+structural analyses about ``the media system'' from American mass
+communication\footnote{This differs from empirically studying mass
+  communication in institutional and organizational settings, or
+  studying audience behavior in its social location. See Josephine R.
+  Holz and Charles R. Wright, ``Sociology of Mass Communications,''
+  \emph{Annual Review of Sociology} 5 (1979).} was keenly
+noticed.\footnote{It was, for example, lamented that after Lasswell no
+  American communication scholar seemed to care about media-society
+  relationships. Wu, ``传播学理论架构初探'' {[}Exploring communication's
+  theoretical frameworks{]}, 27.} And it was Chinese journalism
+scholarship's institutional position, rather than mere intellectual
+curiosity, that explained its preoccupation with media-society
+relationships. In a sense, it resorted to systems cybernetics to
+displace a perceived vacuum in mass communication study. Moreover,
+whereas functionalism provided little inspiration for initiating
+structural transformation, systems journalism was premised on continued
+evolution. Even better, it regarded the press as a locus to initiate
+changes in other interdependent systems and eventually society's
+material development, effectively granting agency to media reformers
+(and later the propaganda leadership).
+
+Weeks after the release of \emph{Systems theory of journalism},
+protesters filled Tiananmen Square. Appropriating systems cybernetic
+ideas, the 1980s journalism reformers painstakingly loosened
+restrictions over organizational management, format, and genre---what we
+may call newsmaking infrastructures. The limited amount of ``press
+freedom'' thereby achieved was, it would not be far-fetched to say,
+seized upon by the broader cultural currents---an explosive combination
+of liberal and Confucian humanism---in a bid for political reforms.
+Following the crackdown on June 4th, the CCP took a series of drastic
+measures to ``tidy the house,'' and the media sector was hit hard.
+Scholarly conversations in Chinese journalism again went through severe
+rectification, particularly with regard to the field's ``blind''
+adoption of Western communication study.
+
+But the systems journalism strain remained intact. It was particularly
+telling that, in the post-1989 climate, \emph{Systems theory of
+journalism} kept releasing reprints into the new millennium.\footnote{A
+  winner of several province-level awards, the book first appeared in
+  March 1989, with its fourth reprint running in 1993, and new editions
+  in 1996, 1999, and 2003.} With regard to news value, the functioning
+system made further headway to displace ``objective reality.'' In a 1993
+theory article entitled ``The ontology of news,'' the author builds on
+Engels's and Qian's argumentation to contend that news is
+``information'' rather than ``actual occurrences'' (\emph{shishi},
+typically translated as ``facts''), as information represents human
+praxis transcending the object-subject binary. News is worthy if people,
+``as they set goals and make plans for themselves, can utilize the
+information'' to ``constantly adjust the relationships between the
+system and its environment and between various subsystems, in order to
+optimize the overall benefit and steadily improve their
+self-organization.''\footnote{Chen Jian 陈坚,
+  ``新闻本体论------关于事实与信息的比较研究'' {[}The ontology of news:
+  comparing facts and information{]}, \emph{新闻大学} {[}Journalism
+  research{]}, no. 3 (1993): 16.} There was little mention of
+``objective reality''; journalism was enclosed in the system. This was
+never what Wilbur Schramm had in mind, despite his interest in
+integrating information theory into communication study. As early as
+1955, he acknowledged a chasm between Shannon's information, ``concerned
+with the number of binary choices necessary to specify an event in a
+system,'' and ``our concept of information in human communication,''
+which was really ``concerned with the relation of a fact to outside
+events.''\footnote{Schramm, ``Information Theory and Mass
+  Communication,'' 144.}
+
+The CASS Institute of Journalism became ``the Institute of Journalism
+and Communication'' in 1992, a naming convention immediately followed by
+numerous journalism departments across China. The juxtaposition
+indicated by ``and'' quickly came off as redundant. Significantly, it
+was also in 1992 that the Ministry of Education confirmed \emph{xinwen
+chuanbo} or ``journalism communication study'' as a first-tier
+discipline, a direct signal of academic stature and resource
+allocation.\footnote{Hu, Ji, and Zhang, ``Building the Nation-State,''
+  388--90.} In Chinese, this phrase literally means the ``study of news
+dissemination.'' I hereafter use ``Jcomm'' to avoid its easy conflation
+with ``communication'' in an Anglophone context.
+
+\end{CJK*}
+
+
+\hypertarget{legacies-of-systems-journalism}{%
+\section{Legacies of Systems
+Journalism}\label{legacies-of-systems-journalism}}
+
+\begin{CJK*}{UTF8}{gbsn} 
+
+As ``icebreaking'' as Schramm's visit was later portrayed to be, the
+birth of Jcomm entailed much more than a takeover by---or, depending on
+one's stand, a critical adoption of---American communication study. It
+entailed reformist journalism scholars carrying forward normative
+notions about journalism with a series of articulations relayed through
+the ideas of Schramm, Qian Xuesen, and Engels.
+
+Systems journalism could only have emerged in the broader cultural
+currents of 1980s China. First was the dream of unified science, shared
+by all three men. Schramm assured the Chinese that communication would
+eventually integrate all other social sciences and announced it as part
+of a broader convergence between social and natural sciences.\footnote{See
+  Xu, ``施拉姆对中国传播学研究的影响：纪念施拉姆来新闻研究所座谈30周年''
+  {[}Schramm's impacts on Chinese communication research{]}.} This
+prediction tapped right into the particular zeitgeist, with Qian Xuesen
+on his crusade to synthesize all the disciplines, albeit in his own
+comfort zone of engineering and systems analysis. And given the
+precarious political environment, all this cross-border knowledge
+hybridization nonetheless gained momentum because Chinese Marxism
+consisted of Marx's arguments about human history and Engels's
+conjectures from the non-humanistic dimension of natural science.
+Literally a ``worldview,'' this Marxist orthodoxy revered universal iron
+laws (i.e., dialectics) on moral and ideological grounds. Further, the
+Deng Xiaoping regime shared with Engel's natural dialectics the
+pragmatism in human's unfolding interactions with technology. Finally,
+the post-Mao regime's characteristic predilection (i.e., ``Cross the
+river by feeling the stones'') bore some ``ontological affinity'' with
+cybernetics---that is, leaving the ``black box'' closed but instead
+preoccupied with continuous performative engagements between
+heterogeneous agents.\footnote{For ``ontological affinity'' see
+  Pickering, \emph{Cybernetic Brain}. Also, on the ontological stance of
+  cybernetics, see Galison, ``Ontology of the Enemy.''} In Euro-America,
+by contrast, this goes against the ``modern ontology'' presumed by
+scientific and bureaucratic establishments, which explains cybernetics'
+quick retreat into in ``nomad sciences'' and countercultures.\footnote{Pickering,
+  \emph{Cybernetic Brain}; Turner, \emph{From Counterculture to
+  Cyberculture.}}
+
+The formulation of systems journalism also hinged on institutional
+conditions. Qian Xuesen believed that ``social cybernetics'' would never
+emerge in capitalist societies (``because the problem with capitalism is
+that from the onset of production there is no conscious social
+regulation'').\footnote{Qian and Song, \emph{工程控制论} {[}Engineering
+  cybernetics{]}, xiv.} To be clear, however, in liberal democracies,
+systems approaches had heavily influenced human sciences and state
+bureaucratic management.\footnote{Heyck, \emph{Age of System}.} The
+adoption of operational research in the US, for example, was entwined in
+the rise of the military-industry-academic complex.\footnote{Erik P.
+  Rau, ``The Adoption of Operations Research in the United States during
+  World War II,'' in \emph{Systems, Experts, and Computers}, ed. Agatha
+  C. Hughes and Thomas P. Hughes (Cambridge: MIT Press, 2011).} Social
+administration by systems cybernetics, therefore, is less productively
+explored as a feature of authoritarianism (or according to Qian,
+socialism). Rather, it boils down to its interaction with the concrete
+political, economic, and discursive contestations in a domain, and the
+consequences of the exact engineering measures.\footnote{See also
+  Peters, \emph{How Not to Network}.} In the case of Chinese population
+control, for example, systems cybernetics triumphed because the state's
+intervention in reproduction was deemed legitimate, the bureaucratic
+capacity at its disposal extraordinary, and competing social science
+expertise weak.
+
+One finds similar circumstances in China's news sector, where Party
+propagandists took it upon themselves to revamp the normative
+injunctions about the press. But journalism also is distinct, for it
+belongs to the realm of the symbolic. Systems cybernetics had to wiggle
+its way through a congestive discursive terrain. On the one hand,
+acknowledging the importance of relationality and societal betterment,
+systems journalism rejected the image of individuals in isolation, the
+purported flaw of Western communication. At the same time, by leaning on
+the CCP's agenda to phase out the planned economy and push for
+marketization, it refused to succumb to top-down propaganda imperatives.
+Most remarkably, while systems journalism steered away from the
+``Maoist'' view that valorized the press for providing a voice on behalf
+of the people and for fostering the socialist revolution, it also
+distanced itself from the ``capitalist'' view that evaluated news media
+in the market of attention where all players act out of competing
+interests. Finally, it had foreclosed on issues of social actors'
+positionality in meaning-making.
+
+In the ensuing decades, explicit references to systems cybernetics took
+a backseat, but its legacies have prevailed in powerful
+forms.\footnote{This means rather than tracing the ``citational
+  network'' of specific theories, we may more productively examine these
+  legacies as constitutive of a ``culture,'' in the form of shared
+  parlance, tacit knowledge, and unspoken assumptions.} It is beyond
+this article's scope to delineate these manifold developments, but I
+offer a few observations as provocation. First, the ways in which
+China's media reforms transpired in the 1990s bore much resemblance to
+the ideas inspired by systems cybernetics. China's fast swelling media
+sector underwent state-regulated marketization involving system-level
+measures, such as administrative consolidation of party organs and
+radical commercial experiments at the margins. These ``structurally
+focused'' moves are often sidelined by discussions concentrating on
+overt censorship ``aimed at politically dissenting
+publications.''\footnote{Yuezhi Zhao, ``From Commercialization to
+  Conglomeration: The Transformation of the Chinese Press Within the
+  Orbit of the Party State,'' \emph{Journal of Communication} 50, no. 2
+  (2000): 15; Angela Xiao Wu and Luzhou Li, ``Localism in Internet
+  Governance: The Rise of China's Provincial Web,'' \emph{China
+  Information}, 2021. As foreseen by Cheek: ``Control of order as much
+  as suppression of free ideas are on the minds of {[}state
+  propaganda{]} officials'' for press reform. Cheek, ``Redefining
+  Propaganda.''} One also ponders the similarity between the liberating
+vision of the socialist press comprised of numerous outlets as
+self-organizing cybernetic systems and the so-called ``one head, many
+mouths'' landscape in reality, where market-induced media
+decentralization was wielded for state propaganda purposes.\footnote{Guoguang
+  Wu, ``One Head, Many Mouths: Diversifying Press Structures in Reform
+  China,'' in \emph{Power, Money, and Media: Communication Patterns and
+  Bureaucratic Control in Cultural China} (Evanston, IL: Northwestern
+  Univeristy Press, 2000); Daniela Stockmann, \emph{Media
+  Commercialization and Authoritarian Rule in China} (Cambridge:
+  Cambridge University Press, 2012).} As economic disparity increased,
+media marketization led to the demise of outlets for underprivileged
+groups.\footnote{Zhao, ``From Commercialization to Conglomeration."} But
+another contributor may be the orientation of press reforms toward
+information delivery for an economic (sub)system, unconcerned with
+audience subjectivities and identities.
+
+Systems journalism has sedimented in the now exceedingly resourceful
+discipline and popular major of Jcomm, and the language of systems
+cybernetics continues to percolate in its authoritative texts. China's
+latest national textbook \emph{Introduction to journalism} continues to
+define news as ``information about recent actual occurrences
+(\emph{shishi}),'' in which information does not go by its colloquial
+usage, but specifically means ``the thing that reduces the recipient's
+uncertainty,'' ``as per its narrow definition by Shannon.''\footnote{Li
+  Liangrong 李良荣, \emph{新闻学概论} {[}Introduction to journalism{]}
+  (Shanghai: Fudan University Press 复旦大学出版社, 2018), 66--67.} The
+reference to ``objective reality,'' which disappeared with the
+prevailing systems journalism, remains absent from the current
+definition. In a methodical content analysis of Chinese textbooks, one
+Taiwanese researcher was deeply confused by the ubiquity of
+``information'' in Chinese Jcomm textbooks, compared to its scarcity in
+Taiwanese counterparts.\footnote{Liu Shengji 劉勝驥,
+  ``國科會專題研究：中國大陸高校教科書中政治思想教育之研究''
+  {[}Political ideologies in mainland Chinese college textbooks{]},
+  2004, 193--94.} He also noted that the phrase ``social control''
+(\emph{shehui kongzhi}) appeared hundreds of times and suspected it to
+reflect Chinese authoritarianism,\footnote{Liu, 203.} without realizing
+Jcomm's invocation of its cybernetic meaning---purposeful influence
+toward a predetermined goal through information processing.\footnote{Ironically,
+  it was American psychologists who applied cybernetics to develop
+  techniques of ``coercive persuasion'' by experimenting with ``extreme
+  environmental control.'' Rebecca Lemov, ``Running Amok in Labyrinthine
+  Systems: The Cyber-Behaviorist Origins of Soft Torture,'' \emph{Limn}
+  1, no. 1 (2011).} However, the ``goal'' here, or journalism's
+principled priority of ``systematic benefit,'' is hard to pin down. In
+textbooks, official documents, and authoritative commentaries, it shifts
+between economic prosperity, social stability, and international
+rivalry. Whereas this flexibility may echo the notion of adaptable,
+learning systems, the assumed ``oneness'' is a far cry from Marxian
+dialectics' attention to contradiction and historicity.\footnote{Levins,
+  ``Dialectics and Systems Theory.''} It is especially so when the
+system's shifting goals are invariably seen as hindered by
+internal/domestic protests and grievances, which journalism is tasked to
+assuage through dispelling people's ``uncertainty.''
+
+Finally, the understanding of truth inherent in this conception of
+newsmaking is about neither correspondence nor coherence.\footnote{See
+  Jack Fuller, \emph{News Values: Ideas for an Information Age}
+  (Chicago: University of Chicago Press, 1996).} First, it is not about
+sorting out facts in pursuit of accounts that comprehensively correspond
+to (an outside) reality. While the informational ideal of Western
+journalism aspires to display disciplined impartiality,\footnote{Schudson,
+  \emph{Discovering the News}.} news in China can be justifiably partial
+as long as the selection of ``actual occurrences'' for dissemination
+contributes to the vitality of the larger system. This understanding of
+truth is also not about coherence. The imperative for coherence in
+Chinese press history manifested most vividly in the notion of
+``substantial truth,'' which had a high tolerance for fabricating
+details as long as the produced account better reflects ``the inherent
+logic of reality'' according to official ideology. But when viewed as
+system-enhancing cybernetic information, news is not ideological, at
+least not in the sense that ideology means ``seeking to efface
+contradiction and produce an ostensibly coherent, readable account of
+the world.''\footnote{Eva Cherniavsky, \emph{Neocitizenship: Political
+  Culture after Democracy} (New York: NYU Press, 2017), 141.} In the
+end, such newsmaking is not interested in the real. It is highly
+malleable, essentially indifferent to the actual content, and has no
+place for normative value judgments hinged on something external to the
+system.
+
+We may see such a conception of truth as \emph{performance}---as in
+``performative ontology,'' which Andrew Pickering uses to name the
+ontology staged by British cybernetics.\footnote{Pickering,
+  \emph{Cybernetic Brain}.} Casting aside the need to comprehend and
+articulate the working principles of the cybernetic project and its
+surroundings alike---in our case journalism and the world it operates
+in---actions can still be consequential, as the world changes through
+continuing interlinked performances. Importantly, the resulting
+performative relationship is not symmetric, as envisioned by
+cybernetics-inspired theorists such as Haraway,\footnote{Donna J.
+  Haraway, \emph{The Companion Species Manifesto: Dogs, People, and
+  Significant Otherness} (Chicago: Prickly Paradigm Press, 2003).} but
+``imperative,''\footnote{Galison, ``Ontology of the Enemy,'' 256.}
+because norms and commitments of journalism are, foremost, furnished by
+the overriding priorities of the regime suprasystem. While such an
+ontological vision has manifested in many material and ideational forms,
+Chinese news media may be a site to explore how it plays out in the
+practice of the (re)production of reality and, in turn, of the public
+culture that this reality animates.
+
+\end{CJK*}
+
+
+
+
+
+\section{Bibliography}\label{bibliography}
+
+\begin{hangparas}{.25in}{1} 
+
+\begin{CJK*}{UTF8}{gbsn}
+
+An, Gang 安岗. ``研究我们的读者'' {[}Studying our readers{]}. In
+\emph{China Journalism Yearbook}, 173, 177. Beijing: CASS, 1982.
+
+Berlo, David K. \emph{The Process of Communication: An Introduction to
+Theory and Practice}. New York: Holt, Rinehart and Winston, 1960.
+
+Carey, James W. ``Some Personal Notes on US Journalism Education.''
+\emph{Journalism} 1, no. 1 (2000): 12--23.
+
+Carver, Terrell, Gerard Bekerman, and Cecil L. Eubanks. ``Marx and
+Engels. The Intellectual Relationship.'' \emph{Studies in Soviet
+Thought} 31, no. 4 (1986): 329--34.
+
+Cheek, Timothy. \emph{Propaganda and Culture in Mao's China: Deng Tuo
+and the Intelligentsia}. London: Clarendon Press, 1997.
+
+Cheek, Timothy. ``Redefining Propaganda: Debates on the Role of
+Journalism in Post-Mao Mainland China.'' \emph{Issues \& Studies} 25,
+no. 2 (1989): 47--74.
+
+Chen, Chongshan 陈崇山. ``施拉姆的理论对我的指引'' {[}How Schramm's
+theory guided me{]}. \emph{新闻与传播研究} {[}Journalism and
+communication{]}, no. 4 (2012): 14--18.
+
+Chen, Chongshan 陈崇山, and Xiuling 弭秀玲 Mi, eds.
+\emph{中国传播效果透视} {[}Perspectives on media effects in China{]}.
+Shenyang: Shenyang Publishing 沈阳出版社, 1989.
+
+Chen, Jian 陈坚. ``新闻本体论------关于事实与信息的比较研究'' {[}The
+ontology of news: comparing facts and information{]}. \emph{新闻大学}
+{[}Journalism research{]}, no. 3 (1993): 16--17, 48.
+
+Chen, Lidan 陈力丹, and Yigao 王亦高 Wang.
+``我国新闻传播学量化研究的艰难起点'' {[}The fraught origins of
+quantitative research in Chinese journalism-communication{]}.
+\emph{当代传播} {[}Contemporary communication{]}, no. 2 (2009): 8--10.
+
+Cherniavsky, Eva. \emph{Neocitizenship: Political Culture after
+Democracy}. New York: NYU Press, 2017.
+
+Chu, Leonard 朱立. ``香港新闻传播学界的成名与想象(1927--2006)'' {[}Fame
+and imagination in Hong Kong journalism and communication research{]}.
+\emph{国际新闻界} {[}Chinese journal of journalism and communication{]},
+no. 5 (2017): 85--108.
+
+Davies, Gloria. ``Discursive Heat: Humanism in 1980s China.'' In \emph{A
+New Literary History of Modern China}, edited by David Der-Wei Wang,
+758--64. Cambridge: Belknap Press/Harvard University Press, 2017.
+
+Engels, Friedrich. \emph{Herr Eugen Dühring's Revolution in Science
+(Anti-Dühring)}. Edited by C. P. Dutt. Translated by Emile Burns. New
+York: International Publishers, 1939.
+
+Fan, Dongsheng 范东升. ``信息传播与历史唯物论`` {[}Information
+communication and historical materialism{]}. \emph{新闻学刊}
+{[}Journalism{]}, no. 3 (1985): 3--8.
+
+Fuller, Jack. \emph{News Values: Ideas for an Information Age}. Chicago:
+University of Chicago Press, 1996.
+
+Galison, Peter. ``The Ontology of the Enemy: Norbert Wiener and the
+Cybernetic Vision.'' \emph{Critical Inquiry} 21, no. 1 (1994): 228--66.
+
+Gerovitch, Slava. \emph{From Newspeak to Cyberspeak: A History of Soviet
+Cybernetics}. Cambridge: MIT Press, 2004.
+
+Ghosh, Arunabh. \emph{Making It Count: Statistics and Statecraft in the
+Early People's Republic of China}. Princeton, NJ: Princeton University
+Press, 2020.
+
+Greenhalgh, Susan. ``Missile Science, Population Science: The Origins of
+China's One-Child Policy.'' \emph{China Quarterly}, no. 182 (2005):
+253--76.
+
+Hamrin, Carol, and Timothy Cheek. \emph{China's Establishment
+Intellectuals}. Armonk, NY: M. E. Sharpe, 1986.
+
+Haraway, Donna Jeanne. \emph{The Companion Species Manifesto: Dogs,
+People, and Significant Otherness}. Chicago: Prickly Paradigm Press,
+2003.
+
+He, Guimei 贺桂梅. \emph{``新启蒙''知识档案------80年代中国文化研究
+{[}Knowledge archives of the ``New Enlightenment''{]}}. Beijing: Peking
+University Press北京大学出版社, 2010.
+
+Heyck, Hunter. \emph{Age of System: Understanding the Development of
+Modern Social Science}. Baltimore, MD: Johns Hopkins University Press,
+2015.
+
+Highton, Jake. ``\,`Green Eyeshade' Profs Still Live Uncomfortably with
+`Chi-Squares'; Convention Reaffirms Things Haven't Changed Much.''\emph{
+Journalism Educator} 44, no. 2 (1989): 59--61.
+
+Holz, Josephine R., and Charles R. Wright. ``Sociology of Mass
+Communications.'' \emph{Annual Review of Sociology} 5 (1979): 193--217.
+
+Hu, Zhengrong, Ji Deqiang, and Zhang Lei. ``Building the Nation-State:
+Journalism and Communication Studies in China.'' In \emph{The
+International History of Communication Study}, edited by Peter Simonson
+and David W. Park, 387--413. New York: Routledge, 2015.
+
+Kline, Ronald R. \emph{The Cybernetics Moment: Or Why We Call Our Age
+the Information Age}. Baltimore, MD: Johns Hopkins University Press,
+2015.
+
+Lasswell, Harold D. ``The Structure and Function of Communication in
+Society.'' In \emph{The Communication of Ideas}, edited by L. Bryson,
+37--51. New York: Harper and Row, 1948.
+
+Lemov, Rebecca. ``Running Amok in Labyrinthine Systems: The
+Cyber-Behaviorist Origins of Soft Torture.'' \emph{Limn} 1, no. 1
+(2011). \url{https://escholarship.org/uc/item/2rw899hv}.
+
+Levins, Richard. ``Dialectics and Systems Theory.'' \emph{Science \&
+Society} 62, no. 3 (1998): 375--99.
+
+Li, Biao 李彪. ``新闻传播学研究方法的构造'' {[}Research methods of
+journalism-communication{]}. \emph{国际新闻界} {[}Chinese journal of
+journalism and communication{]}, no. 1 (2008).
+
+Li, Liangrong 李良荣. \emph{新闻学概论} {[}Introduction to
+journalism{]}. Shanghai: Fudan University Press 复旦大学出版社, 2018.
+
+Lin, Chunfeng, and John Nerone. ``The `Great Uncle of Dissemination':
+Wilbur Schramm and Communication Study in China.'' In \emph{The
+International History of Communication Study}, edited by Peter Simonson
+and David W. Park, 414--33. Routledge, 2015.
+
+Liu, Hailong 刘海龙.
+"`传播学'引进中的`失踪者'：从1978年---1989年批判学派的引介看中国早期的传播学观念"
+{[}The `missing persons' in the import of communication{]}.
+\emph{新闻与传播研究} {[}Journalism and communication{]}, no. 4 (2007):
+29--35.
+
+Liu, Shengji 劉勝驥.
+``國科會專題研究：中國大陸高校教科書中政治思想教育之研究'' {[}Political
+ideologies in mainland Chinese college textbooks{]}, 2004.
+http://nccur.lib.nccu.edu.tw/handle/140.119/5239.
+
+Liu, Xiao. \emph{Information Fantasies: Precarious Mediation in
+Postsocialist China}. Minneapolis: University of Minnesota Press, 2019.
+
+Liu, Xin. \emph{The Mirage of China: Anti-Humanism, Narcissism, and
+Corporeality of the Contemporary World}. New York: Berghahn Books, 2012.
+
+McAnany, Emile G. ``Wilbur Schramm, 1907--1987: Roots of the Past, Seeds
+of the Present.'' \emph{Journal of Communication} 38, no. 4 (1988):
+109--22.
+
+Medina, Eden. \emph{Cybernetic Revolutionaries: Technology and Politics
+in Allende's Chile}. Cambridge: MIT Press, 2014.
+
+Miller, H. Lyman. \emph{Science and Dissent in Post-Mao China: The
+Politics of Knowledge}. Seattle: University of Washington Press, 1996.
+
+Pang, Laikwan. ``Dialectical Materialism.'' In \emph{Afterlives of
+Chinese Communism: Political Concepts from Mao to Xi}, edited by
+Christian Sorace, Ivan Franceschini, and Nicholas Loubere, 67--72.
+London: Verso Books, 2019.
+
+Peng, Yongdong 彭永东. \emph{控制论的发生与传播研究} {[}The origin and
+dissemination of cybernetics{]}. Taiyuan: Shanxi Education Press
+山西教育出版社, 2012.
+
+Peters, Benjamin. \emph{How Not to Network a Nation: The Uneasy History
+of the Soviet Internet}. Cambridge: MIT Press, 2016.
+
+Peters, John Durham. ``Institutional Sources of Intellectual Poverty in
+Communication Research.'' \emph{Communication Research} 13, no. 4
+(1986): 527--59.
+
+Pickering, Andrew. \emph{The Cybernetic Brain: Sketches of Another
+Future}. Chicago: University of Chicago Press, 2010.
+
+Qian, Xuesen 钱学森, Guozhi 许国志Xu, and Shouyun王寿云Wang.
+"组织管理的技术---系统工程" {[}Techniques of organizational management:
+systems engineering{]}. \emph{文汇报} {[}Wenhui{]}, September 27, 1978.
+
+Qian, Xuesen 钱学森. ``我对系统学的认识历程'' {[}How I came to
+systematics{]}. In \emph{系统科学进展} {[}Developments in systems
+science{]}, edited by Guo Lei郭雷, 2--17. Beijing: Science Publishing
+科学出版社, 2017.
+
+Qian, Xuesen 钱学森, and Jian 宋健 Song. \emph{工程控制论}
+{[}Engineering cybernetics{]}. Beijing: Science Publishing 科学出版社,
+1980.
+
+Rajagopal, Arvind. ``Communicationism: Cold War Humanism.''
+\emph{Critical Inquiry} 46, no. 2 (2020): 353--80.
+
+Rau, Erik P. ``The Adoption of Operations Research in the United States
+during World War II.'' In \emph{Systems, Experts, and Computers}, edited
+by Agatha C. Hughes and Thomas P. Hughes, 57--92. Cambridge: MIT Press,
+2011.
+
+Rindzeviciute, Egle. \emph{The Power of Systems: How Policy Sciences
+Opened Up the Cold War World}. Ithaca, NY: Cornell University Press,
+2016.
+
+Rofel, Lisa. \emph{Desiring China : Experiments in Neoliberalism,
+Sexuality, and Public Culture}. Durham: Duke University Press, 2007.
+
+Rogers, Everett M. \emph{History of Communication Study}. New York: Free
+Press, 1997.
+
+Rogers, Everett M., and Thomas W. Valente. ``A History of Information
+Theory in Communication Research.'' In \emph{Between Communication and
+Information}, edited by Brent D. Ruben and Jorge R. Schement, 35--56.
+New York: Routledge, 2017.
+
+Ruben, Brent D. \emph{Between Communication and Information}. Milton,
+United Kingdom: Routledge, 1993.
+
+Schmalzer, Sigrid. \emph{Red Revolution, Green Revolution}. Chicago:
+University of Chicago Press, 2016.
+
+Schmalzer, Sigrid. \emph{The People's Peking Man: Popular Science and
+Human Identity in Twentieth-Century China}. Chicago: University of
+Chicago Press, 2009.
+
+Schramm, Wilbur. ``Human Communication as a Field of Behavioral
+Science.'' In \emph{Human Communication as a Field of Study}, edited by
+Sarah Sanderson King, 13--26. Albany, NY: SUNY Press, 1989.
+
+Schramm, Wilbur. ``Information Theory and Mass Communication.''
+\emph{Journalism Quarterly} 32, no. 2 (1955): 131--46.
+
+Schramm, Wilbur. ``The Unique Perspective of Communication: A
+Retrospective View.'' \emph{Journal of Communication} 33, no. 3 (1983):
+6--17.
+
+Schramm, Wilbur. ``传学与新闻及其它'' {[}Communication study and
+journalism, and other issues{]}. \emph{新闻学会通讯} {[}Society of
+journalism letters{]}, no. 14 (1982): 19--22.
+
+Schramm, Wilbur. ``美国"大众传播学"的四个奠基人'' {[}Four forefathers of
+American mass communication{]}. \emph{国际新闻界} {[}Chinese journal of
+journalism and communication{]}, no. 2 (1982): 2--4.
+
+Schramm, Wilbur, Godwin C. Chu, and Frederick T. C. Yu. ``China's
+Experience with Development Communication: How Transferable Is That?''
+In \emph{Communication and Development in China}, edited by Goodwin Chu,
+Fred Huang, Wilbur Schramm, Stephen Uhalley Jr, and Frederick T. C. Yu,
+85--105. Honolulu: East-West Center, 1975.
+
+Schudson, Michael. \emph{Discovering The News: A Social History Of
+American Newspapers}. New York: Basic Books, 1981.
+
+Shannon, Claude Elwood, and Warren Weaver. \emph{The Mathematical Theory
+of Communication}. Champaign, IL: University of Illinois Press, 1949.
+
+Shih, Shu-Mei. ``Is the Post in Postsocialism the Post in
+Posthumanism?'' \emph{Social Text} 30, no. 1 (2012): 27--50.
+
+Siebert, Fred, Theodore Peterson, and Wilbur Schramm. \emph{Four
+Theories of the Press: The Authoritarian, Libertarian, Social
+Responsibility, and Soviet Communist Concepts of What the Press Should
+Be and Do}. Champaign, IL: University of Illinois Press, 1956.
+
+Song, Jian 宋健. ``工程控制论`` {[}Engineering cybernetics{]}.
+\emph{系统工程理论与实践} {[}Systems engineering theory \& practice{]},
+no. 2 (1985): 2--4.
+
+Stalin, Joseph. \emph{Dialectical and Historical Materialism}. Moscow:
+Foreign Languages Publishing House, 1938.
+
+Stockmann, Daniela. \emph{Media Commercialization and Authoritarian Rule
+in China}. Cambridge: Cambridge University Press, 2012.
+
+Tankard, James W., Jr. ``The Theorists.'' In \emph{Makers of the Media
+Mind: Journalism Educators and Their Ideas}, edited by William David
+Sloan, 227--86. New York: Routledge, 1990.
+
+Taylor, Angus M. ``Dialectics of Nature or Dialectics of Practice?''
+\emph{Dialectical Anthropology} 4, no. 4 (1979): 289--308.
+
+Thomas, Paul. \emph{Marxism \& Scientific Socialism: From Engels to
+Althusser}. Milton Park, United Kingdom: Taylor \& Francis, 2008.
+
+Tsien, H. S. \emph{Engineering Cybernetics}. New York: McGraw-Hill,
+1954.
+
+Tunstall, Jeremy. ``The Trouble with U.S. Communication Research.''
+\emph{Journal of Communication} 33, no. 3 (1983): 92--95.
+
+Turner, Fred. \emph{From Counterculture to Cyberculture: Stewart Brand,
+the Whole Earth Network, and the Rise of Digital Utopianism}. Chicago:
+University of Chicago Press, 2008.
+
+Wang, Hui. \emph{China's New Order: Society, Politics, and Economy in
+Transition}. Cambridge: Harvard University Press, 2003.
+
+Wang, Ning. ``The Making of an Intellectual Hero: Chinese Narratives of
+Qian Xuesen.'' \emph{China Quarterly}, no. 206 (2011): 352--71.
+
+Wang, Yihong 王怡红, and Yiqing 胡翼青 Hu, eds. \emph{中国传播学30年}
+{[}Chinese communication: thirty years{]}. Beijing: Chinese Encyclopedia
+Press 中国大百科全书出版社, 2010.
+
+Wang, Yimin 王益民. \emph{系统理论新闻学} {[}Systems theory of
+journalism{]}. Wuhan: Huazhong University of Science and Technology
+华中理工大学出版社, 1989.
+
+Wiener, Norbert. \emph{Cybernetics or Control and Communication in the
+Animal}. Cambridge: MIT Press, 1965.
+
+Wu, Angela Xiao, and Luzhou Li. ``Localism in Internet Governance: The
+Rise of China's Provincial Web.'' \emph{China Information}, 2021.
+\url{https://doi.org/10.1177/0920203X211055038}.
+
+Wu, Guoguang. ``One Head, Many Mouths: Diversifying Press Structures in
+Reform China.'' In \emph{Power, Money, and Media: Communication Patterns
+and Bureaucratic Control in Cultural China}, 45­--67. Evanston, IL:
+Northwestern University Press, 2000.
+
+Wu, Wenhu 吴文虎. "传播学理论架构初探" {[}Exploring communication's
+theoretical frameworks{]}. \emph{新闻学刊} {[}Journalism{]}, no. 5
+(1986): 27--31.
+
+Xiaoling 晓凌. ``他们精心治学`` {[}They are devoted to scholarships{]}.
+\emph{新闻学会通讯} {[}Society of journalism letters{]}, no. 14 (1982):
+22--23.
+
+Xu, Yaokui 徐耀魁.
+``施拉姆对中国传播学研究的影响：纪念施拉姆来新闻研究所座谈30周年''
+{[}Schramm's impacts on Chinese communication research{]}.
+\emph{新闻与传播研究} {[}Journalism and communication{]}, no. 4 (2012):
+9--14.
+
+Xu, Yaokui 徐耀魁, Peixu 孙培旭 Sun, Rugang 沈如纲 Shen, and Hongliang
+曹宏亮 Cao. ``关于新闻体制改革的设想'' {[}Envisioning journalism
+reform{]}. \emph{新闻学刊} {[}Journalism{]}, no. 5 (1986): 3--9.
+
+Ye, Yonglie 叶永烈. \emph{走进钱学森} {[}Qian Xuesen: A biography{]}.
+Shanghai: Shanghai Jiao Tong University Press上海交通大学出版社, 2016.
+
+Yu, Guoming 喻国明. ``新闻作品信息含量问题初探`` {[}Exploring news
+information content{]}. \emph{新闻学论集} {[}Annals of journalism
+studies{]} 8 (1984): 80--99.
+
+Yu, Guoming 喻国明. "试论建立具有中国特色的社会主义新闻事业体制"
+{[}Building Chinese journalism with socialist characteristics{]}.
+\emph{新闻学刊} {[}Journalism{]}, no. 1 (1986): 42--52.
+
+Yu, Timothy 余也鲁, Qingbin 施清彬 Shi, Yufang 崔煜芳 Cui, and Qiqi
+章琪琦 Zhang. ``中国传播学研究破冰之旅的回顾：余也鲁教授访问记``
+{[}Chinese communication study's icebreaking trip in retrospect{]}.
+\emph{新闻与传播研究} {[}Journalism and communication{]}, no. 4 (2012):
+4--9.
+
+Yurchak, Alexei. ``Communist Proteins: Lenin's Skin, Astrobiology, and
+the Origin of Life.'' \emph{Kritika: Explorations in Russian and
+Eurasian History} 20, no. 4 (2019): 683--715.
+
+Zhang, Yong. ``From Masses to Audience: Changing Media Ideologies and
+Practices in Reform China.'' \emph{Journalism Studies} 1, no. 4 (2000):
+617--35.
+
+Zhao, Yuezhi. ``From Commercialization to Conglomeration: The
+Transformation of the Chinese Press Within the Orbit of the Party
+State.'' \emph{Journal of Communication} 50, no. 2 (2000): 3--26.
+
+Zhao, Yuezhi. ``批判研究与实证研究的对比分析'' {[}Comparing critical and
+empirical approaches{]}. \emph{国际新闻界} {[}Chinese journal of
+journalism and communication{]}, no. 11 (2006): 34--39.
+
+Zheng, Xingdong 郑兴东. ``新闻价值相关论'' {[}Thesis on news value{]}.
+\emph{新闻学论集} {[}Annals of journalism studies{]} 11 (1987): 88--99.
+
+\enlargethispage{\baselineskip}
+
+Zhou, Zhi 周致. ``西方传播学的产生及其与新闻学的关系'' {[}Western
+communication's origin and relations with journalism study{]}. In
+\emph{传播学简介} {[}Introduction to communication study{]}, edited by
+社科院新闻所世界室 CASS Journalism Institute, 126--34. Beijing: People's
+Daily Press 人民日报出报社, 1983.
+
+\end{CJK*}
+
+\end{hangparas}
+\vspace{2em}
+
+\hypertarget{acknowledgments}{%
+\section{Acknowledgments}\label{acknowledgments}}
+
+At various stages, this paper benefited from the insights of Lily
+Chumley, Timothy Cheek, Finn Brunton, Sigrid Schmalzer, Joseph Man Chan,
+Julie Yujie Chen, Fred Turner, He Bian, Yige Dong, and Elizabeth
+Lenaghan. I am also grateful to audiences at the conferences
+``Post(?)socialist Horizons'' and ``Exclusions in the History and
+Historiography of Communication Studies,'' and the SHOT/HSS panel
+``Systems Thinking in Cold War East Asia and Beyond,'' especially Alexei
+Yurchak, Masha Salazkina, David Park, Jefferson Pooley, Peter Simonson,
+and Egle Rindzeviciute for their comments. This research was supported
+by the Henry Luce Foundation and the American Council of Learned
+Societies, the Chiang Ching-kuo Foundation, and the American Association
+of University Women.
+
+\end{document}
