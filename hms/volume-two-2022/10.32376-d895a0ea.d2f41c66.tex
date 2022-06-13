@@ -1,0 +1,1777 @@
+% see the original template for more detail about bibliography, tables, etc: https://www.overleaf.com/latex/templates/handout-design-inspired-by-edward-tufte/dtsbhhkvghzz
+
+\documentclass{tufte-handout}
+
+%\geometry{showframe}% for debugging purposes -- displays the margins
+
+\usepackage{amsmath}
+
+\usepackage{hyperref}
+
+\usepackage{fancyhdr}
+
+\usepackage{hanging}
+
+\hypersetup{colorlinks=true,allcolors=[RGB]{97,15,11}}
+
+\fancyfoot[L]{\emph{History of Media Studies}, vol. 2, 2022}
+
+
+% Set up the images/graphics package
+\usepackage{graphicx}
+\setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
+\graphicspath{{graphics/}}
+
+\title[Constituted and Constituting Exclusions]{Constituted and Constituting Exclusions in Communication Studies} % longtitle shouldn't be necessary
+
+% The following package makes prettier tables.  We're all about the bling!
+\usepackage{booktabs}
+
+% The units package provides nice, non-stacked fractions and better spacing
+% for units.
+\usepackage{units}
+
+% The fancyvrb package lets us customize the formatting of verbatim
+% environments.  We use a slightly smaller font.
+\usepackage{fancyvrb}
+\fvset{fontsize=\normalsize}
+
+% Small sections of multiple columns
+\usepackage{multicol}
+
+% Provides paragraphs of dummy text
+\usepackage{lipsum}
+
+% These commands are used to pretty-print LaTeX commands
+\newcommand{\doccmd}[1]{\texttt{\textbackslash#1}}% command name -- adds backslash automatically
+\newcommand{\docopt}[1]{\ensuremath{\langle}\textrm{\textit{#1}}\ensuremath{\rangle}}% optional command argument
+\newcommand{\docarg}[1]{\textrm{\textit{#1}}}% (required) command argument
+\newenvironment{docspec}{\begin{quote}\noindent}{\end{quote}}% command specification environment
+\newcommand{\docenv}[1]{\textsf{#1}}% environment name
+\newcommand{\docpkg}[1]{\texttt{#1}}% package name
+\newcommand{\doccls}[1]{\texttt{#1}}% document class name
+\newcommand{\docclsopt}[1]{\texttt{#1}}% document class option name
+
+
+\begin{document}
+
+\begin{titlepage}
+
+\begin{fullwidth}
+\noindent\LARGE\emph{Exclusions in the History of Media Studies
+} \hspace{25mm}\includegraphics[height=1cm]{logo3.png}\\
+\noindent\hrulefill\\
+\vspace*{1em}
+\noindent{\Huge{Constituted and Constituting Exclusions in Communication Studies\par}}
+
+\vspace*{1.5em}
+
+\noindent\LARGE{Sarah Cordonnier} \href{https://orcid.org/00000-0003-2442-5356}{\includegraphics[height=0.5cm]{orcid.png}}\par}\marginnote{\emph{Sarah Cordonnier, ``Constituted and Constituting Exclusions in Communication Studies,'' \emph{History of Media Studies} 2 (2022), \href{https://doi.org/10.32376/d895a0ea.d2f41c66}{https://doi.org/ 10.32376/d895a0ea.d2f41c66}.} \vspace*{0.75em}}
+\vspace*{0.5em}
+\noindent{{\large\emph{Université Lumière Lyon 2}, \href{mailto:sarah.cordonnier@gmail.com}{sarah.cordonnier@gmail.com}\par}} \marginnote{\href{https://creativecommons.org/licenses/by-nc/4.0/}{\includegraphics[height=0.5cm]{by-nc.png}}}
+
+% \vspace*{0.75em} % second author
+
+% \noindent{\LARGE{<<author 2 name>>}\par}
+% \vspace*{0.5em}
+% \noindent{{\large\emph{<<author 2 affiliation>>}, \href{mailto:<<author 2 email>>}{<<author 2 email>>}\par}}
+
+% \vspace*{0.75em} % third author
+
+% \noindent{\LARGE{<<author 3 name>>}\par}
+% \vspace*{0.5em}
+% \noindent{{\large\emph{<<author 3 affiliation>>}, \href{mailto:<<author 3 email>>}{<<author 3 email>>}\par}}
+
+\end{fullwidth}
+
+\vspace*{1em}
+
+
+\newthought{\hypertarget{abstract}{%
+\section{Abstract}\label{abstract}}}
+
+\noindent Despite their explosive growth during the past decades, the sciences
+dedicated to communication are largely marginalized in the academic
+communities worldwide: Typically, their publications are not read, their
+theories ignored, their curricula not proposed in prestigious
+universities. The stigma these ``fragmented'' disciplines suffer from
+has important and interesting consequences for their development and
+beyond, for the contemporary understanding of the role of scientific
+knowledge in society. How does invisibilization affect the identity of
+our discipline(s) and of the researchers who inhabit it? What does it
+say about the intervention of social values into supposedly ``neutral''
+scientific fields? The analysis of this partly documented situation
+relies upon a discursive approach requiring historical resources and, at
+the same time, a precise attention to heterogenous experiences that do
+not ``fit'' in historically situated normative academic frames. The
+approach shows how constituted and constituting exclusions of
+communication studies are linked by fundamental questions about where
+science ``is'' and what it ``does,'' epistemologically, practically, and
+politically. Identifying and acknowledging the power of sociocultural
+categories in structuring scientific practices leads us to put the
+authority, usefulness, and legitimacy of contemporary science in its
+proper intellectual, institutional, and sociocultural place.
+
+
+
+
+
+\enlargethispage{2\baselineskip}
+
+\vspace*{5em}
+
+\noindent{\emph{History of Media Studies}, vol. 2, 2022}
+
+
+
+ \end{titlepage}
+
+\hypertarget{a-deafening-silence-ignoring-the-sciences-dedicated-to-communication}{%
+\section{A Deafening Silence: Ignoring the Sciences Dedicated to
+\\\noindent Communication}\label{a-deafening-silence-ignoring-the-sciences-dedicated-to-communication}}
+
+``After learning that my PhD is in Communication, a sociologist I know,
+one of some repute, replied with surprise, `But I thought
+you were so
+sophisticated!'\,''\footnote{Thomas Streeter, ``For the Study of
+  Communication and against the Discipline of Communication,''
+  \emph{Communication Theory} 5, no. 2 (May 1995): 117.} This anecdote
+is a textbook case of the kind of exclusion described by Erving Goffman
+as stigmatization: ``While the stranger is present before us, evidence
+can arise of his possessing an attribute that makes him different from
+others in the category of persons available for him to be, and of a less
+desirable kind. . . . He is thus reduced in our minds from a whole and
+usual person to a tainted, discounted one. Such an attribute is a
+stigma.''\footnote{Erving Goffman, \emph{Stigma: Notes on the Management
+  of Spoiled Identity} (Englewood Cliffs, NJ: Prentice-Hall, 1963), 12.}
+  
+\enlargethispage{\baselineskip}
+
+The story of Streeter would probably not surprise the reader, as it is
+common sense among the communities of \emph{sciences dedicated to
+communication}\footnote{I use this generic locution to include all the
+  names given to this field or discipline around the world, as the
+  designation and thematic circumscriptions differ from country to
+  country: media studies, communication studies, communication science,
+  communication and media research, information and communication
+  sciences, etc.: ``Few academic units in communication used the same
+  name (e.g., journalism vs. {[}mass{]} communication; communication vs.
+  speech), so the lack of a `common denominator,' within individual
+  countries and internationally, may continue to impede further
+  progress.'' Juha Koivisto and Peter D. Thomas, \emph{Mapping
+  Communication and Media Research: Conjunctures, Institutions,
+  Challenges} (Tampere: Tampere University Press, 2010), 29.} that they
+are largely and durably kept away from the ``conversation of
+disciplines.''\footnote{Robert T. Craig, ``Communication in the
+  Conversation of Disciplines,'' \emph{Russian Journal of Communication}
+  1, no. 1 (2008): 8.} Typically, their publications are not read, their
+theories and methodologies ignored, their curricula not proposed in
+prestigious universities, their PhD students not hired in other
+departments, except sometimes for practical and technical teachings,
+etc. Indeed, despite their ``unstoppable growth . . . at all levels of
+academic activity'' during the past decades,\footnote{Koivisto and
+  Thomas, \emph{Mapping}, 21--22.} these disciplines are largely
+marginalized in the academic communities worldwide.
+
+Such constant unawareness is remarkable, especially if we consider, by
+contrast, the extent of the work carried out for decades now by
+researchers in these disciplines, the number of journals and books that
+support them, the considerable development of curriculums, etc.
+Therefore, the intensity of the exclusion indicates that we are not
+facing a coincidence, but a regulated eviction from the ``order of
+discourse.''\footnote{Michel Foucault, ``The Discourse on Language,'' in
+  \emph{The Archaeology of Knowledge}, trans. A. M. Sheridan Smith (New
+  York: Pantheon Books, 1972), 215--37.}
+
+This situation is only partly documented, for various, intertwined
+reasons that can be sorted into three general categories. First, because
+its perception mainly relies upon individual experiences and casual
+interactions such as the one quoted above, narrated by Thomas Streeter.
+Second, because it is not pleasant for us to think about it, as it
+concerns and affects us directly: In this case, we are both researchers
+and objects of the research. And third, because we lack a coherent
+analytical and theoretical toolbox to properly analyze this process of
+exclusion. Indeed, phenomena like silence or silencing, invisibility or
+invisibilization, and finally, exclusion raise tricky methodological
+questions, as they are intangible, disorganized, and/or do not fit into
+the main, dominant, explicit, obvious analytical frameworks. As such,
+they cannot be accounted for by using standardized methods, and any
+``demonstration'' about them can easily be rejected as not objective, as
+scientifically suspicious.
+
+The difficulty of explaining the issue is precisely part of the problem.
+It further hinders our ability to recognize that the exclusion of
+sciences dedicated to communication has important and interesting
+consequences for the development of the discipline, and beyond, for our
+contemporary conception of the role of scientific knowledge in society.
+That is why it is relevant to do justice to these omissions by studying
+them thoroughly, in a situated way, and from an explained
+positionality.\footnote{Gayatri Chakravorty Spivak, ``Can the Subaltern
+  Speak?'' in \emph{Marxism and the Interpretation of Culture}, ed. Cary
+  Nelson and Lawrence Grossberg (Chicago: University of Illinois Press,
+  1988), 271--313.} The present article is dedicated to this program,
+with the help of discourse analysis.
+
+Peter Simonson suggests: ``As one small way of blending the history of
+media research with ongoing work in the field (be it theoretical,
+empirical, interpretative, or critical), I would advocate recycling
+well-known and overlooked phrases from the past (``rhetorical
+commonplaces of the field'') in our discourses today.''\footnote{Peter
+  Simonson, ``Writing Figures into the Field: William McPhee and the
+  Parts Played by People in Our Histories of Media Research,'' in
+  \emph{The History of Media and Communication Research: Contested
+  Memories}, ed. David Park and Jefferson Pooley (New York: Peter Lang,
+  2008): 311.} One such commonplace is the ``too frequent
+introspection,''\footnote{``Communications and media research has often
+  been on the defensive, and given to perhaps too much and too frequent
+  introspection, resulting in innumerable reconsiderations, reviews,
+  turning points, crossroads, ferments in the field and many other
+  pauses to consider where we are going and why.'' Peter Golding, Helena
+  Sousa, and Karin Raeymaeckers, introduction to ``Future Priorities in
+  European Media and Communication Research,'' ed. Peter Golding, Helena
+  Sousa, and Karin Raeymaeckers, special issue, \emph{European Journal
+  of Communication} 31, no. 1 (February 2016): 3.} ``a periodic
+existential questioning, too often discussed,''\footnote{Yves Jeanneret,
+  ``La prétention sémiotique dans la communication" {[}Semiotical
+  pretention in communication studies{]},~\emph{Semen} 23~(2007).} an
+endless ritornello of the same laments:
+
+\begin{quote}
+The field {[}of communication studies{]} has problems relating to its
+historical \emph{identity}: its \emph{short tradition} as an academic
+discipline, the external influences coming from the media industry and
+the state, its legitimacy deficit, its diffuse research topic
+(``communication''), the \emph{heterogeneous} academic backgrounds of
+its scholars, and the fact of being ``scattered'' all over places at
+universities. In Germany, as well as in America, these characteristics
+lead within the field to a ``lack of consensus'' on its subject matters
+and to difficulties in shaping a self-conception.\footnote{Maria Löblich
+  and Andreas M. Scheu, ``Writing the History of Communication Studies:
+  A Sociology of Science Approach,'' \emph{Communication Theory} 21, no.
+  1 (February 2011): 2 (italics added).}
+\end{quote}
+
+\noindent Such self-critical reflections appear, at least latently, in all of the
+discipline's monumental texts---as, for instance, in the so well known
+``Ferments in the Field'':
+
+\begin{quote}
+In the call for contributions, we noted that ``Bernard Berelson's
+much-cited lament on `The State of Communication Research' nearly a
+quarter century ago marked not the `withering away' but, on the
+contrary, the emergence of a vital new discipline.''\footnote{George
+  Gerbner and Marsha Siefert, introduction to ``Ferment in the Field,''
+  special issue, \emph{Journal of Communication} 33, no. 3 (September
+  1983): 4--5 (italics added). As soon as 1959, Bernard Berelson wrote
+  that after a creative period, communication research was ``withering
+  away.'' Bernard Berelson, ``The State of Communication Research,''
+  \emph{The Public Opinion Quarterly} 23, no. 1 (1959): 1--6.}
+\end{quote}
+
+\noindent This rhetorical commonplace will not lead here to further regrets or
+complaints but to analysis. Following Erving Goffman: ``The stigmatized
+individual tends to hold the same beliefs about identity that we {[}the
+normal{]} do; this is a pivotal fact.''\footnote{Goffman, \emph{Stigma},
+  16.} It is quite enlightening to consider that the stigma coming from
+outside the sciences dedicated to communication is also \emph{endorsed}
+internally. From this perspective, the lack of recognition of the
+discipline creates a paradoxical and very original ``self-constitutive
+discourse,''\footnote{Dominique Maingueneau, ``Analysing
+  Self-Constituting Discourses,'' \emph{Discourse Studies} 1, no. 2 (May
+  1999): 175--99.} because exclusion is both constituted and
+constituting. In other words, this felt incompleteness, this
+self-devaluation, is a pivotal component of the ``identity'' of the
+discipline, what distinguishes it from all other disciplines.
+
+With adequate theoretical, methodological, and reflexive tools, it is
+then possible to construct more fruitful questions: How does
+invisibilization affect the identity of our ``fragmented'' discipline(s)
+and of the researchers who inhabit it? What does it say about the
+intervention of social values into supposedly ``neutral'' scientific
+fields? What first-hand knowledge and experience of the effects of
+exclusion does our peripheral status give us, and how can it be turned
+into clues for a better understanding of the common underlying patterns
+of exclusion? This is what I will address in the following pages, with
+the hope that my proposition can lead to scientific, but also practical
+and political, discussions about the role of knowledge in promoting more
+inclusive spaces, especially in the academic fields.
+
+\hypertarget{methodology-looking-for-the-international-disciplinary-territory-of-the-sciences-dedicated-to-communication}{%
+\section{Methodology: Looking for the International Disciplinary
+Territory of the Sciences Dedicated to
+Communication}\label{methodology-looking-for-the-international-disciplinary-territory-of-the-sciences-dedicated-to-communication}}
+
+The material I will discuss here has been systematically collected
+during ten years of inquiries,\footnote{Sarah Cordonnier, \emph{La
+  production d'un territoire scientifique international: Les sciences
+  consacrées à la communication à la croisée des circulations
+  rhétoriques, institutionnelles et biographiques} {[}The production of
+  an international scientific territory: The sciences dedicated to
+  communication at the crossroads of rhetorical, institutional, and
+  biographical circulations{]} (habilitation thesis, Sorbonne
+  Université, 2018).} preceded by personal experiences of this
+``disciplinary territory.'' I first witnessed various exclusions in my
+own French national context, without giving them special attention. But
+then, through a continuous collaboration with German colleagues since
+2008, I noticed a curious phenomenon: Although our respective
+disciplines (\emph{Sciences de l'information et de la communication} in
+France, \emph{Medien-} and \emph{Kommunikationswissenschaft} in Germany)
+developed in intellectual, institutional, historical, and cultural
+contexts that are very different in many respects,\footnote{Sarah
+  Cordonnier and Hedwig Wagner, ``Déployer l'interculturalité: Les
+  étudiants, un vecteur pour la réflexion académique sur
+  l'interculturel; Le cas des sciences consacrées à la communication et
+  aux médias en France et en Allemagne {[}Deploying interculturality:
+  Students as a vector for academic reflection on interculturality; The
+  case of communication and media sciences in France and Germany{]},
+  \emph{Interkulturelle Kompetenz in deutsch-französischen
+  Studiengängen} {[}Key competences for higher education and
+  employability{]}, ed. Gundula Hiller et al. (Wiesbaden: Springer VS,
+  2017): 221--34.} I heard and then read the same laments about the
+discipline(s) in France and in Germany,\footnote{They are synthesized in
+  the citation of Löblich \& Scheu above. For Germany, see also Nathalie
+  Huber, \emph{Kommunikationswissenschaft als Beruf: Zum
+  Selbstverständnis von Professoren des Faches im deutschsprachigen
+  Raum} {[}Communication science as a profession: On the self-perception
+  of professors of the discipline in German-speaking countries{]} (Köln:
+  Herbert von Halem} especially about their youth, their lack of
+legitimacy. The applied nature of the research was considered a problem
+for Kommunikationswissenschaft, while Medienwissenschaft was sometimes
+derided as a bad imitation of philosophy.
+
+In order to understand the role and importance of disciplinary identity
+in my field, and to see if my experience, localized in two countries,
+could be extended to the international level, I began collecting
+``fragments from daily life''\textsuperscript{18} through observations,
+interactions with colleagues, and reading of various documents. As my
+object of study was still under construction and did not fit within the
+established theoretical and methodological frames of epistemology or
+sociology of sciences, Rosalind Gill's approach was instrumental in
+inspiring my own method and allowing me to make sense of this blurry
+configuration. Gill writes:
+
+\begin{quote}
+I begin {[}the article{]} from experiences in the Academy---experiences
+that are often kept secret or silenced, that do not have ``proper
+channels'' of communication. My ``data'' are entirely unscientific, but
+nevertheless, I contend, they\marginnote{Verlag, 2010), esp. 19--40. For France, see also
+  Robert Boure, ``Les sciences de l'information et de la communication
+  au risque de l'expertise? Sur et sous des pratiques scientifiques"
+  {[}Information and communication sciences at the risk of expertise? On
+  and beneath scientific practices{]}, \emph{Réseaux} 15, no. 82--83
+  (1997): 233--53.} tell\marginnote{\textsuperscript{18} Rosalind Gill, ``Breaking the
+  Silence: The Hidden Injuries of Neo-Liberal Academia,''
+  \emph{Feministische Studien} 34 (2016): 43.}\setcounter{footnote}{18} us something real and significant
+about our own workplaces. They consist of conversations and e-mails from
+friends or colleagues, University memos, letters from journal editors
+and other ``fragments'' from daily life.\footnote{Gill, ``Breaking,''
+  43.}
+\end{quote}
+
+\noindent Because of their number and coherence, I would not say that data like
+Gill's are ``entirely unscientific,'' despite their heterogenous formats
+and origins. A few years ago, when I read for the first time the
+``back-handed compliment'' I mentioned in the beginning of this text, I
+strongly related with Streeter's story.\footnote{Streeter, ``For the
+  Study,'' 127.} I, as many colleagues with whom I had informal
+discussions, had also experienced this kind of contemptuous evaluation
+of our scientific skills and purpose, and the ways in which the
+disciplinary affiliation negatively ``contaminates'' one's whole
+academic identity (reduced forever to the discipline in which the PhD
+has been done). Streeter encourages fellow media scholars to go beyond
+merely noting this phenomenon, to interrogate it and to ``extend
+{[}their reflections{]} beyond the level of shop talk and academic
+gossip.''\footnote{Streeter, 117.}
+
+Toward that end, these fragmented observations are a crucial first
+step---though it is by no means a simple one. From a practical
+standpoint, such data are hard to collect. Such remarks are often made
+in passing, in the elusive interactions of the daily life. And more
+generally, the (lack of) consideration for the sciences dedicated to
+communication remains latent. Furthermore, due to the nature of stigma,
+those who are afflicted with it, no matter the number or consistency of
+their testimonies, will have a hard time deconstructing it.\footnote{``Certainly,
+  members of our field are well aware that we are not always taken
+  seriously by scholars in other disciplines (DeFleur 1998; Downing
+  2006; Livingstone, 2009; Rogers 1997; Streeter 1995); as McChesney
+  (1993, 100) colorfully described it, `communication is seemingly
+  regarded by the pooh-bahs in history, political science, and sociology
+  as having roughly the same intellectual merit as, say, driver's
+  education.'\,'' Mel Stanfill, ``Finding Birds of a Feather: Multiple
+  Memberships and Diversity without Divisiveness in Communication
+  Research,'' \emph{Communication Theory} 22, no. 1 (February 2012): 17.}
+Outside the group, stigma will most frequently be denied. And when
+``unveiling'' it inside the group, it is quite hard to be heard in a
+dispassionate way, as it can be perceived as a threat to one's identity,
+and/or to individual or collective strategies to cope with or to conceal
+the stigma. For instance, over the years, my research about the
+specificities of sciences dedicated to communication has many times been
+seen as complaining too much: ``too much . . . self-pity, prone to lead
+to accusations of being `cry-babies' . . . more irony and humor would be
+useful,"\footnote{Making jokes is one of the tactics at the disposal for
+  the stigmatized, following Goffman.} to cite just one such ``Reviewer
+\#2'' assessment. It has also been seen as too implicated: ``It seems to
+me that the author identifies herself/himself too closely and
+passionately with the `sciences dedicated to communication.'\,'' It is
+indeed a common problem for research about exclusion of all kinds to be
+seen as non-objective, by contrast with research about and from ``the
+normal.''\footnote{Donna Haraway, ``Situated Knowledges: The Science
+  Question in Feminism and the Privilege of Partial Perspective,''
+  \emph{Feminist Studies} 14, no. 3 (1988): 575--99.} Ironically, such
+objections are typically based on normative, ideological assessments
+rather than scientific ones. Thus, speaking out is a contradictory
+strategy to the one wanting to maintain a low profile, aiming ``to
+convince the public to use a softer social label for the category in
+question.''\footnote{Goffman, \emph{Stigma}, 36.} (I will come back to
+the two-faceted problem of personal implication and complaint in the
+last part of this article, as it is also a common critique addressed to
+the sciences dedicated to communication in general.)
+
+The collection and analysis of situated cases, even if they are
+heterogenous, blurry, or fragmentary, brings attention to the
+phenomenon. For me, they are not a result, but the precursor to a
+collective discussion. To conduct this exploration in a systematic way,
+I first gathered a corpus of twenty documents (books and journal issues)
+containing three hundred texts published over a period of thirty years
+(1983--2016) and dealing with the sciences dedicated to communication as
+a discipline at a global level and/or in international
+comparison.\footnote{For a full list of the texts, see Sarah Cordonnier,
+  ``Les sciences consacrées à la communication, laboratoire
+  disciplinaire? Analyses exploratoires d'un discours `international'"
+  {[}The sciences dedicated to communication as disciplinary laboratory?
+  Exploratory analysis of an "international" discourse{]},~\emph{Revue
+  française des sciences de l'information et de la communication} 10
+  (2017).} I went in search of an international disciplinary discourse
+that would give me access to the main issues under discussion within the
+discipline. My approach for locating ``rhetorical commonplaces'' was
+genealogical: I started with the most recent publications, and from
+these identified previous, but still ``activated'' (quoted), resources.
+Thus, the corpus is composed mainly of \emph{collective} works (from
+which at least one contribution is cited in other works) and also of
+pivotal individual texts that appear frequently. The number of citations
+for a given work attests to its visibility and importance within the
+scholarly conversation.\footnote{François Heinderyckx, Margaux Hardy,
+  and Marc Vanholsbeeck, ``Les revues scientifiques en
+  information-communication: L'ère des mutations?" {[}Scientific
+  journals in information and communication sciences: An era of
+  change?{]}, \emph{Questions de communication} 21 (2012).} This corpus
+is both a (random in a way) coring and a curated sample of texts
+allowing me to work on the coherence of an ``international''
+disciplinary community through comparison, quantitative analysis, and
+observation of temporal continuities. I subjected these texts to several
+types of analysis (thematic, editorial, enunciative, quantitative,
+contextualization, cross-citation, etc.), but for the purpose of the
+present text, I will just take some examples and citations from this
+corpus.
+
+Both sets of collected material---daily observations and corpus
+texts---granted me access to what Goffman described as ``a publication
+of some kind which gives voice to shared feelings, consolidating and
+stabilizing for the reader his sense of the realness of `his'
+{[}stigmatized{]} group and his attachment to it. Here the ideology of
+the members is formulated---their complaints, their aspirations, their
+politics.''\footnote{Goffman, \emph{Stigma}, 36.}
+
+In conducting this inquiry, I contributed to other kinds of exclusion.
+Indeed, by definition, my identification of ``the discipline'' with its
+most common international conceptions has led me to ignore (or to be
+unable to reach, due to language, online accessibility, etc.)
+marginalized discourses within the discipline.\footnote{I mention this
+  problem in the conclusion of another article: Sarah Cordonnier,
+  ``Looking Back Together to Become `Contemporaries in Discipline,'\,''
+  \emph{History of Media Studies} 1 (2021). Author nationalities in my
+  corpus can be found in Cordonnier, ``Laboratoire disciplinaire,'' Fig.
+  1,
+  \url{https://journals.openedition.org/rfsic/docannexe/image/2750/img-1.jpg};
+  and the countries and regions analyzed in Fig. 2,
+  \url{https://journals.openedition.org/rfsic/docannexe/image/2750/img-2.jpg}.}
+That is why the material I share here comes primarily from France
+(especially the daily observations) and deals almost only with Western
+countries, whose role is dominant in the current processes of academic
+globalization. In order to better understand the complex processes of
+homogenization and heterogenization\footnote{Arjun Appadurai,
+  \emph{Modernity at Large: Cultural Dimensions of Globalization}
+  (Minneapolis: University of Minnesota Press, 1996).} in globalized
+academia, and in the sciences dedicated to communication at an
+international level, further studies would be required.
+
+\hypertarget{discipline-matters-but-why-and-how}{%
+\section{Discipline Matters! But Why, and
+How?}\label{discipline-matters-but-why-and-how}}
+
+At this point, some readers probably think that my research could be
+interesting in a speculative manner but easily fixable in practice, and
+not of their direct concern. It was indeed suggested many times
+\emph{not} to consider communication studies as a discipline, because of
+all the previously mentioned ``problems.'' The ``field or discipline''
+debate is another rhetorical commonplace.\footnote{Kaarle Nordenstreng,
+  ``Discipline or Field? Soul-Searching in Communication Research,''
+  \emph{Nordicom Review} 27 (2007): 211--22.} In our contemporary world,
+it would be better, and more satisfying, to think of communication as a
+``post-discipline.''\footnote{Silvio R. Waisbord, \emph{Communication. A
+  Post-Discipline} (Cambridge: Polity, 2019).}
+
+This perspective is rich but does not cover the entire scope of the
+issue. In this sense, it resembles many other works which are likewise
+seductive and ``modern'' but lack a firm conceptual basis about what
+discipline is. Indeed, ``disciplines'' have been studied many times as a
+theoretical object, and just as frequently, they have been disqualified
+from a practical standpoint as a useless, artificial, restricting
+framework. Neither epistemology, nor sociology of sciences, nor
+laboratory anthropology can fully confront this paradoxical object, from
+which academics repeatedly and unsuccessfully tried to escape. In both
+cases, scientific and practical, the categories, scales, factors, and
+focuses of the study are most often very confused or unstable.
+
+\hypertarget{commonplace-impasses-in-the-study-of-discipline}{%
+\subsection{Commonplace Impasses in the Study
+of ``Discipline''
+}\label{commonplace-impasses-in-the-study-of-discipline}}
+
+
+
+
+In many cases, the works on discipline start from a \emph{normative}
+ideal of scientific knowledge rather than from the reality of
+practices---or, on the contrary, remain too close to those practices
+without putting them into broader historical contexts. That is why, for
+instance, they often implicitly activate the ``invisible college''
+model,\footnote{Diana Crane, \emph{Invisible Colleges: Diffusion of
+  Knowledge in Scientific Communities} (Chicago and London: University
+  of Chicago Press, 1975): 172.} where characteristics of knowledge and
+characteristics of scientific communities are ``glued'' together in a
+(chrono)logical movement: first the idea and a very small group of
+bright people; then development (``normal science'' and groups of
+rank-and-file collaborators); and finally, specialization, followed by
+decline.
+
+This narrative which sticks chronological temporality and logical
+development together is more of a fiction than an analysis. Following
+Michel Foucault, this is even a mistake:
+
+\begin{quote}
+Their chronology {[}of thresholds of scientificity{]}, in fact, is
+neither regular nor homogeneous. The discursive formations do not cross
+them at regular intervals, or at the same time, thus dividing up the
+history of human knowledge (\emph{connaissances}) into different ages. \ldots Moreover: each discursive formation does not pass through these
+different thresholds in turn, as through the natural stages of
+biological maturation, in which the only variable is the latency period
+or the length of the intervals. They are, in fact, events whose
+dispersion is not evolutive: their unique order is one of the
+characteristics of each discursive formation.\footnote{Foucault,
+  \emph{Archaeology}, 206.}
+\end{quote}
+
+\noindent Empirically, no discipline follows a (chrono)logical pattern, which was
+besides conceived by Crane to explain domains of knowledge (intellectual
+contexts) and not disciplines. Indeed, in their cultural structures,
+\emph{all} the disciplines lack coherence; all of them bring together
+heterogenous traditions, theories, methods, objects, etc.\footnote{About
+  his discipline, sociology, Abbott writes that it is ``the most general
+  of the social sciences, or, to put it less politely, the least
+  defined. . . . There is indeed not one sociology but many. . . .
+  Sociology, in short, is irremediably interstitial.'' Andrew Abbott,
+  \emph{Chaos of Disciplines} (Chicago: The University of Chicago Press,
+  2000), 3, 4. This topic is widely covered in many other disciplines as
+  well. Of anthropology, for example, Clifford Geertz writes: ``The idea
+  of a discipline . . . fits anthropology none too well. At once broad
+  and general, wildly aspiring (`The Study of Man'), and particular and
+  miscellaneous, strangely obsessive (puberty rites, gift exchange, kin
+  terminology), it has always had, both to itself and to outsiders, a
+  blurry image. Neither method nor subject matter very exactly defines
+  it.'' Clifford Geertz, \emph{After the Fact: Two Countries, Four
+  Decades, One Anthropologist} (Cambridge: Harvard University Press,
+  1995): 96--97.} ``Discipline'' is a useful category, but its
+scientific use has to be more accurate.
+
+In his foundational study on the ``chaos of disciplines,'' Abbott
+recalls that the claim for interdisciplinarity emerges almost
+simultaneously with the constitution of disciplines: ``indeed, the long
+history and stability of interdisciplinarity---unsuspected by its
+current publicists---raise the interesting question for why
+interdisciplinarity has \emph{not} transformed the intellectual
+system.''\footnote{Abbott, \emph{Chaos}, 134.} He states that academic
+organization will remain essentially disciplinary for the foreseeable
+future, no matter how many claims for interdisciplinarity,
+trans-disciplinarity, or post-disciplinarity are made. The reason for it
+is that ``the disciplines constitute the macrostructure of the
+\emph{labor market} for faculty. . . . Careers remain within discipline
+much more than within university'';\footnote{Abbott, \emph{Chaos}, 126
+  (italics added).} ``the credential system {[}of disciplinary PhDs{]}
+dictates the disciplinary labor markets.''\footnote{Abbott, 141.}
+
+\hypertarget{a-communicational-perspective-on-discipline-effectiveness}{%
+\subsection{A Communicational Perspective on
+Discipline
+Effectiveness}\label{a-communicational-perspective-on-discipline-effectiveness}}
+
+Extending the consideration of disciplines to their organizational
+consequences, it is then no surprise that ``the field {[}of
+communication{]} has successfully addressed institutional challenges
+despite intellectual nebulousness and astounding diversity.''\footnote{Waisbord,
+  \emph{Communication}, 124.} The discipline is not a stable norm to
+which local practices can easily be attached. It is not equivalent to
+``science'' or ``theory''; it is not focused only on intellectual
+dimensions. The usual exegetes of the disciplines are led to ``not see''
+what the erroneous (chrono)logical model hinders, in terms of
+understanding as well as in terms of normative dominations and
+exclusions.
+
+The discipline operates forms of belonging, constraint, and scientific
+creativity which depend on different local, national, and international
+situations, and on their interpretation by various actors, having
+various positions, representations, and knowledge. It is adjusted to the
+internal expectations of the activity and to the collectives that take
+charge of it. But it also concerns the legitimacy and the visibility of
+the people and their productions in and outside the scientific worlds.
+
+It is then especially relevant to consider the ``rhetorical resources
+for constructing and legitimizing disciplines,'' as articulated by
+Robert T. Craig. Craig divides these into three different contexts:
+intellectual, institutional, and sociocultural. The latter, which has
+``a primary role,'' consists of ``ordinary concepts and practices more
+or less deeply ingrained in the cultural belief systems and habits of
+the general society.''\footnote{Craig, ``Communication in the
+  Conversation,'' 8--9.} Sociocultural contexts are not supposed to be
+rational, objective, nor scientific. But this does not at all mean that
+academic environments themselves are preserved from commonsense
+conceptions: Sociocultural contexts are just as manifest there.
+Disciplinary intellectual and institutional contexts in particular come
+under, and carry on, ``ordinary concepts'' and ``cultural belief
+systems,'' establishing what Goffman calls ``the normal'' without
+allowing for its explication by analytical tools. So, while blurred and
+disqualifying representations of the sciences dedicated to communication
+have their deeper roots in sociocultural contexts, they are more often
+reflected in the more frequently observed institutional and, this latter
+especially, intellectual contexts, as we will see now with the support
+of examples from my corpus.
+
+\hypertarget{making-sense-of-a-stigmatized-identity}{%
+\section{Making Sense of a Stigmatized
+Identity}\label{making-sense-of-a-stigmatized-identity}}
+
+\hypertarget{intellectual-contexts-there-are-none-so-deaf-as-those-who-will-not-hear}{%
+\subsection{Intellectual Contexts: There are
+None so Deaf as Those Who Will\\\noindent Not
+Hear}\label{intellectual-contexts-there-are-none-so-deaf-as-those-who-will-not-hear}}
+
+\enlargethispage{\baselineskip}
+
+The ``intellectual context'' is the more obvious in commonsense
+conceptions of the discipline. It consists in ``classic and current
+texts, theories, problems, methods, and modes of analysis,''\footnote{Craig,
+  ``Communication in the Conversation,'' 8.} or, in the words of Abbott,
+in ``research practices, evidentiary conventions, rhetorical strategies,
+genres, canonical works, and the like.''\footnote{Abbott, \emph{Chaos},
+  140.}
+
+In the case of the sciences dedicated to communication, this
+intellectual context does not seem to be clear at all: There are
+literally countless internal debates about the theoretical and
+methodological coherence of our discipline (or field). This situation
+partly results from a defective conception of what ``discipline'' is.
+Internationally, within the scope of my inquiry, administrative
+recognition of the discipline came ``first,'' or, at least, without an
+intellectual context that would be considered, internally and
+externally, as coherent. This ``unique order'' is conceived as a
+paradox---as we can see in the following citation, whose interest does
+not reside in its singularity, but in its similarity with many others:
+
+\begin{quote}
+We argue that the ``field'' is defined on a social and institutional
+level, not at the level of ``basic concepts'' or disciplinarily, and not
+even in terms of a supposed common object of study. These perspectives
+more often than not are less reflective of any real intellectual
+coordinates than they are expressions of particular institutional and
+historical conditions, hypostasized into institutional forms, which then
+react back upon the organisation of ongoing study and research. We agree
+with Peters when he argues that ``\,`Communication' has come to be
+administratively, not conceptually defined'' (Peters 1986, p.
+528).\footnote{Koivisto and Thomas, \emph{Mapping}, 40--41.}
+\end{quote}
+
+\noindent The intellectual discomfort resulting from this specific history, and
+the associated difficulty in endorsing it as such, do not at all prevent
+the productivity of the discipline. But they contribute to hiding
+another important characteristic of this intellectual context: the
+almost complete ignorance, on the part of those \emph{outside} the
+discipline, of the research produced within it.
+
+Today, this lack of recognition can be felt, for instance, when we
+repeatedly read books or articles published in other disciplines, where
+what we consider to be basic knowledge about a topic widely covered in
+our discipline is lacking. Such silence is hard to analyze
+systematically, but bibliometric studies can allow us to approach it in
+a quantitative way. James R. Beniger, for instance, argues that
+``bibliometric studies over the past fifteen years depict the field of
+communication as an intellectual ghetto, one that rarely cites outside
+itself and is even more rarely cited by other disciplines.''\footnote{James
+  R. Beniger, ``Communication: Embrace the Subject, not the Field,''
+  \emph{Journal of Communication} 43, no. 3 (1993): 19, quoted in
+  Streeter, ``For the Study,'' 122--3.} But that quantitative approach
+remains hard, too, because the sciences dedicated to communication are
+also rarely included in comparative or interdisciplinary studies,
+whether in history or in sociology of sciences:
+
+\begin{quote}
+{[}A number of factors{]} give rise to persistent prestige gaps between
+communication studies and its neighbors. Hard data are hard to come
+by---ironically because communication research is typically excluded
+from reputation studies and was only recently recognized as a doctoral
+field by the US National Research Council. In the single study that has
+included communication,\footnote{D. J. Downey et al., ``The Status of
+  Sociology within the Academy: Where We are, Why We're There, and How
+  to Change It,'' \emph{The American Sociologist} 39, no. 2 (2008).} the
+US academic deans surveyed judged communication to have the
+\emph{lowest} prestige among the twenty-five disciplines
+named.\footnote{Jefferson D. Pooley, \emph{James W. Carey and
+  Communication Research: Reputation at the University's Margins} (New
+  York: Peter Lang, 2016), xvii.}
+\end{quote}
+
+\noindent In an even more structural way, many journals relevant for the
+discipline are absent from reference citation databases.\footnote{``In
+  contrast to other disciplines, such as political science, sociology,
+  or psychology, important national journals are missing outside the US.
+  ISI should consider including other major national or regional
+  journals---for instance, the \emph{Asian Journal of Communication},
+  \emph{Communications}, \emph{Keio}, \emph{Nordicom}, or
+  \emph{Publizistik}. Such an adjustment of the ISI journal sample would
+  improve the average national diversity of all communication
+  journals.'' Edmund Lauf, ``National Diversity of Major International
+  Journals in the Field of Communication,'' \emph{Journal of
+  Communication} 55, no. 1 (March 2005): 148.}
+
+The ability to quantify, in this way, the extent to which the discipline
+is or is not present within these databases and discourses offers
+interesting clues about exclusion, which can be supplemented by the
+numerous, even if scattered, testimonies about adjacent scholarship's
+relative neglect of the discipline's contributions with regard to a
+given object of study:
+
+\begin{figure}
+    \centering
+    \includegraphics[width=9cm]{tweet-one.jpeg}
+    \caption{Katy Pearce (@katypearce), ``I just skimmed a 2021 article from sociologists on a social media topic,'' Twitter, February 9, 2022, 3:25 p.m., \href{https://twitter.com/katypearce/status/1491508668478607360?t=TVSnTHkyXjG6jGCvsLXbuw&s=03}{https://twitter.com/katypearce/status/} \href{https://twitter.com/katypearce/status/1491508668478607360}{1491508668478607360}.}
+    \label{fig:one}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=9cm]{tweet-two.jpeg}
+    \caption{Jessica L. Beyer (@jlbeyer), ``I see this in political science too,'' Twitter, February 10, 2022, 5:14 a.m., \href{https://twitter.com/jlbeyer/status/1491626631005294597}{https://twitter.com/jlbeyer/status/} \href{https://twitter.com/jlbeyer/status/1491626631005294597}{1491626631005294597}.}
+    \label{fig:two}
+\end{figure}
+
+
+\begin{figure}
+    \centering
+    \includegraphics[width=9cm]{tweet-three.jpeg}
+    \caption{Emily Ryalls (@ProfRyalls), ``@ProfJillian and I had this convo a few years ago!'' Twitter, February 10, 2022, 6:49 a.m., \href{https://twitter.com/ProfRyalls/status/1491650489892564997}{https://twitter.com/ProfRyalls/status/} \href{https://twitter.com/ProfRyalls/status/1491650489892564997}{1491650489892564997}.}
+    \label{fig:three}
+\end{figure}
+
+\begin{quote}
+Issues relating to the media are today being studied in many different
+disciplines, independent of what has been done, or is being done, by
+researchers in media and communication.\footnote{Ulla Carlsson, ``Has
+  Media and Communication Research Become Invisible? Some Reflections
+  from a Scandinavian Horizon,'' \emph{Gazette} (Leiden, Netherlands)
+  67, no. 6 (December 2005): 545.}
+\end{quote}
+
+\noindent In the same way, researchers who are considered to be prominent within
+the discipline are often unknown outside it:
+
+\begin{quote}
+Carey was a giant figure within communication research, and his name is
+still getting regularly invoked. Perhaps more surprising is his
+invisibility outside the field. Even scholars working in cognate areas
+like film studies or the sociology of culture are ignorant of Carey and
+his work. Bring him up, and you are likely to get blank stares or
+puzzled allusions to comedic acting.\footnote{Pooley, \emph{James W.
+  Carey}, xi.}
+\end{quote}
+
+\noindent The accumulation of indices contributes to a better understanding of how
+``in topographic terms, communication studies sits in a depression,
+surrounded---if not by peaks---then by the foothills of the social
+sciences and humanities. The metaphor, overwrought as it is, helps to
+vivify the effects of prestige on the circulation of ideas.''\footnote{Pooley,
+  xii.}
+
+To make sense of this problematic (absence of) recognition, colleagues
+sometimes give the argument of the ``poor quality'' of research, of the
+``intellectual poverty''\footnote{John Durham Peters, ``Institutional
+  Sources of Intellectual Poverty in Communication Research,''
+  \emph{Communication Research} 13, no. 4 (October 1986): 527--59.} of
+this yet already institutionalized discipline. This self-disqualifying
+assessment is of an intellectual nature, which corresponds to what we
+usually consider as the ``normal level'' for such reflection. And yet,
+this cannot be the explanation for such silence because our research is
+neither criticized nor even discussed. To make this argument would imply
+that the work is at least consulted and reported on; to the contrary, it
+is completely overlooked, even by researchers working on ``our''
+research objects. I consider this to be a fundamental characteristic of
+the intellectual context of the sciences dedicated to communication,
+which corresponds quite well to what Goffman describes:
+
+\begin{quote}
+We {[}the normals{]} may try to act as if he {[}the stigmatized{]} were
+a ``non-person'' and not present at all as someone of whom ritual notice
+is to be taken. He, in turn, is likely to go along with these
+strategies, at least initially.\footnote{Goffman, \emph{Stigma}, 29.}
+\end{quote}
+
+\noindent How does the stereotypical and stigmatized identity of the sciences
+dedicated to communication turn them into ``non-disciplines''? I will
+examine that through the following citation, which comes from a text
+otherwise dedicated to a subtle analysis of what disciplines operate in
+social sciences. It contains one of the few explicit mentions of the
+sciences dedicated to communication that I have found outside the
+discipline, and it condenses a lot of those latent positions about them.
+
+\begin{quote}
+Aborted disciplines and disciplines that are linked to social practices
+rather than bodies of knowledge are excellent topics for reflection: The
+communication sciences, for example, are defined by the existence of
+diverse and evolving forms of technologies that allow the transmission
+and reception of messages but do not result in the coupling of an
+object, a method and a community. They offer the example of an
+institutionalization independent of the emergence of a disciplinary
+matrix, even in the weakest sense of the notion developed by Thomas
+Kuhn.\footnote{Jean-Louis Fabiani, ``À quoi sert la notion de
+  discipline?" {[}What is the purpose of the concept of discipline?{]},
+  in \emph{Qu'est-ce qu'une discipline?}, ed. Jean Boutier, Jean-Claude
+  Passeron, and Jacques Revel (Paris: Éditions de l'EHESS, 2006), 34 (my
+  translation).}
+\end{quote}
+
+\noindent For Fabiani (and undoubtedly for others, beginning with the editors of
+the text), a banal and imprecise link with ancillary technical objects
+is enough to give an account of what the sciences dedicated to
+communication are---that is:
+
+\begin{enumerate}
+\item
+  mere social practices, which would not be mediated by ``bodies of
+  knowledge''; and
+\item
+  a counter-example that reinforces other researchers in the certainty
+  that their own discipline is not ``linked to social
+  practices''---which is quite surprising: What is the mission of social
+  sciences, if not to pay attention to ``social practices'' which are
+  necessarily diverse and evolving?
+\end{enumerate}
+
+Just a few pages above this extract, Fabiani writes that ``the notion of
+discipline {[}is{]} a convenient descriptor of the composite practices
+inscribed under the name of science'';\footnote{Fabiani, ``À quoi
+  sert,'' 15.} but ``to the naked eye, it is the diversity {[}of
+sociology{]} that strikes, or even the cacophony, or at least the low
+degree of paradigmatic integration'';\footnote{Fabiani, 23.} etc. And
+yet, when it comes to communication sciences, the ``absence of a
+disciplinary matrix,''\footnote{Fabiani, 34.} rather than being a
+richness and/or a commonplace feature shared by all social sciences,
+becomes a problem. The rich analytical frameworks developed by Fabiani
+are valid for other disciplines but would be impossible to apply here.
+For Fabiani, it would be due to the ``independent'' institutionalization
+of the sciences dedicated to communication. But only the differential in
+\emph{sociocultural} acknowledgment can analytically explain this
+distortion of the analytical tools themselves depending on the
+discipline under consideration.
+
+Instead of enduring the exclusion, and taking on the stigma piecemeal,
+this analysis should lead us to change our perspective. \emph{Internally
+and practically}, why would we have to prove the coherence of our
+discipline, and the quality of all the works produced within it, when
+others do not? Why would it be important to be heard, and recognized, as
+widely as possible in the academic community? And, \emph{externally and
+theoretically}, what does this silence say about the sociocultural power
+of categories (like ``discipline'') within contemporary academia, and
+about the differentiated intellectual legitimacy of scientific
+knowledge?
+
+\hypertarget{institutional-contexts-successes-hidden-by-evictions}{%
+\subsection{Institutional Contexts: Successes
+Hidden by
+Evictions}\label{institutional-contexts-successes-hidden-by-evictions}}
+
+The \emph{academic} \emph{settlement}\footnote{Abbott, \emph{Chaos},
+  136ff.} of a discipline is fundamental for the perpetuation and
+development of a domain of knowledge. Indeed, as one of its most
+paradoxical characteristics, the discipline is at the same time a
+framework to produce new knowledge, \emph{and} ``an operation of
+stabilization of communicational and pedagogical devices allowing the
+reproduction of a state of knowledge.''\footnote{Fabiani, ``À quoi
+  sert,'' 15.} Institutional contexts allow the pedagogical and
+administrative identification of a discipline by various immediate and
+distant audiences (from future students and their families, media,
+university administration, etc. to, as we have seen before, the academic
+labor market). These contexts are tangible, visible, and yet generally
+neglected in works about discipline---maybe because they seem too
+trivial or even a bit contemptible: the realm of academic policies
+rather than a topic for ``pure'' researchers.
+
+Sciences dedicated to communication have widely achieved their
+installation in institutional contexts, in such a fast and exponential
+way that Koivisto and Thomas call it an ``international enigma'':
+
+\begin{quote}
+The growth of communications and media research in the post-war period
+may constitute an ``international enigma.'' Countries and traditions
+quite distant from and sometimes resistant to the dominant Anglophone
+models, such as France, or those with strong traditional academic
+structures and traditions that are often resistant to change, such as
+Germany, display similar features of unstoppable growth of
+communications research and study, at all levels of academic
+activity.\footnote{Koivisto and Thomas, \emph{Mapping}, 20--21.}
+\end{quote}
+
+ \enlargethispage{-\baselineskip}
+ 
+If we look closer, this undeniable institutional presence does not come
+with an unequivocal recognition, as the departments of communication are
+often relegated to the campus peripheries---whether it be the physical
+outer edges of given campus or the fringes on a national or symbolic
+scale. I have observed the sciences' exclusion from prestigious places
+in academia in France, the US,\footnote{``Everybody is always asking
+  what communication is and why they don't have communication
+  departments at Harvard, Princeton, and Yale.'' Michael Meyen,
+  ``Fifty-Seven Interviews with ICA Fellows: Byron Reeves,''
+  \emph{International Journal of Communication} 6 (2012): 1781. ``As a
+  discipline, we continue to struggle not to be seen as only a service
+  department handling a lot of undergraduates and not necessarily as
+  belonging at the table with all the other major players on campus. We
+  have no presence at the Ivy League schools. That's where many people
+  get their models of who `belongs' in academia.'' Judee Burgoon, cited
+  in Michael Meyen, ``International Communication Association Fellows: A
+  Collective Biography,'' \emph{International Journal of Communication}
+  6 (2012): 2384.} Great Britain,\textsuperscript{61} and Germany. And it has surely happened
+elsewhere, though I am unable to confirm this due to the scope of my
+investigation (see ``Methodology''). The situation in the US is well
+described in the following citation:
+
+\begin{quote}
+\emph{On the campus periphery:} Though some speech-oriented
+communication departments are housed within their universities' arts and
+sciences faculties, most US communication programs exist as stand-alone
+schools or colleges. In practice this means that most programs are
+segregated from the other social science and humanities disciplines in
+both administrative and physical terms. The arts and sciences faculties,
+especially for their constituent scholars, remain the symbolic (and
+often geographic) center of the US university, committed (in theory at
+least) to the academy's traditional truth-seeking mission. By contrast,
+professional units like communication---but also education, business,
+and architecture---are often\marginnote{\textsuperscript{61} ``The division of British
+  universities according to their age is important for the reason that a
+  university's reputation and prestige are often defined by its
+  historical status, and the quality of its teaching and research is
+  often seen as correlating with its age and traditions. This has
+  serious implications in the discipline of communication and media
+  studies, since these subjects have not often been favoured in the
+  traditional universities in the past. Recent developments, however,
+  such as the establishment of media research institutes at such
+  prestigious universities as the London School of Economics and Oxford
+  University in the past five years, suggest that this tendency may be
+  changing, as communication and media and studies moves from the
+  institutional `periphery' to the `centre.'\,'' Koivisto and Thomas,
+  \emph{Mapping}, 86.}\setcounter{footnote}{61} viewed as questionably academic impostors
+that threaten to corrode the university tradition. Stand-alone
+communication programs, housed in their own buildings on the edge of
+campus, act as a brick-and-mortar drag on the discipline's legitimacy.
+
+\emph{Midwestern state universities:} For some of the same reasons, most
+early programs were established in large Midwestern land-grant
+universities, like Illinois, Iowa and Michigan State. {[}\ldots{]} With
+only a pair of exceptions, the elite private universities on the Eastern
+seaboard have shunned the discipline altogether.\footnote{Pooley,
+  \emph{James W. Carey}, xv--xvi.}
+\end{quote}
+
+The partial exclusion of sciences dedicated to communication from
+institutional contexts takes various forms, depending on national
+academic histories. But everywhere and overall, it contributes to
+concealing the fact that these disciplines have mainly achieved their
+academic installation. Instead of eliciting satisfaction or even pride,
+this institutional accomplishment seems to reinforce suspicion or even
+rejection of the discipline from the outside. And internally, it raises
+endless existential questions about its identity: ``Despite this
+success---or rather, perhaps precisely due to it---this area of
+scholarly activity lacks any clear scientific identity.''\footnote{Koivisto
+  and Thomas, \emph{Mapping}, 194.}
+
+With some rare exceptions,\footnote{Wolfgang Donsbach, ``The Identity of
+  Communication Research,'' \emph{Journal of Communication} 56, no. 3
+  (2006): 437--48. François Heinderyckx, ``The Academic Identity Crisis
+  of the European Communication Researcher,'' in \emph{Media
+  Technologies and Democracy in an Enlarged Europe}, ed. Nico Carpentier
+  et al\emph{.}, 357--62 (Tartu: University of Tartu Press, 2007).
+  Leonarda García-Jiménez and Susana Martínez Guillem, ``Does
+  Communication Studies Have an Identity? Setting the Bases for
+  Contemporary Research,'' \emph{Catalan Journal of Communication \&
+  Cultural Studies} 1, no. 1 (August 2009): 15--27.} the continuous
+evocation of this ``problem of identity'' lacks a focus on institutional
+contexts (except when the institutional achievement is taken as an
+argument to diminish the discipline). It mainly consists either in
+mentioning the ``immaturity'' or ``backwardness'' of the sciences
+dedicated to communication by (often approximate) comparison with more
+established disciplines; or in lamenting its ``fragmentation,'' the
+absence of founding fathers or proximity with professional or practical
+knowledge. In the latter case, this is done without comparison to other
+disciplines, which nevertheless present the same characteristics (see
+``Discipline Matters'').
+
+Once again, our analysis should lead us to change this cumbersome
+narrative, and even turn it into a productive understanding of the
+contemporary academia. First, instead of letting the stigma get in the
+way, the successful academic settlement of the sciences dedicated to
+communication should be strongly emphasized and taken as what it is: an
+interesting singularity. Indeed, the creation of a new discipline is
+very uncommon after the first settlement of disciplines at the end of
+the nineteenth and beginning of the twentieth century:
+
+\begin{quote}
+Recalling my earlier argument about institutionalization . . . we can
+see that there is one central social structure signifying full
+disciplinarity. That is reciprocity in acceptance of PhD faculty. Border
+fields often employ faculty of diverse disciplines. We can think of them
+as having become true disciplines in the social structural sense once
+they hire mainly PhDs in their own field\emph{.} Communication is an
+excellent example, reaching disciplinary status, in this sense, only
+very recently. (American studies is still trying.)\footnote{Abbott,
+  \emph{Chaos}, 139 (italics added).}
+\end{quote}
+
+And second, the singularity of the sciences dedicated to communication
+leads toward a precise conceptualization of the discipline as a
+historically-situated intellectual and institutional frame. The
+unquestioned, reproduced (chrono)logical model of disciplines, going
+from discovery to institutionalization through intellectual coherence,
+is normative and even ideological, while its rhetorical strength is
+nonetheless producing effects. In this sense, we can look at discipline
+as an \emph{apparatus}. For Foucault, an apparatus consists in a system
+of relations between heterogenous elements, resulting in ``a sort of . .
+. formation which has as its major function at a given historical moment
+that of responding to an \emph{urgent need}. The apparatus thus has a
+dominant strategic function.''\footnote{Michel Foucault, ``The
+  Confession of the Flesh,'' in \emph{Power/Knowledge: Selected
+  Interviews and Other Writings, 1972}--\emph{1977}, ed. Colin Gordon
+  (New York: Pantheon, 1980): 195 (italics in the original).} The
+disciplinary system\footnote{Abbott, \emph{Chaos}, 122ff\emph{.}}
+emerging between the middle of the nineteenth century and the beginning
+of the twentieth century responded to such an urgent need of
+organization, classification, and autonomy of sciences during the
+constitution of the Western modern academia, which is parallel to the
+constitution of the modern nation-state.\footnote{See esp. Johan
+  Heilbron, ``The Social Sciences as an Emerging Global Field,''
+  \emph{Current Sociology} 62, no. 5 (September 2014).} This particular
+urgent need no longer exists, and contexts have strongly changed
+since---but the disciplinary apparatus remains.
+
+Sciences dedicated to communication thrived after WWII in an already
+constituted disciplinary landscape. It was no longer possible to back
+scientific practice with the ``purity'' and the authority of science
+understood as the production of a knowledge independent of contingencies
+(the famous ivory tower)---notably because older disciplines knew all
+too well how to make their own practical and vocational origins
+disappear.\footnote{See esp. Abbott, \emph{Chaos}, 145.} Intellectual
+and institutional territories had already been claimed by other
+disciplines, which understandably wished to preserve them from any
+encroachment.
+
+For instance, even today in France, communication studies researchers
+cannot make their career at the prestigious Center for National
+Scientific Research (CNRS), despite the center's creation of a
+Communication Studies department in 2008. During a committee meeting
+which took place in 2011, it was said that ``according to the members of
+the national committee, the level of the candidates is lower in the
+Communication department than in the other Social Sciences
+departments.''\footnote{``Compte-rendu des élus du Conseil scientifique
+  du CNRS des 14 \& 15 novembre 2011,'' retrieved May 20, 2021 (my
+  translation). The report of this meeting is still partly available
+  here:
+  \href{https://sncs.fr/2011/11/21/compte-rendu-des-elus-du-conseil-scientifique-du-cnrs-des-14-15-novembre-2011/}{https://sncs.fr/2011/11/21/compte-rendu-des-elus-du-conseil-scientifique-} \href{https://sncs.fr/2011/11/21/compte-rendu-des-elus-du-conseil-scientifique-du-cnrs-des-14-15-novembre-2011/}{du-cnrs-des-14-15-novembre-2011/}.}
+No one on the committee objected to this assumption, even as it would
+have been quite difficult for any of them (none of whom represented the
+sciences dedicated to communication) to compare ``levels'' in such a
+general manner, especially with respect to applicants, not hired
+researchers. Despite its lack of coherence, rationality, or logic, this
+opinion, of a \emph{sociocultural} nature, had consequences at an
+institutional level: It was one of the reasons given to the suppression
+of the department after only four years of existence (2008--2012). The
+intellectual definition of the discipline (existing in French
+universities since the middle of the 1970s\footnote{Stefanie
+  Averbeck-Lietz, Fabien Bonnet, Sarah Cordonnier, and Carsten Wilhelm,
+  ``Communication Studies in France: Looking for a~`Terre du milieu'?''
+  \emph{Publizistik} (2019): 1--18.}) has been carefully kept silent
+during the discussion, but the ``cultural beliefs'' constituting the
+sociocultural context were pregnant---and all the stronger since the
+negative opinions given without further precaution were confused by the
+stakeholders with an informed reflexive evaluation, without any
+(cognitive) price to pay in this well-tuned assembly.
+
+The symbolic, intellectual, and institutional resources available for
+the sciences dedicated to communication to build a ``disciplinary
+identity'' and a disciplinary culture are, by definition, not the same
+as those of older disciplines. They mostly developed at the peripheries,
+from vocational demand in new fields, and in strong relation with public
+and private commissioning of surveys. The disciplinary apparatus still
+applies to them and constrains them, but it is also amended by their
+emergence in a more open, transnational, technological society, and in a
+more massified, standardized, and professionalized academic system.
+Their late foundation allows a greater lability in the theoretical and
+methodological constructions, a more reflective and distanced attention
+towards the norms that are imposed on the scientific production and the
+categories that circumscribe it, a better acceptance of the
+heterogeneity of knowledge formats, and a more horizontal way of
+interacting with the so-called ``society of knowledge.'' The
+constitutive intellectual-institutional exclusions with which the
+sciences dedicated to communication are confronted tend to mask these
+rather positive aspects.
+
+\hypertarget{from-exclusion-to-questioning-the-normal}{%
+\section{From Exclusion to Questioning the
+``Normal''}\label{from-exclusion-to-questioning-the-normal}}
+
+Sciences dedicated to communication present huge national differences in
+both intellectual and institutional contexts.\footnote{Peter Simonson
+  and David W. Park, eds., \emph{The International History of
+  Communication Study} (New York and London: Routledge, 2016). Stefanie
+  Averbeck\textsc{-}Lietz, ed., \emph{Kommunikationswissenschaft im
+  internationalen Vergleich: Transnationale Perspektiven} (Wiesbaden:
+  Springer VS, 2017).} And yet, from a \emph{sociocultural} perspective,
+they seem to suffer from a fairly homogenous (lack of) consideration
+throughout the world, or, at least, in the Western countries (where I
+found my examples, and which are the main source of the ``international
+disciplinary discourse'' identified in my corpus). In this regard, the
+observation of exclusions provides a better understanding of academic
+globalization in general. Academic globalization is not primarily a
+unifying process in the production and circulation of knowledge, but
+rather a complex movement combining ``cultural homogenization and
+cultural heterogenization'' with ``fundamental disjunctures''\footnote{Appadurai,
+  \emph{Modernity}, 32ff.} between intellectual, institutional, and
+sociocultural contexts---or, to say it differently, between ``four
+dimensions: the subject of study, the body of evidence, analytical
+frameworks, and academic cultures.''\footnote{Silvio R. Waisbord and
+  Claudia Mellado, ``De‐westernizing Communication Studies: A
+  Reassessment,'' \emph{Communication Theory} 24 (2014): 363.}
+
+The development of disciplines dedicated to communication both resulted
+from and contributes to transformations of the academic field. Goffman
+notes that the stigmatized individual ``can come to re-assess the
+limitations of normals.''\footnote{Goffman, \emph{Stigma}, 21.} If not
+addressed directly, the stigmatized identity of the sciences dedicated
+to communication is a weakness, for the discipline and for its members.
+But if the causes and consequences of exclusion are better understood,
+disadvantages can also be turned into a strength: analytical tools to
+shed light on these rampant, sometimes sclerosing, homogenization
+processes.
+
+Indeed, my material shows that instead of spreading scientific knowledge
+in all its cultural and local diversity, the globalization of academia
+mainly happens through:
+
+\begin{enumerate}
+\item
+  circulating frames (or apparatus) that are detached from their
+  original conditions of production, whether that be disciplines or, as
+  we will now examine, the professional practices of research in
+  academia;
+\item
+  broadcasting sociocultural beliefs like competition and international
+  hierarchies at all levels and, as we will also examine, the place of
+  scientific knowledge in contemporary globalized societies.
+\end{enumerate}
+
+\hypertarget{institutional-contexts-promoting-more-inclusive-professional-practices-in-the-academic-fields}{%
+\subsection{Institutional Contexts: Promoting
+More Inclusive Professional\\\noindent Practices in the Academic
+Fields}\label{institutional-contexts-promoting-more-inclusive-professional-practices-in-the-academic-fields}}
+
+The imaginary in scholarly life is characterized by ``a liberal dream of
+personal, autonomous epic, which has aroused generations of enthusiasm
+for scientific research and shaped countless vocations.''\footnote{Judith
+  Schlanger, \emph{La vocation} {[}The calling{]}, (Paris: Seuil, 1997):
+  226.} Abbott gives a useful description of what he calls
+``professional purity'' in the university:
+
+\begin{quote}
+In general, professionals who are doing what the public imagines to be
+the most basic professional functions are of relatively low status in
+the eyes of professionals themselves. It is the ``professionals'
+professionals'' who are of high status. The same process happens in
+academic life, \emph{perhaps so obviously that we never think to comment
+on it}. Professors give highest prestige to people who in fact do as
+little teaching as possible. Such people emphasize research, a purely
+professional activity. . . . In short, \emph{academics like other
+professionals are subject to a ``regression'' into professional purity}.
+The intellectual consequences of academic regression of this kind are
+considerable. First, regression explains why to academics themselves the
+chief intellectual structures of disciplines are not applied
+disciplinary practices (like teaching writing), but rather the research
+practices and rhetorical strategies.\footnote{Abbott, \emph{Chaos}, 146
+  (italics added).}
+\end{quote}
+
+This type of narrative is paradoxical: ``Being hard-working,
+self-motivating and enterprising subjects is what constitutes academics
+as so perfectly emblematic of this neoliberal moment'' of
+academia;\footnote{Gill, ``Breaking,'' 51.} but it also corresponds less
+and less to actual professional practices in a university context
+characterized by an increasing scarcity of material, organizational, and
+symbolic resources (especially positions, time, etc.). The pursuit of
+prestige or ``dominant'' positions---described at length by Pierre
+Bourdieu and since become common sense---may still drive some (aspiring)
+researchers. But their daily tasks go far beyond this single point. For
+a vast majority of academics, especially without a tenure position, the
+``pure production of knowledge'' is only one activity among many others:
+teaching, of course, but also reviewing, auditing, assessing,
+communicating, organizing events, attending meetings, filling out forms,
+answering emails, etc. These activities require interactions with a wide
+variety of collaborators: students, academics, administrative staff,
+professionals from other sectors, etc. And the meaning of these
+activities profoundly evolves, as ``academics work in universities that
+no longer envision their primary objective as the production and
+dissemination of knowledge for its \emph{intrinsic} use value. Instead,
+we work in institutions that conceptualize knowledge production as
+necessarily part of the production of exchange values.''\footnote{Lawrence
+  D. Berg, Edward H. Huijbens, and Henrik Gutzon Larsen, ``Producing
+  Anxiety in the Neoliberal University,'' \emph{The Canadian Geographer}
+  60, no. 2 (2016): 178.}
+
+The disjunction between the idealized and actual profession, and the
+resulting contradictory injunctions\footnote{Dominique Vinck,
+  ``L'activité de recherche en situation d'injonctions contradictoires"
+  {[}Research activity in a situation of contradictory injunctions{]},
+  in \emph{Les études de sciences: Pour une réflexivité
+  institutionnelle}, ed. Joëlle Le Marec (Paris: Éditions des archives
+  contemporaines, 2010), 65--80.} with which researchers are confronted,
+are growing into ``inter-academic power struggles exacerbated by the
+constant squeeze from neoliberal institutions, such as universities that
+behave increasingly like corporations.''\footnote{Christian Fuchs and
+  Jack Linchuan Qiu, ``Ferments in the Field: Introductory Reflections
+  on the Past, Present and Future of Communication Studies,''
+  \emph{Journal of Communication} 68, no. 2 (April 2018): 222.} For the
+academics, it creates isolation, endless competition at all levels, and
+poor working conditions, to the great detriment of all.\footnote{See,
+  for instance, Gill, ``Breaking.''} It also hinders the production and
+social dissemination of scientific knowledge: Can the exhausted
+precarious worker invest the time necessary for a quality and meaningful
+investigation? Can the elite researcher achieving ``professional
+purity,'' in Abbott's words, be in tune with the social phenomena he
+claims to report on?
+
+In the long run, giving ``highest prestige to people who in fact do as
+little teaching as possible'' is deleterious. Even if legitimacy seems
+to reside solely in the intellectual contexts, art for art's sake,
+science for science's sake, cannot be a viable stand. On the contrary,
+this artificial separation, within the international context of
+``excellence'' academic policies, contributes to more and more rigidity
+in the disciplinary norms---that is, in the ways we define, produce, and
+circulate ``scientific knowledge.'' When disciplinary apparatus was put
+in place, the missions and strategical choices of academics went beyond
+that and intervened in a different historical context.
+
+Rather than being individually subjected to the impossible and
+alienating injunction to distinguish the scientific from the other
+aspects of the profession, the constituted and constituting exclusions
+of the sciences dedicated to communication require us to rethink and
+reverse the relations between all these aspects, not as contingent but
+as necessary and meaningful in our collective organizations. Attending
+to professional practices in the sciences dedicated to communication
+could allow us to amend the narrative of ``professional purity,'' as
+described by Andrew Abbott.
+
+By choosing the sciences dedicated to communication, a discipline that
+is so often despised and/or ignored, and so anchored in practical
+teaching and applied research, researchers would likely encounter a
+problem of personal positioning in academia: They would have ``played
+the game wrong'' from the outset, as the overall situation provides very
+little room for a classical valorizing narrative based on individual
+talent, prestige, or ``professional purity.''
+
+In our ``recent'' discipline, a lot of now prominent scholars have had
+to take on a large number of very trivial tasks besides ``pure
+production of knowledge,'' and to do that very strategically to
+establish and defend their department, laboratory, journal, curriculum,
+and/or professional network.
+
+\begin{quote}
+As the material should show, the difference in status between the
+world-leading communication researchers and an unknown professor from
+far away didn't play any role at all. ICA Fellows are by no means an
+``ultra-elite,'' such as Nobel laureates in science (Zuckerman, 1972).
+In fact, quite the opposite is true. Courtesy, curiosity, and the appeal
+of doing something completely new are part of the fellows' habitus. Most
+of the interviewees seemed to be glad to get the possibility to talk
+about themselves and their work.\footnote{Meyen, ``Fifty-Seven
+  Interviews,'' 1456.}
+\end{quote}
+
+The discipline's global sociocultural contexts have probably left their
+mark on its professional culture and ethos through informal
+transmissions. That is why we are now well placed to defend the
+idea---so crucial today but expressed repeatedly during the past
+decades---that ``occasional critical reflection on the pressures and
+limits within which we think and work is an intellectual, not just
+practical, necessity, and should be integrated with the specifics of our
+work.''\footnote{Streeter, ``For the Study,'' 118.} We are well placed
+to rethink the historically situated tasks, roles, and practical
+activities of academics in contemporary academic frames. Students'
+demographics and needs, regional economic activities, practical
+knowledge, and local administrative matters are equally important, and
+thus worthy of academic consideration and reflexivity.\footnote{``For
+  all the interest in reflexivity in recent decades, the experiences of
+  academics have somehow largely escaped critical attention. It is as if
+  the parameters for reflexivity are bounded by the individual study,
+  leaving the institutional context in which academic knowledge is
+  produced simply as a taken for granted backdrop.'' Gill, ``Breaking,''
+  40.}
+
+From our ``excluded'' position, we could then be able to explicitly
+reintegrate a variety of heterogenous, living, informal, caring,
+relational, subaltern practices in our job description, rather than
+letting them to the more dominated members of the field.
+
+\hypertarget{intellectual-contexts-reassessing-relations-between-scientific-knowledge-and-common-sense-in-contemporary-societies}{%
+\subsection{Intellectual Contexts: Reassessing
+Relations between Scientific\\\noindent Knowledge and Common Sense in Contemporary
+Societies}\label{intellectual-contexts-reassessing-relations-between-scientific-knowledge-and-common-sense-in-contemporary-societies}}
+
+Unveiling the discrepancies between actual daily practices and academic
+prestige has to do with an issue which is both epistemological and
+practical: the complex relations between scholarly knowledge and common
+sense, which are the underlying thread of this text.
+
+The researchers' \emph{exteriority} to their object for study is the
+basis of the scientific posture, both from a cognitive point of view and
+for the social legitimization of sciences. It is crucial because it is
+linked to the very status of the produced knowledge. This topic is
+treated continuously in the epistemology and methodology of the social
+sciences since the emergence of disciplines at the end of the
+19\textsuperscript{th} century, through frequent comparisons with the
+natural sciences. It constitutes a rhetorical commonplace today. But in
+the social sciences, exteriority appears to be difficult to maintain,
+due to logical, methodological and social reasons. Indeed, ``the thought
+objects constructed by the social scientists refer to and are founded
+upon the thought objects constructed by the common-sense thought of man
+living his everyday life among his fellowmen.''\footnote{Alfred Schütz,
+  ``Common-Sense and Scientific Interpretation of Human Action,''
+  \emph{Philosophy and Phenomenological Research} 14, no. 1 (1953): 3.}
+Science does not intervene in a knowledge void. And especially now, in
+``modern societies,'' scientific knowledge is also part of daily,
+``lay,'' life: ``notions coined in the metalanguages of the social
+sciences routinely reenter the universe of actions they were initially
+formulated to describe or account for. {[}\ldots{]} \emph{Sociological
+knowledge spirals in and out of the universe of social life,
+reconstructing both itself and that universe as an integral part of that
+process.}''\footnote{Anthony Giddens, \emph{The Consequences of
+  Modernity} (Stanford: Stanford University Press, 1990), 15--16
+  (italics in the original).}
+
+From their beginning, the sciences dedicated to communication have been
+in close contact with practices of everyday life and ``commonsense
+thought'' (through reception studies, etc.), as well as with different
+professional fields that are themselves particularly nourished by
+scholarly knowledge (media, culture and digital sectors, organizational
+communication, etc.). In this context, it is particularly interesting to
+come back to one of the fiercest, most hostile accusations leveled at
+the sciences dedicated to communication (along with their having a
+``diffuse research topic''\footnote{Löblich and Scheu, ``Writing,'' 2.}
+and no defined method): the fact that they are ``linked to social
+practices rather than bodies of knowledge.''\footnote{Fabiani, ``À quoi
+  sert,'' 34.} In other words, they are too receptive to ``external
+influences coming from the media industry and the state,''\footnote{Löblich
+  and Scheu, ``Writing,'' 2.} ``too close'' or over-indulgent to the
+professional fields, suspiciously involved in the objects of their study
+(see Reviewer \#2 above).
+
+Such reactions are visceral rather than argumented. The relationship
+between common sense and scientific knowledge is not questioned, but
+reified and normalized. We can see where this logic breaks down if we
+try to apply them to another (less stigmatized) discipline, or if we
+consider what those reactions call for: To be valid, must knowledge be
+produced from the ``ivory tower'' and/or have no social relevance?
+Should researchers have no interest in the topics they are studying?
+Could mere contact with social objects, or an appreciation of the
+specific knowledges of people under study, taint the ``purity'' of the
+scientific knowledge?
+
+The problem of the (absence of) separation between scientific and
+everyday knowledge goes both ways: Scientific knowledge is involved in
+society, and the daily practices of academics are also fed by
+imaginaries, rhetorical commonplaces, ``cultural belief systems and
+habits of the general society.''\footnote{Craig, ``Communication in the
+  Conversation,'' 9.}
+
+From their specific history and positionality, the sciences dedicated to
+communication are well placed to question in new terms the contemporary
+relevance of the separation between science and other knowledge as it
+was established more than a century ago. Some very creative propositions
+have emerged in this space, such as Robert T. Craig's argument that the
+sciences dedicated to communication be considered as a practical
+discipline: ``A practical discipline cultivates a practice by engaging
+critically and constructively with the normative metadiscourse that
+constitutes and regulates the practice in society. Practical inquiry
+itself is a metadiscursive practice that emerges from, reconstructs, and
+potentially influences ordinary metadiscourse.''\footnote{Robert T.
+  Craig, ``For a Practical Discipline,'' \emph{Journal of
+  Communication}, 68, no. 2 (April 2018): 291.}
+
+The sciences dedicated to communication contribute in their own way to
+showing how the impartiality of scientific knowledge is a social
+construct, drawing attention to practices that are neglected in everyday
+social science discourse and giving importance to the material,
+technical, social, and symbolic mediations at work in the scientific
+construction of an empirical object. ``Contrary to what one might think,
+this particularity has in fact a double advantage: it forces the
+researcher to construct his or her research object, and it offers him or
+her a completely unique relationship with the field. On the condition,
+obviously, that one takes the measure of this
+particularity.''\footnote{Jean Davallon, ``Objet concret, objet
+  scientifique, objet de recherche" {[}Concrete object, scientific
+  object, research object{]}, \emph{Hermès} 38 (2004): 32 (my
+  translation).}
+
+The resistance it has faced from ``the normal'' has led, by now, to the
+discipline's stigmatization rather than to acceptance by other
+disciplines or even shifts in their research practices. But if we manage
+to get out of a defensive and justificatory posture, we can begin to
+demand that knowledges of all kinds (scientific, practical,
+professional, or otherwise) be respected and included, rather than
+excluded, invisibilized or delegitimized. Rather than diminishing the
+value of scientific knowledge, such a shift would place the authority,
+usefulness, and legitimacy of science in its proper situated,
+intellectual, symbolic, and sociocultural place: among others, at their
+service---not ``above'' them, with an undue rhetorical authority.
+
+\hypertarget{conclusion}{%
+\section{Conclusion}\label{conclusion}}
+
+Individually, we do not have to endorse the disciplinary (intellectual)
+identity all the time, let alone champion it in every situation. We are
+entitled to stay ``within'' or to go ``outside'' its intellectual
+bounds---if a boundary can be identified at all! If stigmatized, we can
+use the variety of tactics that Goffman described to protect ourselves.
+And fortunately, despite negative representations of the discipline in
+sociocultural contexts, many colleagues from other disciplines are
+willing to work with us. Misunderstandings, the impression that one is
+being instrumentalized, and other misadventures of the sort, are part of
+the usual difficulties of interdisciplinarity and must be dealt with on
+a project by project basis. None of this requires us to have a clear
+idea of what the discipline ``is.'' At the intellectual level,
+``discipline'' is a diffuse but powerful category, especially as it is
+often neglected and confused in common parlance and in epistemology. The
+main constraint of the discipline is institutional and is manifest at
+rare but crucial moments, notably in the labor market. That is why it is
+almost impossible for applicants---and consequently, concerned
+supervisors---to escape it, except by leaving the academy. At this
+level, the exclusion of the sciences dedicated to communication by other
+disciplines is at its highest; however, knowledge provided by our
+disciplines can also intervene, at this same level, in a different
+way---occasioning deeper reflection on the processes of exclusion in our
+work environments.
+
+My analysis aimed to better situate the sciences dedicated to
+communication in their different contexts, to better identify the
+exclusions we suffer from, and ideally, to avoid reproducing these
+exclusions where we would have the latitude to do so. My discursive
+approach also required epistemological, methodological, and historical
+resources, and at the same time, a precise attention to tenuous things:
+heterogenous experiences, practices, and ideas that do not ``fit'' in
+classical, normative frames. Together with other analyses, my study
+contributes to the collective reflection about ``what we are''---not by
+seeking a clear definition, but by identifying and acknowledging
+together the power of sociocultural categories in structuring scientific
+practices, in society but also in academia. Constituted and constituting
+exclusions of the sciences dedicated to communication are linked by
+fundamental questions about where science ``is'' and what it ``does,''
+epistemologically, practically, and politically. In the normal
+circumstances of everyday academic life, as long as no problem is
+encountered, we do not pay attention to the differences between internal
+and external constraints, as informed by intellectual, institutional,
+and sociocultural factors. But a better understanding of those
+differences can lead us toward an individual and collective solution to
+these academic challenges. Namely, by strategically playing with the
+fluidity of disciplinary identity, we may be able to respond to the
+``urgent needs'' of today with new, richer, and more considered
+``rhetorical commonplaces.'' Thus, the discipline---not despite its
+``impurity'' but as a result of it---constitutes a space of rules, and
+at the same time, of densification, evolution, and freedom.
+
+
+
+
+\section{Bibliography}\label{bibliography}
+
+\begin{hangparas}{.25in}{1} 
+
+
+
+Abbott, Andrew. \emph{Chaos of Disciplines}. Chicago: University of
+Chicago Press, 2000.
+
+Appadurai, Arjun. \emph{Modernity at Large: Cultural Dimensions of
+Globalization}. Minneapolis: University of Minnesota Press, 1996.
+
+Averbeck-Lietz, Stefanie, ed. \emph{Kommunikationswissenschaft im
+internationalen Vergleich: Transnationale Perspektiven}. Wiesbaden:
+Springer VS, 2017.
+
+Averbeck-Lietz, Stefanie, Fabien Bonnet, Sarah Cordonnier, and Carsten
+Wilhelm. ``Communication Studies in France: Looking for a~`Terre du
+milieu'?'' \emph{Publizistik} (2019): 1--18.
+\url{https://doi.org/10.1007/s11616-019-00504-3}.
+
+Beniger, James R. ``Communication: Embrace the Subject, Not the Field.''
+\emph{Journal of Communication} 43, no. 3 (1993): 18--25.
+\url{https://doi.org/10.1111/j.1460-2466.1993.tb01272.x}.
+
+Berelson, Bernard. ``The State of Communication Research.'' \emph{Public
+Opinion Quarterly} 23, no. 1 (1959): 1--6.
+\url{http://www.jstor.org/stable/2746418}.
+
+Berg, Lawrence D., Edward H. Huijbens, and Henrik Gutzon Larsen.
+``Producing Anxiety in the Neoliberal University.'' \emph{The Canadian
+Geographer} 60, no. 2 (2016): 168--80.
+\url{https://doi.org/10.1111/cag.12261}.
+
+Boure, Robert. ``Les sciences de l'information et de la communication au
+risque de l'expertise? Sur et sous des pratiques scientifiques''
+{[}Information and communication sciences at the risk of expertise? On
+and beneath scientific practices{]}. \emph{Réseaux} 15, no. 82--83
+(1997): 233--53. \url{https://doi.org/10.3406/reso.1997.3068}.
+
+Carlsson, Ulla. ``Has Media and Communication Research Become Invisible?
+Some Reflections from a Scandinavian Horizon.'' \emph{Gazette} (Leiden,
+Netherlands) 67, no. 6 (December 2005): 543--46.
+\url{https://doi.org/10.1177/0016549205057548}.
+
+Cordonnier, Sarah. ``Les sciences consacrées à la communication,
+laboratoire disciplinaire? Analyses exploratoires d'un discours
+`international'\,'' {[}The sciences dedicated to communication as
+disciplinary laboratory? Exploratory analysis of an ``international''
+discourse{]}.~\emph{Revue française des sciences de l'information et de
+la communication} 10 (2017). \url{https://doi.org/10.4000/rfsic.2750}.
+
+Cordonnier, Sarah. \emph{La production d'un territoire scientifique
+international: Les Sciences consacrées à la communication à la croisée
+des circulations rhétoriques, institutionnelles et biographiques} {[}The
+production of an international scientific territory: The sciences
+dedicated to communication at the crossroads of rhetorical,
+institutional and biographical circulations{]}. Habilitation thesis,
+Sorbonne Université, 2018.
+
+Cordonnier, Sarah. ``Looking Back Together to Become `Contemporaries in
+Discipline.''\,' \emph{History of Media Studies} 1 (2021).
+\url{https://doi.org/10.32376/d895a0ea.b8153251}.
+
+Cordonnier, Sarah, and Hedwig Wagner. ``Déployer l'interculturalité: Les
+étudiants, un vecteur pour la réflexion académique sur l'interculturel;
+Le cas des sciences consacrées à la communication et aux médias en
+France et en Allemagne'' {[}Deploying interculturality: Students as a
+vector for academic reflection on interculturality; The case of
+communication and media sciences in France and Germany{]}.
+\emph{Interkulturelle Kompetenz in deutsch-französischen Studiengängen}
+{[}Key competences for higher education and employability{]}, edited by
+Gundula Hiller et al., 221--34. Wiesbaden: Springer VS, 2017.
+\url{https://doi.org/10.1007/978-3-658-14480-7_12}.
+
+Craig, Robert T. ``Communication in the Conversation of Disciplines.''
+\emph{Russian Journal of Communication} 1, no. 1 (2008): 7--23.
+\url{https://doi.org/10.1080/19409419.2008.10756694}.
+
+Craig, Robert T.. ``For a Practical Discipline.'' \emph{Journal of
+Communication} 68, no. 2 (April 2018): 289--97.
+\url{https://doi.org/10.1093/joc/jqx013}.
+
+Crane, Diana. \emph{Invisible Colleges: Diffusion of Knowledge in
+Scientific Communities}. Chicago and London: University of Chicago
+Press, 1975.
+
+Davallon, Jean. ``Objet concret, objet scientifique, objet de
+recherche'' {[}Concrete object, scientific object, research object{]}.
+\emph{Hermès} 38 (2004): 30--37.
+\url{https://doi.org/10.4267/2042/9421}.
+
+Donsbach, Wolfgang. ``The Identity of Communication Research.''
+\emph{Journal of Communication} 56, no. 3 (2006): 437--48.
+\url{https://doi.org/10.1111/j.1460-2466.2006.00294.x}.
+
+Fabiani, Jean-Louis. ``À quoi sert la notion de discipline~?'' {[}What
+is the purpose of the concept of discipline?{]}. In \emph{Qu'est-ce
+qu'une discipline?}, edited by Jean Boutier, Jean-Claude Passeron, and
+Jacques Revel, 11--34. Paris: Éditions de l'EHESS, 2006.
+
+Foucault, Michel. ``The Discourse on Language.'' In \emph{The
+Archaeology of Knowledge}, translated by A. M. Sheridan Smith,
+215--37\emph{.} New York: Pantheon Books, 1972.
+
+Foucault, Michel. ``The Confession of the Flesh.'' In
+\emph{Power/Knowledge: Selected Interviews and Other Writings,
+1972--1977,} edited by Colin Gordon, 194--228. New York: Pantheon, 1980.
+
+Fuchs, Christian, and Jack Linchuan Qiu. ``Ferments in the Field:
+Introductory Reflections on the Past, Present and Future of
+Communication Studies.'' \emph{Journal of Communication}, 68, no. 2
+(April 2018): 219--32. \url{https://doi.org/10.1093/joc/jqy008}.
+
+García-Jiménez, Leonarda, and Martínez Susana Guillem. ``Does
+Communication Studies Have an Identity? Setting the Bases for
+Contemporary Research.'' \emph{Catalan Journal of Communication \&
+Cultural Studies} 1, no. 1 (August 2009): 15--27.
+\url{https://doi.org/10.1386/cjcs.1.1.15_1}.
+
+Geertz, Clifford. \emph{After the Fact: Two Countries, Four Decades, One
+Anthropologist}. Cambridge: Harvard University Press, 1995.
+
+Gerbner, George, and Marsha Siefert. Introduction to ``Ferment in the
+Field.'' Special issue, \emph{Journal of Communication} 33, no. 3
+(September 1983): 4--5.
+\url{https://doi.org/10.1111/j.1460-2466.1983.tb02400.x}.
+
+Giddens, Anthony. \emph{The Consequences of Modernity}. Stanford:
+Stanford University Press, 1990.
+
+Gill, Rosalind. ``Breaking the Silence: The Hidden Injuries of
+Neo-Liberal Academia.'' \emph{Feministische Studien} 34 (2016): 39--55.
+\url{https://doi.org/10.1515/fs-2016-0105}.
+
+Goffman, Erving. \emph{Stigma: Notes on the Management of Spoiled
+Identity}. Englewood Cliffs, NJ: Prentice-Hall, 1963.
+
+Golding, Peter, Helena Sousa, and Karin Raeymaeckers. Introduction to
+``Future Priorities in European Media and Communication Research,''
+edited by Peter Golding, Helena Sousa, and Karin Raeymaeckers. Special
+issue, \emph{European Journal of Communication} 31, no. 1 (February
+2016): 3--4. \url{https://doi.org/10.1177/0267323115614193}.
+
+Haraway, Donna. ``Situated Knowledges: The Science Question in Feminism
+and the Privilege of Partial Perspective.'' \emph{Feminist Studies} 14,
+no. 3 (1988): 575--99. \url{https://doi.org/10.2307/3178066}.
+
+Heilbron, Johan. ``The Social Sciences as an Emerging Global Field.''
+\emph{Current Sociology} 62, no. 5 (September 2014): 685--703.
+\url{https://doi.org/10.1177/0011392113499739}.
+
+Heinderyckx, François. ``The Academic Identity Crisis of the European
+Communication Researcher.'' In \emph{Media Technologies and Democracy in
+an Enlarged Europe}, edited by Nico Carpentier et al., 357--62. Tartu:
+University of Tartu Press, 2007.
+
+Heinderyckx, François, Margaux Hardy, and Marc Vanholsbeeck. ``Les
+revues scientifiques en information-communication: L'ère des
+mutations?'' {[}Scientific journals in information and communication
+sciences: An era of change?{]}. \emph{Questions de communication} 21
+(2012). \url{https://doi.org/10.4000/questionsdecommunication.6643}.
+
+Huber, Nathalie. \emph{Kommunikationswissenschaft als Beruf: Zum
+Selbstverständnis von Professoren des Faches im deutschsprachigen Raum}
+{[}Communication science as a profession: On the self-perception of
+professors of the discipline in German-speaking countries{]}. Köln:
+Herbert von Halem Verlag, 2010.
+
+Jeanneret, Yves. ``La prétention sémiotique dans la communication''
+{[}Semiotical pretention in communication studies{]}.~\emph{Semen}
+23~(2007). \url{https://doi.org/10.4000/semen.8496}.
+
+Koivisto, Juha, and Peter D. Thomas. \emph{Mapping Communication and
+Media Research: Conjunctures, Institutions, Challenges}. Tampere:
+Tampere University Press, 2010.
+
+Lauf, Edmund. ``National Diversity of Major International Journals in
+the Field of Communication.'' \emph{Journal of Communication} 55, no. 1
+(March 2005): 139--51.
+\url{https://doi.org/10.1111/j.1460-2466.2005.tb02663.x}.
+
+Löblich, Maria, and Andreas M. Scheu. ``Writing the History of
+Communication Studies: A Sociology of Science Approach.''
+\emph{Communication Theory} 21, no. 1 (February 2011): 1--22.
+\url{https://doi.org/10.1111/j.1468-2885.2010.01373.x}.
+
+Maingueneau, Dominique. ``Analysing Self-Constituting Discourses.''
+\emph{Discourse Studies} 1, no. 2 (May 1999): 175--99.
+\url{https://doi.org/10.1177/1461445699001002003}.
+
+Meyen, Michael. ``Fifty-Seven Interviews with ICA Fellows.''
+\emph{International Journal of Communication} 6 (2012): 1460--886.
+
+Meyen, Michael. ``International Communication Association Fellows: A
+Collective Biography.'' \emph{International Journal of Communication} 6
+(2012): 2378--96.
+
+Nordenstreng, Kaarle. ``Discipline or Field? Soul-Searching in
+Communication Research.'' \emph{Nordicom Review} 27 (2007): 211--22.
+
+Peters, John Durham. ``Institutional Sources of Intellectual Poverty in
+Communication Research.'' \emph{Communication Research} 13, no. 4
+(October 1986): 527--59.
+\url{https://doi.org/10.1177/009365086013004002}.
+
+Pooley, Jefferson D. \emph{James W. Carey and Communication Research:
+Reputation at the University's Margins}. New York: Peter Lang, 2016.
+
+Schlanger, Judith. \emph{La vocation} {[}The calling{]}. Paris: Seuil,
+1997.
+
+Schütz, Alfred. ``Common-Sense and Scientific Interpretation of Human
+Action.'' \emph{Philosophy and Phenomenological Research} 14, no. 1
+(1953): 1--38. \url{https://doi.org/10.2307/2104013}.
+
+Simonson, Peter. ``Writing Figures into the Field: William McPhee and
+the Parts Played by People in Our Histories of Media Research.'' In
+\emph{The History of Media and Communication Research: Contested
+Memories}, edited by David Park and Jefferson Pooley, 291--320. New
+York: Peter Lang, 2008.
+
+Simonson, Peter, and David W. Park, eds. \emph{The International History
+of Communication Study}. New York and London: Routledge, 2016.
+
+Spivak, Gayatri Chakravorty. ``Can the Subaltern Speak?'' In
+\emph{Marxism and the Interpretation of Culture}, edited by Cary Nelson
+and Lawrence Grossberg, 271--313. Chicago: University of Illinois Press,
+1988.
+
+Stanfill, Mel. ``Finding Birds of a Feather: Multiple Memberships and
+Diversity without Divisiveness in Communication Research.''
+\emph{Communication Theory} 22, no. 1 (February 2012): 1--24.
+\url{https://doi.org/10.1111/j.1468-2885.2011.01395.x}.
+
+Streeter, Thomas. ``For the Study of Communication and against the
+Discipline of Communication.'' \emph{Communication Theory} 5, no. 2 (May
+1995): 117--29.
+\url{https://doi.org/10.1111/j.1468-2885.1995.tb00101.x}.
+
+Vinck, Dominique. ``L'activité de recherche en situation d'injonctions
+contradictoires'' {[}Research activity in a situation of contradictory
+injunctions{]}. In \emph{Les études de sciences: Pour une réflexivité
+institutionnelle}, edited by Joëlle Le Marec, 65--80. Paris: Éditions
+des archives contemporaines, 2010.
+
+Waisbord, Silvio R. \emph{Communication: A Post-Discipline}. Cambridge:
+Polity, 2019.
+
+Waisbord, Silvio R., and Claudia Mellado. ``De‐westernizing
+Communication Studies: A Reassessment.'' \emph{Communication Theory} 24
+(2014): 361--72. \url{https://doi.org/10.1111/comt.12044}.
+
+
+
+\end{hangparas}
+
+\vspace{2em}
+
+\hypertarget{acknowledgements}{%
+\section{Acknowledgements}\label{acknowledgements}}
+
+I am very grateful to the editors of the journal, the anonymous
+reviewers of my article, the members of the History of Media Studies
+Working Group, and the copy editor of this text, for their remarks and
+comments, which have contributed in many ways to the improvement of this
+text.
+
+
+
+
+\end{document}
