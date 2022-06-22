@@ -1,0 +1,1893 @@
+% see the original template for more detail about bibliography, tables, etc: https://www.overleaf.com/latex/templates/handout-design-inspired-by-edward-tufte/dtsbhhkvghzz
+
+\documentclass{tufte-handout}
+
+%\geometry{showframe}% for debugging purposes -- displays the margins
+
+\usepackage{amsmath}
+
+\usepackage{hyperref}
+
+\usepackage{fancyhdr}
+
+\usepackage{hanging}
+
+\hypersetup{colorlinks=true,allcolors=[RGB]{97,15,11}}
+
+\fancyfoot[L]{\emph{History of Media Studies}, vol. 2, 2022}
+
+
+% Set up the images/graphics package
+\usepackage{graphicx}
+\setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
+\graphicspath{{graphics/}}
+
+\title[Exclusiones/Exclusions]{Exclusiones/Exclusions: El papel de la historia en saldar la deuda histórica del campo} % longtitle shouldn't be necessary
+
+% The following package makes prettier tables.  We're all about the bling!
+\usepackage{booktabs}
+
+% The units package provides nice, non-stacked fractions and better spacing
+% for units.
+\usepackage{units}
+
+% The fancyvrb package lets us customize the formatting of verbatim
+% environments.  We use a slightly smaller font.
+\usepackage{fancyvrb}
+\fvset{fontsize=\normalsize}
+
+% Small sections of multiple columns
+\usepackage{multicol}
+
+% Provides paragraphs of dummy text
+\usepackage{lipsum}
+
+% These commands are used to pretty-print LaTeX commands
+\newcommand{\doccmd}[1]{\texttt{\textbackslash#1}}% command name -- adds backslash automatically
+\newcommand{\docopt}[1]{\ensuremath{\langle}\textrm{\textit{#1}}\ensuremath{\rangle}}% optional command argument
+\newcommand{\docarg}[1]{\textrm{\textit{#1}}}% (required) command argument
+\newenvironment{docspec}{\begin{quote}\noindent}{\end{quote}}% command specification environment
+\newcommand{\docenv}[1]{\textsf{#1}}% environment name
+\newcommand{\docpkg}[1]{\texttt{#1}}% package name
+\newcommand{\doccls}[1]{\texttt{#1}}% document class name
+\newcommand{\docclsopt}[1]{\texttt{#1}}% document class option name
+
+
+\begin{document}
+
+\begin{titlepage}
+
+\begin{fullwidth}
+\noindent\LARGE\emph{Exclusions in the History of Media Studies
+} \hspace{25mm}\includegraphics[height=1cm]{logo3.png}\\
+\noindent\hrulefill\\
+\vspace*{1em}
+\noindent{\Huge{Exclusiones/Exclusions: El papel de la\\\noindent historia en saldar la deuda histórica del campo\par}}
+
+\vspace*{1.5em}
+
+\noindent\LARGE{Peter Simonson} \href{https://orcid.org/0000-0001-7156-467X}{\includegraphics[height=0.5cm]{orcid.png}}\par}\marginnote{\emph{Peter Simonson, David W. Park, and Jefferosn Pooley, ``Exclusiones/Exclusions: El papel de la historia en saldar la deuda histórica del campo,'' \emph{History of Media Studies} 2 (2022), \href{https://doi.org/10.32376/d895a0ea.cb32b735}{https://doi.org/ 10.32376/d895a0ea.cb32b735}.} \vspace*{0.75em}}
+\vspace*{0.5em}
+\noindent{{\large\emph{University of Colorado Boulder}, \href{mailto:peter.simonson@colorado.edu}{peter.simonson@colorado.edu}\par}} \marginnote{\href{https://creativecommons.org/licenses/by-nc/4.0/}{\includegraphics[height=0.5cm]{by-nc.png}}}
+
+\vspace*{0.75em} 
+
+\noindent{\LARGE{David W. Park}  \href{https://orcid.org/0000-0001-7019-1525}{\includegraphics[height=0.5cm]{orcid.png}}\par}
+\vspace*{0.5em}
+\noindent{{\large\emph{Lake Forest College}, \href{mailto:park@lfc.edu}{park@lfc.edu}\par}}
+
+\vspace*{0.75em} % third author
+
+\noindent{\LARGE{Jefferson Pooley} \href{https://orcid.org/0000-0002-3674-1930}{\includegraphics[height=0.5cm]{orcid.png}}\par}
+\vspace*{0.5em}
+\noindent{{\large\emph{Muhlenberg College}, \href{mailto:pooley@muhlenberg.edu}{pooley@muhlenberg.edu}\par}}
+
+\end{fullwidth}
+
+
+\newthought{\emph{Traducción de} William Quinn}
+
+
+
+\hypertarget{resumen}{%
+\section{Resumen}\label{resumen}}
+
+En esta introducción para la sección especial sobre
+``\href{https://hms.mediastudies.press/exclusions}{Exclusiones en la
+historia de los estudios de los medios de comunicación}'', comenzamos
+llamando la atención sobre el papel constitutivo que la exclusión ha
+desempeñado en la historiografía de los estudios de los medios de
+comunicación. Las exclusiones relacionadas con el género, la raza, la
+lengua, el colonialismo, la ubicación geopolítica y los privilegios
+sancionados institucionalmente desempeñan un papel importante en la
+configuración de los relatos formales e informales del pasado de
+nuestros campos. El proyecto de reversión y recuperación se basa en el
+pensamiento poscolonial y decolonial, en las críticas raciales y
+afrocéntricas, en los estudios feministas y en la crítica geopolítica.
+Uno de los objetivos es provincializar gran parte de la historiografía
+de los estudios de los medios de comunicación. Inspirándonos en los
+movimientos críticos contemporáneos que se interrelacionan
+profundamente, identificamos cuatro tareas urgentes para la historia de
+los estudios de los medios de comunicación: 1) poner en evidencia el
+estado actual de los campos académicos, 
+
+\enlargethispage{2\baselineskip}
+
+\vspace*{2em}
+
+\noindent{\emph{History of Media Studies}, vol. 2, 2022}
+
+
+
+
+ \end{titlepage}
+
+
+
+\noindent 2) crear colaboraciones
+internacionales que reconfiguren lo que se ha considerado como
+``centros'' y ``periferias'' en los estudios sobre los medios de
+comunicación, 3) encontrar formas de resistencia a la creciente
+hegemonía del inglés en el sistema global de conocimiento, y 4) apoyar
+una infraestructura de publicación abierta y sin ánimo de lucro.
+Proponemos que una historiografía informada por la comprensión
+constitutiva y contingente de la exclusión representa un importante
+camino a seguir para la historia de los estudios de los medios de
+comunicación.
+
+\vspace*{2em}
+
+
+\newthought{Las historias y las} realidades actuales de los campos académicos se
+constituyen mutuamente. Los patrones de exclusión que nos llegaron como
+legado de nuestros diversos pasados suelen persistir, como vicios, en
+nuestras prácticas actuales como profesionales dedicados a la
+investigación, docencia, administración, y también como colegas. Estos
+patrones asumen formas muy conocidas y otras nuevas, a la vez que los
+agentes de cambio hacen el trabajo pesado de señalarlos y buscar
+alternativas más inclusivas. Esto aplica de manera general a las
+prácticas académicas, pero en esta introducción y en la sección especial
+que sigue, queremos enfocarnos en un conjunto particular de exclusiones:
+las vinculadas a las memorias colectivas de los pasados de nuestros
+campos y a las historias formales que se han escrito sobre ellos. Si no
+se hacen esfuerzos explícitos, las exclusiones implicadas con el género,
+la raza, la lengua, el colonialismo, la ubicación geopolítica y el
+privilegio avalado institucionalmente se reproducirán en los relatos
+formales e informales que se hagan de los pasados de nuestros campos.
+Asimismo, si hemos de comprender las inequidades que condicionan los
+campos académicos contemporáneos, necesitamos hacer más por iluminar
+exactamente cómo surgieron y se perpetuaron históricamente, y
+necesitamos prestar más atención a los lugares, las personas y los temas
+que han sido marginados de nuestras memorias colectivas. Eso
+precisamente era la intención de una preconferencia virtual de la
+Asociación Internacional de Comunicación (ICA) celebrada en mayo de
+2021,
+\href{https://hms.mediastudies.press/pub/schedule/release/12}{``Exclusions
+in the History and Historiography of Communication Studies'',}
+(``Exclusiones en la historia y la historiografía de los estudios de
+comunicación'') donde se leyeron y comentaron borradores de los ensayos
+publicados aquí. Esta introducción tiene el propósito de ubicar en su
+perspectiva histórica esa preconferencia y otros esfuerzos afines, y de
+situar los ensayos dentro de la historiografía reciente de los estudios
+de los medios y la comunicación.
+
+\newpage
+
+En la reunión de 2021 se vio reflejado un momento más amplio de la
+historia de las ciencias sociales y humanidades (CSH), mismas que se
+encuentran insertas desde luego en las sociedades más amplias que las
+configuran. Ese momento, cuya historia se contará algún día, lleva las
+huellas del reconocimiento generalizado que se está llevando a cabo ante
+las hegemonías e inequidades sistémicas presentes en el trabajo
+académico. La palabra clave aquí es \emph{generalizado}. Los miembros de
+grupos marginados dentro de las CSH siempre han experimentado la
+inequidad, como se ha señalado en críticas incisivas publicadas desde la
+década de los sesenta y setenta, si no es que desde antes. En estas
+intervenciones añejas se han planteado múltiples interrogatorios:
+¿cuáles temas, métodos y paradigmas ocupan un lugar central, y cuáles
+han sido ignorados o marginados? ¿cómo es que investigadores, así como
+la investigación misma, de Estados Unidos y otros países del Norte
+Global acumulan ventajas sistemáticas que dejan marginado o de plano
+invisibilizado al Sur Global? ¿y cómo es que quienes se han dedicado a
+la academia minorizados acumulan a su vez desventajas
+sistemáticas?\footnote{La acumulación de ventajas y desventajas fue un
+  tema propuesto por Robert K. Merton y aplicado a muchos contextos,
+  entre ellos al famoso concepto del ``efecto Mateo''. Merton escribe:
+  ``El concepto de la ventaja acumulativa nos hace ver las maneras en
+  que las ventajas comparativas iniciales de la capacidad formada, la
+  ubicación estructural y los recursos disponibles desencadenan
+  incrementos sucesivos de ventaja, de tal modo que se abren cada vez
+  más las brechas entre quienes tienen y quienes no tienen en el campo
+  de la ciencia (al igual que en otros ámbitos de la vida social) hasta
+  que la dinámica quede atenuada por procesos compensatorios''. Robert
+  K. Merton, ``The Matthew Effect in Science, II Cumulative Advantage
+  and the Symbolism of Intellectual Property'', \emph{Isis} 79,
+  n.\textsuperscript{o} 4 (1988): 606.}¿cómo es que quedan marginados en
+las redes sociales de hombres blancos que ostentan posiciones de poder?
+¿cómo se les carga trabajo adicional, típicamente sin reconocimiento?
+¿cómo quedan asignados a ámbitos de conocimiento donde otras personas
+como ellos han sido excluidas de los cánones de los textos clásicos y
+los ''padres fundadores'' del campo? ¿cómo han sido relegados a publicar
+trabajos que luego no se citan o se quedan en el olvido? Como lo
+esbozaremos aquí, se trata de prácticas sociales que han sido señaladas
+y criticadas por más de medio siglo, pero muy pocos han tenido oídos
+para escuchar estos señalamientos. Más recientemente, sin embargo, las
+intervenciones críticas han tomado más ímpetu ---entrelazadas e
+imposibles de ignorar por parte de los que ocupan los centros
+hegemónicos de los campos---.
+
+\hypertarget{una-breve-genealoguxeda-del-presente}{%
+\section{Una breve genealogía del
+presente}\label{una-breve-genealoguxeda-del-presente}}
+
+Es importante señalar las líneas de intervención que nos han traído a
+esta coyuntura, en parte porque apenas si se han reconocido en los
+esfuerzos actuales por saldar la deuda histórica del campo. Uno de los
+vectores está conformado por las críticas geopolíticas de las CSH
+expresadas por primera vez a finales de los años sesenta y en los
+setenta. Los relatos de imperialismo, neocolonialismo y dependencia
+académicos se abrevaron de versiones más amplias de la teoría de la
+dependencia y de las refutaciones de los planteamientos dominantes de la
+modernización.\footnote{Véanse por ejemplo Syed Hussein Alatas,
+  ``Academic Imperialism'', conferencia magistral pronunciada ante} Estos
+relatos iban de la mano de los esfuerzos realizados en el Sur Global por
+desarrollar ciencias sociales ``indígenas'', es\marginnote{la
+  Conferencia Regional para el Sureste de Asia de la Asociación
+  Internacional de Sociología (1969), reimpresa en \emph{Reflections on
+  Alternative Discourses for Southeast Asia} , ed. de Syed Farid Alatas
+  (Singapur: Centre for Advanced Studies, 2001); Philip G. Altbach,
+  ``Servitude of the Mind?: Education, Dependency, and Neocolonialism'',
+  \emph{Teachers College Record} 79, n.\textsuperscript{o} 2 (1977);
+  Frederick H. Gareau, ``Another Type of Third World Dependency: The
+  Social Sciences'', \emph{International Sociology} 3,
+  n.\textsuperscript{o} 2 (1988), y Syed Farid Alatas, ``Academic
+  Dependency and the Global Division of Labour in the Social Sciences'',
+  \emph{Current Sociology} 51, n.\textsuperscript{o} 6 (2003).} decir, conocimientos
+construidos a partir de epistemologías desarrolladas desde las
+tradiciones culturales locales, en vez de refractadas a través de los
+paradigmas dominantes del Norte.\footnote{Juan Eugenio Corradi,
+  ``Cultural Dependence and the Sociology of Knowledge: The Latin
+  American Case'', en \emph{Ideology and Social Change in Latin
+  America}, ed. de June Nash, Juan Eugenio Corradi y Hobart Spaulding,
+  Jr. (Nueva York: Gordon and Breach, 1977); Guillermo Boils Morales,
+  ``Bibliografía sobre ciencias sociales en América Latina'',
+  \emph{Revista Mexicana de Sociología} 40 (1978); Oladimeji I. Alo,
+  ``Contemporary Convergence in Sociological Theories: The Relevance of
+  the African Thought-System in Theory Formation'', \emph{Présence
+  Africaine}, n.\textsuperscript{o} 126 (1983). Utilizamos la palabra
+  \emph{indígena} en minúscula para referirnos a sistemas de
+  conocimiento generados dentro de una cierta región, por lo general
+  marginada en términos geopolíticos, e \emph{Indígena} en mayúscula
+  para referirnos a culturas y pueblos cuyas historias remontan a las
+  sociedades precoloniales o anteriores a la llegada de los colonos.}
+Cuando en los años noventa y a inicios del año 2000 las personas que
+estudiaban los medios en Europa Occidental y Estados Unidos hicieron
+esfuerzos encaminados a ``desoccidentalizar'' e ``internacionalizar''
+los estudios de medios, rara vez vinculaban sus esfuerzos a estas
+tradiciones más amplias. Como observa Wendy Willems, sus intenciones
+``tenían que ver más con extender la cobertura de las indagaciones
+académicas de los medios y la comunicación a países que no solían
+incluirse en el canon occidental que con cuestionar la centralidad de la
+teoría occidental''.\footnote{Wendy Willems, ``Provincializing Hegemonic
+  Histories of Media and Communication Studies: Toward a Genealogy of
+  Epistemic Resistance in Africa'', \emph{Communication Theory} 24,
+  n.\textsuperscript{o} 4 (2014): 416. Véase también Afonso de
+  Albuquerque y Thaiane Moreira de Oliveira, ``Thinking the Recolonial
+  in Communication Studies: Reflections from Latin America'',
+  \emph{Comunicação, Mídia, e Consumo} 18, n.\textsuperscript{o} 51
+  (2021).} Consecuencia irónica de los llamados a ``desoccidentalizar''
+el campo era que se quedaban ocultadas tradiciones intelectuales de
+África y otras regiones. Cuando provienen de estudiosos aventajados del
+Norte Global, los llamados a desoccidentalizar amenazan con borrar las
+historias locales, reproduciendo sin querer patrones coloniales añejos.
+De hecho, estamos conscientes de que esta misma introducción puede caer
+en la misma dinámica, por lo que tenemos muy presente el riesgo.
+
+En las décadas más recientes, las críticas geopolíticas de las CSH
+globales han tomado bastante ímpetu fuera de los estudios de
+comunicación y medios y, más en estos últimos años todavía, dentro de
+ellos. Los pensadores poscoloniales y decoloniales han provincializado
+las aspiraciones universalistas de la modernidad europea, incluidas sus
+normas de racionalidad y conocimiento, vinculándolas a ``las historias
+más generales de colonialismo, imperio y esclavización'', en palabras de
+Gurminder K. Bhambra.\footnote{Gurminder K. Bhambra, ``Postcolonial and
+  Decolonial Dialogues'', \emph{Postcolonial Studies} 17,
+  n.\textsuperscript{o} 2 (2014): 115. Para un volumen
+  interdisciplinario clave de América Latina, véase Edgardo Lander, ed.
+  \emph{La colonialidad del saber: eurocentrismo y ciencias sociales}
+  (Buenos Aires: CLASCO, 2000), y para un relato útil del
+  poscolonialismo y/versus decolonialidad desde los horizontes de los
+  estudios de medios y comunicación, véase Sinfree Makoni y Katherine A.
+  Masters, ``Decolonization and Globalization in Communication
+  Studies'', en \emph{Oxford Research Encyclopedia of Communication},
+  ed. de Jon Nussbaum (Oxford: Oxford University Press, 2021).} Estas
+críticas se traslapan con tradiciones intelectuales Indígenas, bien
+establecidas y crecientes, de activismo, análisis crítico y formas de
+conocimiento y cultura que representan alternativas contrahegemónicas al
+pensamiento colonial occidental.\textsuperscript{6} Del pensamiento decolonial e indígena ha surgido una
+nueva ola de teoría académica de la dependencia.\textsuperscript{7}
+Dicha ola se suma al coro de voces que denuncian los impactos de la
+globalización neoliberal en la producción académica y en las jerarquías
+de estatus geopolítico. Como se ha demostrado en múltiples estudios, el
+\emph{ranking} global de universidades, revistas especializadas y
+factores de impacto favorece a Estados Unidos y Europa
+Occidental.\textsuperscript{8} Estos \emph{rankings} se vinculan a su vez a la creciente
+hegemonía del inglés como \emph{lingua franca} para las ciencias
+sociales internacionales y las presiones resultantes por publicar en
+inglés, situación que empieza a cuestionarse.\textsuperscript{9} Los métodos
+cuantitativos de análisis de redes a gran escala han fortalecido estos
+esfuerzos recientes al proporcionar nuevas herramientas para destacar
+las inequidades sistémicas entre los centros y las periferias globales
+en términos de publicaciones, tasas\marginnote{\textsuperscript{6} Véase por ejemplo Bagele
+  Chilisa, \emph{Indigenous Research Methodologies} (Thousand Oaks, CA:
+  SAGE, 2012).} de\marginnote{\textsuperscript{7} Sintetizada en
+  Caroline M. Schöpf, ``The Coloniality of Global Knowledge Production:
+  Theorizing the Mechanisms of Academic Dependency'', \emph{Social
+  Transformations} 8, n.\textsuperscript{o} 2 (2020), y Jinba Tenzin y
+  Chenpang Lee, ``Are We Still Dependent? Academic Dependency Theory
+  after 20 Years'', \emph{Journal of Historical Sociology} 35 (2022).} citación,\marginnote{\textsuperscript{8} Márton Demeter, ``The Winner Takes it All:
+  International Inequality in Communication and Media Studies Today'',
+  \emph{Journalism and Mass Communication Quarterly} 96,
+  n.\textsuperscript{o} 1 (2019); Afonso de Albuquerque et al.,
+  ``Structural Limits to the De-Westernization of the Communication
+  Field: The Editorial Board in Clarivate's \emph{JCR} System'',
+  \emph{Communication, Culture \& Critique} 13, n.\textsuperscript{o} 2
+  (2020).} integración\marginnote{\textsuperscript{9}\setcounter{footnote}{9} Robert Phillipson
+  y Tove Skutnabb-Kangas, ``Communicating in `Global English': Promoting
+  Linguistic Human Rights or Complicit with Linguicism and Linguistic
+  Imperialism'', en \emph{The Handbook of Global Interventions in
+  Communication Theory}, ed. de Yoshitaka Miike y Jing Yin (Nueva York:
+  Routledge, 2022). Volvemos más adelante al tema de la hegemonía del
+  inglés y otros trabajos recientes en los que se aborda.} de juntas
+editoriales y asociaciones profesionales internacionales.\footnote{Véase
+  por ejemplo Márton Demeter, \emph{Academic Knowledge Production and
+  the Global South: Questioning Inequality and Under-Representation}
+  (Cham, Suiza: Palgrave Macmillan, 2020). Para un análisis reciente del
+  campo de la comunicación, véase Brian Ekdale et al., ``Geographic
+  Disparities in Knowledge Production: A Big Data Analysis of
+  Peer-Reviewed Communication Publications from 1990 to 2019'',
+  \emph{International Journal of Communication} 16 (2022).}
+
+Entrecruzándose con estas críticas geopolíticas globales, en los años
+sesenta y setenta estudiosos negros empezaron a desarrollar críticas
+afrocéntricas y de otras perspectivas raciales con respecto a las formas
+euronorteamericanas del conocimiento que predominaban. En Estados Unidos
+se establecieron los programas de estudios negros a finales de los
+sesenta, tanto en los Colegios y Universidades Históricamente Negros
+(HBCU) como en instituciones mayoritariamente blancas.\footnote{Fabio
+  Rojas, \emph{From Black Power to Black Studies: How a Radical Social
+  Movement Became an Academic Discipline} (Baltimore: Johns Hopkins
+  University Press, 2007).} Su fundación se debió a una mezcla de
+oposición intelectual y política a las epistemologías y metodologías
+dominantes, un compromiso con una teoría del conocimiento como vehículo
+para el cambio social, y una exigencia de que la educación superior
+prestara un servicio más eficaz a las comunidades negras.\footnote{James
+  E. Turner, ``Foreword: Africana Studies and Epistemology, a Discourse
+  in the Sociology of Knowledge'', en \emph{The Next Decade: Theoretical
+  and Research Issues in Africana Studies}, ed. de James E. Turner
+  (Ithaca, NY: Cornell University Africana Studies and Research Center,
+  1984).} Por ejemplo, el Instituto para un Mundo Negro, ubicado en
+Atlanta, atrajo a intelectuales de la diáspora negra, entre quienes se
+encontraban Sylvia Wynter y C.L.R. James de la región caribeña. El
+instituto impulsó un esfuerzo transnacional alineado con el llamado
+lanzado por Franz Fanon en 1965 de ``probar nuevos conceptos y tratar de
+poner en pie un hombre nuevo''.\footnote{Derrick E. White, \emph{The
+  Challenge of Blackness: The Institute of the Black World and Political
+  Activism in the 1970s} (Gainesville, FL: University Press of Florida,
+  2011), 146, 232n25, citando el libro de Fanon \emph{Wretched of the
+  Earth}.} El concepto de diáspora africana, que tenía sus raíces en los
+panafricanismos de Marcus Garvey y W.E.B. DuBois, surgió en una reunión
+del Congreso Internacional de Historiadores Africanos celebrada en
+Tanzania en 1965.\textsuperscript{14} El movimiento
+tomó impulso en el campo de la comunicación oral en Estados Unidos,
+donde en 1968 estudiosos afroamericanos formaron un Bloque Negro dentro
+de la Asociación de Comunicación Oral de América (Speech Association of
+America), y en 1972 celebraron una Conferencia de Comunicación
+Negra.\textsuperscript{15} En la década de
+los ochenta algunos de sus integrantes organizarían congresos mundiales
+sobre la Comunicación Negra que convocaban a un elenco internacional de
+investigadores. Uno de los líderes del Bloque Negro fue Arthur L. Smith,
+quien adoptó el nombre de Molefi Asante al visitar la Universidad de
+Ghana en 1973 y desarrolló algunas de las primeras y más influyentes
+críticas afrocéntricas de las teorías occidentales de la
+comunicación.\textsuperscript{16} Más
+allá de los estudios de la comunicación, la crítica y teórica cultural
+Sylvia Wynter, la socióloga Patricia Hill Collins y el filósofo Charles
+W. Mills publicaron en los años ochenta y noventa obras que resultarían
+fundamentales para la siguiente generación de críticas raciales de las
+formas europeas del conocimiento que predominaban, y de las comunidades
+académicas que las perpetuaban.\textsuperscript{17}
+
+Desde otros ámbitos sociales e intelectuales, las investigadoras
+feministas expusieron sistemas de exclusión en las CSH, organizados por
+los ejes de género, sexualidad e interseccionalidad. Esa historia
+empieza\marginnote{\textsuperscript{14} Joseph E. Harris, introducción a \emph{Global
+  Dimensions of the African Diaspora}, segunda edición, ed. de Joseph E.
+  Harris (Washington: Howard University Press, 1993), 4.} a configurarse en los sesenta y setenta al arraigarse los
+movimientos de\marginnote{\textsuperscript{15} Jack L. Daniel, \emph{Changing the Players and the Game:
+  A Personal Account of the Speech Communication Association Black
+  Caucus Origins} (Annandale, VA: Speech Communication Association,
+  1995). La Asociación de Comunicación Oral de América (The Speech
+  Association of America) tras un cambio intermedio de nombre, en 1972
+  se convirtió en la Asociación Nacional de Comunicación (The National
+  Communication Association, o NCA), de Estados Unidos.} mujeres\marginnote{\textsuperscript{16} Alton Hornsby, ``Molefi Kete Asante/Arthur Lee
+  Smith Jr. (1942- )'', \emph{BlackPast,} 20 julio 2007. Sobre Asante en
+  los contextos de los estudios de comunicación, véanse Armond Towns,
+  ``Against the `Vocation of Autopsy': Blackness and/in US Communication
+  Histories'', \emph{History of Media Studies} 1 (2021), y Ronald L.
+  Jackson II y Sonja M. Brown Givens, \emph{Black Pioneers in
+  Communication Research} (Thousand Oaks, CA: SAGE, 2016), 11--38.} y\marginnote{\textsuperscript{17}\setcounter{footnote}{17} Por ejemplo, Sylvia Wynter,
+  ``The Ceremony Must be Found: After Humanism'', \emph{boundary 2} 12,
+  n.\textsuperscript{o} 3/13, n.\textsuperscript{o} 1 (1984); Patricia
+  Hill Collins, ``Learning from the Outsider Within: The Sociological
+  Significance of Black Feminist Thought'', \emph{Social Problems} 33,
+  n.\textsuperscript{o} 6 (1986); Charles W. Mills, \emph{The Racial
+  Contract} (Ithaca, NY: Cornell University Press, 1997).} la segunda ola del feminismo en varias regiones
+del mundo. Estos acontecimientos se dieron de manera diversa en
+diferentes culturas y contextos nacionales, y su historia global en la
+academia está pendiente de escribirse. En algunos espacios y durante la
+década de los setenta, empezó a aumentar el número de mujeres que
+ocupaban puestos académicos. Formaron bloques de mujeres dentro de las
+asociaciones profesionales, y estos bloques, junto con los del
+movimiento LGBTQ emergente, comenzaron a desafiar la segregación por
+género en las conferencias académicas a la vez que brindaban redes de
+apoyo para compartir experiencias de marginación, inequidad y lucha
+cotidiana.\footnote{Véase por ejemplo Pamela Roby, ``Women and the ASA:
+  Degendering Organizational Structures and Processes, 1964--1974'',
+  \emph{The American Sociologist} 23 (1992). Sobre el caso de la NCA de
+  Estados Unidos, véase Charles E. Morris III y Catherine Helen
+  Palczewski, ``Sexing Communication: Hearing, Feeling, Remembering
+  Sex/Gender and Sexuality in the NCA'', en \emph{A Century of
+  Communication Studies: The Unfinished Conversation}, ed. de Pat J.
+  Gehrke y William M. Keith (Nueva York: Routledge, 2015).}
+
+En los años setenta y ochenta, feministas de todos los campos de las CSH
+lanzaron críticas incisivas por los presupuestos que se daban por
+sentados en sus disciplinas y buscaron reorientar los objetos y procesos
+de conocimiento. De ahí surgió un interés por investigar de manera
+sistemática las dinámicas de la producción del conocimiento dentro de
+los campos académicos, aplicándose conceptos como los ``conocimientos
+situados'' de Donna Haraway y el ``efecto Matilda'' de Margaret
+Rossiter, que resultaron ser poderosas herramientas
+transdisciplinares.\footnote{Donna Haraway, ``Situated Knowledges: The
+  Science Question in Feminism and the Privilege of Partial
+  Perspective'', \emph{Feminist Studies} 14, n.\textsuperscript{o} 3
+  (1988); Margaret W. Rossiter, ``The Matilda Effect in Science'',
+  \emph{Social Studies of Science} 23, n.\textsuperscript{o} 2 (1993).
+  El trabajo de Rossiter representa una poderosa expansión del concepto
+  del Efecto Mateo, propuesto por Robert K. Merton y citado arriba en la
+  nota al pie 1.} Sue Curry Jansen aprovechó estas ideas para abrir
+espacios críticos donde se planteaba el género como elemento
+constitutivo, y no contingente, de la historia de los campos de la
+comunicación y su (re)producción dinámica del conocimiento y poder en la
+actualidad.\footnote{Sue Curry Jansen, ``\,`The Future is Not What it
+  Used to Be': Gender, History, and Communication Studies'',
+  \emph{Communication Theory} 3, n.\textsuperscript{o} 2 (1993).} Al
+mismo tiempo, a finales de los ochenta, retomando lo que Patricia Hill
+Collins llamara el reconocimiento añejo de ``la naturaleza imbricada de
+raza, género y clase'' en el pensamiento feminista negro, Kimberlé
+Crenshaw formuló el concepto de interseccionalidad que ha servido como
+lente esencial para investigar los enmarañamientos de género, raza,
+clase y otras posicionalidades.\textsuperscript{21}
+
+¿Cómo han incidido las críticas geopolíticas, raciales y feministas de
+los campos de conocimiento en las historias escritas de los estudios de
+medios y comunicación? Su impacto ha sido lento e indirecto. Primero,
+cabe señalar que antes de la década de los noventa no existía un
+conjunto significativo de trabajos sobre la historia de estos campos
+sino solo esfuerzos aislados y el mito de los ``padres fundadores'' y
+los hijos críticos que los mataron de manera simbólica.\textsuperscript{22} En una revisión sistemática de la literatura en
+inglés dos décadas después se encontró un abrumador enfoque geográfico
+en las personas e ideas provenientes de Estados Unidos, Canadá, Reino
+Unido y Alemania.\textsuperscript{23}
+El Sur Global y otras regiones apenas figuraban para los estudiosos de
+habla inglesa. Si bien no contamos con un análisis así de sistemático
+del género y la raza de quienes merecieron mención\marginnote{\textsuperscript{21} Collins, ``Learning from the
+  Outsider Within'', S19; Kimberlé Crenshaw, ``Demarginalizing the
+  Intersection of Race and Sex: A Black Feminist Critique of
+  Antidiscrimination Doctrine, Feminist Theory and Antiracist
+  Politics'', \emph{University of Chicago Legal Forum} 1989 (1989).} en\marginnote{\textsuperscript{22} Jefferson
+  Pooley, ``The New History of Mass Communication Research'', en
+  \emph{The History of Media and Communication Research: Contested
+  Memories}, ed. de David W. Park y Jefferson Pooley (Nueva York: Peter
+  Lang, 2008); Peter Simonson y David W. Park, introducción ``On the
+  History of Communication Study'' a \emph{The International History of
+  Communication Study}, eds. Peter Simonson y David W. Park (Nueva York:
+  Routledge, 2016).} los\marginnote{\textsuperscript{23}\setcounter{footnote}{23} Jefferson Pooley y David W. Park,
+  ``Communication Research'', en \emph{The Handbook of Communication
+  History}, ed. de Peter Simonson et al. (Nueva York: Routledge, 2013).} escritos
+existentes, nos atrevemos a afirmar que la literatura histórica resulta
+aún más abrumadoramente enfocada en los hombres blancos de ascendencia
+europea. Además, existe un conjunto pequeño, pero creciente, de trabajos
+sobre integrantes de grupos minorizados. La historia de las mujeres y el
+género es la más desarrollada y remonta a los años noventa, aunque el
+registro dista de estar completo y le falta un enfoque internacional y
+comparativo más amplio.\footnote{Para América Latina véase Yamila Heram
+  y Santiago Gándara, \emph{Pioneras en los estudios de comunicación}
+  (Buenos Aires: TeseoPress, 2021), y Clemencia Rodríguez et al., eds.,
+  \emph{Mujeres de la comunicación} (Bogotá: Friedrich Ebert Stiftung,
+  2020). Para un excelente estudio transnacional véase Elisabeth Klaus y
+  Josef Seethaler, eds., \emph{What Do We Really Know about Herta
+  Herzog?} (Fráncfort del Meno: Peter Lang, 2016). Para trabajos
+  recientes en inglés que incluyen bibliografías selectas de la
+  literatura, véanse Leonarda García-Jiménez y Esperanza Herrero,
+  ``Narrating the Field Through Some Female Voices: Women's Experiences
+  and Stories in Academia'', \emph{Communication Theory} 32,
+  n.\textsuperscript{o} 2 (2022), y Karen Lee Ashcraft y Peter Simonson,
+  ``Gender, Work, and the History of Communication Research: Figures,
+  Formations, and Flows'', en Simonson y Park, \emph{The International
+  History}.} Luego está la literatura creciente sobre la historia de los
+estudiosos negros y las estructuras racializadas de los estudios de
+comunicación y medios, si bien de nuevo queda mucho trabajo por
+hacer.\footnote{Para una bibliografía selecta de trabajos en el contexto
+  de Estados Unidos, véase Armond Towns, ``Against the `Vocation of
+  Autopsy'\,''. Véanse también Dhanveer Singh Brar y Ashwani Sharma,
+  ``What is This `Black` in Black Studies? From Black British Cultural
+  Studies to Black Critical Thought in UK Arts and Higher Education'',
+  \emph{New Formations} n.\textsuperscript{o} 99 (2019); Jeffrey S.
+  Wilkinson, William R. Davie y Angeline J. Taylor, ``Journalism
+  Education in}
+
+Hasta hace poco, las críticas geopolíticas rara vez ofrecían guías
+explícitas para escribir las historias del campo, aunque existe un
+conjunto significativo de trabajos que podrían apoyar el esfuerzo
+reorientando nuestro imaginario global más allá de su centro tradicional
+en Estados Unidos. En las últimas dos décadas se han visto tendencias
+hacia marcos más transnacionales y hasta globales para abarcar el
+desarrollo histórico de los estudios de comunicación y
+medios.\textsuperscript{26} Dichas tendencias se enmarcan dentro de movimientos
+más amplios en la historia y sociología de las CSH.\textsuperscript{27} Los marcos transnacionales y globales
+abren la posibilidad de mapear las líneas de la hegemonía de Estados
+Unidos tras la segunda guerra mundial y, a la vez, de provincializar la
+versión norteamericana del campo. Resulta crucial reconocer que existen
+tradiciones alternativas de educación e investigación del periodismo, el
+cine, la radio, la televisión y otras formas de lo que en América Latina
+llegó a conocerse como comunicación social. Ver la comunicación como un
+campo norteamericano ---lo suelen hacer tanto los entusiastas como los
+críticos--- implica ignorar, por ejemplo, la \emph{Zeitungswissenschaft}
+alemana y la \emph{Publizistik} europea de la posguerra, pues ambas
+brindaban modelos alternativos de alcance transnacional.\textsuperscript{28} Asimismo, implica ignorar las tradiciones católicas que
+han dejado una huella profunda, como el caso de la educación jesuita en
+América Latina.\textsuperscript{29} Por otro lado, existe una larga tradición de
+investigación sobre la comunicación desde perspectivas marxistas; tiene
+sus raíces intelectuales en los movimientos independentistas del siglo
+XIX, luego tuvo un impulso fuerte gracias a la revolución cubana de 1959
+y se enriqueció en los años sesenta y setenta con lecturas de Antonio
+Gramsci y la teoría de la dependencia.\textsuperscript{30}
+Aunque menos desarrolladas que las de América Latina, hay tradiciones
+intelectuales análogas en el África post-independencia y en el mundo
+árabe, forjadas a su vez por el rechazo de los paradigmas de la
+modernización y el impulso hacia alternativas comprometidas con la
+indigenización, la africanización y la unión panárabe.\textsuperscript{31} La Organización de
+las Naciones Unidas para la Educación, la Ciencia y la Cultura (UNESCO),\marginnote{Black and White: A 50-Year Journey Toward Diversity'',
+  \emph{Journalism \& Mass Communication Educator} 75,
+  n.\textsuperscript{o} 4 (2020); Julian Henriques y David Morley, eds.,
+  \emph{Stuart Hall: Conversations, Projects and Legacies} (Londres:
+  Goldsmiths Press, 2017); Nova Gordon Bell, ``Towards an Integrated
+  Caribbean Paradigm in Communication Thought: Confronting Academic
+  Dependence in Media Research'', en \emph{Re-imagining Communication in
+  Africa and the Caribbean}, ed. de Hopeton S. Dunn et al. (Cham, Suiza:
+  Palgrave Macmillan), y Terje Skjerdal y Keyan Tomaselli,
+  ``Trajectories of Communication Studies in Sub-Saharan Africa'', en
+  Simonson y Park, \emph{The International History}.}
+el\marginnote{\textsuperscript{26} Para ejemplos, véanse Simonson y Park, \emph{The
+  International History}; Erick R. Torrico Villanueva, \emph{La
+  comunicación: pensada desde América Latina (1960--2009)} (Salamanca:
+  Comunicación Social, 2016), y Stefanie Averbeck-Lietz, ed.,
+  \emph{Kommunikationswissenschaft im Internationalen Vergleich:
+  Transnationale Perspektiven} (Wiesbaden: Springer Fachmedien
+  Wiesbaden, 2017).} movimiento\marginnote{\textsuperscript{27} Véase Johan
+  Heilbron, Nicolas Guilhot y Laurent Jeanpierre, ``Toward a
+  Transnational History of the Social Sciences'', \emph{Journal of the
+  History of Behavioral Sciences} 44, n.\textsuperscript{o} 2 (2008);
+  Neus Rotger, Diana Roig-Sanz y Marta Puxan-Oliva, ``Introduction:
+  Towards a Cross-Disciplinary History of the Global in the Humanities
+  and Social Sciences'', \emph{Journal of Global History} 14,
+  n.\textsuperscript{o} 3 (2019).} de\marginnote{\textsuperscript{28} Es
+  amplia la literatura sobre la historia de la investigación alemana de
+  la comunicación y sus precursores históricos, tanto en alemán como en
+  inglés. Para empezar con bibliografías extensas, véanse Erik Vroons,
+  ``Communication Studies in Europe: A Sketch of the Situation about
+  1955'', \emph{Gazette} 67, n.\textsuperscript{o} 6 (2005); Maria
+  Löblich, ``German \emph{Publizistikwissenschaft} and Its Shift from a
+  Humanistic to an Empirical Social Science'', \emph{European Journal of
+  Communication} 22, n.\textsuperscript{o} 1 (2007); Thomas Wiedemann,
+  ``Practical Orientation as a Survival Strategy: The Development of
+  \emph{Publizistikwissenschaft} by Walter Hagemann'', en Simonson y
+  Park, \emph{The International History}; Averbeck-Lietz,
+  \emph{Kommunikationswissenschaft im Internationalen Vergleich;} Thomas
+  Wiedemann, Michael Meyen e Iván Lacasa-Mas, ``100 Years of
+  Communication Study in} países no alineados y la Asociación Internacional de
+Estudios en Comunicación Social (AIECS) jugaron papeles globales en la
+circulación de ideas y el desarrollo de redes sociales entre
+investigadores del Sur Global y aliados izquierdistas en el Norte; la
+antigua República Democrática Alemana desempeñó un rol similar, junto
+con otros países del antiguo bloque soviético que mantuvieron una fuerte
+presencia en la AEICS durante la guerra fría, así como sus propias
+tradiciones dentro del diálogo transnacional cargado de tensión
+política, sin hablar de las nuevas complicaciones que surgieron después
+de 1989.\textsuperscript{32} Si hemos de desarrollar una comprensión más compleja de
+las líneas contemporáneas de hegemonía geopolítica y exclusión en los
+estudios de comunicación y medios, debemos incorporar todo lo que
+sabemos acerca de las historias globales heterogéneas de dichos campos y
+gran parte de ellas no se encuentra publicada en inglés.
+
+\hypertarget{saldar-la-deuda-histuxf3rica-ahora}{%
+\section{Saldar la deuda histórica
+ahora}\label{saldar-la-deuda-histuxf3rica-ahora}}
+
+En el momento contemporáneo se han enredado las críticas geopolíticas,
+raciales, feministas y con perspectiva de género que han circulado
+durante décadas, a la vez que se han convertido en una reivindicación
+cada vez más difícil de ignorar por parte de quienes ocupan los centros
+hegemónicos. Los estudios de medios y comunicación, junto con otros
+muchos campos académicos, han tenido que lidiar con un reconocimiento
+tardío de los patrones sistémicos de exclusión e injusticia implicados
+en su misma constitución como campos. Esto se ha visto impulsado en
+parte por el desarrollo constante de líneas de pensamiento añejas. Si
+bien antes ciertas líneas de crítica geopolítica y racial podían hacer
+caso omiso de la perspectiva de género, y los feminismos blancos podían
+desatender cuestiones de raza, ahora estas líneas se animan mutuamente y
+se enriquecen de otras corrientes de teoría social crítica. Juntas nos
+brindan nuevos vocabularios y sensibilidades intelectuales, en tanto que
+el reconocimiento que ocurre en el campo se está viendo impulsado por
+otros reconocimientos más grandes que se han dado a nivel de sociedad y
+a escala global. Para nombrar solo algunos: el movimiento Black Lives
+Matter que surgió en 2013 en Estados Unidos ya se había convertido en
+fenómeno global en 2016, poniendo sobre la mesa formas persistentes de
+racismo en todo el mundo, y en mayo de 2020 llegó a otro nivel con el
+asesinato de George Floyd. En la primavera de 2015 se lanzó en Sudáfrica
+la campaña \#RhodesMustFall para protestar la persistencia del legado
+colonialista en la educación superior; la campaña dio impulso a un
+creciente movimiento multilateral que pretende decolonizar e indigenizar
+el conocimiento en el mundo. Las\marginnote{Europe: Karl Bücher's Impact on the
+  Discipline's Reflexive Project'', \emph{Studies in Communication and
+  Media} 7, n.\textsuperscript{o} 1 (2018). Sobre la asimilación del
+  modelo de ciencias periodísticas alemanas en Japón, véase Fabian
+  Schäfer, \emph{Public Opinion, Propaganda, Ideology: Theories on the
+  Press and Its Social Function in Interwar Japan, 1918--1937} (Leiden:
+  Brill, 2012).}\marginnote{\textsuperscript{29} Ira Wagman, ``Remarkable Invention!''
+  \emph{History of Media Studies} 1 (2021). Para América Latina, véase
+  el rico estudio del ITESO, Universidad Jesuita de Guadalajara
+  (México), en Graciela Bernal Loaiza, ed., \emph{50 años en la
+  formación universitaria de comunicadores, 1967--2008: génesis,
+  desarrollo y perspectivas} (Guadalajara: ITESO, 2018), y la reseña
+  biográfica del fundador de los estudios de comunicación en
+  instituciones jesuitas del país, con una reimpresión de su carta de
+  1960 que versa sobre el tema, en Luis Sánchez Villaseñor, S.J.,
+  \emph{José Sánchez Villaseñor, S.J., 1911/1961: notas biográficas}
+  (Guadalajara: ITESO, 1997). Sobre Venezuela, véase José Martínez
+  Terrero, S.J., ``Los jesuitas de Venezuela en la comunicación
+  social'', \emph{Temas de Comunicación. Universidad Católica Andrés
+  Bello} 1 (1992).}\marginnote{\textsuperscript{30} Existe una rica
+  literatura historiográfica sobre América Latina. Para empezar, véanse
+  Mariano Zarowsky, ``Communication Studies in Argentina in the 1960s
+  and `70s: Specialized Knowledge and Intellectual Intervention Between
+  the Local and the Global'', \emph{History of Media Studies} 1 (2021);
+  Torrico Villanueva, \emph{La comunicación}; Raúl Fuentes-Navarro,
+  ``Institutionalization and Internationalization of the Field of
+  Communication Studies in Mexico and Latin America'', en Simonson y
+  Park, \emph{The International History}; Maria Immacolata Vassallo de
+  Lopes y Richard Romancini, ``History of Communication Study in Brazil:
+  The Institutionalization of an Interdisciplinary Field'', en Simonson
+  y Park, \emph{The International History}. Desde los noventa, Fuentes
+  Navarro ha producido una extensa obra sobre la historia del campo en
+  México y América Latina, misma que sirve como una guía estupenda.}\marginnote{\textsuperscript{31} Para el
+  África subsahariana, véanse Willems, ``Provincializing Hegemonic
+  Histories''; Skjerdal y Tomaselli, ``Trajectories of Communication'';
+  Mohammad Musa, ``Looking Backward, Looking Forward: African Media
+  Studies and} Marchas de Mujeres de enero de 2017,
+organizadas para el día posterior a la inauguración de Donald Trump,
+galvanizó la atención del mundo sobre temas de género y los nuevos
+embates a los derechos y el bienestar de mujeres y gente LGBTQ. Para el
+otoño de 2017, \#MeToo, iniciado en 2006 por la activista negra Tarana
+Burke, tomó vuelo cuando lo enarbolaron actrices blancas de Hollywood.
+Rápidamente se volvió global, convirtiéndose en grito de guerra para los
+esfuerzos por visibilizar y combatir el fenómeno ubicuo, a menudo
+silenciado, del abuso y acoso sexual, junto con los sistemas
+patriarcales de poder que lo fomentaban. Simultáneamente, ante el
+surgimiento de nuevos etnonacionalismos y supremacías blancos vinculados
+a populismos derechistas, los liberales y progresistas voltearon su
+mirada al poder y privilegio sistémicos de la blanquitud.
+
+Estas son algunas de las corrientes que han impulsado las críticas
+recientes de los estudios de comunicación y medios con respecto al
+género, la raza, la sexualidad, el lenguaje, la colonialidad y la
+ubicación geopolítica. Son demasiadas para quedar resumidas aquí, por lo
+que solo señalaremos algunos hilos clave. En su último número de
+``Ferment in the Field'' (``Fermento en el campo''), la \emph{Journal of
+Communication} publicó el ensayo ``\#CommunicationSoWhite'', un análisis
+crítico de los patrones racializados de publicación en revistas de la
+ICA y de la Asociación Nacional de Comunicación (NCA) de Estados Unidos,
+que ha detonado conversaciones a nivel internacional.\textsuperscript{33} En otros trabajos se ha examinado lo que Vicki Mayer et al.
+llaman ``la terca persistencia del patriarcado en los estudios de
+comunicación''.\textsuperscript{34} Los latinoamericanos han llevado la batuta en las críticas
+decoloniales del campo, extendiendo una tradición de más de cinco
+décadas.\textsuperscript{35} Forman parte de una nueva ola de esfuerzos decolonizantes que
+atraviesan subcampos de los estudios de comunicación y medios, y abarcan
+distintas regiones del mundo, las que, a su vez, se entrelazan con el
+pensamiento reciente sobre el proyecto de
+``desoccidentalización''.\textsuperscript{36} Las intervenciones adoptan formas diversas, incluyendo
+una renovada atención crítica a las políticas y prácticas excluyentes de
+las sedes de las conferencias y su preferencia por investigadores
+provenientes de instituciones ricas del Norte Global.\textsuperscript{37} Los esfuerzos son variados y van en
+aumento.
+
+\hypertarget{exigencias-las-necesidades-del-momento}{%
+\section{Exigencias: las necesidades del
+momento}\label{exigencias-las-necesidades-del-momento}}
+
+En esta empresa crítica multidimensional, que \emph{History of Media
+Studies} apoya en su totalidad, quedan pendientes muchos tipos de
+trabajo. En el sentido más amplio, necesitamos expandir nuestras
+imaginaciones cosmopolitas a la vez que habitamos los lugares
+particulares de cincuenta años de crítica y activismo que han arrojado
+luz sobre las\marginnote{the Question of Power'', \emph{Journal of African Media
+  Studies} 1, n.\textsuperscript{o} 1 (2009), y Eddah M. Mutua, Bala A.
+  Musa y Charles Okigbo, ``(Re)visiting African Communication
+  Scholarship: Critical Perspectives on Research and Theory'',
+  \emph{Review of Communication} 22, n.\textsuperscript{o} 1 (2022).
+  Para el mundo árabe, véanse Mohammad I. Ayish, ``Communication Studies
+  in the Arab World'', en Simonson y Park, \emph{The International
+  History}, y Carola Richter y Hanan Badr, ``Die Entwicklung der
+  Kommunikationsforschung und -wissenschaft in Ägypten. Transnationale
+  Zirkulationen im Kontext von Kolonialismus und Globalisierung'', en
+  \emph{Kommunikationswissenschaft im Internationalen Vergleich:
+  Transnationale Perspektiven}, ed. de Stefanie Averbeck-Lietz
+  (Wiesbaden: Springer Fachmedien Wiesbaden, 2017).}\marginnote{\textsuperscript{32} Michael Meyen, ``IAMCR on the East-West Battlefield: A
+  Study on the GDR's Attempts to Use the Association for Diplomatic
+  Purposes'', \emph{International Journal of Communication} 8 (2014);
+  Zrinjka Peruško y Dina Vozab, ``The Field of Communication in Croatia:
+  Toward a Comparative History of Communication Studies in Central and
+  Eastern Europe'', en Simonson y Park, \emph{The International
+  History}; Maureen C. Minielli et al., eds., \emph{Media and Public
+  Relations Research in Post-Socialist Countries} (Lanham, MD: Lexington
+  Books, 2021).}\marginnote{\textsuperscript{33} Paula
+  Chakravartty et al., ``\#CommunicationSoWhite'',~\emph{Journal of
+  Communication} 68, n.\textsuperscript{o} 2 (2018). Casi de inmediato
+  se empezó a citar el ensayo de forma extensa a nivel internacional, lo
+  que inspiró una preconferencia de la ICA que se convirtió en un número
+  especial: Eve Ng, Khadijah Costley White y Anamik Saha,
+  ``\#CommunicationSoWhite: Race and Power in the Academy and Beyond'',
+  \emph{Communication, Culture \& Critique} 13, n.\textsuperscript{o} 2
+  (2020).}\marginnote{\textsuperscript{34} Vicki Mayer et al., ``How Do We Intervene in
+  the Stubborn Persistence of Patriarchy in Communication Scholarship'',
+  en \emph{Interventions: Communication Theory and Practice}, ed. de D.
+  Travers Scott y Adrienne Shaw (Nueva York: Peter Lang, 2018). Véanse
+  también Rodríguez et al., \emph{Mujeres de la comunicación}; Sabine
+  Trepte y Laura Loths, ``National and Gender Diversity in
+  Communication: A Content Analysis of Six Journals Between 2006 and
+  2016'', \emph{Annals of the International Communication Association}
+  44, n.\textsuperscript{o} 4 (2020), y Xinyi Wang et al., ``Gendered
+  Citation Practices in the Field of Communication'', \emph{Annals of
+  the International Communication Association} 45, n.\textsuperscript{o}
+  2 (2021).} inequidades y la violencia epistemológica de los sistemas
+dominantes del conocimiento. Esto implica reconocer cómo estas
+inequidades se (re)producen en textos, encuentros y prácticas
+particulares. Simultáneamente debemos explorar cómo esas instancias
+concretas se vinculan comunicativamente o corresponden a situaciones
+análogas en otros lugares y tiempos, lo que nos exigirá reconocer las
+conexiones entre los campos académicos y la sociedad, con una
+apreciación minuciosa de las distintas orientaciones normativas que
+surgen en cada ámbito. La crisis del periodo actual brinda una
+oportunidad inusual para hacer ajustes en los niveles más fundamentales
+de la práctica. El trabajo de las personas históricamente otrerizadas,
+ayudadas por aliados, ha puesto sobre la mesa los problemas y
+posibilidades del momento. Hace tiempo que quienes pertenecemos a grupos
+históricamente privilegiados tendríamos que haber hecho más para sacar
+adelante este proceso ---reconociendo el peligro de que en nuestros
+intentos simplemente volvamos a configurar las líneas tradicionales del
+poder y de la ignorancia privilegiada---. Hará falta algún tipo de
+división flexible de trabajo en esta empresa, vinculada a
+posicionalidades, lugares institucionales, pericias y capacidades.
+
+Sentimos que entre las muchas necesidades del presente hay cuatro en
+particular que se intentaron (y se siguen intentando) abordar en la
+preconferencia de 2021, en esta sección especial de ensayos y en la
+revista \emph{History of Media Studies}. Ni de lejos responden a la
+amplia gama de cuestiones señaladas en las críticas basadas en la
+geopolítica, la colonialidad, la raza, el género, la sexualidad y la
+discapacidad. No obstante, creemos que podrán contribuir al esfuerzo más
+amplio, cada una a su manera. Ellas son: (1) la necesidad de remarcar
+con mayor nitidez el trasfondo histórico del estado actual de los campos
+académicos, (2) la necesidad de construir colaboraciones internacionales
+que reconfiguren lo que se ha acostumbrado señalar como los ``centros''
+y ``periferias'' en los estudios de medios, (3) la necesidad de
+encontrar maneras de poner resistencia a la creciente hegemonía del
+inglés en el sistema global de conocimiento, y (4) la necesidad de
+apoyar una infraestructura de publicación abierta y sin fines de lucro.
+Ninguna de estas necesidades es fácil de atender. Hay resistencia a cada
+una de ellas integrada en las prácticas e instituciones que estructuran
+nuestros campos en la actualidad. Y ninguna ha recibido la debida
+atención en el momento actual en que se intenta saldar la deuda
+histórica.
+
+\hypertarget{rauxedces-histuxf3ricas}{%
+\subsection{Raíces
+históricas}\label{rauxedces-histuxf3ricas}}
+
+Primero, la necesidad de remarcar con mayor nitidez el trasfondo
+histórico del presente: con notables excepciones, las críticas recientes
+del campo\marginnote{\textsuperscript{35} Erick R. Torrico Villanueva, ``La \emph{comunicología
+  de liberación}, otra fuente para el pensamiento decolonial: una
+  aproximación a las ideas de Luis Ramiro Beltrán'', \emph{Quórum
+  Académico} 7 n.\textsuperscript{o} 1 (2010); Tanius Karam, ``Tensiones
+  para un giro decolonial en el pensamiento comunicológico: abriendo la
+  discusión'', \emph{Chasqui. Revista Latinoamericana de Comunicación}
+  133 (2016); Francisco Sierra Caballero y Claudio Maldonado Rivera,
+  eds., \emph{Comunicación, decolonialidad y Buen Vivir} (Quito:
+  Ediciones CIESPAL, 2016); Francisco Sierra Caballero, Claudio
+  Maldonado Rivera y Carlos del Valle, ``Nueva comunicología
+  latinoamericana y giro decolonial: continuidades y rupturas'',
+  \emph{Cuadernos de Información y Comunicación} 25 (2020); Alejandro
+  Barranquero y Juan Ramos-Martín, ``Luis Ramiro Beltrán and Theorizing
+  Horizontal and Decolonial Communication'', en \emph{The Handbook of
+  Global Interventions in Communication Theory}, ed. de Yoshitaka Miike
+  y Jing Yin (Nueva York: Routledge, 2022); Claudia Magallanes-Blanco,
+  ``Media and Communication Studies: What is there to
+  Decolonize?''~\emph{Communication Theory} 32, n.\textsuperscript{o} 2
+  (2022).}\marginnote{\textsuperscript{36} Sobre los esfuerzos decolonizantes
+  que atraviesan subcampos de los estudios de comunicación y medios,
+  véanse Antje Glück, ``De-Westernization and Decolonization in Media
+  Studies'', en \emph{Oxford Research Encyclopedia of Communication,}
+  ed. de Jon Nussbaum (Oxford: Oxford University Press, 2018); Joëlle M.
+  Cruz y Chigorzirim Utah Sodeke, ``Debunking Eurocentrism in
+  Organizational Communication Theory: Marginality and Liquidities in
+  Postcolonial Contexts'', \emph{Communication Theory} 31,
+  n.\textsuperscript{o} 3 (2021); Mohan Dutta et al., ``Decolonizing
+  Open Science: Southern Interventions'',~\emph{Journal of
+  Communication} 71, n.\textsuperscript{o} 5 (2021); Bruce Mutsvairo et
+  al., ``Ontologies of Journalism in the Global South'',
+  \emph{Journalism \& Mass Communication Quarterly} 98,
+  n.\textsuperscript{o} 4 (2021); C.S.H.N. Murthy, ``Unbearable
+  Lightness? Maybe Because of the Irrelevance/Incommensurability of
+  Western Theories? An Enigma of Indian Media Research'',
+  \emph{International Communication Gazette} 78, n.\textsuperscript{o} 7
+  (2016), y Makoni y Masters, ``Decolonization and Globalization''. Para
+  más sobre el proyecto de ``desoccidentalización'', véase Silvio
+  Waisbord, ``What is Next for De-Westernizing Communication Studies?''
+  \emph{Journal of Multicultural Discourses}, publicación anticipada en
+  línea (2022).}\marginnote{\textsuperscript{37} Eve Ng y
+  Paula Gardner, ``Location, Location, Location? The Politics of ICA
+  Conference Venues'', \emph{Communication, Culture \& Critique} 13,
+  n.\textsuperscript{o} 2 (2020).} y de las disciplinas de la investigación de comunicación y
+medios en su conjunto son de enfoque marcadamente
+contemporáneo.\textsuperscript{38} Cabe notar que con este presentismo
+no se trata del universalismo atemporal de las ciencias sociales
+positivistas y postpositivistas, pues surgió de los análisis de
+estudiosos críticos ampliamente comprometidos con las formas dialécticas
+y situadas de historicidad. Autores de intervenciones recientes
+reconocerían que los fenómenos que critican surgieron de procesos
+históricos que les dieron forma. No obstante, en sus obras por lo
+general no han tenido el cuidado de contemplar las dinámicas históricas
+de la exclusión y la marginación presentes en la misma construcción y
+evolución de los campos de medios y comunicación. Una explicación de
+este descuido de la dimensión histórica es la división del trabajo
+experto que caracteriza a la academia moderna. Otra es la urgencia
+apremiante del presente. De ahí que críticas que en otros aspectos
+resultan bastante convincentes ofrezcan los mismos relatos superficiales
+del pasado de los campos que se reproducen en los libros de texto desde
+que Wilbur Schramm propuso su mito de los ``cuatro fundadores'' en los
+años sesenta, seguidos por los asesinatos simbólicos realizados por los
+estudiosos críticos en los años setenta y ochenta.\textsuperscript{39} Es decir, los críticos corren el riesgo de
+reproducir los clichés historiográficos que, en su engañosa simplicidad,
+han contribuido a las estrechas autoconcepciones que se manejan en los
+campos.
+
+\enlargethispage{\baselineskip}
+
+A fin de contrarrestar este presentismo, en el momento actual de
+reconocimiento se requieren por lo menos tres tipos de especificidad
+histórica. Primero, necesitamos analizar críticamente las dinámicas por
+las que la heteromasculinidad euronorteamericana blanca capturó y
+mantuvo el centro hegemónico del campo a partir del periodo de
+entreguerras. Asimismo, necesitamos hacer más por recuperar y centrar
+las experiencias de los integrantes minorizados del campo y resistirnos
+a aceptar los recuerdos colectivos totalizantes que irónicamente ocultan
+sus maniobras complejas ante la hegemonía masculinista blanca, así como
+sus aportes a la producción histórica del campo. Por último, necesitamos
+resistirnos a aceptar las narrativas por igual totalizantes en las que
+se caracteriza la investigación de comunicación y medios como ``un campo
+norteamericano'' y se pasan por alto las ricas historias de las
+indagaciones en América Latina, África, Asia del Este y Europa ---cada
+región con sus tradiciones intelectuales propias y sus complejas
+maniobras ante la hegemonía de la investigación de corte
+norteamericano---. La historiografía revisionista, así como los relatos
+más establecidos publicados en lenguas que no son inglés, ya ofrecen
+recursos para los tres tipos de especificidad, pero nos falta más
+investigación sobre lugares geopolíticos y grupos sociales específicos,
+con todo y sus imbricaciones con las historias que ya se han contado de
+manera más cabal.
+
+\hypertarget{colaboraciones-internacionales}{%
+\subsection{Colaboraciones
+internacionales}\marginnote{\textsuperscript{38} Entre las excepciones notables se encuentran
+  Amin Alhassan, ``The Canonic Economy of Communication and Culture: The
+  Centrality of the Postcolonial Margins'', \emph{Canadian Journal of
+  Communication} 32, no.1 (2007); Roopali Mukherjee, ``Of Experts and
+  Tokens: Mapping a Critical Race Archaeology of Communication'',
+  \emph{Communication, Culture and Critique} 13, n.\textsuperscript{o} 2
+  (2020), y Afonso de Albuquerque, ``The Institutional Basis of
+  Anglophone Western Centrality'', \emph{Media, Culture \& Society} 43,
+  n.\textsuperscript{o} 1 (2021).}\marginnote{\textsuperscript{39}\setcounter{footnote}{39} Pooley,
+  ``The New History''.}\label{colaboraciones-internacionales}}
+
+Segundo, debemos seguir construyendo colaboraciones internacionales más
+robustas e incluyentes. A diferencia de la relativa falta de historia en
+las críticas contemporáneas, existen muchos ejemplos de analistas que
+trascienden las fronteras nacionales al rastrear los patrones de género,
+raciales, coloniales y geopolíticos que siguen estructurando nuestros
+campos. Vemos esfuerzos importantes al interior de nuestras asociaciones
+profesionales, en los congresos grandes y más pequeños, en números
+especiales de revistas especializadas y en investigaciones y
+publicaciones individuales. Sin embargo, hay que reconocer a la vez la
+persistencia de hábitos y estructuras institucionales añejos que
+complican nuestros esfuerzos. No sorprende que algunos resultan
+especialmente evidentes en el campo de Estados Unidos, por ser el centro
+geopolítico de habla inglesa (al menos así lo vemos nosotros), con toda
+la arrogancia e ignorancia que eso conlleva. De una estrechez
+implacable, la NCA juega un papel importante en este sentido; hasta su
+nombre carente de especificidad parece querer adjudicarse primacía sobre
+las demás asociaciones académicas de alcance nacional. Ciertamente, sus
+integrantes ven las cosas de otro modo y han hecho un trabajo esencial a
+nombre de la NCA en sus revistas, congresos, listas de distribución y
+otras conversaciones en redes sociales al abordar temas de blanquitud,
+raza, género y hasta cierto punto colonialidad. Sin embargo, estos
+mismos integrantes tienden a enfocarse en el ámbito de Estados Unidos en
+su investigación y redes sociales; suelen ser además monolingües y a
+menudo inconscientes de cómo su propia particularidad cultural incide en
+sus análisis críticos. En las revistas de la NCA colaboran casi
+exclusivamente personas ubicadas en Estados Unidos, tanto en las juntas
+editoriales como entre los autores.\footnote{Fue el caso inclusive de un
+  reciente número especial publicado en dos volúmenes sobre los estudios
+  africanos de comunicación: no se incluían aportes de estudiosos
+  radicados en universidades africanas, pero sí se publicaron ensayos
+  insignes escritos por académicos africanos radicados en Estados
+  Unidos. Véase Godfried A. Asante y Jenna N. Hanchey, eds.,
+  ``(Re)Theorizing Communication Studies from African Perspectives'',
+  Partes I y II, números especiales, \emph{Review of Communication} 21,
+  n.\textsuperscript{o} 4 (2021) y 22, n.\textsuperscript{o} 1 (2022),
+  respectivamente.} Existen desde luego en otras partes del mundo el
+mismo tipo de mecanismos que estructuran culturas, redes e instituciones
+intelectuales bajo una lógica nacional y pueden tener el mismo efecto de
+impedir la colaboración internacional. Además, existen los grupos
+minorizados dentro de todas las regiones del mundo y quedan excluidos de
+participar de manera plena y equitativa debido a los sistemas de género,
+raza, etnicidad, sexualidad y dis/capacidad. A lo que vamos es que
+necesitamos concertar experiencias y capacidades diversas, provenientes
+de diferentes partes del mundo, a fin de comprender la constitución de
+sistemas globales de conocimientos y necesitamos crear espacios más
+equitativos para que los estudiosos minorizados dentro de las regiones
+del mundo escriban desde sus propios lugares y en sus propios términos.
+
+\hypertarget{contra-la-hegemonuxeda-del-ingluxe9s}{%
+\subsection{Contra la hegemonía del
+inglés}\label{contra-la-hegemonuxeda-del-ingluxe9s}}
+
+Tercero, si hemos de llevar adelante el actual reconocimiento y
+desarrollar a nivel global un campo más equitativo y cosmopolita,
+deberemos encontrar maneras de poner resistencia a la hegemonía del
+inglés y la investigación en lengua inglesa. Se trata evidentemente de
+un factor más que limita las colaboraciones internacionales más
+robustas, aunque es más que eso. Como afirma Afonso de Albuquerque, a
+partir de la década de los noventa el inglés se ha vuelto más poderoso a
+escala global en los estudios de comunicación y medios, impulsado por
+``el surgimiento de un orden mundial unipolar'' y la aceleración de la
+globalización neoliberal.\footnote{De Albuquerque, ``The Institutional
+  Basis'': 181.} Conforme el inglés consolidaba su lugar como la
+\emph{lingua franca} indiscutible de las ciencias sociales
+internacionales, se privilegiaban los hablantes nativos del inglés a la
+vez que se abrían espacios para estudiosos provenientes de países ricos
+del norte de Europa y otros que habían contado con los medios para
+dominar el idioma.\footnote{Ana Cristina Suzina, ``English as
+  \emph{Lingua Franca.} Or the Sterilisation of Scientific Work'',
+  \emph{Media, Culture \& Society} 43, n.\textsuperscript{o} 1 (2021).}
+La hegemonía lingüística agrega otra capa de poder y privilegio para las
+revistas de Estados Unidos y Reino Unido, con sus juntas editoriales de
+habla inglesa, que dominan los \emph{rankings} en los campos de la
+comunicación y las ciencias sociales.\footnote{Demeter, ``The Winner
+  Takes It All''.} El acelerante dominio del inglés ha contribuido a
+invisibilizar en Estados Unidos y Europa la robusta tradición
+latinoamericana de estudios de comunicación.\footnote{Sarah Ann Ganter y
+  Félix Ortega, ``The Invisibility of Latin American Scholarship in
+  European Media and Communication Studies: Challenges and Opportunities
+  of De-Westernization and Academic Cosmopolitanism'',
+  \emph{International Journal of Communication} 13 (2019); Florencia
+  Enghel y Martín Becerra, ``Here and There: (Re)Situating Latin America
+  in International Communication Theory'', \emph{Communication Theory}
+  28, n.\textsuperscript{o} 2 (2018).} Se puede abordar la hegemonía
+global del inglés como imperialismo lingüístico, vinculado a lo que los
+lingüistas han denominado como \emph{lingüicismo} ---prácticas con
+fundamento ideológico que perpetúan la repartición desigual de recursos
+y poder entre grupos con base en el idioma---.\footnote{Robert
+  Phillipson, \emph{Linguistic Imperialism Continued} (Londres:
+  Routledge, 2009); Phillipson y Skutnabb-Kangas, ``Communicating in
+  `Global English'\,''.} Toca encontrar maneras de abordar el
+imperialismo lingüístico sin marginar a las personas que viven en países
+de habla inglesa y que han carecido del capital cultural para aprender
+una segunda lengua.
+
+Aceptar como condición inalterable el dominio de la producción académica
+anglófona sería una claudicación. La traducción y la interpretación son
+herramientas necesarias para el trabajo que proponemos. Aunque ambas
+pueden resultar imprácticas por caras, se están desarrollando
+herramientas prometedoras de traducción automática, como DeepL, y muchas
+plataformas que facilitan las reuniones en tiempo real (incluyendo Zoom)
+permiten la interpretación simultánea. Por supuesto, no existe una
+solución técnica fácil para el problema del lingüicismo, pero uno de los
+obstáculos más relevantes a la superación del problema ---el supuesto de
+que la traducción e interpretación son innecesarias o inalcanzables---
+resulta manifiestamente falso.
+
+\hypertarget{publicaciuxf3n-de-acceso-abierto}{%
+\subsection{Publicación de acceso
+abierto}\label{publicaciuxf3n-de-acceso-abierto}}
+
+En cuarto y último lugar, necesitamos promover el acceso igualitario a
+la producción académica, para lectores y autores por igual. La industria
+editorial académica, dominada por un puñado de empresas gigantes del
+Norte Global, ha ayudado a agudizar la geografía de exclusión al
+restringir el acceso a quienes puedan pagar las onerosas cuotas de
+acceso. Las editoriales de acceso abierto sin fines de lucro, que no
+cobran por publicar ni por leer artículos, representan una respuesta
+importante a este régimen cerrado de conocimiento. En este sentido, los
+campos de los estudios de medios y comunicación deben seguir la
+iniciativa de una tradición que ya está bien arraigada en América
+Latina, de publicar en revistas de acceso abierto.\footnote{Dominique
+  Babini, ``Toward a Global Open-Access Scholarly Communications System:
+  A Developing Region Perspective'', en \emph{Reassembling Scholarly
+  Communications: Histories, Infrastructures, and Global Politics of
+  Open Access}, ed. de Martin Paul Eve y Jonathan Gray (Cambridge: MIT
+  Press, 2020); Michelli Pereira da Costa y Fernando César Lima Leite,
+  ``Open Access in the World and Latin America: A Review Since the
+  Budapest Open Access Initiative'', \emph{Transinformação} 28,
+  n.\textsuperscript{o} 1 (2016).} Las instituciones europeas y
+norteamericanas han facilitado ---conscientemente o no--- la cínica
+cooptación del movimiento de acceso abierto por parte de las editoriales
+comerciales.\footnote{Marcel Knöchelmann, ``The Democratisation Myth:
+  Open Access and the Solidification of Epistemic Injustices'',
+  \emph{Science \& Technology Studies} 34, n.\textsuperscript{o} 2
+  (2021); Richard Poynder, ``Open Access: Could Defeat Be Snatched from
+  the Jaws of Victory?'' \emph{Open and Shut?}, 18 noviembre 2019.} Su
+táctica ha sido cambiar las cuotas extorsionistas de subscripción por
+cargos usurarios para publicar artículos, esto es, poner barreras de
+pago para autores en vez de para lectores.\footnote{Audrey C. Smith et
+  al., ``Assessing the Effect of Article Processing Charges on the
+  Geographic Diversity of Authors Using Elsevier's `Mirror Journal'
+  System'', \emph{Quantitative Science Studies} 2, n.\textsuperscript{o}
+  4 (2021); Alicia Kowaltowski, Michel Naslavsky y Mayana Zatz, ``Open
+  Access Is Closed to Middle-Income Countries'', \emph{Times Higher
+  Education}, 14 abril 2022.} Los académicos latinoamericanos han
+lanzado una campaña global contra este régimen corporativo de acceso
+abierto basado en cuotas, argumentando que las cuotas de más de 3,000
+dólares para publicar un artículo constituyen una exclusión \emph{de
+facto} del Sur Global.\footnote{Arianna Becerril-García, ``The
+  Commercial Model of Academic Publishing Underscoring Plan S Weakens
+  the Existing Open Access Ecosystem in Latin America'', \emph{LSE
+  Impact} (blog), 20 de mayo de 2020; Kathleen Shearer y Arianna
+  Becerril-García, ``Decolonizing Scholarly Communications through
+  Bibliodiversity'', \emph{Zenodo}, 7 de enero de 2021.} El modelo
+latinoamericano sin fines de lucro y sin cuotas ofrece una alternativa
+floreciente, apoyada por el financiamiento colectivo. Últimamente,
+personas que se dedican a la investigación de medios y comunicación en
+América Latina y otras regiones han difundido súplicas a campos
+específicos con el fin de frenar la transición al acceso abierto
+comercial que excluye a autores y amenaza con agravar las inequidades
+globales de conocimiento.\footnote{Thaiane Moreira de Oliveira et al.,
+  ``Toward an Inclusive Agenda of Open Science for Communication
+  Research: A Latin American Approach'', \emph{Journal of Communication}
+  71, n.\textsuperscript{o} 5 (2021) ; Dutta et al., ``Decolonizing Open
+  Science''.} En plan de contraataque se propone crear colaboraciones
+internacionales multilingües entre revistas de acceso abierto que no
+cobran cuotas; \emph{History of Media Studies} actualmente está
+piloteando la propuesta con
+\href{http://www.comunicacionysociedad.cucsh.udg.mx/index.php/comsoc}{\emph{Comunicación
+y Sociedad}} y
+\href{https://www.revistas.usp.br/matrizes/}{\emph{MATRIZes}}\emph{.}
+
+\hypertarget{registros-de-exclusiuxf3n}{%
+\section{Registros de exclusión}\label{registros-de-exclusiuxf3n}}
+
+Se organizó el año pasado la
+\href{https://hms.mediastudies.press/pub/schedule/}{Preconferencia} ICA
+precisamente con estas propuestas en mente: mapear la exclusión y llevar
+adelante el trabajo de recuperación. La reunión virtual de dos días
+convocó a dos docenas de estudiosos de todo el mundo para un diálogo en
+torno a los trabajos que, en forma revisada, se publican en esta sección
+especial. Se pensaba desde un principio que la preconferencia y la
+revista estarían vinculadas. Un objetivo era plasmar nuestra visión para
+\emph{History of Media Studies} como un sitio donde se amplíe la
+historiografía. La
+\href{https://hms.mediastudies.press/pub/precon-cfp/}{convocatoria},
+lanzada en español, portugués e inglés, explicitó el objetivo de lograr
+la participación de investigadores de América Latina y que se trabajara
+dentro de las tradiciones de la región. Casi la mitad de los trabajos
+estaba escrita en español, la otra mitad en inglés. Quienes organizaron
+el evento se valieron de DeepL para generar traducciones funcionales que
+los participantes pudieran leer por anticipado. La preconferencia misma
+luego se valió de intérpretes simultáneos en vivo para facilitar lo que
+resultó ser un diálogo bilingüe apasionante. La viveza del intercambio
+nos dejó motivados y convencidos de que la nueva revista podría, con
+mucho trabajo y colaboración, plantear como su pilar central el
+descentramiento de las historias de los campos. Todos caímos en la
+cuenta de que el formato virtual fue un elemento clave para el
+intercambio intelectual. Los altos costos de los viajes a congresos
+representan, a fin de cuentas, un mecanismo importante de exclusión, en
+particular a lo largo de las fallas que separan a Norte y Sur. Se
+ahorraron estos costos y, con fondos procurados junto con el cobro
+renunciable de un modesto pago de inscripción a la conferencia, se logró
+pagar los servicios de los intérpretes profesionales ---cuyo trabajo
+dependía a su vez del \emph{software} de bajo costo para conferencias
+que permitió que el grupo se reuniera de manera remota---.
+
+Fue la experiencia de la preconferencia lo que impulsó a \emph{History
+of Media Studies} a lanzarse como revista multilingüe, con manuscritos
+\href{https://hms.mediastudies.press/author-guidelines}{aceptados tanto
+en español como en inglés}. Guiados por nuestra
+\href{https://hms.mediastudies.press/editorial}{Junta Editorial},
+pensamos abrirnos con el tiempo a otros idiomas, priorizando literaturas
+y tradiciones lingüísticas excluidas por la acelerante hegemonía de la
+lengua inglesa en nuestros campos. De los siete artículos de esta
+sección especial, tres se publican en español y cuatro en inglés, y esta
+introducción aparece en ambas lenguas. Los trabajos abordan una variedad
+de exclusiones, atravesando geografías y ámbitos intelectuales. Hay
+dimensiones cruciales de exclusión y oclusión, sobre todo en las líneas
+de raza y género, que se tratan solo indirectamente en esta colección,
+lo que refleja el enfoque de los trabajos que se presentaron como fruto
+de la preconferencia. En ese sentido vemos la sección especial como un
+primer paso, una especie de pagaré de la historiografía incluyente del
+campo que la revista pretende incubar. Cada uno de los artículos, con su
+enfoque particular, representa el tipo de trabajo que pensamos publicar
+en los números futuros ---investigación en la que se aplica la
+sensibilidad histórica para el reconocimiento del campo por sus
+omisiones e inequidades---.
+
+El aporte de Sarah Cordonnier aborda el campo mismo como objeto de
+exclusión. Ella observa que los estudios de medios, comunicación y cine
+se establecieron de maneras distintas en todo el mundo. De ahí que las
+historias institucionales e intelectuales de estos campos son muy
+diferentes según el contexto nacional y regional. Sin embargo, lo que
+comparten estas diversas formaciones de los estudios de medios es la
+experiencia de la marginalidad. Los estudiosos de comunicación, en un
+campo nacional tras otro, han sido relegados a la periferia de sus
+respectivas universidades, donde han tenido que conformarse con un
+estatus inferior. En el artículo de Cordonnier se registra este patrón
+de estigmatización, rastreable en parte al crecimiento institucional
+acelerado y tardío de los campos. La autora lanza un llamado a los
+campos a revertir su postura defensiva ---a acoger las mismas
+condiciones, incluyendo la proximidad a la vida cotidiana y la tremenda
+heterogeneidad de las prácticas de conocimiento, que sirvieran para
+socavar su legitimidad---.
+
+El artículo de Daniel Horacio Cabrera Altieri sobre el ``imaginario
+textil'' puede leerse como una extensión y profundización de la
+conclusión de Cordonnier. Cabrera Alitieri plantea la práctica y la
+metáfora del tejido como una alternativa por largo tiempo enterrada y
+con perspectiva de género distinta de las concepciones de la
+comunicación fundadas en imágenes de transporte y de redes que han
+predominado en el campo organizado. La preocupación de los teóricos de
+la comunicación por la racionalidad discursiva y por el despliegue
+progresivo de nuevos medios, ha ayudado a ocultar una rica tradición
+alterna que Cabrera Altieri desarrolla prestando particular atención a
+las culturas indígenas de América Latina. Su proyecto consiste en
+recuperar la memoria y excavar los trazos subterráneos, excluidos por la
+``amnesia textil'' de los campos. Como imaginario rival, el textil
+sugiere una ética de cuidado, de entretejido, centrada en el tejido
+social.
+
+Una fuente largamente suprimida de concepciones alternativas de la
+comunicación, incluyendo la metáfora fundamental del tejido, es la
+experiencia indígena en América Latina. Como lo describe María Magdalena
+Doyle en su aportación, la indigeneidad fue un área descuidada de
+estudio dentro de las emergentes disciplinas nacionales de comunicación
+en la región---al igual, cabe señalarlo, que en otras partes del
+mundo---. A partir de los años setenta, los estudiosos latinoamericanos
+empezaron a estudiar la comunicación y las prácticas mediáticas de los
+pueblos indígenas, pero típicamente a través de los lentes antagonistas
+de la modernización o la lucha de clases. Doyle mapea un cambio de
+enfoque de la investigación a partir de mediados de los años ochenta,
+reflejo en parte del incipiente reconocimiento de la identidad
+particular de los pueblos indígenas en los ámbitos nacionales e
+internacionales. Para la década de los noventa surgió una corriente de
+trabajo en la que se empezó a plasmar un imaginario decolonial con base
+en la comunicación y la lucha política de los indígenas, una que brindó
+epistemologías alternativas, mismas que se han desarrollado en una
+creciente producción académica.
+
+El trabajo de Emiliano Sánchez Narvarte sigue otro hilo dentro de la
+investigación latinoamericana de la comunicación: la interacción de la
+región con las organizaciones internacionales y la circulación
+transnacional de la investigación. A partir de finales de los años
+setenta, el estudioso venezolano Antonio Pasquali desempeñó una serie de
+puestos en la UNESCO. Desde ahí, y por medio de su densa red de vínculos
+con otros investigadores latinoamericanos, Pasquali ayudó a poner a la
+región en contacto con instituciones como la UNESCO y la AIECS, que se
+dedicaban en aquel entonces a desafiar la estrechez no reconocida de la
+investigación de la comunicación que se realizaba en Estados Unidos.
+Sánchez Narvarte traza la política de la comunicación en América Latina
+entre 1979 y 1989 y coloca a Pasquali como el \emph{mediador
+intelectual},\footnote{El concepto de \emph{mediador} intelectual se
+  toma de Mariano Zarowsky, \emph{Del laboratorio chileno a la
+  comunicación--mundo. Un itinerario intelectual de Armand Mattelart}
+  (Buenos Aires: Biblos, 2013).} cuyo papel conectivo ayudó a su vez a
+consolidar la conciencia regional del campo en nuevos espacios como la
+Asociación Latinoamericana de Investigadores de la Comunicación.
+
+En los años setenta y ochenta, la UNESCO y la AIECS ayudaron a coordinar
+a estudiosos críticos de todo el mundo en lo que fue, para algunos
+investigadores por lo menos, un proyecto deliberado encaminado a
+construir alternativas a la tradición estadounidense de los efectos de
+los medios. En su artículo, Maria Löblich, Niklas Venema y Elisa Pollack
+relatan el apogeo y la caída de la investigación crítica en el
+invernadero de la guerra fría que fuera Berlín Occidental. Como secuela
+de los acontecimientos de 1968, estudiantes izquierdistas de la Freie
+Universität ayudaron a apoyar nuevas contrataciones y un currículo
+renovado en el que se mezclaba la teoría crítica con el desarrollo de
+habilidades. Utilizando el marco de la sociología de la ciencia de
+Pierre Bourdieu, Löblich, Venema y Pollack dan cuenta de cómo la
+política febril y la retórica enaltecida del anticomunismo pronto
+impulsaron al gobierno de Berlín Occidental a realizar una reingeniería
+que en efecto dio fin a la fugaz tradición crítica de la universidad.
+
+Asimismo, la política de la producción académica sobre la comunicación
+constituye el enfoque de Angela Xiao Wu, en su relato de cómo la
+disciplina en China se distinguió de sus pares al apropiarse de la
+cibernética y la teoría de sistemas en la década postMao de los ochenta.
+Los estudiosos del periodismo, en particular, integraron la cibernética
+con el cientificismo de la dialéctica de la naturaleza de Friedrich
+Engels para crear lo que Wu llama ``periodismo de sistemas''. La medida
+de las noticias no era su correspondencia a la realidad sino sus aportes
+a la estabilidad global del sistema. Para principios de los años
+noventa, el campo chino, \emph{xiwen chuanbo} (estudio de periodismo
+comunicación) se designó como disciplina de primer nivel, debido en
+parte a la improbable aleación de Engels y la teoría de sistemas ---una
+adaptación creativa, como lo demuestra Wu, a las condiciones locales
+complejas---. Cabe señalar que con dichas condiciones locales se
+rescatan precisamente el tipo de contextos geográficos y geopolíticos
+que han quedado excluidos o marginados en gran parte de la
+historiografía existente.
+
+En la última aportación de la sección especial, Boris Mance y Sašo
+Slaček Brlek se basan en un análisis cuantitativo de la red de ocho
+revistas de lengua inglesa para mapear cómo los campos de la
+comunicación abordan la inequidad. Como lo demuestran los autores, el
+tema ha quedado relegado a los márgenes de las disciplinas desde la
+segunda guerra mundial. En los escasos abordajes de la inequidad que
+aparecen en la literatura, se ha configurado en función de contextos más
+amplios más allá del campo, como la rivalidad de la guerra fría o,
+después, la política de Estados Unidos con respecto a la Internet. Mance
+y Brlek concluyen que la inequidad, como tema de investigación, se ha
+domesticado, se le han extirpado las garras ---efecto secundario, según
+los autores, de los vínculos estrechos del campo institucionalizado con
+los intereses administrativos de los estados poderosos como Estados
+Unidos---.
+
+Los trabajos recolectados aquí apuntan hacia el doble carácter de las
+exclusiones de los campos. Estos patrones de omisión y comisión son, en
+un primer registro, \emph{constitutivos} de las formaciones
+disciplinarias que se nos han legado y que hemos reproducido. Es decir,
+los estudios de medios, cine y comunicación fueron configurados de
+manera fundamental por silenciamientos, privilegios, olvidos e
+impugnaciones. El centro no marcado y la periferia excluida, en un
+sentido importante, se han cocreado. Sin embargo, en un segundo registro
+estas exclusiones representan acontecimientos \emph{contingentes}. No
+existe una ley férrea de la dependencia académica, ni hay una
+trayectoria predeterminada de sobreextensión hegemónica.
+
+Tomando en cuenta la conversación que se tuvo en la preconferencia, así
+como los artículos reunidos aquí, proponemos que una historiografía
+influida por ambos registros ---el constitutivo y el contingente---
+podría contribuir a un reconocimiento tentativo del campo con su pasado
+y su presente. Al enmarcar estas exclusiones como constitutivas se
+descartan ciertas soluciones fáciles consistentes en la simple
+inclusividad; en lugar de eso, se nos invita a considerar todas las
+maneras en que estas y otras exclusiones han servido para centrar
+ciertos problemas, teorías, lenguajes, naciones, identidades sociales y
+lugares de publicación, y para excluir o marginar otros que se plantean
+como de un valor diferenciado menor, de un estatus inferior, como Otro y
+más. Al enmarcarlas como constitutivas también se arroja luz sobre la
+manera en que dichas exclusiones se ejecutan performativamente de manera
+permanente a través de toda una gama de prácticas sociales y
+epistemológicas, por medio de las cuales el campo se (re)produce.
+
+Por su parte, la promesa del marco de la contingencia es la de cultivar
+una sensibilidad ante las diversas formaciones, literaturas y
+conocimientos alternativos que, desde los inicios múltiples de los
+campos, siempre han existido a la sombra de los ámbitos mejor
+financiados, más visibles y lingüísticamente privilegiados. En este
+segundo registro, la historiografía de los estudios de medios podría
+ayudar a impedir una consecuencia no intencionada de algunas
+intervenciones críticas recientes. Al repetir ciertos clichés
+históricos, inclusive con la intención de tumbarlos, corremos el riesgo
+de dejar invisibilizadas muchas de las tradiciones heterodoxas y de
+oposición que existen en los campos, enterradas bajo el olvido crónico
+que se pretende revertir con los trabajos de esta sección. Mientras nos
+esforcemos por levantar una carpa más incluyente para el estudio de los
+medios, las historias de nuestros campos podrán ayudar a abonar el suelo
+bajo esa carpa. Ese trabajo apenas inicia.\footnote{Gracias a Karen Lee
+  Ashcraft por sus lúcidos comentarios sobre un borrador anterior de
+  esta introducción, a Raúl Fuentes Navarro por su orientación sobre la
+  formación en comunicación en las instituciones jesuitas de América
+  Latina y a Joëlle M. Cruz por sus sugerencias sobre la
+  contextualización de los estudios negros en Estados Unidos en relación
+  con la evolución intelectual en África.}
+
+
+
+
+
+
+
+\section{Bibliography}\label{bibliography}
+
+\begin{hangparas}{.25in}{1} 
+
+
+
+Alatas, Syed Farid. ``Academic Dependency and the Global Division of
+Labour in the Social Sciences''. \emph{Current Sociology} 51,
+n.\textsuperscript{o} 6 (2003):
+599--613.~\url{https://doi.org/10.1177/00113921030516003}.
+
+Alatas, Syed Hussein. ``Academic Imperialism''. Conferencia magistral
+pronunciada ante la Conferencia Regional para el Sureste de Asia de la
+Asociación Internacional de Sociología, reimpresa en \emph{Reflections
+on Alternative Discourses for Southeast Asia}, editado por Syed Farid
+Alatas, 32--46. Singapur: Centre for Advanced Studies, 2001.
+
+Alhassan, Amin. ``The Canonic Economy of Communication and Culture: The
+Centrality of the Postcolonial Margins''. \emph{Canadian Journal of
+Communication} 32, n.\textsuperscript{o} 1 (2007): 103--18.
+\url{https://doi.org/10.22230/cjc.2007v32n1a1803}.
+
+Alo, Oladimeji I. ``Contemporary Convergence in Sociological Theories:
+The Relevance of the African Thought System in Theory Formation''.
+\emph{Présence Africaine}, n.\textsuperscript{o} 126 (1983): 34--57.
+\\\hspace{.21in}\href{http://www.jstor.org/stable/3539695}{https://www.jstor.org/stable/24351389}.
+
+Altbach, Philip G. ``Servitude of the Mind? Education, Dependency, and
+Neocolonialism''. \emph{Teachers College Record} 79,
+n.\textsuperscript{o} 2 (1977):
+1--11.~\url{https://doi.org/10.1177/016146817707900201}.
+
+Asante, Godfried A. y Jenna N. Hanchey, eds. ``(Re)Theorizing
+Communication Studies from African Perspectives, Part I''. Número
+especial, \emph{Review of Communication} 21, n.\textsuperscript{o} 4
+(2021). \url{https://www.tandfonline.com/toc/rroc20/21/4}.
+
+Asante, Godfried A. y Jenna N. Hanchey, eds. ``(Re)Theorizing
+Communication Studies from African Perspectives, Part II''. Número
+especial, \emph{Review of Communication} 22, n.\textsuperscript{o} 1
+(2022). \url{https://www.tandfonline.com/toc/rroc20/22/1}.
+
+Ashcraft, Karen Lee y Peter Simonson. ``Gender, Work, and the History of
+Communication Research: Figures, Formations, and Flows''. En Simonson y
+Park, \emph{The International History}, 47--68.
+
+Averbeck-Lietz, Stefanie, ed. \emph{Kommunikationswissenschaft im
+Internationalen Vergleich: Transnationale Perspektiven}. Wiesbaden:
+Springer Fachmedien Wiesbaden, 2017.
+
+Ayish, Mohammad I. ``Communication Studies in the Arab World''. En
+Simonson y Park, \emph{The International History}, 474--93.
+
+Babini, Dominique. ``Toward a Global Open-Access Scholarly
+Communications System: A Developing Region Perspective''. En
+\emph{Reassembling Scholarly Communications: Histories, Infrastructures,
+and Global Politics of Open Access}, editado por Martin Paul Eve y
+Jonathan Gray, 331--41. Cambridge: MIT Press, 2020.
+\url{https://doi.org/10.7551/mitpress/11885.003.0033}.
+
+Barranquero, Alejandro y Juan Ramos-Martín. ``Luis Ramiro Beltrán and
+Theorizing Horizontal and Decolonial Communication''. En \emph{The
+Handbook of Global Interventions in Communication Theory}, editado por
+Yoshitaka Miike y Jing Yin, 298--309. Nueva York: Routledge, 2022.
+
+Becerril-García, Arianna. ``The Commercial Model of Academic Publishing
+Underscoring Plan S Weakens the Existing Open Access Ecosystem in Latin
+America''. \emph{LSE Impact} (blog), 20 de mayo de 2020.
+\href{https://blogs.lse.ac.uk/impactofsocialsciences/2020/05/20/the-commercial-model-of-academic-publishing-underscoring-plan-s-weakens-the-existing-open-access-ecosystem-in-latin-america/}{https://blogs.lse.ac.uk/impactofsocialsciences/2020/05/20/the-commercial-model-of-academic-publishing-underscoring-plan-s-weakens-the-existing-open-access-ecosystem-in-latin-america/}.
+
+Bell, Nova Gordon. ``Towards an Integrated Caribbean Paradigm in
+Communication Thought: Confronting Academic Dependence in Media
+Research''. En \emph{Re-imagining Communication in Africa and the
+Caribbean}, editado por Hopeton S. Dunn et al., 51--74. Cham, Suiza:
+Palgrave Macmillan. \url{https://doi.org/10.1007/978-3-030-54169-9_4}.
+
+Bernal Loaiza, Graciela, ed. \emph{50 años en la formación universitaria
+de comunicadores, 1967--2017: génesis, desarrollo y perspectivas}.
+Guadalajara: ITESO, 2018.
+
+Bhambra, Gurminder K. ``Postcolonial and Decolonial Dialogues''.
+\emph{Postcolonial Studies} 17, n.\textsuperscript{o} 2 (2014): 115--21.
+\url{https://doi.org/10.1080/13688790.2014.966414}.
+
+Boils Morales, Guillermo. ``Bibliografía sobre ciencias sociales en
+América Latina''. \emph{Revista Mexicana de Sociología} 40 (1978):
+349--78. .
+
+Brar, Dhanveer Singh y Ashwani Sharma. ``What is This `Black` in Black
+Studies? From Black British Cultural Studies to Black Critical Thought
+in UK Arts and Higher Education''. \emph{New Formations}
+n.\textsuperscript{o} 99 (2019): 88---109.
+\url{http://dx.doi.org/10.3898/NEWF:99.05.2019}.
+
+Chakravartty, Paula et al. ``\#CommunicationSoWhite''. \emph{Journal of
+Communication} 68, n.\textsuperscript{o} 2 (2018):
+254--66.~\url{https://doi.org/10.1093/joc/jqy003}.
+
+Chilisa, Bagele. \emph{Indigenous Research Methodologies.} Thousand
+Oaks, CA: SAGE, 2012.
+
+Collins, Patricia Hill. ``Learning from the Outsider Within: The
+Sociological Significance of Black Feminist Thought''. \emph{Social
+Problems} 33, n.\textsuperscript{o} 6 (1986): S14--S32.
+\url{https://doi.org/10.2307/800672}.
+
+Corradi, Juan Eugenio. ``Cultural Dependence and the Sociology of
+Knowledge: The Latin American Case''. En \emph{Ideology and Social
+Change in Latin America}, editado por June Nash, Juan Eugenio Corradi y
+Hobart Spaulding, Jr., 7--30. Nueva York: Gordon and Breach, 1977.
+
+Costa, Michelli Pereira da y Fernando César Lima Leite. ``Open Access in
+the World and Latin America: A Review Since the Budapest Open Access
+Initiative''. \emph{Transinformação} 28, n.\textsuperscript{o} 1 (2016):
+33--46. \url{https://doi.org/10.1590/2318-08892016002800003}.
+
+Crenshaw, Kimberlé. ``Demarginalizing the Intersection of Race and Sex:
+Black Feminist Critique of Antidiscrimination Doctrine, Feminist Theory,
+and Antiracist Politics''. \emph{University of Chicago Legal Forum} 1989
+(1989): 139--68.
+
+Cruz, Joëlle M. y Chigorzirim Utah Sodeke. ``Debunking Eurocentrism in
+Organizational Communication Theory: Marginality and Liquidities in
+Postcolonial Contexts''. \emph{Communication Theory} 31,
+n.\textsuperscript{o} 3 (2021): 528--48.
+\url{https://doi.org/10.1093/ct/qtz038}.
+
+Daniel, Jack L. \emph{Changing the Players and the Game: A Personal
+Account of the Speech Communication Association Black Caucus Origins}.
+Annandale, VA: Speech Communication Association, 1995.
+
+De Albuquerque, Afonso. ``The Institutional Basis of Anglophone Western
+Centrality''. \emph{Media, Culture \& Society} 43, n.\textsuperscript{o}
+1 (2021): 180--88. \url{https://doi.org/10.1177/0163443720957893}.
+
+De Albuquerque, Afonso y Thaiane Moreira de Oliveira. ``Thinking the
+Recolonial in Communication Studies: Reflections from Latin America''.
+\emph{Comunicação, Mídia, e Consumo} 18, n.\textsuperscript{o} 51
+(2021). \url{http://dx.doi.org/10.18568/CMC.V18I51.2521}.
+
+De Albuquerque, Afonso et al. ``Structural Limits to the
+De-Westernization of the Communication Field: The Editorial Board in
+Clarivate's \emph{JCR} System''. \emph{Communication, Culture \&
+Critique} 13, n.\textsuperscript{o} 2 (2020): 185--203.
+\url{https://doi.org/10.1093/ccc/tcaa015}.
+
+De Oliveira, Thaiane Moreira et al. ``Toward an Inclusive Agenda of Open
+Science for Communication Research: A Latin American Approach''.
+\emph{Journal of Communication} 71, n.\textsuperscript{o} 5 (2021):
+785--802. \url{https://doi.org/10.1093/joc/jqab025}.
+
+Demeter, Márton. \emph{Academic Knowledge Production and the Global
+South: Questioning Inequality and Under-Representation}. Cham, Suiza:
+Palgrave Macmillan, 2020.
+
+Demeter, Márton. ``The Winner Takes It All: International Inequality in
+Communication and Media Studies Today''. \emph{Journalism \& Mass
+Communication Quarterly} 96, n.\textsuperscript{o} 1 (2019): 37--59.
+\url{https://doi.org/10.1177\%2F1077699018792270}.
+
+Dorsten, Aimee-Marie. ``Women in Communication Research''. En \emph{The
+International Encyclopedia of Communication Theory and Philosophy},
+editado por Klaus Bruhn Jensen y Robert T. Craig. Walden, MA: Wiley
+Blackwell, 2016.
+\url{https://doi.org/10.1002/9781118766804.wbiect106}\emph{.}
+
+Dutta, Mohan et al. ``Decolonizing Open Science: Southern
+Interventions''. \emph{Journal of Communication} 71,
+n.\textsuperscript{o} 5 (2021): 803--26.
+\url{https://doi.org/10.1093/joc/jqab027}.
+
+Ekdale, Brian et al. ``Geographic Disparities in Knowledge Production: A
+Big Data Analysis of Peer-Reviewed Communication Publications from 1990
+to 2019''. \emph{International Journal of Communication} 16 (2022):
+2498--525. \url{https://ijoc.org/index.php/ijoc/article/view/18386}.
+
+Enghel, Florencia y Martín Becerra. ``Here and There: (Re)Situating
+Latin America in International Communication Theory''.
+\emph{Communication Theory} 28, n.\textsuperscript{o} 2 (2018): 111--30.
+\url{https://doi.org/10.1093/ct/qty005}.
+
+Fuentes-Navarro, Raúl. ``Institutionalization and Internationalization
+of the Field of Communication Studies in Mexico and Latin America''. En
+Simonson y Park, \emph{The International History}, 325--45.
+
+Ganter, Sarah Ann y Félix Ortega. ``The Invisibility of Latin American
+Scholarship in European Media and Communication Studies: Challenges and
+Opportunities of De-Westernization and Academic Cosmopolitanism''.
+\emph{International Journal of Communication} 13 (2019): 68--91.
+\url{https://ijoc.org/index.php/ijoc/article/view/8449}.
+
+García-Jiménez, Leonarda y Esperanza Herrero. ``Narrating the Field
+Through Some Female Voices: Women's Experiences and Stories in
+Academia''. \emph{Communication Theory} 32, n.\textsuperscript{o} 2
+(2022): 289--97. \url{https://doi.org/10.1093/ct/qtac002}.
+
+García-Jiménez, Leonarda y Peter Simonson, eds. Sección especial sobre
+``Female Roles, Contributions, and Invisibilities in the Field of
+Communication''. \emph{Revista Mediterránea de Comunicación} 12,
+n.\textsuperscript{o} 2 (2021): 17--113.
+\url{https://doi.org/10.14198/MEDCOM.20163}.
+
+Gareau, Frederick H. ``Another Type of Third World Dependency: The
+Social Sciences''. \emph{International Sociology} 3,
+n.\textsuperscript{o} 2 (1988): 171--78.
+\url{https://doi.org/10.1177/026858088003002005}.
+
+Glück, Antje. ``De-Westernization and Decolonization in Media Studies''.
+En \emph{Oxford Research Encyclopedia of Communication}, editado por Jon
+Nussbaum. Oxford: Oxford University Press, 2018.
+\url{https://doi.org/10.1093/acrefore/9780190228613.013.898}
+
+Haraway, Donna. ``Situated Knowledges: The Science Question in Feminism
+and the Privilege of Partial Perspective''. \emph{Feminist Studies} 14,
+n.\textsuperscript{o} 3 (1988): 575--99.
+\url{https://doi.org/10.2307/3178066}.
+
+Harris, Joseph E., ed. \emph{Global Dimensions of the African Diaspora}.
+Segunda edición. Washington: Howard University Press, 1993.
+
+Heilbron, Johan, Nicolas Guilhot y Laurent Jeanpierre. ``Toward a
+Transnational History of the Social Sciences''. \emph{Journal of the
+History of the Behavioral Sciences} 44, n.\textsuperscript{o} 2 (2008):
+146--60. \url{https://doi.org/10.1002/jhbs.20302}.
+
+Heilbron, Johan, Gustavo Sorá y Thibaud Boncourt, eds. \emph{The Social
+and Human Sciences in Global Power Relations}. Cham, Suiza: Palgrave
+Macmillan, 2018. \url{https://doi.org/10.1007/978-3-319-73299-2}.
+
+Henriques, Julian y David Morley, eds. \emph{Stuart Hall: Conversations,
+Projects and Legacies.} Londres: Goldsmiths Press, 2017.
+
+Heram, Yamila y Santiago Gándara. \emph{Pioneras en los estudios de
+comunicación}. Buenos Aires: TeseoPress, 2021.
+
+Hornsby, Alton. ``Molefi Kete Asante/Arthur Lee Smith Jr. (1942-- )''.
+\emph{BlackPast}, 20 julio 2007.
+\href{https://www.blackpast.org/african-american-history/asante-molefi-kete-arthur-lee-smith-jr-1942-2/}{https://www.blackpast.org/african-american-history/asante-molefi-kete-arthur-lee-smith-jr-1942-2/}.
+
+Jackson II, Ronald L. y Sonja M. Brown Givens. \emph{Black Pioneers in
+Communication Research}. Thousand Oaks, CA: SAGE, 2016.
+
+Jansen, Sue Curry. ``\,`The Future is Not What it Used to Be': Gender,
+History, and Communication Studies''. \emph{Communication Theory} 3,
+n.\textsuperscript{o} 2 (1993): 136--48.
+\url{https://doi.org/10.1111/j.1468-2885.1993.tb00063.x}.
+
+Karam, Tanius. ``Tensiones para un giro decolonial en el pensamiento
+comunicológico: abriendo la discusión''. \emph{Chasqui. Revista
+Latinoamericana de Comunicación} 133 (2016), 247--64.
+\url{https://www.redalyc.org/articulo.oa?id=16057383017}.
+
+Klaus, Elisabeth y Josef Seethaler, eds. \emph{What Do We Really Know
+about Herta Herzog?} Fráncfort del Meno: Peter Lang, 2016.
+
+Knöchelmann, Marcel. ``The Democratisation Myth: Open Access and the
+Solidification of Epistemic Injustices''. \emph{Science \& Technology
+Studies} 34, n.\textsuperscript{o} 2 (2021): 65--89.
+\url{https://doi.org/10.23987/sts.94964}.
+
+Kowaltowski, Alicia, Michel Naslavsky y Mayana Zatz. ``Open Access Is
+Closed to Middle-Income Countries''. \emph{Times Higher Education}, 14
+abril 2022.
+\url{https://www.timeshighereducation.com/opinion/open-access-closed-middle-income-countries}.
+
+Lander, Edgardo, ed. \emph{La colonialidad del saber: eurocentrismo y
+ciencias sociales}. Buenos Aires: CLASCO, 2000.
+
+Löblich, Maria. ``German \emph{Publizistikwissenschaft} and Its Shift
+from a Humanistic to an Empirical Social Science''. \emph{European
+Journal of Communication} 22, n.\textsuperscript{o} 1 (2007): 69--88.
+\url{https://doi.org/10.1177\%2F0267323107073748}.
+
+Magallanes-Blanco, Claudia. ``Media and Communication Studies: What is
+there to Decolonize?''~\emph{Communication Theory} 32,
+n.\textsuperscript{o} 2 (2022):
+267--72.~\url{https://doi.org/10.1093/ct/qtac003}.
+
+Makoni, Sinfree y Katherine A. Masters. ``Decolonization and
+Globalization in Communication Studies''.~En \emph{Oxford Research
+Encyclopedia of Communication}, editado por Jon Nussbaum. Oxford: Oxford
+University Press, 2021.
+\url{https://doi.org/10.1093/acrefore/9780190228613.013.1152}.
+
+Martínez Terrero, S.J., José. "Los jesuitas de Venezuela en la
+comunicación social''. \emph{Temas de Comunicación. Universidad Católica
+Andrés Bello} 1 (1992): 31--46.
+
+Mayer, Vicki et al. ``How Do We Intervene in the Stubborn Persistence of
+Patriarchy in Communication Scholarship?'' En \emph{Interventions:
+Communication Theory and Practice}, editado por D. Travers Scott y
+Adrienne Shaw, 53--64. Nueva York: Peter Lang, 2018.
+
+Merton, Robert K. ``The Matthew Effect in Science, II: Cumulative
+Advantage and the Symbolism of Intellectual Property''. \emph{Isis} 79,
+n.\textsuperscript{o} 4 (1988): 606--23. .
+
+Meyen, Michael. ``IAMCR on the East-West Battlefield: A Study on the
+GDR's Attempts to Use the Association for Diplomatic Purposes''.
+\emph{International Journal of Communication} 8 (2014): 2071--89.
+\url{https://ijoc.org/index.php/ijoc/article/view/2443}.
+
+Miike, Yoshitaka y Jing Yin, eds. \emph{The Handbook of Global
+Interventions in Communication Theory}. Nueva York: Routledge, 2022.
+
+Mills, Charles W. \emph{The Racial Contract}. Ithaca, NY: Cornell
+University Press, 1997.
+
+Minielli, Maureen C. et al., eds. \emph{Media and Public Relations
+Research in Post-Socialist Countries}. Lanham, MD: Lexington Books,
+2021.
+
+Morris III, Charles E. y Catherine Helen Palczewski. ``Sexing
+Communication: Hearing, Feeling, Remembering Sex/Gender and Sexuality in
+the NCA''. En \emph{A Century of Communication Studies: The Unfinished
+Conversation}, editado por Pat J. Gehrke y William M. Keith, 128--65.
+Nueva York: Routledge, 2015.
+
+Mukherjee, Roopali. ``Of Experts and Tokens: Mapping a Critical Race
+Archaeology of Communication''. \emph{Communication, Culture and
+Critique} 13, n.\textsuperscript{o} 2 (2020): 152--67.
+\url{https://doi.org/10.1093/ccc/tcaa009}.
+
+Murthy, C.S.H.N. ``Unbearable Lightness? Maybe Because of the
+Irrelevance/Incommensurability of Western Theories? An Enigma of Indian
+Media Research''. \emph{International Communication Gazette} 78,
+n.\textsuperscript{o} 7 (2016): 636--42.
+\url{https://doi.org/10.1177/1748048516655713}.
+
+Musa, Mohammad. ``Looking Backward, Looking Forward: African Media
+Studies and the Question of Power''. \emph{Journal of African Media
+Studies} 1, n.\textsuperscript{o} 1 (2009): 35--54.
+\url{https://doi.org/10.1386/jams.1.1.35_1}.
+
+Mutsvairo, Bruce et al. ``Different, But the Same: How the Global South
+is Challenging the Hegemonic Epistemologies and Ontologies of
+Westernized/Western-Centric Journalism Studies''. \emph{Journalism \&
+Mass Communication Quarterly} 98, n.\textsuperscript{o} 4 (2021):
+996--1016. \url{https://doi.org/10.1177\%2F10776990211048883}.
+
+Mutua, Eddah M., Bala A. Musa y Charles Okigbo. ``(Re)visiting African
+Communication Scholarship: Critical Perspectives on Research and
+Theory''. \emph{Review of Communication} 22, n.\textsuperscript{o} 1
+(2022): 76--92. \url{https://doi.org/10.1080/15358593.2021.2025413}.
+
+Ng, Eve y Paula Gardner. ``Location, Location, Location? The Politics of
+ICA Conference Venues''. \emph{Communication, Culture \& Critique} 13,
+n.\textsuperscript{o} 2 (2020): 265--69.
+\url{https://doi.org/10.1093/ccc/tcaa006}.
+
+Ng, Eve, Khadijah Costley White y Anamik Saha. ``\#CommunicationSoWhite:
+Race and Power in the Academy and Beyond''. \emph{Communication, Culture
+\& Critique} 13, n.\textsuperscript{o} 2 (2020): 143--51.
+\url{https://doi.org/10.1093/ccc/tcaa011}.
+
+Peruško, Zrinjka y Dina Vozab. ``The Field of Communication in Croatia:
+Toward a Comparative History of Communication Studies in Central and
+Eastern Europe''. En Simonson y Park, \emph{The International History},
+213--34.
+
+Phillipson, Robert. \emph{Linguistic Imperialism Continued.} Londres:
+Routledge, 2009.
+
+Phillipson, Robert y Tove Skutnabb-Kangas. ``Communicating in `Global
+English': Promoting Linguistic Human Rights or Complicit with Linguicism
+and Linguistic Imperialism''. En \emph{The Handbook of Global
+Interventions in Communication Theory}, editado por Yoshitaka Miike y
+Jing Yin, 425--39. Nueva York: Routledge, 2022.
+
+Pooley, Jefferson. ``The New History of Mass Communication Research''.
+En \emph{The History of Media and Communication Research: Contested
+Memories}, editado por David W. Park y Jefferson Pooley, 43--69. Nueva
+York: Peter Lang, 2008.
+
+Pooley, Jefferson y David W. Park. ``Communication Research''. En
+\emph{The Handbook of Communication History}, editado por Peter Simonson
+et al., 76--90. Nueva York: Routledge, 2013.
+
+Poynder, Richard. ``Open Access: Could Defeat Be Snatched from the Jaws
+of Victory?'' \emph{Open and Shut}?, 18 noviembre 2019.
+\href{https://poynder.blogspot.com/2019/11/open-access-could-defeat-be-snatched.html}{https://poynder.blogspot.com/2019/11/open-access-could-defeat-be-snatched.html}.
+
+Richter, Carola y Hanan Badr. ``Die Entwicklung der
+Kommunikationsforschung und -wissenschaft in Ägypten. Transnationale
+Zirkulationen im Kontext von Kolonialismus und Globalisierung''. En
+\emph{Kommunikationswissenschaft im Internationalen Vergleich:
+Transnationale Perspektiven}, editado por Stefanie Averbeck-Lietz,
+383--408. Wiesbaden: Springer Fachmedien Wiesbaden, 2017.
+
+Roby, Pamela. ``Women and the ASA: Degendering Organizational Structures
+and Processes, 1964--1974''. \emph{The American Sociologist} 23 (1992):
+18--48. \url{https://doi.org/10.1007/BF02691878}.
+
+Rodríguez, Clemencia et al., eds. \emph{Mujeres de la comunicación.}
+Bogotá: Friedrich Ebert Stiftung, 2020.
+
+Rojas, Fabio. \emph{From Black Power to Black Studies: How a Radical
+Social Movement Became an Academic Discipline}. Baltimore: Johns Hopkins
+University Press, 2007.
+
+Rossiter, Margaret W. ``The Matthew Matilda Effect in Science''.
+\emph{Social Studies of Science} 23, n.\textsuperscript{o} 2 (1993):
+325--41. \url{https://doi.org/10.1177/030631293023002004}.
+
+Rotger, Neus, Diana Roig-Sanz y Marta Puxan-Oliva. ``Introduction:
+Towards a Cross-Disciplinary History of the Global in the Humanities and
+Social Sciences''. \emph{Journal of Global History} 14,
+n.\textsuperscript{o} 3 (2019): 325-\/--34.
+
+Sánchez Villaseñor, S.J., Luis. \emph{José Sánchez Villaseñor, S.J.,
+1911/1961: notas biográficas}. Guadalajara: ITESO, 1997.
+
+Sapiro, Gisèle, Marco Santoro y Patrick Baert, eds. \emph{Ideas on the
+Move in the Social Sciences and Humanities: The International
+Circulation of Paradigms and Theorists}. Cham, Suiza: Springer, 2020.
+\url{https://doi.org/10.1007/978-3-030-35024-6}.
+
+Schäfer, Fabian. \emph{Public Opinion, Propaganda, Ideology: Theories on
+the Press and Its Social Function in Interwar Japan, 1918--1937}.
+Leiden: Brill, 2012.
+
+Schöpf, Caroline M. ``The Coloniality of Global Knowledge Production:
+Theorizing the Mechanisms of Academic Dependency''. \emph{Social
+Transformations} 8, n.\textsuperscript{o} 2 (2020): 5--46.
+\url{https://doi.org/10.1111/johs.12355}.
+
+Shearer, Kathleen y Arianna Becerril-García. ``Decolonizing Scholarly
+Communications through Bibliodiversity''. \emph{Zenodo}, 7 de enero de
+2021. \url{https://doi.org/10.5281/zenodo.4423997}.
+
+Sierra Caballero Francisco y Claudio Maldonado Rivera, eds.
+\emph{Comunicación, decolonialidad y Buen Vivir}. Quito: Ediciones
+CIESPAL, 2016.
+
+Sierra Caballero, Francisco, Claudio Maldonado Rivera y Carlos del
+Valle. ``Nueva comunicología latinoamericana y giro decolonial:
+continuidades y rupturas''. \emph{Cuadernos de Información y
+Comunicación} 25 (2020): 225--42.
+\url{http://dx.doi.org/10.5209/ciyc.68236}.
+
+Simonson, Peter y David W. Park, eds. \emph{The International History of
+Communication Study}. Nueva York: Routledge, 2016.
+
+Simonson, Peter y David W. Park. Introducción ``On the History of
+Communication Study'' a \emph{The International History of Communication
+Study}, editado por Peter Simonson y David W. Park, 1--22. Nueva York:
+Routledge, 2016.
+
+Skjerdal, Terje y Keyan Tomaselli. ``Trajectories of Communication
+Studies in Sub-Saharan Africa''. En Simonson y Park, \emph{The
+International History}, 455--73.
+
+Smith, Audrey C. et al. ``Assessing the Effect of Article Processing
+Charges on the Geographic Diversity of Authors Using Elsevier's `Mirror
+Journal' System''. \emph{Quantitative Science Studies} 2,
+n.\textsuperscript{o} 4 (2021): 1123--43.
+\url{https://doi.org/10.1162/qss_a_00157}.
+
+Solovey, Mark y Christian Dayé, eds. \emph{Cold War Social Science:
+Transnational Entanglements}. Cham, Suiza: Palgrave Macmillan, 2021.
+\url{https://doi.org/10.1007/978-3-030-70246-5}.
+
+Suzina, Ana Cristina. ``English as \emph{Lingua Franca.} Or the
+Sterilisation of Scientific Work''. \emph{Media, Culture \& Society} 43,
+n.\textsuperscript{o} 1 (2021): 171--79.
+\url{https://doi.org/10.1177\%2F0163443720957906}.
+
+Tenzin, Jinba y Chenpang Lee. ``Are We Still Dependent? Academic
+Dependency Theory after 20 Years''. \emph{Journal of Historical
+Sociology} 35 (2022): 2--13. \url{https://doi.org/10.1111/johs.12355}.
+
+Torrico Villanueva, Erick R. \emph{La comunicación: pensada desde
+América Latina (1960--2009)}. Salamanca: Comunicación Social, 2016.
+
+Torrico Villanueva, Erick R. ``La \emph{comunicología de liberación},
+otra fuente para el pensamiento decolonial: una aproximación a las ideas
+de Luis Ramiro Beltrán''. \emph{Quórum Académico} 7,
+n.\textsuperscript{o} 1 (2010): 65--77.
+\url{http://revistas.luz.edu.ve/index.php/quac/article/viewFile/5046/4901}.
+
+Towns, Armond. ``Against the `Vocation of Autopsy': Blackness and/in US
+Communication Histories''. \emph{History of Media Studies} 1 (2021).
+\url{https://doi.org/10.32376/d895a0ea.89f81da7}.
+
+Trepte, Sabine y Laura Loths. ``National and Gender Diversity in
+Communication: A Content Analysis of Six Journals Between 2006 and
+2016''. \emph{Annals of the International Communication Association} 44,
+n.\textsuperscript{o} 4 (2020): 289--311.
+\url{https://doi.org/10.1080/23808985.2020.1804434}.
+
+Turner, James E. ``Foreword: Africana Studies and Epistemology, a
+Discourse in the Sociology of Knowledge''. En \emph{The Next Decade:
+Theoretical and Research Issues in Africana Studies}, editado por James
+E. Turner, v--xxv. Ithaca, NY: Cornell University Africana Studies and
+Research Center, 1984.
+
+Vanderstraeten, Raf y Joshua Eykens. ``Communalism and Internationalism:
+Publication Norms and Structures in International Social Science''.
+\emph{Serendipities: Journal for the Sociology and History of the Social
+Sciences} 3, n.\textsuperscript{o} 1 (2018): 14--28.
+\url{https://doi.org/10.25364/11.3:2018.1.2}.
+
+Vassallo de Lopes, Maria Immacolata y Richard Romancini. ``History of
+Communication Study in Brazil: The Institutionalization of an
+Interdisciplinary Field''. En Simonson y Park, \emph{The International
+History}, 346--66.
+
+Vroons, Erik. ``Communication Studies in Europe: A Sketch of the
+Situation about 1955''. \emph{Gazette} 67, n.\textsuperscript{o} 6
+(2005): 495--522.
+\href{file:///C:/Users/simonsop/Downloads/https/doi.org/10.1177/0016549205057541}{https//doi.org/10.1177/0016549205057541}.
+
+Wagman, Ira. ``Remarkable Invention!'' \emph{History of Media Studies} 1
+(2021). \url{https://doi.org/10.32376/d895a0ea.ef8f548f}.
+
+Waisbord, Silvio. ``What is Next for De-Westernizing Communication
+Studies?'' \emph{Journal of Multicultural Discourses}. Publicación
+anticipada en línea (2022).
+\url{https://doi.org/10.1080/17447143.2022.2041645}.
+
+Wang, Xinyi et al. ``Gendered Citation Practices in the Field of
+Communication''. \emph{Annals of the International Communication
+Association} 45, n.\textsuperscript{o} 2 (2021): 134--53.
+\url{https://doi.org/10.1080/23808985.2021.1960180}.
+
+White, Derrick E. \emph{The Challenge of Blackness: The Institute of the
+Black World and Political Activism in the 1970s}. Gainesville:
+University Press of Florida, 2011.
+
+Wiedemann, Thomas. ``Practical Orientation as a Survival Strategy: The
+Development of \emph{Publizistikwissenschaft} by Walter Hagemann''. En
+Simonson y Park, \emph{The International History}, 109--29.
+
+Wiedemann, Thomas, Michael Meyen e Iván Lacasa-Mas. ``100 Years
+Communication Study in Europe: Karl Bücher's Impact on the Discipline's
+Reflexive Project''. \emph{Studies in Communication and Media} 7,
+n.\textsuperscript{o} 1 (2018).
+
+Wilkinson, Jeffrey S., William R. Davie y Angeline J. Taylor.
+``Journalism Education in Black and White: A 50-Year Journey Toward
+Diversity''. \emph{Journalism \& Mass Communication Educator} 75,
+n.\textsuperscript{o} 4 (2020): 362--74.
+\url{https://doi.org/10.1177\%2F1077695820935324}.
+
+Willems, Wendy. ``Provincializing Hegemonic Histories of Media and
+Communication Studies: Toward a Genealogy of Epistemic Resistance in
+Africa''. \emph{Communication Theory} 24, n.\textsuperscript{o} 4
+(2014): 415--34. \url{https://doi.org/10.1111/comt.12043}.
+
+Willems, Wendy. ``Unearthing Bundles of Baffling Silences: The Entangled
+and Racialized Global Histories of Media and Media Studies''.
+\emph{History of Media Studies} 1 (2021).
+\url{https://doi.org/10.32376/d895a0ea.52801916}.
+
+Wynter, Sylvia. ``The Ceremony Must be Found: After Humanism''.
+\emph{boundary 2} 12, n.\textsuperscript{o} 3/13, n.\textsuperscript{o}
+1 (1984): 19--70. \url{https://doi.org/10.2307/302808}.
+
+Zarowsky, Mariano. ``Communication Studies in Argentina in the 1960s and
+`70s: Specialized Knowledge and Intellectual Intervention Between the
+Local and the Global''. \emph{History of Media Studies} 1 (2021).
+\url{https://doi.org/10.32376/d895a0ea.42a0a7aa}.
+
+Zarowsky, Mariano. \emph{Del laboratorio chileno a la
+comunicación--mundo. Un itinerario intelectual} \emph{de Armand
+Mattelart}. Buenos Aires: Biblos, 2013.
+
+
+
+\end{hangparas}
+
+
+\end{document}
