@@ -1,0 +1,1536 @@
+% see the original template for more detail about bibliography, tables, etc: https://www.overleaf.com/latex/templates/handout-design-inspired-by-edward-tufte/dtsbhhkvghzz
+
+\documentclass{tufte-handout}
+
+%\geometry{showframe}% for debugging purposes -- displays the margins
+
+\usepackage{amsmath}
+
+\usepackage{hyperref}
+
+\usepackage{fancyhdr}
+
+\usepackage{hanging}
+
+\hypersetup{colorlinks=true,allcolors=[RGB]{97,15,11}}
+
+\fancyfoot[L]{\emph{History of Media Studies}, vol. 2, 2022}
+
+
+% Set up the images/graphics package
+\usepackage{graphicx}
+\setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
+\graphicspath{{graphics/}}
+
+\title[Matrices y vertientes de pensamiento]{Matrices y vertientes de pensamiento sobre los medios indígenas en América Latina} % longtitle shouldn't be necessary
+
+% The following package makes prettier tables.  We're all about the bling!
+\usepackage{booktabs}
+
+% The units package provides nice, non-stacked fractions and better spacing
+% for units.
+\usepackage{units}
+
+% The fancyvrb package lets us customize the formatting of verbatim
+% environments.  We use a slightly smaller font.
+\usepackage{fancyvrb}
+\fvset{fontsize=\normalsize}
+
+% Small sections of multiple columns
+\usepackage{multicol}
+
+% Provides paragraphs of dummy text
+\usepackage{lipsum}
+
+% These commands are used to pretty-print LaTeX commands
+\newcommand{\doccmd}[1]{\texttt{\textbackslash#1}}% command name -- adds backslash automatically
+\newcommand{\docopt}[1]{\ensuremath{\langle}\textrm{\textit{#1}}\ensuremath{\rangle}}% optional command argument
+\newcommand{\docarg}[1]{\textrm{\textit{#1}}}% (required) command argument
+\newenvironment{docspec}{\begin{quote}\noindent}{\end{quote}}% command specification environment
+\newcommand{\docenv}[1]{\textsf{#1}}% environment name
+\newcommand{\docpkg}[1]{\texttt{#1}}% package name
+\newcommand{\doccls}[1]{\texttt{#1}}% document class name
+\newcommand{\docclsopt}[1]{\texttt{#1}}% document class option name
+
+
+\begin{document}
+
+\begin{titlepage}
+
+\begin{fullwidth}
+\noindent\LARGE\emph{Exclusions in the History of Media studies
+} \hspace{25mm}\includegraphics[height=1cm]{logo3.png}\\
+\noindent\hrulefill\\
+\vspace*{1em}
+\noindent{\Huge{Matrices y vertientes de pensamiento sobre los medios indígenas en América Latina\par}}
+
+\vspace*{1.5em}
+
+\noindent\LARGE{María Magdalena Doyle} \href{https://orcid.org/0000-0002-1847-3514}{\includegraphics[height=0.5cm]{orcid.png}}\par}\marginnote{\emph{María Magdalena Doyle, ``Matrices y vertientes de pensamiento sobre los medios indígenas en América Latina,'' \emph{History of Media Studies} 2 (2022), \href{https://doi.org/10.32376/d895a0ea.292b1261}{https://doi.org/ 10.32376/d895a0ea.292b1261}.} \vspace*{0.75em}}
+\vspace*{0.5em}
+\noindent{{\large\emph{National University of Córdoba}, \href{mailto:magdalenadoyle@gmail.com}{magdalenadoyle@gmail.com}\par}} \marginnote{\href{https://creativecommons.org/licenses/by-nc/4.0/}{\includegraphics[height=0.5cm]{by-nc.png}}}
+
+% \vspace*{0.75em} % second author
+
+% \noindent{\LARGE{<<author 2 name>>}\par}
+% \vspace*{0.5em}
+% \noindent{{\large\emph{<<author 2 affiliation>>}, \href{mailto:<<author 2 email>>}{<<author 2 email>>}\par}}
+
+% \vspace*{0.75em} % third author
+
+% \noindent{\LARGE{<<author 3 name>>}\par}
+% \vspace*{0.5em}
+% \noindent{{\large\emph{<<author 3 affiliation>>}, \href{mailto:<<author 3 email>>}{<<author 3 email>>}\par}}
+
+\end{fullwidth}
+
+\vspace*{1em}
+
+
+\newthought{\hypertarget{resumen}{%
+\section{Resumen}\label{resumen}}
+Este artículo analiza} la trayectoria investigativa que, dentro del campo
+científico sobre comunicación en América Latina, se ha ido configurando
+en relación con las prácticas de comunicación que diversos grupos
+indígenas han desarrollado desde sus propios medios en distintas
+regiones. A partir de la categoría epistémica ``matrices de
+pensamiento'', se abordan las trayectorias de los estudios sobre
+comunicación indígena. Con ello, se da cuenta del modo en que los
+abordajes y sus marcos conceptuales se fueron emplazando en los
+distintos momentos históricos en los que emergieron, se actualizaron, se
+adaptaron o se enriquecieron, de forma que la controversia teórica se
+engarza con debates políticos sustantivos respecto de las identidades
+indígenas y de los medios.
+
+\hypertarget{abstract}{%
+\section{Abstract}\label{abstract}}
+
+This article analyzes the investigative trajectory that, within the
+scientific field on communication in Latin America, has been configured
+in relation to the communication practices that different indigenous
+groups have developed from their own media in different regions. From
+the epistemic category "matrices of thought", the trajectories of
+studies on indigenous communication are analyzed. Thus, it 
+
+\enlargethispage{2\baselineskip}
+
+\vspace*{2em}
+
+\noindent{\emph{History of Media Studies}, vol. 2, 2022}
+
+
+
+
+ \end{titlepage}
+
+\noindent shows the way
+in which the approaches and their conceptual frameworks were located in
+the different historical moments in which they emerged, were updated,
+adapted or enriched, so that the theoretical controversy is linked with
+substantive political debates referred to indigenous and media
+identities.
+
+\vspace*{2em}
+
+\hypertarget{introduccin}{%
+\section{Introducción}\label{introduccin}}
+
+\newthought{A partir del año 2000}, hemos asistido en América Latina a una creciente
+multiplicación de investigaciones que, desde el campo de los estudios
+sobre comunicación, analizan los medios y las prácticas de comunicación
+mediatizada de los pueblos indígenas de esta región del continente, en
+general vinculando esas prácticas a diversos procesos de luchas por
+derechos que protagonizan esos pueblos. Sin embargo, la trayectoria
+investigativa sobre estas experiencias y prácticas se remonta a muchas
+décadas atrás, al menos hasta la década de los setenta, y los modos de
+abordaje, enfoques teóricos y conceptualizaciones se han ido
+transformando y diversificando a lo largo de los años.
+
+La propuesta de este artículo es reconstruir y analizar el tejido de
+significados y referencias de que está hecha esa trayectoria conceptual,
+emplazando sus reconfiguraciones en una doble inscripción: por un lado,
+en los tiempos de las matrices de pensamiento que fueron delineando de
+modo más general al ``campo científico'' de la comunicación en América
+Latina\footnote{Maria Immacolata Vassallo de Lopes, ``El campo de la
+  comunicación: sobre su estatuto disciplinar'', \emph{Oficios
+  Terrestres}, n.º 7 (La Plata: UNLP): 74-83,
+  \url{http://sedici.unlp.edu.ar/handle/10915/47380}.} y, por otro,
+partimos de asumir la intrínseca articulación de esa historia conceptual
+con los tiempos largos\footnote{Aníbal Ford, \emph{Navegaciones.
+  Comunicación, cultura y crisis} (Buenos Aires: Amorrortu, 1994).} de
+los procesos políticos/económicos/socioculturales de transfiguración de
+las identificaciones vinculadas a la indigenidad en este continente. En
+ese sentido, proponemos analizar el movimiento de gestación de los
+desarrollos, las conceptualizaciones sobre la comunicación indígena
+mediática, estableciendo vínculos con los contextos históricos en que
+ciertas marcas de la indigenidad se activaron o no, y con las
+disputas/tensiones que esas marcas vehiculizaron.
+
+En términos de nuestra propuesta analítica, organizamos esta
+sistematización en tres periodos diferenciados, asumiendo que toda
+clasificación resulta en algún punto arbitraria, pero a la vez permite
+ordenar y reconocer continuidades y rupturas en esta trayectoria
+investigativa:
+
+\begin{itemize}
+\item
+  Primer periodo: abarca textos publicados entre inicios de 1970 y
+  mediados de los ochenta. Durante estos años se produjeron los primeros
+  trabajos que abordaron el vínculo entre poblaciones indígenas y medios
+  educativos, y populares. Estos análisis están signados por la tensión
+  teórica y política entre desarrollo y dependencia, resultando de ello
+  dos tipos de enfoques en los trabajos: algunos centrados en dar cuenta
+  de la capacidad de esos medios para mejorar los niveles de vida de la
+  población (enfoque del desarrollo), y otros analizando la capacidad de
+  esos medios para movilizarles políticamente y dotarles de voz (enfoque
+  de la dependencia).
+\item
+  Segundo periodo: abarca trabajos publicados entre la segunda mitad de
+  la década de los ochenta y la primera mitad de los noventa. Como
+  veremos, este constituye un periodo bisagra tanto de los análisis de
+  la etapa anterior como de las primeras reflexiones sobre las
+  especificidades culturales de los usos de la tecnología en el marco de
+  la puesta en foco de las identidades étnicas. Esta etapa marca el
+  inicio del proceso de profesionalización del campo de la comunicación
+  en general, y ello incide en las condiciones de enunciación de los
+  estudios sobre esta temática vinculada a medios indígenas (por
+  ejemplo, se comienzan a producir tesis de posgrado sobre el tema).
+\item
+  Tercer periodo: abarca trabajos publicados entre la segunda mitad de
+  la década de los noventa y hasta la actualidad. En este periodo,
+  encontramos más claramente delineadas dos vertientes en los estudios
+  sobre esta temática: por un lado, análisis que se focalizan en los
+  usos de las tecnologías de la comunicación digitales por pueblos
+  indígenas y exploran las potencialidades democratizadoras de esas
+  tecnologías y, por otro, trabajos que exploran la complejidad de las
+  articulaciones entre luchas políticas, procesos de identificación
+  étnicas y medios de comunicación, atendiendo tanto a los marcos de
+  desigualdades expresivas como a las mutuas y complejas relaciones de
+  performatividad entre esas tres dimensiones (identidades, medios y
+  política).
+\end{itemize}
+
+Este artículo, elaborado centralmente a partir de la sistematización y
+análisis bibliográfico sobre el tema, es parte de la investigación que
+desarrollamos en el Doctorado en Antropología en la Universidad de
+Buenos Aires\footnote{Magdalena Doyle, ``El derecho a la comunicación de
+  los pueblos originarios. Límites y posibilidades de las
+  reivindicaciones indígenas en relación al sistema de medios de
+  comunicación en Argentina'' (tesis doctoral en Antropología,
+  Universidad de Buenos Aires, 2017).} y se inscribe también en una
+trayectoria de colaboración activista en emisoras de pueblos indígenas
+en Argentina.
+
+Para este trabajo en particular, relevamos materiales que constituyen el
+corpus de análisis, conformado de acuerdo a los siguientes criterios:
+artículos publicados en revistas científicas y libros que den cuenta de
+investigaciones sobre prácticas, medios, experiencias de comunicación
+indígena en América Latina; tesis de posgrado publicadas sobre esa
+temática; ponencias que son parte de actas de congresos; todo ello en un
+recorte de tiempo que abarca los tres periodos que enunciamos
+previamente. Si bien asumimos que, como todo corpus, posee un grado de
+arbitrariedad, procuramos construir uno lo suficientemente amplio y
+diverso que permita dar cuenta de las trayectorias, vertientes y
+rupturas en el abordaje sobre esta temática.
+
+Antes de avanzar en el análisis de esos trabajos, nos interesa definir
+brevemente la categoría de matrices de pensamiento, que constituye el
+punto de partida y el marco de este abordaje.
+
+\hypertarget{sobre-matrices-y-vertientes-de-pensamiento}{%
+\section{Sobre matrices y vertientes de
+pensamiento}\label{sobre-matrices-y-vertientes-de-pensamiento}}
+
+\enlargethispage{\baselineskip}
+
+Las grandes corrientes de las ciencias humanísticas y sociales, afirma
+la socióloga argentina Alcira Argumedo, están intrínsecamente vinculadas
+a proyectos históricos y políticos de los momentos en que emergen y se
+desarrollan. Y la configuración del campo científico de la comunicación
+no ha sido una excepción.
+
+Al interior del pensamiento sobre lo histórico y lo social, afirma
+Argumedo, existe una multiplicidad de corrientes teóricas. El carácter
+complejo y polémico de dicho campo se debe a la forma en que el mismo se
+constituye y reconstituye en una relación históricamente condicionada
+con los procesos políticos-culturales, ``como expresión de visiones del
+mundo que impregnan los más diversos aspectos del acontecer de las
+sociedades''.\footnote{Alcira Argumedo, \emph{Los silencios y las voces
+  en América Latina. Notas sobre el pensamiento nacional y popular}
+  (Buenos Aires: Ediciones del Pensamiento Nacional, 2004).} A su vez,
+ello no implica plantear dicotomías que imposibiliten el diálogo entre
+las distintas corrientes de pensamiento, ya que estas se vertebran en
+marcos más amplios, en concepciones culturales y modos de percibir el
+mundo que les otorgan sus significaciones esenciales al margen de sus
+especificidades, lo cual da la posibilidad de encontrar puntos de
+acuerdo y líneas de continuidad. Para el análisis de esa compleja
+configuración de las trayectorias investigativas en ciencias sociales y
+humanas, Argumedo propone la categoría de matrices de pensamiento,
+entendiéndolas como ``la articulación de un conjunto de categorías y
+valores constitutivos que conforman la trama lógico conceptual básica y
+establecen los fundamentos de una determinada corriente de
+pensamiento''.\footnote{Ibíd., 79.} Una matriz de pensamiento define, de
+una u otra manera, una concepción acerca de las sociedades; del devenir
+histórico; elementos para la comprensión de los fenómenos del presente;
+que formula planteos acerca de los actores protagónicos del devenir
+histórico y social; hipótesis referidas a los fenómenos políticos,
+sociales, económicos y culturales, y fundamentos para optar entre
+valores o intereses en conflicto. En coherencia con estas nociones, y
+con una concepción acerca de qué es la ciencia social, cuáles son sus
+formas de objetividad y conocimiento del objeto de estudio, cobran
+sentido los distintos conceptos y metodologías de abordaje. En síntesis,
+las matrices de pensamiento son sistematizaciones conceptuales de
+determinados modos de percibir el mundo (o aspectos de él).
+
+Tal como plantea Argumedo, la definición de las matrices de pensamiento
+permite detectar las líneas de continuidad o ruptura de los conceptos,
+valores, propuestas de las principales corrientes de pensamiento en un
+determinado campo de investigación.\footnote{Alcira Argumedo, ``Las
+  matrices del pensamiento teórico-político'', en \emph{Antología del
+  pensamiento crítico argentino contemporáneo}, coord. de Sergio
+  Caggiano y Alejandro Grimson (Buenos Aires: CLACSO, agosto de 2015),
+  141.} A su vez, la autora propone la noción de ``vertientes'' para
+referir a las diversas expresiones o modos particulares de desarrollo
+teórico que se procesan dentro de las coordenadas impuestas por la
+articulación conceptual de una matriz. Estas vertientes, explica,
+constituyen ramificaciones de un tronco común y reconocen una misma
+matriz, no obstante sus múltiples matices, sus características
+particulares, sus eventuales contradicciones o los grados de
+refinamiento y actualización alcanzados por cada una de ellas.
+
+A continuación nos detendremos en los periodos históricos definidos
+anteriormente, para dar cuenta de las conceptualizaciones en torno a la
+comunicación indígena mediática presentes en ellos. Entendemos que estas
+conceptualizaciones constituyen vertientes que se desarrollaron
+alrededor de matrices teóricas más amplias del campo de la comunicación.
+Y que, a la vez, no pueden comprenderse con autonomía de los modelos de
+sociedad en el marco de los cuales se fueron transformando las luchas
+políticas y los procesos identificatorios de los pueblos indígenas.
+
+\hypertarget{primer-periodo-tensiones-fundantes-de-los-estudios-sobre-comunicacin-indgena-en-amrica-latina}{%
+\section{Primer periodo: tensiones fundantes de los estudios sobre\\\noindent
+comunicación indígena en América
+Latina}\label{primer-periodo-tensiones-fundantes-de-los-estudios-sobre-comunicacin-indgena-en-amrica-latina}}
+
+Los años sesenta fueron de gran convulsión política, cultural y
+económica en todo el mundo. La posguerra, la guerra fría, la alianza por
+el progreso, el movimiento de países no alineados y el movimiento de
+países tercermundistas en su lucha por la descolonización, fueron
+influencias claves en el desarrollo de los estudios sobre comunicación,
+sobre todo en América Latina. Distintos autores que historizaron y
+cartografiaron el campo, tal como Raúl Fuentes Navarro,\footnote{Raúl
+  Fuentes Navarro, ``La investigación de la comunicación en América
+  Latina: condiciones y perspectivas para el siglo XXI'', \emph{Oficios
+  Terrestres}, n.º 6 (1999): 56-67,
+  \url{http://sedici.unlp.edu.ar/handle/10915/38040}.} Jesús
+Martín-Barbero\footnote{Jesús Martín-Barbero, \emph{Oficio del
+  cartógrafo. Travesías latinoamericanas de la comunicación en la
+  cultura} (Chile: Fondo de Cultura Económica, 2002).} o Luciano
+Sanguinetti,\footnote{Luciano Sanguinetti, \emph{Comunicación y medios.
+  Claves para pensar y enseñar una teoría latinoamericana sobre
+  comunicación} (La Plata: Facultad de periodismo y comunicación
+  social-UNLP, 2001).} aluden a dos matrices preponderantes en esta
+región del continente, durante aquellos años. Por un lado, están las
+investigaciones que analizaban la relación entre la comunicación y el
+poder en los procesos de dominación de las masas y dependencia cultural,
+que tenían a los medios masivos de comunicación como protagonistas. Por
+otro, surgen aquellas matrices que afirman la posibilidad de lograr el
+desarrollo de los pueblos utilizando a los medios de comunicación como
+instrumentos de difusión de los avances modernos, para superar el
+subdesarrollo:
+
+\begin{quote}
+En las múltiples intervenciones de su carrera, Martín-Barbero expresó su
+visión de que dos concepciones fundacionales opuestas caracterizaban los
+estudios de comunicación latinoamericanos, y la necesidad de superarlas:
+``Por un lado, estaba el paradigma Funcional'', que relacionaba el
+estudio de comunicación a la difusión de innovaciones; y ``por otro
+lado, estaba la Teoría de la Dependencia'', que afirmaba que la
+comunicación de masas formaba ``parte del proceso que incluía la
+dominación que debían soportar los países latinoamericanos''. Los
+argumentos detrás de la defensa de Martín-Barbero de su posición sobre
+las estrategias del campo para hacer frente a las configuraciones
+cambiantes de las dimensiones comunicación-cultura-política de las
+sociedades latinoamericanas, se volvieron progresivamente explícitos y
+coherentes a medida que debatía, a veces ferozmente, con líderes y
+seguidores de otras escuelas de pensamiento, especialmente algunos
+economistas políticos críticos y posmodernistas idealistas. La historia
+del campo que trazó, así como el enfoque teórico y metodológico que
+sostuvo, se convirtió en una de las fuentes más influyentes de la
+``escuela latinoamericana de pensamiento''. Dio forma tanto a las
+prácticas de investigación como a la formación académica de
+profesionales que intentaban ``comprender el papel que jugaron los
+procesos de comunicación y los medios de comunicación en los cambios que
+se estaban produciendo en América Latina'' (y en otros lugares) antes y
+después del cambio de siglo.\footnote{Raúl Fuentes Navarro,
+  ``Communication Research in Latin America: Will the ``Nocturnal Map''
+  Survive or Fade Away?'', \emph{History of Media Studies} 1 (2021); la
+  traducción es propia.}
+\end{quote}
+
+A su vez, atravesada originalmente también por esta tensión entre el
+desarrollo y la dependencia, durante este periodo nació una línea de
+investigación y trabajo en comunicación en América Latina que se
+constituyó en matriz para pensar los medios de comunicación, llamada
+``comunicación popular''. Esta matriz, que en términos académicos tuvo
+siempre cierta marginalidad, surgió en íntima vinculación con el proceso
+de transformación de la Iglesia católica en Latinoamérica, luego del
+Concilio Vaticano II, y sus pronunciamientos en relación a los sectores
+oprimidos. Desde esa concepción, el oprimido es el sujeto sin voz y, en
+ese marco, la comunicación comenzó a ser considerada una práctica
+liberadora.\footnote{Giselle Munizaga y Anny Rivera, \emph{La
+  investigación en comunicación social en Chile} (Lima: Desc, 1983): 26.}
+Con ello, muchos investigadores de la comunicación comenzaron a plantear
+que la democratización de las relaciones en las sociedades
+latinoamericanas vendría de recuperar las formas de comunicación de esos
+sectores populares que se organizaban para enfrentar al opresor, y lo
+hacían partiendo de modelos de comunicación participativa y
+horizontal.\footnote{Robert White, ``La teoría de la comunicación en
+  América Latina. Una visión europea de sus contribuciones'',
+  \emph{Telos}, n.º 19 (1989): 43-54.}
+  
+Tal como plantea María Cristina Mata,\footnote{María Cristina Mata,
+  ``Comunicación popular: continuidades, transformaciones y desafíos'',
+  \emph{Oficios Terrestres}, n.º 26 (abril 2011): 1-22.} si bien
+inicialmente las experiencias de comunicación popular eran pensadas como
+los espacios desde los cual dar o dotar de voz a los sujetos oprimidos,
+al pueblo, en los primeros años de la década de los setenta,
+
+\begin{quote}
+\dots la idea de una mayoría ``sin voz'' a la cual debía dársele, fue
+discutida y revisada. Se argumentaba que postular que los explotados y
+marginados no tenían voz era desconocer una palabra que se revelaba en
+sus prácticas, en su capacidad de organización y de lucha... Pero
+también desconocer que esa palabra era modo de vivir, de imaginar,\newpage de
+soñar, de pensar. Una palabra dominada y resistente, por eso fragmentada
+y contradictoria, en la que estaban inscriptas tradiciones e
+historias.\footnote{Mata, ``Comunicación popular'', 13.}
+\end{quote}
+
+Alrededor de esta matriz y, por lo tanto, emplazados también en las
+tensiones entre el desarrollo y la dependencia, a principios de la
+década del setenta comenzaron a producirse trabajos que reflexionaron
+sobre los vínculos de los pueblos indígenas y estos medios de
+comunicación, en aquel momento denominados populares, mineros,
+educativos o campesinos.
+
+Además de su configuración en el marco de los estudios sobre
+comunicación popular, estos trabajos también se vieron influenciados por
+su desarrollo en un contexto político que, aunque con matices, era común
+a los distintos países de la región: el indigenismo integracionista de
+las políticas orientadas a la población indígena implementadas en
+América Latina a partir de la década de los años cuarenta, con el cual
+se institucionalizó un impulso homogenizador tendiente a la
+invisibilización de dichos pueblos.\footnote{Héctor Díaz Polanco,
+  ``Derechos indígenas en la actualidad'', \emph{Boletín de Antropología
+  Americana}, n.º 33 (1998): 91-99,
+  \url{https://www.jstor.org/stable/40978130}.} Cabe recordar que este
+indigenismo integracionista fue una expresión de los proyectos
+desarrollistas y modernizadores en el área de la economía, la política y
+la cultura, que orientaron el destino de los países latinoamericanos
+centralmente durante las décadas de los sesenta y setenta. Desde esta
+concepción se afirmaba que para transformar a los países periféricos en
+naciones desarrolladas y con mayor autonomía era necesario incrementar
+la intervención del Estado en los distintos planos de la vida
+socioeconómica de cada país. Se trataba de medidas de corte asistencial
+que apuntaban, en el fondo, a garantizar la sobrevivencia del
+capitalismo con nuevos instrumentos de intervención e interpretación,
+capaces de solucionar las contradicciones más apremiantes de la
+acumulación de capital. Desde este lugar, se planteaba que la población
+indígena, esencialmente campesina en aquellos años, debía ser sacada de
+su atraso y su refugio en la tradición, objetivo frente al cual la
+lengua, la cultura y todos aquellos ``elementos o señales de identidad
+indígena no eran más que obstáculos a superar''.\footnote{Álvaro Bello,
+  \emph{Etnicidad y ciudadanía en América Latina. La acción colectiva de
+  los pueblos indígenas} (Chile: CEPAL / Sociedad Alemana de Cooperación
+  Técnica, 2004): 62.} Este objetivo asimilacionista impulsó, entre
+otros, muchos de los programas de alfabetización de las comunidades.
+
+Asimismo, a fines de los años cincuenta algunos gobiernos de la región
+---como el caso de Bolivia (1953), Chile (1962), Ecuador (1964) o Perú
+(1969)--- impulsaron, con diferencias en cada caso, reformas agrarias
+que contribuyeron a cambiar en alguna medida las condiciones de vida de
+los campesinos y, en muchos casos, fueron la plataforma para el
+desarrollo de organizaciones campesinas e indígenas. Muchas de estas
+organizaciones surgidas en los años cincuenta estuvieron vinculadas
+desde su origen a intelectuales y organizaciones de la izquierda
+latinoamericana. Por lo general, en esos sectores ---salvo el caso de
+algunos pensadores como, por ejemplo, José Mariátegui en Perú o Guzmán
+Böckler en Guatemala--- existieron ciertas reticencias para aceptar el
+hecho de una movilización política indígena como una entidad propia, con
+lo cual la tendencia fue integrar las luchas indígenas y las reflexiones
+sobre las mismas en la lógica de la lucha campesina.
+
+Al mismo tiempo, y tensionando esas tendencias que desde ámbitos
+académicos y políticos tendían a la invisibilización de la población
+indígena, durante aquellos años comenzó a expresarse una crítica entre
+científicos sociales latinoamericanos respecto del indigenismo
+asimilacionista al que aludimos. Una expresión de estos cambios fueron
+los documentos conocidos como Declaraciones de Barbados I, II y III,
+dadas a conocer en 1971, 1979 y 1994,
+
+\begin{quote}
+\ldots en las cuales un grupo de antropólogos de toda América Latina
+cuestionábamos las políticas indigenistas vigentes y demandábamos la
+liberación del indígena a través de su autogestión, autodeterminación y
+la configuración de autonomías. Nuestros documentos propusieron la
+redefinición de los estados en términos étnicamente plurales, lo que
+provocó la reacción antagónica de los ideólogos de la homogeneización
+cultural y política. Los rígidos paradigmas de índole economicista que
+tipificaban ese momento histórico de la reflexión social y política en
+México, impidieron que la toma de conciencia respecto a las dimensiones
+de la cuestión étnica ocurriera en forma simultánea a la de otros países
+de América Latina.\footnote{Miguel Bartolomé, ``Pluralismo cultural y
+  redefinición del Estado en México'', \emph{Série Antropologia}, n.º
+  210 (1996): 8.}
+\end{quote}
+
+Estos planteos fueron parte de los puntapiés iniciales para las
+transformaciones ocurridas en el siguiente periodo respecto de los modos
+de pensar, nombrar y actuar las adscripciones identitarias étnicas en
+relación con los pueblos indígenas. Pero habría de pasar más de una
+década desde la primera Declaración hasta que, con los retornos de las
+democracias en distintos países de América Latina, este debate se
+extendiese en la academia y en otros ámbitos políticos.\footnote{Bello,
+  ``Etnicidad y ciudadanía''.}
+
+Aquel escenario complejo, entonces, junto a las tensiones que
+configuraban el campo de estudios sobre comunicación, constituyeron el
+marco de emergencia de las primeras publicaciones académicas que
+aludieron a la participación de población indígena en medios: en algunos
+casos poniendo en cuestión y en otros reproduciendo los sentidos
+hegemónicos y las disputas políticas en torno a los pueblos indígenas a
+que aludimos antes. Y, en el mismo sentido, esta diversidad de
+vertientes tuvo su correlato en los distintos modos en que dichos
+trabajos conceptualizaron a los medios y reflexionaron sobre su rol
+respecto de los procesos de integración o expresión de esos pueblos.
+
+Respecto de su circulación, los trabajos de este periodo se publicaron
+centralmente en formato de artículos que se difundían en las principales
+publicaciones sobre comunicación/educación popular creadas en los años
+setenta y principios de los ochenta, algunas impulsadas por centros de
+investigación en comunicación y otras por la Iglesia católica o grupos
+de laicos. La revista que publicó el mayor número de trabajos sobre esta
+temática durante aquellos años fue \emph{Chasqui},\footnote{Jerry
+  O'Sullivan, ``Informe de la investigación exploratoria sobre nuevas
+  posibilidades del radio en la Tarahumara'', \emph{Chasqui. Revista
+  Latinoamericana de Comunicación}, n.º 9 (1975): 27; Margarita Nolasco
+  Armas, ``Educación y medios de comunicación masiva'', \emph{Chasqui.
+  Revista Latinoamericana de Comunicación}, n.º 5 (1974): 25-38; Ray
+  Chesterfield y Kenneth Renddle, ``El uso de los canales indígenas de
+  comunicación en el desarrollo rural venezolano'', \emph{Chasqui.
+  Revista Latinoamericana de Comunicación}, n.º 12 (1976): 11-18; Xavier
+  Albó y Néstor Quiroga, ``La radio como expresión libre del Aymara'',
+  \emph{Chasqui. Revista Latinoamericana de Comunicación}, n.º 7 (1974):
+  109-26; Xavier Albó, ``Idiomas, escuelas y radios en Bolivia'',
+  \emph{Chasqui. Revista Latinoamericana de Comunicación}, n.º 6 (1974):
+  92-130.} una publicación del Centro Internacional de Estudios
+Superiores de Comunicación para América Latina (CIESPAL), que comenzó a
+editarse en 1972 en Ecuador. También publicaron artículos sobre esta
+temática la revista \emph{Nueva Sociedad},\footnote{Orlando Encinas
+  Valverde, ``La radio al servicio de la liberación indígena: Radio
+  Mezquital. La radio como instrumento de apoyo en programas de
+  desarrollo integral'', \emph{Nueva Sociedad}, n.º 25 (julio-agosto
+  1976): 85-94.} una publicación de ciencias sociales perteneciente a la
+Fundación Friedrich Ebert que se publica desde 1972, y la revista
+\emph{Comunicación y Cultura} y la \emph{Cultura Popular}. \emph{Revista
+Latinoamericana de Educación Popular},\footnote{Antonio Oseguera, ``Una
+  experiencia de comunicación educativa para el desarrollo rural'',
+  \emph{Comunicación y Cultura}, n.º 8 (julio 1982): 33-38; Alfonso
+  Gumucio Dagron, ``El papel político de las radios mineras'',
+  \emph{Comunicación y Cultura}, n.º 8. (julio 1982): 89-100.} creada en
+1981 por la Comisión Evangélica Latinoamericana de Educación Cristiana.
+También pueden hallarse publicaciones no periódicas del CIESPAL en las
+cuales se presentan sistematizaciones de experiencias de
+comunicación/educación popular y, en menor medida, se publicaron
+artículos sobre esta temática.\footnote{Francisco Santos Velasco y
+  Francisco Reyes Ruiz, \emph{Una experiencia de comunicación educativa
+  a través de la radio en la zona lacustre de Pátzcuaro} (Ecuador:
+  CIESPAL / CREFAL, 1983).} Del análisis de esos trabajos, emerge la
+tensión transversal al campo de la comunicación en América Latina.
+
+Por un lado, nos encontramos con textos que adscriben a la perspectiva
+según la cual los medios de comunicación son \emph{herramientas al
+servicio del desarrollo} de los pueblos indígenas, de la reversión de su
+situación de ``estancamiento cultural''\footnote{O'Sullivan, ``Informe
+  de la investigación''.} y paliativos de las dificultades que las
+instituciones de la educación formal tenían para educar a la población
+de las comunidades indígenas.\footnote{Nolasco Armas, ``Educación y
+  medios''; O'Sullivan, ``Informe de la investigación''; Chesterfield y
+  Renddle, ``El uso de los canales indígenas''; Santos Velasco y Reyes
+  Ruiz, \emph{Una experiencia de comunicación}.} En estos textos se
+parte de entender a la política en tanto ordenamiento
+jurídico-institucional particular, se afirma una jerarquía de saberes y
+valores culturales, y la comunicación se entiende como aquello que
+efectúen unos ``medios técnicos con capacidad de intervención en el
+espacio social a través de la diseminación de mensajes que refieren, en
+términos generales... a los valores que se desprenden de ese
+ordenamiento y de esas instituciones''.\footnote{Sergio Caletti,
+  \emph{Comunicación, política y espacio público. Notas para repensar la
+  democracia en la sociedad contemporánea. Borradores de trabajo}
+  (Buenos Aires: UBA, 1998-2002): 28.} Es decir, los medios de
+comunicación se piensan, en esos textos, en tanto herramientas que
+permitirían coadyuvar en la integración de campesinos a la condición
+ciudadana y al mercado, como parte de una lógica modernizante y
+republicana democrática.
+
+Por otro, esos artículos coexisten, durante el mismo periodo y en muchos
+casos en las mismas revistas, con otros textos que analizan los procesos
+políticos vinculados a la indigenidad con una fuerte impronta de la
+clave analítica de las luchas de clase\footnote{Albó y Quiroga, ``La
+  radio como expresión''; Albó, ``Idiomas, escuelas y radio''; Encinas
+  Valverde, ``La radio al servicio''; Oseguera, ``Una experiencia de
+  comunicación''; Gumucio Dagron, ``El papel político''.} y, en ese
+sentido, el sujeto de estos textos son los sectores populares (sobre
+todo campesinos o mineros) y la comunicación es pensada en vínculo con
+los procesos de liberación de la palabra de los sectores oprimidos. Tal
+como afirma María Cristina Mata,\footnote{Mata, ``Comunicación
+  popular''; Oseguera, ``Una experiencia de comunicación''.} si bien
+desde esta perspectiva inicialmente se pensaban los espacios de
+comunicación popular como lugares desde los cual dotar de voz a los
+sujetos, luego ello fue discutido y revisado y comenzó a plantearse la
+necesidad de reconocer la palabra de los sectores oprimidos en sus
+prácticas, en su capacidad de organización y de lucha, y de asumir que
+en esa palabra, dominada y resistente, estaban inscriptas tradiciones e
+historias. En el marco de esas discusiones y ese reconocimiento,
+comenzaron a surgir trabajos que problematizaron la histórica opresión a
+que fueron sometidos los indígenas, y pensaron a los espacios de
+comunicación en tanto ámbitos para la revalorización de las expresiones
+culturales de estos pueblos. Así, por ejemplo, encontramos textos
+publicados en la revista \emph{Chasqui} donde se afirma que ``el único
+camino viable para que los sectores nativos oprimidos puedan luchar por
+sus \emph{reivindicaciones} es adquirir el nivel técnico del
+dominante... y ello sólo es posible con el dominio oral y escrito del
+castellano''.\footnote{Albó, ``Idiomas, escuelas y radio'', 104.}
+Además, afirman que ``el idioma nativo debe ser una meta... para que el
+hombre quechua y aymara logre realmente comunicar lo que es y siente a
+propios y extraños''\footnote{Ibíd., 105.} y que ``la radio está
+ayudando a revitalizar una actitud emocional de aprecio por lo propio en
+los grupos más oprimidos''.\footnote{Ibíd., 110.}
+
+Una cuestión común a los trabajos de esta época es que, en términos
+metodológicos, se trata de análisis centrados en el abordaje descriptivo
+o exploratorio de experiencias de las cuales los autores de los textos
+habían sido parte o en las que habían colaborado. Respecto de los
+enfoques metodológicos y técnicas trabajadas, algunas publicaciones
+explicitan haber retomado el enfoque dialógico de Paulo Freire y el
+trabajo en talleres o seminarios durante los cuales se produjeron
+debates colectivos y conversaciones informales con integrantes de las
+experiencias descriptas.\footnote{O'Sullivan, ``Informe de la
+  investigación''; el trabajo de Albó y Quiroga, ``La radio como
+  expresión'', argumenta sobre el aporte de la ``pedagogía del diálogo''
+  de Paulo Freire para fomentar la ``participación'' indígena en las
+  radios; Santos Velasco y Reyes Ruiz, \emph{Una experiencia de
+  comunicación.}}
+
+En otros trabajos, en cambio, no se mencionan el enfoque \\\noindent metodológico ni
+las técnicas sino que se describen las experiencias y se argumenta su
+importancia al interior de las comunidades que se
+inscribieron.\footnote{Nolasco Armas, ``Educación y medios'';
+  Chesterfield y Renddle, ``El uso de los canales indígenas''; Albó,
+  ``Idiomas, escuelas y radio''; Encinas Valverde, ``La radio al
+  servicio''; el texto de Gumucio Dagron, ``El papel político'', explica
+  el papel de las radios mineras en la resistencia al golpe de estado de
+  1980 en Bolivia, y retoma fragmentos textuales de emisiones de las
+  radios, para dar cuenta del modo en que se trataba el tema en esos
+  medios.} El objetivo de esos trabajos es, centralmente, visibilizar
+las experiencias y analizar sus roles y relevancia, antes que dar cuenta
+de los procesos de investigación o intervención que motivaron los
+textos. Esta escasa alusión a las definiciones metodológicas tal vez se
+deba, hipotetizamos, a una entonces incipiente institucionalización del
+campo en general y de sus pautas de circulación de los trabajos
+publicados; al hecho de que muchos de los textos estaban vinculados a
+experiencias de intervención y no investigación estrictamente, y a la no
+exigencia de requisitos vinculados a la explicitación de los marcos
+metodológicos de los trabajos en las revistas académicas durante ese
+periodo.
+
+\newpage
+
+En síntesis, en el marco de las matrices teóricas predominantes en el
+periodo y del contexto político y cultural al que hicimos referencia,
+gran parte de las investigaciones y reflexiones producidas en los años
+setenta y principios de los ochenta sobre las experiencias de
+comunicación con participación indígena, pensaron estas prácticas en
+tanto comunicación popular o comunicación rural, y los espacios en que
+ellas se desplegaban como radios mineras o radios campesinas, en general
+asumiéndolos al servicio de la educación de la población. Sin embargo,
+si bien es posible hablar de tendencias predominantes, también es
+importante, incluso para comprender los posteriores desarrollos
+investigativos en la materia, reconocer la existencia de las distintas
+vertientes de esas matrices y las tensiones que atravesaron estas
+producciones sobre experiencias de comunicación con participación de
+población indígena.
+
+Alrededor de estas tensiones comienzan a producirse trabajos donde se
+introduce, entre las dimensiones de análisis de estas prácticas de
+comunicación, algunos ejes tales como los vínculos entre las dinámicas
+sociolingüísticas de un pueblo indígena particular y los modos de
+constituirse en emisores y audiencia de radios,\footnote{Albó,
+  ``Idiomas, escuelas y radio''.} o entre el uso de la radio y las
+formas de organización política de cada pueblo.
+
+De este modo, se daban los primeros pasos en la búsqueda por comprender
+los procesos reivindicatorios emprendidos por los pueblos indígenas y su
+vinculación con las posibilidades y los modos de expresión pública de
+los sujetos en una particular articulación de configuraciones culturales
+y trayectorias y coyunturas político-económicas.
+
+\hypertarget{segundo-periodo-entre-los-viejos-interrogantes-y-las-nuevas-conceptualizaciones}{%
+\section{Segundo periodo: entre los viejos interrogantes y las nuevas\\\noindent
+conceptualizaciones}\label{segundo-periodo-entre-los-viejos-interrogantes-y-las-nuevas-conceptualizaciones}}
+
+Desde mediados de la década de los ochenta, una serie de factores
+contribuyó a modificar poco a poco el marco político de las luchas
+indígenas en el continente y, con ello, también las investigaciones
+sobre las experiencias de comunicación indígena que surgían en torno a
+aquellas luchas. Si bien no vamos a extendernos en este punto, es
+posible afirmar que desde la década de los ochenta se transformaron
+paulatinamente las relaciones entre los estados nacionales de América
+Latina y los pueblos indígenas, y se comenzaron a transformar los modos
+de pensar, nombrar y actuar las adscripciones identitarias étnicas en
+relación a estos grupos. Se trató de un proceso
+político/cultural/económico que, en términos generales, se puede definir
+como la tendencia a promover, al menos discursivamente, el respeto a
+diferencias antes invisibilizadas. Y, como parte de ello, se fue
+produciendo lentamente la conversión de los pueblos indígenas en sujetos
+de derecho internacional.\footnote{Claudia Briones, ``Viviendo a la
+  sombra de naciones sin sombra: poéticas y políticas de (auto)
+  marcación de `lo indígena' en las disputas contemporáneas por el
+  derecho a una educación intercultural'', en \emph{Interculturalidad y
+  política. Desafíos y posibilidades}, ed. de Norma Fuller (Lima: Red
+  para el Desarrollo de las Ciencias Sociales en el Perú, 2002),
+  381-417.} Tal como afirma Claudia Briones, el logro de estos derechos
+y legitimidades no ha sido fruto de concesiones estatales sino de arduas
+luchas indígenas, como parte de un proceso etnopolítico de emergencia
+indígena que tuvo lugar centralmente desde fines de los ochenta y
+durante la década de los noventa.\footnote{José Bengoa, ``¿Una segunda
+  etapa de la emergencia indígena en América Latina?'', \emph{Cuadernos
+  de Antropología Social}, n.º 29 (2009): 7-22.} Este proceso, muy
+complejo en relación a la diversidad de actores y factores que
+confluyeron, como hito histórico estuvo vinculado a la conmemoración del
+quinto centenario de la llegada de los colonizadores europeos a este
+continente. En aquel momento, muchos grupos indígenas se negaron a
+aceptar las conmemoraciones de esta fecha y lo transformaron en símbolo
+de resistencia y reconstrucción de sus identidades étnicas.\footnote{Ídem.}
+En ese escenario y como parte de esas disputas, comenzaron a crearse
+desde mediados de los años ochenta diversas experiencias de medios de
+comunicación gestionados por personas u organizaciones indígenas. Estos
+espacios fueron surgiendo como herramientas al servicio de luchas en las
+que la indigenidad de los sujetos se constituyó como el elemento
+articulador y reivindicatorio central.\footnote{Magdalena Doyle,
+  ``Debates and indigenous demands on rights to communication in Latin
+  America'', \emph{Temas Antropológicos}, n.º 37 (2015): 89-118.} Un
+ejemplo pionero de este uso de medios en el marco de luchas donde las
+identificaciones éticas constituyeron una dimensión articuladora central
+desde los años noventa, fue el del movimiento zapatista, que avanzaron
+en el uso intensivo y amplio de la Internet para difundir su lucha a
+nivel mundial y crear solidaridades en relación a sus causas.\footnote{Jorge
+  Augurto y Jahve Mescco, ``La comunicación indígena como dinamizadora
+  de la comunicación para el cambio social'' (ponencia, Asociación
+  Latinoamericana de Investigadores de la Comunicación, 11 de mayo de
+  2012).}
+
+En el apartado siguiente veremos cómo, articulados con esa emergencia y
+visibilización de los espacios de comunicación que adscriben a la
+indigenidad, desde la segunda mitad de la década de los noventa comenzó
+a crecer poco a poco el número de investigaciones dedicadas a estudiar,
+desde diversas perspectivas, el uso de medios de comunicación por parte
+de pueblos indígenas, con el foco puesto en reflexionar sobre la
+especificidad de la noción de comunicación indígena, esto es, sobre las
+marcas identitarias étnicas de esas experiencias.
+
+Sin embargo, este periodo analizado constituye aún un momento bisagra
+entre la etapa siguiente y la posterior: todavía el número de trabajos
+es acotado y, en términos de matrices de pensamiento en que se
+inscriben, la mayor parte de los textos sobre experiencias de medios
+indígenas adscribe aún a los estudios sobre comunicación popular, tal
+como ocurría en el periodo anterior. A la vez, comienzan a desarrollarse
+investigaciones desde otras matrices, como los estudios sobre recepción.
+Y, de modo transversal, en todos los trabajos se problematiza de forma
+explícita la cuestión de la identidad étnica como dimensión cultural
+clave para comprender estas prácticas de comunicación. También,
+alrededor de la incipiente profesionalización del campo de la
+comunicación en general,\footnote{Raúl Fuentes Navarro, \emph{Un campo
+  cargado de futuro. El estudio de la comunicación en América Latina}
+  (México: FELAFACS, 1991).} en este periodo se produce la primera tesis
+de posgrado que hallamos sobre el estudio de prácticas de comunicación
+mediatizadas atendiendo a rasgos culturales asociados a identidades
+indígenas.\footnote{Nos referimos a la tesis de Maestría en Comunicación
+  de Inés Cornejo Portugal. Accedimos a tres artículos académicos
+  producidos a partir de dicha tesis que citamos párrafos más adelante.
+  Inés Cornejo Portugal, ``La voz de la Mixteca y la comunidad receptora
+  de la mixteca oaxaqueña'' (tesis de Maestría, Universidad
+  Iberoamericana Ciudad de México, 1991).}
+
+Respecto de los trabajos inscriptos en la matriz sobre comunicación
+popular, en ellos se analizan sobre las posibilidades y modalidades de
+expresión de estos pueblos haciendo foco en los vínculos entre las
+condiciones socioeconómicas que estos comparten con otros sectores
+oprimidos y las identificaciones étnicas.\footnote{Fernando Hernández,
+  ``Video y cultura zapoteca'', \emph{Materiales para la comunicación
+  popular}, n.º 9 (julio 1987): 12-17; Luis López, ``Cuatro propuestas
+  desde la radio para que los `quiechuas' retomen el control de su
+  propia cultura'', \emph{ALRED}, n.º 23 (septiembre 1997): 41-45; Kurt
+  Hein, ``Baha'i community radio interacts with campesinos of Ecuador'',
+  \emph{Media Development}, n.º 2 (1989): 39-41; Alan O'Connor,
+  ``People's radio in Latin America, a new assessment'', \emph{Media
+  Development} 36 (julio 1989): 47-53; Luis Ramiro Beltrán y Jaime
+  Reyes, ``Radio popular en Bolivia: la lucha de obreros y campesinos
+  para democratizar la comunicación'', \emph{Diálogos de la
+  Comunicación,} n.º 35 (1993): 14-31; Cristina Romo, \emph{La otra
+  radio. Voces débiles, voces de esperanza} (México: Fundación Manuel
+  Buendía / Instituto Mexicano de la Radio, 1990).} En uno de esos
+trabajos se afirma, por ejemplo, que el uso de las radios contribuía a
+``recuperar la autoestima... de los quiechuahablantes difundiendo sus
+valores, su cosmovisión y su tecnología, y demostrando {[}\emph{en el
+espacio de lo público}{]} que esos indígenas tan denigrados, son
+portadores de conocimientos que nos pueden ayudar a vivir mejor a
+todos''.\footnote{López, ``Cuatro propuestas'', 42.}
+
+De este modo, los textos inscriptos en esta matriz comparten con los
+trabajos del periodo anterior un abordaje de los espacios y prácticas de
+comunicación que hace énfasis en el vínculo entre esos medios y las
+prácticas y los proyectos políticos de los pueblos, donde la liberación
+de la palabra aparece como condición de ese proceso. Y, al mismo tiempo,
+avanzan en una reflexión sobre los modos en que se producen los vínculos
+entre las experiencias de comunicación mediática de los pueblos,
+comunidades y organizaciones indígenas y los proyectos políticos
+reivindicatorios vinculados a la etnicidad de los sujetos. En estos
+casos, los medios de comunicación pertenecientes a los pueblos indígenas
+son pensados en tanto ámbitos de liberación y legitimación pública de la
+palabra, de organización política de las comunidades y de configuración
+de aquellas redes que comienzan a cobrar centralidad para los
+movimientos indígenas de América Latina en aquel periodo.
+
+En términos metodológicos, algunos trabajos comparten con la etapa
+anterior el objetivo de la descripción de experiencias de comunicación
+particulares a partir de intervenciones de los investigadores en ellas,
+así como la argumentación en torno a la centralidad de esos espacios
+para favorecer la participación y expresión indígena.\footnote{Hernández,
+  ``Video y cultura''; López, ``Cuatro propuestas''; Hein, ``Baha'i
+  community''.}
+
+Otros, en cambio, consisten en sistematizaciones de la diversidad de
+experiencias de comunicación con participación indígena en una región,
+buscando de algún modo comenzar a caracterizar el tipo de prácticas, sus
+objetivos político-comunicacionales, sus trayectorias, sus audiencias,
+entre otros.\footnote{Beltrán y Reyes, ``Radio popular en Bolivia'';
+  Romo, \emph{La otra radio}.}
+
+Simultáneamente, durante aquellos años cobró preponderancia en América
+Latina otra matriz de investigación denominada ``estudios de
+recepción'': aquella que, bajo la influencia de la hipótesis de ``los
+usos y gratificaciones'', llevó adelante un desplazamiento teórico y
+metodológico respecto de las matrices preponderantes en la década de los
+setenta y ochenta. Tal como plantea Guillermo Sunkel, ``la preocupación,
+(dominante en los 70) por el análisis ideológico del mensaje comienza a
+ser desplazada por una temática radicalmente distinta: la recepción
+crítica''.\footnote{Guillermo Sunkel, introducción a \emph{El consumo
+  cultural en América Latina. Construcción teórica y líneas de
+  investigación,} coord. de Guillermo Sunkel (Bogotá: Convenio Andrés
+  Bello, 1999): 11-26.} El autor afirma que dicha noción de recepción
+crítica viene a constituirse en una suerte de estrategia frente a lo que
+se concibe como la poderosa influencia de la televisión.
+
+Como parte de esa matriz, hacia principios de los años noventa se
+realizaron algunos estudios de recepción que buscaron indagar ``el papel
+que cumple la radio {[}\emph{indigenista}{]} en la población de su
+cobertura y la respuesta de ésta frente a un medio de comunicación que
+no surge de su propia cultura''.\footnote{Inés Cornejo Portugal, ``La
+  voz de la Mixteca: diagnóstico y perspectivas'', en \emph{Radio
+  regional y rural en México. Enlace de mil voces}, comp. de Jorge
+  Martínez Lugo, Inés Cornejo Portugal y Etelvina Hernández Aguirre
+  (México: Universidad Iberoamericana, 1992), 38.} Una referencia clave
+de esa línea de investigación es la tesis de posgrado de Inés Cornejo
+Portugal,\footnote{Inés Cornejo Portugal. ``Presencia de `La voz de la
+  Mixteca' en la comunidad receptora de Tlaxiaco, Oaxaca'', en
+  \emph{Radiodifusión en México. Historias. Programas. Audiencias},
+  comp. de Francisco Aceves, Pablo Arredondo y Carlos Luna (México:
+  Universidad de Guadalajara, 1991), 155-68; Cornejo Portugal, ``La voz
+  de la Mixteca''.} quien realizó una encuesta exploratoria para
+estudiar a la comunidad receptora de emisoras indigenistas de México a
+partir de conocer los hábitos de la audiencia: el perfil del auditorio y
+el ``uso que dan a la radio en términos de su propia identidad cultural,
+su música, sus costumbres, y especialmente de su lengua, es decir, cómo
+se concibe a la radio desde la cultura indígena''.\footnote{Cornejo
+  Portugal, ``La voz de la Mixteca'', 38.} En términos generales, se
+trata de trabajos producidos desde una concepción de las identidades
+indígenas asumidas como una serie de rasgos culturales que determinarían
+unos modos de apropiación de las tecnologías de la comunicación.
+
+A modo de cierre de este apartado, es posible afirmar, como anunciamos
+previamente, que este periodo comprendido entre fines de los años
+ochenta y mediados de los noventa se constituye en una bisagra entre dos
+tipos de trabajos. Por un lado, aquellas primeras reflexiones e
+indagaciones del periodo anterior, formuladas desde la matriz de los
+estudios sobre comunicación popular, que pensaban a la comunicación en
+vínculo con los procesos políticos de liberación de la palabra de los
+pueblos y que estaban, como dijimos, atravesados por la tensión entre la
+preeminencia de la identidad de clase para pensar las prácticas
+comunicacionales y la necesidad de comenzar a reflexionar ciertas
+dimensiones de estas prácticas que no siempre podían adscribirse a
+dichas identidades de clase. Por otro, se encuentran los textos
+producidos a partir de fines de la década de los noventa, donde la
+identidad étnica adquiere preeminencia para pensar a estos sujetos y sus
+prácticas, al punto que conlleva en muchos casos la omisión de la
+permanente interacción de estas adscripciones con otras que configuran
+también la identidad de los sujetos, como la pertenencia a un
+determinado sector socioeconómico.
+
+\newpage
+
+\hypertarget{tercer-periodo-nuevas-vertientes-y-tensiones-en-el-anlisis-de-la-relacin-entre-medios-polticas-e-identidades}{%
+\section{Tercer periodo: nuevas vertientes y tensiones en el análisis
+de\\\nnoindent la relación entre medios, políticas e
+identidades}\label{tercer-periodo-nuevas-vertientes-y-tensiones-en-el-anlisis-de-la-relacin-entre-medios-polticas-e-identidades}}
+
+En las últimas décadas asistimos a un notable incremento de los trabajos
+que abordan a estas experiencias desde el campo de la comunicación, de
+la mano con la creciente emergencia de medios de comunicación de pueblos
+indígenas.\footnote{Doyle, ``Debates''.}
+
+Además, una cuestión a mencionar es que muchos de estos trabajos se
+realizaron en el marco de investigaciones de posgrado en distintos
+países de América Latina y de equipos de investigación consolidados en
+las universidades y con financiamiento nacional o internacional, lo cual
+confirma la tendencia a la profesionalización del campo a la cual
+referimos en el periodo anterior.
+
+A su vez, veremos que las particularidades preponderantes de estos
+trabajos nos remiten a nuevas matrices de pensamiento sobre
+medios/tecnologías, políticas e identidades que fueron parte del campo
+científico de la comunicación en el continente durante este periodo.
+
+En términos de caracterización general de ese campo en América Latina,
+Raúl Fuentes Navarro describe la década de los noventa e inicios del año
+2000 como una época marcada por el ``abandono de las premisas críticas,
+sea ante la adopción de la `inevitable vigencia' de las leyes del
+mercado también en el ámbito de la investigación, sea ante la dispersión
+de enfoques sobre las múltiples `mediaciones' culturales de las
+prácticas sociales''.\footnote{Fuentes Navarro, ``La investigación de la
+  comunicación'', 57.}
+
+Predominan, durante ese periodo, las temáticas sobre globalización y las
+tecnologías digitales, como las que se centran en identidades
+microsociales. En las investigaciones latinoamericanas sobre
+comunicación parece haberse perdido, señala el autor, la profundidad
+ideológica, lo cual produjo la ``caída de la utopía'' según la cual la
+comunicación debía contribuir a la democratización de las sociedades.
+
+En diálogo con ello, identificamos que un elemento común de parte de los
+trabajos que analizan la comunicación indígena en este periodo es que se
+centran, principalmente, en abordar las transformaciones que los usos de
+las tecnologías de la comunicación y la información generan en las
+identidades, subjetividades políticas, culturas y condiciones de vida de
+distintos grupos indígenas.
+
+Sin embargo, más allá de esa caracterización muy genérica, en los
+trabajos que son foco de este periodo identificamos dos vertientes
+claramente diferenciadas:
+
+\emph{a) Sobre brechas digitales y la promesa de la democratización
+mediada tecnológicamente}. Una perspectiva extendida para el estudio de
+las prácticas de comunicación masiva de los pueblos indígenas se
+inscribe en la esperanza democratizadora que desde distintos ámbitos se
+ha depositado durante esos años en la sociedad de la información,
+asumiendo que los medios, en particular las tecnologías vinculadas a la
+Internet, habilitarían nuevas modalidades de participación política, de
+empoderamiento de los grupos indígenas.\footnote{Marck Becker y
+  Guillermo Delgado, ``Latin America: The Internet and indigenous
+  texts'', \emph{Cultural Survival} 21, n.º 4 (1997);
+  Sami Ayriwa Pilco, ``La red de Internet y los pueblos indígenas de
+  América Latina: experiencias y perspectivas'' (tesis de Maestría en
+  Guion para Documental y Ficción, University of Bergen, 2000); Isabel
+  Hernández y Silvia Calcagno, ``Los pueblos indígenas y la sociedad de
+  la información en América Latina y el Caribe. Un marco para la
+  acción'', informe de investigación producida para la CEPAL y el
+  Instituto para la Conectividad en las Américas (Chile: CEPAL, 2003);
+  Gloria Monasterios, ``Usos de Internet por organizaciones indígenas
+  (OI) de Abya Yala: para una alternativa en políticas
+  comunicacionales'', \emph{Revista Comunicación}, n.º 22 (segundo
+  trimestre 2003): 60-69; Eduardo Sandoval Forero y Laura Mota Díaz,
+  ``Indígenas y democracia en las tecnologías de la información y la
+  comunicación (TICs)'' (ponencia, Universidad Nacional de Colombia,
+  2007); Alejandra Aguilar Pinto, ``Identidade/diversidade cultural no
+  ciberespaco: práticas informacionais e de inclusão digital nas
+  comunidades indígenas, o caso dos Kariri Xocó e Pankararu no Brasil''
+  (tesis doctoral, Universidade de Brasília, 2010); Jenny Arévalo
+  Mosquera, ``Tejiendo en la red de Pueblos Indígenas y TIC: la
+  presencia de la CONAIE en el ciberespacio'' (tesis de Maestría de
+  Comunicación y Sociedad con mención en políticas públicas para
+  Internet, FLACSO, 2010); Ramiro
+  Catalán Pesce, ``Los desafíos de la inclusión digital étnica'',
+  \emph{Diálogos de la Comunicación}, n.º 82 (sep.-dic. 2010): 1-7; Ivania
+  Dos Santos Neves y Helen Alonso Monarcha, ``Inclusão digital indígena
+  no Brasil: verdades e mentiras'', \emph{Diálogos de la Comunicación},
+  n.º 86 (ene.-jul. 2013): 1-20.} Desde
+ese lugar y mediante entrevistas y análisis de contenidos en sitios web
+de pueblos indígenas, realizan abordajes en los cuales dan cuenta de las
+desigualdades relacionadas al acceso y uso de las tecnologías de la
+información y la comunicación (TIC) por parte de esos pueblos
+---desigualdades que coinciden en llamar, con matices en su definición,
+brecha digital---; describen casos de organizaciones o comunidades que
+han utilizado esas tecnologías en sus procesos de lucha, y, comenzando
+con esos casos que darían cuenta del potencial de las TIC cuando los
+indígenas logran acceder a ellas, se proponen políticas públicas
+tendientes a propiciar la participación de los pueblos indígenas de cada
+región en la sociedad de la información.
+
+También hallamos trabajos que se focalizan en dar cuenta de los modos de
+uso de las tecnologías y las desigualdades que ello genera, así como las
+condiciones legales para la reversión de esas desigualdades en el caso
+de grupos indígenas. Encontramos, por un lado, abordajes que se centran
+en la caracterización de la estructura de propiedad del sistema de
+medios de un país y la participación de los indígenas en él\footnote{Raúl
+  Borja, \emph{Comunicación social y pueblos indígenas del Ecuador}
+  (Ecuador: Abya Yala, 1998); Javier Esteinou Madrid, ``Las etnias y el
+  acceso a los medios de comunicación en México'', \emph{Interacción.
+  Revista de comunicación educativa}, n.º 26 (2001);
+  Javier Esteinou Madrid y Margarita Lorea Chávez y Peniche, ``La
+  reforma del Estado y el acceso de los pueblos indios a los medios de
+  comunicación'', \emph{Economía, Sociedad y Territorio}, n.º 12 (2002); Miguel
+  Fuenmayor y Oscar José Antepaz, ``La comunicación radial intercultural
+  bilingüe en el Zulia'' (ponencia, Asociación de Investigadores
+  Venezolanos de la Comunicación, 2009).}
+y que realizan un aporte clave al caracterizar parte de las
+desigualdades expresivas que configuran los sistemas de medios en
+distintos países de América Latina.
+
+Particularmente, aquí encontramos trabajos motivados por analizar las
+demandas de medios de comunicación propios planteadas por el Ejército
+Zapatista de Liberación Nacional (EZLN) desde su primer alzamiento en
+1994 y los acuerdos a los que el EZLN llegó con el Estado mexicano en
+esta materia.\textsuperscript{53}
+Estas publicaciones indagan las razones por las cuales aquellas demandas
+y acuerdos no se plasmaron en efectivas políticas públicas que
+garantizaran el acceso de los pueblos indígenas a medios masivos de
+comunicación propios.\textsuperscript{54}
+
+Motivados en gran medida por este mismo movimiento indígena, encontramos
+también investigaciones que aluden a los medios (sobre todo a la
+Internet) como herramientas de difusión de mensajes al servicio de las
+luchas de estos pueblos, específicamente como plataformas para
+transmitir mensajes que tendrían un impacto en la opinión
+pública.\textsuperscript{55}
+Estos trabajos se desarrollan a partir de la caracterización y los
+análisis de contenidos en sitios web de pueblos indígenas.
+
+\emph{b) Políticas de identidad, desigualdades expresivas y luchas por
+el espacio público}. Finalmente, desde inicios y sobre todo mediados de
+la segunda década del siglo XXI, enmarcados en un enfoque cultural y
+político sobre los medios y en el interés por indagar los procesos de
+configuración de identificaciones en el espacio público mediatizado, se\marginnote{\textsuperscript{53} Por ejemplo: Esteinou Madrid, ``Las etnias'' y
+  Esteinou Madrid y Loera Chávez y Peniche, ``La reforma del Estado''.}\marginnote{\textsuperscript{54} Dado el recorte temático de este
+  artículo, focalizado en analizar investigaciones que hayan estudiado
+  el uso de medios por parte de pueblos indígenas, no incorporamos en el
+  corpus trabajos que hayan abordado las representaciones sobre pueblos
+  indígenas construidas por medios comerciales. Sin embargo, respecto
+  del EZLN hay diversos trabajos que abordaron esa temática: para un
+  análisis al respecto, puede verse por ejemplo el libro \emph{Chiapas,
+  la comunicación enmascarada}, escrito por Raúl Trejo Delarbre, donde
+  el autor analiza, esencialmente, el tratamiento que la radio, la
+  televisión y la prensa realizaron del levantamiento zapatista de 1994.
+  Raúl Trejo Delarbre, \emph{Chiapas. La comunicación enmascarada: los
+  medios y el pasamontañas} (México: Diana, 1994).}\marginnote{\textsuperscript{55}\setcounter{footnote}{55} Markus Itturriaga, ``The War of Ink and Internet'',
+  \emph{Chancellor's Honors Program Projects} (Knoxville: University of
+  Tennessee, 1996); Anne C.
+  Barnhart-Park, ``alt.Indigenous.electronic-(re)sources'' (ponencia,
+  Latin American Studies Association, 16 al 18 de marzo de 2000);
+  Fernando Camacho Padilla, ``La cibermovilización como estrategia de
+  resistencia: el caso de los pueblos originarios'', \emph{Revista
+  Chilena de Antropología Visual}, n.º 5 (2005): 28-43.}
+produjeron trabajos que aportan pautas teóricas y metodológicas
+centrales para el abordaje de este objeto.\footnote{Nos referimos, por
+  ejemplo, a los siguientes trabajos: Oscar Espinosa, ``Los pueblos
+  indígenas de la Amazonía peruana y el uso político de los medios de
+  comunicación'', \emph{América Latina Hoy. Revista de Ciencias
+  Sociales}, n.º 19 (1998): 91-100; José
+  Ramos Rodríguez, ``Los programas de avisos en las radiodifusoras
+  indigenistas de México: espacios de reproducción de la etnicidad''
+  (ponencia, Asociación Latinoamericana de Investigadores de la
+  Comunicación\emph{,} Bolivia, 12 al 15 de junio de 2002); José Ramos
+  Rodríguez, ``Inequidad mediática y multiculturalidad: alcances y
+  límites de la participación indígena en la radio oficial del estado de
+  Puebla, México'' (ponencia, Latin American Studies Association, Río de
+  Janeiro, 11 a 14 de junio de 2009); Juan Salazar, ``Prácticas de
+  auto-representación y los dilemas de la autodeterminación: el cara y
+  sello de los derechos a la comunicación Mapuche'', en
+  \emph{Aproximaciones a la cuestión mapuche en Chile, una mirada}}
+Esta vertiente de investigación sobre la comunicación indígena se va
+consolidando como la más extendida durante la última década en América
+Latina.
+
+Muchos de estos textos se inscriben en el consenso que adquirieron, en
+la antropología y en las ciencias sociales, las teorías performativas de
+la identidad (desde las cuales se asume el carácter descentrado de los
+sujetos y se piensan las identidades en tanto fragmentadas, flexibles y
+disputadas). En ese marco, cobran centralidad nociones como
+``negociación de identidades'' o ``políticas de identidad'', ya que los
+autores coinciden en afirmar que los medios se constituyen en espacios
+fundamentales de negociación en las disputas político-identitarias
+libradas por los pueblos indígenas.
+
+De este modo, a la vez que reconocen y analizan extensamente los
+contextos de desigualdades expresivas en que los medios hegemónicos han
+sumido a los indígenas, se abordan ---desde enfoques epistemológicos
+vinculados a las diversas visiones de los estudios decoloniales y las
+epistemologías del sur; abordajes teóricos transdisciplinares, y
+propuestas metodológicas que priorizan la perspectiva de los actores e
+incluso la producción colaborativa de conocimiento, recuperando los
+sentidos y narraciones que cada experiencia construye sobre sí misma---
+las prácticas de comunicación mediática que estos pueblos desarrollan
+para disputar sentidos en torno a la indigeneidad. Entendemos que este
+tipo de abordaje se inscribe en la preeminencia de la perspectiva
+decolonial surgida en la década de los noventa, a la cual alude Erick R.
+Torrico Villanueva, y que según el autor ha abierto una ruta intelectual
+que en América Latina viene removiendo los cimientos del conocimiento
+establecido para reinterpretarlos desde un lugar de enunciación
+distinto:
+
+\begin{quote}
+Se trata, pues, de un pensamiento crítico remozado y propositivo que no
+solo extiende los objetivos de reconocimiento, justicia y
+democratización a los planos epistemológico y teórico, además del
+político, sino que a la vez propone una reconsideración de las
+historias, los saberes y los haceres situados junto a una
+reontologización de sus protagonistas marginalizados.\textsuperscript{57}
+\end{quote}
+
+Desde esos posicionamientos epistémicos, los trabajos a los que
+referimos en este apartado ponen en cuestión concepciones instrumentales
+en relación a los medios y, en términos generales, los modos de pensar
+los vínculos entre la mediatización y la política, planteando que ``el
+espacio mediático y la apropiación de herramientas de comunicación son
+algunos de los ámbitos en los que los pueblos indígenas están ejerciendo
+un papel activo, renovador y de redefinición de lo que son, han sido y
+quieren ser, planteando nuevos proyectos\newpage \noindent civilizatorios\marginnote{\emph{desde
+  la historia y las ciencias sociales}, ed. de Claudio Barrientos
+  (Santiago de Chile: RIL Editores, 2014), 145-65; Claudia Magallanes
+  Blanco et al., ``Memoria e imaginarios en el discurso mediático
+  indígena: producciones radiofónicas de Oaxaca'', \emph{Realis} 3, n.º
+  2 (2013): 156-77;
+  Claudia Magallanes Blanco y José Ramos Rodríguez, coords.,
+  \emph{Miradas propias. Pueblos indígenas, comunicación y medios en la
+  sociedad global} (México: Universidad Iberoamericana Puebla, 2016);
+  Antoni Castells I Talens, ``¿Ni indígena ni comunitaria? La radio
+  indigenista en tiempos neoindigenistas'', \emph{Comunicación y
+  Sociedad}, n.º 15 (junio 2011): 123-42;
+  Antoni Castells I Talens, ``Radio y nacionalismo iconográfico en
+  México: la negociación discursiva de una identidad maya'', \emph{Signo
+  y Pensamiento} 27, n.º 53 (jul.-dic. 2008): 230-45;
+  Liliana Lizondo, ``Comunicación con identidad o comunicación
+  comunitaria. El caso de la FM `La voz indígena'\,'' (tesis de Maestría
+  en Planificación y Gestión de Procesos Comunicacionales, Universidad
+  Nacional de La Plata, 2015); Elena Nava Morales, ``Radio Totopo y
+  comunalidad: una experiencia de comunicación indígena en Oaxaca'', en
+  \emph{Miradas propias. Pueblos indígenas, comunicación y medios en la
+  sociedad global}, coord. de Claudia Magallanes Blanco y José Ramos
+  Rodríguez (México: Universidad Iberoamericana Puebla, 2016), 215-32.}\marginnote{\textsuperscript{57}\setcounter{footnote}{75} Erick R.
+  Torrico Villanueva, ``Comunicación organizacional y decolonialidad:
+  desafíos para una intersección factible'', \emph{Organicom}, n.º 37
+  (sep.-dic. 2021): 16.} que son negados
+por la civilización eurocéntrica y moderna''.\footnote{Magallanes Blanco
+  et al., ``Memoria e imaginarios'', 161.}
+
+Entonces, en términos generales, estos trabajos problematizan dos
+dimensiones clave de estas prácticas y experiencias de comunicación
+indígena: por un lado, qué sentidos sobre las identidades étnicas se
+construyen desde esos espacios de comunicación indígena y con qué otros
+actores se disputan esos sentidos y, por otro, abordan la complejidad de
+las relaciones entre el uso de medios y las luchas indígenas, dando
+cuenta de que esa relación no refiere solo a luchas que se dan
+\emph{desde} el espacio público mediatizado sino también \emph{por} ese
+espacio en términos de derechos a la comunicación.
+
+\hypertarget{a-modo-de-cierre}{%
+\section{A modo de cierre}\label{a-modo-de-cierre}}
+
+Las trayectorias de investigación sobre la temática que nos ocupa han
+ido transformándose, en diálogo con el creciente desarrollo y
+visibilización de las experiencias de comunicación indígena y los
+procesos etnopolíticos en que ese desarrollo va teniendo lugar, y
+también alrededor de las (re)configuraciones de las matrices de
+pensamiento que se han desarrollado en el campo científico de la
+comunicación en América Latina durante los periodos analizados.
+
+En ese sentido, es posible notar cómo fueron transformándose los modos
+de nombrar tanto a los sujetos de estas prácticas de comunicación
+---desde un primer momento en que primaron identidades de clase hasta
+los últimos periodos en que se abordan las identidades étnicas como
+tramas que configuran sentidos y prácticas en torno a los medios y
+tecnologías---; como los modos de analizar a los medios y las
+tecnologías en el marco de los procesos políticos identitarios que
+protagonizan esos sujetos ---desde concepciones difusionistas e
+instrumentalistas a entenderlos como espacios que tienen inscriptas
+condiciones desiguales de expresión, pero que a la vez constituyen
+ámbitos clave para la transformación de esas condiciones---.
+
+Durante los últimos años es posible notar, en las trayectorias
+investigativas sobre esta temática, transformaciones teóricas y
+metodológicas donde prima la transdisciplinariedad y los enfoques
+decoloniales como opción para el estudio cada vez más complejo de este
+fenómeno.
+
+Tal como anticipamos en la introducción de este texto, el análisis que
+aquí propusimos se fundamenta en el convencimiento de que la comprensión
+de la cultura contemporánea requiere articular sistemáticamente el
+análisis de los procesos históricos donde emergen y se desarrollan las
+técnicas y prácticas comunicativas, con el análisis de las nociones
+provenientes de las áreas del conocimiento que posibilitaron dicha
+emergencia.
+
+En ese sentido esperamos haber contribuido al análisis del tejido de
+significados y referencias de que está hecha la trayectoria conceptual
+sobre la comunicación indígena, asumiendo que ``poner en historia los
+términos en que se formulan los debates es ya una forma de acceso a los
+combates, a los conflictos y luchas que atraviesan los discursos y las
+cosas''.\footnote{Jesús Martín-Barbero, \emph{De los medios a las
+  mediaciones. Comunicación, cultura y hegemonía} (Barcelona: Gustavo
+  Gili, 1987): 32.}
+
+
+
+
+
+
+
+\section{Bibliography}\label{bibliography}
+
+\begin{hangparas}{.25in}{1} 
+
+
+
+Aguilar Pinto, Alejandra. ``Identidade/diversidade cultural no
+ciberespaco: práticas informacionais e de inclusão digital nas
+comunidades indígenas, o caso dos Kariri Xocó e Pankararu no Brasil''.
+Tesis doctoral, Universidade de Brasília, 2010.
+
+Albó, Xavier. ``Idiomas, escuelas y radios en Bolivia''. \emph{Chasqui.
+Revista Latinoamericana de Comunicación}, n.º 6 (1974): 92-130.
+
+Albó, Xavier y Néstor Quiroga. ``La radio como expresión libre del
+Aymara''. \emph{Chasqui. Revista Latinoamericana de Comunicación}, n.º 7
+(1974): 109-26.
+
+Arévalo Mosquera, Jenny. ``Tejiendo en la red de Pueblos Indígenas y
+TIC: la presencia de la CONAIE en el ciberespacio''. Tesis de Maestría
+de Comunicación y Sociedad con mención en políticas públicas para
+Internet, FLACSO, 2010. Acceso el 29 de junio de 2021,
+\url{https://repositorio.flacsoandes.edu.ec/handle/10469/2484}.
+
+Argumedo, Alcira. ``Las matrices del pensamiento teórico-político''.
+\emph{Antología del pensamiento crítico argentino contemporáneo},
+coordinado por Sergio Caggiano y Alejandro Grimson, 129-56. Buenos
+Aires: CLACSO, agosto de 2015.
+
+Argumedo, Alcira. \emph{Los silencios y las voces en América Latina.
+Notas sobre el pensamiento nacional y popular.} Buenos Aires: Ediciones
+del Pensamiento Nacional, 2004.
+
+Augurto, Jorge y Jahve Messco. ``La comunicación indígena como
+dinamizadora de la comunicación para el cambio social''. Ponencia
+presentada en el XI Congreso Latinoamericano de Investigadores de la
+Comunicación Social de la Asociación Latinoamericana de Investigadores
+de la Comunicación. Montevideo, mayo 2012. \href{http://servindi.org/pdf/ALAIC\_comunicaci\%C3\%B3nindigena2012.pdf}{http://servindi.org/pdf/ALAIC\_comunicaci\%C3\%B3nindigena2012.pdf}.
+
+Ayriwa Pilco, Sami. ``La red de Internet y los pueblos indígenas de
+América Latina: experiencias y perspectivas''. Tesis de Maestría en
+Guion para Documental y Ficción, University of Bergen, 2000.
+
+Barnhart-Park, Anne C. ``alt.Indigenous.electronic-(re)sources''.
+Ponencia presentada en el Annual Meeting of the Latin American Studies
+Association. Miami, 16 al 18 de marzo de 2000.
+
+Bartolomé, Miguel. ``Pluralismo cultural y redefinición del Estado en
+México''. \emph{Série Antropologia}, n.° 210 (1996): 1-16.
+
+Becker, Marck y Guillermo Delgado. ``Latin America: The Internet and
+indigenous texts''. \emph{Cultural Survival} 21, n.º 4 (1997). Acceso el
+25 de junio de 2021, \href{https://www.culturalsurvival.org/publications/cultural-survival-quarterly/latin-america-internet-and-indigenous-texts}{https://www.culturalsurvival.org/publications/cultural-survival-quarterly/latin-america-internet-and-indigenous-texts}.
+
+Bello, Andres. \emph{Etnicidad y ciudadanía en América Latina. La acción
+colectiva de los pueblos indígenas.} Chile: CEPAL / Sociedad Alemana de
+Cooperación Técnica, 2004.
+
+Beltrán, Luis Ramiro y Jaime Reyes. ``Radio popular en Bolivia: la lucha
+de obreros y campesinos para democratizar la comunicación''.
+\emph{Diálogos de la Comunicación,} n.º 35 (1992): 14-31.
+
+Bengoa, José. ``¿Una segunda etapa de la emergencia indígena en América
+Latina?''. \emph{Cuadernos de Antropología Social,} n.º 29 (2009): 7-22.
+
+Borja, Raúl. \emph{Comunicación social y pueblos indígenas del Ecuador}.
+Ecuador: Abya Yala, 1998.
+
+Briones, Claudia. \emph{La alteridad del ``cuarto mundo''. Una
+deconstrucción antropológica de la diferencia}. Buenos Aires: Ediciones
+del Sol, 1998.
+
+Briones, Claudia. ``Viviendo a la sombra de naciones sin sombra:
+poéticas y políticas de (auto)marcación de `lo indígena' en las disputas
+contemporáneas por el derecho a una educación intercultural''. En
+\emph{Interculturalidad y política. Desafíos y posibilidades}, editado
+por Norma Fuller, 381-417. Lima: Red para el Desarrollo de las Ciencias
+Sociales en el Perú, 2002.
+
+Caletti, Sergio. \emph{Comunicación, política y espacio público. Notas
+para repensar la democracia en la sociedad contemporánea. Borradores de
+trabajo}. Buenos Aires: UBA, 1998-2002.
+
+Camacho Padilla, Fernando. ``La cibermovilización como estrategia de
+resistencia: el caso de los pueblos originarios''. \emph{Revista Chilena
+de Antropología Visual}, n.º 5 (2005): 28-43. Acceso el 23 de junio de
+2021, \url{http://www.rchav.cl/2005_5_art03_camacho.html}.
+
+Castells I Talens, Antoni. ``¿Ni indígena ni comunitaria? La radio
+indigenista en tiempos neoindigenistas''. \emph{Comunicación y
+Sociedad}, n.º 15 (junio 2011): 123-42. Acceso el 29 de junio de 2021,
+\url{http://www.scielo.org.mx/scielo.php?script=sci_arttext\&pid=S0188-252X2011000100006}.
+
+Castells I Talens, Antoni. ``Radio y nacionalismo iconográfico en
+México: la negociación discursiva de una identidad maya''. \emph{Signo y
+Pensamiento} 27, n.º 53 (julio-diciembre 2008): 230-45. Acceso el 29 de
+junio de 2021,
+\url{http://revistas.javeriana.edu.co/index.php/signoypensamiento/article/view/4566/3531}.
+
+Catalán Pesce, Ramiro. ``Los desafíos de la inclusión digital étnica''.
+\emph{Diálogos de la Comunicación}, n.º 82 (septiembre-diciembre 2010):
+1-7. Acceso el 26 de junio de 2021,
+\url{https://dialnet.unirioja.es/servlet/articulo?codigo=3728256}.
+
+Chesterfield, Ray y Kenneth Renddle. ``El uso de los canales indígenas
+de comunicación en el desarrollo rural venezolano''. \emph{Chasqui.
+Revista Latinoamericana de Comunicación}, n.º 12 (1976): 11-18.
+
+Cornejo Portugal, Inés. ``La voz de la Mixteca: diagnóstico y
+perspectivas''. En \emph{Radio regional y rural en México. Enlace de mil
+voces}, compilado por Jorge Martínez Lugo, Inés Cornejo Portugal y
+Etelvina Hernández Aguirre. México: Universidad Iberoamericana, 1992:
+37-64.
+
+Cornejo Portugal, Inés. ``Presencia de `La voz de la Mixteca' en la
+comunidad receptora de Tlaxiaco, Oaxaca''. En \emph{Radiodifusión en
+México. Historias. Programas. Audiencias}, compilado por Francisco
+Aceves, Pablo Arredondo y Carlos Luna, 155-68. México: Universidad de
+Guadalajara, 1991.
+
+Díaz Polanco, Héctor. ``Derechos indígenas en la actualidad''.
+\emph{Boletín de Antropología Americana}, n.º 33 (1998): 91-99.
+\url{https://www.jstor.org/stable/40978130}.
+
+Dos Santos Neves, Ivania y Helen Alonso Monarcha. ``Inclusão digital
+indígena no Brasil: verdades e mentiras''. \emph{Diálogos de la
+Comunicación}, n.º 86 (enero-julio 2013): 1-20. Acceso el 26 de junio de
+2021, \url{https://dialnet.unirioja.es/servlet/articulo?codigo=6845034}.
+
+Doyle, Magdalena. ``Debates and indigenous demands on rights to
+communication in Latin America''. \emph{Temas Antropológicos,} n.º 37
+(2015): 89-118. \url{https://dialnet.unirioja.es/servlet/articulo?codigo=5267277}.
+
+Doyle, Magdalena. ``El derecho a la comunicación de los pueblos
+originarios. Límites y posibilidades de las reivindicaciones indígenas
+en relación al sistema de medios de comunicación en Argentina''. Tesis
+doctoral en Antropología, Universidad de Buenos Aires, 2017.
+
+Doyle, Magdalena. ``Los medios masivos de comunicación en las luchas de
+los pueblos indígenas. Abordajes desde los estudios sobre comunicación
+en América Latina''. Tesis de Maestría en Comunicación y Cultura
+Contemporánea, Universidad Nacional de Córdoba, 2013.
+
+Encinas Valverde, Orlando. ``La radio al servicio de la liberación
+indígena: Radio Mezquital. La radio como instrumento de apoyo en
+programas de desarrollo integral''. \emph{Nueva Sociedad}, n.º 25
+(julio-agosto 1976): 85-94.
+
+Espinosa, Oscar. ``Los pueblos indígenas de la Amazonía peruana y el uso
+político de los medios de comunicación''. \emph{América Latina Hoy.
+Revista de Ciencias Sociales}, n.º 19 (1998): 91-100. Acceso el 29 de
+junio de 2021,
+\url{https://revistas.usal.es/index.php/1130-2887/article/view/2258}.
+
+Esteinou Madrid, Javier. ``Las etnias y el acceso a los medios de
+comunicación en México''. \emph{Interacción. Revista de comunicación
+educativa}, n.º 26 (2001). Acceso el 28 de junio de 2021,
+\url{http://interaccion.cedal.org.co/26/lasetnias.htm}
+
+Esteinou Madrid, Javier y Margarita Lorea Chávez y Peniche. ``La reforma
+del Estado y el acceso de los pueblos indios a los medios de
+comunicación''. \emph{Economía, Sociedad y Territorio}, n.º 12 (2002).
+Acceso el 4 de mayo de 2022, \url{https://est.cmq.edu.mx/index.php/est/article/view/340}.
+
+Ford, Aníbal. \emph{Navegaciones. Comunicación, cultura y crisis}.
+Buenos Aires: Amorrortu, 1994.
+
+Fuenmayor, Miguel y Oscar José Antepaz. ``La comunicación radial
+intercultural bilingüe en el Zulia''. Ponencia presentada en el II
+Congreso Invecom de la Asociación de Investigadores Venezolanos de la
+Comunicación. Venezuela, 2009. Acceso el 27 de junio de 2021,
+\url{http://congresoinvecom.org/index.php/invecom2009/invecom2009/paper/view/46}.
+
+Fuentes Navarro, Raúl. ``Communication Research in Latin America: Will
+the ``Nocturnal Map'' Survive or Fade Away?''. \emph{History of Media
+Studies} 1 (2021): 1-7. https://doi.org/10.32376/d895a0ea.a5f7f735.
+
+Fuentes Navarro, Raúl. ``La investigación de la comunicación en América
+Latina: condiciones y perspectivas para el siglo XXI''. \emph{Oficios
+Terrestres}, n.º 6 (1999): 56-67.
+\url{http://sedici.unlp.edu.ar/handle/10915/38040}.
+
+Fuentes Navarro, Raúl. \emph{Un campo cargado de futuro. El estudio de
+la comunicación en América Latina}. México: FELAFACS, 1991.
+
+Gumucio Dagron, Alfonso. ``El papel político de las radios mineras''.
+\emph{Comunicación y Cultura,} n.º 8 (julio 1982): 89-100.
+
+Gumucio Dagron, Alfonso. \emph{Haciendo olas: historias de la
+comunicación participativa para el cambio social.} Nueva York:
+Rockefeller Foundation, 2001.
+
+Hasen, Felipe. ``Lago Neltume: la filmación inmersa en un conflicto
+ambiental como herramienta de resistencia''. \emph{Revista Chilena de
+Antropología Visual}, n.º 17 (junio 2011): 146-62.
+\url{http://www.rchav.cl/2011_17_etn02_hasen.html}.
+
+Hein, Kurt. ``Baha'i community radio interacts with campesinos of
+Ecuador''. \emph{Media Development}, n.º 2 (1989): 39-41.
+
+Hernández, Fernando. ``Video y cultura zapoteca''. \emph{Materiales para
+la comunicación popular}, n.º 9 (julio 1987): 12-17.
+
+Hernández, Isabel y Silvia Calcagno. ``Los pueblos indígenas y la
+sociedad de la información en América Latina y el Caribe. Un marco para
+la acción''. Informe de investigación producida para la CEPAL y el
+Instituto para la Conectividad en las Américas. Chile: CEPAL, 2003.
+Acceso el 29 de junio de 2021,
+\url{http://lanic.utexas.edu/project/etext/llilas/claspo/workingpapers/indigenas.pdf}.
+
+Itturriaga, Markus. ``The War of Ink and Internet''. \emph{Chancellor's
+Honors Program Projects}. Knoxville: University of Tennessee, 1996.
+Acceso el 26 de junio de 2021, \url{http://trace.tennessee.edu/utk\_chanhonoproj/167}.
+
+
+Lizondo, Liliana. ``Comunicación con identidad o comunicación
+comunitaria. El caso de la FM `La voz indígena'\,''. Tesis de Maestría
+en Planificación y Gestión de Procesos Comunicacionales, Universidad
+Nacional de La Plata, 2015.
+
+López, Luis. ``Cuatro propuestas desde la radio para que los `quiechuas'
+retomen el control de su propia cultura''. \emph{ALRED}, n.º 23
+(septiembre 1997): 41-45.
+
+Magallanes Blanco, Claudia y José Ramos Rodríguez, coords. \emph{Miradas
+propias. Pueblos indígenas, comunicación y medios en la sociedad
+global.} México: Universidad Iberoamericana Puebla, 2016.
+
+Magallanes Blanco, Claudia et al. ``Memoria e imaginarios en el discurso
+mediático indígena: producciones radiofónicas de Oaxaca''. \emph{Realis}
+3, n.º 2 (2013): 156-77. Acceso el 29 de junio de 2021,
+\url{https://periodicos.ufpe.br/revistas/realis/article/download/8796/8771}.
+
+Martín-Barbero, Jesús. \emph{De los medios a las mediaciones.
+Comunicación, cultura y hegemonía.} Barcelona: Gustavo Gili, 1987.
+
+Martín-Barbero, Jesús. \emph{Oficio del cartógrafo. Travesías
+latinoamericanas de la comunicación en la cultura}. Chile: Fondo de
+Cultura Económica, 2002.
+
+Mata, María Cristina. ``Comunicación popular: continuidades,
+transformaciones y desafíos''. \emph{Oficios Terrestres}, n.º 26 (abril
+2011): 1-22.
+
+Monasterios, Gloria. ``Usos de Internet por organizaciones indígenas
+(OI) de Abya Yala: para una alternativa en políticas comunicacionales''.
+\emph{Revista Comunicación}, n.º 22 (2003): 60-69.
+
+Munizaga, Giselle y Anny Rivera. \emph{La investigación en comunicación
+social en Chile}. Lima: Desc, 1983.
+
+Nava Morales, Elena. ``Radio Totopo y comunalidad: una experiencia de
+comunicación indígena en Oaxaca''. En \emph{Miradas propias. Pueblos
+indígenas, comunicación y medios en la sociedad global}, coordinado por
+Claudia Magallanes Blanco y José Ramos Rodríguez, 215-32. México:
+Universidad Iberoamericana Puebla, 2016.
+
+Nolasco Armas, Margarita. ``Educación y medios de comunicación masiva''.
+\emph{Chasqui. Revista Latinoamericana de Comunicación}, n.º 5 (1974):
+25-38.
+
+O'Connor, Alan. ``People's radio in Latin America, a new assessment''.
+\emph{Media Development} 36 (julio 1989): 47-53.
+
+O'Sullivan, Jerry. ``Informe de la investigación exploratoria sobre
+nuevas posibilidades del radio en la Tarahumara''. \emph{Chasqui.
+Revista Latinoamericana de Comunicación}, n.º 9 (1975): 25-67.
+
+Oseguera, Antonio. ``Una experiencia de comunicación educativa para el
+desarrollo rural''. \emph{Comunicación y Cultura,} n.º 8 (julio 1982):
+33-38.
+
+Ramos Rodríguez, José. ``Inequidad mediática y multiculturalidad:
+alcances y límites de la participación indígena en la radio oficial del
+estado de Puebla, México''. Ponencia presentada en el XXVIII
+International Congress de la Latin American Studies Association. Río de
+Janeiro, 11 a 14 de junio de 2009.
+
+Ramos Rodríguez, José. ``Los programas de avisos en las radiodifusoras
+indigenistas de México: espacios de reproducción de la etnicidad''.
+Ponencia presentada en el VI Congreso de la Asociación Latinoamericana
+de Investigadores de la Comunicación. Bolivia, 12 al 15 de junio de
+2002.
+
+Romo, Cristina. \emph{La otra radio. Voces débiles, voces de esperanza}.
+México: Fundación Manuel Buendía / Instituto Mexicano de la Radio, 1990.
+
+Salazar, Juan. ``Prácticas de auto-representación y los dilemas de la
+autodeterminación: el cara y sello de los derechos a la comunicación
+Mapuche''. En \emph{Aproximaciones a la cuestión mapuche en Chile, una
+mirada desde la historia y las ciencias sociales}, editado por Claudio
+Barrientos, 145-65. Santiago de Chile: RIL Editores, 2014.
+
+Sandoval Forero, Eduardo y Laura Mota Díaz. ``Indígenas y democracia en
+las tecnologías de la información y la comunicación (TICs)''. Ponencia
+presentada en las VI Jornadas latinoamericanas de estudios sociales de
+la ciencia y la tecnología de la Universidad Nacional de Colombia.
+Bogotá, 2007.
+
+Sanguinetti, Luciano. \emph{Comunicación y medios. Claves para pensar y
+enseñar una teoría latinoamericana sobre comunicación}. La Plata:
+Universidad Nacional de La Plata, 2001.
+
+Santos Velasco, Francisco y Francisco Reyes Ruiz. \emph{Una experiencia
+de comunicación educativa a través de la radio en la zona lacustre de
+Pátzcuaro}. Ecuador: CIESPAL / CREFAL, 1983.
+
+Stavenhagen, Rodolfo. \emph{Los pueblos indígenas y sus derechos.
+Informes Temáticos del Relator Especial sobre la situación de los
+Derechos Humanos y las Libertades Fundamentales de los Pueblos Indígenas
+del Consejo de Derechos Humanos de la Organización de las Naciones
+Unidas.} México: UNESCO, 2007.
+
+Sunkel, Guillermo, coord. \emph{El consumo cultural en América Latina.
+Construcción teórica y líneas de investigación}. Bogotá: Convenio Andrés
+Bello, 1999.
+
+Torrico Villanueva, Erick R. ``Comunicación organizacional y
+decolonialidad: desafíos para una intersección factible''.
+\emph{Organicom}, n.º 37 (septiembre-diciembre 2021): 14-22.
+
+Trejo Delarbre, Raúl. \emph{Chiapas. La comunicación enmascarada: los
+medios y el pasamontañas}. México: Diana, 1994.
+
+Vassallo de Lopes, Maria Immacolata. ``El campo de la comunicación:
+sobre su estatuto disciplinar''. \emph{Oficios Terrestres},
+n.\textsuperscript{o} 7 (2000): 74-83.
+\url{http://sedici.unlp.edu.ar/handle/10915/47380}.
+
+White, Robert. ``La teoría de la comunicación en América Latina. Una
+visión europea de sus contribuciones''. \emph{Telos}
+n.\textsuperscript{o} 19 (1989): 43-54.
+
+
+
+\end{hangparas}
+
+
+\end{document}
