@@ -27,5 +27,4 @@ article type % like "Launch essay" or "Article"
 article title % full title; **make adjustment to Latex quotation marks and italics**
 author 1 name;email address;affiliation
 author 2 name;email address;affiliation % if none, replace with 'none'
-author 3 name;email address;affiliation % if none, replace with 'none'
 doi % just the doi, no https://doi.org/
