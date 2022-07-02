@@ -9,4 +9,3 @@
 - [ ] in Pub Settings, check the main elements, including Custom publication date, if relevant
 - [ ] create a new release with "Initial release"
 - [ ] mint a DOI and copy below
-- [ ] generate the PDF with the [HMS latex to pdf](shortcuts://run-shortcut?name=HMS%20latex%20to%20pdf) Shortcut
