@@ -18,7 +18,7 @@
 - [ ] navigate to article's Pub Settings and upload pdf
 - [ ] Test the PDF, copy the reference info, Open the Download Button Pages document, paste in, check for size/fit/formatting (e.g., italics), make link red (custom), screenshot, save to file, upload as an image in a new draft, make full-width, add the download url, and re-release
 - [ ] move the Pub to 'Published' in the [Kanban](x-icabmobile://x-callback-url/open?url=https://airtable.com/appXhmKzo4WMgQJnn/tblkbjPK1lfVmbzhY/viwXhseji8rljOBvU?blocks=hide)
-- [ ] email reply to author
+- [ ] email [reply to author](shortcuts://run-shortcut?name=Email%20article%20published)
 
 ## Replace these values
 
