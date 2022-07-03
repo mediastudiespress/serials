@@ -1,0 +1,2251 @@
+% see the original template for more detail about bibliography, tables, etc: https://www.overleaf.com/latex/templates/handout-design-inspired-by-edward-tufte/dtsbhhkvghzz
+
+\documentclass{tufte-handout}
+
+%\geometry{showframe}% for debugging purposes -- displays the margins
+
+\usepackage{amsmath}
+
+\usepackage{tabu}
+\usepackage{longtable}
+
+\usepackage{hyperref}
+
+
+\usepackage{amssymb}
+\DeclareUnicodeCharacter{2264}{\leq}
+
+\usepackage{fancyhdr}
+
+\usepackage{hanging}
+
+\hypersetup{colorlinks=true,allcolors=[RGB]{97,15,11}}
+
+\fancyfoot[L]{\emph{History of Media Studies}, vol. 2, 2022}
+
+
+% Set up the images/graphics package
+\usepackage{graphicx}
+\setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
+\graphicspath{{graphics/}}
+
+\title[Inequality]{Inequality: The Blind Spot of Western Communication Studies} % longtitle shouldn't be necessary
+
+% The following package makes prettier tables.  We're all about the bling!
+\usepackage{booktabs}
+
+% The units package provides nice, non-stacked fractions and better spacing
+% for units.
+\usepackage{units}
+
+% The fancyvrb package lets us customize the formatting of verbatim
+% environments.  We use a slightly smaller font.
+\usepackage{fancyvrb}
+\fvset{fontsize=\normalsize}
+
+% Small sections of multiple columns
+\usepackage{multicol}
+
+% Provides paragraphs of dummy text
+\usepackage{lipsum}
+
+% These commands are used to pretty-print LaTeX commands
+\newcommand{\doccmd}[1]{\texttt{\textbackslash#1}}% command name -- adds backslash automatically
+\newcommand{\docopt}[1]{\ensuremath{\langle}\textrm{\textit{#1}}\ensuremath{\rangle}}% optional command argument
+\newcommand{\docarg}[1]{\textrm{\textit{#1}}}% (required) command argument
+\newenvironment{docspec}{\begin{quote}\noindent}{\end{quote}}% command specification environment
+\newcommand{\docenv}[1]{\textsf{#1}}% environment name
+\newcommand{\docpkg}[1]{\texttt{#1}}% package name
+\newcommand{\doccls}[1]{\texttt{#1}}% document class name
+\newcommand{\docclsopt}[1]{\texttt{#1}}% document class option name
+
+
+\begin{document}
+
+\begin{titlepage}
+
+\begin{fullwidth}
+\noindent\LARGE\emph{Exclusions in the History of Media Studies
+} \hspace{25mm}\includegraphics[height=1cm]{logo3.png}\\
+\noindent\hrulefill\\
+\vspace*{1em}
+\noindent{\Huge{Inequality: The Blind Spot of Western\\\noindent Communication Studies\par}
+
+\vspace*{1.5em}
+
+\noindent\LARGE{Boris Mance} \href{https://orcid.org/0000-0002-8864-1683}{\includegraphics[height=0.5cm]{orcid.png}}\par}\marginnote{\emph{Boris Mance and Sašo Slaček Brlek, ``Inequality: The Blind Spot of Western Communication Studies,'' \emph{History of Media Studies} 2 (2022), \href{https://doi.org/10.32376/d895a0ea.dd047f5b}{https://doi.org/ 10.32376/d895a0ea.dd047f5b}.} \vspace*{0.75em}}
+\vspace*{0.5em}
+\noindent{{\large\emph{University of Ljubljana}, \href{mailto:boris.mance@fdv.uni-lj.si}{boris.mance@fdv.uni-lj.si}\par}} \marginnote{\href{https://creativecommons.org/licenses/by-nc/4.0/}{\includegraphics[height=0.5cm]{by-nc.png}}}
+
+\vspace*{0.75em} 
+
+\noindent{\LARGE{Sašo Slaček Brlek} \href{https://orcid.org/0000-0001-6270-3092}{\includegraphics[height=0.5cm]{orcid.png}}\par}
+\vspace*{0.5em}
+\noindent{{\large\emph{University of Ljubljana}, \href{mailto:saso.brlek-slacek@fdv.uni-lj.si}{saso.brlek-slacek@fdv.uni-lj.si}\par}}
+
+% \vspace*{0.75em} % third author
+
+% \noindent{\LARGE{<<author 3 name>>}\par}
+\vspace*{0.5em}
+% \noindent{{\large\emph{<<author 3 affiliation>>}, \href{mailto:<<author 3 email>>}{<<author 3 email>>}\par}}
+
+\end{fullwidth}
+
+\vspace*{1em}
+
+
+\hypertarget{abstract}{%
+\section{Abstract}\label{abstract}}
+
+Our study focuses on the prevalence of conceptualizations of
+communicative inequality in the field of communication studies after the
+end of World War II. While communication studies has adopted and been
+influenced by conceptualizations of inequality from related disciplines
+and fields, conceptualizations of communicative inequality seem to have
+played only a marginal role. By means of a network analysis conducted on
+a corpus of more than fifteen thousand articles published in eight
+prominent international journals in the field\footnote{\emph{Journal of
+  Communication}; \emph{Communication Monographs}; \emph{Public Opinion
+  Quarterly}; \emph{Journalism \& Mass Communication Quarterly};
+  \emph{Communication Research}; \emph{Media, Culture \& Society};
+  \emph{European Journal of Communication;} and \emph{Discourse \&
+  Society.}} between 1945 and 2018, this study aims to map the
+prominence and adoption of different conceptualizations of communication
+inequality. With the tools of network analysis, the study identifies
+particular conceptualizations by tracing the most co-occuring cited
+authors associated with a particular conceptualization across time. We
+identify four distinct clusters of conceptualizations: modernization
+theory, cultural imperialism, knowledge gap, and digital divide.
+Historically, approaches to communication inequality have been divided
+either along ideological lines---largely defined by support for
+(modernization theory) or opposition to (cultural imperialism) US
+foreign policy---or in terms of different levels of communication
+inequality. While both modernization and cultural imperialism focus on
+international communication inequality, the knowledge gap tradition
+focuses
+
+\enlargethispage{2\baselineskip}
+
+\vspace*{2em}
+
+\noindent{\emph{History of Media Studies}, vol. 2, 2022}
+
+
+ \end{titlepage}
+
+
+
+\noindent on interpersonal differences. We argue that the dominant
+approaches and paradigmatic shifts in conceptualizations of
+communication inequality have largely been driven by forces outside of
+communication studies. Modernization, which dominated the period until
+the late 1970s, grew from US interests in securing hegemony in the third
+world. Critiques of cultural imperialism emerged during the 1970s as a
+direct challenge to modernization theory, connected strongly to
+third-world opposition to US hegemony. The notion of a digital divide,
+which has become the predominant conceptualization of communication
+inequality since 2000, stems largely from the concerns of the US
+Commerce Department's National Telecommunications and Information
+Administration for providing ``universal service'' to US citizens, while
+the knowledge gap tradition relates to the effectiveness of top-down
+communication campaigns.
+
+\hypertarget{resumen}{%
+\section{Resumen}\label{resumen}}
+
+Nuestro estudio se centra en las conceptualizaciones sobre la
+desigualdad comunicativa en el campo de los estudios de comunicación que
+han predominado tras el final de la segunda guerra mundial. Mientras que
+las conceptualizaciones sobre la desigualdad que provienen de
+disciplinas y campos afines han sido adoptadas o han influenciado a los
+estudios de comunicación, las conceptualizaciones sobre la desigualdad
+comunicativa parecen haber desempeñado solo un papel marginal. Mediante
+un análisis de redes a un corpus de más de quince mil artículos
+publicados entre 1945 y 2018 en ocho revistas internacionales de
+prestigio en el campo, este estudio pretende mapear la relevancia y
+adopción de distintas conceptualizaciones sobre la desigualdad
+comunicativa. Con el uso de herramientas de análisis de redes, el
+estudio identifica conceptualizaciones particulares al rastrear a través
+del tiempo a los autores citados más co-ocurrentes en asociación con una
+conceptualización particular. Identificamos cuatro grupos de
+conceptualizaciones: teoría de la modernización, imperialismo cultural,
+brecha del conocimiento y brecha digital. Históricamente, los enfoques
+de la desigualdad en la comunicación se han dividido en función de
+líneas ideológicas ---definidas en gran medida por el apoyo (teoría de
+la modernización) o la oposición (imperialismo cultural) a la política
+exterior de Estados Unidos--- o en términos de diferentes niveles de
+desigualdad en la comunicación. Mientras que la modernización y el
+imperialismo cultural se centran en la desigualdad comunicativa
+internacional, la tradición de la brecha de conocimiento se centra en
+las diferencias interpersonales. Sostenemos que los enfoques dominantes
+y los cambios paradigmáticos en las conceptualizaciones sobre la
+desigualdad comunicativa han sido impulsados por fuerzas ajenas a los
+estudios de comunicación. La modernización, que dominó el periodo hasta
+finales de la década de los setenta, nació de los intereses de Estados
+Unidos por asegurar la hegemonía en el tercer mundo. Las críticas al
+imperialismo cultural surgieron en los años setenta como un desafío
+directo a la teoría de la modernización, conectada fuertemente con la
+oposición del tercer mundo a la hegemonía estadounidense. La noción de
+brecha digital, la conceptualización predominante de la desigualdad en
+la comunicación desde el año 2000, proviene en gran medida de las
+preocupaciones de la Administración Nacional de Telecomunicaciones e
+Información del Departamento de Comercio de Estados Unidos por
+proporcionar un ``servicio universal'' a los ciudadanos estadounidenses,
+en tanto que la tradición de la brecha de conocimiento se relaciona con
+la eficacia de las campañas de comunicación de arriba hacia abajo.
+
+\vspace*{2em}
+
+
+
+
+\newthought{Let us say} you were faced with the challenge of correctly positioning
+social scientists within different theoretical traditions or paradigms.
+The caveat is that you know nothing about them and are allowed to ask
+only a single question. Arguably, the best choice would be to query them
+about their views on inequality. If someone responds that the root cause
+of inequality is the exploitation of workers, made possible through the
+private property of the means of production, you would be quite
+justified in guessing that this person is not a huge fan of Friedrich
+Hayek or Talcott Parsons. If, on the other hand, the answer is that
+income and profit are just rewards of an unerring market, distributed
+according to merit, and that attempts to interfere with this mechanism
+of distribution would only bring calamity upon a society so foolish as
+to attempt it, then you would know better that to invite this person to
+join your monthly reading circle of \emph{Das Kapital}.
+
+Inequality is one of the key concepts in the social sciences around
+which the most fruitful academic debates have historically arisen,
+compared and related to concepts such as power, ideology, values,
+rights, and culture. Debates about the causes and consequences of
+inequality in society helped to articulate the most distinctive schools
+of thought in the social sciences, such as the functionalist and Marxist
+paradigms in sociology. These ideas have been central to critical
+theories related to class, race, gender, or sexual orientation, as we
+find in trajectories of thought inspired by postcolonialism, feminist
+theories, and LGBTQI critique. The fundamental point of divergence that
+constitutes the most prominent paradigms lies in their
+conceptualizations of inequality; while functionalism views inequality
+not only as inevitable but as a desirable and therefore functional
+element in the formation and evolution of (modern) society, critical
+schools of thought view inequality as dysfunctional, or rather, as a
+functional tool of the dominant class in its reproduction of power and
+maintenance of the status quo.
+
+The situation within communication studies, however, seems to be
+different. We can certainly observe the influence of economic and
+sociological theories and critiques of inequality like Marxism or the
+social stratification theory of Pierre Bourdieu, as well as other
+critical traditions, which are most prominent in analyses of the ways in
+which dominant power relations and hierarchies are reproduced in mass
+media content. Examples include critical discourse analysis, framing
+analysis, and ideology critique.\footnote{Boris Mance, ``The Changing
+  Role and Patterns of Critical Communication Scholarship in the
+  Academic Journal Publishing System,'' (doctoral thesis, University of
+  Ljubljana, 2020).} However, all of these approaches deal with the ways
+social inequalities are represented or reinforced \emph{through} the
+mass media; they do not focus their attention on the ways inequalities
+are present \emph{in} systems of mass communication---that is, on
+communication inequalities.
+
+In order to track the prominence, historical development, and relations
+between different conceptualizations of communication inequality, our
+study traces selected keywords as indicators of conceptualizations of
+communication inequality. Concepts enable adherents to communicate
+through the established linguistic system of codes, or a ``shared body
+of words and meanings,''\footnote{Raymond Williams, \emph{Keywords: A
+  Vocabulary of Culture and Society} (1976; repr., New York: Oxford
+  University Press, 2015).} and evolve out of the need for more precise,
+practical, and economical communication among members of a scientific
+community. As such, concepts serve as mechanisms of reduction, each
+denoting a set of arguments that a community agrees upon and that
+distinguishes it from the concepts of other communities. Accordingly,
+the analysis of conceptualizations of communication inequality can also
+give insight into the prominence, historical development, and relations
+between different paradigms within communication studies.
+
+\hypertarget{institutionalization-of-administrative-and-critical-paradigms-in-communication-research}{%
+\section{Institutionalization of Administrative and Critical
+Paradigms in Communication
+Research}\label{institutionalization-of-administrative-and-critical-paradigms-in-communication-research}}
+
+The institutionalization of the administrative paradigm in the US was
+largely supported by government and private actors, particularly the
+Rockefeller Foundation,\footnote{Todd Gitlin, ``Media Sociology: The
+  Dominant Paradigm,'' \emph{Theory and Society} 6, no. 2 (1978): 228.}
+the Ford Foundation,\footnote{Peter Simonson and John Durham Peters,
+  ``Communication and Media Studies, History to 1968'' in \emph{The
+  International Encyclopedia of Communication}, ed. Wolfgang Donsbach
+  (Malden, MA: Wiley-Blackwell, 2008).} and various branches of the US
+administration,\textsuperscript{6} such
+as the Army, the CIA, and the State Department.\textsuperscript{7} By privileging research on media effects, media and
+communication research was gradually detached from other fields of
+communication research such as journalism and speech.\textsuperscript{8}
+
+\newpage
+
+Government\marginnote{\textsuperscript{6} Brett Gary, ``Communication Research, the
+  Rockefeller Foundation, and Mobilization for the War on Words,
+  1938--1944,'' \emph{Journal of Communication} 46, no. 3 (1996).}\marginnote{\textsuperscript{7} Jefferson
+  Pooley, ``The New History of Mass Communication Research,'' in
+  \emph{The History of Media and Communication Research: Contested
+  Memories}, ed. David Park and Jefferson Pooley (New York: Peter Lang,
+  2008).}\marginnote{\textsuperscript{8}\setcounter{footnote}{8} Juha
+  Koivisto, \emph{Mapping Communication and Media Research} (Tampere,
+  Finland: Tampere University Press, 2010).} funding shaped the research programs of the most influential
+research institutes, which in turn shaped the emerging field of
+communication studies. Between 1950 and 1951, Lazarsfeld's Bureau for
+Applied Social Research (BASR), for example, gained 75 percent of its
+funding from government sources, primarily from the US Air Force's Human
+Resources Research Institute and the Department of State's Voice of
+America program. Between 1952 and 1953, the number rose to 84
+percent.\footnote{Timothy Glander, \emph{Origins of Mass Communications
+  Research During the American Cold War: Educational Effects and
+  Contemporary Implications} (Mahwah, NJ and London: Lawrence Erlbaum
+  Associates, 2010), 124.} BASR was no exception in this regard, as at
+the same time, Hadley Cantril's Institute for International Social
+Research (IISR), as well as the Center for International Studies
+(CENIS), gained more than 75 percent of their income from contracts with
+the government.\footnote{Christopher Simpson, \emph{Science of Coercion:
+  Communication Research \& Psychological Warfare, 1945}--\emph{1960}
+  (New York: Oxford University Press, 1994), 4.} At this time (1952), a
+whopping 96 percent of federal funds for social sciences were provided
+by the military.\footnote{Simpson, \emph{Science of Coercion}, 52.} The
+influence of the military on the early institutionalization of the field
+can be seen as well in the fact that the four presidents of the
+International Communication Association (ICA) between 1953 and 1962 all
+had military backgrounds, while a third of POQ editors and editorial
+board members were financially dependent upon psychological warfare
+contracts.\footnote{Simpson, \emph{Science of Coercion}, 43.}
+
+These circumstances shaped the understanding of communication in general
+and communication inequality in particular. The interests of the US
+government---and particularly the military---to use communication in
+order to reach its goals favored an understanding of communication as
+propaganda, reflected in a strong research focus on media effects, as
+well as the role of mass media as a tool of ``modernization'' in the
+developing world. In such a conception, communication inequality between
+the elites, who determine the goals and methods of communication
+campaigns, and the masses, who are the intended site for the production
+of media effects, is implicitly assumed and thereby naturalized. Those
+who receive such messages are not meant to actively participate in
+processes of mass communication; they are meant to be persuaded. The
+effectiveness of persuasion can then be measured by the emerging
+``science'' of public opinion polling. As Simpson has eloquently put it:
+
+\begin{quote}
+As will become apparent, the ``dominant paradigm'' of the period proved
+to be in substantial part a paradigm of dominance, in which the
+appropriateness and inevitability of elite control of communication was
+taken as a given. As a practical matter, the key academic journals of
+the day demonstrated only a secondary interest in what communication
+``is.'' Instead, they concentrated on how modern technology could be
+used by elites to manage social change, extract political concessions,
+or win purchasing decisions from targeted audiences. Their studies
+emphasized those aspects of communication that were of greatest
+practical interest to the public and private agencies that were
+underwriting most of the research. This orientation reduced the
+extraordinarily complex, inherently communal social process of
+communication to simple models based on the dynamics of transmission of
+persuasive---and, in the final analysis, coercive---messages.\footnote{Simpson,
+  \emph{Science of Coercion}, 62.}
+\end{quote}
+
+The decisive impetus for the rise of the critical paradigm, on the other
+hand, arrived from labor militancy and new social movements in the late
+1960s, drawing on critique of the structural political and economic
+determinism of mass communication, historical materialism, and a
+questioning of the ``hegemonic status of logical
+positivism.''\footnote{Kaarle Nordenstreng, ``Ferment in the Field:
+  Notes on the Evolution of Communication Studies and Its Disciplinary
+  Nature,'' \emph{Javnost---The Public} 11, no. 3 (2004).} While the
+administrative paradigm naturalized (communication) inequality, the
+critical paradigm embraced demystification and struggle against social
+inequalities, focusing on the ways the mass media serves to obfuscate
+and reproduce dominant power relations. Critical research had scant
+opportunities to obtain significant funding from national political and
+economic institutions.\footnote{William H. Melody and Robin E. Mansell,
+  ``The Debate over Critical vs. Administrative Research: Circularity or
+  Challenge,'' \emph{Journal of Communication} 33, no. 3 (1983).} Key
+material resources for critical research were easier to obtain at the
+international level, where national economic and political interest had
+less influence,\footnote{Dallas W. Smythe and Tran Van Dinh, ``On
+  Critical and Administrative Research: A New Critical Analysis,''
+  \emph{Journal of Communication} 33, no. 3 (1983).} as for instance,
+with UNESCO's New World Information and Communication Order (NWICO)
+initiative and the International Association for the Study of Mass
+Communication (IAMCR), which actively supported progressive thought by
+establishing a politico-economic section.\footnote{Kaarle Nordenstreng,
+  ``Being (Truly) Critical in Media and Communication Studies:
+  Reflections of a Media Scholar between Science and Politics,''
+  \emph{Javnost---The Public} 23, no.1 (2016).}
+
+\hypertarget{contested-concepts}{%
+\subsection{Contested
+Concepts}\label{contested-concepts}}
+
+The issues associated with conceptualizations have long preoccupied
+scholars. Numerous studies have qualitatively examined contested
+concepts, such as ``capitalism,''\footnote{Luc Boltanski and Eve
+  Chiapello, \emph{The New Spirit of Capitalism} (London: Verso, 2007).}
+``alienation,''\footnote{Williams, \emph{Keywords}.} ``ideology,''
+\footnote{John Downey and Jason Toynbee, ``Ideology: Towards Renewal of
+  a Critical Concept,'' \emph{Media, Culture \& Society} 38, no. 8
+  (2016).} ``hegemony,'' \footnote{Joe L. Kincheloe and Peter L.
+  McLaren, ``Rethinking Critical Theory and Qualitative Research,'' in
+  \emph{Landscape of Qualitative Research: Theories and Issues,} ed.
+  Norman K. Denzin and Yvonna S. Lincoln (London: SAGE, 1998).} ``public
+opinion,''\footnote{Slavko Splichal, \emph{Public Opinion:}
+  \emph{Developments and Controversies in Twentieth Century} (Lanham,
+  MD: Rowman \& Littlefield, 1999).} or ``public sphere,''\footnote{Natalie
+  Fenton, ``Fake Democracy: The Limits of Public Sphere Theory,''
+  \emph{Javnost---The Public} 25, no. 1--2 (2018).} and found that the
+original critical concepts have become neutralized. To trace
+conceptualizations of inequality, we believe quantitative analysis is
+more appropriate because it allows us to identify the relationships
+between conceptualizations and scholarly communities that appear to be
+(or actually are) unrelated and/or have been labeled differently.
+
+The use of keywords as indicators of prominence of particular strands of
+research also has a long history in communication research, with
+indicator selection based on deductive and inductive approaches. The
+former uses corpora (e.g., the population of research papers) to
+identify the most prominent keywords and is particularly popular for
+identifying trends in longitudinal research.\textsuperscript{24} The latter method, in which
+specific concepts are selected in advance, is better suited to
+identifying the dynamics of less prominent or non-mainstream research.
+Such methods have been used, for example, to examine the development of
+concepts in communication research and\newpage
+
+\noindent have found an increase in
+cognitive\marginnote{\textsuperscript{24}\setcounter{footnote}{24} Mark A. Hamilton
+  and Kristine L. Nowak, ``Information Systems Concepts across Two
+  Decades: An Empirical Analysis of Trends in Theory, Methods, Process,
+  and Research Domains,'' \emph{Journal of Communication} 55, no. 3
+  (2005); Julian Lin and Seow Ting Lee, ``Mapping Twelve Years of
+  Communication Scholarship: Themes and Concepts in the Journal of
+  Communication'' in \emph{The Outreach of Digital Libraries: A
+  Globalized Resource Network}, Lecture Notes in Computer Science 7634
+  (Berlin and Heidelberg: Springer, 2012).} conceptualizations and a decrease in behavioral
+conceptualizations.\footnote{Hamilton and Nowak, ``Information Systems
+  Concepts,'' 529--53.}
+
+Since Eugene Garfield's institutionalization of citation indexing in
+1964, bibliographic analysis, which views citations as indicators of the
+significance of scientific ideas, has become more important for
+identifying scientific communities.\footnote{Robert K. Merton and Norman
+  William Storer, \emph{The Sociology of Science: Theoretical and
+  Empirical Investigations} (Chicago: University of Chicago Press,
+  1998).} In particular, its extension, co-citation analysis, has been
+used to map the connections of co-cited authors or works and to identify
+the structural patterns of scientific ideas. These analyses have been
+used in the field to detect, for example, differences between journals
+in co-citation patterns and topics,\footnote{Ronald E. Rice et al.,
+  ``What's in a Name? Bibliometric Analysis of Forty Years of the
+  \emph{Journal of Broadcasting} (\emph{\& Electronic Media}),''
+  \emph{Journal of Broadcasting \& Electronic Media} 40, no. 4 (1996).}
+or gender bias in citations, also known as the Matilda
+effect.\footnote{Silvia Knobloch-Westerwick and Carroll J. Glynn, ``The
+  Matilda Effect---Role Congruity Effects on Scholarly Communication: A
+  Citation Analysis of Communication Research and Journal of
+  Communication Articles,'' \emph{Communication Research} 40, no. 1
+  (2013).}
+
+The digitization of content and the availability of bibliometric
+(meta)data, as well as the advancement of network analysis methods and
+community detection algorithms, have proven productive in tracing the
+long-term dynamics of conceptualizations, such as examining the
+genealogy of the concept of social capital across
+disciplines,\footnote{Chul-joo Lee and Sohn Dongyoung, ``Mapping the
+  Social Capital Research in Communication,'' \emph{Journalism \& Mass
+  Communication Quarterly} 93, no. 4 (2016).} different strands of
+thought in agenda-setting research,\footnote{Zixue Tai, ``The Structure
+  of Knowledge and Dynamics of Scholarly Communication in Agenda Setting
+  Research, 1996--2005,'' \emph{Journal of Communication} 59, no. 3
+  (2009).} reconceptualizations of the concept of the public
+sphere,\footnote{Adrian Rauchfleisch, ``The Public Sphere as an
+  Essentially Contested Concept: A Co-citation Analysis of the Last
+  Twenty Years of Public Sphere Research,'' \emph{Communication and the
+  Public} 2, no. 1 (2017).} and/or mapping critical approaches in
+communication research.\footnote{Slavko Splichal and Boris Mance,
+  ``Paradigm(s) Lost? Islands of Critical Media Research in
+  Communication Journals,'' \emph{Journal of Communication} 68, no. 2
+  (2018).}
+
+To explore the presence of communication inequalities in the scholarly
+literature, we have conducted a network analysis on a corpus of more
+than fifteen thousand articles published in eight prominent journals in
+the field. We will attempt to map the prominence and adoption of
+different conceptualizations of communication inequality in
+communication studies. With the tools of network analysis, we attempt to
+identify particular conceptualizations by tracing the most co-occuring
+words and cited authors associated with a particular conceptualization
+across time. The contribution of the present paper to the existing body
+of research can be found in our identification of the dynamics and
+prominence of particular conceptualizations of communication inequality
+appearing in the period following the end of World War II. Furthermore,
+by coupling the concepts with the co-occurring cited authors in articles
+and treating them with the tools of network analysis, we identify
+relations between different conceptualizations of inequality, paradigms
+affiliated with particular conceptualizations, as well as relations
+between those paradigms.
+
+\hypertarget{defining-communication-inequality-and-identifying-keywords}{%
+\subsection{Defining Communication Inequality and
+Identifying
+Keywords}\label{defining-communication-inequality-and-identifying-keywords}}
+
+As Yu notes, research on information and communication inequalities is
+highly fragmented and there is a notable lack of integrative research
+and theory building.\footnote{Liangzhi Yu, ``The Divided Views of the
+  Information and Digital Divides: A Call for Integrative Theories of
+  Information Inequality,'' \emph{Journal of Information Science} 37,
+  no. 6 (2011).} This leads to the fact that there is no single term
+used in the scholarly literature to describe the concept of
+communication inequality. Rather, there is a multiplicity of approaches,
+theories, and concepts dealing with its various aspects. To further
+complicate matters, the terms used to describe various aspects of
+communication inequality are historically specific, some of them
+emerging only relatively recently (for example, the term ``digital
+divide'' ), possibly replacing other terms and concepts, while some
+concepts were prominent in earlier eras and have since almost
+disappeared from use (for example, Lerner's modernization theory),
+possibly being replaced by other terms and concepts.
+
+In order to be able to identify keywords for our analysis, we need first
+of all to construct a broad enough definition of communication
+inequality to take account of this paradigmatic fragmentation. For this
+purpose, we define communication inequality as differences in the access
+to and capacity to use the means of producing, manipulating, and
+receiving information. These differences can be observed on several
+levels: between individuals, between social groups, or at the level of
+whole societies, nations, or regions of the world. These levels are
+closely related to those identified by Yu (see Figure 1); however, with
+the addition of the international dimension, which featured prominently
+in the critical literature during the 1970s and 1980s, these differences
+can be related closely to non-aligned efforts at addressing perceived
+imbalances in global information and communication flows (the debates on
+the New World Information and Communication Order, or NWICO).
+
+\vspace*{2em}
+
+\begin{figure}
+    \centering
+    \includegraphics{mance-figure-one.png}
+    \caption{\emph{Theoretical Perspectives of Information Inequality.}
+Source: Liangzhi Yu, ``Understanding Information Inequality: Making
+Sense of the Literature of the Information and Digital
+Divides,''~\emph{Journal of Librarianship and Information Science} 38,
+no. 4 (2006): 229--52, \url{https://doi.org/10.1177/0961000606070600}.}
+    \label{fig:one}
+\end{figure}
+
+
+Based on this definition, we have used a two-pronged approach to create
+a list of keywords for the analysis. First, we have created keywords by
+combining the words information, communication, media, digital,
+internet, and ICT with terms designating inequality, such as inequality,
+gap, divide, poverty, access, rich, poor, haves, have nots, etc.
+Secondly, we have identified specific vocabularies used by various
+research traditions to refer to information and communication
+inequalities using a literature review. To begin with, we have
+identified the relevant schools of thought or research traditions,
+relying mostly on Yu and Donsbach.\footnote{Wolfgang Donsbach, \emph{The
+  International Encyclopedia of Communication} (Malden, MA: Blackwell
+  Publishing, 2008).} In addition to the approaches identified by
+Yu,\footnote{Yu, ``Divided.''} we have added the three most prominent
+paradigms within development communication (modernization theory,
+cultural imperialism, and participatory communication), as they deal
+with international communicative inequalities, and public sphere theory.
+We then conducted a literature review of each of the identified research
+traditions in order to identify specific terminology used to describe
+information and communication inequalities within those traditions.
+
+In this way we have created a list of 144 potential keywords. In the
+second step, we have reduced the number of keywords by eliminating those
+that are very infrequent in our corpus (n $ \leq $ 10), as we are interested in
+identifying systematic patterns and not terms that appear only
+idiosyncratically. Forty-eight keywords have met this criterion. In the
+third step, we have reviewed the results and eliminated those keywords
+that lack specificity (i.e., are not used exclusively to refer to
+information and communication inequality). When keywords were found to
+be too broad, we have attempted to modify them to increase specificity
+when possible (e.g., substituting ``unequal media access'' for the
+non-specific ``media access''); however, none of these modified keywords
+met the frequency criteria (n  10) to be included in the
+analysis. In the case of the keyword ``modernization,'' we have added
+the requirement that either ``Lerner'' or ``Rogers'' (the two most
+prominent authors in this tradition) co-occur in the same article in
+order to achieve specificity.
+
+In this way, we have reduced the initial list of potential keywords to
+twenty-four (see Table 1). In addition, we have searched for articles in
+the Web of Science ``Communication'' category containing any of the
+twenty-four keywords in their topics in order to supplement the sample
+of prominent keywords by any that we might have missed. By extracting
+the common phrases appearing in the titles, abstracts, and keywords of
+8,024 resulting articles, the noun phrase detection analysis in the
+CiteSpace software package yielded 1,018 results (Appendix E ). Manual
+inspection of phrases appearing at least ten times did not yield any
+additional keywords. We are therefore confident that our list adequately
+represents the most relevant keywords referring to communication
+inequality.
+
+\newpage
+
+\hypertarget{table-1-final-list-of-keywords-and-their-frequencies}{%
+\subsection{Table 1. Final List of Keywords and Their
+Frequencies}\label{table-1-final-list-of-keywords-and-their-frequencies}}
+
+\tabulinesep=1.1mm
+{\begin{longtabu} to 1.05\textwidth { X[l] X[c] } 
+\emph{Keyword} & \emph{N} \\
+\endfirsthead
+\emph{Keyword} & \emph{N} \\
+\endhead
+knowledge gap & 270 \\
+cultural imperialism & 213 \\
+digital divide & 198 \\
+(``modernization'' AND ``Lerner'') OR (``modernization'' AND ``Rogers'')
+& 149 \\
+world system OR world-system & 123 \\
+media imperialism & 122 \\
+cultural domination & 99 \\
+information gap & 87 \\
+NWICO OR New World Information and Communication Order & 71 \\
+communication gap & 49 \\
+digital inequalit* & 42 \\
+New International Information Order & 42 \\
+information poverty & 41 \\
+participatory communication & 33 \\
+information poor & 30 \\
+counterpublic & 29 \\
+digital inclusion & 25 \\
+equitable access & 21 \\
+information inequalit* & 16 \\
+access to ICT OR access to the ICT & 12 \\
+balanced flow of information & 12 \\
+communication inequalit* & 11 \\
+digital exclusion & 11 \\
+electronic colonialism & 11 \\
+\end{longtabu}}
+
+\vspace*{2em}
+
+\hypertarget{method}{%
+\section{Method}\label{method}}
+
+\hypertarget{sampling}{%
+\subsection{Sampling}\label{sampling}}
+
+In order to identify the structural and dynamic features of
+conceptualizations of communication inequalities, our analysis detects
+the patterns of co-occurrences of indicators---selected terms/concepts
+and cited authors---in the articles published in eight elite scholarly
+journals whose research scope is focused on the problems of media and
+mass communication and which are indexed in the SSCI bibliographic
+database Clarivate Analytics: Web of Science (WOS). The labor-intensive
+process of cleaning and standardizing more than five hundred thousand
+cited authors' entries, and acquisition and preparation of more than
+fifteen thousand articles, limited the number of journals in the sample.
+The selection of journals seeked to reflect: a) the journal's
+prominence, indicated by relatively high impact factor, and b)
+distinctiveness of research communities, operationalized by affiliations
+with professional communication organizations, reflecting broader and
+substantial trends in communication research, thus providing a
+relatively long publication period for analysis (the case of US based
+journals). Apart from the commercial journal \emph{Communication
+Research}, the sampled US-based journals include association journals,
+such as \emph{Journalism and Mass Communication Quarterly}, published by
+the Association for Education in Journalism and Mass Communication
+(AEJMC); \emph{Communication Monographs}, published by the National
+Communication Association (NCA); \emph{Public Opinion Quarterly},
+published by the American Association for Public Opinion Research
+(AAPOR); and the \emph{Journal of Communication}, published by the
+International Communication Association (ICA). The European journals
+included are: the \emph{European Journal of Communication}, oriented to
+publishing European research; \emph{Media, Culture \& Society}, which is
+critical in scope; and \emph{Discourse \& Society}, which relates to a
+specific epistemological community. These three journals appeared later
+than their US counterparts, together with the institutionalization of
+communication research in Europe. The population of journals that deal
+with communication cannot be defined, as research published in journals
+from other research fields such as sociology, psychology, linguistics,
+computer science, etc., also includes certain aspects of communication.
+On the other hand, the population of communication journals categorized
+in the SSCI database includes some very specialized journals that were
+considered to be less relevant to this particular research problem, such
+as \emph{New Media \& Society}.
+
+The data range covers all published articles from 1945 through 2018,
+although some journals commenced publication later in this period.
+Included are only research and review articles and proceedings papers,
+as they contain relevant research outputs. Publications such as
+introductions/prefaces, book and software reviews, editorial material,
+abstracts, meeting abstracts, letters, forums, biographical items,
+obituaries, corrections, additions, and retraction notices were omitted
+from the analysis.
+
+The study was conducted using selected journals from the North Atlantic
+region. It is therefore not representative of the entire field of
+communication research over the seventy-year period, nor of the entire
+North Atlantic region. The study is also limited by not including
+monographic publications. Despite its limitations, the study presents
+the main paradigms and conceptualizations of the communication of
+inequality in Western Anglophone journals that can be considered
+mainstream. However, further research on a different set of journals,
+especially outside of the main Anglo-saxon tradition, would be welcome
+as it might uncover how conceptualizations of communication inequality
+differ among scholarly traditions and social contexts. A further
+limitation of the study arises from the fact that conceptualizations of
+communication inequality were operationalized via specific keywords.
+This has meant that conceptualizations of communication inequality that
+are not or cannot be tied to specific keywords were not registered. For
+example, one could claim that concepts of capitalism, commodification,
+and social class, which are central to political economy of
+communication, necessarily imply communication inequality; however, as
+they do not explicitly refer to it, they were not included as
+indicators. In this sense, further qualitative work into
+conceptualizations of communication inequality would enhance and
+complement our quantitative findings.
+
+\hypertarget{data-preparation-analysis-and-visualizations}{%
+\subsection{Data Preparation, Analysis, and
+Visualizations}\label{data-preparation-analysis-and-visualizations}}
+
+The automated search for selected terms was performed on the population
+of 15,180 articles using Boolean operators in search queries, where some
+were adapted to include and/or exclude certain words or phrases. The
+corpus was cleaned of the ``left-leaning'' and ``right-leaning''
+characters, such as keys and symbols (. , ! ? ; / « » '' `' ; :), as
+they could mask terms from the search algorithm. All articles containing
+at least one mention of a term were included in the analysis.
+
+Since the metadata of all publications published in the selected
+journals in the WOS database is not standardized to the fullest extent,
+the data files were exported and cleaned, including authors in 457,228
+cited references. Special attention was devoted to standardization of
+synonyms (different name records belonging to the same author) and
+homonyms (exact name records belonging to different authors). The cases
+of cited works with multiple authorships contain only the first author,
+due to limitations of the WOS database which could not be overcome.
+
+The sample consisted of those articles which contain at least one term,
+and 1,180 of such articles contained 48,549 references pertaining to
+20,249 unique authors. Distinguishing among texts where a particular
+term/concept obtains central position and those where the term is
+briefly mentioned is difficult. Since authors differ in their writing
+styles, the richness of their (English) vocabulary, publication length,
+etc., the relevance of the term in a particular article can not be
+determined by its frequency. Therefore, all articles containing a
+specific term were treated equally in the analysis (even when the term
+appeared only once). On the other hand, more weight was given to
+instances where a particular author held more references---as this
+information is a better indicator of the centrality of someone's ideas
+in the analyzed text.
+
+By identifying the articles that contained the selected keywords, we
+were able to select all authors appearing in the references in those
+articles and generate networks containing only co-occuring terms and
+cited authors in the same article. In this process, the width of links
+contains the weighted information on co-occurrences of units, where
+links created between the same node---so-called loops---were removed.
+
+The visualization layout of the network is performed with Gephi software
+with the use of a MultiGravity ForceAtlas 2 algorithm, which distributes
+the nodes within the network according to vector, produced by two
+opposing forces: the attraction force, based on the edge weights of the
+nodes, and the repulsion force, generated by adjacent nodes.\footnote{Mathieu
+  Jacomy, Tommaso Venturini, Sebastien Heymann, and Mathieu Bastian,
+  ``ForceAtlas2: A Continuous Graph Layout Algorithm for Handy Network
+  Visualization Designed for the Gephi Software,'' \emph{PLoS ONE} 9,
+  no. 6 (2014): e98679.} In this way, nodes co-occurring more frequently
+and co-occurring with a greater number of other nodes are drawn closer
+together, while those co-occurring more seldomly are drawn further
+apart. In the resulting graphs, the size of node labels is
+proportionally dimensioned to the number of all edges connected to the
+node. Analysis is conducted on the whole corpora and segmented according
+to the three identified periods and journals. Visualizations conducted
+of particular journals holding lower explanatory value are located in
+the Appendices (A--E).
+
+Clusters, or modules of nodes within the network, are detected on the
+grounds of structural properties of the network---with their (uneven)
+distribution based on the number and weight strength of edges connecting
+them. Modules contain nodes with a higher density of stronger edges
+among themselves, separated from neighboring clusters by a weaker and
+lesser number of edges.\footnote{Vincent D. Blondel et al., ``Fast
+  Unfolding of Communities in Large Networks,'' \emph{Journal of
+  Statistical Mechanics: Theory and Experiment} 2008, no. 10 (October
+  2008).} Modularity index designates the strength of division of a
+network into modules, where a higher modularity index indicates higher
+fragmentation of the network (more dense links between particular groups
+of nodes and weaker links between neighboring groups). The resolution
+parameter, on the other hand, adjusts the algorithm's sensitivity and
+defines the number of modules.\footnote{Renaud Lambiotte, Jean-Charles
+  Delvenne, and Mauricio Barahona, ``Laplacian Dynamics and Multiscale
+  Modular Structure in Networks,'' \emph{IEEE Transactions on Network
+  Science and Engineering} 1, no. 2 (2015).}
+
+\hypertarget{results}{%
+\section{Results}\label{results}}
+
+\hypertarget{four-central-conceptualizations-of-communication-inequalities}{%
+\subsection{Four Central Conceptualizations of
+Communication
+Inequalities}\label{four-central-conceptualizations-of-communication-inequalities}}
+
+To better understand how the concepts of inequality under study are
+conceptualized, we examined the relationships between the keywords under
+study and the authors cited by identifying subtle structural properties
+of the network using a clustering procedure. By reducing the entire
+network to the most prominent nodes (a minimum degree value was set at
+1,280, obtaining 0.37\% of nodes with highest values), the network of
+keywords and cited authors obtained from 1,180 articles formed four
+clusters, mirroring four main conceptualizations/traditions of research
+on communication inequalities: ``cultural imperialism cluster'' (green,
+42.1\% of units), ``knowledge gap cluster'' (purple, 35.5\%),
+``modernization cluster'' (blue, 11.8\%), and ``digital divide cluster''
+(orange, 10.5\%) (Figure 2).
+
+\begin{figure}
+    \centering
+    \includegraphics{mance-figure-two.png}
+    \caption{\emph{Clusters in the reduced network of 1,180 articles
+published between 1945--2018}; min. degree = 1,280; resolution = 1.0;
+modularity = 0.264; nodes visible = 76 (0.37\%). Cultural imperialism
+cluster (green), knowledge gap cluster (purple), modernization cluster
+(blue) and digital divide cluster (orange)}
+    \label{fig:two}
+\end{figure}
+
+
+The mapped clusters reveal that the knowledge gap theories and theories
+of cultural imperialism are distanced furthest. Clusters formed around
+concepts and cited authors pertaining to theories of modernization,
+positioned between knowledge gap theory and theories stemming from
+critical tradition, show an overlap which indicates mutual patterns of
+co-citation.\footnote{When clustering procedures are performed on a
+  relatively small number of units, cases where an author has been cited
+  with multiple works in a single article may have a stronger influence
+  on cluster membership, due to the different treatment of edge weights
+  by the clustering and spatialization algorithms. Albert Bandura and
+  Ronald E. Rice are examples where the placement of the spatialization
+  algorithm and the cluster membership differ.} This may indicate either
+a cohabitation of different scientific currents or a contestation
+between critical and dominant theoretical currents in the articles where
+the terms/concepts co-occur together. The clustering does not
+necessarily indicate a similarity of ideas, as it may just as well
+indicate critique, i.e., negative citations. For example, the inclusion
+of Ithiel de Sola Pool in the cultural imperialism cluster (albeit on
+the periphery) alongside other, more prolific critical authors may be
+due to criticism,\footnote{Peter Golding, ``Media Role in National
+  Development,'' \emph{Journal of Communication} 24, no. 3 (1974).} or
+references to research work which the author acknowledges but does not
+endorse.\footnote{Vincent Mosco and Andrew Herman, ``Communication,
+  Domination and Resistance,''~\emph{Media, Culture \& Society}~2, no. 4
+  (1980).}
+
+The relative distance of the digital divide cluster from others suggests
+its conceptual distinctiveness, which to some extent can be attributed
+to the fact that it is a relatively new concept, emerging only with the
+advent of the Internet in the second half of the period under study, but
+drawing on three distinctive and prior perspectives: knowledge gap
+theory, critical tradition, and research on information richness.
+
+The analysis of the entire corpora, containing all available
+information, provides a general perspective. However, it obscures the
+influence of specific journals with their unequal number of articles.
+Therefore, in order to minimize bias and gain better insight into the
+conceptualization of the digital divide, separate analyses are conducted
+for individual journals and presented in the section below concerning
+the era of the digital divide (2000--2018).
+
+\hypertarget{three-eras-in-conceptualizing-communication-inequality}{%
+\subsection{Three Eras in Conceptualizing
+Communication
+Inequality}\label{three-eras-in-conceptualizing-communication-inequality}}
+
+In this section we will be adopting a diachronic/historical perspective
+and examining how the prominence of various conceptualizations of
+communication inequality has changed throughout the history of
+(institutionalized) communication studies. We will attempt to
+contextualize our results by connecting them with literature from the
+history of communication studies that identifies the dominant social
+interests that shaped the field of communication research and the ways
+it conceptualizes communication inequality.
+
+The significant variability of the articles that mentioned the analyzed
+terms throughout the analyzed time period (Figure 3) indicates that the
+terms used to describe communication inequality are historically
+specific, not only in the case of the ``digital divide,'' a term that
+for obvious reasons could not have been in circulation in the 1960s, but
+also in the case of other terms like ``modernization,'' which has been
+prominent in an earlier era and has since gone out of favor. Based on
+this analysis, we propose that it is reasonable to talk about three eras
+in the post-war conceptualization of communication inequality: the era
+of modernization (1945--1978), the era of ideological struggle
+(1979--1999), and the era of the digital divide (2000--2018).
+
+
+\begin{figure}
+    \centering
+    \includegraphics{mance-figure-three.png}
+    \caption{Chronological distribution of articles containing most
+prominent terms of communication inequality (normalized by the number of
+published articles and smoothened according to three-year average). The
+cultural imperialism line groups keywords: cultural imperialism world
+system, media imperialism, cultural domination, and NWICO. The knowledge
+gap line groups keywords: knowledge gap, information gap, and
+communication gap.}
+    \label{fig:three}
+\end{figure}
+
+
+\hypertarget{the-era-of-modernization-19451978}{%
+\subsection{The Era of Modernization
+(1945--1978)}\label{the-era-of-modernization-19451978}}
+
+The first era began in the early sixties, as terms designating
+communication inequality were almost absent before that time. Its main
+characteristic is the hegemony of the term ``modernization'' to describe
+communication inequality, hence we call this era the "era of
+modernization." Coined by Daniel Lerner, the term modernization implies
+that societies can be hierarchically ordered, with ``traditional''
+societies representing a lower stage of social evolution than ``modern''
+ones, with the US occupying the pinnacle of this hierarchy.\footnote{Daniel
+  Lerner, \emph{The Passing of Traditional Society: Modernizing the
+  Middle East} (New York: The Free Press of Glencoe, 1958).} The term
+modernization is therefore a projection of US hegemony toward the third
+world, its prevalence in scholarly literature reflecting the impact of
+geopolitics on scholarly literature. The relationship between so-called
+``traditional'' and ``modern'' or ``developing'' and ``developed''
+countries was of key geopolitical importance because winning the hearts
+and minds of people in the third world emerged as one of the key goals
+of US foreign policy.\footnote{Gilbert Rist, \emph{The History of
+  Development: From Western Origins to Global Faith,} 3rd ed. (London
+  and New York: Zed Books, 2008), 69--79; Robert K. Olson, \emph{US
+  Foreign Policy and the New International Economic Order: Negotiating
+  Global Problems, 1974--1981} (Boulder, CO: Westview Press, 1981).}
+Already in his 1949 inaugural address, when he laid out his Manichean
+view of the world, with its split between the irreconcilable forces of
+``communism'' and ``democracy,'' President Truman named development of
+less developed countries as the fourth pillar of defense of the free
+world, alongside the Marshall plan, the United Nations, and
+NATO.\footnote{Harry S. Truman, ``The Inaugural Address of Harry S.
+  Truman,'' transcript of inaugural address delivered in Washington, DC,
+  January 20, 1949.}
+  
+\begin{figure}
+    \centering
+    \includegraphics{mance-figure-four.png}
+    \caption{Era of modernization visualized with reduced networks of
+concepts (red) and cited authors (black) irrespective of journal
+affiliation, 1945--1978; n of articles = 118; min. degree = 123; nodes
+visible = 30 (2.65\%).}
+    \label{fig:four}
+\end{figure}
+
+
+In modernization theory, communication inequality serves as an
+explanatory variable of social evolution, as Lerner believes that the
+presence of mass media is a key factor driving the transition from
+``traditional'' to ``modern'' societies, while the relative absence of
+mass mediated content in a country can hamper its social
+evolution.\footnote{Lerner, \emph{Passing}.} In this model, unequal
+global information and communication flows (from developed to developing
+countries) are assumed to be desirable, as the influx of media content
+and foreign investment in media infrastructure will help to
+``modernize'' backwards societies. In this way, modernization theory
+expressed and legitimized US interests in increasing the reach and
+effectiveness of their propaganda throughout the third world. In fact,
+the empirical material for Lerner's \emph{The Passing of Traditional
+Society}, the foundational text of modernization theory, was gathered as
+part of a government contract aimed at assessing the effectiveness of
+the State Department's Voice of America radio program in the Middle
+East.\footnote{Hemant Shah explains that as the Voice of America was
+  facing scrutiny in Congress, the government had no reliable data with
+  which to demonstrate its effectiveness. The task of producing such
+  data was given to Leo Löwenthal, who engaged the Bureau of Applied
+  Social Science Research, where Lerner was employed at the time. The
+  contract stated that the main goal of the project, commencing in 1949,
+  was to ``gain insights into the comparative effectiveness of the
+  propaganda struggle between East and West {[}through{]} comparisons of
+  reliability and popularity of VOA, BBC, USSR.'' Shah, \emph{The
+  Production of Modernization: Daniel Lerner, Mass Media, and the
+  Passing of Traditional Society} (Philadelphia: Temple University
+  Press, 2011), 13. Löwenthal later explained his views on the role of
+  communication science and particularly opinion measurement in
+  evaluating the effectiveness of ``psychological warfare'' in an
+  article published in \emph{POQ}; see Klapper and Löwenthal, ``The
+  Contributions of Opinion Research to the Evaluation of Psychological
+  Warfare,'' \emph{Public Opinion Quarterly} 15, no. 4 (1951).} Lerner
+himself believed the role of international communications should be to
+align the peoples of the ``Free World'' with US leadership and heaped
+scorn on ``neutralists,'' who refused to take sides in the cold war,
+regarding them as either ``privatized apathetics or apoplectic
+antagonists'' to the world hegemon.\textsuperscript{47}
+
+While modernization is clearly the hegemonic conceptualization of
+communication inequality during this era, we can see the knowledge gap
+cluster emerge and gain popularity especially during the second half of
+the 1970s. First formulated by Tichenor, the knowledge gap hypothesis
+posits that socioeconomic status is a mediating variable in acquiring
+information transmitted through the mass media.\textsuperscript{48} Building on earlier research findings on
+the uneven spread of information in targeted communication campaigns,
+the focus of knowledge gap research was on social conflict, community
+social structure, and information control, which could optimize
+mobilization functions exercised by campaign planners, policy makers,
+and other advocates and actors.\textsuperscript{49}
+  
+\newpage
+
+The\marginnote{\textsuperscript{47} Daniel Lerner,
+  ``International Coalitions and Communications Content: The Case of
+  Neutralism,'' \emph{Public Opinion Quarterly} 16, no. 4 (1952): 687.}\marginnote{\textsuperscript{48} Philip
+  J.Tichenor, George A. Donahue, and Clarice N. Olien, ``Mass Media Flow
+  and Differential Growth in Knowledge,'' \emph{Public Opinion
+  Quarterly} 34, no. 2 (1970).}\marginnote{\textsuperscript{49}\setcounter{footnote}{49} Katam Viswanath and John R.
+  Finnegan, ``The Knowledge Gap Hypothesis: Twenty-Five Years Later,''
+  \emph{Annals of the International Communication Association} 19, no. 1
+  (1996): 205.} hegemony of modernization theory in conceptualizing communication
+inequalities is symptomatic for the overwhelming influence of the US
+government and select private interests in determining the research
+agenda of communication studies in particular and social sciences in
+general. The era of modernization coincides with the
+institutionalization of the dominant or administrative paradigm in mass
+communication and media studies in the United States, embodied in the
+media effects tradition, which was initiated and supported by the
+``funding fathers'': the Rockefeller Foundation,\footnote{Gitlin,
+  ``Media Sociology.''} the Ford Foundation,\footnote{Simonson and
+  Peters, ``Communication and Media Studies.''} and various branches of
+the US administration, such as the Army, the CIA, and the State
+Department.\footnote{Gary, ``Communication Research''; Simonson and
+  Peters, ``Communication and Media Studies''; Pooley, ``New History.''}
+
+In this paradigm, communication inequality could emerge as a problem in
+only a very limited sense. In order for propaganda to produce its
+results and for the mass media to produce ``modernization'' of the
+developing world, the persuasive messages needed to reach their intended
+audiences, and these audiences needed to be open to persuasion. However,
+the problem presented itself quite differently in the developing world
+as opposed to the US. In the developing world, underdeveloped
+communication infrastructure presented the main barrier to the
+effectiveness of persuasive communication, while in the US, the main
+issue was how audiences were receiving and processing information.
+Hence, Charles Glock argued for communication studies to adopt a
+two-pronged approach: ``In the United States, where most of the mass
+media are accessible to everyone, the questions of exposure and
+resistances to exposure require primary attention. In a country, such as
+Jordan, where the distribution of the mass media is limited,
+accessibility and restrictions on accessibility are currently more
+crucial problems.''\footnote{Charles Y. Glock, ``The Comparative Study
+  of Communications and Opinion Formation,'' \emph{Public Opinion
+  Quarterly} 16, no. 4 (1952): 515.} Our results indicate that
+communication studies did indeed develop according to this two-pronged
+approach, with modernization theory focusing attention on limited media
+access in developing countries and the knowledge gap hypothesis emerging
+to understand issues of exposure and ``resistance'' to exposure within
+the US.
+
+\hypertarget{the-era-of-ideological-struggle-19791999}{%
+\subsection{The Era of Ideological Struggle
+(1979--1999)}\label{the-era-of-ideological-struggle-19791999}}
+
+The second era begins in the second half of the 1970s. We have chosen
+1978 as the cut-off point, as it represents the sharpest decline in the
+dominance of modernization theory and the starting point of the
+ascendance of theories of cultural imperialism (defined by the keywords
+``media and cultural imperialism,'' ``world-system'' and ``cultural
+domination''), which have emerged to directly challenge modernization
+theory. That is why we call this era the ``era of ideological
+struggle,'' as paradigms are divided on the basis of political ideology,
+with modernization remaining to be aligned with US foreign policy goals,
+and the cultural imperialism cluster emerging to challenge and oppose US
+hegemony.
+
+While the struggle over international communication inequalities is the
+defining feature of this era, we can also notice the continuing presence
+of the knowledge gap cluster, which develops relatively independently
+from both the modernization and cultural imperialism traditions. In this
+sense, another line dividing scholarly communities emerges: While the
+modernization and cultural imperialism clusters both engage with
+international communication inequality, albeit from opposing ideological
+positions, the knowledge gap cluster engages with communication
+inequality primarily on an interpersonal level. Unlike the case of
+international communication inequalities, where our analysis revealed a
+polarization between the critical and administrative paradigms, research
+into interpersonal communication inequality does not exhibit such
+ideological polarization. Rather, throughout this era, the knowledge gap
+cluster is gaining in prominence and is consolidating as a separate
+research tradition around a group of key authors---the most prominent
+being Phillip J. Tichenor.
+
+\begin{figure}
+    \centering
+    \includegraphics{mance-figure-five.png}
+    \caption{Era of ideological struggle visualized with reduced networks
+of concepts (red) and cited authors (black) irrespective of journal
+affiliation, 1979--1999; n of articles = 486; min. degree = 833; nodes
+visible = 30 (0.39\%).}
+    \label{fig:five}
+\end{figure}
+
+
+The sharp decline in the prevalence of modernization theory in the late
+1970s took place during the crisis of US hegemony,\footnote{See Giovanni
+  Arrighi, \emph{Adam Smith in Beijing} (London and New York: Verso,
+  2007); Robert Brenner, \emph{Economics of Global Turbulence: The
+  Advanced Capitalist Economies from Long Boom to Long Downturn,
+  1945--2005} (London: Verso, 2006), 143--80.} which gave rise to
+challenges to the dominant theories in the social sciences in general,
+as well as in communication studies in particular. Consequently, the
+promises of development and modernization, which informed the dominant
+conceptualizations of communication inequality in the preceding era,
+started to lose their power. They were becoming harder to defend as the
+gap between rich and poor nations was widening,\footnote{Karl P.
+  Sauvant, ``Toward the New International Economic Order,'' in \emph{The
+  New International Economic Order: Confrontation of Cooperation between
+  North and South?}, ed. Karl P. Sauvant and Hajo Hasenpflug (Boulder,
+  CO: Westview Press, 1977), 4.} while rural populations in the third
+world stubbornly refused to be ``modernized.'' Consequently, scholars
+began to modify Lerner's highly exaggerated claims regarding the
+effectiveness of mass media by theorizing limited media effects and
+including theories like diffusion of innovation to explain the limited
+success of modernization campaigns. However, lacking the practical
+success of modernization campaigns and facing increasing scholarly
+scrutiny and critique, modernization theory was slowly abandoned even by
+its erstwhile proponents.\footnote{See Everett M. Rogers,
+  ``Communication and Development: The Passing of the Dominant
+  Paradigm,'' \emph{Communication Research} 3, no. 2 (1976).}
+
+Theoretically, opposition to US hegemony took the form of interest in
+the notion of imperialism, as well as the highly related strands of
+dependency and world-systems theory. While theories of development and
+modernization assumed that each country individually followed a
+predetermined evolutionary path from tradition to modernity, the
+critical theoretical traditions recast global economic inequalities not
+as different stages of social evolution on the path to the pinnacle of
+US-style capitalism, but as inequitable relations between a center and
+periphery of a globalized economic system---between exploiter and
+exploited, colonizer and colonized. These perspectives are inspired by
+and tightly interwoven with the process of decolonization and the voices
+from the periphery who drew attention to the continuing impact of
+colonialism on colonial subjectivity and culture.\footnote{Frantz Fanon,
+  \emph{Wretched of the Earth}, trans. Constance Farrington (New York:
+  Grove Press, 1963).} Critiques of US hegemony also extended to the
+economic dominance of the US and its multinationals,\footnote{Kwame
+  Nkrumah, \emph{Neo-Colonialism: The Last Stage of Capitalism} (London:
+  Thomas Nelson \& Sons, 1965).} as well as to the dominance of the
+center of the global economy over a subordianted periphery, as theorized
+by the ``Latin American school of development,''\footnote{Cristóbal Kay,
+  \emph{Latin American Theories of Development and Underdevelopment}
+  (London and New York: Routledge, 1989), 2.} which offered alternative
+theoretical viewpoints to the predominant neoclassical and Keynesian
+analyses of development and modernization.
+
+\enlargethispage{\baselineskip}
+
+While these theories emerged from the field of economics and political
+economy, they soon became very influential in the field of
+communication, which can be seen in the way critical communication
+scholars adopted the vocabulary of imperialism and world-systems theory
+to describe communication inequalities.\footnote{E.g., Herbert I.
+  Schiller, \emph{Mass Communication and American Empire} (Boston:
+  Beacon Press, 1969), 5--19.} Theories of the cultural imperialism
+cluster attempted to recast global inequalities between societies not as
+stages of social evolution, but through an antagonistic relationship
+between exploiters and exploited. Global communication inequality is
+reframed as a mechanism of ideological and cultural domination of the
+informationally poor by the informationally rich, rather than as a
+benevolent tool of social advancement.\footnote{See Ariel Dorfman and
+  Armand Mattelart, \emph{How to Read Donald Duck} (1971; repr., New
+  York and London: OR Books, 2018).} Critical scholars have begun to
+question unbalanced global information and communication flows and the
+power of Western media corporations both internationally and
+domestically.
+
+Challenges to the hegemony of modernization theory came from several
+sources. The first came from within the rich capitalist countries, where
+labor and racial conditions contributed to protests and strikes and the
+rise of new social movements, which were further fuelled by
+international events such as the Vietnam War. These circumstances
+brought about profound changes in academia as well, with greater
+emphasis applied to the social relevance of research, to political
+economy, and to critique of the hegemonic status of logical
+positivism.\footnote{Nordenstreng, ``Ferment in the Field,'' 7.} While
+we cannot speak of an institutionalization of the critical paradigm
+within the US academy, the expansion and professionalization of the
+field, which allowed for some degree of autonomy from the government,
+did open a space for critical and even radical voices, like Herb
+Schiller, the most prominent author of the cultural imperialism cluster.
+In Europe we do see steps toward institutionalizing the critical
+paradigm, particularly in the United Kingdom. The legacy of British
+colonialism became an object of the emerging paradigm, which nurtured a
+critical imperative based on historical criticism and personified by
+authors such as Stuart Hall, Raymond Williams, and Richard Hoggart; and
+by institutions such as the Centre for Contemporary Cultural Studies at
+the University of Birmingham and the Glasgow Media Group; but also by
+newly founded journals such as \emph{Screen} and \emph{Media},
+\emph{Culture \& Society}, which are part of our sample. In our
+analysis, scholars from the cultural studies (Stuart Hall) and political
+economy of media (Graham Murdock) traditions emerge as prominent names
+in the cultural imperialism cluster.
+
+The second challenge to modernization theory resulted from the
+internationalization of communication studies, as authors from the
+periphery of global capitalism came to prominence. The name of Armand
+Mattelart, who was active in Chile until the coup of 1973, emerges as
+one of the prominent names in the cultural imperialism cluster. While
+Mattelart moved to France after the coup, his research interests
+continued to be shaped by the Chilean anti-imperialist experience,
+focusing on the global dominance of the US and its
+multinationals.\footnote{Armand Mattelart, ``Cultural Imperialism in the
+  Multinationals' Age,'' \emph{Instant Research on Peace and Violence}
+  6, no. 4 (1976); Armand Mattelart, \emph{Multinational Corporations
+  and the Control of Culture: The Ideological Apparatuses of
+  Imperialism} (Brighton, UK: Harvester, 1979).}
+
+The third challenge arose from non-aligned international efforts which
+sought to oppose ``cultural imperialism'' by establishing a New World
+Information and Communication Order.\footnote{See Tran Van Dinh,
+  ``Non-Alignment and Cultural Imperialism: The Black Scholar,''
+  \emph{Journal of Black Studies and Research} 8, no. 3 (1976).} Several
+authors in the cultural imperialism cluster were either directly
+involved in the NWICO initiative (Kaarle Nordenstreng, primarily as
+president of the International Organization of Journalists) or have
+explicitly supported the initiative like Herb Schiller did. UNESCO
+proved to be a fertile ground for the growth of the critical paradigm,
+as it provided a site for critically reflecting on the national and
+international interests of ``developed'' (e.g., the member states of the
+Trilateral Commission) versus ``less developed'' countries (e.g., the
+Non-Aligned Movement {[}NAM{]}).\footnote{Smythe and Van Dinh,
+  ``Critical and Administrative Research,'' 125.} Through the UNESCO
+critical tradition, which addressed issues of inequality in information
+flows, the concepts of ``development'' and ``modernization'' were
+challenged as ways to cover up problems rooted in
+colonialism.\footnote{Sunril Amrith and Glenda Sluga, ``New Histories of
+  the United Nations,'' \emph{Journal of World History} 19, no. 3
+  (2008): 252.}
+
+The connections between critical scholarship and the NWICO initiative
+can be seen in their shared vocabulary---for example, the NAM's use of
+``imperialism'' to describe ``alien ideological domination over the
+peoples of the developing world,''\footnote{Documents of the Fourth
+  Summit Conference of Heads of State or Government of the Non-Aligned
+  Movement (September 1973).} with imperialism and cultural domination
+also being some of the most prominent keywords of the cultural
+imperialism cluster. It is also notable that the initial surge of the
+cultural imperialism cluster in our sample (from 1974 to 1986) roughly
+corresponds to the era of NWICO: from 1973, when its agenda was first
+coherently articulated at the Fourth Summit of the Non-Aligned Movemtent
+in Algiers, to 1985, when it was crippled by the US, UK, and Singapore
+leaving UNESCO in protest against it.
+
+\hypertarget{the-era-of-the-digital-divide-20002018}{%
+\subsection{The Era of the Digital Divide
+(2000--2018)}\label{the-era-of-the-digital-divide-20002018}}
+
+The final era, which we call the ``era of the digital divide,'' begins
+around the turn of the millennium with the emergence of the term digital
+divide, which becomes the most commonly used term to describe
+communication inequality in the last years of this era. In 2000 we also
+saw the cultural imperialism cluster reach its peak and then quickly
+decline, while still remaining relevant and even increasing in
+prominence again towards the end of the analyzed period. Throughout this
+era, the knowledge gap cluster does not exhibit a trend, but remains
+consistently relevant. Modernization, on the other hand, has now almost
+completely disappeared as a way to make sense of communication
+inequality. It exhibits a short resurgence in 2010, but this is due to
+interest in the history of the concept rather than proof of its
+continuing relevance.\footnote{Thomas L. Jacobson, ``Amartya Sen's
+  Capabilities Approach and Communication for Development and Social
+  Change,'' \emph{Journal of Communication} 66, no. 5 (2016); Angel
+  Barbas and John Postill, ``Communication Activism as a School of
+  Politics: Lessons from Spain's Indignados Movement,''~\emph{Journal of
+  Communication} 67, no. 5 (2017); Evan Elkins, ``Powered by Netflix:
+  Speed Test Services and Video-On-Demand's Global Development
+  Projects,'' \emph{Media, Culture \& Society} 40, no. 6 (2018).}
+  
+\begin{figure}
+    \centering
+    \includegraphics{mance-figure-six.png}
+    \caption{Era of the digital divide visualized with reduced networks of
+concepts (red) and cited authors (black) irrespective of journal
+affiliation, 2000--2018; n of articles = 576; min. degree = 1,284; nodes
+visible = 30 (0.22\%).}
+    \label{fig:six}
+\end{figure}
+
+In this era the digital divide cluster is most closely associated with
+the knowledge gap cluster. This finding is in line with reviews of the
+literature on the digital divide, which point to the knowledge gap
+tradition as its precursor,\footnote{Matthew S. Eastin, Vincent
+  Cicchirillo, and Amanda Mabry, ``Extending the Digital Divide
+  Conversation: Examining the Knowledge Gap Through Media
+  Expectancies,'' \emph{Journal of Broadcasting \& Electronic Media} 59,
+  no. 3 (2015): 419.} while the origin of the term is most often traced
+back to the National Telecommunications and Information Administration
+of the US Department of Commerce and its concern for providing
+``universal service'' to US citizens. According to this origin, the
+major focus of digital divide scholarship has been on unequal access to
+the internet, with less attention on unequal digital skills and outcomes
+of internet use.\textsuperscript{70} The
+focus of digital divide research has been\marginnote{\textsuperscript{70}\setcounter{footnote}{70} Anique Scheerder, Alexander van Deursen, and
+  Jan van Dijk, ``Determinants of Internet skills, Uses and Outcomes: A
+  Systematic Review of the Second- and Third-level Digital Divide,''
+  \emph{Telematics and Informatics} 34, no. 8 (2017): 1608­--09.} primarily on individual
+characteristics, as ``the most common determinants studied across all
+digital divides are sociodemographic and socioeconomic.''\footnote{Scheerder,
+  van Deursen, and van Dijk, ``Determinants,'' 1614.} Structural factors
+shaping the digital divide, like ``social and cultural differentiation
+or individualization, rising income differentials, privatization and
+cutbacks in social and public services,''\footnote{Jan Van Dijk and
+  Kenneth Hacker, ``The Digital Divide as a Complex and Dynamic
+  Phenomenon,'' \emph{The Information Society} 19, no. 4 (2003): 324.}
+have been receiving much less attention. Similarly, political-economic
+analyses focusing on the ways that the privatized, commercialized, and
+monopolized nature of the internet is shaping communication inequalities
+are quite rare in this tradition.\footnote{Ilse Mariën and Jernej Amon
+  Prodnik, ``Digital Inclusion and User (Dis)empowerment: A Critical
+  Perspective,'' \emph{info} 16, no. 6 (2014).}
+
+These findings point toward associating the term digital divide with the
+administrative paradigm. The ongoing prominence of the cultural
+imperialism cluster likewise hints at the fact that critical scholars
+have not found in the digital divide a neutral term that can be used to
+describe aspects of global communication inequalities, suggesting that
+the term digital divide remains slanted towards analyses that do not
+take into account the structural factors shaping communication
+inequality, which have traditionally been the focus of the political
+economy of media approach. Reviewing several early monographs on the
+digital divide, Graham Murdock points out that they do not pay ``much
+attention to corporations as key actors in shaping e-Societies, which is
+odd since there is plenty of evidence to show that their concerted
+lobbying, extensive public relations activities and the well-oiled
+revolving doors connecting cabinet rooms to boardrooms have moved them
+to the center of policy formation.''\footnote{Graham Murdock, ``Review
+  Article: Debating Digital Divides,'' \emph{European Journal of
+  Communication} 17, no. 3 (2002): 389.} Other critical scholars claim
+that the concept of the digital divide carries a ``new moral authority
+which legitimates intervention in the affairs of places which are deemed
+to be on the wrong side of the divide,''\footnote{Veva Leye, ``UNESCO,
+  ICT Corporations and the Passion of ICT for Development: Modernization
+  Resurrected,'' \emph{Media, Culture \& Society} 29, no. 6 (2007): 979.}
+or believe it to be closely aligned with modernization
+theory.\footnote{Elkins, "Powered by Netflix"; Leye, "UNESCO."}
+
+It is therefore unclear whether---given its still increasing
+popularity---the term digital divide will come to encompass all aspects
+of communication inequality and be adopted by various scholarly
+communities, or whether these communities will remain divided and the
+study of communication inequality continue to be fragmented, both along
+normative/ideological lines and along different aspects of the problem
+(most notably between interpersonal and intergroup differences,
+international communication inequality, and structural aspects like
+commodification).
+
+To further shed light on these questions, we analyze how the term
+digital divide is represented in the different analyzed scholarly
+journals, mirroring the debates of different scholarly communities.
+
+\hypertarget{digital-divide-a-shared-term-dividing-scholarly-communities}{%
+\subsection{Digital Divide: A Shared Term
+Dividing Scholarly
+Communities}\label{digital-divide-a-shared-term-dividing-scholarly-communities}}
+
+Further introspection on the conceptual differences in adopting the
+concept of digital divide within particular research communities is
+offered in analyses performed on specific journals where the differences
+are most evident (Figures 7--9, Appendices A--E).
+
+The notion of the digital divide has been taken up differently by
+different communities in communication research, with the differences
+being most evident in three journals (if we leave out of this analysis
+perhaps the most specific discourse analytic approach contained in
+\emph{Discourse \& Society}, Appendix E). While digital divide functions
+as the most prominent term in the European critical journal \emph{Media,
+Culture \& Society} (Figure 7) and gains roughly the same prominence as
+the knowledge gap in the \emph{Journal of Communication} (Figure 9), its
+prominence is relatively low compared to the term knowledge gap in
+\emph{Public Opinion Quarterly} (Figure 8). Based on the cited authors
+most associated with the concept, we find that there is almost no
+overlap between the three journals, suggesting that the research is
+unrelated and therefore differently conceptualized.
+
+In fifty-nine articles published in \emph{Media, Culture \& Society}
+(6.5\% of all articles published in the journal within the period), the
+concept is theoretically grounded in the traditions of the critical
+paradigm, namely the research on theories of democracy and the public
+sphere, French structuralism, and political economy of media.
+
+\begin{figure}
+    \centering
+    \includegraphics{mance-figure-seven.png}
+    \caption{Reduced network of keywords (red) and cited authors (black) in
+articles sampled in \emph{Media, Culture \& Society;} min. degree = 614;
+nodes visible = 26 (0.39\%).}
+    \label{fig:seven}
+\end{figure}
+
+
+On the contrary, seldom occurrences in eight (1.2\% of all articles
+published in the journal within the period) articles published in
+\emph{Public Opinion Quarterly} and the pattern of cited authors point
+to the absence of theoretical reflections on the concept, since the
+majority of authors with the strongest links are affiliated with the
+field of social psychology and/or methodologies of social surveys.
+Digital divide thus appears in the context of measuring the impact of
+the internet on civic engagement,\footnote{Kent M. Jennings and Vicki
+  Zeitner, ``Internet Use and Civic Engagement: A Longitudinal
+  Analysis,'' \emph{Public Opinion Quarterly} 67, no. 3 (2003).}
+development of web surveys as investigative tools,\footnote{Mick P.
+  Couper, ``Web Surveys: A Review of Issues and Approaches,''
+  \emph{Public Opinion Quarterly} 64, no. 4 (2000).} or comparisons of
+web and telephone surveys.\footnote{Scott Fricker, Mirta Galesic, Roger
+  Tourangeau, and Ting Yan, ``An Experimental Comparison of Web and
+  Telephone Surveys,'' \emph{Public Opinion Quarterly} 69, no. 3 (2005).}
+  
+\begin{figure}
+    \centering
+    \includegraphics{mance-figure-eight.png}
+    \caption{\emph{Theoretical Perspectives of Information Inequality.}
+Source: Liangzhi Yu, ``Understanding Information Inequality: Making
+Sense of the Literature of the Information and Digital
+Divides,''~\emph{Journal of Librarianship and Information Science} 38,
+no. 4 (2006): 229--52, \url{https://doi.org/10.1177/0961000606070600}.}
+    \label{fig:eight}
+\end{figure}
+
+
+The third distinctive conceptualization of the digital divide,
+identified in forty-three articles (5.5\% of all articles published in
+the journal within the period) from the \emph{Journal of Communication},
+stemming from the works of Eszter Hargittai (19) and strongly associated
+with political science- and/or political communication-affiliated
+researchers. The relative closeness between the concepts of the digital
+divide and the knowledge gap (Figure 9) argues for the importance of the
+``second level'' conceptualization of the digital divide,\footnote{Eszter
+  Hargittai, ``Second-level Digital Divide: Differences in People's
+  Online Skills,'' \emph{First Monday} 74 (2002).} which is grounded in
+the arguments that the binarization of inequality into haves and
+have-nots has been oversimplified and traditional socioeconomic and
+demographic indicators are of insufficient explanatory power.\footnote{Margaret
+  Richardson, C. Kay Weaver, and Theodore E. Zorn, ``\,`Getting on':
+  Older New Zealanders' Perceptions of Computing,'' \emph{New Media \&
+  Society} 7, no. 2 (2005).} Research on the digital divide, which falls
+into this second category, uses the segmentation of social classes along
+their identified ability to communicate digitally, and shifts the
+analytical focus from a critical consideration of structural social
+inequalities to the individual, giving the concept a strong resemblance
+to ``knowledge divide'' theory.\footnote{Eastin, Cicchirillo, and Mabry,
+  ``Extending the Digital Divide''; Colin Sparks, ``What is the `Digital
+  Divide' and Why is it Important?'' \emph{Javnost---The Public} 20, no.
+  2 (2013); Sharon Strover, ``The US Digital Divide: A Call for a New
+  Philosophy,'' \emph{Critical Studies in Media Communication} 31, no. 2
+  (2014).}
+  
+  \begin{figure}
+    \centering
+    \includegraphics{mance-figure-nine.png}
+    \caption{Reduced network of keywords (red) and cited authors (black) in
+articles sampled in \emph{Journal of Communication;} min. degree = 649;
+nodes visible = 31 (0.47\%).}
+    \label{fig:nine}
+\end{figure}
+
+
+\hypertarget{summary-and-discussion}{%
+\section{Summary and Discussion}\label{summary-and-discussion}}
+
+We have identified four distinct clusters of conceptualizations of
+communication inequality. The first to emerge was modernization theory,
+which was closely tied to US foreign policy interests in influencing the
+hearts and minds of peoples in the third world. Modernization theory was
+part of the administrative paradigm, sharing its conceptualization of
+communication as a tool of power and its research focus on media
+effects. Theories of cultural imperialism emerged in the late 1960s to
+directly challenge modernization theory and were tied to changes in
+global geopolitics (crisis of US hegemony, NWICO), domestic politics in
+the US and Europe (social movements, labor militancy), the
+institutionalization of the critical paradigm, as well as the
+internationalization of communication studies. The antagonism between
+the two was constitutive for the critique of cultural imperialism and
+created a relationship of ``dialogical-dialectical
+coherence.''\footnote{Robert T. Craig, ``Communication Theory as a
+  Field,'' \emph{Communication Theory} 9, no. 2 (1999): 123--24.}
+
+Parallel to these two approaches, the knowledge gap tradition emerged
+and began to consolidate in the 1970s. While modernization and cultural
+imperialism focused on international communication inequality, the
+knowledge gap tradition focused on the interpersonal differences in
+acquiring and processing mass-mediated information, particularly the
+mediating role of sociodemographic variables on the effectiveness of
+targeted information campaigns. With its focus on media effects and the
+effectiveness of communication campaigns, we can assign the knowledge
+gap tradition to the administrative paradigm.
+
+Finally, the notion of the digital divide emerged around the turn of the
+millenium and quickly became the most frequently used concept referring
+to communication inequality. However, the notion of the digital divide
+was developed with little historical context and with only weak
+references to previous theoretical and empirical research into the
+concept of communication inequality. As the name already implies, the
+digital divide seems to be a \emph{sui generis} phenomenon, not a
+manifestation of communication inequality in digital information and
+communication technologies.
+
+The case of the digital divide illustrates how the dominant approaches
+and paradigmatic shifts in conceptualizations of communication
+inequality continue to be driven by developments outside of
+communication studies and informed by theories from other fields, when
+not lacking a theoretical basis altogether. Modernization grew out of US
+interests in securing hegemony in the third world and was theoretically
+informed largely by economic historians like Cyril Black and Walt Rostow
+who advanced social evolutionist ideas.\footnote{Rist, \emph{History of
+  Development}, 93--108.} Concepts of the knowledge, communication and
+information gap have gained prominence as a way of explaining
+sociodemographic barriers to the effectiveness of persuasive
+communication. The challenge to the idea of modernization was driven by
+third world opposition to US hegemony and was theoretically informed by
+critical political-economic ideas (primarily dependency theory,
+world-systems theory and the marxist notion of imperialism). The notion
+of a digital divide emerged from the concern of the US Commerce
+Department's National Telecommunications and Information Administration
+(NTIA) for measuring to what degree the goal of ``universal service''
+was being achieved by US telecommunications policy.\footnote{National
+  Telecommunications and Information Administration (NTIA),
+  \emph{Falling through the Net: A Survey of the ``Have Nots'' in Rural
+  and Urban America} (Washington, DC: US Department of Commerce, July
+  1995).}
+
+This lack of a solid theoretical foundation (of integrative empirical
+research and theory building) is not accidental; it is a direct
+consequence of the instrumentalisation of the field of communication. As
+research goals within communication science were largely determined by
+the administrative interests of the US government, conceptualizations of
+communication inequality have remained largely implicit and unexamined
+because it was never in the interest of the holders of political and
+economic power to have that very power questioned. Hence, the dominant
+paradigm in communication naturalized the structural inequalities of a
+society deeply divided along the lines of class, race, and gender, and
+implicitly assumed that communication must be, by its nature, unequal
+and imbalanced: originating from social elites and distributed to the
+large mass of society, whose members are seen as passive recipients of
+media messages and targets of media effects. The same implicit view
+colored the understanding of international communication, where the
+foreign policy goals of the US determined research efforts. In
+modernization theory, the history of imperialism and colonialism was
+entirely removed from view, and global inequalities between countries
+were reframed as different stages of social evolution. Finally, digital
+divide scholarship only rarely questions the way global
+telecommunications policy---which has led to the internet developing as
+a commodified, commercialized, and increasingly monopolized system---has
+reinforced and reshaped old inequalities and created new ones in the
+process.
+
+
+
+
+\section{Bibliography}\label{bibliography}
+
+\begin{hangparas}{.25in}{1} 
+
+
+
+Amrith, Sunril, and Glenda Sluga. ``New Histories of the United
+Nations.'' \emph{Journal of World History} 19, no. 3 (2008): 251--74.
+\url{http://www.jstor.org/stable/40542615}.
+
+Barbas, Angel, and John Postill. ``Communication Activism as a School of
+Politics: Lessons from Spain's Indignados Movement.''~\emph{Journal of
+Communication} 67, no. 5 (2017): 646--64.
+\url{https://doi.org/10.1111/jcom.12321}.
+
+Blondel, Vincent D., Jean-Loup Guillaume, Renaud Lambiotte, and Etienne
+Lefebvre. ``Fast Unfolding of Communities in Large Networks.''
+\emph{Journal of Statistical Mechanics: Theory and Experiment,} no. 1
+(2008). \url{https://arxiv.org/pdf/0803.0476.pdf}.
+
+Brenner, Robert. \emph{Economics of Global Turbulence: The Advanced
+Capitalist Economies from Long Boom to Long Downturn, 1945--2005}.
+London: Verso, 2006.
+
+Boltanski, Luc, and Eve Chiapello. \emph{The New Spirit of Capitalism}.
+London: Verso, 2007.
+
+Couper, Mick P. ``Web Surveys: A Review of Issues and Approaches.''
+\emph{Public Opinion Quarterly} 64, no. 4 (2000): 464--94.
+\url{https://doi.org/10.1086/318641}.
+
+Craig, Robert T. ``Communication Theory as a Field.''
+\emph{Communication Theory} 9, no. 2 (1999): 119--61.
+\url{https://doi.org/10.1111/j.1468-2885.1999.tb00355.x}.
+
+Documents of the Fourth Summit Conference of Heads of State or
+Government of the Non-Aligned Movement (Algiers, Algeria, September
+5--9, 1973).
+\url{http://cns.miis.edu/nam/documents/Official_Document/4th_Summit_FD_Algiers_Declaration_1973_Whole.pdf}.
+
+Donsbach, Wolfgang. \emph{The International Encyclopedia of
+Communication}. Malden, MA: Blackwell Publishing, 2008.
+
+Dorfman, Ariel, and Armand Mattelart. \emph{How to Read Donald Duck}.
+1971. Reprint, New York: OR Books, 2018.
+
+Downey, John, and Jason Toynbee. ``Ideology: Towards Renewal of a
+Critical Concept.'' \emph{Media, Culture \& Society 38,} no. 8 (2016):
+1261--71.
+
+Eastin, Matthew S., Vincent Cicchirillo, and Amanda Mabry. ``Extending
+the Digital Divide Conversation: Examining the Knowledge Gap Through
+Media Expectancies.'' \emph{Journal of Broadcasting \& Electronic Media}
+59, no. 3 (2015): 416--37.
+\url{https://doi.org/10.1080/08838151.2015.1054994}.
+
+Elkins, Evan. ``Powered by Netflix: Speed Test Services and
+Video-On-Demand's Global Development Projects.'' \emph{Media, Culture \&
+Society} 40, no. 6 (2018): 838--55.
+\url{https://doi.org/10.1177/0163443718754649}.
+
+Fanon, Frantz. \emph{Wretched of the Earth}. Translated by Constance
+Farrington. New York: Grove Press, 1963.
+
+Fenton, Natalie. ``Fake Democracy: The Limits of Public Sphere Theory.''
+\emph{Javnost---The Public} 25, no. 1--2 (2018): 28--34.
+
+Fricker, Scott, Mirta Galesic, Roger Tourangeau, and Ting Yan. ``An
+Experimental Comparison of Web and Telephone Surveys\emph{.}''
+\emph{Public Opinion Quarterly} 69, no. 3 (2005): 370--92.
+\url{https://doi.org/10.1093/poq/nfi027}.
+
+Gary, Brett. ``Communication Research, the Rockefeller Foundation, and
+Mobilization for the War on Words, 1938--1944.'' \emph{Journal of
+Communication} 46, no. 3 (1996): 124--48.
+\url{https://doi.org/10.1111/j.1460-2466.1996.tb01493.x}.
+
+Gitlin, Todd. ``Media Sociology: The Dominant Paradigm.'' \emph{Theory
+and Society} 6, no. 2 (1978): 205--53.
+
+Glander, Timothy. \emph{Origins of Mass Communications Research During
+the American Cold War: Educational Effects and Contemporary
+Implications}. Mahwah, NJ: Lawrence Erlbaum Associates, 2000.
+
+Glock, Charles Y. ``The Comparative Study of Communications and Opinion
+Formation.'' \emph{Public Opinion Quarterly} 16, no. 4 (1952): 512--23.
+
+Golding, Peter.~``Media Role in National Development.'' \emph{Journal of
+Communication} 24, no.3 (1974):
+39--53\emph{.}~\url{https://doi.org/10.1111/j.1460-2466.1974.tb00387.x}.
+
+Hargittai, Eszter. ``Second-level Digital Divide: Differences in
+People's Online Skills.'' \emph{First Monday} 74 (2002).
+\url{https://firstmonday.org/ojs/index.php/fm/article/view/942}.
+
+Hamilton, Mark A., and Kristine L. Nowak. ``Information Systems Concepts
+across Two Decades: An Empirical Analysis of Trends in Theory, Methods,
+Process, and Research Domains.'' \emph{Journal of Communication} 55, no.
+3 (2005): 529--53.
+\url{https://doi.org/10.1111/j.1460-2466.2005.tb02684.x}.
+
+Jacobson, Thomas L. ``Amartya Sen's Capabilities Approach and
+Communication for Development and Social Change.'' \emph{Journal of
+Communication} 66, no. 5
+(2016):~789--810.~\url{https://doi.org/10.1111/jcom.12252}.
+
+Jacomy, Mathieu, Tommaso Venturini, Sebastien Heymann, and Mathieu
+Bastian. ``ForceAtlas2: A Continuous Graph Layout Algorithm for Handy
+Network Visualization Designed for the Gephi Software." \emph{PLoS ONE}
+9, no. 6 (2014): e98679.
+\url{https://doi.org/10.1371/journal.pone.0098679}.
+
+Jennings, Kent M., and Vicki Zeitner. ``Internet Use and Civic
+Engagement: A Longitudinal Analysis.'' \emph{Public Opinion Quarterly}
+67, no. 3 (2003): 311--34. \url{https://doi.org/10.1086/376947}.
+
+Kay, Cristóbal. \emph{Latin American Theories of Development and
+Underdevelopment.} London: Routledge, 1989.
+
+Kincheloe, Joe L., and Peter L. McLaren. ``Rethinking Critical Theory
+and Qualitative Research.'' In \emph{Landscape of Qualitative Research:
+Theories and Issues}, edited by Norman K. Denzin and Yvonna S. Lincoln,
+237\emph{--}67. London: SAGE, 1998.
+
+Klapper, Joseph T., and Leo Löwenthal. ``The Contributions of Opinion
+Research to the Evaluation of Psychological Warfare.'' \emph{Public
+Opinion Quarterly} 15, no. 4 (1951): 651--62.
+\url{http://www.jstor.org/stable/2745953}.
+
+Knobloch-Westerwick, Silvia, and Carroll J. Glynn. ``The Matilda
+Effect---Role Congruity Effects on Scholarly Communication: A Citation
+Analysis of Communication Research and Journal of Communication
+Articles.'' \emph{Communication Research} 40, no. 1 (2013): 3--26.
+\url{https://doi.org/10.1177/0093650211418339}.
+
+Koivisto, Juha. \emph{Mapping Communication and Media Research}.
+Tampere, Finland: Tampere University Press, 2010.
+\url{https://trepo.tuni.fi/bitstream/handle/10024/66336/mapping_communication_2010.pdf?sequence=1}.
+
+Lambiotte, Renaud, Jean-Charles Delvenne, and Mauricio Barahona.
+``Random Walks, Markov Processes and the Multiscale Modular Organization
+of Complex Networks.'' \emph{IEEE Transactions on Network Science and
+Engineering} 1, no. 2 (2015): 76--90\emph{.}
+\url{https://doi.org/10.1109/tnse.2015.2391998}.
+
+Lin, Julian, and Lee Seow Ting. ``Mapping Twelve Years of Communication
+Scholarship: Themes and Concepts in the Journal of Communication.'' In
+\emph{The Outreach of Digital Libraries: A Globalized Resource Network}.
+Lecture Notes in Computer Science 7634. Berlin: Springer, 2012.
+\url{https://doi.org/10.1007/978-3-642-34752-8_53}.
+
+Lee, Chul-joo, and Dongyoung Sohn. ``Mapping the Social Capital Research
+in Communication.'' \emph{Journalism \& Mass Communication Quarterly}
+93, no. 4 (2016):
+728--49. \url{https://doi.org/10.1177/1077699015610074}.
+
+Lerner, Daniel. ``International Coalitions and Communications Content:
+The Case of Neutralism.''\emph{ Public Opinion Quarterly} 16, no. 4
+(1952): 681­--Lerner, Daniel. \emph{The Passing of Traditional Society:
+Modernizing the Middle East}. New York: Free Press of Glencoe, 1958.
+
+Leye, Veva. ``UNESCO, ICT Corporations and the Passion of ICT for
+Development: Modernization Resurrected.'' \emph{Media, Culture \&
+Society} 29, no. 6 (2007): 972--93.
+\url{https://doi.org/10.1177/0163443707081711}.
+
+Mance, Boris. ``The Changing Role and Patterns of Critical Communication
+Scholarship in the Academic Journal Publishing System.'' Doctoral
+thesis, University of Ljubljana, 2020.
+
+Mariën, Ilse, and Jernej Amon Prodnik. ``Digital Inclusion and User
+(Dis)empowerment: A Critical Perspective.'' \emph{info} 16, no. 6
+(2014): 35--47. \url{https://doi.org/10.1108/info-07-2014-0030}.
+
+Mattelart, Armand. ``Cultural Imperialism in the Multinationals' Age.''
+\emph{Instant Research on Peace and Violence} 6, no. 4 (1976): 160--74.
+
+Mattelart, Armand. \emph{Multinational Corporations and the Control of
+Culture: The Ideological Apparatuses of Imperialism}. Brighton, UK:
+Harvester, 1979.
+
+Melody, William H., and Robin E. Mansell. ``The Debate over Critical vs.
+Administrative Research: Circularity or Challenge.'' \emph{Journal of
+Communication} 33, no. 3 (1983): 103--16.
+\url{https://doi.org/10.1111/j.1460-2466.1983.tb02412.x}.
+
+Merton, Robert K., and Norman William Storer. \emph{The Sociology of
+Science: Theoretical and Empirical Investigations}. Chicago: University
+of Chicago Press, 1998.
+
+Murdock, Graham. ``Review Article: Debating Digital Divides.''
+\emph{European Journal of Communication} 17, no. 3 (2002): 385--90.
+
+National Telecommunications and Information Administration (NTIA).
+\emph{Falling through the Net: A Survey of the "Have Nots'' in Rural and
+Urban America.} Washington, DC: US Department of Commerce, July 1995.
+\url{https://www.ntia.doc.gov/ntiahome/fallingthru.html}.
+
+Nkrumah, Kwame. \emph{Neo-Colonialism: The Last Stage of Capitalism.}
+London: Thomas Nelson \& Sons, 1965.
+
+Olson, Robert K. \emph{US Foreign Policy and the New International
+Economic Order: Negotiating Global Problems, 1974--1981}. Boulder, CO:
+Westview Press, 1981.
+
+Nordenstreng, Kaarle. ``Ferment in the Field: Notes on the Evolution of
+Communication Studies and Its Disciplinary Nature.'' \emph{Javnost­---The
+Public} 11, no. 3 (2004): 5--17.
+
+Nordenstreng, Kaarle. ``Being (Truly) Critical in Media and
+Communication Studies: Reflections of a Media Scholar between Science
+and Politics.'' \emph{Javnost---The Public} 23, no. 1 (2016): 89--104.
+
+Pooley, Jefferson. ``The New History of Mass Communication Research.''
+In \emph{The History of Media and Communication Research: Contested
+Memories}, edited by David Park and Jefferson Pooley, 43--69. New York:
+Peter Lang, 2008.
+
+Rauchfleisch, Adrian. ``The Public Sphere as an Essentially Contested
+Concept: A Co-citation Analysis of the Last Twenty Years of Public
+Sphere Research.'' \emph{Communication and the Public} 2, no. 1 (2017):
+3--18. h\url{ttps://doi.org/10.1177/2057047317691054}.
+
+Rice, Ronald E., John Chapin, Rebecca Pressman, Soyeon Park, and Edward
+Funkhouser. ``What's in a Name? Bibliometric Analysis of Forty Years of
+the \emph{Journal of Broadcasting} (\emph{\& Electronic Media}).''
+\emph{Journal of Broadcasting \& Electronic Media} 40, no. 4 (1996):
+511--39. \url{https://doi.org/10.1080/08838159609364373}.
+
+Richardson, Margaret C., Kay Weaver, and Theodore E. Zorn. ``\,'Getting
+on': Older New Zealanders' Perceptions of Computing.'' \emph{New Media
+\& Society} 7, no. 2 (2005): 219--45.
+\url{https://doi.org/10.1177/1461444805050763}.
+
+Rist, Gilbert. \emph{The History of Development: From Western Origins to
+Global Faith}. 3rd ed. London: Zed Books, 2008.
+
+Rogers, Everett M. ``Communication and Development: The Passing of the
+Dominant Paradigm.'' \emph{Communication Research} 3, no. 2 (1976):
+213--40.
+
+Schiller, Herbert I. \emph{Mass Communication and American Empire}.
+Boston: Beacon Press, 1969.
+
+Sauvant, Karl P. ``Toward the New International Economic Order.'' In
+\emph{The New International Economic Order: Confrontation of Cooperation
+between North and South?}, edited by Karl P. Sauvant and Hajo
+Hasenpflug, 3--19. Boulder, CO: Westview Press, 1977.
+
+Scheerder, Anique, Alexander van Deursen, and Jan van Dijk.
+``Determinants of Internet Skills, Uses and Outcomes: A Systematic
+Review of the Second- and Third-level Digital Divide.'' \emph{Telematics
+and Informatics} 34, no. 8 (2017): 1607--24.
+
+Shah, Hemant. \emph{The Production of Modernization: Daniel Lerner, Mass
+Media, and the Passing of Traditional Society}. Philadelphia: Temple
+University Press, 2011.
+
+Simonson, Peter, and John Durham Peters. ``Communication and Media
+Studies, History to 1968.'' In \emph{The International Encyclopedia of
+Communication}, edited by Wolfgang Donsbach, 764--71. Malden, MA:
+Wiley-Blackwell, 2008.
+
+Simpson, Christopher. \emph{Science of Coercion: Communication Research
+\& Psychological Warfare, 1945}--\emph{1960}. New York: Oxford
+University Press, 1994.
+
+Smythe, Dallas W., and Tran Van Dinh. ``On Critical and Administrative
+Research: A New Critical Analysis.'' \emph{Journal of Communication} 33,
+no. 3 (1983): 117--27.
+
+Sparks, Colin. ``What is the `Digital Divide' and Why is It Important?''
+\emph{Javnost---The Public} 20, no. 2 (2013): 27--46.
+\url{https://doi.org/10.1080/13183222.2013.1100911}.
+
+Splichal, Slavko. \emph{Public Opinion:} \emph{Developments and
+Controversies in Twentieth Century.} Lanham, MD: Rowman \& Littlefield,
+1999.
+
+Splichal, Slavko, and Boris Mance. ``Paradigm(s) Lost? Islands of
+Critical Media Research in Communication Journals.'' \emph{Journal of
+Communication} 68, no. 2 (2018): 399--414.
+
+Strover, Sharon. ``The US Digital Divide: A Call for a New Philosophy.''
+\emph{Critical Studies in Media Communication} 31, no. 2 (2014):
+114--22. \url{https://doi.org/10.1080/15295036.2014.922207}.
+
+Tai, Zixue. ``The Structure of Knowledge and Dynamics of Scholarly
+Communication in Agenda Setting Research, 1996--2005.'' \emph{Journal of
+Communication} 59, no. 3 (2009): 481--513.
+\url{https://doi.org/10.1111/j.1460-2466.2009.01425.x}.
+
+Tichenor, Philip J., George A. Donahue, and Clarice N. Olien. ``Mass
+Media Flow and Differential Growth in Knowledge.'' \emph{Public Opinion
+Quarterly} 34, no. 2 (1970): 159--70.
+
+Truman, Harry S. ``The Inaugural Address of Harry S. Truman.''
+Transcript of inaugural address delivered in Washington, DC, January 20,
+1949. \url{https://avalon.law.yale.edu/20th_century/truman.asp}.
+
+Viswanath, Katam, and John R. Finnegan. ``The Knowledge Gap Hypothesis:
+Twenty-Five Years Later.'' \emph{Annals of the International
+Communication Association} 19, no. 1 (1996): 187--228.
+\url{https://doi.org/10.1080/23808985.1996.11678931}.
+
+Van Dijk, Jan, and Kenneth Hacker. ``The Digital Divide as a Complex and
+Dynamic Phenomenon.'' \emph{The Information Society} 19, no. 4 (2003):
+315--26. \url{https://doi.org/10.1080/01972240309487}.
+
+Van Dinh, Tran. ``Non-Alignment and Cultural Imperialism: The Black
+Scholar.'' \emph{Journal of Black Studies and Research} 8, no. 3 (1976):
+39--49.
+
+Williams, Raymond. \emph{Keywords: A Vocabulary of Culture and Society}.
+1976. Reprint, New York: Oxford University Press, 2015.
+
+Yu, Liangzhi. ``Understanding Information Inequality: Making Sense of
+the Literature of the Information and Digital Divides.''~\emph{Journal
+of Librarianship and Information Science} 38, no. 4 (2006): 229--52.
+\url{https://doi.org/10.1177/0961000606070600}.
+
+Yu, Liangzhi. ``The Divided Views of the Information and Digital
+Divides: A Call for Integrative Theories of Information Inequality.''
+\emph{Journal of Information Science} 37, no. 6 (2011): 660--79.
+\url{https://doi.org/10.1177/0165551511426246}.
+
+\vspace*{2em}
+
+\hypertarget{disclosure-of-funding-sources}{%
+\section{Disclosure of Funding
+Sources}\label{disclosure-of-funding-sources}}
+
+This work was conducted as part of the research project ``The Role of
+Communication Inequalities in Disintegration of a Multinational
+Society'' (J5-1793), funded by the Slovenian Research Agency (ARRS).
+
+\newpage
+
+\vspace*{4em}
+
+\begin{center}
+    
+
+\noindent\huge{\textit{Appendices}}
+
+\end{center}
+
+
+
+\vspace*{3em}
+
+
+
+\begin{figure}
+    \centering
+    \includegraphics{mance-figure-ten.png}
+    \caption*{\textbf{Appendix A: }Reduced Network of Keywords (Red) and Cited Authors
+(Black) in Articles Sampled in \emph{Journalism Quarterly;} min. degree
+= 333; nodes visible = 31 (1.14\%)}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics{mance-figure-eleven.png}
+    \caption*{\textbf{Appendix B:} Reduced Network of Keywords (Red) and Cited Authors
+(Black) in Articles Sampled in \emph{Communication Monographs;} min.
+degree = 117; nodes visible = 30 (3.44\%)}
+    \label{fig:eleven}
+\end{figure}
+
+
+\begin{figure}
+    \centering
+    \includegraphics{mance-figure-twelve.png}
+    \caption*{\textbf{Appendix C:} Reduced Network of Keywords (Red) and Cited Authors
+(Black) in Articles Sampled in \emph{Communication Research;} min.
+degree = 345; nodes visible = 30 (1.34\%)
+}
+    \label{fig:twelve}
+\end{figure}
+
+
+\begin{figure}
+    \centering
+    \includegraphics{mance-figure-thirteen.png}
+    \caption*{\textbf{Appendix D:} Reduced Network of Keywords (Red) and Cited Authors
+(Black) in Articles Sampled in \emph{European Journal of Communication;}
+min. degree = 259; nodes visible = 86 (2.33\%)}
+    \label{fig:thirteen}
+\end{figure}
+
+
+\begin{figure}
+    \centering
+    \includegraphics{mance-figure-fourteen.png}
+    \caption*{\textbf{Appendix E:} Reduced Network of Keywords (Red) and Cited Authors
+(Black) in Articles Sampled in \emph{Discourse \& Society;} min. degree
+= 97; nodes visible = 32 (5.33\%)}
+    \label{fig:fourteen}
+\end{figure}
+
+
+
+\newpage
+
+\begin{fullwidth}
+
+
+\textbf{Appendix F:} List of Sampled Journals with Publishing Years,
+Number of Sampled Articles, and the Country of Origin
+
+\vspace*{2em}
+
+
+\tabulinesep=1.9mm
+{\begin{longtabu} to 1.55\textwidth { X[l] X[c] X[c] X[c]} 
+\emph{Journal name (Period)} & \emph{Founding year} & \emph{No. of articles in sample} & \emph{Country of origin}\\
+\endfirsthead
+\emph{Journal name (Period)} & \emph{Founding year} & \emph{No. of articles in sample} & \emph{Country of origin}\\
+\endhead
+JOURNALISM QUARTERLY (1924--1994) / JOURNALISM \& MASS COMMUNICATION
+QUARTERLY (1995--) & 1924 & 4,322 & US \\
+SPEECH MONOGRAPHS (1934--1974)/ COMMUNICATION MONOGRAPHS (1975--) & 1934
+& 1,691 & US \\
+PUBLIC OPINION QUARTERLY & 1936 & 2,499 & US \\
+JOURNAL OF COMMUNICATION & 1950 & 2,403 & US \\
+COMMUNICATION RESEARCH & 1973 & 1,346 & US \\
+MEDIA, CULTURE \& SOCIETY & 1978 & 1,497 & UK \\
+EUROPEAN JOURNAL OF COMMUNICATION & 1986 & 724 & UK \\
+DISCOURSE \& SOCIETY & 1989 & 756 & Netherlands \\
+\end{longtabu}}
+
+
+\newpage
+
+\textbf{Appendix G:} List of Noun Phrases Detected in CiteSpace Software
+Package
+
+\vspace*{1em}
+
+
+\tabulinesep=1.1mm
+{\begin{longtabu} to 1.25\textwidth { X[l] X[c] X[c]} 
+\emph{No.} & \emph{Count} & \emph{Keyword} \\
+\endfirsthead
+\emph{No.} & \emph{Count} & \emph{Keyword} \\
+\endhead
+1 & 872 & ­­social media \\
+2 & 589 & digital divide \\
+3 & 318 & internet \\
+4 & 276 & communication technology \\
+5 & 265 & content analysis \\
+6 & 214 & digital media \\
+7 & 211 & social network \\
+8 & 207 & journalism \\
+9 & 190 & new media \\
+10 & 183 & media \\
+11 & 177 & internet access \\
+12 & 168 & news media \\
+13 & 167 & in-depth interviews \\
+14 & 164 & mass media \\
+15 & 153 & young people \\
+16 & 145 & twitter \\
+17 & 144 & communication \\
+18 & 138 & health information \\
+19 & 128 & political communication \\
+20 & 125 & mobile phones \\
+21 & 125 & new technology \\
+22 & 121 & facebook \\
+23 & 120 & public sphere \\
+24 & 113 & public relation \\
+25 & 108 & digital technology \\
+26 & 107 & social networks \\
+27 & 103 & public relations \\
+28 & 102 & developing countries \\
+29 & 95 & china \\
+30 & 93 & traditional media \\
+31 & 93 & gender \\
+32 & 92 & practical implications \\
+33 & 92 & internet user \\
+34 & 89 & universal service \\
+35 & 85 & everyday life \\
+36 & 85 & political participation \\
+37 & 85 & media literacy \\
+38 & 84 & digital inequality \\
+39 & 81 & television \\
+40 & 81 & social media platforms \\
+41 & 81 & previous research \\
+42 & 79 & media system \\
+43 & 78 & mobile devices \\
+44 & 76 & covid-19 \\
+45 & 72 & knowledge gap \\
+46 & 70 & media coverage \\
+47 & 68 & social capital \\
+48 & 68 & digital age \\
+49 & 68 & globalization \\
+50 & 67 & digital inclusion \\
+51 & 66 & youth \\
+52 & 65 & focus group \\
+53 & 64 & news \\
+54 & 62 & public opinion \\
+55 & 61 & case study \\
+56 & 61 & big data \\
+57 & 60 & health communication \\
+58 & 58 & covid-19 pandemic \\
+59 & 57 & democracy \\
+60 & 57 & south africa \\
+61 & 55 & theoretical framework \\
+62 & 55 & online survey \\
+63 & 54 & information technology \\
+64 & 54 & social change \\
+65 & 53 & european union \\
+66 & 53 & broadband \\
+67 & 53 & privacy \\
+68 & 51 & science communication \\
+69 & 51 & education \\
+70 & 51 & political knowledge \\
+71 & 50 & latin america \\
+72 & 49 & social movements \\
+73 & 49 & technology \\
+74 & 46 & mobile communication \\
+75 & 45 & online news \\
+76 & 44 & mainstream media \\
+77 & 44 & news consumption \\
+78 & 44 & civil society \\
+79 & 43 & research question \\
+80 & 43 & digital platforms \\
+81 & 43 & participation \\
+82 & 43 & climate change \\
+83 & 43 & fake news \\
+84 & 42 & crisis communication \\
+85 & 41 & digital literacy \\
+86 & 41 & social networking site \\
+87 & 40 & qualitative analysis \\
+88 & 40 & ict \\
+89 & 40 & mobile phone \\
+90 & 39 & news coverage \\
+91 & 39 & political information \\
+92 & 39 & political economy \\
+93 & 39 & media education \\
+94 & 39 & online media \\
+95 & 38 & icts \\
+96 & 38 & spain \\
+97 & 38 & information society \\
+98 & 37 & information flow \\
+99 & 36 & survey data \\
+100 & 35 & new forms \\
+101 & 35 & rural area \\
+102 & 34 & mobile technology \\
+103 & 34 & literature review \\
+104 & 33 & public policy \\
+105 & 33 & social interaction \\
+106 & 33 & framing \\
+107 & 32 & telecommunications \\
+108 & 32 & news production \\
+109 & 32 & representative sample \\
+110 & 31 & research gap \\
+111 & 31 & social support \\
+112 & 31 & previous study \\
+113 & 30 & significant difference \\
+114 & 30 & semi-structured interviews \\
+115 & 29 & discourse analysis \\
+116 & 29 & open access \\
+117 & 29 & interpersonal communication \\
+118 & 29 & internet use \\
+119 & 29 & news stories \\
+120 & 28 & wide web \\
+121 & 28 & disinformation \\
+122 & 28 & global south \\
+123 & 27 & identity \\
+124 & 27 & social networking \\
+125 & 27 & digital communication \\
+126 & 27 & youtube \\
+127 & 26 & cultural imperialism \\
+128 & 26 & digital inequalities \\
+129 & 26 & inequality \\
+130 & 26 & mobile media \\
+131 & 26 & thematic analysis \\
+132 & 25 & universal access \\
+133 & 24 & india \\
+134 & 24 & information flows \\
+135 & 24 & policy \\
+136 & 23 & qualitative research \\
+137 & 23 & communications technology \\
+138 & 23 & computer-mediated communication \\
+139 & 23 & media content \\
+140 & 22 & social network site \\
+141 & 22 & coronavirus \\
+142 & 22 & transparency \\
+143 & 22 & health literacy \\
+144 & 22 & comparative analysis \\
+145 & 22 & media effects \\
+146 & 21 & children \\
+147 & 21 & university students \\
+148 & 21 & ethnography \\
+149 & 21 & africa \\
+150 & 21 & digital journalism \\
+151 & 20 & empirical research \\
+152 & 20 & south korea \\
+153 & 20 & ethics \\
+154 & 20 & surveillance \\
+155 & 19 & 21st century \\
+156 & 19 & newspapers \\
+157 & 19 & regulation \\
+158 & 18 & social networking sites \\
+159 & 18 & digital skills \\
+160 & 18 & artificial intelligence \\
+161 & 18 & socioeconomic status \\
+162 & 17 & race \\
+163 & 17 & access \\
+164 & 17 & young adults \\
+165 & 17 & infrastructure \\
+166 & 17 & empirical analysis \\
+167 & 16 & general public \\
+168 & 16 & rural communities \\
+169 & 16 & new ways \\
+170 & 16 & information \\
+171 & 16 & critical discourse analysis \\
+172 & 16 & communication theory \\
+173 & 16 & news source \\
+174 & 16 & politics \\
+175 & 16 & algorithms \\
+176 & 16 & health care \\
+177 & 15 & public access \\
+178 & 15 & survey \\
+179 & 15 & online communication \\
+180 & 15 & limited access \\
+181 & 15 & media policy \\
+182 & 14 & main objective \\
+183 & 14 & crucial role \\
+184 & 14 & personal information \\
+185 & 14 & conceptual framework \\
+186 & 14 & everyday lives \\
+187 & 14 & civic engagement \\
+188 & 14 & video games \\
+189 & 14 & new zealand \\
+190 & 14 & web 2.0 \\
+191 & 14 & advertising \\
+192 & 14 & social inclusion \\
+193 & 14 & mobile internet \\
+194 & 13 & digital environment \\
+195 & 13 & daily lives \\
+196 & 13 & web site \\
+197 & 13 & empirical evidence \\
+198 & 13 & journalism study \\
+199 & 13 & new challenge \\
+200 & 13 & virtual reality \\
+201 & 13 & european countries \\
+202 & 13 & growing body \\
+203 & 12 & qualitative interviews \\
+204 & 12 & media environment \\
+205 & 12 & significant role \\
+206 & 12 & mass communication \\
+207 & 12 & activism \\
+208 & 12 & search engine \\
+209 & 12 & new opportunities \\
+210 & 12 & digital era \\
+211 & 12 & network analysis \\
+212 & 12 & political engagement \\
+213 & 12 & knowledge gaps \\
+214 & 12 & migration \\
+215 & 12 & access to information \\
+216 & 12 & international communication \\
+217 & 12 & national trends survey \\
+218 & 11 & knowledge gap hypothesis \\
+219 & 11 & online activity \\
+220 & 11 & mobile communications \\
+221 & 11 & strategic communication \\
+222 & 11 & citizen journalism \\
+223 & 11 & citizenship \\
+224 & 11 & pandemics \\
+225 & 11 & audiences \\
+226 & 11 & convergence \\
+227 & 11 & election campaigns \\
+228 & 11 & digital \\
+229 & 10 & mental health \\
+230 & 10 & telecommunications policy \\
+231 & 10 & power relation \\
+232 & 10 & online communities \\
+233 & 10 & public relations practitioners \\
+234 & 10 & macbride report \\
+235 & 10 & media representation \\
+236 & 10 & television news \\
+237 & 10 & international news \\
+238 & 10 & existing literature \\
+239 & 10 & significant impact \\
+240 & 10 & virtual environment \\
+241 & 10 & culture \\
+242 & 10 & business model \\
+243 & 10 & economic development \\
+244 & 10 & political actors \\
+245 & 10 & college students \\
+\end{longtabu}}
+
+
+\end{fullwidth}
+
+
+\end{hangparas}
+
+
+\end{document}
