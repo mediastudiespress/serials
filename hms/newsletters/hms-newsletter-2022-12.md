@@ -28,8 +28,6 @@ Readings for discussion:
 
 *If you have a call or announcement relevant to the history of media studies, please [contact us](mailto:hms@mediastudies.press).*
 
-***
-
 
 1. *ESHHS Early Career Award* 
 	* The European Society for the History of the Human Sciences, together with the *Journal of the History of the Behavioral Sciences*  (*JHBS*) encourages early career researchers to submit their papers for the Early Career Award. The winning paper can be submitted to *JHBS*. If  accepted after additional review, it will be published with a notice indicating that it is the winner of the ESHHS Early Career Award. The Publisher will then provide an honorarium of US $500 to the award recipient. All students are eligible to be considered for the Award, as are all researchers having completed their PhD no more than 5 years previous to the date of submission.
