@@ -46,4 +46,5 @@
 * [Solicit peer review](/hms/workflows/solicit-peer-review.md)
 * [Second-round review](/hms/workflows/second-round-review.md)
 * [Prepare initial decision letter](/hms/workflows/prepare-initial-decision-letter.md)
-* [Send desk reject](/hms/workflows/send-desk-reject.md) 
+* [Send desk reject](/hms/workflows/send-desk-reject.md)
+* [Send out blinded manuscript to reviewer](/hms/workflows/send-out-blinded-manuscript-to-reviewer.md) 
