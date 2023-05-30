@@ -17,8 +17,8 @@
 
 ## Copy-edit
 
-* [Send manuscript to copy-editor](/hms/workflows/send-manuscript-to-copy-editor.md)
 * [Upload copy-edited article to PubPub](/hms/workflows/upload-copy-edited-file-to-pubpub.md)
+* [Look over Pub to send to copy editor](/hms/workflows/look-over-pub-to-send-to-copy-editor.md) 
 
 ## Fundraising
 
