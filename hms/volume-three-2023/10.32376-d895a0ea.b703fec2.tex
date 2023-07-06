@@ -1,0 +1,357 @@
+% see the original template for more detail about bibliography, tables, etc: https://www.overleaf.com/latex/templates/handout-design-inspired-by-edward-tufte/dtsbhhkvghzz
+
+\documentclass{tufte-handout}
+
+%\geometry{showframe}% for debugging purposes -- displays the margins
+
+\usepackage{amsmath}
+
+\usepackage{hyperref}
+
+\usepackage{fancyhdr}
+
+\usepackage{hanging}
+
+\hypersetup{colorlinks=true,allcolors=[RGB]{97,15,11}}
+
+\fancyfoot[L]{\emph{History of Media Studies}, vol. 3, 2023}
+
+
+% Set up the images/graphics package
+\usepackage{graphicx}
+\setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
+\graphicspath{{graphics/}}
+
+\title[Review of Brylowe \& Yeager]{\emph{Old Media and the Medieval Concept}, reviewed by Michele Kennerly} % longtitle shouldn't be necessary
+
+% The following package makes prettier tables.  We're all about the bling!
+\usepackage{booktabs}
+
+% The units package provides nice, non-stacked fractions and better spacing
+% for units.
+\usepackage{units}
+
+% The fancyvrb package lets us customize the formatting of verbatim
+% environments.  We use a slightly smaller font.
+\usepackage{fancyvrb}
+\fvset{fontsize=\normalsize}
+
+% Small sections of multiple columns
+\usepackage{multicol}
+
+% Provides paragraphs of dummy text
+\usepackage{lipsum}
+
+% These commands are used to pretty-print LaTeX commands
+\newcommand{\doccmd}[1]{\texttt{\textbackslash#1}}% command name -- adds backslash automatically
+\newcommand{\docopt}[1]{\ensuremath{\langle}\textrm{\textit{#1}}\ensuremath{\rangle}}% optional command argument
+\newcommand{\docarg}[1]{\textrm{\textit{#1}}}% (required) command argument
+\newenvironment{docspec}{\begin{quote}\noindent}{\end{quote}}% command specification environment
+\newcommand{\docenv}[1]{\textsf{#1}}% environment name
+\newcommand{\docpkg}[1]{\texttt{#1}}% package name
+\newcommand{\doccls}[1]{\texttt{#1}}% document class name
+\newcommand{\docclsopt}[1]{\texttt{#1}}% document class option name
+
+
+\begin{document}
+
+\begin{titlepage}
+
+\begin{fullwidth}
+\noindent\LARGE\emph{Book review
+} \hspace{88mm}\includegraphics[height=1cm]{logo3.png}\\
+\noindent\hrulefill\\
+\vspace*{1em}
+\noindent{\Huge{\emph{Old Media and the Medieval Concept}\newline\noindent reviewed by Michele Kennerly\par}}
+
+\vspace*{1.5em}
+
+\noindent\LARGE{Michele Kennerly} \href{https://orcid.org/0000-0001-8674-338X}{\includegraphics[height=0.5cm]{orcid.png}}\par\marginnote{\emph{Michele Kennerly, ``\emph{Old Media and the Medieval Concept}, reviewed by Michele Kennerly,'' \emph{History of Media Studies} 3 (2023), \href{https://doi.org/10.32376/d895a0ea.b703fec2}{https://doi.org/ 10.32376/d895a0ea.b703fec2}.} \vspace*{0.75em}}
+\vspace*{0.5em}
+\noindent{{\large\emph{Pennsylvania State University}, \href{mailto:mjk46@psu.edu}{mjk46@psu.edu}\par}} \marginnote{\href{https://creativecommons.org/licenses/by-nc/4.0/}{\includegraphics[height=0.5cm]{by-nc.png}}}
+
+
+
+\end{fullwidth}
+
+\vspace*{1em}
+
+
+    
+\noindent\small{Thora Brylowe and Stephen Yeager, eds. \emph{Old Media and the Medieval
+Concept: Media Ecologies before Early Modernity}. 280 pp., figs., index.
+Montréal: Concordia University Press, 2021.
+\href{https://press.library.concordia.ca/projects/old-media-and-the-medieval-concept}{Open access download}.}
+
+\vspace*{0.25em}
+
+\newthought{\emph{Antiquus}. \emph{Medius}. \emph{Modernus}}. ``Before.'' ``Middle.''
+``Just now.'' Those three Latin adjectives underwrite the stubborn
+periodization schema by which the European past and studies of it tend
+to be sorted. They're more familiar, of course, as ``the ancient,''
+``the medieval,'' and ``the modern.''
+
+Whereas \emph{antiquus} and \emph{modernus} were used as generational
+descriptors in ancient Roman rhetorical theory, ``medieval,'' a
+concatenation of \emph{media æva} (middle ages), comes to us courtesy of
+Francis Bacon. In his 1620 \emph{Novum Organon} (both an homage and a
+challenge to the old one of Aristotle), Bacon used \emph{media æva} to
+mark the ostensibly unremarkable cultural and chronological space
+between what, for him, were two self-evidently remarkable ones:
+(Athenian and Roman) antiquity and his own. We might not all be
+connected to Francis Bacon by six degrees socially,\footnote{"Francis
+  Bacon Network {[}2, 1562-1626, 61-100\%{]}," \emph{Six Degrees of
+  Francis Bacon}, accessed March 1, 2023,
+  \url{http://www.sixdegreesoffrancisbacon.com/?ids=10000473\&min_confidence=60\&type=network}.}
+but we are intellectually: His impatient attitude authorized an enduring
+dismissiveness about the Middle Ages. It is periodization's flyover
+country.
+
+Evidence abounds for the Middle Ages being snubbed particularly
+egregiously in major studies of media history. Following the cosmic
+logic of Marshall McLuhan's \emph{The} \emph{Gutenberg
+Galaxy},\footnote{Marshall McLuhan, \emph{The Gutenberg Galaxy: The
+  Making of Typographic Man} (Toronto: University of Toronto Press,
+  1962).} the Middle Ages were but gas and dust. Following the framework
+of Friedrich Kittler's \emph{Discourse Networks 1800/1900},\footnote{Friedrich
+  Kittler, \emph{Discourse Networks, 1800/1900} (Stanford, CA: Stanford
+  University Press, 1990).} the Middle Ages are far from the century
+across which the mediality of the literary was doing its most
+transformative cultural work. Following the genealogy of John Guillory's
+``The Genesis of the Media Concept,''\footnote{John Guillory, ``Genesis
+  of the Media Concept,'' \emph{Critical Inquiry} 36, no. 2 (2010).} the
+Middle Ages merit a single footnote. All the while, medievalists were
+some of the earliest adopters of digital scholarly methods and
+platforms, and some of those spotlighted medieval media.
+
+Those two slights of the Middle Ages---one born in the seventeenth
+century, the other in the twentieth---motivate \emph{Old Media and the Medieval Concept},
+
+\enlargethispage{2\baselineskip}
+
+\vspace*{2em}
+
+\noindent{\emph{History of Media Studies}, vol. 3, 2023}
+
+
+ \end{titlepage}
+
+
+\noindent the inaugural volume in a series titled ``Media
+Before 1800'' (notice the allusion to Kittler), in whose campaign I have
+enlisted readers of this review already, using the rallying cries of the
+co-editors, romanticist Thora Brylowe and medievalist Stephen M. Yeager.
+
+Medievalists have been writing sumptuously about medieval media for some
+time; what the medievalists in this volume do is explicitly engage the
+terms and assumptions of twentieth- and twenty-first-century media
+history and theory, and invite media theorists and historians, in turn,
+not to pass over the Middle Ages. The frontispiece, which peeks through
+a cut-out on the cover, is a medieval consanguinity diagram, and,
+dodging gross bloodline-talk, one might call it emblematic of the
+congruities between medieval studies and media studies that emerge when
+one translates Bacon's \emph{media æva} as ``the mediating ages,'' as
+the editors provocatively do.
+
+The volume assumes a symmetrical structure of two parts of three
+chapters each. The first part, ``Long Durations,'' contests the logic of
+periodization, which might permit analogies between and among periods
+but denies continuities. Brandon W. Hawk's chapter on ``The Genesis of
+the Digital Concept'' leads. ``Digital'' exploded onto the cultural
+scene about the same time as ``information'' (though neither appears
+among Raymond Williams's keywords), two members of the vocabulary of
+automated computation. Hawk deploys philological methods to track
+\emph{digit}-based words across medieval Latin and English texts,
+demonstrating its use in mathematical contexts that could be called
+computational. Key to his chapter is medieval ``finger reckoning,''
+giving numerical purpose to fingers and hands to make abstract
+mathematical concepts more concrete. As he hits the end of his
+genealogy, I think Hawk under-reaches when he limits the computational
+use of digits (fingers) in our digital (not analogue) age to ``typing
+and clicking with our fingers'' on our gadgets (35, 50). The
+word-history he surfaces becomes even more compelling when one thinks of
+the hands that make the gadgets themselves, from the start of the
+digital age. For instance, Lisa Nakamura's work\footnote{Lisa Nakamura,
+  ``Indigenous Circuits,'' \emph{Computer History Museum} (blog),
+  January 2, 2014,
+  \url{https://computerhistory.org/blog/indigenous-circuits/}.} highlights the
+Indigenous women hired by Fairchild Semiconductor to make circuits due
+to their ``nimble fingers.'' There are also all the fingers of Google
+Books scanner-laborers that the company took pains to remove,\footnote{Asher
+  Moses, ``Book Scans Reveal Google's Handiwork,'' \emph{The Sydney
+  Morning Herald}, December 7, 2007,
+  \href{https://www.smh.com.au/technology/book-scans-reveal-googles-handiwork-20071207-gdrrhl.html}{https://www.smh.com.au/technology/book-scans-reveal-googles-handiwork-20071207-gdrrhl.html}.}
+thereby ensuring invisible laborers\footnote{Marlena Millikin, ``The
+  Ghostly Disruption of Google Hands,'' \emph{The Future of the Book}
+  (blog), March 11, 2016,
+  \href{http://metadefect.com/2016/03/the-ghostly-disruption-of-google-hands/}{http://metadefect.com/2016/03/the-ghostly-disruption-of-google-hands/}.}
+stayed that way.
+
+Co-editor Stephen M. Yeager argues in his chapter, ``Protocol and
+Regulation: Controlling Media Histories,'' that the control concepts of
+protocol and regulation map on generatively to prevailing attitudes
+toward the dominant media forms of pre-modern, modern, and post-modern
+historical periods, which themselves shape larger views about the
+character of those periods. Yeager's media examples are manuscripts,
+printed books, television, and the internet. He pairs manuscripts and
+the internet with the protocological (``distributed, non-hierarchical'')
+and printed books and television with the regulatory (``centralized,
+hierarchical''), thereby bracketing the tell-tale media of the modern
+period (77). Yeager's groupings violate the rules of periodization,
+which separate eras according to purported dissimilarities. I am excited
+to see how this grand theoretical vision plays with Jeff Jarvis's
+forthcoming book \emph{The Gutenberg Parenthesis}\footnote{Jeff Jarvis,
+  \emph{The Gutenberg Parenthesis: The Age of Print and Its Lessons for
+  the Age of the Internet} (New York: Bloomsbury, 2023).} (its snazzy
+title has earlier origins\footnote{Greg Peverill-Conti and Brad Seawell,
+  ``The Gutenberg Parenthesis: Oral Tradition and Digital
+  Technologies,'' \emph{CommForum} (blog), April 1, 2010,
+  \href{https://commforum.mit.edu/the-gutenberg-parenthesis-oral-tradition-and-digital-technologies-29e1a4fde271}{https://commforum.mit.edu/the-gutenberg-parenthesis-oral-tradition-and-digital-technologies-29e1a4fde271}.}).
+
+``The Coconut Cup as Material and Medium: Extended Ecologies,'' by
+Kathleen E. Kennedy, whose fascinating coconut work\footnote{Kathleen E.
+  Kennedy, ``Coconuts in Medieval England Weren't as Rare as \emph{Monty
+  Python and the Holy Grail} Made You Think,'' \emph{The Mary Sue}
+  (website), October 14, 2015,
+  \url{https://www.themarysue.com/monty-python-holy-grail-coconuts/}.} has
+been rolling out for a few years, emerges as the most global and
+ecological chapter in the volume. Though coconuts had long been used as
+drinking vessels, their medieval importation into Europe from India
+resulted in a new media form: coconut drinkware with silver stems (and
+feet\footnote{Coconut cup and cover, Ashmolean Museum Oxford, accessed
+  October 15, 2022, \url{https://collections.ashmolean.org/object/777202}.}).
+She traces how the coconut cup competed with the maple-wood cup in
+Europe and became an artifact of European colonization, whereby it then
+competed with---and, crucially, failed to displace---the organic
+drinkware of the Americas, especially that used for yerba and chocolate.
+One of many noteworthy features of this chapter is Kennedy's choice,
+contoured to this volume, of course, to treat the coconut cup as a
+medium instead of a thing, actant, or object. For Kennedy, the coconut
+cup ``transmit{[}ted{]} . . . cultural information'' (101). In that
+light, James Carey's work on communication as culture would have rounded
+out this chapter nicely (and been a better fit for what Kennedy is doing
+than John Durham Peters's book \emph{Speaking into the Air}, which she
+finds problematic). Her choice seems more deliberate than that, though:
+To consider household items, which cultures often assign to be the
+province of women, as media or technologies---words with much more
+cachet outside of most theory circles than ``things'' and
+``objects''---is to give them a status they don't often enjoy.
+
+The three chapters in the second part of the volume, ``Affective
+Affordances,'' exhibit the counterpart to \emph{longue durée}--based
+theorizing: intensive interpretation of singular media forms,
+respectively. The contributors select tags and glosses, letters, and
+commentaries, all of which take their affective charge from their
+institutional contexts (universities, cathedral schools, the church).
+
+The first chapter, Fiona Somerset's ``Multimedia Verse,'' and the last
+chapter, Alice Hutton Sharp's ``The \emph{Gloss} on Genesis and
+Authority in the Cathedral Schools,'' highlight the communal and
+material practices of what one might call accumulating interpretive
+authority by accretion. None of the historical actors, all students who
+have been anonymous for several hundred years, is trying to have either
+the first or the last word. Instead, they are using pre-existing verses
+and texts to enter into larger cultural conversations. Somerset centers
+on deposits of verse-tag annotations, calling them a ``technology of
+association'' (107) that arose from student-readers of an early
+fourteenth-century copy of Gratian's \emph{Decretum} actively
+interacting with the manuscript. For her part, Hutton Sharp treats
+cathedral schools as interpretive communities whose students
+collaborated to layer onto existing understandings of biblical passages
+and thus reflect (and genuflect to) the learning of their teachers. The
+chapter's media focus falls on how manuscript design shaped and was
+shaped by commentary practices. That authorship cannot be attributed to
+either verse tags or student glosses reminded me, at a slant, of Ann
+Blair's work-in-progress\footnote{Ann Blair, ``Hidden Hands: Amanuenses
+  and Authorship in Early Modern Europe,'' A. S. W. Rosenbach Lectures
+  in Bibliography, Penn Libraries Repository, March 17, 18, 20, 2014,
+  \url{https://repository.upenn.edu/rosenbach/8/}.} on the anonymous
+amanuenses of big textual projects in the modern period. Their anonymity
+made ``\emph{the} author'' possible.
+
+In the penultimate chapter, ``Ex Illo Tempore: Time, Mediation, and the
+\emph{Ars Dictaminis} in Letter 65 by Peter the Venerable,'' Jonathan M.
+Newman treats the medieval letter as an object lesson in understanding
+media. Because the letter is both a medium (an in-between material) and
+a form (a shape emerging from a topical and structural conventions),
+when letter writers reflect on absence, distance, permanence, speed,
+attention, and affection, they're frequently issuing metacommentary on
+the nature of media. Letter 65, sent from one twelfth-century abbot to
+another, arose from institutional and interpersonal rivalries. \emph{Ars
+dictaminis} (the medieval technique system for letter-writing) taught
+its learners arts of address-over-distance that were exquisitely attuned
+to social hierarchy. When writer and addressee are of equal status but
+agonistically disposed, every dictaminal convention seems to bend toward
+creative or even mischievous use. In his letter to Bernard of Clairvaux,
+Peter uses affective commonplaces of Christian letter-writing to lead
+Bernard to the ask: If you care for me, as one committed Christian
+should for another, stop merely sending a quick hello through
+intermediaries and instead write. Peter seems to want his relationship
+with his rival on the record.
+
+Somerset, Hutton Sharp, and Newman do not define or use the concept of
+affordance in their pieces, nor do they push too hard when they compare
+their units of medieval media analysis to digital ones (e.g., comment
+threads and emails). My interpretation is that their chapters act as
+action possibilities for readers, especially ones writing theories and
+histories of purportedly digital age phenomena.
+
+Altogether, \emph{Old Media and the Medieval Concept} boasts a
+gregarious character. It seems eager to be heard and to chat. As this
+review attests, while reading, I heard it talking with forthcoming
+books; I'll add here Bruce Holsinger's \emph{On Parchment: Animals,
+Archives, and the Making of Culture from Herodotus to the Digital
+Age}\footnote{Bruce Holsinger, O\emph{n Parchment: Animals, Archives,
+  and the Making of Culture from Herodotus to the Digital Age} (New
+  Haven, CT: Yale University Press, 2023).} and Anna Shechtman's
+book-in-progress on ``the media concept.''\footnote{Anna Shechtman,
+  Personal website, accessed October 15, 2022,
+  \url{https://www.annashechtman.com/}.} My ideas for reading groups and
+graduate seminar units are scribbled throughout the margins of my copy
+and on obliging scraps of paper around my house.
+
+In their introduction, co-editors Brylowe and Yeager claim that ``a
+thoroughgoing rethinking of media history will show the continuities,
+reversals, and overlaps are more compelling than revolutions or epochs,
+as they help us both to better understand what the artifacts of the past
+have to teach us and to better respond to the contingencies of our own
+historical moment'' (22). The six contributors took up the call. I hope
+those of us writing and teaching histories of media, communication,
+information, and rhetoric will, too.
+
+
+
+
+\section{Bibliography}\label{bibliography}
+
+\begin{hangparas}{.25in}{1} 
+
+
+
+Blair, Ann. ``Hidden Hands: Amanuenses and Authorship in Early Modern
+Europe.'' A. S. W. Rosenbach Lectures in Bibliography. Penn Libraries
+Repository. March 17, 18, 20, 2014.
+\url{https://repository.upenn.edu/rosenbach/8/}.
+
+Guillory, John. ``Genesis of the Media Concept.'' \emph{Critical
+Inquiry} 36, no. 2 (2010): 321--62.
+
+Holsinger, Bruce. O\emph{n Parchment: Animals, Archives, and the Making
+of Culture from Herodotus to the Digital Age}. New Haven, CT: Yale
+University Press, 2023.
+
+Jarvis, Jeff. \emph{The Gutenberg Parenthesis: The Age of Print and Its
+Lessons for the Age of the Internet}. New York: Bloomsbury, 2023.
+
+Kittler, Friedrich. \emph{Discourse Networks, 1800/1900}. Stanford, CA:
+Stanford University Press, 1990.
+
+McLuhan, Marshall. \emph{The Gutenberg Galaxy: The Making of Typographic
+Man}. Toronto: University of Toronto Press, 1962.
+
+
+
+\end{hangparas}
+
+
+\end{document}

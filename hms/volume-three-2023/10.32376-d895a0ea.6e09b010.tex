@@ -1,0 +1,1665 @@
+% see the original template for more detail about bibliography, tables, etc: https://www.overleaf.com/latex/templates/handout-design-inspired-by-edward-tufte/dtsbhhkvghzz
+
+\documentclass{tufte-handout}
+
+%\geometry{showframe}% for debugging purposes -- displays the margins
+
+\usepackage{amsmath}
+
+\usepackage{hyperref}
+
+\usepackage{fancyhdr}
+
+\usepackage{hanging}
+
+\hypersetup{colorlinks=true,allcolors=[RGB]{97,15,11}}
+
+\fancyfoot[L]{\emph{History of Media Studies}, vol. 3, 2023}
+
+\usepackage{tabu}
+\usepackage{longtable}[=v4.13]
+
+% Set up the images/graphics package
+\usepackage{graphicx}
+\setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
+\graphicspath{{graphics/}}
+
+\title[From Victims to Economic Assets]{From Victims to Economic Assets: Training Women in an Emerging Digital Society During the Late 1970s to the Mid-1990s} % longtitle shouldn't be necessary
+
+% The following package makes prettier tables.  We're all about the bling!
+\usepackage{booktabs}
+
+% The units package provides nice, non-stacked fractions and better spacing
+% for units.
+\usepackage{units}
+
+% The fancyvrb package lets us customize the formatting of verbatim
+% environments.  We use a slightly smaller font.
+\usepackage{fancyvrb}
+\fvset{fontsize=\normalsize}
+
+% Small sections of multiple columns
+\usepackage{multicol}
+
+% Provides paragraphs of dummy text
+\usepackage{lipsum}
+
+% These commands are used to pretty-print LaTeX commands
+\newcommand{\doccmd}[1]{\texttt{\textbackslash#1}}% command name -- adds backslash automatically
+\newcommand{\docopt}[1]{\ensuremath{\langle}\textrm{\textit{#1}}\ensuremath{\rangle}}% optional command argument
+\newcommand{\docarg}[1]{\textrm{\textit{#1}}}% (required) command argument
+\newenvironment{docspec}{\begin{quote}\noindent}{\end{quote}}% command specification environment
+\newcommand{\docenv}[1]{\textsf{#1}}% environment name
+\newcommand{\docpkg}[1]{\texttt{#1}}% package name
+\newcommand{\doccls}[1]{\texttt{#1}}% document class name
+\newcommand{\docclsopt}[1]{\texttt{#1}}% document class option name
+
+
+\begin{document}
+
+\begin{titlepage}
+
+\begin{fullwidth}
+\noindent\LARGE\emph{Article
+} \hspace{99mm}\includegraphics[height=1cm]{logo3.png}\\
+\noindent\hrulefill\\
+\vspace*{1em}
+\noindent{\Huge{From Victims to Economic Assets: Training Women in an Emerging Digital Society\\\noindent During the Late 1970s to the Mid-1990s\par}}
+
+\vspace*{1.5em}
+
+\noindent\LARGE{Rosalía Guerrero Cantarell} \href{https://orcid.org/0000-0003-1071-1941}{\includegraphics[height=0.5cm]{orcid.png}}\par\marginnote{\emph{Rosalía Guerrero Cantarell, Carmen Flury, and Michael Geiss, ``From Victims to Economic Assets: Training Women in an Emerging Digital Society During the Late 1970s to the Mid--1990s,'' \emph{History of Media Studies} 3 (2023), \href{https://doi.org/10.32376/d895a0ea.6e09b010}{https://doi.org/ 10.32376/d895a0ea.6e09b010}.} \vspace*{0.75em}}
+\vspace*{0.5em}
+\noindent{{\large\emph{Zurich University of Teacher Education},\\\noindent \href{mailto:rosalia.guerrero@ekhist.uu.se}{rosalia.guerrero@ekhist.uu.se}\par}} \marginnote{\href{https://creativecommons.org/licenses/by-nc/4.0/}{\includegraphics[height=0.5cm]{by-nc.png}}}
+
+\vspace*{0.75em} 
+
+\noindent{\LARGE{Carmen Flury} \href{https://orcid.org/0000-0002-3759-6595}{\includegraphics[height=0.5cm]{orcid.png}}\par}
+\vspace*{0.5em}
+\noindent{{\large\emph{Zurich University of Teacher Education},\\\noindent \href{mailto:carmen.flury@phzh.ch}{carmen.flury@phzh.ch}\par}}
+
+\vspace*{0.75em} % third author
+
+\noindent{\LARGE{Michael Geiss}\par}
+\vspace*{0.5em}
+\noindent{{\large\emph{Zurich University of Teacher Education},\\\noindent \href{mailto:michael.geiss@phzh.ch}{michael.geiss@phzh.ch}\par}}
+
+\end{fullwidth}
+
+\vspace*{1em}
+
+
+\hypertarget{abstract}{%
+\section{Abstract}\label{abstract}}
+
+The European Community (EC), afraid of lagging behind the United States
+and Japan in the technology race, developed a series of strategies in
+the 1980s and 1990s to enhance their position in the field of
+information and telecommunication technologies (ICT). One key strategy
+was the training and retraining of citizens to deal with the shortage of
+a highly skilled labor force. At the same time, women's issues were
+being raised as part of the EC's political agenda, with a particular
+emphasis on the effects of technological change on the employment of
+women. We claim that despite the advantageous conditions for promoting
+women's advanced education in ICT, the EC's strategy was to promote only
+basic computer literacy, following a dis-
+
+\enlargethispage{2\baselineskip}
+
+\vspace*{2em}
+
+\noindent{\emph{History of Media Studies}, vol. 3, 2023}
+
+ \end{titlepage}
+
+
+\noindent course that victimized women,
+due to their alleged lack of skills and flexibility. Although by the
+late 1980s, the view of women as
+constituting potential economic assets
+in the EC's economy became more prominent, the concrete measures for
+women's education and training did not substantially change and remained
+scantily funded and short-sighted throughout the whole period.
+
+\vspace*{2em}
+
+\newthought{The European Community} (EC) regarded the advent of new information
+technologies in the 1970s as an urgent matter, involving complex
+economic, industrial and technical questions. Concerning the workforce,
+the EC identified two main challenges: the devaluation of existing
+qualifications and the shortage of highly-qualified specialists in
+Information and Communications Technology (ICT).\footnote{Commission of
+  the European Communities, ``The Changing Nature of Employment: New
+  Forms, New Areas,'' \emph{Social Europe} 1 (1988).} In light of the
+then-dominant Knowledge-Based Economy (KBE) paradigm that incorporated
+ideas, such as level of education, skills, and human capital,\footnote{Sami
+  Moisio, \emph{Geopolitics of the Knowledge-Based Economy} (New York:
+  Routledge, 2018), 15.} the EC redefined education and training to
+match the demand of transferable and specific skills required in the
+economy. European policies, following a human capital approach, were
+framed as a strategy to supply the labor market with an adequate stock
+of human capital to meet the demands of the KBE.\footnote{Manfred
+  Wallenborn, ``Vocational Education and Training and Human Capital
+  Development: Current Practice and Future Options,'' \emph{European
+  Journal of Education} 45, no. 2 (2010).}
+
+In a technological society, as suggested by sociologist Andrew Barry,
+``technical change {[}is{]} the model for political intervention'' and
+``specific technologies dominate our sense of the kinds of problems that
+government and policies must address, and the solutions that we must
+adopt.''\footnote{Andrew Barry, \emph{Political Machines: Governing a
+  Technological Society} (London: Athlone Press, 2001), 2.} This
+explains the emergence of European technology policies in the 1980s,
+aimed at creating a European system of innovation. Policymakers assumed
+that technology was related to knowledge and, therefore, depended on a
+mix of skills and capabilities of people, as well as institutions.
+
+While research institutions and technical facilities were
+essential,\footnote{John Peterson and Margaret Sharp, \emph{Technology
+  Policy in the European Union} (London: Macmillan, 1998), 49--50.} the
+development of human capital was equally important. The new economic
+structure required a pool of individuals ready to undergo training to
+master the rapidly developing computer technologies.
+
+Concurrently, an international gender equality movement was becoming
+established.\footnote{See Angela Glasner, ``Gender and Europe: Cultural
+  and Structural Impediments to Change,'' in \emph{Social Europe}, ed.
+  Joe Bailey (New York: Longman, 1991).} Equal opportunities in
+education and work constituted an urgent demand for groups working on
+women's issues, which led to the development of equality policies in
+these areas, both at national and European levels.\footnote{See Mary Ann
+  Danowitz Sagaria, \emph{Women, Universities, and Change: Gender
+  Equality in the European Union and the United States} (New York:
+  Palgrave Macmillan, 2007).}
+
+The timing seemed perfect, and the conditions ripe, for creating
+suitable educational and training policies that targeted women's
+inequality and addressed the shortage of highly skilled workers in the
+area of ICT. According to the human capital paradigm, targeting women's
+education and training in new technologies might appear to be an
+unequivocal choice. However, we claim that the EC repeatedly pigeonholed
+women as a socially-excluded group, particularly prone to unemployment
+due to their poor qualifications and labor market behavior.
+
+In the early years of the microchip revolution, both women and men faced
+the consequences of inadequate training in new ICT. However, women often
+encountered the additional challenge of not being recognized as
+potential highly skilled workers. This view had far-reaching
+consequences for the content and scope of education and training
+initiatives. This historical inconsistency is at the core of this
+article.
+
+We seek to understand the role that the EC assigned women in building a
+European technological society and how this role was encouraged through
+training and education policies. In the following sections, we add
+nuance to Jacky Brine's assumption that the EC's patriarchal approach
+trumped its economic rationale.\footnote{Jacky Brine, ``Equal
+  Opportunities and the European Social Fund: Discourse and Practice,''
+  \emph{Gender and Education} 7, no.1 (1995); Jacky Brine,
+  \emph{UnderEducating Women: Globalizing Inequality} (Philadelphia:
+  Open University Press, 1999).} We show, instead, how in the 1980s and
+early 1990s, a gendered interpretation of the labor market permeated the
+EC's policy decisions. This interpretation was based on assumptions
+regarding women's interests, skills, and capabilities. This EC's bias
+resulted in education and training measures that endorsed women's
+subordinated economic role in the advent of the so-called ICT
+revolution.
+
+This study centers on the era spanning roughly from 1970 onwards, during
+which Western governments and the EC acknowledged the developmental
+potential of emerging information technologies. This period also saw a
+growing emphasis on citizen education and training for effective
+utilization and innovation of these technologies. The period under study
+ends with the late 1990s and the dot-com boom, which necessitated novel
+competencies and enterprise models and thus marked a shift in European
+strategy towards training and education. This article is based on an
+analysis of the EC's guidelines, programs, and policies on women's
+education and training in ICT. The central documents consist of the
+social policy of the Commission of the European Communities (CEC),
+including equal opportunities and social action programs, documentation
+on initiatives, such as IRIS and NOW, and the \emph{Women of Europe
+Newsletter}. Additionally, we use reports, Council resolutions,
+conferences, Commission recommendations, EC publications, and archival
+documents of the EC's Committee on Women's Rights and Technological
+Change from the Historical Archives of the European Union in Florence.
+
+While none of the action programs and initiatives dealt entirely with
+education and training in technology for women, they all considered the
+question to some extent. In all these documents, we analysed how the
+problem of women and new technologies was formulated, the vision of the
+technology society they advocated, and the strategies proposed to
+achieve this vision. From the series of documents used in this study,
+the action programs and targeted initiatives (IRIS, NOW) are the most
+concrete in terms of their stance on the question of women's education
+and training in ICT, as they present a strategy of action---with varying
+levels of implementation in the member states. Although these do not
+constitute binding legislation, they are considered pre-law instruments
+and agenda setters.\footnote{See Linda Senden, \emph{Soft Law in
+  European Community Law} (Oxford: Hart, 2004), 128.}
+
+Although the EC is composed of several bodies with various prerogatives
+and interests, in this article, we treat the EC as a cohesive entity.
+While we refer to specific actors within the EC, such as the European
+Social Fund, the EC Commission, or the Centre for the Development of
+Vocational Training (CEDEFOP), we do not follow specific interest groups
+and individual behaviour. Our focus is on the policy outcomes---that is,
+the final programs and policies (whether legally binding or not) that
+the EC introduced. By analyzing how action programs and EC initiatives
+present the role of women in a technological society, we aim to bring
+attention to a paradoxical issue: why, in the age of human capital, the
+pursuit of efficiency in education and training, as well as the untapped
+potential of women in the ICT field, seem to have been disregarded.
+
+We draw on Teresa Rees's model of gender equality, both to characterize
+the EC guidelines and strategies in women's education training in the
+field of ICT and to periodize them. Rees identifies an equal treatment
+model during the 1970s, a positive action model in the 1980s, and a
+third model based on the principle of mainstreaming beginning in the
+mid-1990s.\footnote{Teresa Rees, \emph{Mainstreaming Equality in the
+  European Union: Education, Training and Labour Market Policies}
+  (London: Routledge, 1998).} However, the period covered by our study
+ends before the mainstreaming model was properly established in
+education and research policy. Apart from identifying the gender
+equality approach to which the studied strategies belong, we examine the
+content of the policies and measures regarding women's training and
+education in ICT and locate the shifts therein.
+
+\hypertarget{state-of-the-research}{%
+\section{State of the Research}\label{state-of-the-research}}
+
+While European education and technology policies have been the subject
+of intense research, gender issues have been largely
+overlooked.\footnote{Ilkka Kauppinen, ``The European Round Table of
+  Industrialists and the Restructuring of European Higher Education,''
+  \emph{Globalisation, Societies and Education} 12, no. 4 (2014); Marina
+  Cino Pagliarello, \emph{Ideas and European Education Policy,
+  1973--2020: Constructing the}} Likewise, historical research on European gender policies and
+gender mainstreaming programs has paid little attention to technological
+change and the European competitiveness agenda. The present contribution
+fills this gap by bringing these two perspectives together.
+
+\newpage The\marginnote{\emph{Europe of Knowledge?} (London: Palgrave
+  Macmillan, 2022); Simone Paoli, ``The European Community and the Rise
+  of a New Educational Order (1976--1986),'' in \emph{Contesting
+  Deregulation: Debates, Practices and Developments in the West since
+  the 1970s}, ed. Knud Andersen and Stefan Müller (Oxford: Berghahn,
+  2017).} shift of the Commission of the European Communities towards a new,
+interventionist technology policy in the mid-1970s has already been
+studied to a great extent.\footnote{Laurent Warlouzet, \emph{Governing
+  Europe in a Globalizing World: Neoliberalism and its Alternatives
+  Following the 1973 Oil Crisis} (London: Routledge, 2018).} Historical
+and comparative research have considered both earlier and more recent
+action programs.\footnote{Laurent Warlouzet, ``Towards a European
+  Industrial Policy? The European Economic Community (EEC) Debates,
+  1957--1975,'' in \emph{Industrial Policy in Europe after 1945: Wealth,
+  Power and Economic Development in the Cold War}, ed. Christian Grabas
+  and Alexander Nützenadel (London: Palgrave Macmillan, 2014).} In this
+context, Bornschier and Parker have shown how the attempt to cope
+politically with the advent of the microchip produced a new governance
+model, which ultimately resulted in a Single Market policy and expanded
+the competencies of European institutions.\footnote{Volker
+  Bornschier,``Western Europe's Move toward Political Union,'' in
+  \emph{State-Building in Europe: The Revitalization of Western European
+  Integration}, ed. Volker Bornschier (Cambridge: Cambridge University
+  Press, 2000); Simon Parker, ``Esprit and Technology Corporatism,'' in
+  \emph{State-Building in Europe: The Revitalization of Western European
+  Integration}, ed. Volker Bornschier (Cambridge: Cambridge University
+  Press, 2000).}
+
+The new technology policy was accompanied by numerous initiatives to
+reform vocational education, further training, and higher education.
+Comparative research has taken this commitment into account and
+systematically examined the European Commission's ``action program
+approach'' in educational governance.\footnote{Hubert Ertl,
+  \emph{European Union Initiatives in Education and Vocational Training:
+  The Development and Impact of the Programme Approach} (Paderborn:
+  Paderborn University, 2002).} The new European technology policy not
+only targeted research and development, but also had an increasingly
+important educational component.\footnote{Alan Clarke,
+  ``Competitiveness, Technological Innovation and the Challenge to
+  Europe,'' in \emph{The Learning Society: Challenges and Trends}, ed.
+  Peter Raggatt, Richard Edwards, and Nick Small (London: Routledge,
+  1996); Anne Corbett, \emph{Universities and the Europe of Knowledge:
+  Ideas, Institutions and Policy Entrepreneurship in European Union
+  Higher Education Policy, 1955--2005} (London: Palgrave Macmillan,
+  2005).}
+
+However, the attempt to create a highly qualified workforce and thus
+increase the competitiveness of the member states was only one side of
+the story. At the same time, digital change brought into focus different
+groups that were considered especially vulnerable, including women.
+Jacky Brine has carried out several studies on the history of European
+gender measures. In relation to new technologies, she claims that the
+interest of the EC in training women in this field declined from the
+1980s onwards. She argues, moreover, that regardless of the form of the
+initiatives, the hierarchy of male power remained, as women were
+encouraged into male-dominated professions that were in decline, rather
+than those of the future.\footnote{Jacky Brine, ``The European Social
+  Fund and the Vocational Training of Unemployed Women: Questions of
+  Gendering and Re-Gendering,'' \emph{Gender and Education} 4, no. 1--2
+  (1992).}
+
+Brine argues repeatedly that the EC had a primarily economic incentive
+for the creation and implementation of measures to support women's
+training and retraining.\footnote{Brine, ``The European Social Fund'';
+  Jacky Brine, ``European Education and Training Policy for
+  Under-Educated Unemployed People,'' \emph{International Studies in
+  Sociology of Education} 7, no. 2 (1997); Jacky Brine, ``The European
+  Union's Discourse of `Equality' and its Education and Training Policy
+  within the Post-Compulsory Sector,'' \emph{Journal of Education
+  Policy} 13, no. 1 (1998).} She shows how the EC used a discursive
+economic rationale when establishing policies or advice related to
+women's training. However, she finds it surprising that although the
+economic rationale was predominant, and there were liberal economic
+reasons to promote women's training, the rigid structure of the EC seems
+to have prevented an approach that actually benefitted women.\footnote{Brine,
+  \emph{UnderEducating.}} The result, for Brine, was that there was a
+mismatch between the areas lacking a skilled workforce and the areas in
+which women were encouraged to seek training.\footnote{Brine, ``Equal
+  Opportunities.''} Thus, the training which women underwent did not
+lead to employment, despite this being the main purpose of the European
+Social Fund (ESF) programs.
+
+In this article, we propose a more nuanced perspective to the argument
+that the inflexible gendered structure of the EC has superseded economic
+justification. Rather, we suggest that a gendered understanding of the
+workings of the labor market was embedded in the policy-making process.
+Perceptions of women's inherent abilities, skills, and interests were
+incorporated into the understanding of the needs of the economy. We
+argue that in the specific measures proposed to support women's training
+and education in new technologies, women were earmarked as a useful
+reserve of low-skilled workers, equipped for and willing to use the
+technological innovations introduced into traditional workplaces, rather
+than as potential highly skilled innovators and creators, driving
+technological development.
+
+\hypertarget{the-changing-role-of-the-ec-background}{%
+\section{The Changing Role of the EC:
+Background}\label{the-changing-role-of-the-ec-background}}
+
+The EC's initial focus in the 1960s was on trade and increasing
+prosperity among its member states, but in the 1970s, global changes led
+to economic crises and a greater need for political cooperation. The
+1980s saw a rise in youth unemployment, prompting a new focus on
+education and training as a strategy for economic recovery.\footnote{Michel-Pierre
+  Chélini and Laurent Warlouzet, eds., \emph{Calmer les prix} {[}Slowing
+  down prices{]} (Paris: Presses de Sciences Po, 2017).} At the same
+time, the European Court of Justice, in a series of rulings based on
+Article 128 of the Treaty of Rome, extended the interpretation of the
+term ``vocational,'' thereby giving the Commission the prerogative to
+assume competence in the field of higher and continuing
+education.\footnote{Hubert Ertl, ``European Union Programmes for
+  Education and Vocational Training: Development and Impact,''
+  \emph{SKOPE Research Paper}, no. 42 (2003): 8.} This enabled EC
+institutions to adopt legislation in this field that would be legally
+binding on the member states. The European Court of Justice's rulings
+based on Article 128 subsequently provided the legal basis for a series
+of programs launched by the Commission and the Council from the
+mid-1980s onwards.\footnote{Ertl, ``European Union Initiatives,'' 20.}
+
+The decision to achieve an economic convergence, which led to the
+realization of the Economic and Monetary Union (EMU) in 1988, was
+preceded by the first enlargement of the EEC to include Denmark,
+Ireland, and the UK, and to the development of common policies.
+\footnote{Emmanuel Mourlon-Druol, ``The EMS as an External Anchor in
+  Inflation-Prone Countries,'' in \emph{Calmer les Prix} {[}Slowing down
+  prices{]}, ed. Michel-Pierre Chélini (Paris: Presses de Sciences Po,
+  2017), 280.} However, limitations on the EU's role in education meant
+that it was predominantly left in the hands of national actors. The
+adoption of the Maastricht Treaty in 1992 established the EU and widened
+the scope of the ESF to include education and vocational
+training.\footnote{The Maastricht Treaty was signed by Belgium, Denmark,
+  France, Germany, Greece, Ireland, Italy, Luxembourg, Portugal, Spain,
+  the Netherlands, and the United Kingdom. Nick Adnett and Stephen
+  Hardy, \emph{The European Social Model: Modernisation or Evolution?}
+  (Cheltenham: Edward Elgar Publishing, 2005), 4.} The education aims of
+the EU were restricted to developing a European dimension, promoting
+mobility and cooperation between educational establishments, exchanging
+information, and encouraging distance learning.\footnote{Brad Blitz,
+  ``From Monnet to Delors: Educational Cooperation in the European
+  Union,'' \emph{Contemporary European History} 12, no. 2 (2003): 210.}
+The education of women in technology was affected by this limitation in
+that there was no framework for supranational cooperation on the issue
+and no consensus on how to approach it. While some national programs
+were implemented, there was no broader cooperation on the matter.
+
+\hypertarget{women-and-the-new-information-and-communications-technologies}{%
+\section{Women and the New Information and Communications\\\noindent
+Technologies}\label{women-and-the-new-information-and-communications-technologies}}
+
+The phenomenon that this article examines is related to the gendering of
+ICT occupations. The ways in which the EC dealt with the training and
+education of women in computer technology are illustrative of a general
+tendency that Cynthia Cockburn identified when she studied the gendered
+nature of technology in the 1980s. Cockburn argues that women have been
+excluded from technical occupations and judged as technically
+incompetent.\footnote{Cynthia Cockburn, ``The Material of Male Power,''
+  \emph{Feminist Review}, no. 9 (1981).} In this study, we corroborate
+this tendency in the overall European strategy of ICT training.
+
+In the early years of computing, women had an active role. The
+best-known cases are the United Kingdom and the United States, where
+research has found that women were an integral part of the development
+of the computer industry, as they engaged in processing and analyzing
+data, using mechanical calculators initially, and were part of the
+building and programming of electronic computers at a later stage.
+\footnote{Janet Abbate, ``Women and Gender and the History of
+  Computing,'' \emph{IEEE Annals of the History of Computing} 24, no. 4
+  (October--December 2003); Paul E. Ceruzzi, ``When Computers Were
+  Human,'' \emph{Annals of the History of Computing} 13, no. 3 (1991);
+  David Alan Grier, ``Human Computers: The First Pioneers of the
+  Information Age,'' \emph{Endeavour} 25, no. 1 (2001); Mar Hicks,
+  \emph{Programmed Inequality: How Britain} \emph{Discarded Women
+  Technologists and Lost Its Edge in Computing} (Cambridge: MIT Press,
+  2017); Jennifer S. Light, ``When Computers Were Women,''
+  \emph{Technology and Culture} 40, no. 3 (July 1999).}
+
+Some of these women had a college education, and the majority had
+technical training. However, by the 1960s, women were increasingly
+regarded as unsuitable for programming work and were not given the
+opportunities to occupy positions that they would be the most qualified
+to perform; instead, they were given dead-end jobs with low salaries and
+little influence over their tasks.\footnote{Hicks, \emph{Programmed
+  Inequality}.} By the late 1970s and 1980s, when the need for computer
+education and training for European citizens was raised, the existing
+expertise and the potential of women were not considered in the
+development of education and training programs in ICT.
+
+This oversight is surprising since this was a period when gender issues
+were voiced and discussed worldwide for the first time in history. The
+International Women's Year and the United Nations Conference in Mexico
+City in 1975 put gender equality and women's issues on the radar
+internationally. The period 1975--1985 was subsequently designated as
+the United Nations Decade for Women, which stimulated policymaking in
+gender equality worldwide, not least in the EC. The Treaty of Rome in
+1957, with its article 119, establishing sex equality, had given the EC
+the prerogative to deal with issues of gender equality.
+
+Nonetheless, the first European legislation targeting women only came
+into force in the 1970s, guaranteeing equal pay, equal treatment, and
+equal welfare.\footnote{Wendy Stokes, \emph{Women in Contemporary
+  Politics} (Cambridge: Polity, 2005), 219.} The principle of equal
+treatment for men and women applied to the areas of employment,
+vocational training, and working conditions.\textsuperscript{31} The first parliamentary body specifically focused on women
+was an ad hoc\marginnote{\textsuperscript{31}\setcounter{footnote}{31} ``Council
+  Directive 76/207/EEC on the Implementation of the Principle of Equal
+  Treatment for Men and Women as Regards Access to Employment,
+  Vocational Training and Promotion, and Working Conditions,''
+  \emph{Official Journal of the European Communities} L 39/40 (February
+  9, 1976).} committee, created in 1979, to prepare for a debate on the
+situation of women. This committee became the Committee of Enquiry into
+the Situation of Women in Europe, and in 1984, the Committee on Women's
+Rights. The debate waged in these committees was the basis of the
+recommendations integrated into the first Community Action Programme for
+Equal Opportunities in the early 1980s.\footnote{Stokes, \emph{Women in
+  Contemporary Politics}, 217.}
+
+Two EC bodies were particularly relevant in the promotion of measures in
+training and education in new technologies targeting women: the ESF and
+the CEDEFOP. The former was established as an employment policy
+instrument aimed at supporting EC workers by funding training programs,
+among other strategies.\footnote{Brine, ``Equal Opportunities.''} Women
+were recognized as an eligible group for assistance in 1971.\footnote{CEC,
+  ``Community Initiatives on Vocational Training for Women,''
+  \emph{Social Europe} 1 (1988): 27; Brine, ``The European Social
+  Fund.''} However, it was not until 1978 that the ESF began to fund
+projects for the education and training of women over twenty-five. In
+1980, the ESF funded training programs, based on two priorities:
+projects to train women in areas where they had been underrepresented
+and projects to help women become more qualified. The initial priority
+projects were all funded, amounting to 14 million ECU, but the funds for
+the second priority projects were cut to 7.1 million ECU. The funded
+projects benefitted a total of 10,577 women from seven
+countries.\footnote{CEC, ``The Changing European Communities,''
+  \emph{Women of Europe} 17 (November--December 1980): 49.}
+
+The CEDEFOP began operations in 1977 as a decentralized agency in charge
+of supporting the development and implementation of European vocational
+education and training policies. The agency's priorities were the
+training and employment of young people, vocational training for women,
+the establishment of a documentation and information service, and the
+creation of a research program.\footnote{CEC, \emph{Report on the
+  Development of the Social Situation in the Communities in 1977}
+  (Brussels: CEC, 1978), 22.}
+
+The functioning of both the ESF and the CEDEFOP was primarily connected
+to the member states' government structures. Prior to 1977, the ESF was
+administered by the EC; however, after the reforms, the member states
+could integrate ESF-funded training into their employment
+policies.\footnote{Brine, ``The European Social Fund,'' 153.}
+
+During the 1970s---the era of the gender equality model as identified by
+Rees---the ESF provided funding for studies on women in employment based
+on the surveys of programs implemented by certain member states. The
+studies concluded that, in order to promote equality in the labor
+market, women required enhanced specialized education and training
+services and increased guidance; in addition, a change in women's
+attitudes in relation to taking up a career later in life was also
+necessary.\footnote{CEC, ``The European Community and Work for Women,''
+  \emph{Information Service for Women's Organisations and Press}, no.
+  584/X/77 (September 1977).} Moreover, the CEDEFOP reviewed programs
+already implemented within the member states in vocational training and
+disseminated information regarding these. Unlike the ESF, the CEDEFOP
+had no funding function, but sought, through cooperation with the member
+states and other social and institutional actors, to disseminate an
+agenda on the diversification of women's occupational choices, training
+for women in industrial and technical jobs, and the upgrading of
+traditionally female occupations.\footnote{Suzanne Seeland, \emph{Equal
+  Opportunities and Vocational Training---13 Years On: The Results of
+  CEDEFOP's Programme for Women 1977--90} (Berlin: CEDEFOP, 1991), 1.}
+Both institutions aimed to leverage existing good practices to avoid the
+cost of developing programs from the ground up.
+
+In 1980, for example, the CEDEFOP organized a seminar in Brussels, in
+which all member states presented the results of their pilot programs on
+women's vocational training, with a specific focus on the topic of
+innovation. The innovative projects encompassed fields such as building
+techniques, tile-laying, crane-operating, and even the provision of care
+for the elderly. The CEDEFOP did not report on any project linked to the
+new technologies in this seminar. One of the main lessons resulting from
+this event, according to the CEDEFOP, was that an integral element of
+the success of innovation in women's training depended on women's own
+motivation.\footnote{CEC, ``Women's Employment: How to Innovate,''
+  \emph{Women of Europe}, no. 17 (November/December 1980).} The view of
+the woman's role in new technologies was not re-evaluated from a
+European perspective. As we can observe, the promoted and funded
+programs mirrored local views and eventually reproduced a national bias
+on the types of training women were encouraged to undergo. The positive
+action model that Rees identifies in this period was locally formulated
+and implemented.
+
+
+
+\hypertarget{womens-education-and-training-in-new-technologies-as-european-social-policy}{%
+\section{Women's Education and Training in New Technologies as\\\noindent
+European Social
+Policy}\label{womens-education-and-training-in-new-technologies-as-european-social-policy}}
+
+The European strategy to cope with information technology was manifold.
+While a critical aspect of the strategy involved fostering industrial
+growth through initiatives like ESPRIT, RACE, EUREKA, and
+others,\footnote{See Carmen Flury, Michael Geiss, and Rosalía Guerrero,
+  ``Building the Technological European Community through Education:
+  European Mobility and Training Programmes in the 1980s,''
+  \emph{European Educational Research Journal} (December 2020); Wayne
+  Sandholtz, \emph{High-Tech Europe: The Politics of International
+  Cooperation} (Los Angeles: University of California Press, 1992).}
+which relied heavily on the availability of a highly skilled workforce,
+there was also a need to provide flexible labor that could adapt to new
+skill requirements and embrace innovations, even if they were not
+capable of contributing to the creation and development of new
+technologies. At the same time, there was a need to create a large
+domestic market and a social environment prepared for information
+technology, for which the training of workers, users, and the general
+public was essential.\footnote{CEC, ``Europe and the New Information
+  Technology,'' \emph{European File}, no. 3 (March 1980).} A
+reorientation of vocational training not only meant the re-training of
+engineers and scientists, but a professional re-adaptation of the
+unemployed, by strengthening the links between education, vocational
+training, and work.\footnote{CEC, ``Micro-Electronics and Employment,''
+  \emph{European File}, no. 16 (October 1980).}
+
+Thus, preparing for new technologies not only involved educating the
+highly skilled workforce but also creating a computer-literate workforce
+that would be more willing to accept technical changes at work and in
+other areas. Rhetorically, there was never a clear dis-\newpage\noindent tinction between
+training in technology for women and men, but in practice, this was the
+case.
+
+The EC used a discourse that depicted women in the labor market
+predominantly in a position of victimhood. In a survey published in 1980
+on the situation of European women in paid employment, the European
+Commission's Committee on Women's Rights indicated that 13 percent of
+employed women had felt discriminated against in matters of pay,
+recruitment, promotion, and training. These results were the basis of
+further measures to help working women.\footnote{CEC, ``Survey: European
+  Women in Paid Employment,'' \emph{Women of Europe}, no. 17
+  (November--December 1980).} The ESF also reported in 1980 that women
+continued to be disadvantaged in the area of employment.\footnote{CEC,
+  \emph{Tenth Report on the Activities of the European Social Fund 1981
+  Financial Yea}r, COM (82) 420 (Brussels: CEC, 1982).} Although the
+Commission stated that the highest priority would be given to projects
+that enabled women to find jobs in new occupations where they were
+underrepresented and in sectors where they had been the victims of mass
+redundancies during the reporting period, the projects funded by the ESF
+concerned occupations traditionally reserved for men, such as industrial
+production, construction, metalwork, and woodwork. The report does not
+mention examples of training for women in new technologies. However, the
+ESF did fund three pilot project schemes related to technical progress:
+a training program for firms to adapt to new technologies, training for
+unemployed mature engineers in computer-aided design and manufacture,
+and training operators to become instructors for new data-processing
+professionals. In these projects, women were not specifically mentioned,
+as the women-focused pilot projects were related to the training of
+rural women for self-employed agricultural work. This report illustrates
+the point we seek to make. Women are mentioned as victims of
+discrimination in the labor market, for which they are given support in
+the form of training. However, they are not being addressed as potential
+assets capable of working with new technologies.
+
+While the share of research and development investment in the EC more
+than tripled, and programs such as the Framework Programmes for Research
+and Technology (FRAMEWORK) materialized, these had no special provisions
+for women until the Fourth Framework Programme (1994--1999) that
+specifically dealt with social exclusion.\footnote{Jong-Tsong Chiang,
+  ``From Industry Targeting to Technology Targeting: A Policy Paradigm
+  Shift in the 1980s,'' \emph{Technology in Society} 15, no. 4 (1993):
+  346; Kim Junic and Yoo Yaewook, ``Science and Technology Policy
+  Research in the EU: From Framework Programme to HORIZON 2020,''
+  \emph{Social Sciences} 8, no. 5 (2019); Rees, \emph{Mainstreaming},
+  128.} Although this problem was overlooked in the higher-level
+political arena, youth organizations identified this issue early on. In
+a 1980 forum, youth organizations claimed that women should not be only
+a marginal labor force, as they currently were, but should be workers in
+their own right.\footnote{CEC, ``The Youth Forum: Young Women's
+  Employment,'' \emph{Women of Europe} 17 (November--December 1980).}
+
+A commissioned report by sociologist Jonathan I. Gershuny on technical
+innovation and women's work in the EEC called for policies that would
+prevent the situation of women from worsening. The proposal was for
+women to be part of work-sharing schemes. Such schemes required specific
+training that would provide them with a broader mix of
+skills.\footnote{Jonathan I. Gershuny, \emph{Technical Innovation and
+  Women's Work in the EEC: A Medium-Term Perspective; A Briefing for the
+  EEC} (Sussex: SPRU, 1980).} This strategy, deemed the most suitable
+realm for EC initiatives, involved training women in diverse but less
+complex roles rather than providing them with specialized training,
+thereby turning them into interchangeable workers.
+
+The concerns voiced in investigations like these on the effects of new
+technologies on women were included in the equal opportunities and
+social action programs from the 1980s, although this topic was not the
+focus of the programs. The New Community Action Programme on the
+Promotion of Equal Opportunities for Women and Men (1982--85)
+highlighted the field of employment, with the objective of achieving
+equal treatment. The already precarious situation of women, the
+Commission explained, was affected by the introduction of
+manpower-saving technologies in secretarial work and retailing. Thus,
+action in initial and further training, as well as vocational guidance,
+should aim to encourage women into non-traditional areas and prepare
+them for new information technologies. The action program invited member
+states to impose measures at the national level. Apart from a general
+call to undertake action to improve equal opportunities in education,
+guidance, and training, the program requested one concrete measure from
+the member states to promote women's mastering of new technologies: to
+provide ``further training for women in employment within firms, with a
+view to improving their prospects for promotion . . . other than
+unskilled jobs, especially those involving new
+technologies'';\footnote{CEC, ``A New Community Action Programme on the
+  Promotion of Equal Opportunities for Women 1982--85,'' supplement,
+  \emph{Bulletin of the European Communities} (1982), 21.} on the EC
+side, the Commission proposed extended action of the ESF and the
+CEDEFOP.
+
+In this spirit, and after the adoption of the resolution on equality of
+opportunities in the field of education, a meeting took place between
+the Ministers of Education in 1985 that led to an action program on
+equal opportunities for girls and boys in education. One of the four
+goals of this program was to ``encourage girls to participate as much as
+boys in new and expanding sectors, within both education and vocational
+training, such as the new information technologies . . .''\footnote{CEC,
+  ``Resolution of the Council and of the Ministers of Education, Meeting
+  within the Council of 3 June 1985 Containing an Action Programme for
+  Equal Opportunities for Girls and Boys in Education,'' \emph{Official
+  Journal of the European Communities} C 166 (1985): 130.} The
+objectives of the action program would be achieved by promoting
+awareness, offering counselling and disseminating information, but also
+through more concrete measures, such as introducing new technologies to
+boys and girls from the end of primary school onwards, opening schools
+to working life, and making female role models working in
+non-traditional fields available to pupils.\footnote{CEC, ``Resolution
+  of the Council,'' 2­--3.} The action program was to be implemented
+within the constitutional possibilities of each member state, with the
+funds they had available and to the extent that their respective
+educational systems allowed. The implementation of this program took
+place through national projects, without a common European understanding
+of objectives, target populations, or evaluation
+methodologies.\footnote{Sylvie Osterrieth, abstract of \emph{Equal
+  Opportunities and New Information Technologies, Evaluation on the
+  Projects 1987--1989} (Luxembourg: Office for Official Publications of
+  the European Communities, 1991), 1.} While the national projects were
+funded by each member state, the EC provided assistance through
+different bodies for the organization of contests among member states,
+as well as colloquiums, surveys, and research publications.\footnote{See
+  CEC, ``Activities of the Commission of the European Communities in the
+  Fields of Education, Training and Youth Policy During 1987,''
+  supplement 5, \emph{Social Europe} (1988): 16--17.}
+
+The formulation of this program followed an equal treatment approach,
+promoting girls to match boys in their interest to pursue technical
+education. Moreover, the assumption behind the program was that gender
+inequality in technology was due to women's lack of interest and
+confidence and general prejudices in relation to women's abilities to do
+certain jobs. Thus, the program was primarily intended to fight gender
+stereotypes in different target groups, including among girls
+themselves, as well as in teachers, parents, and teacher trainers, from
+pre-school to university level.\footnote{CEC, \emph{Cooperation in
+  Education in the European Union 1976--1994}, (Luxembourg: Office for
+  Official Publications of the European Communities, 1994), 14.}
+
+Since women's work was regarded as particularly affected by ICT, their
+training in this area was explicitly recognized as a
+priority.\footnote{Felix Rauner, \emph{Women Study Microcomputer
+  Technology} (Berlin: CEDEFOP, 1985), 13.} The EC Commission resorted
+to a positive action approach when referring to their goal of providing
+job opportunities to special groups, such as older workers, people with
+disabilities, and women. Pilot and demonstration actions, already in
+place locally, would increase the opportunities of groups with specific
+needs in other member states, if broadly disseminated.\footnote{CEC,
+  \emph{Vocational Training and New Information Technologies: New
+  Community Initiatives during the Period 1983--1987}, information memo
+  P-29, 1982.} The CEDEFOP also took a positive action approach, stating
+that the development of vocational training in microelectronics must
+consider the needs of specific groups of women, including young women
+without training, women who wished to return to the occupation they were
+trained for following a career break due to family commitments, and
+women from ethnic minorities.\footnote{Rauner, \emph{Women Study
+  Microcomputer Technology}, 7.}
+
+In a similar vein, the Medium-Term Social Action Programme, adopted in
+1984, proposed measures for the employment of young people and women
+linked to ICT, which included the acquisition of new skills, basic and
+continuous training, and information.\footnote{L. Wallyn, ``The Social
+  Policy of the Community and Participation of the Social Partners in
+  Decision-Making at European Level,'' \emph{Social Europe} 1 (1988):
+  15.} The focus of this program was to combat the economic recession
+and the employment crisis. The high rate of unemployment of young people
+and women was interpreted as a problem that affected the social balance
+of the member states. One way to address this problem was to
+\emph{reconvert} these groups to the new technologies.\footnote{EC
+  Council, ``Conclusions of the Council Concerning a Community
+  Medium-Term Social Action Programme,'' \emph{Official Journal of the
+  European Communities} C175 (1984): 2 (our emphasis).} Hence, the fight
+against unemployment and the training of vulnerable groups in ICT went
+hand in hand. By categorizing the European workforce into different
+groups and making them the object of specific measures, the EC
+implemented a positive action model.
+
+A report from the EC Commission, presented at the United Nations World
+Conference in 1985, summarized the EC work in relation to gender
+equality. This report stressed that the advent, development, and spread
+of technology were the main challenges to women's work. It highlighted
+the role of the ESF in financially supporting the diversification of
+women's occupations, the training of women for occupations using new
+technologies, and the creation of women's cooperatives in this sector.
+According to the report, resolutions had been adopted with measures to
+\emph{help} women deal with new technologies in the field of work. These
+included basic training in the use of new technologies, information
+events, and guidance.\footnote{CEC, \emph{Communication from the
+  Commission to the Council on the Community Participation in the World
+  Conference to Review and Appraise the Achievements of the United
+  Nations Decade for Women: Equality, Development and Peace}, COM (85)
+  256 (Brussels: CEC, 1985), 8--9 (our emphasis).} By referring to women
+as a group in need of help and by offering basic training to avoid
+unemployment, the low-skilled nature of women's work was taken for
+granted. No specific measures were developed to change the gendered
+structure of work or to promote women's entry into high-skilled
+positions.
+
+Moreover, the resource allocation for the developed measures was meagre.
+By 1988, the total number of programs funded by the ESF and targeting
+women represented only 1.5 percent of total fund approvals.\footnote{CEC,
+  ``Community Initiatives on Vocational Training for Women,''
+  \emph{Social Europe} 1 (1988): 27.} A positive action model was used
+to help women cope with technological change and to have the opportunity
+to retain or secure a job, but not to achieve high-level qualifications
+or highly skilled employment.
+
+The ESF-funded projects that took place within the member states were
+formulated within the context of each state's national infrastructure,
+educational and vocational training systems, and gender regimes. The
+following examples illustrate how the role of women in the technological
+society was viewed locally. The Belgian Commission for Women's Work, for
+instance, stated that women's educational level was insufficient for the
+new information society, and that it was necessary to invest in
+education and training programs that would equip them to obtain
+\emph{highly-qualified} jobs.\footnote{Camille Pichault,
+  \emph{Technologies et Emploi des Femmes,} Proceedings of the
+  Commission Belge du Travail des Femmes, October 15, 1981, FDE-164,
+  Historical Archives of the European Union (our emphasis).} In
+Luxembourg, free computer courses were offered by a technical school to
+encourage girls into scientific and technical professions.\footnote{CEC,
+  ``Country to Country,'' \emph{Women of Europe Newsletter} 67 (December
+  1990--January 1991): 26.} In the United Kingdom, the Butcher Report on
+the situation of ICT experts in the labor market highlighted that ICT
+companies could not ignore the intellectual resources offered by women.
+This report addressed not only the question of girls' subject choices at
+school level but also the situation of women already in
+employment.\footnote{Bill Johnstone, ``Women Still Lose Out in the
+  Hi-Tech World,'' \emph{The Week}, June 10, 1986, 29.} According to
+British research from 1982, women's retraining in new technologies
+should be favored to enable them to participate in the new jobs created
+by technological developments.\footnote{CEC, ``Microelectronics and
+  Women,'' \emph{Women of Europe} 26 (May--July 1982): 49.} A French
+study displayed a more cautious attitude. The authors warned of the
+potential consequences of encouraging women to attain higher
+qualifications. This strategy would not work, according to the study,
+because of the prevailing gender discrimination in the labor market.
+Such a strategy would only be successful once a change in power
+structures had occurred and men were participating to a greater extent
+in the domestic domain.\footnote{``Nouvelles Technologies: Deux études
+  controversables sur les femmes parviennent à des conclusions
+  differéntes,'' \emph{Rapport CREW} 5 (1982), FDE-164, Historical
+  Archives of the European Union, 112.} While the study highlighted the
+futility of training women, it did not offer proposals to change social
+and economic structures in their favor. In 1987, the conclusion of a
+French women's association meeting was that women's aptitudes could be
+useful in the future. Should they acquire the necessary technical
+skills, their ``precision, dexterity, speed and flexibility'' could be
+sought after traits in the firms of the future.\footnote{CEC, ``Country
+  to Country: France,'' \emph{Women of Europe} 51 (November--December
+  1987): 14.} Skills that have traditionally been attached to women and
+low-status jobs could, in their view, be useful for the new ICT jobs.
+However, the type of positions for which these skills could be useful
+were not specified. Women's organizations in the Nordic countries, the
+Mediterranean countries, Italy, the United Kingdom, and France organized
+conferences, workshops, and symposiums in 1987 to discuss the role of
+women in the area of technology; some of these included professional
+women who discussed the role of women in the field of new technologies
+in higher education.\footnote{CEC, \emph{Women of Europe} 51
+  (November--December 1987).} These examples show the divergence of
+positions in relation to the training of women in ICT in the member
+states. While locally, certain actors noted the need for the education
+and training of women in highly skilled areas of ICT, others were of the
+opinion that women were vulnerable participants in the labor market with
+skills and aptitudes appertaining to their sex.
+
+As a result of a report from an expert network of equal opportunities
+regarding ICT projects in the member states, the Second Medium Term
+Community Programme on Equal Opportunities (1986--1990) made education
+and training a priority.\footnote{CEC, ``The Community Action
+  Programmes,'' supplement, \emph{Women of Europe} 25 (October 1986):
+  90.} The network saw the current situation in Europe as ``an
+industrial revolution as important and far reaching in its consequences
+as the industrial revolution of the 19th and 20th century'' and argued
+that, while women in the past had failed to find a better position for
+themselves in the new labor market and society, an opportunity existed
+to avoid such a situation in the current revolution, through education
+and training in the new technologies.\footnote{Evelyn Sullerot,
+  \emph{Diversification of Vocational Choices for Women} (Luxembourg:
+  Office for Official Publications of the European Communities, 1987):
+  7--8.}
+
+According to the program, the resources offered by the ESF, hitherto
+only used to a limited extent, should be put to better use in networking
+and publicity. New technologies constituted one of the fields of action
+of the program, which entailed specific provisions on education,
+training, and employment in this area. The program called for vertical
+mobility in the specific sectors of the new technologies and encouraged
+appointing women to positions of responsibility in future-looking
+industries. The ESF, the program stipulated, should play a major role in
+the achievement of these objectives.\footnote{Odile Quintin, ``Equal
+  Opportunities for Women: Medium Term Community Programme 1987--1990,''
+  supplement 2, \emph{Social Europe} (1986): 54--62.} In this context,
+the CEDEFOP was called upon to work on a network of projects related to
+training in new technologies with a view to achieving career
+advancement.\textsuperscript{72} Positive action was recommended in ICT so
+that women\marginnote{\textsuperscript{72}\setcounter{footnote}{72} CEC, ``Equal Opportunities for Women: Medium Term
+  Community Programme 1986--1990,'' supplement, \emph{Women of Europe},
+  no. 23 (December 1985): 9.} could ``respond to the technological challenge on an equal
+footing.'' However, despite the specific focus on training and education
+in new technologies in this program, no indications were offered as to
+what kind of training should be given, and full responsibility was given
+to the member states to decide the content and level of the training. A
+request to the member states to produce statistics on the proportion of
+women in the area of ICT and the levels they occupied,\footnote{CEC,
+  ``Equal Opportunities for Women,'' 12.} suggests an acknowledgement of
+structural inequality in this field, but the measures proposed did not
+address this issue. The equality of opportunities problem continued to
+be discussed in terms of underrepresentation in vocational training. The
+cause was assumed to be that women rarely chose technical training and
+opted for traditionally feminine occupations. For this reason, help in
+the form of counselling, information, awareness, and role models was
+presented as a sufficient and adequate solution. The most concrete
+measures named in this context were the provision of appropriate
+guidance (equal opportunities counsellors), studies, seminars, and
+consciousness-raising campaigns.\footnote{CEC, \emph{Commission
+  Communication on Vocational Training for Women,} COM (87) 155
+  (Brussels: CEC, 1987).}
+
+Although Brine identifies a break between the first and second action
+programs on equal opportunities in relation to women's training in new
+technologies---with the former emphasizing women's training specifically
+in the fields of computers, electronics, and office work and the latter
+focusing on women's training in fields in which they were
+underrepresented\footnote{Brine, ``The European Union's Discourse of
+  `Equality'.''}---we observe a generally unchanged discourse. These
+programs presented the new technologies as a phenomenon that threatened
+women's positions in the labor market. To prevent women's social
+exclusion, these programs promoted the widening of occupational choices
+for women; equal treatment of women and men with regard to access to
+education, training, and employment; and the provision of technical
+subjects for both girls and boys from the early stages of basic
+education.
+
+When concrete measures were proposed in policies, these often took the
+form of positive action, targeting specific groups at risk of
+unemployment. The most striking feature of the programs and initiatives
+was that they constantly referred to women as a vulnerable group,
+threatened by the new technologies and requiring support and guidance.
+Hence, we observe arguments linked to the equal treatment approach
+co-existing with arguments appealing to the positive action approach.
+Additionally, although programs and initiatives often mentioned women's
+economic role, this role was not based on women's potential to become
+part of the skilled workforce to develop the ICT industry, but on the
+fear that women's likely unemployment could pose a risk to the EC's
+social cohesion.
+
+\hypertarget{womens-education-and-training-in-new-technologies-for-a-new-economic-role}{%
+\section{Women's Education and Training in New Technologies for a\\\noindent New
+Economic
+Role}\label{womens-education-and-training-in-new-technologies-for-a-new-economic-role}}
+
+IRIS, a community network on vocational training, was launched in 1988,
+following the report of an expert group representing the twelve member
+states, to evaluate the implementation of the Commission recommendation
+on vocational training for women, adopted in 1987.\footnote{CEC, ``IRIS:
+  The New Community Network of Demonstration Projects on Vocational
+  Training for Women,'' \emph{Social Europe} 2 (1989).} This was the
+first major women-specific initiative of the EC.
+
+IRIS aimed at encouraging women's training and supporting innovation in
+this area. A function of IRIS was to complement national initiatives on
+vocational training for women and help spread good examples.\footnote{CEC,
+  ``IRIS: The New Community Network.''} IRIS sought to involve different
+actors in the goal of improving women's access to employment and
+vocational training. These included educational authorities, schools,
+vocational centers, industry representatives, government authorities at
+different levels and women's organizations.\footnote{CEC, ``Commission
+  Communication on Vocational,'' 10.} Out of all the projects supported
+by the IRIS network, 36 percent involved the training of women in new
+technologies.\footnote{Publications Office of the European Union,
+  \emph{IRIS}, Summaries of EU Legislation, n.d., accessed April 15,
+  2020.} The first seventy-two projects focused on areas in which women
+had been underrepresented, such as building and electronic and
+mechanical engineering, but also on certain fields in which women had
+already made their mark, such as banking and crafts.\footnote{CEC, ``The
+  Changing European Community,'' \emph{Women of Europe} 57
+  (November--December 1988): 4.} Even though IRIS's explicit objective
+was to develop sustainable strategies and methods for long-term change,
+the size and scope of the funding did not match this ambition. IRIS was
+allocated 0.75 million ECU for the period 1988--95, which is
+significantly lower than the budget of other contemporary programs (see
+Table 1). COMETT, the initiative created to develop technological skills
+and increase the community's competitiveness, received 206.6 million ECU
+during the same period. This reinforces Rees's claim that the positive
+measures from the 1980s ``tended to be precariously funded, short term
+and piecemeal.''\footnote{Teresa Rees, ``Reflections on the Uneven
+  Development of Gender Mainstreaming in Europe,'' \emph{International
+  Feminist Journal of Politics} 7, no. 4 (2005): 555--74.}
+
+
+\newpage
+
+\noindent{\large \emph{Table 1. Budgets for Education and Training Action Programmes}}\footnote{Rees, \emph{Mainstreaming Equality, 91.}}
+
+
+\vspace*{1em}
+
+
+
+\tabulinesep=1.1mm
+{\begin{longtabu} to 1\textwidth { X[l] X[c] X[l]} 
+\emph{Programme} & \emph{Budget ECU (millions)} & \emph{Description} \\
+\endfirsthead
+\emph{Programme} & \emph{Budget ECU (millions)} & \emph{Description} \\
+\endhead
+COMETT (1986--95) & 206.6 & Cooperation between universities and
+industry in the field of technology \\
+FORCE (1991--94) & 31.3 & Development of continuing vocational
+training \\
+PETRA (1988--94) & 79.7 & Vocational training of young people \\
+ERASMUS (1987--95) & 307.5 & Mobility of university students \\
+TEMPUS (1990--94) & 197 & Trans-European mobility for university
+students \\
+LINGUA (1990--94) & 68.6 & Promotion of foreign language competence \\
+EUROTECNET (1990--94) & 7 & Promotion of innovation in vocational
+training resulting from technological change \\
+YOUTH FOR EUROPE (1988--94) & 32.2 & Promotion of youth exchanges \\
+IRIS (1988--95) & 0.75 & Network of vocational training projects for
+women \\
+\end{longtabu}}
+
+\vspace{0.2in}
+
+The establishment of IRIS was linked to the completion of the internal
+market in 1992. The first round of the initiative was planned to run
+until that year. According to the Commission, the internal Single Market
+required the community's economies to make the best use of their human
+resources, regardless of gender.\footnote{CEC, ``IRIS: The New Community
+  Network,'' 51.} The Commission considered IRIS an innovative labor
+market initiative, which, if successful, would set an example for other
+areas in the community. It also expected that the grassroot strategies
+that proved beneficial for the labor market would be disseminated
+broadly within the community. This means that the objective was not
+necessarily intended to be ground-breaking and provide women with skills
+that would elevate their position as workers, but to place them where
+they were needed in the economy and to assess whether the innovative
+schemes brought benefits for the European economy.
+
+IRIS supported many ICT projects with a focus on office skills despite
+not explicitly advocating for technology-related initiatives. However,
+the training was not provided for highly skilled office positions. An
+evaluation of IRIS concludes that the funded projects did not lead to
+changes in training systems nationally, and only 20 percent of the
+projects adopted innovations obtained through the network.\footnote{PA
+  Cambridge Economic Consultants, \emph{An Evaluation of the IRIS
+  Network (Final Report)}, Commission of the European Communities
+  (1992), 123.}
+
+New arguments concerning women's training began to appear in the late
+1980s and became more prominent during the 1990s. Within the context of
+IRIS's activities, the involvement of a variety of actors in the network
+offered new perspectives in the debate on women's training. That society
+needed to integrate women armed with the required qualifications into
+the modernization process of enterprises emerged as an innovative
+idea.\footnote{CEC, ``Seminars,'' \emph{Women of Europe Newsletter 11}
+  (June--August 1990).} This concept was discussed in depth at the
+Toledo seminar of 1989 on the evaluation of the community policy on
+equal opportunities, in which representatives of the EC, the member
+states, women's groups, and industry participated. Women were not
+referred to as a vulnerable group here but as a potential ``crucial
+element in the workforce over the next few years.''\footnote{CEC, ``The
+  Evaluation of Community Policy on Equal Opportunities: Toledo, April
+  1989,'' \emph{Social Europe} 3 (1989): 63.} In 1992, a seminar
+organized by IRIS at the Forum on Women's Vocational Training in Europe,
+discussed the question of women as a vital resource. In the opening
+message, the President of the Commission of the European Communities,
+Jacques Delors, stressed that women represented a source of labor and
+skills in the establishment of the Single Market. Apart from
+strengthening enterprises, Delors stated that the training of women was
+vital in the fight against poverty. In the seminar, the increasing
+feminization of poverty was noted, as well as the fact that many women
+required personal development and pre-training elements in their
+training efforts.\footnote{CEC, ``IRIS Fair 1992: Women, a Vital
+  Resource,'' \emph{Women of Europe Newsletter} 29 (October 1992).}
+Although there was a shift in the view of the role played by women in
+the economy, their economic vulnerability continued to be noted, and
+many of the proposed measures were not considerably different from
+previous measures: to ensure women's access to new technologies and to
+develop pedagogical strategies to teach them science and technology.
+Remarkably, ICT was still viewed as an area free from sexual
+discrimination and as a potential equalizer. Thus, encouraging women
+into this area would automatically widen their occupational
+choices.\footnote{CEC, ``The Evaluation of Community Policy,'' 64--65.}
+
+\newpage The initiatives of the 1990s reflected a consolidation of the earlier
+arguments of equal treatment that prioritized placing women on an equal
+footing with men, while later initiatives acknowledged women's key role
+in the emerging digital society, viewing them as an integral part of
+economic change. In the Third Action Programme on Equal Opportunities
+(1991--1996), the view of women's training as a mine of potential
+skills, indispensable for Europe's economic growth, became explicit.
+This program framed the work carried out by women in both social and
+economic terms. On the one hand, it stated that working women were
+beneficial for Europe's social cohesion and called for efforts to
+counter gender inequality by fighting the underrepresentation of women
+in certain occupations, and by ensuring that women also benefitted from
+the economic and technological advantages of the Single
+Market.\footnote{CEC, \emph{Commission Proposes Third Action Programme
+  on Equal Opportunities for Men and Women}, press release P/90/76,
+  1990.} On the other hand, it emphasized that women's skills were
+valuable assets for the economy and constituted a potential human
+resource, hitherto underutilized.\footnote{CEC, ``Community Initiative
+  for Women,'' \emph{Women of Europe} \emph{Newsletter} 11 (June--August
+  1990).} However, in contrast to the previous action programs, there
+was no specific mention of new technologies in this one.\footnote{Brine,
+  \emph{UnderEducating,} 86.}
+
+As an integral element of the Third Action Programme on Equal
+Opportunities, the ESF established New Opportunities for Women (NOW)
+(1991--1995) to promote vocational training and employment for women.
+With a grant of 120 million ECU for the first three years, which was
+provided primarily by the ESF,\footnote{CEC, ``The Changing European
+  Community,'' \emph{Women of Europe Newsletter} 68 (February--May
+  1991): 1.} NOW aimed to increase the participation of women in the
+labor market, particularly those in long-term unemployment and those
+with entrepreneurial ambitions. For the period 1994 to 1999, NOW was
+renewed and granted a budget of 360 million ECU.\footnote{CEC,
+  \emph{Commission Communication on Incorporating Equal Opportunities
+  for Women and Men into all Community Policies and Activities}, COM
+  (96) 67 (Brussels: CEC, 1996), 17.}
+
+The Council stated that projects in ESF programs, such as NOW, that
+could anticipate skill needs and promote equal opportunities for men and
+women in the labor market should receive support. Hence, following the
+same line as the Action Programme, NOW emphasized the importance of
+providing women with the appropriate skills for the market, as well as
+skills that could enhance their economic position, such as
+entrepreneurial skills. Nevertheless, the promotion of training in new
+technologies declined noticeably, despite a shift that recognized women
+as more relevant economic players in the community. According to Brine,
+the promotion of women's training focused on manual trades more than
+anything.
+
+However, an example of a NOW project within the ICT area from the late
+1990s is the establishment of a telework center in a rural French
+community. This center employed about twenty people, mostly women,
+performing secretarial and administrative tasks. The EU regional policy
+officer mentioned this project as an example of the policy support given
+to women in the area of employment. The fact that the commissioner chose
+this project to exemplify the kind of support given to women is
+illustrative of the point we are making. Even the projects considered
+most innovative in supporting women's participation in ICT tended to
+reinforce traditional gender roles.\footnote{CEC, ``Regional and Local
+  Policy Opens Way for Women,'' \emph{Women of Europe} 70 (May 1997): 4.}
+
+The program created to promote innovation in the field of vocational
+training, resulting from technological change, EUROTECNET (1990--1994),
+made some provision for equality of opportunities. This program stated
+that equal opportunities for men and women should be promoted, and
+particularly the access of women to types of training with significant
+technological content.\footnote{Rees, \emph{Mainstreaming Equality,}
+  132.} In practice, however, only around 5 percent of the projects
+addressed women specifically.\footnote{Rees, \emph{Mainstreaming
+  Equality,} 144.} Thus, regardless of whether the program particularly
+targeted women or training in new technologies, substantial resources to
+support women's training in technology were never provided.
+
+The aforementioned initiatives followed the logic of equal treatment and
+positive action approaches that Rees identified in the 1970s and 1980s,
+respectively. However, we observe intertwined arguments following both
+these logics in the programs launched in the 1980s and 1990s.
+Additionally, we identify a new argument: Women were not only a
+vulnerable group and victims of technology but were also assets for the
+European economy's growth. However, despite the apparent recognition of
+the significance of women in the labor market and the economy, this was
+not reflected in the budget dedicated to women's training initiatives or
+projects. The EC budget for 1990--1992, in relation to objectives 3 and
+4 of the ESF,\footnote{Related to long-term unemployment and the
+  occupational integration of young people, respectively. Aquille
+  Hannequart, ed., \emph{Economic and Social Cohesion in Europe: A New
+  Objective} (London: Routledge, 1992), xxiv.} allocated only 0.4
+percent to measures to assist women encountering difficulties in the
+labor market. Only 7 percent of the entire EC budget was allocated to
+the ESF,\footnote{Brine, ``The European Social Fund.''} demonstrating
+that the proportion allocated to women and to measures regarding women's
+employment was almost negligible.
+
+\hypertarget{concluding-remarks}{%
+\section{Concluding Remarks}\label{concluding-remarks}}
+
+With the introduction of the gender mainstreaming principle into EC
+policy processes, which entailed the integration of a gender perspective
+into all domains and actions of the EC, the drafting of policy in most
+areas changed drastically, including education and
+technology.\footnote{Isabelle Bruno, Sophie Jacquot, and Lou Mandin,
+  ``Europeanization through its Instrumentation: Benchmarking,
+  Mainstreaming and the Open Method of Co-ordination . . . Toolbox or
+  Pandora's Box?,'' \emph{Journal of European Public Policy} 13, no. 4
+  (2006): 524.}
+
+From 1999, the FRAMEWORK programs started to include concrete measures
+to foster gender equality in science and technology. Although the scope
+and outcomes of this change go beyond the timeframe of this article, we
+note that it took more than twenty years for the EC to consider the
+gender dimension of science and technology policy, instead of
+restricting it to social policy.\textsuperscript{100} 
+
+\newpage The\marginnote{\textsuperscript{100}\setcounter{footnote}{100} For a discussion on the
+  effects of mainstreaming in research policy, see: Lut Meargert and
+  Emanuela Lombardo, ``Resistance to Implementing Gender Mainstreaming
+  in EU Research Policy,'' in ``The Persistent Invisibility of Gender in
+  EU Policy,'' ed. Elaine Weiner and Heather MacRae, \emph{European
+  Integration Online Papers}, special issue 1, no. 18, article 5 (2014).} European Communities developed technology and science policies, as
+well as vocational training and education programs, as a response to the
+challenges posed by ICT technologies from the 1970s onwards. These
+initiatives aimed at improving the competitiveness of European industry
+and tackling social problems. In the EC's view, a gap had been created
+in the previous twenty years between their own technological industries
+and those of the United States and Japan. The objective of the EC's
+programs was to catch up with these countries, while dealing with the
+technical, economic, and social consequences of the emergence of new
+technologies.\footnote{CEC, \emph{Vocational Training and New
+  Information Technologies.}} At the same time, gender issues were
+becoming institutionalized, and instruments were developed to increase
+gender equality in the EC. While there was concern regarding the effects
+of new technologies on women, particularly in relation to their labor
+market position, the measures and initiatives developed in the field of
+training and education to promote the participation of women in ICT
+aimed primarily at preventing women's unemployment and creating a pool
+of computer literate and flexible workers.
+
+The education and training initiatives and measures we have analyzed,
+reveal the transformation of a view of the role of women in the European
+labor market and society, within the context of technological change.
+The gender question was often discussed in relation to unemployment and
+its social and economic consequences for the community, particularly in
+the 1970s. For most of this period, the equality model of equal
+treatment and positive action were intertwined. As women were considered
+weak players in the labor market, they required special attention,
+protection, and access to training opportunities, particularly in light
+of the changes brought about by technological change.
+
+It seems counterintuitive that although the EC needed to increase the
+pool of skilled workers in new technologies and despite the fact that
+women had been an unexploited human resource in the 1940s and 1950s and
+had played a vital role in the development of the computer industry,
+there was no substantial endeavor to encourage women's full
+participation in ICT or to promote their role as creators and
+developers; instead, they were viewed as end users.
+
+Brine identifies a mismatch between the needs of the labor market and
+the training provided to women within the framework of EC initiatives on
+vocational education and training.\footnote{Brine, ``The European Social
+  Fund.''} The way in which the question of women's education and
+training in technology was formulated in the initiatives and other
+documents in this area, suggests that women were, for a long time, not
+considered as potential highly skilled workers, and all projects to
+integrate them into the field of ICT at any level were allocated very
+limited budgets.
+
+Targeting underrepresentation has not necessarily meant promoting
+women's entry into highly skilled occupations, but traditionally has
+often focused on male-dominated occupations, the importance of which has
+been in decline in the technological society. The question of
+representation obscured the fact that the field of ICT required both
+highly skilled and low-skilled workers, therefore merely encouraging
+women to learn about computers was not sufficient to promote their full
+participation in the creation, management, and use of ICT at a high
+level.
+
+The gender models fostered by the EC in the development of education and
+training initiatives were limited to \emph{helping} women move from
+virtually no training to basic literacy in ICT. This was facilitated by
+\emph{allowing} them to gain access to new technologies at different
+levels of education and training through short programs with reduced
+budgets, and by supporting projects that were often driven or
+administered by actors (women's organizations, trade unions, or firms)
+that could not ensure the follow-up or institutionalization of the
+initiatives in official training and educational structures.
+
+However, we identify a shift at the end of the 1980s. The programs and
+initiatives focused on the economic role of women and recognized the
+advantages of providing them with skills that could enable their
+participation in the more strategic areas of the economy, such as the
+ICT field. The gender equality approaches that we observed in earlier
+years, based on equal treatment and positive action, were nevertheless
+intertwined with the new arguments. The shift was, however, only
+rhetorical, as a significant investment of resources in initiatives
+targeting women did not take place.
+
+Therefore, we claim that although the challenge of new technologies led
+the EC to craft a series of measures to meet new skill demands and
+increase competitiveness, the potential of women was underestimated over
+a considerable period. By labeling women as victims of technology and
+emphasizing their vulnerability in the labor market, the EC justified
+initiatives and measures that merely relieved their weakened position
+through short-term, underfunded efforts.
+
+
+\section{Bibliography}\label{bibliography}
+
+\begin{hangparas}{.25in}{1} 
+
+
+
+Abbate, Janet. ``Women and Gender and the History of Computing.''
+\emph{IEEE Annals of the History of Computing} 24, no. 4 (2003): 4--8.
+\href{https://10.0.4.85/MAHC.2003.1253885}{https://10.1109/MAHC.2003.1253885}.
+
+Adnett, Nick, and Stephen Hardy. \emph{The European Social Model:
+Modernisation or Evolution?} Cheltenham: Edward Elgar Publishing, 2005.
+
+Barry, Andrew. \emph{Political Machines: Governing a Technological
+Society.} London: Athlone Press, 2001.
+
+Blitz, Brad. ``From Monnet to Delors: Educational Cooperation in the
+European Union.'' \emph{Contemporary European History} 12, no. 2 (2003):
+197--212. \url{https://doi.org/10.1017/S0960777303001140}.
+
+Bornschier, Volker. ``Western Europe's Move toward Political Union.'' In
+\emph{State-Building in Europe: The Revitalization of Western European
+Integration}, edited by Volker Bornschier, 3--37. Cambridge: Cambridge
+University Press, 2000.
+
+Brine, Jacky. ``Equal Opportunities and the European Social Fund:
+Discourse and Practice.'' \emph{Gender and Education} 7, no. 1 (1995):
+9--22.
+
+Brine, Jacky. ``European Education and Training Policy for
+Under-Educated Unemployed People.'' \emph{International Studies in
+Sociology of Education} 7, no. 2 (1997): 229--45.
+\url{https://doi.org/10.1080/09620219700200008}.
+
+Brine, Jacky. ``The European Social Fund and the Vocational Training of
+Unemployed Women: Questions of Gendering and Re-Gendering.''
+\emph{Gender and Education} 4, no. 1--2 (1992): 149--62.
+\url{https://doi.org/10.1080/0954025920040110}.
+
+Brine, Jacky. ``The European Union's Discourse of `Equality' and its
+Education and Training Policy within the Post-Compulsory Sector.''
+\emph{Journal of Education Policy} 13, no. 1 (1998): 137--52.
+\url{https://doi.org/10.1080/0268093980130109}.
+
+Brine, Jacky. \emph{UnderEducating Women: Globalizing Inequality.}
+Philadelphia: Open University Press, 1999.
+
+Bruno, Isabelle, Sophie Jacquot, and Lou Mandin. ``Europeanization
+through its Instrumentation: Benchmarking, Mainstreaming and the Open
+Method of Co-ordination . . . Toolbox or Pandora's Box?'' \emph{Journal
+of European Public Policy} 13, no. 4 (2006): 519--36.
+\url{https://doi.org/10.1080/13501760600693895}.
+
+Commission of the European Communities. ``Activities of the Commission
+of the European Communities in the Fields of Education, Training and
+Youth Policy During 1987.'' Supplement 5, \emph{Social Europe} (1988).
+
+Commission of the European Communities. ``The Changing European
+Community.'' \emph{Women of Europe} 17 (November--December 1980):
+49--53.
+
+Commission of the European Communities. ``The Changing European
+Community.'' \emph{Women of Europe} 57 (November--December 1988): 3--5.
+
+Commission of the European Communities. ``The Changing European
+Community.'' \emph{Women of Europe Newsletter} 68 (February--May 1991):
+1--6.
+
+Commission of the European Communities. ``The Changing Nature of
+Employment: New Forms, New Areas.'' \emph{Social Europe} 1 (1988):
+75--79.
+
+Commission of the European Communities. ``The Community Action
+Programmes.'' Supplement, \emph{Women of Europe} 25 (October 1986):
+88--102.
+
+Commission of the European Communities. ``Commission Proposes Third
+Action Programme on Equal Opportunities for Men and Women.'' Press
+release P/90/76. 1990.
+
+Commission of the European Communities. \emph{Communication from the
+Commission to the Council on the Community Participation in the World
+Conference to Review and Appraise the Achievements of the United Nations
+Decade for Women: Equality, Development and Peace}. COM (85) 256.
+Brussels: Commission of the European Communities, 1985.
+
+Commission of the European Communities. ``Community Initiative for
+Women.'' \emph{Women of Europe} \emph{Newsletter} 11 (June--August
+1990): 1--2.
+
+Commission of the European Communities. ``Community Initiatives on
+Vocational Training for Women.'' \emph{Social Europe} 1 (1988): 27--29.
+
+Commission of the European Communities. \emph{Cooperation in Education
+in the European Union 1976--1994}. Luxembourg: Office for Official
+Publications of the European Communities, 1994.
+
+Commission of the European Communities. ``Community Initiatives on
+Vocational Training for Women.'' \emph{Social Europe} 1 (1988): 27--29.
+
+Commission of the European Communities. ``Country to Country.''
+\emph{Women of Europe Newsletter} 67 (December 1990--January 1991):
+12--31.
+
+Commission of the European Communities. ``Country to Country: France.''
+\emph{Women of Europe} 51 (November--December 1987): 14--15.
+
+Commission of the European Communities. ``Equal Opportunities for Women:
+Medium Term Community Programme 1986--1990.'' Supplement, \emph{Women of
+Europe}, no. 23 (December 1985).
+
+Commission of the European Communities. ``Europe and the New Information
+Technology.'' \emph{European File}, no. 3 (March 1980): 1--7.
+
+Commission of the European Communities. ``The European Community and
+Work for Women.'' \emph{Information Service for Women's Organisations
+and Press}, no. 584/X/77 (September 1977).
+\url{http://aei.pitt.edu/33594/1/A394.pdf}.
+
+Commission of the European Communities. ``The Evaluation of Community
+Policy on Equal Opportunities: Toledo, April 1989.'' \emph{Social
+Europe} 3 (1989): 63--66.
+
+Commission of the European Communities. \emph{Incorporating Equal
+Opportunities for Women and Men into All Community Policies and
+Activitie}s. COM (96) 67. Brussels: Commission of the European
+Communities, 1996.
+
+Commission of the European Communities. ``IRIS: The New Community
+Network of Demonstration Projects on Vocational Training for Women.''
+\emph{Social Europe} 2 (1989): 49--52.
+
+Commission of the European Communities. ``IRIS Fair 1992: Women, a Vital
+Resource.'' \emph{Women of Europe Newsletter} 29 (October 1992): 3.
+
+Commission of the European Communities. ``Micro-Electronics and
+Employment.'' \emph{European File}, no. 16 (October 1980): 1--7.
+
+Commission of the European Communities. ``Microelectronics and Women.''
+\emph{Women of Europe} 26 (May--July 1982).
+
+Commission of the European Communities. ``A New Community Action
+Programme on the Promotion of Equal Opportunities for Women 1982--85.''
+Supplement 1, \emph{Bulletin of the European Communities} (1982).
+
+Commission of the European Communities. ``Regional and Local Policy
+Opens Way for Women.'' \emph{Women of Europe} 70 (May 1997): 4.
+
+Commission of the European Communities. \emph{Report on the Development
+of the Social Situation in the Communities in 1977}. Brussels:
+ECSC/EEC/EAEC, 1978. \url{http://aei.pitt.edu/10246/1/10246.pdf}.
+
+Commission of the European Communities. ``Resolution of the Council and
+of the Ministers of Education: Meeting within the Council of 3 June
+1985.'' \emph{Official Journal of the European Communities}, no. C 166
+(1985).
+\url{https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=CELEX:41985X0507\&rid=1}.
+
+Commission of the European Communities. ``Seminars.'' \emph{Women of
+Europe Newsletter} 11 (June--August 1990): 2--3.
+
+Commission of the European Communities. ``Survey: European Women in Paid
+Employment.'' \emph{Women of Europe} 17 (November--December 1980):
+54--56.
+
+Commission of the European Communities. \emph{Tenth Report on the
+Activities of the European Social Fund 1981 Financial Year}. COM (82)
+420. Brussels: Commission of the European Communities, 1982.
+
+Commission of the European Communities. ``Vocational Training and New
+Information Technologies: New Community Initiatives during the Period
+1983--1987.'' Information memo P-29/82. 1982.
+\url{http://aei.pitt.edu/31221/}.
+
+Commission of the European Communities. \emph{Vocational Training for
+Women}. COM (87) 155. Brussels: Commission of the European Communities,
+1987.
+
+Commission of the European Communities. \emph{Women of Europe} 51
+(November--December 1987).
+
+Commission of the European Communities. ``Women's Employment: How to
+Innovate.'' \emph{Women of Europe}, no. 17 (November--December 1980).
+
+Commission of the European Communities. ``The Youth Forum: Young Women's
+Employment.'' \emph{Women of Europe} 17 (November--December 1980):
+52--56.
+
+Ceruzzi, Paul E. ``When Computers Were Human.'' \emph{Annals of the
+History of Computing} 13, no. 3 (1991): 237--44.
+\url{https://doi.org/10.1109/MAHC.1991.10025}.
+
+Chélini, Michel-Pierre, and Laurent Warlouzet, eds. \emph{Calmer les
+prix} {[}Slowing down prices{]}. Paris: Presses de Sciences Po, 2017.
+
+Chiang, Jong-Tsong. ``From Industry Targeting to Technology Targeting: A
+Policy Paradigm Shift in the 1980s.'' \emph{Technology in Society} 15,
+no. 4 (1993): 341--57.
+\url{https://doi.org/10.1016/0160-791X(93)90007-B}.
+
+Clarke, Alan. ``Competitiveness, Technological Innovation and the
+Challenge to Europe.'' In \emph{The Learning Society: Challenges and
+Trends}, edited by Peter Raggatt, Richard Edwards, and Nick Small,
+59--67. London: Routledge, 1996.
+
+Cockburn, Cynthia. ``The Material of Male Power.'' \emph{Feminist
+Review}, no. 9 (1981): 41--58. \url{https://doi.org/10.2307/1394914}.
+
+Corbett, Anne. \emph{Universities and the Europe of Knowledge: Ideas,
+Institutions and Policy Entrepreneurship in European Union Higher
+Education Policy, 1955--2005.} London: Palgrave Macmillan, 2005.
+
+Danowitz Sagaria, Mary Ann. \emph{Women, Universities, and Change:
+Gender Equality in the European Union and the United States.} New York:
+Palgrave Macmillan, 2007.
+
+EC Council. ``Conclusions of the Council Concerning a Community
+Medium-Term Social Action Programme.'' \emph{Official Journal of the
+European Communities} C175 (1984).
+\url{https://eur-lex.europa.eu/legal-content/EN/TXT/PDF/?uri=OJ:C:1984:175:FULL\&from=EN}.
+
+Ertl, Hubert. \emph{European Union Initiatives in Education and
+Vocational Training: The Development and Impact of the Programme
+Approach}. Wirtschaftspädagogische Beiträge 5. Paderborn: Paderborn
+University, 2002.
+
+Ertl, Hubert. ``European Union Programmes for Education and Vocational
+Training: Development and Impact.'' \emph{SKOPE Research Paper,} no. 42
+(2003).
+
+Flury, Carmen, Michael Geiss, and Rosalía Guerrero. ``Building the
+Technological European Community through Education: European Mobility
+and Training Programmes in the 1980s.'' \emph{European Educational
+Research Journal} 20, no. 3 (December 2020): 348--64.
+\url{https://doi.org/10.1177/1474904120980973}.
+
+Gershuny, Jonathan I. \emph{Technical Innovation and Women's Work in the
+EEC: A Medium-Term Perspective; A Briefing for the EEC.} Sussex: SPRU,
+1980.
+
+Glasner, Angela. ``Gender and Europe: Cultural and Structural
+Impediments to Change.'' In \emph{Social Europe}, edited by Joe Bailey,
+70--103. New York: Longman, 1991.
+
+Grier, David Alan. ``Human Computers: The First Pioneers of the
+Information Age.'' \emph{Endeavour} 25, no. 1 (2001): 28--32.
+\url{https://doi.org/10.1016/S0160-9327(00)01338-7}.
+
+Hannequart, Aquille, ed. \emph{Economic and Social Cohesion in Europe: A
+New Objective}. London: Routledge, 1992.
+
+Hicks, Mar. \emph{Programmed Inequality: How Britain} \emph{Discarded
+Women Technologists and Lost Its Edge in Computing.} Cambridge, MA: MIT
+Press, 2017.
+
+Johnstone, Bill. ``Women Still Lose Out in the Hi-Tech World.''
+\emph{The Week}, June 10, 1986.
+
+Junic, Kim, and Yoo Yaewook. ``Science and Technology Policy Research in
+the EU: From Framework Programme to HORIZON 2020.'' \emph{Social
+Sciences} 8, no. 5 (2019): 153--62.
+\url{https://doi.org/10.3390/socsci8050153}.
+
+Kauppinen, Ilkka. ``The European Round Table of Industrialists and the
+Restructuring of European Higher Education.'' \emph{Globalisation,
+Societies and Education} 12, no. 4 (2014): 498--519.
+\url{https://doi.org/10.1080/14767724.2013.876313}.
+
+Light, Jennifer S. ``When Computers Were Women.'' \emph{Technology and
+Culture} 40, no. 3 (1999): 455--83.
+\url{https://www.jstor.org/stable/25147356}.
+
+Meargert, Lut, and Emanuela Lombardo. ``Resistance to Implementing
+Gender Mainstreaming in EU Research Policy.'' In ``The Persistent
+Invisibility of Gender in EU Policy,'' edited by Elaine Weiner and
+Heather MacRae. Special issue, \emph{European Integration Online Papers}
+1, no. 18 (2014): 1--21.
+\url{http://eiop.or.at/eiop/texte/2014-005a.htm}.
+
+Moisio, Sami. \emph{Geopolitics of the Knowledge-Based Economy}. London:
+Routledge, 2018.
+
+Mourlon-Druol, Emmanuel. ``The EMS as an External Anchor in
+Inflation-Prone Countries.'' In \emph{Calmer les prix} {[}Slowing down
+prices{]}, edited by Michel-Pierre Chélini and Laurent Warlouzet,
+273--94. Paris: Presses de Sciences Po, 2017.
+
+``Nouvelles Technologies: Deux études controversables sur les femmes
+parviennent à des conclusions differéntes.'' \emph{Rapport CREW} 5
+(1982). FDE-164, Historical Archives of the European Union.
+
+Osterrieth, Sylvie. \emph{Equal Opportunities and New Information
+Technologies: Evaluation on the Projects 1987--1989.} Luxembourg: Office
+for Official Publications of the European Communities, 1991.
+
+PA Cambridge Economic Consultants. \emph{An Evaluation of the IRIS
+Network (Final Report)}, Commission of the European Communities, 1992.
+
+Paoli, Simone. ``The European Community and the Rise of a New
+Educational Order (1976--1986).'' In \emph{Contesting Deregulation:
+Debates, Practices, and Developments in the West since the 1970s},
+edited by Knud Andersen and Stefan Müller, 138--52. New York: Berghahn,
+2017.
+
+Parker, Simon. ``Esprit and Technology Corporatism.'' In
+\emph{State-Building in Europe: The Revitalization of Western European
+Integration}, edited by Volker Bornschier, 93--121. Cambridge: Cambridge
+University Press, 2000.
+
+Peterson, John, and Margaret Sharp, \emph{Technology Policy in the
+European Union.} London: Macmillan, 1998.
+
+Pichault, Camille. \emph{Technologies et Emploi des Femmes.} Proceedings
+of the Commission Belge du Travail des Femmes\emph{,} October 15, 1981.
+FDE-164, Historical Archives of the European Union.
+
+Publications Office of the European Union. \emph{IRIS}, Summaries of EU
+Legislation, n.d. Accessed April 15, 2020.
+\url{https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=LEGISSUM:c11018a}.
+
+Quintin, Odile. ``Equal Opportunities for Women: Medium Term Community
+Programme 1987--1990.'' Supplement 2, \emph{Social Europe} (1986):
+54--70.
+
+Rauner, Felix. \emph{Women Study Microcomputer Technology.} Berlin:
+CEDEFOP, 1985.
+
+Rees, Teresa. \emph{Mainstreaming Equality in the European Union:
+Education, Training and Labour Market Policies}. London: Routledge,
+1998.
+
+Rees, Teresa. ``Reflections on the Uneven Development of Gender
+Mainstreaming in Europe.'' \emph{International Feminist Journal of
+Politics} 7, no. 4 (2005): 555--74.
+\url{https://doi.org/10.1080/14616740500284532}.
+
+Sandholtz, Wayne. \emph{High-Tech Europe: The Politics of International
+Cooperation}. Los Angeles: University of California Press, 1992.
+
+Seeland, Suzanne. \emph{Equal Opportunities and Vocational Training---13
+Years On: The Results of CEDEFOP's Programme for Women 1977--90}.
+Berlin: CEDEFOP, 1991.
+
+Senden, Linda. \emph{Soft Law in European Community Law.} Oxford: Hart,
+2004.
+
+Sullerot, Evelyn. \emph{Diversification of Vocational Choices for
+Women.} Luxembourg: Office for Official Publications of the European
+Communities, 1987.
+
+Wallenborn, Manfred. ``Vocational Education and Training and Human
+Capital Development: Current Practice and Future Options.''
+\emph{European Journal of Education} 45, no. 2 (2010): 181--98.
+\url{https://www.jstor.org/stable/40664660}.
+
+Wallyn, L. ``The Social Policy of the Community and Participation of the
+Social Partners in Decision-Making at European Level.'' \emph{Social
+Europe} 1 (1988): 13--20.
+
+Warlouzet, Laurent. \emph{Governing Europe in a Globalizing World:
+Neoliberalism and its Alternatives Following the 1973 Oil Crisis.}
+London: Routledge, 2018.
+
+Warlouzet, Laurent. ``Towards a European Industrial Policy? The European
+Economic Community (EEC) Debates, 1957--1975.'' In \emph{Industrial
+Policy in Europe after 1945: Wealth, Power and Economic Development in
+the Cold War}, edited by Christian Grabas and Alexander Nützenadel,
+213--35. London: Palgrave Macmillan, 2014.
+
+
+
+\end{hangparas}
+
+
+\end{document}
