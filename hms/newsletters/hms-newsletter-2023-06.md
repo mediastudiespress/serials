@@ -69,7 +69,7 @@ La revista está publicada por mediastudies.press, una editorial sin ánimo de l
 
 El Consejo Editorial de la revista está compuesto poracadémicos de casi todos los continentes y regiones, con el objetivo de ampliar el alcance tradicional del campo.
 
-La revista está afiliada con (1) [Working Group on the History of Media Studies](https://hms.mediastudies.press/working-group); y (2) la [History of Media Studies Newslette](https://hms.mediastudies.press/newsletter)r.
+La revista está afiliada con (1) [Working Group on the History of Media Studies](https://hms.mediastudies.press/working-group); y (2) la [History of Media Studies Newslette](https://hms.mediastudies.press/newsletter).
 
 *HMS* encourages [submissions](https://hms.mediastudies.press/author-guidelines) on the history of research, education, and reflective knowledge about media and communication—as expressed through academic institutions; through commercial, governmental, and non-governmental organizations; and through “alter-traditions” of thought and practice often excluded from the academic mainstream.
 
