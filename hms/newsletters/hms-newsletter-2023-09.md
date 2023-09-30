@@ -9,9 +9,9 @@
 
 *Join us for the next remote session devoted to discussing published works and members' working papers. Hosted by the [Consortium for History of Science, Technology and Medicine](https://www.chstm.org/media-studies) (CHSTM). Open to anyone interested in the history of the media studies fields. [Instructions to join](https://hms.mediastudies.press/working-group) are [here](https://hms.mediastudies.press/working-group).*
 
-### Wednesday, October 11
+### Wednesday, October 18
 
-*Wednesday, October 11, 14:00-15:30pm UTC (10am-11:30am EDT)*
+*Wednesday, October 18, 14:00-15:30pm UTC (10am-11:30am EDT)*
 
 Readings for discussion:
 
