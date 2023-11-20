@@ -1,0 +1,2127 @@
+% see the original template for more detail about bibliography, tables, etc: https://www.overleaf.com/latex/templates/handout-design-inspired-by-edward-tufte/dtsbhhkvghzz
+
+\documentclass{tufte-handout}
+
+%\geometry{showframe}% for debugging purposes -- displays the margins
+
+\usepackage{amsmath}
+
+\usepackage{hyperref}
+
+\usepackage{fancyhdr}
+
+\usepackage{hanging}
+
+\hypersetup{colorlinks=true,allcolors=[RGB]{97,15,11}}
+
+\fancyfoot[L]{\emph{History of Media Studies}, vol. 3, 2023}
+
+
+% Set up the images/graphics package
+\usepackage{graphicx}
+\setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
+\graphicspath{{graphics/}}
+
+\title[Understanding the German Media System]{Understanding the German Media System with the Help of Bourdieu and Elias: Historical Sociology of Press-Political Relations in Germany} % longtitle shouldn't be necessary
+
+% The following package makes prettier tables.  We're all about the bling!
+\usepackage{booktabs}
+
+% The units package provides nice, non-stacked fractions and better spacing
+% for units.
+\usepackage{units}
+
+% The fancyvrb package lets us customize the formatting of verbatim
+% environments.  We use a slightly smaller font.
+\usepackage{fancyvrb}
+\fvset{fontsize=\normalsize}
+
+% Small sections of multiple columns
+\usepackage{multicol}
+
+% Provides paragraphs of dummy text
+\usepackage{lipsum}
+
+% These commands are used to pretty-print LaTeX commands
+\newcommand{\doccmd}[1]{\texttt{\textbackslash#1}}% command name -- adds backslash automatically
+\newcommand{\docopt}[1]{\ensuremath{\langle}\textrm{\textit{#1}}\ensuremath{\rangle}}% optional command argument
+\newcommand{\docarg}[1]{\textrm{\textit{#1}}}% (required) command argument
+\newenvironment{docspec}{\begin{quote}\noindent}{\end{quote}}% command specification environment
+\newcommand{\docenv}[1]{\textsf{#1}}% environment name
+\newcommand{\docpkg}[1]{\texttt{#1}}% package name
+\newcommand{\doccls}[1]{\texttt{#1}}% document class name
+\newcommand{\docclsopt}[1]{\texttt{#1}}% document class option name
+
+
+\begin{document}
+
+\begin{titlepage}
+
+\begin{fullwidth}
+\noindent\LARGE\emph{French-German Communication Research
+} \hspace{27mm}\includegraphics[height=1cm]{logo3.png}\\
+\noindent\hrulefill\\
+\vspace*{1em}
+\noindent{\Huge{Understanding the German Media System with the Help of Bourdieu and Elias:\\\noindent Historical Sociology of Press-Political\\\noindent Relations in Germany\par}}
+
+\vspace*{1.5em}
+
+\noindent\LARGE{Nicolas Hubé} \href{https://orcid.org/0000-0001-7226-7546}{\includegraphics[height=0.5cm]{orcid.png}}
+\par\marginnote{\emph{Nicolas Hubé, ``Understanding the German Media System with the Help of Bourdieu and Elias: Historical Sociology of Press-Political Relations in Germany,'' \emph{History of Media Studies} 3 (2023), \href{https://doi.org/10.32376/d895a0ea.6f6fb9bf}{https://doi.org/ 10.32376/d895a0ea.6f6fb9bf}.} \vspace*{0.75em}}
+\vspace*{0.5em}
+\noindent{{\large\emph{Université de Lorraine}, \href{mailto:nicolas.hube@univ-lorraine.fr}{nicolas.hube@univ-lorraine.fr}\par}} \marginnote{\href{https://creativecommons.org/licenses/by-nc/4.0/}{\includegraphics[height=0.5cm]{by-nc.png}}}
+
+% \vspace*{0.75em} % second author
+
+% \noindent{\LARGE{<<author 2 name>>}\par}
+% \vspace*{0.5em}
+% \noindent{{\large\emph{<<author 2 affiliation>>}, \href{mailto:<<author 2 email>>}{<<author 2 email>>}\par}}
+
+% \vspace*{0.75em} % third author
+
+% \noindent{\LARGE{<<author 3 name>>}\par}
+% \vspace*{0.5em}
+% \noindent{{\large\emph{<<author 3 affiliation>>}, \href{mailto:<<author 3 email>>}{<<author 3 email>>}\par}}
+
+\end{fullwidth}
+
+\vspace*{1em}
+
+
+\hypertarget{abstract}{%
+\section{Abstract}\label{abstract}}
+
+A scientist's work in and about a foreign country implies a distancing
+from his or her own analytical routines. This paper aims to present a
+reflexive approach toward the use of ``French'' media studies patterns
+on a German case, and the heuristic gains of mixing them with the German
+ones. Starting from a sociological paradox and the surprising lack of
+research on German journalistic institutions, the aim of this paper is
+to show that the academic socialization of a French researcher can make
+heuristic contributions to research on Germany. This paper is based on a
+long-term historical sociology book (starting in 1918) on interactions
+between press and politics in Germany, and especially the continuum of
+both the political journalists' association (nowadays:
+\emph{Bundespressekonferenz}) and governmental spokesperson agencies
+(nowadays: \emph{Bundespresseamt}). The paper first briefly presents the
+two national analytical traditions as starting points which have to be
+overcome in this specific research on Germany. The following section
+deals more precisely with the new framework of the research on the
+relations between journalists and politicians. The aim, finally, is to
+show how this method of bringing together French journalism and
+political sociology (influenced by a constructivist and historical
+
+
+\enlargethispage{2\baselineskip}
+
+\vspace*{2em}
+
+\noindent{\emph{History of Media Studies}, vol. 3, 2023}
+
+
+ \end{titlepage}
+
+\noindent approach) with the systemic German media studies approach can lead to
+specific advances in our understanding of the structure of the national
+public sphere.
+
+
+\vspace*{2em}
+
+
+
+\hypertarget{introduction-german-specificity-in-an-international-comparison}{%
+\section{Introduction: German Specificity in an International Comparison}\label{introduction-german-specificity-in-an-international-comparison}}
+
+Twenty years ago, Raymond Kuhn and Erik Neveu wanted to challenge ``the
+effects of analytical routines on the approach to the study of political
+journalism by political communication researchers.''\footnote{Erik Neveu
+  and Raymond Kuhn, ``Political Journalism: Mapping the Terrain,'' in
+  \emph{Political Journalism: New Challenges, New Practices}, ed.
+  Raymond Kuhn and Erik Neveu (London: Routledge, 2002), 1.} A
+scientist's work in and about a foreign country implies a distancing
+from his or her own analytical routines. The comparative approach is not
+only a theoretical one, it is a practice and a journey in various
+foreign environments, in several countries. To be engaged in
+non-standardized international research is a permanent intellectual
+rearrangement,\footnote{Michel de Certeau, \emph{The Practice of
+  Everyday Life} (Berkeley: University of California Press, 1984).} a
+practice of different academic cultures, and of immersion in academic
+fields that are not all homologous. A scholar writing about Germany from
+France (and vice versa) always carries with him ideas, prerequisites,
+and analytical traditions from which he engages in his work. This is all
+the more true when the two research traditions are very
+different.\footnote{Nicolas Hubé, ``À la recherche d'une universalité du
+  journalisme: la \emph{Journalistik} allemande,'' \emph{Revue française
+  des sciences de l'information et de la communication}, no. 19 (2020);
+  Lisa Bolz, ``Recherches sur le journalisme en France et en Allemagne:
+  un dialogue impossible?,'' \emph{Revue française des sciences de
+  l'information et de la communication}, no. 18 (2019). See also Lisa
+  Bolz in this issue.} The research project described in the current
+paper grew from a sociologist's enigma.\footnote{Nicolas Hubé, \emph{La
+  politique des chemins courts: Un siècle de relations entre
+  journalistes et communicants gouvernementaux en Allemagne
+  (1918--2018)} (Vulaines-sur-Seine: Editions du Croquant, 2022). For a
+  first step, see Hubé, ``Understanding the Off-The-Record as a Social
+  Practice: German Press-Politics Relations Seen from France,''
+  \emph{Laboratorium: Russian Review of Social Research} 9, no. 2
+  (2017).} This paper proposes a reflexive approach toward the use of
+``French'' media studies patterns on a German case, and identifies
+several heuristic gains of such a mixed approach.
+
+German journalism appears to be an almost singular case. One image is
+strongly anchored: In Germany, distance between journalists and
+politicians is the dominant mode. In national\footnote{Klaus-Dieter
+  Altmeppen and Martin Löffelholz, ``Zwischen Verlautbarungsorgan und
+  `vierter Gewalt': Strukturen, Abhängigkeiten und Perspektiven des
+  politischen Journalismus,'' in \emph{Politikvermittlung und Demokratie
+  in der Mediengesellschaft}, ed. Ullrich Sarcinelli (Bonn:
+  Bundeszentrale für politische Bildung, 1998); Hans-Matthias
+  Kepplinger, \emph{Journalismus als Beruf} (Wiesbaden: VS Verlag,
+  2011).} or comparative international studies,\textsuperscript{6} German journalists
+commonly declare that they are the least subject to competition and the
+pressures of commercialization, and their professional beliefs are often
+permeated by a strong critical sense. Moreover, the political conception
+of their work is one of a professional commitment to
+democracy.\textsuperscript{7} However, as soon as the research shifts from
+perceptions of the journalistic role to understanding them through
+practices, the picture becomes much more varied.\textsuperscript{8} In March 2014, for example, the
+Constitutional Court issued a judgment criticizing the over-political
+nature of appointments to the board of the public channel ZDF, as this
+distorted the distribution of editorial jobs, which are otherwise
+arranged systematically as a ``ticket'' with one journalist close to the
+government party and one deputy from the opposition party.\textsuperscript{9}
+Comparing the German and American press corps, Matthias Revers observes
+that German journalists seem to be much less confrontational with
+politicians than their\marginnote{\textsuperscript{6} Wolfgang
+  Donsbach and Thomas Patterson, ``Political News Journalists:
+  Partisanship, Professionnalism, and Political Roles in Five
+  Countries,'' in \emph{Comparing Political Communication: Theories,
+  Cases and Challenges}, ed. Frank Esser and Barbara Pfetsch (Cambridge:
+  Cambridge University Press, 2004); Thomas Hanitzsch and Rosa Berganza,
+  ``Explaining Journalists' Trust in Public Institutions Across 20
+  Countries: Media Freedom, Corruption, and Ownership Matter Most,''
+  \emph{Journal of Communication} 62, no. 5 (2012).} North\marginnote{\textsuperscript{7} Donsbach and Patterson, ``Political News
+  Journalists,'' 261--64.}\marginnote{\textsuperscript{8} Michael Meyen
+  and Claudia Riesmeyer, \emph{Diktatur des Publikums: Journalisten in
+  Deutschland} (Konstanz: UVK, 2009).} American\marginnote{\textsuperscript{9}\setcounter{footnote}{9} Valérie
+  Robert, ``Staatsfreiheit ou intervention de l'État? Le modèle allemand
+  de l'audiovisuel public,'' \emph{Sur le journalism} 2, no. 2 (2013).} counterparts.\footnote{Matthias
+  Revers, \emph{Contemporary Journalism in the US and Germany: Agents of
+  Accountability} (New York: Palgrave MacMillan, 2017).} Wegmann and
+Mehnert underline that ``beyond personal acquaintances, there exists a
+structural connection between politics and the media.''\footnote{Nikolaus
+  Wegmann and Ute Mehnert, ``\emph{Scoop-o-mania}, l'introduction du
+  scoop dans la vie politique allemande,'' \emph{Le Temps des Médias,}
+  no. 7 (2006): 148--49.} However, this conclusion is not particularly
+widespread in the literature. Niklas Luhmann's critique remains very
+systemic, and not empirically based,\footnote{Niklas Luhmann, \emph{The
+  Reality of the Mass Media} (Stanford: Stanford University Press,
+  2000).} and critical media studies are historically rare in
+Germany,\footnote{Maria Löblich, Niklas Venema, and Elisa Pollack,
+  ``West Berlin's Critical Communication Studies and the Cold War: A
+  Study on Symbolic Power from 1948 to 1989,'' \emph{History of Media
+  Studies} 2 (2022).} whereas in France the critical sociology approach
+(sometimes quite normative) is widespread. Recently, this criticism has
+been most strongly and almost exclusively voiced inside the political
+field by extreme right-wing populist movements.\footnote{Kristoffer Holt
+  and André Haller, ``What Does `Lügenpresse' Mean? Expressions of Media
+  Distrust on PEGIDA's Facebook Pages,'' \emph{Politik} 20, no. 4
+  (2017).}
+
+The German specificity does not end at this paradox. At the governmental
+level, a centralized and hierarchically important government spokesman's
+department was set up at the end of the First World War. This department
+has been ongoing since then. Despite its high degree of brutality, which
+has no comparison with current institutions, the \emph{Reichsministerium
+für Volksaufklärung und Propaganda}, the institution headed by Joseph
+Goebbels from 1933 to 1945, is part of a state apparatus
+continuum.\footnote{Elke Fröhlich, ``Joseph Goebbels: Profil de sa
+  propagande (1926--1939),'' in \emph{Joseph Goebbels} \emph{Journal
+  1933--1939}, ed. Pierre Ayçoberry and Barbara Lambauer (Paris:
+  Tallandier, 2007); Daniel Mühlenfeld, ``Vom Kommissariat zum
+  Ministerium: Zur Gründungsgeschichte des Reichsministeriums für
+  Volksaufklärung und Propaganda,'' in \emph{Hitlers Kommissare:
+  Sondergewalten in der nationalsozialistischen Diktatur}, ed. Rüdiger
+  Hachtmann and Winfried Süß (Konstanz: Wallstein Verlag, 2006).} In the
+political information field, since the postwar period German journalists
+have had a central instrument for the regulation of news production
+under their own responsibility: the \emph{Bundespressekonferenz}
+(hereafter, BPK). Founded in 1949 together with the Federal Republic,
+the BPK gathers all parliamentary journalists working for the German
+media and shares its building with the Association of Foreign
+Journalists (\emph{Verein der ausländischen Presse}---hereafter, VAP).
+This unique institution gathers journalists covering politics from the
+federal capital. They are correspondents sent by their editorial offices
+in Berlin, Frankfurt am Main, Hamburg, Munich, Cologne, or Mainz. The
+BPK has been reproduced at the level of each state, as the
+``\emph{Landespressekonferenz}.'' The reason for this replication is the
+high level of autonomy of the Länder (states) in the federal system. The
+governments of the Länder have significant powers, and the regional
+press is particularly influential. Another specificity is that the BPK
+is run by journalists. The government is only invited to explain its
+policy to journalists three times a week. It is represented by the State
+Secretary responsible for the spokesman's office and ministerial
+spokesmen. With lower attendance, ministers can take direct part in
+these press conferences (forty-four times in 2016 and twenty-eight times
+in 2017), and very seldom the Chancellor (one time in both
+years).\footnote{Hubé, \emph{La politique des chemins courts}, 321.} The
+conferences are opened, moderated, and then closed by a member of the
+BPK's administrative board, with no say from the State Secretary. Over
+time, a gradual construction of corporatist institutions has been
+observed: political journalists' associations such as \emph{Verein
+Berliner Presse} and \emph{Reichsverband der deutschen Presse} under
+Weimar and \emph{Bundespressekonferenz} (BPK) for the FRG; the German
+Journalists' Association representing and defending journalists'
+professional and democratic role in the FRG (\emph{Deutsche
+Journalistenverband} (DJV); and spokesperson's offices (\emph{Vereinigte
+Presseabteilung der Reichsregierung} under Weimar and
+\emph{Bundespresseamt} in the FRG). Such an institutionalization of
+press-political relations is highly unusual compared to the situations
+seen elsewhere in the so-called consolidated democracies.
+
+Rather surprisingly, these places (and particularly the BPK) have not
+been the object of specific investigations.\footnote{There are some
+  works produced by journalists: Gunnar Krüger, \emph{``Wir sind doch
+  kein exklusiver Club!'': Die Bundespressekonferenz in der Ära
+  Adenauer} (Münster: Lit, 2005); Tissy Bruns, \emph{Republik der
+  Wichtigtuer: Ein Bericht aus Berlin} (Bonn: Bundeszentrale für
+  politische Bildung, 2007). Some others are dedicated to specific
+  issues: Christian Nuernbergk and Jan-Hinrik Schmidt, ``Twitter im
+  Politikjournalismus: Ergebnisse einer Befragung und Netzwerkanalyse
+  von Hauptstadtjournalisten der Bundespressekonferenz,''
+  \emph{Publizistik} 65, no. 1 (2020).} Comparative work focuses on the
+Länder level,\footnote{Denise Burgert, \emph{Politisch-mediale
+  Beziehungsgeflechte: Ein Vergleich politikfeldspezifische
+  Kommunikationskulturen in Deutschland und Frankreich} (Berlin, LIT
+  Verlag, 2010); Revers, \emph{Contemporary Journalism in the US and
+  Germany.}} while few studies focus on federal communication over
+time.\footnote{A number of edited books study these particular moments:
+  Klaus Arnold et al., eds., \emph{Von der Politisierung der Medien zur
+  Medialisierung des Politischen? Zum Verhältnis von Medien,
+  Öffentlichkeiten und Politik im 20. Jahrhundert} (Leipzig: Leipziger
+  Universitätsverlag, 2010); Frank Bösch and Norbert Frei, eds.,
+  \emph{Medialisierung und Demokratie im 20. Jahrhundert} (Göttingen:
+  Wallstein Verlag, 2006); Bernhard Fulda, \emph{Press and Politics in
+  the Weimarer Republic} (Oxford: Oxford University Press, 2013); Thomas
+  Mergel, \emph{Parlamentarische Kultur in der Weimarer Republik}
+  (Düsseldorf: Droste Verlag, 2002).} The only exception is the period
+of National Socialism, which is particularly well-documented.\footnote{Ernest
+  K. Bramsted, \emph{Goebbels und die nationalsozialistische Propaganda
+  1925--1945} (Frankfurt: Fischer, 1971); Fröhlich, ``Joseph Goebbels'';
+  Elke Fröhlich, ``Joseph Goebbels, un propagandiste profiteur de
+  guerre,'' \emph{Joseph Goebbels} \emph{Journal 1939­--1942} (Paris:
+  Tallandier, 2009); Mühlenfeld, ``Vom Kommissariat zum Ministerium'';
+  Bernd Sösemann, ed., \emph{Propaganda: Medien und Öffentlichkeit in
+  der NS-Diktatur} (Stuttgart: Franz Steiner Verlag, 2011);} However, the strong institutionalization of
+press-political relations surprised observers of press departments as
+early as the interwar period.\textsuperscript{21} But the German case is understudied
+relative to other countries. In the UK, the parliamentary press gallery
+is where the framing of the political situation is
+co-produced.\textsuperscript{22} The rapid expansion of a
+business sector of communication and the liberal organization of the
+press reinforced the trend towards the emergence of a so-called
+\emph{public relations democracy.}\textsuperscript{23} Washington
+is a priori similar to Berlin/Bonn: a federal capital strongly
+structured by the proximity of interactions, made up of interpersonal
+relations and revolving doors.\textsuperscript{24} The
+press corps shares important sociabilities.\textsuperscript{25} However, observers point out that
+there has been a significant escalation in the control over and
+distancing of journalistic mechanisms by press officers in the
+US.\textsuperscript{26} Press-political relations are much more
+clearly defined by tension and competition with politicians (and among
+journalists) than in Germany, where journalists tend to seek collective
+group management via their press associations, without one media holding
+a dominant position over another.\textsuperscript{27} The strong
+presidentialization of the American and French political systems, as
+well as the economic competition for news, reinforces the phenomenon of
+personalization and the game-frame in the journalistic coverage of
+politics, in contrast to German parliamentarism.\textsuperscript{28} Japan seems to be
+the polar opposite of this press-political relationship, with absolute
+control over sources and freedom of the press seemingly not the goal,
+according to a comparative study of Germany and Japan.\textsuperscript{29} Press clubs
+(\emph{kisha kurabu}) operate formally in the same way as press
+galleries in the UK or Australia.\textsuperscript{30} But
+the combined effects of a one-party government in power for nearly sixty
+years, the very closed functioning of elite circles in Japan---where
+press, industry, and political leaders go to similar private schools and
+clubs---and the extreme concentration of the media structure exchanges
+in a way that is not favorable to journalists.\textsuperscript{31}
+
+\newpage The\marginnote{Matthias
+  Weiß, ``Journalisten: Worte als Taten,'' in \emph{Karrieren im
+  Zwielicht: Hitlers Eliten nach 1945}, ed. Norbert Frei (Frankfurt:
+  Campus Verlag, 2001).} situation\marginnote{\textsuperscript{21} Michel Stankovitch, ``Les
+  Services de presse des gouvernements et de la S.D.N'' (PhD diss.,
+  Université de Paris, 1939).} most\marginnote{\textsuperscript{22} Jeremy Tunstall, \emph{The Westminster Lobby
+  Correspondents: Sociological Study of National Political Journalism}
+  (London: Routledge \& Kegan Paul, 1970).} akin\marginnote{\textsuperscript{23} Aeron Davis, \emph{Public
+  Relations Democracy: Public Relations, Politics and the Mass Media in
+  Britain} (Manchester: Manchester University Press, 2002).} to\marginnote{\textsuperscript{24} Ralph Bläser, ``Ménage à trois:
+  la pertinence géographique des relations de lobbying entre les
+  ONG-Bankwatch, l'État national et la Banque mondiale à Washington
+  D.C.,'' \emph{L\textquotesingle espace politique}, no. 1 (2007).} that\marginnote{\textsuperscript{25} Timothy Crouse,
+  \emph{The Boys on the Bus} (New York: Random House, 2003); Kendall
+  Hoyt and Frances S. Leighton, \emph{Drunk Before Noon: The
+  Behind-the-Scenes Story of the Washington Press Corps} (Englewood
+  Cliffs, NJ: Prentice Hall, 1979).} in\marginnote{\textsuperscript{26} Anderson C. W., Leonard Downie, and Michael Schudson,
+  \emph{The News Media: What Everyone Needs to Know} (Oxford: Oxford
+  University Press, 2016), 116.} Japan\marginnote{\textsuperscript{27} Revers, \emph{Contemporary
+  Journalism in the US and Germany,} 189.} is\marginnote{\textsuperscript{28} Frank Esser,
+  Carsten Reinemann, and David Fan, ``Spin-doctoring in British and
+  German Election Campaigns,'' \emph{European Journal of Communication}
+  15, no. 2 (2000); Peter Van Aelst et al., ``Personalization,'' in
+  \emph{Comparing Political Journalism}, ed. Claes de~Vreese, Frank
+  Esser, and David Hopmann (London: Routledge, 2017).} probably\marginnote{\textsuperscript{29} Takashi
+  Jitsuhara, ``Guarantee of the Right to Freedom of Speech in Japan---A
+  Comparison with Doctrines in Germany,'' in \emph{Contemporary Issues
+  in Human Rights Law,} ed. Yumiko Nakanishi (Singapore: Springer,
+  2018); Steven Borowiec, ``Writers of Wrongs: Have Japan's Press Clubs
+  Created Overly Cosy Relationships Between Business Leaders and the
+  Press?,'' \emph{Index on Censorship} 45, no. 2 (2016).} to\marginnote{\textsuperscript{30} Jane O\textquotesingle Dwyer,
+  ``Japanese Kisha Clubs and the Canberra Press Gallery: Siblings or
+  Strangers,'' \emph{Asia Pacific Media Educator} 1, no. 16 (2005).} be found in
+Brussels.\textsuperscript{32} Journalism has been
+institutionalized through the press corps meetings at the European
+Commission's Berlaymont building. Relations are founded on the principle
+of a peaceful co-production of information. But this system was
+established by and for the Commission, and journalists are driven by a
+faith in the European federalist project.\textsuperscript{33} The structure
+of the European bureaucratic field has made it more difficult to voice
+political opposition and to seek competitive information from political
+rivals.\textsuperscript{34} Moreover, political
+journalists are part of neither a specific national nor a European
+journalistic field,\textsuperscript{35} unlike
+German parliamentary journalists. Contrary to their colleagues in
+Brussels, they do not have to justify their interest in reporting on
+government policy.
+
+At this stage, it is both the institutionalization of these exchanges
+and their corporative functioning that distinguishes Germany. Hallin and
+Mancini have described German journalism as
+corporatist-democratic.\textsuperscript{36} Indeed, journalists
+prefer a cooperative management of relations with sources to a
+competitive struggle between colleagues. The point here is not to say
+that journalists are \emph{not} competing for news access, but that they
+are \emph{particularly} aware of the value of maintaining the
+collective. Everything seems to indicate that actors agree to preserve a
+monopoly on and control over the political game, which is usually
+regulated by transactions, profit sharing, and a collusive desire to
+regulate competition, to limit how and where conflicts are expressed
+and, sometimes, to protect the positions of opponents.\textsuperscript{37} However, Hallin and
+Mancini's model is only based on indicators. It says nothing about the
+sociohistorical roots of the institutions and how they actually operate
+in such a model.
+
+The aim of this paper is to show---with these analytical gaps and the
+lack of a socio-historical explanation in mind---that the academic
+socialization of a French researcher can make heuristic contributions to
+research on Germany. The structure of the paper is, first, to briefly
+present the two national analytical traditions as reflexive starting
+points which I tried to overcome in my research on Germany. The
+following section deals more precisely with the framework of my research
+on the relations between journalists and politicians. The aim, finally,
+is to enumerate some specific ways in which this framework can advance
+our understanding of the structure of the national public sphere and to
+show this reality in practice---mixing Habermas with the more specific
+French uses of Norbert Elias and Pierre Bourdieu. I stress the
+advantages of combining French journalism and political sociology
+(influenced by a constructivist and historical approach) with the
+systemic German media studies approach.
+
+\hypertarget{overcoming-two-national-analytical-traditions}{%
+\section{Overcoming\marginnote{\textsuperscript{31} César Castellvi,
+  ``Les Clubs de presse au Japon: Le journaliste, l'entreprise et ses
+  sources,'' \emph{Sur le journalism} 8, no. 2 (2019); William Nester,
+  ``Japan\textquotesingle s Mainstream Press: Freedom to Conform?,''
+  \emph{Pacific Affairs} 62, no. 1 (1989); Yamamoto Taketoshi, ``The
+  Press Clubs of Japan,'' \emph{Journal of Japanese Studies} 15, no. 2
+  (1989).} Two National Analytical
+Traditions}\label{overcoming-two-national-analytical-traditions}}
+
+Looking at\marginnote{\textsuperscript{32} Olivier Baisnée, ``Reporting the European Union: A
+  Study in Journalistic Boredom,'' in \emph{Political Journalism in
+  Transition: Western Europe in a Comparative Perspective}, ed. Raymond
+  Kuhn and Rasmus Kleis Nielsen (London: I.B. Taurus \& Co., 2013); Anke
+  Offerhaus, \emph{Die Professionalisierung des deutschen
+  EU-Journalismus: Expertisierung, Inszenierung und
+  Institutionalisierung der europäischen Dimension im deutschen
+  Journalismus} (Wiesbaden: Springer VS, 2011).} the\marginnote{\textsuperscript{33} Martin Herzer,
+  \emph{The Media, European Integration and the Rise of Euro-Journalism,
+  1950s--1970s} (Basingstoke: Palgrave Macmillan, 2019).} national\marginnote{\textsuperscript{34} Didier Georgakakis and Jay Rowell, eds., \emph{The
+  Field of Eurocracy: Mapping the EU Staff and Professionals}
+  (Basingstoke: Palgrave Macmillan, 2013).} academic\marginnote{\textsuperscript{35} Florian Tixier, ``En quête de
+  professionnalisme: L'Association des journalistes européens, des
+  spécialistes de l'Europe aux journalistes spécialisés,'' in \emph{Les
+  Médiations de l'Europe politique}, ed. Philippe Aldrin et al.
+  (Strasbourg: Presses Universitaires de Strasbourg, 2014).} routine,\marginnote{\textsuperscript{36} Daniel Hallin and Paolo Mancini,
+  \emph{Comparing Media Systems: Three Models of Media and Politics}
+  (Cambridge: Cambridge University Press, 2004).} this\marginnote{\textsuperscript{37}\setcounter{footnote}{37} Frederick
+  George Bailey, \emph{Stratagems and Spoils: A Social Anthropology of
+  Politics} (Oxford: Westview Press, 2001), 55.} article cannot, of
+course, reflect the full diversity of those studies in Germany or in
+France, but is rather a reflexive examination of these two academic
+communities. It is built on twenty years of comparative research on
+journalism and political communication in Germany, a dual PhD in
+political science in journalism at Sciences Po Strasbourg and the Freie
+Universität Berlin,\footnote{Nicolas Hubé, \emph{Décrocher la ``Une'':
+  Le choix des titres de première page de la presse quotidienne en
+  France et en Allemagne (1945--2005)} (Strasbourg: Presses
+  universitaires de Strasbourg, 2008).} as well as a two-and-a-half-year
+experience as a lecturer on these subjects at the Europa Universität
+Viadrina (Frankfurt/Oder) from 2013 to 2015. However, it is within this
+dialogue between two academic worlds that my ``particular'' approach has
+been built. A second factor completes and complexifies the analytical
+work: the intersection of political sociology with communication
+sciences in France.
+
+\hypertarget{journalism-and-political-studies-in-france-and-germany}{%
+\subsection{Journalism and Political Studies in
+France and
+Germany}\label{journalism-and-political-studies-in-france-and-germany}}
+
+It is precisely at the intersection of these two approaches that I have
+attempted to build my research program. A first comparison of German and
+French traditions indicates that, while they both focus on questions
+concerning the democratic public space, the methods and traditions of
+media analysis can hardly be compared.\footnote{Hubé, ``À la recherche
+  d'une universalité du journalisme.'' See also Lisa Bolz in this issue.}
+As the historical perspective offered in Lisa Bolz's contribution to
+this special section illustrates, there is a modelled and tendentially
+disincarnated relationship between groups of actors (media, politicians,
+and public opinion) in Germany; whereas, in France, there is a more
+qualitative (and critical) understanding of the exchanges between these
+groups, which tends to overlook the public to focus instead on
+journalists, their characteristics, their resources, and their
+professional organizations. If these major questions are equivalent to
+those of the German \emph{Journalistik}, the latter is distinguished by
+a more abstract production, on the one hand seeking to characterize
+these transformations in the form of models and systems, and on the
+other hand using a more quantitative and internationalized empirical
+approach which serves to establish statistical laws. This permanent
+quest for a democratic balance between public opinion, politics, and the
+media is as much the result of the history of university reconstruction
+(and its funding methods) after World War II as it is a strictly
+theoretical question. The weight of the Allied presence (especially the
+US) in the funding of universities, the intense pressure of the Cold
+War, and the anti-communism of the founders made it difficult, if not
+impossible, for critical thought to emerge, and it was confined to the
+Frankfurt School and a few marginal places after 1968.\footnote{Löblich,
+  Venema, and Pollack, ``Critical Communication Studies and the Cold
+  War.''} The German research community intends to model this triptych
+of public, political professionals, and journalists in the form of a
+system.\footnote{Carsten Brosda and Christian Schicha, ``Interaktion von
+  Politik, Public Relations und Journalismus,'' in \emph{Politische
+  Akteure in der Mediendemokratie: Politiker in den Fesseln der
+  Medien?}, ed. Heribert Schatz, Patrick Rössler, and Jörg-Uwe Nieland
+  (Wiesbaden: Westdeutscher Verlag, 2002); Barbara Pfetsch,
+  \emph{Politische Kommunikationskultur: Politische Sprecher und
+  Journalisten in der Bundesrepublik und den USA im Vergleich}
+  (Wiesbaden: Westdeutscher Verlag, 2003).} In 2011, Hans-Mathias
+Kepplinger stated in his introduction to the ``challenges of journalism
+research'' that:
+
+\begin{quote}
+Mass communication represents a highly differentiated and highly
+interconnected sub-system of the society system, which is highly
+distinct from its environment. The other subsystems are politics,
+economy, science, etc. . . . A basis {[}for this systemic autonomy{]} is
+the recognition by the Constitutional Court that freedom of the press is
+constitutive to democracy.\footnote{Kepplinger, \emph{Journalismus als
+  Beruf}, 9.}
+\end{quote}
+
+More than in France, one of the issues for the \emph{Journalistik} is to
+determine which of the three components has the greatest influence over
+the other two, and a second is to be able to measure it. These
+contributions from a more systemic approach have undoubtedly influenced
+my way of working on this subject. And this is all the more true as the
+discipline has more systematically comparative, quantitative, and
+internationalized approaches than those in France. Conversely, the
+sociology of the journalists' work and of the actors in their
+organizations is less developed there. In France, works based on a
+sociographic approach to journalism abound. The main research on the
+profession is carried out through large surveys of press card holders.
+Though the contours of German journalism have been regularly observed
+since the 1980s, the data are rarely studied from the perspective of
+their social attributes, and the notion of habitus derived from Bourdieu
+is rather flexible and used to describe professional roles rather than
+to articulate social positions and attitudes.\footnote{Thomas Hanitzsch,
+  ``Deconstructing Journalism Culture: Toward a Universal Theory,''
+  \emph{Communication Theory} 17, no. 4 (2007).} French work highlights
+the heterogeneity of the ways in which journalism is practiced, while
+the universalist vision of journalism is what is mostly sought by the
+\emph{Journalistik.}\footnote{Theirs are newer approaches. See a first
+  synthesis here: Stefanie Averbeck-Lietz and Michael Meyen, eds.,
+  \emph{Handbuch nicht standardisierte Methoden in der
+  Kommunikationswissenschaft} (Wiesbaden: Springer VS, 2016).} It
+assumes its methodological openness and its very clear inter- and
+transdisciplinary character (between communication science, political
+science, and sociology).\footnote{See Lisa Bolz in this issue.}
+
+More generally, French research has adopted a more qualitative approach,
+more systematically using interviews or ethnographic observations. The
+objective is to understand journalistic production as a collective
+action, involving journalists' work with and against their sources (and
+to understand the struggles between sources), their colleagues in the
+newsrooms, as well as their specialist colleagues. One very important
+text for journalism studies in France was the translation of Philipp
+Schlesinger's text in the journal \emph{Réseaux} in 1992,\footnote{Philip
+  Schlesinger, ``Rethinking the Sociology of Journalism: Source
+  Strategies and the Limits of Media-Centrism,'' in \emph{Public
+  Communication: The New Imperatives}, ed. Margorie Ferguson (London:
+  SAGE Publications, 1990). This text has been translated and published
+  in a special issue on ``Journalists' Sociology'' in the journal
+  \emph{Réseaux}, no. 51 (1992).} which is still regularly referred to
+today to argue for more clearly constructivist and structural approaches
+to understand the exchanges between journalists and sources.\textsuperscript{47}
+Consequently, from my sociological perspective, the perimeter of
+political communication has changed and expanded hand in hand with
+contemporary transformations of\marginnote{\textsuperscript{47}\setcounter{footnote}{47} In
+  the last decade, three special issues have been published: Clément
+  Desrumaux and Jérémie Nollet, eds., ``Le travail politique par et pour
+  les médias,'' \emph{Réseaux}, no. 187 (2014); Philippe Juhem and Julie
+  Sedel, eds., \emph{Agir par la parole: Porte-paroles et asymétries de
+  l'espace public} (Rennes: Presses Universitaires de Rennes, 2016);
+  Nicolas Kaciaf and Jérémie Nollet, eds., ``Journalisme: retour aux
+  sources,'' \emph{Politiques de communication}, no. 1 (2013).} the political process.\footnote{For a
+  synthesis, see Philippe Aldrin and Nicolas Hubé, \emph{Introduction à
+  la communication politique} (Bruxelles: De Boeck, 2022).} Observations
+of economic or technical changes are made as closely as possible to the
+daily work of journalists. In Germany, the observation of editorial
+structures is somewhat unusual. Despite an early tradition in newsroom
+observation that has been mostly published in German,\footnote{Elke
+  Grittman, ``Organisationeller Kontext,'' in \emph{Grundlagentexte zur
+  Journalistik,} ed. Irene Neverla, Elke Grittmann, and Monika Pater
+  (Konstanz: UVK, 2002); Manfred Rühl, \emph{Die Zeitungsredaktion als
+  organisiertes soziales System} (Fribourg: Universitätsverlag Freiburg,
+  1979); and Manfred Rühl, ``Organisatorischer Journalismus: Tendenzen
+  der Redaktionsforschung,'' in \emph{Grundlagentexte zur Journalistik},
+  ed. Irene Neverla, Elke Grittmann, and Monika Pater (Konstanz: UVK,
+  2002).} and despite Frank Esser's contributions showing how editorial
+organization influences the management of publishing and commercial
+choices in German and British newsrooms, this approach has not been
+pursued.\footnote{Frank Esser, ``Editorial Structures and Work
+  Principles in British and German Newsrooms,'' \emph{European Journal
+  of Communication} 13, no. 3 (1998); Brigitte Hofstetter and Philomen
+  Schoenhagen, ``When Creative Potentials are Being Undermined By
+  Commercial Imperatives,'' \emph{Digital Journalism} 5, no. (2017);
+  Brigitte Hofstetter and Philomen Schoenhagen, ``Wandel redaktioneller
+  Strukturen und journalistischen Handelns'' {[}Changing newsroom
+  structures and journalistic routines{]}, \emph{Studies in
+  Communication and Media} 3, no. 2 (2014); Lars Rinsdorf and Laura
+  Theiss, ``Leidenschaftliche Amateur*innen oder kühle Profis: Zum
+  Integrationspotenzial der freien Mitarbeiter*innen lokaler
+  Tageszeitungen,'' in \emph{Integration durch Kommunikation: Jahrbuch
+  der Publizistik- und Kommunikationswissenschaft}, ed. Volker Gehrau,
+  Anni Waldherr, and Armin Scholl (Münster: Deutsche Gesellschaft für
+  Publizistik- und Kommunikationswissenschaft e.V.; Westfälische
+  Wilhelms-Universität Münster, Institut für Kommunikationswissenschaft,
+  2019).} Moreover, although Germany is described as a model of a
+democratic and corporatist country, few studies have focused on its
+professional associations' struggles to define the contours of the labor
+market, in contrast to France, where many studies have explored the
+evolution of practices over a long socio-historical period.\footnote{A
+  few of the most significant texts on this approach may be cited here:
+  Ivan Chupin, \emph{Les écoles du journalisme: Les enjeux de la
+  scolarisation d'une profession}}
+
+A look at the textbooks of both countries provides information on this
+difference. In Germany, the systemic approach is often represented
+according to the ``onion model.''\textsuperscript{52} The media system is structured in
+four layers: media actors (the role context), media statements (the
+functional context), media institutions (the structural context), and
+the media system itself (the normative context).\textsuperscript{53} When in 2007 researchers
+published \emph{Journalism Theory: New Generation}, they did not
+challenge these systemic conceptions. The authors sought to explore new
+approaches in order to bridge the gap between the micro- and
+macro-sociological aspects.\textsuperscript{54} Conversely, in France, Erik Neveu
+devotes two chapters of his \emph{Journalism Sociology} to ``the field
+of journalism today'' and to ``journalists at work,'' and Rémy Rieffel
+devotes a long chapter to ``media professionals'' in his \emph{Media
+Sociology.}\textsuperscript{55} More systemic and comparative models
+are only rarely present in these works. When they deviate from a
+theoretical and/or quantitative approach, German scholars claim to be
+using ``non-standardized methods in communication science.''\textsuperscript{56} Ironically, the authors of this 2016
+textbook have close academic collaborations with French
+scholars.\textsuperscript{57}
+
+\hypertarget{the-sociological-turn-of-french-political-science}{%
+\subsection{The Sociological Turn of French
+Political
+Science}\label{the-sociological-turn-of-french-political-science}}
+
+With regard to political communication, recent French textbooks also
+claim to be based on \emph{political communication
+sociology.}\textsuperscript{58} At the
+beginning of the 2000s, several researchers at the intersection of
+sociology, media and communication studies (\emph{sciences de
+l'information et de la communication} (SIC)), and political science
+advocated a sociology-based approach to these topics in order to
+separate research from publications by professionals in
+communication.\textsuperscript{59} New journals were
+created to complement this approach (\emph{Questions de communication}
+in 2002 and \emph{Politiques de communication} in 2013). For these
+authors, the goal is to focus on both the dissemination of knowledge and
+the generalization of\marginnote{\emph{(1889--2018)} (Rennes: Presses
+  universitaires de Rennes, 2018); Nicolas Kaciaf, \emph{Les Pages
+  ``Politique'': Histoire du journalisme politique dans la presse
+  française (1945--2006)} (Rennes: Presses Universitaires de Rennes,
+  2013); Sandrine Lévêque, \emph{Les Journalistes sociaux: Histoire et
+  sociologie d'une spécialité journalistique} (Rennes: Presses
+  Universitaires de Rennes, 2000); Arnaud Mercier,
+  ``L'institutionalisation de la profession des journalistes,''
+  \emph{Hermès}, no. 13--14 (1994); Denis Ruellan, \emph{Les ``Pro'' du
+  journalisme: De l'état au statut, la construction d'un espace
+  professionnel} (Rennes: Presses universitaires de Rennes, 1997).} the\marginnote{\textsuperscript{52} Siegfried Weischenberg,
+  \emph{Journalistik: Theorie und Praxis aktueller Medienkommunikation;
+  Band 2: Medientechnik, Medienfunktionen, Medienakteure} (Opladen:
+  Westdeutscher Verlag, 1995), 69ff.} professional\marginnote{\textsuperscript{53} Bolz,
+  ``Recherches sur le journalisme,'' 19.} tools\marginnote{\textsuperscript{54} Klaus-Dieter Altmeppen, Thomas
+  Hanitzsch, and Carsten Schlüter, eds., \emph{Journalismustheorie: Next
+  Generation: Soziologische Grundlegung und theoretische Innovation}
+  (Wiesbaden: VS Verlag, 2007), 12.} related\marginnote{\textsuperscript{55} Érik Neveu, \emph{Sociologie du journalisme}
+  (Paris: La Découverte, 2019); Rieffel Rémy, \emph{Sociologie des
+  médias} (Paris: Ellipses, 2015).} to\marginnote{\textsuperscript{56} Stefanie
+  Averbeck-Lietz and Michael Meyen, eds., \emph{Handbuch nicht
+  standardisierte Methoden}.} political\marginnote{\textsuperscript{57} Stefanie Averbeck-Lietz, Fabien Bonnet, and Jacques
+  Bonnet, ``Le discours épistémologique des Sciences de l'information et
+  de la communication,'' \emph{Revue française des sciences de
+  l'information et de la communication}, no. 4 (2014); Thomas Wiedemann
+  and Michael Meyen, eds., \emph{Pierre Bourdieu und die
+  Kommunikationswissenschaft: Internationale Perspektiven} (Köln:
+  Herbert von Halem Verlag, 2013).}
+communication,\marginnote{\textsuperscript{58} Aldrin and Hubé; \emph{Introduction à la
+  communication politique}; Philippe Riutort, \emph{Sociologie de la
+  communication politique} (Paris: La Découverte, 2020).} but\marginnote{\textsuperscript{59}\setcounter{footnote}{59} Eric Darras, ``Division du travail politiste et
+  travail politiste de division: L'exemple de la communication,'' in
+  \emph{La science politique: Une et multiple}, ed. Eric Darras and
+  Olivier Philippe (Paris: L'Harmattan, 2004); Arnaud Mercier, ``La
+  communication politique en France: Un champ de recherche qui doit
+  encore s'imposer,'' \emph{L'Année sociologique}, no. 51 (2001);
+  Philippe Riutort, ``Sociologiser la communication politique?,''
+  \emph{Politique et Sociétés} 26, no. 1 (2007).} also---following a processual approach to the
+phenomenon, and using the vocabulary of Norbert Elias---on the
+complexity of the interdependence chains that link the different
+participants in the political process today. This work pays particular
+attention to historical contexts, social structures, and
+interdependencies between the professional worlds of politics, the
+media, and academic research. These elements together condition the
+perceptions, the action logics, and the practices of political
+communication.
+
+A particular aspect of this research program is its emphasis on a more
+explicitly (micro)sociological perspective. This research agenda has
+been inspired by major contributions from the history and the sociology
+of situations, actors, and institutions to the understandiong of
+political processes. Indeed, unlike German political science, which also
+tends to focus on the formulation of empirical answers to normative
+questions,\textsuperscript{60} French political science underwent a
+significant sociological shift from its public law and institutionnalist
+perspective at the turn of the 1980s.\textsuperscript{61} Scholars use Max Weber,
+Pierre Bourdieu, and Emile Durkheim as much as Norbert Elias, to which
+we can add the translation of the text by Peter Berger and Thomas
+Luckmann, \emph{The Social Construction of Reality}, in 1986, which was
+immediately adopted by a section of political sociology. In 1988,
+\emph{Politix: Journal of the Social Sciences of Politics} was launched.
+Today it is one of the leading mainstream journals of political science
+in France, alongside the \emph{Revue Française de Science
+Politique.}\textsuperscript{62}
+
+Politics is defined in the broader sense proposed by Pierre
+Bourdieu---that is, as the character of ``any action aimed at
+transforming perception categories.''\textsuperscript{63}
+These studies stress the professionalization of the political function,
+complementing Weber with Bourdieu's analysis.\textsuperscript{64} Political agents live both of and for politics. From a
+more Durkheim-inspired perspective, the academic discipline starts from
+the presupposition of a social division of political work. In order to
+function and thus to calm, if not pacify, social conflict, this power
+relationship presupposes the broadest possible acceptance of the
+political order. In order to obtain the consent of the governed to this
+specific arrangement of relations between members of society, this
+research seeks to understand how authority tends to monopolize
+``legitimating discourse''\textsuperscript{65} by exclusively claiming the authority to state the
+basis of the social order in order to make it appear rational,
+desirable, and sacred. Introductory classes in political science are
+traditionally dispensed as part of political sociology in law faculties.
+The first few hours are devoted to the emergence of the modern state,
+based on Marx, Weber, or Elias, while the functioning of institutions is
+left to law professors in constitutional law classes. The perspective of
+historical sociology\marginnote{\textsuperscript{60} Herfried Münkler and Skadi Krause, ``Geschichte und
+  Selbstverständnis der Politikwissenschaft in Deutschland,'' in
+  \emph{Politikwissenschaft: Ein Grundkurs}, ed. Herfried Münkler
+  (Hamburg: Rowohlt, 2003).} has\marginnote{\textsuperscript{61} The bestselling handbooks
+  for students in political sciences and law are: Jacques Lagroye,
+  \emph{Sociologie politique}, 6th ed. (Paris: Presses de Sciences Po \&
+  Dalloz, 2012), originally published in 1991; Philippe Braud,
+  \emph{Sociologie politique}, 14th ed. (Paris: LGDJ, 2020), originally
+  published in 1992; and Dormagen Jean-Yves and Daniel Mouchard,
+  \emph{Introduction à la sociologie politique}, 5th ed. (Bruxelles: De
+  Boeck, 2019), originally published in 2007. The first of these
+  authors, Jacques Lagroye, died in 2013.} entered\marginnote{\textsuperscript{62} PhDs in political sociology represent 40 percent of
+  political science PhDs published in France each year. Delphine Dulong,
+  ``Le champ politique selon Bourdieu,'' \emph{Politika}, June 11, 2020,
+  \url{https://www.politika.io/fr/article/champ-politique-bourdieu}.} fully\marginnote{\textsuperscript{63} Pierre Bourdieu,
+  \emph{Sociologie générale}, vol. 2, \emph{Cours au collège de France
+  1983--1986} (Paris: Raisons d'agir/Seuil, 2016), 150 (my translation).} into\marginnote{\textsuperscript{64} Pierre Bourdieu,
+  \emph{Language and Symbolic Power} (Cambridge, MA: Harvard University
+  Press, 1991).} the\marginnote{\textsuperscript{65}\setcounter{footnote}{65} Jacques Lagroye, ``La
+  légitimation,'' in \emph{Traité de science politique}, vol. 1\emph{,}
+  ed. Madeleine Grawitz and Jean Leca (Paris: Presses Universitaires de
+  France, 1985).} social sciences of
+politics (notably through the journals \emph{Les Annales} and
+\emph{Genèses: Sciences sociales et histoire}, founded in
+1990),\footnote{See the handbook: Yves Déloye, \emph{Sociologie
+  historique du politique} (Paris: La Découverte, 2017).} while in
+Germany it has been largely abandoned by sociologists, political
+scientists, and media researchers alike, and reserved for
+historians.\footnote{George Steinmetz, ``Field Theory and
+  Interdisciplinarity: History and Sociology in Germany and France
+  during the Twentieth Century,'' \emph{Comparative Studies in Society
+  and History} 59, no. 2 (2017).}
+
+These studies acknowledge that the political process and its degree of
+acceptance by the governed vary greatly and that the problem of
+communication is not addressed in the same way in different social
+environments. Contemporary democracies are not just a regime of checks
+and balances.\footnote{Bernard Manin, \emph{The Principles of
+  Representative Government} (Cambridge: Cambridge University Press,
+  1997).} Founded on the avoidance of physical violence and on the ideal
+of representative government, these regimes are rooted in three
+principles: election and independence of the government; freedom of
+opinion and public expression of the governed; and the testing of
+political choices through discussion.\footnote{Ivan Chupin, Nicolas
+  Hubé, and Nicolas Kaciaf, \emph{Histoire politique et économique des
+  médias en France} (Paris: La Découverte, 2012).} Having said that,
+participants in the political process cover a very broad social
+spectrum, since in principle all persons or groups of persons engaged in
+the defense of an interest or cause are---at least legally---in a
+position to make their voices heard in the public debate and to
+influence public decisions. In this movement of rationalization of
+political activities, ``political communication'' can be analyzed as a
+continuous process whereby political entrepreneurs are equipped with
+cognitive, technical, and instrumental qualities with the aim of
+reducing the uncertainty of the conquest and/or the exercise of
+power.\footnote{Aldrin and Hubé, \emph{Introduction à la communication
+  politique}.} Following Weber, by selecting news, the journalist is
+already ``a type of professional politician''\footnote{Max Weber,
+  \emph{The} \emph{Vocations Lectures} (Indianapolis/Cambridge: Hackett
+  Publishing Company, 2004 {[}1919{]}), 58.} and not a representative of
+a power separated from politics.
+
+This implies that one ought not to analyze press-political relations in
+terms of degree of (in)dependence, but rather to consider them as being
+\emph{interdependent}, and to situate them in the particular social
+figuration in which they evolve.\textsuperscript{72} In
+itself, this approach is not specifically French, but it is part of a
+more general paradigm at the intersection of sociological and historical
+institutionalism\textsuperscript{73} which is more common in
+France and defended, in particular in the US, by authors with a
+Bourdieusian filiation.\textsuperscript{74} As Benson writes, ``the challenge is to bring the same
+sophisticated analysis to bear on understanding media as an independent
+variable, as part of the process of political meaning making rather than
+just a convenient indicator of the outcome.''\textsuperscript{75}
+
+Any research on journalism in France, even if it is German, inevitably
+requires considering the object from this ``national'' academic
+perspective, as it is also the case from the sociological-political
+dimension of the object. But having been integrated for two decades into
+the German scientific field, the epistemological approach is inevitably
+influenced by its own specific perspectives (for instance, the weight\marginnote{\textsuperscript{72} Michael Schudson, ``Autonomy
+  from What?,'' in \emph{Bourdieu and the Journalistic Field}, ed.
+  Rodney Benson and Erik Neveu (Cambridge, MA: Polity, 2005).} of\marginnote{\textsuperscript{73} Peter A. Hall and Rosemary C. R. Taylor,
+  ``Political Science and the Three New Institutionalisms,''
+  \emph{Political Studies} 44, no. 5 (1996).}
+Luhmann\marginnote{\textsuperscript{74} For example: Rodney Benson, ``News
+  Media as a `Journalistic Field': What Bourdieu Adds to New
+  Institutionalism, and Vice Versa,'' \emph{Political Communication} 23,
+  no. 2 (2006). See also the contributors to \emph{Bourdieu and the
+  Journalistic Field}, ed. Rodney Benson and Erik Neveu (Cambridge, MA:
+  Polity, 2005).} and\marginnote{\textsuperscript{75}\setcounter{footnote}{75} Rodney Benson,
+  ``Bringing the Sociology Back In,'' \emph{Political Communication} 21,
+  no. 3 (2004): 276.} Habermas in the field of communication studies).
+
+\hypertarget{journalists-and-politicians-as-associate-rivals}{%
+\section{Journalists and Politicians as
+Associate-Rivals}\label{journalists-and-politicians-as-associate-rivals}}
+
+Thanks to these academic traditions, I observed the long process of
+institutionalization of the rules of information exchange between the
+two groups. This paper refers to my research based on a series of
+fifty-one interviews held with journalists who are active or retired
+members of the BPK, politicians (including Bundestag members,
+parliamentary group president, and/or ministers), and communication
+staff and spokespeople for parties and ministries between 2003 and 2015.
+In addition to these interviews, it is informed by my observations of
+\emph{Bundespressekonferenz} meetings in 2010 and 2015 and of the
+communication staff of various parties during the 2017 federal election
+campaign.\footnote{Hubé, \emph{La politique des chemins courts.}} Its
+analysis also draws on the archives of the \emph{Bundespresseamt}
+(Bundesarchiv Koblenz) 1949--1985, the \emph{Vereinigte Presseabteilung
+der Reichsregierung} (Bundesarchiv Berlin) 1918--1933, the
+\emph{Bundespressekonferenz} (Berlin) 1949--1985, the \emph{Verein der
+ausländischen Presse} 1970--1975, and the administrative documents filed
+in the documentation department of the \emph{Bundespresseamt}. The 1985
+cut-off date was the maximum access limit for open archives according to
+the thirty-year limit at the time of the investigation and according to
+the classification of these data by the institutions (BPA and BPK). Some
+more recent documents could be consulted, when they had not been sent to
+the archives, and the interviews largely made up for this period.
+
+In order to investigate the work done by the journalists of the BPK and
+the Government Communication Service (BPA), I established a \emph{first
+theoretical principle}. In Berlin, like everywhere else, professional
+politicians and journalists need to meet and spend time with each other.
+This type of interdependence, where one needs the other to exchange
+information for publicity, is consubstantial with a social space of
+practices that is strongly heteronomous, and that is commonly referred
+to as the public sphere.\footnote{Schudson, ``Autonomy from What?''} One
+of the central issues for politicians involves access to the market of
+symbolic political goods over which they compete with journalists. The
+means of access to this public sphere are structured very differently
+depending on the social and political configuration. These factors have
+been mentioned by Hallin and Mancini. But one must also consider more
+rarely studied factors such as external constraints (military
+occupations, peace negotiations, wars) and internal contestation
+(revolutionary strikes, attempted putsches, demonstrations, terrorism,
+etc.) which have weighed heavily on German national politics since 1918.
+In other words, the approach that I am proposing takes us out of a
+widespread media-centrism to focus more particularly on the coproduction
+of political discourses.\footnote{Schlesinger, ``Rethinking the
+  Sociology of Journalism.''}
+
+\hypertarget{understanding-the-co-production-of-symbolic-goods}{%
+\subsection{Understanding the Co-production of
+Symbolic
+Goods}\label{understanding-the-co-production-of-symbolic-goods}}
+
+Researchers usually refer to these exchanges using a dance metaphor.
+These scholars are interested above all in the strategic dimension of
+these relations, seeking to understand the interplay of
+influence,\footnote{Jesper Strömbäck and Lars W. Nord, ``Do Politicians
+  Lead The Tango: A Study of the Relationship between Swedish
+  Journalists and Their Political Sources in the Context of Election
+  Campaigns,'' \emph{European Journal of Communication} 21, no. 2
+  (2006).} the strategic calculations,\footnote{Marc-François Bernier,
+  \emph{Les fantômes du Parlement: L'utilité des sources anonymes chez
+  les courriéristes parlementaires} (Sainte-Foy: Presses de l'Université
+  Laval, 2000); Jonathan Cohen, Yariv Tsafti, and Tamir Sheafer, ``The
+  Influence of Presumed Media Influence in Politics: Do Politicians'
+  Perceptions of Media Power Matter?,'' \emph{Public Opinion Quaterly}
+  72, no. 2 (2008).} as well as the representations of one group by the
+other.\footnote{Isabelle Borucki, \emph{Regieren mit Medien:
+  Auswirkungen der Medialisierung auf die Regierungskommunikation der
+  Bundesregierung von 1982--2010} (Opladen: Barbara Budrich Verlag,
+  2014); Jean Charron, \emph{La production de l'actualité: Une analyse
+  stratégique des relations entre la presse parlementaire et les
+  autorités politiques au Québec} (Québec: Boréal, 1994); Karen Ross,
+  ``Danse Macabre: Politicians, Journalists, and the Complicated Rumba
+  of Relationships,'' \emph{International Journal of Press/Politics} 15,
+  no. 3 (2010).} They observe these interactions in order to understand
+the process by which journalists distance themselves from their sources,
+and the framework of these interactions. These investigations focus on
+various places in France and in English-speaking countries: the
+corridors of Parliament,\footnote{Tunstall, \emph{The Westminster Lobby
+  Correspondents}; Bernier, \emph{Les fantômes du Parlement}; Burgert,
+  \emph{Politisch-mediale Beziehungsgeflechte;} Charron, \emph{La
+  production de l'actualité}; Revers, \emph{Contemporary Journalism in
+  the US and Germany}; Sharon Dunwoody and Steven Shields, ``Accounting
+  for Patterns of Selection of Topics in Statehouse Reporting,''
+  \emph{Journalism Quaterly} 63 (1986).} the backstage of
+political\footnote{Crouse, \emph{The Boys on the Bus}; Nicolas Kaciaf,
+  ``Des dissidences aux confidences: Ce que couvrir un parti veut
+  dire,'' \emph{L\textquotesingle informel pour informer: Les
+  journalistes et leurs sources}, ed. Jean-Baptiste Legavre (Paris:
+  L\textquotesingle Harmattan/Pepper, 2014).} or military
+campaigns,\textsuperscript{84} or the rooms
+of European summits.\textsuperscript{85} They show that interactions
+between journalists and politicians are neither random nor driven solely
+by professional ethics. They are subject to permanent negotiations at
+the limit of what is sayable, feasible, and newsworthy. But these
+studies focus on these relationships from a solely strategic and
+generally ahistorical perspective.
+
+My first theoretical choice was to postulate that journalists and
+politicians are associate-rivals, contributing together to the symbolic
+production of politics. Following a more interactionist analysis, this
+oxymoron has the advantage of naming and explaining the ``types of
+non--zero sum social games, made of intertwining and entanglements'' in
+which journalists and politicians get involved. They are in a
+``competitive-cooperative'' relationship, typical of certain power
+relations.\textsuperscript{86} As associates, they contribute to the
+visibility of politics, its rules and frameworks, as well as the issues
+that structure the political game. As rivals, they follow divergent
+interests and expectations: for politicians, the desire to ensure high
+visibility, a positive image, an advantageous framing; and for
+journalists, the desire to keep their independence in this framing,
+their critical sense, up to the possibility of carrying out
+investigations. But this relationship is not only made up of
+interactions and strategic coups, it is structured by different
+factors:\textsuperscript{87} a multipolar
+configuration (competition between political actors, between departments
+within an editorial office, between media and types of media, etc.)
+framed by different watchdog audiences (press council---the German
+\emph{Presserat}, ethics council, legal bodies, etc.) that can ``to a
+greater or lesser extent impose compliance with `obligations,'
+particularly moral ones, and, in so doing, stretch their
+relationships.''\textsuperscript{88}
+
+\newpage During\marginnote{\textsuperscript{84} Emmanuelle Gatien, ``\,`Un peu comme la pluie': La
+  co-production relative de la valeur d'information en temps de
+  guerre,'' \emph{Réseaux}, no. 157--58 (2009); Thomas Hanitzsch,
+  ``Kriegskorrespondenten entmystifizieren,'' in
+  \emph{Kriegskorrespondenten}, ed. Barbara Korte and Horst Tonn
+  (Wiesbaden: VS Verlag für Sozialwissenschaften, 2007).} these\marginnote{\textsuperscript{85} Florian Tixier, ``Concurrences et
+  coopérations pour la production de l'information européenne,''
+  \emph{Sur le journalism} 8, no. 1 (2019).} exchanges,\marginnote{\textsuperscript{86} Jean-Baptiste Legavre, ``Entre conflit et
+  coopération: Les journalistes et les communicants comme
+  `associés-rivaux,'\,'' \emph{Communication \& langages}, no. 169
+  (2011): 106. See also Revers, \emph{Contemporary Journalism in the US
+  and Germany}, 113--52.} the\marginnote{\textsuperscript{87} Desrumaux and Nollet, ``Le travail politique par et
+  pour les médias''; Juhem and Sedel, \emph{Agir par la parole}; Kaciaf
+  and Nollet, ``Journalisme: retour aux sources.''} role\marginnote{\textsuperscript{88}\setcounter{footnote}{88} Legavre, ``Entre conflit et cooperation,''
+  123.} of all public institutions, companies,
+political parties, associations, and trade unions with respect to the
+media is, on the one hand, to capture the media's attention, to promote
+their worldviews, to share positive representations of their ``values,''
+and, on the other hand, to define the limits of the visible and the
+invisible and to prevent the dissemination of information that might
+contradict official messages. The permanent tension surrounding these
+exchanges owes much to public debates and to the way these debates are
+shaped by an ever-evolving definition of what is acceptable. The work
+carried out by sources and journalists is analyzed by this paper in
+equal parts.
+
+\hypertarget{institutionalizing-press-political-relations-codifying-the-off-the-record}{%
+\subsection{Institutionalizing Press-Political
+Relations: Codifying the\\\noident
+Off-the-Record}\label{institutionalizing-press-political-relations-codifying-the-off-the-record}}
+
+Looking at these relations and, especially, the off-the-record rules,
+Germany is again somewhat particular. The highly formalized separation
+between confidential information and official information is based on
+the institutionalization and codification of the procedures of exchange.
+From an international and comparative perspective, the most surprising
+thing is that these procedures are respected to such an extent. The
+question that arises from all of this is the following: How can we
+explain that the collective benefits of calculability and predictability
+linked to codification ultimately prevail without discussion over the
+individual interests of journalists and political actors to break the
+rules?\footnote{Pierre Bourdieu, ``Codification,'' in \emph{In Other
+  Words: Essays Toward a Reflexive Sociology} (Stanford: Stanford
+  University Press, 1990).} If individual journalists have various ways
+of accessing information, here the question focuses upon those
+collective moments of transmitting such confidential material (BPK
+meetings, dinners, etc.). Indeed, from a rational point of view, it may
+be in their interest to publish information in the name of citizens'
+right to this information, of economic competition between newspapers,
+or of the quest for mediatization of politicians. But they don't do it.
+These relationships are institutionalized through the enactment of a set
+of rules, the complexity of which is based on the fact that their
+practical principles are embedded in moral principles.\footnote{Bailey,
+  \emph{Stratagems and Spoils,} 16.} It is, as we have said, a set of
+meetings and exchanges of information and conversations (more or less
+formal) in a non-public context, but which imposes a moral constraint on
+its users: to maintain in secrecy a practice that is potentially
+suspected of complicity and regularly denounced.
+
+The codification process works in two ways.\footnote{Jean-Baptiste
+  Legavre, ``\emph{Off the record}: Mode d\textquotesingle emploi
+  d\textquotesingle un instrument de coordination,'' \emph{Politix}, no.
+  19 (1992).} First, the definition of public arenas: Each place has its
+type of interaction, type of information provided (public vs.
+confidential arenas), and roles played by the protagonists. Journalists
+and politicians or PR people emphasize the contractual and procedural
+dimension of these interactions. The second way of regulating this
+social space involves a codification of the publication of press
+releases. \emph{Unter drei} corresponds to situations where confidences
+may not be published under any circumstances. It is numbered three
+because it comes after two other regulatory mechanisms laid down in the
+BPK's bylaws, all subject to sanction by means of exclusion from the
+group.
+
+\begin{quote}
+§ 16 (1) Information is given at press conferences: \emph{unter 1}
+{[}under 1: on-record{]}, for general use; or \emph{unter 2} {[}under 2:
+off-record{]}, for use with no mention of source or name of informant;
+or \emph{unter 3} {[}under 3: background{]}, confidential.
+
+(2) Informants may state how their information is to be handled.
+Association members and press conference participants are bound by this
+classification of the information. If no statement is made, the material
+is considered to be for general use. Any breach of these rules
+concerning the classification of information may lead to exclusion from
+the association or withdrawal of accreditation as permanent
+guest.\footnote{Extract from the BPK's bylaws, our translation.
+  ``Satzung'' {[}Bylaws{]}, Bundespressekonferenz (website),
+  \url{https://www.bundespressekonferenz.de/verein/satzung}.}
+\end{quote}
+
+\enlargethispage{\baselineskip}
+
+The recurring question for a journalist, then, is if and when
+information can be divulged. In French media, off-the-record information
+is rarely \emph{unter drei}: It is given by a politician in the
+hope---or at least the knowledge---that journalists will release it,
+while the politician simultaneously seeks to cover themselves so that,
+if a controversy blows up, they can say that it didn't come from them.
+An impossible task, of course. Most of the time the breach of the
+off-the-record rule is tacit, since the actors know---i.e., have
+internalized---the boundaries of what is possible, and also know each
+other. But in order to be certain, journalists often get together after
+off-the-record conversations to agree on what they have heard and
+whether it can be released, as long as a colleague seeking a competitive
+scoop does not release it first. But in Germany, for a journalist, the
+threat of exclusion is a sword of Damocles. What maintains the symbolic
+order is the fact that this exclusion is the work of journalists alone.
+That is how BPK journalists protect the procedure and maintain a refined
+system of inclusion and exclusion, selecting new entrants and excluding
+undesirables---i.e., those who do not follow the rules. Within archives
+and internal notes, I have noticed that the code has nearly always been
+complied with. Breaches of confidence in these circumstances have
+consequences for both the culprit and the group. Trust can only be
+guaranteed because the organization ensures that these spaces are
+relatively independent by bringing ``into play new, impersonal, motives
+for action.''\footnote{Niklas Luhmann, \emph{Trust and Power} (New York:
+  John Wiley and Sons, 1979), 93. See also Bourdieu, ``Codification.''}
+So breaching this trust amounts to unravelling the ``internally
+guaranteed security'' provided by the organization that enables
+politicians to associate with journalists.\footnote{Niklas Luhmann,
+  \emph{Trust and Power}.} In other words, to avoid reintroducing
+mistrust, journalists' reactions are constrained by the need to maintain
+the proper functioning of the organization.
+
+The culturalist idea of a typically German conformity to the rules is
+hardly satisfactory. The explanation for this very strong codification
+instead lies in the very limited figuration of parliamentary politics in
+the confined space of federal politics, as Norbert Elias noted when
+writing about court society.\footnote{Norbert Elias, \emph{The Court
+  Society} (Dublin: University College Dublin Press, 2006).} German
+journalists do not talk much about politics behind the scenes, and they
+are much less able to demonstrate political strategies and tricks than
+their counterparts in other countries.\footnote{De~Vreese, Esser, and
+  Hopmann, \emph{Comparing Political Journalism.}} In this way, German
+journalists can maintain a framework of trust within this federal
+area---described as a spaceship---where all is known and observed. This
+codification of the inner circle symbolically guarantees the
+independence of both groups. Since 1918, journalists and politicians
+have sought to build and maintain a stabilized frame of interaction.
+During the National Socialist period, Goebbels's \emph{Reichsministerium
+für Volksaufklärung und Propaganda} transformed the
+\emph{Reichspressekonferenz} into a brutal top-down
+institution,\footnote{Fröhlich, ``Joseph Goebbels: Profil de sa
+  propagande (1926--1939)''; Mühlenfeld, ``Vom Kommissariat zum
+  Ministerium.''} but contributed to this state apparatus continuum by
+maintaining bureaucratic offices and an institutional budget and by
+delegating leadership to a civil servant.\footnote{Weiß, ``Journalisten:
+  Worte als Taten''; Nicolas Hubé, ``L'\emph{Öffentlichkeitsarbeit}~ou
+  la propagande au service de la démocratie: La définition du travail de
+  communication gouvernementale dans les premières années de la RFA
+  (1949--1953),'' \emph{Histoire, économie \& société} 41, no. 4 (2022).}
+
+Based on what Goffman called \emph{keying}---i.e., the transformation of
+a set of conventions of a given activity (here, governmental press
+conferences) into something patterned\footnote{Erving Goffman,
+  \emph{Frame Analysis: An Essay on the Organization of Experience}
+  (Boston: Northeastern University Press, 1986), 43--44.}---this
+interactional frame has always had to demonstrate its filiation to
+democratic theory (in particular, respect for the division of powers) in
+order to reach its goal of legitimizing politics and political
+journalism. This codification of exchanges was, at the same time, the
+guarantee of a pacification of exchanges between the two groups with
+their intense political relations, notably during the Weimar Republic.
+All the efforts by journalists' professional associations were focused
+on gaining the necessary latitude to regulate these interactions solely
+under the control of journalists. The symbolic tour de force of the
+\emph{Bundespressekonferenz} in 1949 succeeded in building a corporatist
+monopoly for managing press-political relations.
+
+\hypertarget{understanding-the-structuring-of-the-national-public-sphere-in-practice}{%
+\section{Understanding the Structuring of the National Public Sphere\\\noindent
+in
+Practice}\label{understanding-the-structuring-of-the-national-public-sphere-in-practice}}
+
+By choosing to observe interactions from the perspective of their
+long-term institutionalization, the focus shifts. Journalistic and
+political actors do not, simply through strategic calculation, have a
+sufficient structuring force that is independent of the socio-political
+context. This would be tantamount to arguing that, over the full period,
+each actor perceives the separation of powers and democracy issues in
+exactly the same manner. Thus, my second theoretical choice: finding the
+sociogenesis of these exchanges and understanding the place occupied by
+the instruments designed to control the expression of opinions.
+
+\hypertarget{habermas-revisited-the-invention-of-the-uxf6ffentlichkeitsarbeit}{%
+\subsection{Habermas Revisited: The Invention
+of the
+Öffentlichkeitsarbeit}\label{habermas-revisited-the-invention-of-the-uxf6ffentlichkeitsarbeit}}
+
+Understanding the legitimization of politics requires analyzing and
+grasping the structural transformations of the national public sphere.
+Both the state and journalism are institutions that have been socially
+constructed as a result of a long-term process.\footnote{Michael
+  Schudson, ``The `Public Sphere' and Its Problems: Bringing the State
+  (Back) In,'' \emph{Notre Dame Journal of Law, Ethics \& Public Policy}
+  8, no. 2 (1994).} The democratic issue is at stake in the structuring
+of this public sphere, in order to defend it against external or
+internal political threats, and to convince citizens and journalists of
+its validity. I chose to observe these relations in the realm of
+historical bifurcations in order to clarify their genetic constitution,
+to think about the paths taken---in other words, to understand what the
+structuring of these exchanges would have been like or against what
+backdrop they were built.\footnote{Pierre Bourdieu, \emph{On the State:
+  Lectures at the Collège de France 1989--1992} (Cambridge, MA: Polity
+  Press, 2015).} In line with this constructivist approach, no
+distinction was made a priori between the practices of ``propaganda,''
+``\emph{Öffentlichkeitsarbeit},'' public communication, and public
+relations.\footnote{Caroline Ollivier-Yaniv, ``De l'opposition entre
+  `propagande' et `communication publique' à la définition de la
+  politique du discours,'' \emph{Quaderni}, no. 72 (2010).} It is
+obvious from our archives that these labels differ less in essence than
+in how they (de-)legitimize a practice.
+
+Rather than seeking the normative and dialogical dimensions of the
+democratic structure, this paper attempts to place this public sphere in
+its material and historical configuration. In 1962, Habermas showed the
+contemporary degradation of the public sphere by stressing the erosion
+of the critical capacity of citizens, the commercialization of
+information, the double rise of the state and of the great educational
+and economic bureaucracies which threatened the private sphere and
+perverted the original principles of a dialogical public sphere
+undergoing the colonization of the lived world by the mass
+media.\footnote{Jürgen Habermas, \emph{The} \emph{Structural
+  Transformation of the Public Sphere} (Cambridge, MA: MIT Press, 1989).}
+This sphere was structured by political actors and a public of
+practitioners (journalists, associations, interest groups) and citizens
+who challenged governmental work. But Habermas's thoughts are all about
+the affirmation of a ``re-feudalization of the public
+sphere,''\footnote{Jürgen Habermas, \emph{Structural Transformation of
+  the Public Sphere}, 195.} subordinated to the influence of propaganda
+and commercial advertising. This public sphere (\emph{Öffentlichkeit})
+was affected by its historical formation after a lengthy process of
+imposition of worldviews and material investments. This work on the
+public sphere---\emph{Öffentlichkeitsarbeit} in German---was the
+concrete action of the actors engaged around Adenauer within the state
+apparatus. Habermas's critical and normative expression must be
+understood in this critical context, shared by many intellectuals in the
+early days of the FRG,\footnote{See the work of one of the founders of
+  post-war German political science, Ralf Dahrendorf, \emph{Gesellschaft
+  und Demokratie in Deutschland} (Munich: Piper, 1965).} whereby German
+democracy \emph{à la} Adenauer was a form of ``enlightened absolutism''
+in which journalists should have taken a more critical stance, looking
+for more factual and investigative information. The fear was that this
+\emph{Öffentlichkeitsarbeit} was merely a continuation of Goebbels-style
+propaganda in a new guise of democratic respectability. Political
+parties led the first campaigns showing strong distance from the
+National Socialist regime, which was omnipresent and
+cumbersome.\footnote{Thomas Mergel, \emph{Propaganda nach Hitler: Eine
+  Kulturgeschichte des Wahlkampfs in der Bundesrepublik 1949--1990}
+  (Göttingen: Wallstein Verlag, 2010).} The governments all had in mind
+the ``necessity'' to act on public opinion. This was part of the
+organizational continuity of the state apparatus. Thus, successive
+governments in 1953, in 1968, and in 1977 intended to create a new
+Ministry of Information and Communication. But political and
+journalistic opposition rendered this impossible, or even
+taboo.\footnote{Hubé, ``L'\emph{Öffentlichkeitsarbeit}~ou la propagande
+  au service de la démocratie.''}
+
+In this respect, although no new ministry was created to control public
+opinion, democratic Germany is a rather unique case because of the
+(relative) persistence of its structures and its state apparatus in
+charge of the legitimization of power. In contrast to France,\footnote{Didier
+  Georgakakis\emph{, La République contre la propagande: aux origines
+  perdues de la communication d'État en France (1917--1940)} (Paris:
+  Economica, 2004)\emph{;} Caroline Ollivier-Yaniv, \emph{L'État
+  communicant} (Paris: Presses Universitaires de France, 2000).} neither
+parliamentarianism nor authoritarian propaganda seems to have been an
+obstacle to the institutionalization of state thinking and a state
+apparatus in charge of the enactment of symbolic goods. Journalists, on
+the other hand, established themselves both as a competing group,
+identically claiming a monopoly on the diffusion of symbolic goods, and
+as an associate in the defense of a form of ``State Reason''
+guaranteeing the freedom of the press. Nothing in that period, however,
+could allow one to predict the result of this competitive
+struggle---namely: which group would succeed in imposing its definition
+of the situation, or which group would contribute its own sense of
+social stability.\footnote{George Steinmetz, ``Bourdieusian Field Theory
+  and the Reorientation of Historical Sociology,'' in \emph{The Oxford
+  Handbook of Pierre Bourdieu}, ed. Thomas Medvetz and Jeffrey Sallaz
+  (Oxford: Oxford University Press, 2018), 612.}
+
+After the Empire, the first German democratic experiment took place in
+the context of a ``rudimentary State,'' according to Elias,\footnote{Norbert
+  Elias, \emph{The Germans: Power Struggles and the Development of
+  Habitus in the Nineteenth and Twentieth Centuries} (New York: Columbia
+  University Press, 1996), 218.} with a fragmented public sphere that
+was highly competitive and divided, and where journalists contributed to
+these very high political tensions.\footnote{Fulda, \emph{Press and
+  Politics.}} In this configuration, a ``thought of the State'' (as
+Bourdieu would say\footnote{Pierre Bourdieu, ``Rethinking the State:
+  Genesis and Structure of the Bureaucratic Field,'' \emph{Sociological
+  Theory 12}, no. 1 (1994).}) emerged around two emergencies for
+legitimizing the new regime: on the one hand, the need to persuade the
+citizens, and on the other hand, the necessary enrollment of spokesmen
+for this opinion (namely, the journalists). Achieving this enterprise
+meant registering these relations in a network of strongly pacified
+interactions. This idea of the ``threat'' to or ``defense'' of the
+regime was strongly anchored in the generation of political and
+journalistic agents active between 1920 and 1950, and lent sociological
+sense to the continuities that were observed between 1918 and
+1949.\footnote{Eckhard Jesse, \emph{Systemwechsel in Deutschland:
+  1918/19---1933---1945/49---1989/90} (Bonn: Bundeszentrale für
+  politische Bildung, 2013).} In this period, the context of revolution
+and then totalitarianism, as well as the failure of the first democratic
+experience of Weimar, were both constraints and conditions of success
+for the establishment of renewed forms of press-political relations
+after 1949. The experience of a totalitarian and brutal practice from
+1933 to 1945 made the establishment of a dedicated ministry symbolically
+unthinkable ex-post, or at least gave journalists moral arguments to
+declare these projects immediately illegitimate.
+
+\hypertarget{courtization-of-individuals-in-a-federal-capital}{%
+\subsection{Courtization of Individuals in a
+Federal
+Capital}\label{courtization-of-individuals-in-a-federal-capital}}
+
+This paper proposes to reconsider the concrete mode of functioning of
+this public sphere, at the mesosociological level of
+organizations.\footnote{Benson, ``Bringing the Sociology Back In,'' 280.}
+It is possible to understand these relations not primarily from the
+point of view of the democratic theory of the separation of powers but
+rather as a social construction of actors objectively interacting and
+subjectively engaged in these relations. In particular, it is a matter
+of analyzing the social mechanisms by which such a figuration produces
+what Elias calls a \emph{courtization} of the agents in
+competition\footnote{Elias, \emph{The Court Society.}}---in other words,
+more or less pacified interactions between groups that are competing but
+constrained by their co-presence. Press-political exchanges do not take
+place in a theoretical public sphere but perform this public sphere
+``whose places, spaces, forms, scenes and moments must be analyzed
+respectively.''\footnote{Patrick Boucheron and Nicolas Offenstadt, ``Une
+  histoire de l'échange politique,'' in \emph{L'espace public au
+  Moyen-Âge: Débats autour de Jürgen Habermas}, ed. Patrick Boucheron
+  and Nicolas Offenstadt (Paris: Presses Universitaires de France,
+  2011), 17.} Power is as much staged as it is embodied by men and women
+in interaction and who are interdependent.
+
+Moreover, the structuring of (political) activity ``has to be explicated
+in terms of its spatiality as well as its temporality,'' experienced by
+actors themselves.\footnote{Anthony Giddens, \emph{The Constitution of
+  Society: Outline of the Theory of Structuration} (Berkeley: University
+  of California Press, 1986), 118.} This approach was thus also
+nourished by the recent findings from the so-called ``spatial turn'' of
+the social sciences in order to shed light on the historical
+articulations of a world of relations, which also occurred in a specific
+territory that could be objectified.\footnote{Doris Bachmann-Medick,
+  \emph{Cultural Turns: Neuorientierungen in den Kulturwissenschaften}
+  (Reinbek: Rowohlt, 2018).} Spatiality is not only an outcome; it is
+also a part of the explanation.\footnote{Doreen Massey, ``Introduction:
+  Geography Matters,'' in \emph{Geography Matters}, ed. Doreen Massey
+  and John Allen (Cambridge: Cambridge University Press, 1984), 4.} In
+contrast to a state-national construction, like those of Paris and
+London, centralized around a royal court and a state nobility in a
+geographical space that concentrates both the political-administrative
+elites and the economic power, ``Berlin is a young city.''\footnote{Elias,
+  \emph{The Germans}, 9.} In our case, one of the specificities is that,
+in the course of its history, both groups---journalists and
+politicians---sought to settle in a dedicated place at the heart of
+power. This location in the capital is more than anecdotal because it
+changes the interaction settings every time. In concrete terms, the
+question arose as to whether political and parliamentary journalists
+should move into a common building (or not), and whether they should
+procure it or build it for the \emph{Pressehaus} under Weimar or the
+BPK. This was not self-evident. It required negotiations to obtain funds
+or land to set up the journalists' group as close as possible to the
+political institutions. Moreover, only those political journalists
+covering federal politics from the federal seat can be members of the
+BPK. This material dimension gave a different meaning to the corporatist
+system by installing it spatially. Here again, these socio-geographical
+figurations and the presence of journalists and politicians in precise
+places were not spontaneous or ``natural''; they were the object of a
+construction in the proper sense of the term: that of a desired and
+physically identifiable proximity.
+
+If the Weimar figuration was characterized by an extreme polarization of
+press titles,\footnote{Fulda, \emph{Press and Politics,} 223.} the
+strategy of the government was to create what we will call the
+conditions for pacification by coalescence. The rulers of 1918 (mainly)
+and the political agents after 1949 had only one idea: to create a dense
+network of interdependent relationships where rapid access to each other
+would allow the construction of what the actors themselves would end up
+calling a \emph{politics of the short paths,}\footnote{Ernst Ney,
+  President of the Bundespressekonferenz, to Dr. Hans Daniels, City
+  Mayor of Bonn, 26 July 1978, Vorstand {[}Board of Directors{]}
+  14.02.1978 bis 12.02.1979, Bundespressekonferenz Archives, Berlin.}
+the only one capable of pacifying these exchanges, involving proximity
+and permanent exchanges. The embedding of the interactions within
+particular institutions---i.e., the \emph{courtization} of the actors of
+this parliamentary democracy---allowed the preservation of a regulated
+and disciplined game, in spite of everything.\footnote{Elias, \emph{The
+  Germans,} 288--97.} It was also necessary to provide these
+representation professionals with distinctive places---the government
+quarter (\emph{Regierungsviertel}) and its multiple reserved venues or
+moments---where this parliamentary etiquette could be practiced and
+where journalists and parliamentarians could rub shoulders. This is made
+analytically possible by the cross-referencing and discussion of Elias's
+and Bourdieu's theories in French political sociology, notably used by
+French media scholars like Erik Neveu.
+
+After 1945, with the Allied presence on German soil and the fear of
+international reprimands, the idea gradually took hold that all the
+actors in these institutions (including the opposition and journalists)
+had the same sense of ``responsibilities'' and the same respect for the
+``democratic frames'' fixed by the Fundamental Law and guaranteed by the
+Karlsruhe Court. This demonstration was achieved, on the one hand,
+through the ritualization of press conferences within the BPK, and on
+the other hand, through the codification of the framework of exchanges,
+which closed the border between the private world of informal relations
+and the public world of television interviews, for example.
+
+\hypertarget{revisiting-field-theory-an-interstitial-field-within-the-federal-state}{%
+\subsection{Revisiting Field Theory: An
+Interstitial Field Within the Federal
+State}\label{revisiting-field-theory-an-interstitial-field-within-the-federal-state}}
+
+Working on these figuration changes also required a reconsideration of
+the generality of field theory.\footnote{Gisèle Sapiro, ``Le champ
+  est-il national? La théorie de la différenciation sociale au prisme de
+  l\textquotesingle histoire globale,'' \emph{Actes de la recherche en
+  sciences sociales}, no. 200 (2013): 85.} As mentioned, the
+sociogenesis of press-political relations in Germany led to the
+construction of an autonomous space within the field of federal power,
+that of the production of symbolic governmental goods for the general
+public. It is indeed a field---a structured, relatively autonomous
+space---of objective relations, which cannot be reduced to the
+interactions between social agents competing for the definition of a
+situation and constrained by ``the mediation of the representation that
+people have of the structure.''\footnote{Pierre Bourdieu,
+  \emph{Sociologie générale,} vol. 1, \emph{Cours au collège de France
+  1981--1983} (Paris: Raisons d'agir/Seuil, 2015), 558.} This field is
+based on the durable constitution of a state sector (and its apparatus)
+dedicated to the production of symbolic goods for the public. It is the
+object of a permanent struggle for the delimitation of the legitimate
+actors who can participate in it, as well as the ways of acting and
+speaking within this space designed for positions and stances. Like
+parliamentarianism, it is a space for the expression of a certain
+\emph{consensus}, or rather for the disciplining of the legitimate
+expression of \emph{dissensus.}\footnote{De~Vreese, Esser, and Hopmann,
+  \emph{Comparing Political Journalism.}} The historical originality of
+this construction rests on a corporatist-democratic system, that is to
+say, concretely, on a monopolization by the journalists' organizations
+in charge of the coverage of parliamentary politics (\emph{Verein
+Berliner Presse, Reichsverband der deutschen Presse,} and
+\emph{Bundespressekonferenz}) of the expression and transmission of
+governmental information, protecting itself against competitive
+struggles between editorial offices.\footnote{Revers, \emph{Contemporary
+  Journalism.}} This forces the state apparatus all the more strongly to
+organize a relatively unified production of government statements in
+return. It is these ``relational and dynamic properties, in their own
+historicity and temporality,''\footnote{Sapiro, ``Le champ est-il
+  national?,'' 85.} that lead us to speak of the field of governmental
+symbolic politics. This term is more appropriate to that of the
+political/media field, which is too imprecise to describe the effects of
+circulation of political statements on the media space and the relations
+that structure them. These relations between the spaces and the effects
+of intersectoral conversion have to be studied.
+
+However, this field is neither independent nor autonomous. In many ways,
+it is a field that can be described as weak or interstitial.\footnote{Stephanie
+  Mudge and Antoine Vauchez, ``Building Europe on a Weak Field: Law,
+  Economics, and Scholarly Avatars in Transnational Politics,''
+  \emph{American Journal of Sociology} 118, no. 2 (2012); Antoine
+  Vauchez, ``Interstitial Power in Fields of Limited Statehood:
+  Introducing a `Weak Field' Approach to the Study of Transnational
+  Settings,'' \emph{International Political Sociology} 5, no. 3 (2011);
+  Thomas Medvetz, ``Les think tanks dans le champ du pouvoir
+  étasunien,'' \emph{Actes de la recherche en sciences sociales}, no.
+  200 (2013).} This term describes an empirical reality and inscribes
+these relationships in a larger social structure. It is a ``systemic''
+concept that refers to the way the field of power functions.\footnote{Medvetz,
+  ``Les think tanks,'' 55.} The concept of the interstitial field
+implies that multiple fields are in competition for the control of these
+practices. The weakness of this field lies in this interstitial
+position, where the actors are caught up in the logics of action of
+their own fields, but where goods, norms, and knowledge are exchanged
+and capital and positions are converted from one field to another. After
+having carried out prosopographical work on the trajectories of
+journalists and government communicators, one can show that the actors
+are sufficiently bound by these relatively autonomous rules of the game
+to speak of a field, but no profession or professional group is able to
+impose its rules and precepts to structure its center of
+gravity.\footnote{Vauchez, ``Interstitial Power in Fields,'' 342.}
+Parliamentary journalists are very largely dependent upon their
+inclusion in the national journalistic field. On the other hand, the
+national journalistic field alone does not cover the area of political
+journalism, which is practiced from the headquarters of the editorial
+offices and is scattered throughout the Federal Republic. The
+functioning of parliamentary journalism is constrained by the logic of
+the parliamentary game. The work of the spokespersons is also doubly
+dependent on the rules of the political and bureaucratic fields and
+their interconnection, especially because bureaucratic appointments are
+linked to electoral contingencies.
+
+Finally, it allows us to rethink the theory in its institutional
+anchorage. The centrality and independence of this field of interaction
+is relative, because it owes much to the federal organization of
+political institutions and editorial offices. Federalism weakens the
+magnetic centrality of this field, because not all political and
+journalistic careers take place in Bonn or Berlin, and not all
+\emph{cursus honorum} are oriented towards the federal
+center.\footnote{Martin Baloge and Nicolas Hubé, ``Coproduire les biens
+  politiques: Journalistes et politiques en comparaison dans des
+  contextes centralisés et fédéraux,'' \emph{Savoir/Agir}, no. 46
+  (2019).} Paradoxically, it is also this federal logic that allows this
+field to remain autonomous, by guaranteeing the closure of this field.
+The concept allows us to describe the logics in terms of career as well
+as the reconversions of capital, resources, and knowledge that can take
+place in this field and can then be reinvested in other fields
+(journalistic, but especially bureaucratic and political). The concept
+gives meaning to the institutionalization of press-political relations.
+
+\hypertarget{conclusion}{%
+\section{Conclusion}\label{conclusion}}
+
+Understanding interactions between the press and politics hence requires
+an understanding of the space of co-production of political discourse
+and its structuring, the interdependence and the rationalization of the
+political work oriented towards the media as a relational arrangement
+between these two groups of actors (at least). One of the issues at
+stake in this pacification of exchanges concerns access to the market of
+symbolic political goods over which the political authorities compete
+with journalists and over which different state sectors compete with
+each other. The tour de force of the state-national constructions of
+modern states is to have been able to concentrate the instruments of
+legitimization and to develop (or attempt to do so) a state apparatus to
+support this process.\footnote{Jacques Lagroye, ``La légitimation,'' in
+  \emph{Traité de science politique}, vol. 1, ed. Madeleine Grawitz and
+  Jean Leca (Paris: Presses Universitaires de France, 1985).} This
+sociology of political communication is part of a historical sociology
+of the State, where it is understood that journalists participate in the
+field of power.\footnote{Aldrin and Hubé, \emph{Introduction à la
+  communication politique}; Schudson, ``The `Public Sphere' and Its
+  Problems.''}
+
+This approach is a dominant one in French political communication
+studies. Adopting reflexive thinking on my own French media studies
+routines, I tried here to present the benefits of both national
+approaches. Far from rejecting either the French or the German approach,
+this investigation was only made possible by taking advantage of each.
+My objective was to propose a sociology of the mediatization of politics
+that would combine the comprehensive sociology of journalistic work and
+the political sociology of federal (and above all parliamentary and
+governmental) power, observed over time, and integrate contributions of
+media studies in France and Germany and French political sociology,
+largely influenced by a constructivist and historical sociology
+approach. The more German perspective of a comparative and more
+institutional analysis of politics led to an exploration of the
+functioning of democracy and parliamentarianism. The more French
+approach of the sociology of journalism has placed journalists and
+politicians in a process of interdependency rather than independence.
+Finally, the weight of historical political sociology provides a path to
+follow the construction and evolution of media systems in relation to
+those of political systems.
+
+
+
+
+\section{Bibliography}\label{bibliography}
+
+\begin{hangparas}{.25in}{1} 
+
+
+
+Aldrin, Philippe, and Nicolas Hubé. \emph{Introduction à la
+communication politique}. Bruxelles: De Boeck, 2022.
+
+Altmeppen, Klaus-Dieter, and Martin Löffelholz. ``Zwischen
+Verlautbarungsorgan und `vierter Gewalt': Strukturen, Abhängigkeiten und
+Perspektiven des politischen Journalismus.'' In \emph{Politikvermittlung
+und Demokratie in der Mediengesellschaft}, edited by Ulrich Sarcinelli,
+97--123. Bonn: Bundeszentrale für politische Bildung, 1998.
+
+Altmeppen, Klaus-Dieter, Thomas Hanitzsch, and Carsten Schlüter, eds.
+\emph{Journalismustheorie: Next Generation; Soziologische Grundlegung
+und theoretische Innovation}. Wiesbaden: VS Verlag, 2007.
+
+Anderson, C. W., Leonard Downie, and Michael Schudson. \emph{The News
+Media: What Everyone Needs to Know}. Oxford: Oxford University Press,
+2016.
+
+Arnold, Klaus, Christoph Classen, Susanne Kinnebrock, Edgar Lersch, and
+Hans-Ulrich Wagner, eds. \emph{Von der Politisierung der Medien zur
+Medialisierung des Politischen? Zum Verhältnis von Medien,
+Öffentlichkeiten und Politik im 20. Jahrhundert}. Leipzig: Leipziger
+Universitätsverlag, 2010.
+
+Averbeck-Lietz, Stefanie, and Meyen Michael, eds. \emph{Handbuch nicht
+standardisierte Methoden in der Kommunikationswissenschaft}. Wiesbaden:
+Springer VS, 2016.
+
+Averbeck-Lietz, Stefanie, Fabien Bonnet, and Bonnet Jacques. ``Le
+discours épistémologique des Sciences de l\textquotesingle information
+et de la communication.'' \emph{Revue française des sciences de
+l'information et de la communication} 4 (2014).
+\url{https://doi.org/10.4000/rfsic.823}.
+
+Bachmann-Medick, Doris. \emph{Cultural Turns: Neuorientierungen in den
+Kulturwissenschaften}. Reinbek: Rowohlt, 2018.
+
+Bailey, Frederick George. \emph{Stratagems and Spoils: A Social
+Anthropology of Politics}. Oxford: Westview Press, 2001.
+
+Baisnée, Olivier. ``Reporting the European Union: A Study in
+Journalistic Boredom.'' In \emph{Political Journalism in Transition:
+Western Europe in a Comparative Perspective}, edited by Raymond Kuhn and
+Rasmus Kleis Nielsen, 131--50. London: I.B. Taurus \& Co., 2013.
+
+Baloge, Martin, and Nicolas Hubé. ``Coproduire les biens politiques:
+Journalistes et politiques en comparaison dans des contextes centralisés
+et fédéraux.'' \emph{Savoir/Agir}, no. 46 (2019): 57--64.
+
+Benson, Rodney. ``Bringing the Sociology Back In.'' \emph{Political
+Communication} 21, no. 3 (2004): 275--92.
+
+Benson, Rodney. ``News Media as a `Journalistic Field': What Bourdieu
+Adds to New Institutionalism, and Vice Versa.'' \emph{Political
+Communication} 23, no. 2 (2006): 187--203.
+
+Bernier, Marc-François. \emph{Les fantômes du Parlement: L'utilité des
+sources anonymes chez les courriéristes parlementaires}. Sainte-Foy:
+Presses de l'Université Laval, 2000.
+
+Bläser, Ralph. ``Ménage à trois: la pertinence géographique des
+relations de lobbying entre les ONG-Bankwatch, l'État national et la
+Banque mondiale à Washington D.C.'' \emph{L\textquotesingle espace
+politique}, no. 1 (2007).
+\url{https://doi.org/10.4000/espacepolitique.303}.
+
+Blumler, Jay. ``The Fourth Age of Communication.'' \emph{Politiques de
+communication}, no. 6 (2016): 19--30.
+
+Bolz, Lisa. ``Recherches sur le journalisme en France et en Allemagne:
+un dialogue impossible?'' \emph{Revue française des sciences de
+l'information et de la communication}, no. 18 (2019).
+\url{https://doi.org/10.4000/rfsic.7702}.
+
+Borowiec, Steven. ``Writers of Wrongs: Have Japan's Press Clubs Created
+Overly Cosy Relationships Between Business Leaders and the Press?''
+\emph{Index on Censorship} 45, no. 2 (2016): 48--50.
+
+Borucki, Isabelle. \emph{Regieren mit Medien: Auswirkungen der
+Medialisierung auf die Regierungskommunikation der Bundesregierung von
+1982--2010}. Opladen: Barbara Budrich Verlag, 2014.
+
+Bösch, Frank, and Norbert Frei, eds. \emph{Medialisierung und Demokratie
+im 20. Jahrhundert.} Göttingen: Wallstein Verlag, 2006.
+
+Boucheron, Patrick, and Nicolas Offenstadt, eds. \emph{L'espace public
+au Moyen-Âge: Débats autour de Jürgen Habermas}. Paris: Presses
+Universitaires de France, 2011.
+
+Bourdieu, Pierre. ``Codification.'' In \emph{In Other Words: Essays
+Toward a Reflexive Sociology}. Translated by Matthew Adamson, 76--86.
+Stanford: Stanford University Press, 1990.
+
+Bourdieu, Pierre. \emph{Language and Symbolic Power}. Cambridge, MA:
+Harvard University Press, 1991.
+
+Bourdieu, Pierre. ``Rethinking the State: Genesis and Structure of the
+Bureaucratic Field.'' \emph{Sociological Theory} 12, no. 1 (1994):
+1--18.
+
+Bourdieu, Pierre. \emph{Sociologie générale.} Vol. 1, \emph{Cours au
+collège de France 1981--1983}. Paris: Raisons d'agir/Seuil, 2015.
+
+Bourdieu, Pierre. \emph{Sociologie générale}. Vol. 2, \emph{Cours au
+collège de France 1983--1986.} Paris: Raisons d'agir/Seuil, 2016.
+
+Bourdieu, Pierre. \emph{On the State: Lectures at the Collège de France
+1989--1992.} Cambridge, MA: Polity Press, 2015.
+
+Bramsted, Ernest K. \emph{Goebbels und die nationalsozialistische
+Propaganda 1925--1945}. Frankfurt: Fischer, 1971.
+
+Braud, Philippe. \emph{Sociologie politique}. Paris: LGDJ, 2020.
+
+Brosda, Carsten, and Christian Schicha. ``Interaktion von Politik,
+Public Relations und Journalismus.'' In \emph{Politische Akteure in der
+Mediendemokratie: Politiker in den Fesseln der Medien?}, edited by
+Heribert Schatz, Patrick Rössler, and Jörg-Uwe Nieland, 41--64.
+Wiesbaden: Westdeutscher Verlag, 2002.
+
+Bruns, Tissy. \emph{Republik der Wichtigtuer: Ein Bericht aus Berlin}.
+Bonn: Bundeszentrale für politische Bildung, 2007.
+
+Burgert, Denise. \emph{Politisch-mediale Beziehungsgeflechte: Ein
+Vergleich politikfeldspezifische Kommunikationskulturen in Deutschland
+und Frankreich}. Berlin: LIT Verlag, 2010.
+
+Büttner, Ursula. \emph{Weimar: Die überforderte Republik 1918--1933}.
+Bonn: Bundeszentrale für politische Bildung, 2008.
+
+Castellvi, César. ``Les Clubs de presse au Japon: Le journaliste,
+l'entreprise et ses sources.'' \emph{Sur le journalisme} 8, no. 2
+(2019): 124--37.
+
+Charron, Jean. \emph{La production de l'actualité: Une analyse
+stratégique des relations entre la presse parlementaire et les autorités
+politiques au Québec}. Québec: Boréal, 1994.
+
+Chupin, Ivan. \emph{Les écoles de journalisme: Les enjeux de la
+scolarisation d\textquotesingle une profession (1889--2018)}. Rennes:
+Presses universitaires de Rennes, 2018.
+
+Chupin, Ivan, Nicolas Hubé, and Nicolas Kaciaf. \emph{Histoire politique
+et économique des médias en France.} Paris: La Découverte, 2012.
+
+Cohen, Jonathan, Yariv Tsafti, and Tamir Sheafer. ``The Influence of
+Presumed Media Influence in Politics: Do Politicians' Perceptions of
+Media Power Matter?'' \emph{Public Opinion Quaterly} 72, no. 2 (2008):
+331--44.
+
+Crouse, Timothy. \emph{The Boys on the Bus}. New York: Random House,
+2003.
+
+Dahrendorf, Ralf. \emph{Gesellschaft und Demokratie in Deutschland}.
+Munich: Piper, 1965.
+
+Darras, Eric. ``Division du travail politiste et travail politiste de
+division: L'exemple de la communication.'' In \emph{La science
+politique: Une et multiple}, edited by Eric Darras and Olivier Philippe.
+Paris: L'Harmattan, 2004.
+
+Davis, Aeron. \emph{Public Relations Democracy: Public Relations,
+Politics and the Mass Media in Britain.} Manchester: Manchester
+University Press, 2002.
+
+de Certeau, Michel. \emph{The Practice of Everyday Life.} Berkeley:
+University of California Press, 1984.
+
+Déloye, Yves. \emph{Sociologie historique du politique.} Paris: La
+Découverte, 2017.
+
+Desrumaux, Clément, and Jérémie Nollet, eds. ``Le travail politique par
+et pour les médias.'' \emph{Réseaux}, no. 187 (2014).
+
+Donsbach, Wolfgang, and Thomas Patterson. ``Political News Journalists:
+Partisanship, Professionalism, and Political Roles in Five Countries.''
+In \emph{Comparing Political Communication: Theories, Cases and
+Challenges,} edited by Frank Esser and Barbara Pfetsch, 251--70.
+Cambridge: Cambridge University Press, 2004.
+
+Dormagen, Jean-Yves, and Daniel Mouchard. \emph{Introduction à la
+sociologie politique}. Bruxelles: De Boeck, 2019.
+
+Dunwoody, Sharon, and Steven Shields. ``Accounting for Patterns of
+Selection of Topics in Statehouse Reporting.'' \emph{Journalism
+Quaterly} 63 (1986): 488--96.
+
+Elias, Norbert. \emph{The Court Society}. Dublin: University College
+Dublin Press, 2006. First published 1969 by Hermann Luchterhand Verlag
+(Darmstadt/Neuwied).
+
+Elias, Norbert. \emph{The Germans: Power Struggles and the Development
+of Habitus in the Nineteenth and Twentieth Centuries.} New York:
+Columbia University Press, 1996.
+
+Esser, Frank. ``Editorial Structures and Work Principles in British and
+German Newsrooms.'' \emph{European Journal of Communication} 13, no. 3
+(1998): 375--405.
+
+Esser, Frank, Carsten Reinemann, and David Fan. ``Spin-doctoring in
+British and German Election Campaigns.'' \emph{European Journal of
+Communication} 15, no. 2 (2000): 209--39.
+
+Fröhlich, Elke. ``Joseph Goebbels: Profil de sa propagande
+(1926--1939).'' In \emph{Joseph Goebbels: Journal 1933--1939}, edited by
+Pierre Ayçoberry and Barbara Lambauer, 17--53. Paris: Tallandier, 2007.
+
+Fulda, Bernhard. \emph{Press and Politics in the Weimarer Republic}.
+Oxford: Oxford University Press, 2013.
+
+Gatien, Emmanuelle. ``\,`Un peu comme la pluie': La co-production
+relative de la valeur d'information en temps de guerre.''
+\emph{Réseaux}, no. 157--58 (2009): 61--88.
+
+Georgakakis, Didier. ``Le gouvernement des esprits: concurrence
+internationale, comparatisme et développement de la propagande
+d\textquotesingle État en Europe (1917--1940).'' In \emph{Les sciences
+de gouvernement en Europe}, edited by Olivier Ihl, Martin Kaluszynski,
+and Gilles Pollet, 53--57. Paris: Economica, 2003.
+
+Georgakakis, Didier\emph{. La République contre la propagande: aux
+origines perdues de la communication d\textquotesingle État en France
+(1917--1940).} Paris: Economica, 2004\emph{.}
+
+Georgakakis, Didier, and Jay Rowell, eds. \emph{The Field of Eurocracy:
+Mapping the EU Staff and Professionals}. Basingstoke: Palgrave
+Macmillan, 2013.
+
+Giddens, Anthony. \emph{The Constitution Of Society: Outline of the
+Theory of Structuration}. Berkeley: University of California Press,
+1986.
+
+Goffman, Erving. \emph{Frame Analysis: An Essay on the Organization of
+Experience.} Boston: Northeastern University Press, 1986.
+
+Grittman, Elke. ``Organisationeller Kontext.'' In \emph{Grundlagentexte
+zur Journalistik}, edited by Irene Neverla, Elke Grittmann, and Pater
+Monika, 291--301. Konstanz: UVK, 2002.
+
+Gurevitch, Michael, Stephen Coleman, and Jay Blumler. ``Political
+Communication: Old and New Media Relationship.'' \emph{The Annals of the
+American Academy of Political and Social Science} 625, no. 1 (2009):
+164--81.
+
+Habermas, Jürgen. \emph{The Structural Transformation of the Public
+Sphere.} Cambridge, MA: MIT Press, 1989.
+
+Hägerstrand, Torsten. ``Aspects of the of the Spatial Structure of
+Social Communication and the Diffusion of Information.'' \emph{Papers of
+the Regional Science Association} 16, no. 1 (1965): 16--27.
+
+Hall, Peter A., and Rosemary C. R. Taylor. ``Political Science and the
+Three New Institutionalisms.'' \emph{Political Studies} 44, no. 5
+(1996): 936--57.
+
+Hallin, Daniel, and Paolo Mancini. \emph{Comparing Media System: Three
+Models of Media and Politics}. Cambridge: Cambridge University Press,
+2004.
+
+Hanitzsch, Thomas. ``Kriegskorrespondenten Entmystifizieren.'' In
+\emph{Kriegskorrespondenten}, edited by Barbara Korte and Horst Tonn,
+39--58. Wiesbaden: VS Verlag für Sozialwissenschaften, 2007.
+
+Hanitzsch, Thomas. ``Deconstructing Journalism Culture: Toward a
+Universal Theory.'' \emph{Communication Theory} 17, no. 4 (2007):
+367--85.
+
+Hanitzsch, Thomas, and Rosa Berganza. ``Explaining Journalists' Trust in
+Public Institutions Across 20 Countries: Media Freedom, Corruption, and
+Ownership Matter Most.'' \emph{Journal of Communication} 62, no. 5
+(2012): 794--814.
+
+Herzer, Martin. \emph{The Media, European Integration and the Rise of
+Euro-Journalism, 1950s--1970s}. Basingstoke: Palgrave Macmillan, 2019.
+
+Hofstetter, Brigitte, and Philomen Schoenhagen. ``Wandel redaktioneller
+Strukturen und journalistischen Handelns'' {[}Changing newsroom
+structures and journalistic routines{]}. \emph{Studies in Communication
+and Media} 3, no. 2 (2014): 228--52.
+
+Hofstetter, Brigitte, and Philomen Schoenhagen. ``When Creative
+Potentials Are Being Undermined By Commercial Imperatives.''
+\emph{Digital Journalism} 5, no. 1 (2017): 44--60.
+
+Holt, Kristoffer, and André Haller. ``What Does `Lügenpresse' Mean?
+Expressions of Media Distrust on PEGIDA's Facebook Pages.''
+\emph{Politik} 20, no. 4 (2017): 42--57.
+\url{https://doi.org/10.7146/politik.v20i4.101534}.
+
+Hoyt, Kendall, and Frances S. Leighton. \emph{Drunk before Noon: The
+Behind-the-Scenes Story of the Washington Press Corps}. Englewood
+Cliffs, NJ: Prentice Hall, 1979.
+
+Hubé, Nicolas. ``À la recherche d'une universalité du journalisme: la
+\emph{Journalistik} allemande.'' \emph{Revue française des sciences de
+l'information et de la communication}, no. 19 (2020).
+\url{https://doi.org/10.4000/rfsic.9269}.
+
+Hubé, Nicolas. ``Understanding the Off-The-Record as a Social Practice:
+German Press-Politics Relations Seen from France.'' \emph{Laboratorium:
+Russian Review of Social Research} 9, no. 2 (2017): 4--29.
+
+Hubé, Nicolas. \emph{Décrocher la ``Une'': Le choix des titres de
+première page de la presse quotidienne en France et en Allemagne
+(1945--2005)}. Strasbourg: Presses universitaires de Strasbourg, 2008.
+
+Hubé, Nicolas. \emph{La politique des chemins courts: Un siècle de
+relations entre journalistes et communicants gouvernementaux en
+Allemagne (1918--2018)}. Vulaines-sur-Seine: Editions du Croquant, 2022.
+
+Hubé, Nicolas. ``L'\emph{Öffentlichkeitsarbeit}~ou la propagande au
+service de la démocratie: La définition du travail de communication
+gouvernementale dans les premières années de la RFA (1949--1953).''
+\emph{Histoire, économie \& société} 41, no. 4 (2022): 9--26.
+\url{https://doi.org/10.3917/hes.224.0009}.
+
+Jesse, Eckhard. \emph{Systemwechsel in Deutschland:
+1918/19---1933---1945/49---1989/90}. Bonn: Bundeszentrale für politische
+Bildung, 2013.
+
+Jitsuhara, Takashi. ``Guarantee of the Right to Freedom of Speech in
+Japan---A Comparison with Doctrines in Germany.'' In \emph{Contemporary
+Issues in Human Rights Law,} edited by Yumiko Nakanishi, 169--91.
+Singapore: Springer, 2018.
+
+Juhem, Philippe, and Julie Sedel, eds. \emph{Agir par la parole:
+Porte-paroles et asymétries de l'espace public}. Rennes: Presses
+Universitaires de Rennes, 2016.
+
+Jungblut, Peter. ``Unter vier Reichskanzlern: Otto Hammann und die
+Pressepolitik der deutschen Reichsleitung 1890 bis 1916.'' In
+\emph{Propaganda: Meinungskampf, Verführung und politische Sinnstiftung
+1789--1989}, edited by Ute Daniel and Wolfram Siemann, 101--16.
+Frankfurt am Main: Fischer Taschenbuch Verlag, 1994.
+
+Kaciaf, Nicolas, and Jérémie Nollet, eds. ``Journalisme: retour aux
+sources.'' \emph{Politiques de communication}, no. 1 (2013): 5--34.
+
+Kaciaf, Nicolas. ``Des dissidences aux confidences: Ce que couvrir un
+parti veut dire.'' In \emph{L\textquotesingle informel pour informer:
+Les journalistes et leurs sources}, edited by Jean-Baptiste Legavre,
+21­--37. Paris: L\textquotesingle Harmattan/Pepper, 2014.
+
+Kaciaf, Nicolas. \emph{Les Pages ``Politique'': Histoire du journalisme
+politique dans la presse française (1945--2006)}. Rennes: Presses
+Universitaires de Rennes, 2013.
+
+Kepplinger, Hans-Mathias. \emph{Journalismus als Beruf}. Wiesbaden: VS
+Verlag, 2011.
+
+Krüger, Gunnar. ``\emph{Wir sind doch kein exklusiver Club!'': Die
+Bundespressekonferenz in der Ära Adenauer}. Münster: Lit, 2005.
+
+Lagroye, Jacques, Bastien François, and Frédéric Sawicki.
+\emph{Sociologie politique}. Paris: Presses de Sciences Po \& Dalloz,
+2012.
+
+Lagroye, Jacques. ``La légitimation.'' In \emph{Traité de science
+politique}, vol. 1, edited by Madeleine Grawitz and Jean Leca. Paris:
+Presses Universitaires de France, 1985.
+
+Legavre, Jean-Baptiste. ``Off the record: Mode d\textquotesingle emploi
+d\textquotesingle un instrument de coordination.'' \emph{Politix}, no.
+19 (1992): 135--48.
+
+Legavre, Jean-Baptiste, ed. \emph{L\textquotesingle informel pour
+informer: Les journalistes et leurs sources}. Paris:
+L\textquotesingle Harmattan/Pepper, 2014.
+
+Legavre, Jean-Baptiste. ``Entre conflit et cooperation: Les journalistes
+et les communicants comme `associés-rivaux.'\,'' \emph{Communication \&
+langages}, no. 169 (2011): 105--23.
+
+Lévêque, Sandrine. \emph{Les journalistes sociaux: Histoire et
+sociologie d'une spécialité journalistique}. Rennes: Presses
+Universitaires de Rennes, 2000.
+
+Löblich, Maria, Niklas Venema, and Elisa Pollack. ``West Berlin's
+Critical Communication Studies and the Cold War: A Study on Symbolic
+Power from 1948 to 1989.'' \emph{History of Media Studies} 2 (2022).
+\url{https://doi.org/10.32376/d895a0ea.d0db9590}.
+
+Luhmann, Niklas. \emph{Trust and Power}. New York: John Wiley and Sons,
+1979.
+
+Luhmann, Niklas. \emph{The Reality of the Mass Media}. Stanford:
+Stanford University Press, 2000.
+
+Manin, Bernard. \emph{The Principles of Representative Government}.
+Cambridge: Cambridge University Press, 1997.
+
+Massey, Doreen. ``Introduction: Geography Matters.'' In \emph{Geography
+Matters,} edited by Doreen Massey and John Allen, 1--11. Cambridge:
+Cambridge University Press, 1984.
+
+Medvetz, Thomas. ``Les think tanks dans le champ du pouvoir étasunien.''
+\emph{Actes de la recherche en sciences sociales}, no. 200
+(2013):~44--55.
+
+Mercier, Arnaud. ``L'institutionalisation de la profession des
+journalistes.'' \emph{Hermès}, no. 13--14 (1994): 219--35.
+
+Mercier, Arnaud. ``La communication politique en France : Un champ de
+recherche qui doit encore s'imposer.'' \emph{L'Année sociologique}, no.
+51 (2001): 355--66.
+
+Mergel, Thomas. \emph{Parlamentarische Kultur in der Weimarer Republik.}
+Düsseldorf: Droste Verlag, 2002.
+
+Mergel, Thomas. \emph{Propaganda nach Hitler: Eine Kulturgeschichte des
+Wahlkampfs in der Bundesrepublik, 1949--1990}. Göttingen: Wallstein
+Verlag, 2010.
+
+Meyen, Michael, and Claudia Riesmeyer. \emph{Diktatur des Publikums:
+Journalisten in Deutschland.} Konstanz: UVK, 2009.
+
+Mudge, Stephanie, and Antoine Vauchez. ``Building Europe on a Weak
+Field: Law, Economics, and Scholarly Avatars in Transnational
+Politics.'' \emph{American Journal of Sociology} 118, no. 2 (2012):
+449--92.
+
+Mühlenfeld, Daniel. ``Vom Kommissariat zum Ministerium: Zur
+Gründungsgeschichte des Reichsministeriums für Volksaufklärung und
+Propaganda.'' In \emph{Hitlers Kommissare: Sondergewalten in der
+nationalsozialistischen Diktatur,} edited by Rüdiger Hachtmann and
+Winfried Süß, 72--92. Konstanz: Wallstein Verlag, 2006.
+
+Münkler, Herfried, and Skadi Krause. ``Geschichte und Selbstverständnis
+der Politikwissenschaft in Deutschland.'' In \emph{Politikwissenschaft:
+Ein Grundkurs}, edited by Herfried Münkler, 13--54. Hamburg: Rowohlt,
+2003.
+
+Nester, William. ``Japan\textquotesingle s Mainstream Press: Freedom to
+Conform?'' \emph{Pacific Affairs} 62, no. 1(1989): 29--39.
+
+Neveu, Érik. \emph{Sociologie du journalisme}. Paris: La Découverte,
+2019.
+
+Neveu, Érik, and Raymond Kuhn. ``Political Journalism: Mapping the
+Terrain.'' In \emph{Political Journalism: New Challenges, New
+Practices}, edited by Raymond Kuhn and Erik Neveu, 1--21. London:
+Routledge, 2002.
+
+Nuernbergk, Christian, and Jan-Hinrik Schmidt. ``Twitter im
+Politikjournalismus: Ergebnisse einer Befragung und Netzwerkanalyse von
+Hauptstadtjournalisten der Bundespressekonferenz.'' \emph{Publizistik}
+65, no. 1 (2020): 41--61.
+
+O'Dwyer, Jane. ``Japanese Kisha Clubs and the Canberra Press Gallery:
+Siblings or Strangers.'' \emph{Asia Pacific Media Educator} 1, no. 16
+(2005): 1--16.
+
+Ollivier-Yaniv, Caroline. ``De l'opposition entre `propagande' et
+`communication publique' à la définition de la politique du discours.''
+\emph{Quaderni}, no. 72 (2010): 87--99.
+
+Ollivier-Yaniv, Caroline. \emph{L'État communicant}. Paris: Presses
+Universitaires de France, 2000.
+
+Pfetsch, Barbara. \emph{Politische Kommunikationskultur: Politische
+Sprecher und Journalisten in der Bundesrepublik und den USA im
+Vergleich.} Wiesbaden: Westdeutscher Verlag, 2003.
+
+Revers, Matthias. \emph{Contemporary Journalism in the US and Germany:
+Agents of Accountability.} New York: Palgrave MacMillan, 2017.
+
+Rieffel, Rémy. \emph{Sociologie des médias}. Paris: Ellipses, 2015.
+
+Rinsdorf, Lars, and Laura Theiss. ``Leidenschaftliche Amateur*innen oder
+kühle Profis: Zum Integrationspotenzial der freien Mitarbeiter*innen
+lokaler Tageszeitungen.'' In \emph{Integration durch Kommunikation:
+Jahrbuch der Publizistik- und Kommunikationswissenschaft,} edited by
+Volker Gehrau, Anni Waldherr, and Armin Scholl, 57--67. Münster:
+Deutsche Gesellschaft für Publizistik- und Kommunikationswissenschaft
+e.V.; Westfälische Wilhelms-Universität Münster, Institut für
+Kommunikationswissenschaft, 2019.
+
+Riutort, Philippe. ``Sociologiser la communication politique?,''
+\emph{Politique et Sociétés} 26, no. 1 (2007): 77--95.
+
+Riutort, Philippe. \emph{Sociologie de la communication politique}.
+Paris: La Découverte, 2020.
+
+Robert, Valérie. ``Staatsfreiheit ou intervention de l'État? Le modèle
+allemand de l'audiovisuel public.'' \emph{Sur le journalisme} 2, no. 2
+(2013): 118--31.
+
+Ross, Karen. ``Danse Macabre: Politicians, Journalists, and the
+Complicated Rumba of Relationships.'' \emph{The International Journal of
+Press/Politics} 15, no. 3 (2010): 272--94.
+
+Ruellan, Denis. \emph{Les ``Pro'' du journalisme: De
+l\textquotesingle état au statut, la construction d\textquotesingle un
+espace professionnel}. Rennes: Presses universitaires de Rennes, 1997.
+
+Rühl, Manfred. ``Organisatorischer Journalismus: Tendenzen der
+Redaktionsforschung.'' In \emph{Grundlagentexte zur Journalistik},
+edited by Neverla Irene, Grittmann Elke, and Pater Monika, 303--20.
+Konstanz: UVK, 2002.
+
+Rühl, Manfred, \emph{Die Zeitungsredaktion als organisiertes soziales
+System}. Fribourg: Universitätsverlag Freiburg, 1979.
+
+Sapiro, Gisèle. ``Le champ est-il national? La théorie de la
+différenciation sociale au prisme de l\textquotesingle histoire
+globale.'' \emph{Actes de la recherche en sciences sociales}, no. 200
+(2013): 70--85.
+
+Schlesinger, Philip. ``Rethinking the Sociology of Journalism: Source
+Strategies and the Limits of Media-Centrism.'' In \emph{Public
+Communication: The New Imperatives}, edited by Margorie Ferguson,
+61--83. London: SAGE Publications, 1990.
+
+Schudson, Michael. ``Autonomy from What?'' In \emph{Bourdieu and the
+Journalistic Field}, edited by Rodney Benson and Erik Neveu, 214--23.
+Cambridge, MA: Polity, 2005.
+
+Schudson, Michael. ``The `Public Sphere' and Its Problems: Bringing the
+State (Back) In.'' \emph{Notre Dame Journal of Law, Ethics \& Public
+Policy} 8, no. 2 (1994): 529--46.
+
+Sösemann, Bernd, ed. \emph{Propaganda: Medien und Öffentlichkeit in der
+NS-Diktatur}. Stuttgart: Franz Steiner Verlag, 2011.
+
+Stankovitch, Michel. ``Les Services de presse des gouvernements et de la
+S.D.N.'' PhD diss., Université de Paris, 1939.
+
+Steinmetz, George. ``Field Theory and Interdisciplinarity: History and
+Sociology in Germany and France during the Twentieth Century.''
+\emph{Comparative Studies in Society and History} 59, no. 2 (2017):
+477--514.
+
+Steinmetz, George. ``Bourdieusian Field Theory and the Reorientation of
+Historical Sociology.'' In \emph{The Oxford Handbook of Pierre
+Bourdieu}, edited by Thomas Medvetz and Jeffrey Sallaz. Oxford: Oxford
+University Press, 2018.
+
+Strömbäck, Jesper, and Lars W. Nord. ``Do Politicians Lead the Tango: A
+Study of the Relationship between Swedish Journalists and Their
+Political Sources in the Context of Election Campaigns.'' \emph{European
+Journal of Communication} 21, no. 2 (2006): 147--64.
+
+Taketoshi, Yamamoto. ``The Press Clubs of Japan.'' \emph{The Journal of
+Japanese Studies} 15, no. 2 (1989): 371--88.
+
+Tixier, Florian. ``Concurrences et coopérations pour la production de
+l'information européenne.'' \emph{Sur le journalisme} 8, no. 1 (2019):
+40--53.
+
+Tixier, Florian. ``En quête de professionnalisme: L'Association des
+journalistes européens, des spécialistes de l'Europe aux journalistes
+spécialisés.'' In \emph{Les Médiations de l\textquotesingle Europe
+politique,} edited by Philippe Aldrin, Nicolas Hubé, Caroline
+Ollivier-Yaniv, and Jean-Michel Utard, 285--305. Strasbourg: Presses
+Universitaires de Strasbourg, 2014.
+
+Tunstall, Jeremy. \emph{The Westminster Lobby Correspondents:
+Sociological Study of National Political Journalism.} London: Routledge
+\& Kegan Paul, 1970.
+
+Van Aelst, Peter, Tamir Sheafer, Nicolas Hubé, and Stylianos
+Papathanassopoulos. ``Personalization.'' In \emph{Comparing Political
+Journalism}, edited by Claes de~Vreese, Frank Esser, and David Hopmann,
+112--30. London: Routledge, 2017.
+
+Vauchez, Antoine. ``Interstitial Power in Fields of Limited Statehood:
+Introducing a `Weak Field' Approach to the Study of Transnational
+Settings.'' \emph{International Political Sociology} 5, no. 3 (2011):
+340--45.
+
+Weber, Max. \emph{The Vocations Lectures}. Cambridge, MA: Hackett
+Publishing Company, 2004. First published 1919 by Duncker \& Humblot
+(Munich).
+
+Wegmann, Nikolaus, and Ute Mehnert. ``\emph{Scoop-o-mania},
+l'introduction du scoop dans la vie politique allemande.'' \emph{Le
+Temps des Médias,} no. 7 (2006): 148--49.
+
+Weischenberg, Siegfried. \emph{Journalistik: Theorie und Praxis
+aktueller Medienkommunikation; Band 2: Medientechnik, Medienfunktionen,
+Medienakteure.} Opladen: Westdeutscher Verlag, 1995.
+
+Weiß, Matthias. ``Journalisten: Worte als Taten.'' \emph{Karrieren im
+Zwielicht: Hitlers Eliten nach 1945,} edited by Norbert Frei, 241--301.
+Frankfurt: Campus Verlag, 2001.
+
+Wiedemann, Thomas, and Michael Meyen, eds. \emph{Pierre Bourdieu und die
+Kommunikationswissenschaft: Internationale Perspektiven}. Köln: Herbert
+von Halem Verlag, 2013.
+
+
+
+\end{hangparas}
+
+
+\end{document}

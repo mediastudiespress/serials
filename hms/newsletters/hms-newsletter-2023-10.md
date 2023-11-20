@@ -89,6 +89,7 @@ Special thanks to Esperanza Herrero (*Universidad de Murcia*), the journal’s A
 1. [Behringer, Wolfgang. "Communications Revolutions: A Historiographical Concept." _German History_ 24, no. 3 (2006): 333-374. ](https://www.bibsonomy.org/bibtex/2220552c5f7f3599fa7d309793f20e744)
 1. [Hadravová, Tereza. "Film as a Dream of the Modern Man: Interpretation of Susanne Langer’s “Note on the Film”." _Eidos. A Journal for Philosophy of Culture_ 4, no. 1 (2020): 38--48. ](https://www.bibsonomy.org/bibtex/2dd29f3b7e6b229fade1b99db5dea5c96)
 1. [Melo, José Marques de. "Práxis, memória e cognição no jornalismo." _MATRIZes_ 2, no. 2 (2009): 117-138. ](https://www.bibsonomy.org/bibtex/2d719d04a74b126545c254473ca7d6f69)
+1. [Trudel, Dominique and De Maeyer, Juliette “He Has Ideas about Everything”: An Introduction to the Franklin Ford Collection. Trudel, Dominique and De Maeyer, Juliette, eds. _Franklin Ford Collection_, mediastudies.press, Bethlehem, PA (2023), https://www.mediastudies.press/pub/ff-introduction, vi-xlvii. ](https://www.bibsonomy.org/bibtex/2798eff0697742cbf5ace35f183377e49) 
 
 <br>
 
