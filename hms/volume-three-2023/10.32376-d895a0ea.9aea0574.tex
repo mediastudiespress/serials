@@ -1,0 +1,765 @@
+% see the original template for more detail about bibliography, tables, etc: https://www.overleaf.com/latex/templates/handout-design-inspired-by-edward-tufte/dtsbhhkvghzz
+
+\documentclass{tufte-handout}
+
+%\geometry{showframe}% for debugging purposes -- displays the margins
+
+\usepackage{amsmath}
+
+\usepackage{hyperref}
+
+\usepackage{fancyhdr}
+
+\usepackage{hanging}
+
+\hypersetup{colorlinks=true,allcolors=[RGB]{97,15,11}}
+
+\fancyfoot[L]{\emph{History of Media Studies}, vol. 3, 2023}
+
+
+% Set up the images/graphics package
+\usepackage{graphicx}
+\setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
+\graphicspath{{graphics/}}
+
+\title[The (Still) Neglected German-French Milieu]{Understanding and Stimulating the (Still) Neglected German-French Milieu in Communication and Media Studies} % longtitle shouldn't be necessary
+
+% The following package makes prettier tables.  We're all about the bling!
+\usepackage{booktabs}
+
+% The units package provides nice, non-stacked fractions and better spacing
+% for units.
+\usepackage{units}
+
+% The fancyvrb package lets us customize the formatting of verbatim
+% environments.  We use a slightly smaller font.
+\usepackage{fancyvrb}
+\fvset{fontsize=\normalsize}
+
+% Small sections of multiple columns
+\usepackage{multicol}
+
+% Provides paragraphs of dummy text
+\usepackage{lipsum}
+
+% These commands are used to pretty-print LaTeX commands
+\newcommand{\doccmd}[1]{\texttt{\textbackslash#1}}% command name -- adds backslash automatically
+\newcommand{\docopt}[1]{\ensuremath{\langle}\textrm{\textit{#1}}\ensuremath{\rangle}}% optional command argument
+\newcommand{\docarg}[1]{\textrm{\textit{#1}}}% (required) command argument
+\newenvironment{docspec}{\begin{quote}\noindent}{\end{quote}}% command specification environment
+\newcommand{\docenv}[1]{\textsf{#1}}% environment name
+\newcommand{\docpkg}[1]{\texttt{#1}}% package name
+\newcommand{\doccls}[1]{\texttt{#1}}% document class name
+\newcommand{\docclsopt}[1]{\texttt{#1}}% document class option name
+
+
+\begin{document}
+
+\begin{titlepage}
+
+\begin{fullwidth}
+\noindent\LARGE\emph{French-German Communication Research
+} \hspace{27mm}\includegraphics[height=1cm]{logo3.png}\\
+\noindent\hrulefill\\
+\vspace*{1em}
+\noindent{\Huge{Understanding and Stimulating the (Still)\\\noindent Neglected German-French Milieu in\\\noindent Communication and Media Studies\par}}
+
+\vspace*{1.5em}
+
+\noindent\LARGE{Stefanie Averbeck-Lietz}\par\marginnote{\emph{Stefanie Averbeck-Lietz, Fabien Bonnet, Sarah Cordonnier, and Carsten Wilhelm, ``Understanding and Stimulating the (Still) Neglected German-French Milieu in Communication and Media Studies,'' \emph{History of Media Studies} 3 (2023), \href{https://doi.org/10.32376/d895a0ea.9aea0574}{https://doi.org/ 10.32376/d895a0ea.9aea0574}.} \vspace*{0.75em}}
+\vspace*{0.5em}
+\noindent{{\large\emph{Universität Greifswald}, \href{mailto:stefanie.averbeck-lietz@uni-greifswald.de}{stefanie.averbeck-lietz@uni-greifswald.de}\par}} \marginnote{\href{https://creativecommons.org/licenses/by-nc/4.0/}{\includegraphics[height=0.5cm]{by-nc.png}}}
+
+\vspace*{0.75em} 
+
+\noindent{\LARGE{Fabien Bonnet}\par}
+\vspace*{0.5em}
+\noindent{{\large\emph{Université de Bourgogne}, \href{mailto:Fabien.bonnet@u-bourgogne.fr }{Fabien.bonnet@u-bourgogne.fr}\par}}
+
+\vspace*{0.75em} 
+
+\noindent{\LARGE{Sarah Cordonnier} \href{https://www.orcid.org/0000-0003-2442-5356}{\includegraphics[height=0.5cm]{orcid.png}}\par}
+\vspace*{0.5em}
+\noindent{{\large\emph{Université Lyon 2}, \href{mailto:Sarah.Cordonnier@univ-lyon2.fr}{Sarah.Cordonnier@univ-lyon2.fr}\par}}
+
+\vspace*{0.75em} 
+
+\noindent{\LARGE{Carsten Wilhelm} \href{https://www.orcid.org/0000-0002-5037-4946}{\includegraphics[height=0.5cm]{orcid.png}}\par}
+\vspace*{0.5em}
+\noindent{{\large\emph{Université de Haute-Alsace}, \href{mailto:carsten.wilhelm@uha.fr}{carsten.wilhelm@uha.fr}\par}}
+
+
+\end{fullwidth}
+
+\vspace*{1em}
+
+
+\newthought{The roots of} this special section lie in three joint workshops under the
+umbrella of the Franco-German University in 2021.\footnote{Exploration
+  transnationale des milieux de communication franco-allemands: science,
+  design, culture numérique, journalisme / Deutsch-Französische
+  Kommunikationsmilieus? Wissenschaft, Digitale Kultur und Journalismus:
+  Transnationale Perspektiven {[}Transnational exploration of
+  Franco-German communication environments: Science, design, digital
+  culture, journalism{]}, project funded by the German-French
+  University, January 7, 2023,
+  \url{https://fonderie-infocom.net/research/mcfa/}.} Organized at the
+University of Lyon by Sarah Cordonnier, at the University of Mulhouse by
+Fabien Bonnet and Carsten Wilhelm, and at the University of Bremen by
+Stefanie Averbeck-Lietz, the workshops took place online due to the
+constraints of the pandemic. The topics were (1) German-French research
+in communication studies in the context of the history of communication
+and media studies (Lyon), 2) German-French design and creation analysis
+(Mulhouse), and 3) populism and journalism in both countries (Bremen).
+
+Interestingly enough, with these workshops we reached a milieu
+\emph{beyond the milieu}---colleagues, like Benjamin Krämer, whom we did
+not initially have in mind when enlisting people to work in German-French environments. Through a ``snowball'' system, we asked col-
+
+
+\enlargethispage{2\baselineskip}
+
+\vspace*{2em}
+
+\noindent{\emph{History of Media Studies}, vol. 3, 2023}
+
+
+ \end{titlepage}
+
+% \vspace*{2em} | to use if abstract spills over
+
+
+\noindent leagues
+ to identify who might be interested in our workshops and able
+to contribute to the topics \emph{and} the languages---French and German
+exclusively. This was a demand by the Franco-German University, but had
+the advantage of bringing communication and media researchers together
+who were able to take on the challenge of reading the other language,
+whether French or German. The talks were held in both languages and were
+not translated. For an international, English-speaking public, this is
+relevant to know: The literature in communication and media studies in
+France is rarely translated to English, and scholars of both
+communities, French and German, are largely unfamiliar with the writings
+on the other side of the Rhine.\footnote{For details, see Stefanie
+  Averbeck-Lietz and Sarah Cordonnier, ``French and German Theories of
+  Communication: Comparative Perspectives with Regard to the Social and
+  the Epistemological Body of Science,'' in \emph{The Handbook of Global
+  Interventions in Communication Theory,} ed. Yoshitaka Miike and Jing
+  Yin (New York: Routledge, 2022).}
+
+
+We reached out to and eventually connected with young and also more
+senior researchers, whose work on French-German topics we had not been
+aware of before. This in itself was very stimulating and generated some
+optimism about our aims for a sustainable French-German future, based on
+the traditions of communication and media studies in both countries, in
+the face of language barriers and differences in their scientific
+cultures. Those cultural differences are rooted in distinct historical
+developments in German and French media and communication studies. We
+will come back to this point.
+
+We first have to thank our authors, Lisa Bolz (Paris)\emph{,} Nicolas
+Hubé (Metz)\emph{,} Benjamin Krämer (Munich), and Hedwig Wagner
+(Flensburg), who have contributed to the workshops and to this special
+section with new, original work. The four contributions complement each
+other on a variety of argumentative levels and help us understand the
+German, the French, \emph{and} the (still underdeveloped)
+\emph{Franco-German} research field as well. Given that this special
+section is published in English for an international public, we highly
+appreciate the commitment to the emerging Franco-German field made by
+the four articles.
+
+In our view it is no coincidence that all of the special section authors
+had worked, still work, and/or have studied during their professional
+life in France \emph{and} Germany. The same is true for the invited peer
+reviewers---Sabine Bosler, Peter Maurer, Irene Preisinger, and Thomas
+Weber---who shared their thoughts with the authors in their open
+reviews.
+
+We view the individual work of each author and reviewer, when assembled
+together, as greater than the sum of its parts. Read together, the
+papers make a significant contribution to understanding the history(ies)
+of communication and media studies and their characteristics. The
+special section represents Franco-German academic research embedded in
+the history of the field \emph{in practice.} All of the authors point
+out and fill in research gaps in the Franco-German field.
+
+\newpage Nevertheless, a crucial epistemological question remains: How can we see
+what is invisible or what is a ``gap,'' and at the same time identify
+this gap by naming it? Could it be that the ``gaps'' themselves are
+socially and culturally bound? This is not only an epistemological
+question but also a resource in establishing and pursuing sustainable
+transcultural scientific debate about it. One step in this direction was
+represented in our three workshops of 2021. We are grateful to the
+Franco-German University for financing the English language editing to
+reach a wider academic public.
+
+\hypertarget{diagnosis-and-challenge-the-neglected-long-term-french-german-milieu-in-communication-and-media-studies}{%
+\section{Diagnosis and Challenge: The Neglected Long-Term
+French-\\\noindent German Milieu in Communication and Media
+Studies}\label{diagnosis-and-challenge-the-neglected-long-term-french-german-milieu-in-communication-and-media-studies}}
+
+Of course, trans-European research projects have been funded for
+years.\footnote{Sophia Volk, \emph{Comparative Communication Research: A
+  Study of the Conceptual, Methodological and Social Challenges of
+  International Collaborative Studies in Communication Science}
+  (Wiesbaden: Springer VS, 2022).} But no real German-French research
+has been conducted along these lines, such that the French SIC
+(\emph{Sciences de l'information et de la communication}) and German
+\emph{Kommunikations- und Medienwissenschaft} would have produced
+long-term projects in common, with transnational scientific relations
+that include epistemological, theoretical, and methodological dimensions
+with outcomes to build on.
+
+There is a strong lack\footnote{As already noted by Ursula E. Koch,
+  ``Zwischen Frankreich und Deutschland vermitteln,'' in ``\emph{Ich
+  habe dieses Fach erfunden'': Wie die Kommunikationswissenschaft an die
+  deutschsprachigen Universitäten kam; 19 biographische Interviews}, ed.
+  Michael Meyen and Maria Löblich (Köln: von Halem, 2004).} of
+systematic and sustainable Franco-German research in communication
+sciences. The French field is oriented towards the Francophone world,
+while the post-war German field is geared strongly towards North
+America.\footnote{Michael Meyen, ``The Founding Parents of
+  Communication: 57 Interviews with ICA Fellows; An Introduction,''
+  \emph{International Journal of Communication} 6 (2012); Stefanie
+  Averbeck-Lietz, ``Sciences de l'information et de la Communication in
+  Frankreich: Über eine fehlende Grenzüberschreitung zwischen zwei
+  Wissenschaftskulturen in Deutschland und Frankreich,''
+  \emph{Lendemains: Etudes Comparées sur la France}, no. 39 (2014).}
+Within sciences dedicated to communication, German-French researchers
+are thus scarce and scattered. This is why the German-French milieu is,
+by now, mostly ``invisible'' in both countries, and beyond that also to
+other research communities.\footnote{Stefanie Averbeck-Lietz, Fabien
+  Bonnet, Sarah Cordonnier, and Carsten Wilhelm, ``Communication Studies
+  in France: Looking for a `Terre du milieu'?'' \emph{Publizistik} 64
+  (2019).} Averbeck-Lietz and Cordonnier\footnote{Averbeck-Lietz and
+  Cordonnier, ``French and German Theories of Communication.''} had to
+explain to US colleagues that ``French'' or ``German'' communication and
+media research is not at all integrated in \emph{one} trans-European
+perspective.
+
+And yet, we are convinced that long-term cross-border communication
+research is needed: While reinforcing mutual understanding, it would
+also contribute to the intelligence of scientific, social, political,
+and cultural communication in both countries. This conviction led us to
+produce joint academic endeavors and, finally, to take a more active and
+hopefully more visible path over the last few years. Through workshops
+and regular meetings aimed at advanced students and researchers from
+France and Germany, our goal has been both to understand \emph{and} to
+develop a sustainable, truly interconnected transnational, transcultural
+Franco-German milieu.
+
+At any rate, several contributors to this special section are active in
+institutional as well as in scientific roles for the national
+associations of communication scholars in France and Germany, the SFSIC
+(\emph{Société Française des Sciences de l'information et de la
+communication}) and the DGPuK (\emph{Deutsche Gesellschaft für
+Publizistik- und Kommunikationswissenschaft}), including international
+relations of both academic societies.
+
+Usually, work on transculturality and the international circulation of
+knowledge explores its institutionalized and/or organized modalities,
+often neglecting the practical foundations of a professionalized
+activity.\footnote{Pierre Mœglin, ed., \emph{Industrialiser l'éducation:
+  Anthologie commentée (1913--2012)} (Saint Denis: Presses
+  Universitaires de Vincennes, 2016).} The emblematic word ``milieu''
+suggests other approaches, with cross-border and cross-disciplinary
+forms of inquiry.\footnote{Hartmut Wessler and Stefanie Averbeck-Lietz,
+  ``Grenzüberschreitende Medienkommunikation: Konturen eines
+  Forschungsfeldes im Prozess der Konsolidierung,'' in
+  ``Grenzüberschreitende Medienkommunikation,'' special issue,
+  \emph{Medien \& Kommunikationswissenschaft} 2 (2012).}
+
+\enlargethispage{-\baselineskip}
+
+This term ``milieu'' is ``all-purpose,'' with ``its fuzzy logic and its
+character as an intermediary object, allowing for dialogue between human
+sciences, serving in fact as a revelator of the said and unsaid of
+disciplinary choices.''\footnote{Paul Arnould, ``Milieu,'' in
+  \emph{Dictionnaire des sciences humaines}, ed. Patrick Savidan and
+  Sylvie Mesure (Paris: Presses Universitaires de France, 2006), 775--76
+  (our translation).} For us, Franco-German milieus are a form of
+``localization,''\footnote{Arjun Appadurai, \emph{Modernity at Large:
+  Cultural Dimensions of Globalization} (Minneapolis: University of
+  Minnesota Press, 1996).} a social space with practices of thinking,
+writing, and ``doing'' science. Thus understood, Franco-German milieus
+connect bodies of ideas (methodologies, theories, and concepts on
+communication, journalism, and media) and social and professional bodies
+of work.\footnote{Stefanie Averbeck-Lietz and Maria Löblich,
+  ``Kommunikationswissenschaft vergleichend und transnational: Eine
+  Einführung,'' in \emph{Kommunikationswissenschaft im internationalen
+  Vergleich: Transnationale Perspektiven,} ed. Averbeck-Lietz
+  (Wiesbaden: Springer VS, 2017).} They engage us to articulate and to
+contextualize our research and those of colleagues, while paying
+attention to their scholarly,\footnote{Stéphane Olivesi, \emph{Sciences
+  de l'information et de la communication: Objets, savoirs, discipline}
+  (Grenoble: Presses Universitaires de Grenoble, 2006); Stefanie
+  Averbeck-Lietz, Jacques Bonnet, and Fabien Bonnet, ``Le discours
+  épistémologique des Sciences de l'information et de la
+  communication,'' \emph{Revue Française des sciences de l'information
+  et de la communication} 4 (2014).} academic,\footnote{Sarah Cordonnier
+  and Hedwig Wagner, ``Déployer l'interculturalité: Les étudiants, un
+  vecteur pour la réflexion académique sur l'interculturel: Le cas des
+  sciences consacrées à la communication et aux médias en France et en
+  Allemagne,'' in \emph{Interkulturelle Kompetenz in
+  deutsch-französischen Studiengängen}, ed. Gundula Hiller et al.
+  (Wiesbaden:} and media-based mediations.\textsuperscript{15}
+
+In this special section, we mainly consider two related milieus: the
+scientific and the journalistic ones, two milieus constantly observing
+each other professionally (see the contributions by Bolz and Hubé). In
+these two cases, we are faced with marginal research fields as far as a
+German-French point of view is concerned. Indeed, some topics are
+studied in France and Germany, but very often without any comparative or
+transnational reference to the neighboring scientific
+community.\textsuperscript{16} This neglect is mentioned in all of the
+articles published in this special section, so it is a shared social
+reality we deal with. At the same time, the articles collected here fill
+research gaps in this very field of Franco-German research, while
+maintaining a deep interest in the disciplinary background of
+communication and media studies from a comparative angle.\textsuperscript{17}
+
+The communication sciences themselves could be seen as a kind of
+scientific meta-milieu. This perspective allows us to think about the
+situation in both countries by integrating the history of these
+disciplines and research fields. In our German-French workshop, we took
+communication sciences in their broad, internationally common sense of
+``media studies'' as a factual object and as a kind of epistemological
+tool of analysis in terms of the \emph{social} and the \emph{cognitive}
+body of science.\textsuperscript{18} We
+aimed to discuss and consolidate the conditions for a critical and
+situated apprehension of the international environments in which we are
+involved. In what ways are they constraints and/or spaces\marginnote{Springer VS, 2017); Sarah Cordonnier and Hedwig Wagner,
+  ``L'interculturalité académique entre cadrages et interstices: Une
+  enquête franco-allemande sur les sciences consacrées à la
+  communication,'' in \emph{France-Allemagne: incommunications et
+  convergences}, ed. Gilles Rouet and Michael Oustinoff (Paris: CNRS
+  Éditions, 2018).}\marginnote{\textsuperscript{15} Carsten Wilhelm
+  and Olivier Thévenin, ``The French Context of Internet Studies:
+  Sociability and Digital Practice,'' in
+  \emph{Kommunikationswissenschaft im internationalen Vergleich:
+  Transnationale Perspektiven}, ed. Stefanie Averbeck-Lietz (Wiesbaden:
+  Springer VS, 2017).} of\marginnote{\textsuperscript{16} See also Susanne Merkle, \emph{Politischer
+  Journalismus in Deutschland und Frankreich: Ein Vergleich
+  systemspezifischer Einflüsse und der Debatte um TTIP in der Presse}
+  (Wiesbaden: Springer, 2019); Viviane Harkort,
+  ``Traduire~l'intraduisible: Les correspondants allemands face à
+  l'élection présidentielle~française,'' in \emph{L'élection
+  présidentielle de 2022: vers une réinvention~des processus
+  démocratiques}?, ed. Philippe Mark and Nicolas Pélissier (Paris:
+  L'Harmattan, forthcoming).} freedom,\marginnote{\textsuperscript{17} Concerning
+  the need for comparative research, see also Carsten Wilhelm,
+  ``Comparer les imaginaires sociaux du numérique en SIC: vers une
+  théorie critique située des rationalisations numériques,''
+  \emph{Approches Théoriques en Information-Communication} 3, no. 2
+  (2021).}
+and\marginnote{\textsuperscript{18}\setcounter{footnote}{18} See also Averbeck-Lietz and Löblich,
+  ``Kommunikationswissenschaft vergleichend und transnational.''} how can they be recognized and developed?\footnote{In this sense,
+  see also ``Exclusions in the History of Media Studies/Exclusiones en
+  la historia de los estudios de medios,'' special section\emph{,
+  History of Media Studies} 2 (2022).}
+
+The reflection on international scientific environments confronts us
+with the complex relationship between what belongs to our common
+frameworks (academic institutions, themselves increasingly Europeanized
+and internationalized), and what belongs to individual interactions or
+affinities---whether intellectual, professional, thematic, or
+personal.\footnote{Yoshitaka Miike and Jin Ying, eds., \emph{The
+  Handbook of Global Interventions in Communication Theory} (New York:
+  Routledge, 2022).}
+
+We paid attention to academic contexts, to the history of communication
+sciences in France and Germany, to their disciplinary characteristics,
+to their convergences and divergences, and to their challenges today
+(digital methodologies, etc.)---to the practices and ways of doing
+science in Franco-German environments, with a particular attention to
+the experience and subjects of young researchers.
+
+We took special care to invite doctoral students to our workshops, in
+order to share their German-French research projects. Furthermore, all
+guest editors of this volume had been involved in the
+Franco-German-Swiss ``Doctorales,'' organized in 2019 in Mulhouse by the
+SFSIC, in partnership with the German DGPuK and the Swiss Communication
+Research Association (SGKM). This long-term dimension of supporting
+young researchers is crucial to our work. For example, one of the
+authors of this special issue, Lisa Bolz, obtained her PhD through a
+German-French ``cotutelle de thèse''; she holds a joint degree PhD from
+the Universities of Paris and Münster---a practice still rare in
+German-French scientific education, at least in the field of
+communication and media studies.
+
+\hypertarget{focal-points-in-this-special-section-media-studies-journalism-studies-and-the-fields-of-political-communication-and-populism}{%
+\section{Focal Points in this Special Section: Media Studies,\\\noindent
+Journalism Studies, and the Fields of Political\\\noindent Communication and
+Populism}\label{focal-points-in-this-special-section-media-studies-journalism-studies-and-the-fields-of-political-communication-and-populism}}
+
+As it gathers contributions resulting from our workshops and
+discussions, the present \emph{History of Media Studies} special section
+is one outcome of our overall project. At the same time, it marks a new
+step in our collective enterprise. Indeed, its production involved many
+participants from our milieu: first, the \emph{authors} of course, but
+also the \emph{reviewers}; all of them hail, as pointed out, in
+different ways from German-French environments, where they act as
+researchers and as teachers with comparative and/or
+transnational/transcultural topics. And, hopefully soon, some
+\emph{readers} will be able to identify our group and, if they so wish,
+nurture our ``milieu'' by joining it: The process of producing knowledge
+is inseparable from the process of producing the ``milieus'' where this
+knowledge is relevant and useful. Or: to be more aware that the lingua
+franca English is fine, but that translation alone is not abolishing all
+barriers stemming from distinctive, long-term histories in the field.
+
+The individual value of each of the four contributions in this volume
+comes from the important expertise of the authors, who have deep
+insights in comparative research (and teaching and learning) in
+French-German contexts. Nevertheless, the present contributions do not
+cover or represent the whole German-French communication milieu, even if
+this latter domain is small.\footnote{For media systems and media
+  content research, see Merkle, ``Politischer Journalismus in
+  Deutschland und Frankreich''; for media usage research, see Wilhelm
+  and Thévenin, ``The French Context of Internet Studies''; for media
+  pedagogics, see Sabine Bosler, ``Politiques publiques et légitimité
+  des savoirs en éducation aux médias: une approche comparative
+  franco-allemande,'' \emph{Revue Française des Sciences de
+  l\textquotesingle Information et de la Communication} 22 (2022).} But
+together, they provide an understanding of the ways and conditions that
+allow milieus to be both a resource and a complex topic for research:
+They are an enactment of research about cross-border milieus, while
+being situated within an (albeit thin) German-French milieu.
+
+It is, then, a unique mixture of texts that would, at first glance, seem
+to be heterogeneous---but which, in their combined force, gives a sense
+of this ``always-under-construction,'' ever-evolving German-French
+milieu. The texts overlap, not only by the shared German-French milieus
+of their authors, but also by topics and by at least some perspectives.
+The emphasis on a Bourdieusian perspective in this special section, for
+example, had not been anticipated by the guest editors.
+
+As Benjamin Krämer puts it, at the University of Munich there is a
+milieu focusing on Bourdieu. But this is not the case in German
+communication studies as a whole. Krämer shows that Bourdieu is still
+underestimated and also partly unknown in Germany with regard to
+political and populist communication. When it comes to journalism
+research and its history, the Bourdieu School is still a leading one in
+France but not in Germany, as highlighted by Lisa Bolz and Nicolas Hubé.
+
+We have to take into account that Bolz, Hubé, and Krämer focus more on
+communication studies. Hubé is situated at the crossroads with political
+science, while Hedwig Wagner invites the reader to learn more about
+the---also neglected---French-German milieu in media studies.
+Nevertheless, Wagner highlights some French-German research programs, as
+Bolz does for journalism research---both integrated not least in broader
+aims to strengthen European outlooks and affiliations. The Franco-German
+University is involved in some of these programs, which include a
+broader normative viewpoint of German-French reconciliation after World
+War II.
+
+\enlargethispage{-\baselineskip}
+
+From a more theoretical and methodological viewpoint, it is interesting
+to see that not only Pierre Bourdieu but also Norbert Elias is mentioned
+as a key to historically sensible research (see Hubé's contribution). In
+our estimation, not only Bourdieu but also Elias are widely neglected in
+German communication studies---for Elias, with the exception of the
+figurational approach developed by Andreas Hepp, Uwe Hasebrink, and
+others.\footnote{See Andreas Hepp, Andreas Breiter, and Uwe Hasebrink,
+  eds., \emph{Communicative Figurations: Transforming Communications in
+  Times of Deep Mediatizations} (London: Palgrave, 2017).}
+
+Some other standard references from the German side are also mentioned
+in both milieus: Max Weber and Jürgen Habermas (in the texts of Bolz and
+Hubé). Both references as such would---as with Bourdieu and Elias---need
+more research on their German-French interlacing, in what is a mostly
+divided history of ideas, at least in communication and media research.
+For the Weber adoption in France---also mentioned by Hubé---it is
+obviously relevant that Weber is coming from the theory of social action
+and \emph{verstehende Soziologie,} close to some paradigms in French
+sociology and SIC.
+
+Niklas Luhmann (referenced by both Bolz and Hubé)\footnote{See also
+  Wilhelm, ``Comparer les imaginaires sociaux.''} is mentioned more as
+an antipode to the more process-oriented research on communication
+practices and representations in the French tradition. This tradition
+(see Wagner and Krämer on this point, too) is much closer to critical
+schools of thinking than the German one, which, after the Nazi era,
+aimed for a ``value free,'' non-normative approach to social research,
+isolating itself not least from the Frankfurt School
+tradition,\footnote{Hanno Hardt, ``Am Vergessen scheitern: Essay zur
+  historischen Identität der Publizistikwissenschaft,'' in \emph{Die
+  Spirale des Schweigens: Zum Umgang mit der nationalsozialistischen
+  Zeitungswissenschaft,} ed. Wolfgang Duchkowitsch, Fritz Hausjell, and
+  Bernd Semrad (Münster: LIT, 2004); Andreas Scheu, \emph{Adornos Erben
+  in der Kommunikationswissenschaft: Eine Verdrängungsgeschichte?}
+  (Köln: von Halem, 2012).} but also from British Cultural Studies
+(mentioned by Wagner as an influence on German media studies). British
+cultural studies came to German communication research relatively late,
+around the year 2000.\footnote{Katja Schwer, ``\,`Typisch deutsch'? Zur
+  zögerlichen Rezeption der Cultural Studies in der deutschen
+  Kommunikationswissenschaft,'' \emph{Münchner Beiträge zur
+  Kommunikationswissenschaft} 2
+  (2005)\href{https://epub.ub.uni-muenchen.de/521/(29.12.2022);}{;}
+  Andreas Hepp, Friedrich Krotz, and Tanja Thomas, eds.,
+  \emph{Schlüsselwerke der Cultural Studies} (Wiesbaden: Springer,
+  2009).} A late adoption of Cultural Studies is also true for the
+French tradition, but for other reasons: The French SIC's traditional
+socio-semiotic approach included cultural views---and helped inspired
+the British scholars.\footnote{See Olivesi, ``Sciences de l'information
+  et da la communication''; Averbeck-Lietz, ``Sciences de l'information
+  et de la Communication.''}
+
+We can observe some main common traits among the articles published in
+this special section:
+
+\emph{First}, in their own way, the four approaches involve
+epistemological, methodological, and historical vigilance, as well as a
+clear knowledge of the ``risks'' (Wagner) taken when diving into
+intersecting histories.
+
+\emph{Second,} they show how such inquiries require a careful selection,
+and then combination, of various scales, entries, and parameters, such
+as the role of scientific disciplines, influence of places (be they
+region, country, city, etc.), practices and dynamics of production,
+circulation and/or reception, etc. In their own ways, all four
+contributions intermingle the observation of research, teaching, and
+professional fields, seized through the observation of national
+disciplines and their international influences, and/or through various
+travels of theories, authors, concepts, or topics. These processes
+require a subtle and refined methodological approach. As noted for
+instance by Hubé, who writes:
+
+\newpage\begin{quote}
+Far from confronting French and German approaches, this investigation
+was only made possible by taking advantage of each national one.
+\end{quote}
+
+\emph{Third,} the contributions of this volume could not exist outside
+the assumption that all knowledge is situated, but in ways that are
+particularly difficult to untangle in such contexts. This implies that
+the articles provide access to their relations with a given research,
+but also with the researcher dealing with them (and the thickness of
+their inquiries), and, finally, with the social role of science in
+different (national) societies and historical periods.
+
+In this sense, the four contributions (and the ones to come afterwards!)
+furnish a better understanding of various (inter or trans-)\\\noindent national
+contexts and traditions: theoretical, methodological, academic,
+(inter)disciplinary, etc.
+
+\hypertarget{outlook-why-and-how-to-strengthen-the-german-french-communication-milieu}{%
+\subsection{Outlook: Why and How to Strengthen the German-French\\\noindent
+Communication
+Milieu?}\label{outlook-why-and-how-to-strengthen-the-german-french-communication-milieu}}
+
+How can we develop theoretical and methodological foundations in order
+to ``densify'' the concept of ``milieu'' and expand it beyond the
+thematic fields? And why should we pursue our efforts towards a
+German-French milieu (rather than any other random combination of
+countries)?
+
+More than a decade ago, and after a comparative analysis of the state of
+communication studies in various countries, two researchers pointed out
+a crucial problem about the ``internationalization'' of sciences:
+
+\begin{quote}
+While we will note some significant exceptions to this rule (e.g., to a
+certain extent, \emph{Germany and France, insulated by stronger national
+traditions}), the general tendency, particularly for smaller countries,
+has not been towards internationalisation in a genuine sense. On the
+contrary, it has been towards \emph{an increasing ``provincialisation,''
+as a hegemonic centre progressively transforms and reshapes its
+peripheries in its own image}. Given the reliance of communication and
+media studies upon national traditions in other disciplines, fields and
+areas, this development \emph{raises troubling questions about the
+capacity of contemporary research projects to play an active role in
+their contemporary societies, above and beyond standards imposed by an
+artificial ``international'' benchmark.}\footnote{Juha Koivisto and
+  Peter D. Thomas, \emph{Mapping Communication and Media Research:
+  Conjunctures, Institutions, Challenges} (Tampere: Tampere University
+  Press, 2010), 11 (our italics).}
+\end{quote}
+
+Our concerns echo this statement quite directly. For us, it is crucial
+to maintain epistemic diversity, as well as an anchorage of academic
+practices within their social and political contexts. This implies a
+resistance to a dominant Anglo-American perspective, which imposes
+itself in a standardized and non-satisfactory way (even for many
+researchers working in the countries in question)---not necessarily
+through a direct opposition, but mainly by putting our focus towards
+what is of importance in (trans-)regional contexts.
+
+France and Germany are, indeed, good places to resolutely sustain the
+construction of a ``milieu''---a (trans-)regional cooperation between
+countries that are geographically in contact but do not share the same
+language. (In this way, what is at stake here differs from, for
+instance, the case of Latin America as a world-regional field of
+communication and media studies.) Both countries host a ``communication
+science'' and/or ``media science'' discipline, developed in a very
+original and situated way. Far from being peripheral in an economic or
+political sense, these European countries have nonetheless lost their
+centrality over the past decades, due to transversal movements that also
+affect them internally, and which reflect within our disciplines as
+partly also shown with this special section: the rise of populism, the
+European unification process, the digital transformation, and an
+increasing visibility of de-colonial and post-colonial voices, to name
+just a few. The strength of a solid and reputable academic system,
+combined with the relative weakness of our disciplines in the
+``conversation of disciplines''\footnote{Robert T. Craig,
+  ``Communication in the Conversation of Disciplines,'' \emph{Russian
+  Journal of Communication} 1, no. 1 (2008).} as well as in the
+international communication study field, could be turned into an
+advantage as we build new paths towards transnational and transregional
+research.
+
+\section{Bibliography}\label{bibliography}
+
+\begin{hangparas}{.25in}{1} 
+
+\enlargethispage{\baselineskip}
+
+Appadurai, Arjun. \emph{Modernity at Large: Cultural Dimensions of
+Globalization}. Minneapolis: University of Minnesota Press, 1996.
+
+Arnould, Paul. ``Milieu.'' In \emph{Dictionnaire des sciences humaines},
+edited by Patrick Savidan and Sylvie Mesure, 763--65. Paris: Presses
+Universitaires de France, 2006.
+
+Averbeck-Lietz, Stefanie. ``Sciences de l'information et de la
+Communication in Frankreich: Über eine fehlende Grenzüberschreitung
+zwischen zwei Wissenschaftskulturen in Deutschland und Frankreich.''
+\emph{Lendemains: Etudes Comparées sur la France}, no. 39 (2014):
+12--39.
+
+Averbeck-Lietz, Stefanie, and Maria Löblich.
+``Kommunikationswissenschaft vergleichend und transnational: Eine
+Einführung.'' In \emph{Kommunikationswissenschaft im internationalen
+Vergleich: Transnationale Perspektiven,} edited by Stefanie
+Averbeck-Lietz, 1--29. Wiesbaden: Springer VS, 2017.
+
+Averbeck-Lietz, Stefanie, Jacques Bonnet, and Fabien Bonnet. ``Le
+discours épistémologique des Sciences de l\textquotesingle information
+et de la communication.'' \emph{Revue Française des sciences de
+l\textquotesingle information et de la communication} 4 (2014).
+
+Averbeck-Lietz, Stefanie, Fabien Bonnet, Sarah Cordonnier, and Carsten
+Wilhelm. ``Communication Studies in France: Looking for a `Terre du
+milieu'?'' \emph{Publizistik} 64 (2019): 1--18.
+\url{https://doi.org/10.1007/s11616-019-00504-3}.
+
+Averbeck-Lietz, Stefanie, and Sarah Cordonnier. ``French and German
+Theories of Communication: Comparative Perspectives with Regard to the
+Social and the Epistemological Body of Science.'' In \emph{The Handbook
+of Global Interventions in Communication Theory,} edited by Yoshitaka
+Miike and Jing Yin, 373--92. New York: Routledge, 2022.
+
+Bosler, Sabine. ``Politiques publiques et légitimité des savoirs en
+éducation aux médias: une approche comparative franco-allemande.''
+\emph{Revue Française des Sciences de l\textquotesingle Information et
+de la Communication} 22 (2022).
+\url{http://dx.doi.org/10.4000/rfsic.11108}.
+
+Cordonnier, Sarah, and Hedwig Wagner. ``Déployer l'interculturalité: Les
+étudiants, un vecteur pour la réflexion académique sur l'interculturel:
+Le cas des sciences consacrées à la communication et aux médias en
+France et en Allemagne.'' In \emph{Interkulturelle Kompetenz in
+deutsch-französischen Studiengängen}, edited by Gundula Hiller et al.,
+221--34. Wiesbaden: Springer VS, 2017.
+\url{https://doi.org/10.1007/978-3-658-14480-7_12}.
+
+Cordonnier, Sarah, and Hedwig Wagner. ``L'interculturalité académique
+entre cadrages et interstices: Une enquête franco-allemande sur les
+sciences consacrées à la communication.'' In \emph{France-Allemagne:
+incommunications et convergences}, edited by Gilles Rouet and Michael
+Oustinoff, 169--82. Paris: CNRS Éditions, 2018.
+
+Craig, Robert T. ``Communication in the Conversation of Disciplines.''
+\emph{Russian Journal of Communication} 1, no. 1 (2008): 7--23.
+\url{https://doi.org/10.1080/19409419.2008.10756694}.
+
+Hardt, Hanno. ``Am Vergessen scheitern: Essay zur historischen Identität
+der Publizistikwissenschaft.'' In \emph{Die Spirale des Schweigens: Zum
+Umgang mit der nationalsozialistischen Zeitungswissenschaft,} edited by
+Wolfgang Duchkowitsch, Fritz Hausjell, and Bernd Semrad, 153--61.
+Münster: LIT, 2004.
+
+Harkort, Viviane. ``Traduire~l'intraduisible: Les correspondants
+allemands face à l'élection présidentielle~française.'' In
+\emph{L'élection présidentielle de 2022: vers une réinvention~des
+processus démocratiques?} {[}working title{]}, edited by Philippe Mark
+and Nicolas Pélissier. Paris: L'Harmattan, forthcoming.
+
+Hepp, Andreas, Andreas Breiter, and Uwe Hasebrink, eds.
+\emph{Communicative Figurations: Transforming Communications in Times of
+Deep Mediatizations}. London: Palgrave, 2017.
+
+Hepp, Andreas, Friedrich Krotz, and Tanja Thomas, eds.
+\emph{Schlüsselwerke der Cultural Studies}. Wiesbaden: Springer, 2009.
+
+Koch, Ursula E. ``Zwischen Frankreich und Deutschland vermitteln.'' In
+``\emph{Ich habe dieses Fach erfunden'': Wie die
+Kommunikationswissenschaft an die deutschsprachigen Universitäten kam;
+19 biographische Interviews}, edited by Michael Meyen and Maria Löblich,
+136--50. Köln: von Halem, 2004.
+
+Koivisto, Juha, and Peter D. Thomas. \emph{Mapping Communication and
+Media Research: Conjunctures, Institutions, Challenges}. Tampere:
+Tampere University Press, 2010.
+
+Merkle, Susanne. \emph{Politischer Journalismus in Deutschland und
+Frankreich: Ein Vergleich systemspezifischer Einflüsse und der Debatte
+um TTIP in der Presse.} Wiesbaden: Springer, 2019.
+
+Meyen, Michael. ``The Founding Parents of Communication: 57 Interviews
+with ICA Fellows; An Introduction.'' \emph{International Journal of
+Communication} 6 (2012), 1451--59.
+
+Miike, Yoshitaka, and Jin Ying, eds. \emph{The Handbook of Global
+Interventions in Communication Theory}. New York: Routledge, 2022.
+
+Mœglin, Pierre, ed. \emph{Industrialiser l'éducation: Anthologie
+commentée (1913--2012).} Saint Denis: Presses Universitaires de
+Vincennes, 2016.
+
+Olivesi, Stéphane. \emph{Sciences de l'information et de la
+communication: Objets, savoirs, discipline}. Grenoble: Presses
+Universitaires de Grenoble, 2006.
+
+Scheu, Andreas. \emph{Adornos Erben in der Kommunikationswissenschaft:
+Eine Verdrängungsgeschichte?} Köln: von Halem, 2012.
+
+Schwer, Katja. ``\,`Typisch deutsch'? Zur zögerlichen Rezeption der
+Cultural Studies in der deutschen Kommunikationswissenschaft.''
+\emph{Münchner Beiträge zur Kommunikationswissenschaft} 2 (2005).
+\url{https://epub.ub.uni-muenchen.de/521/}.
+
+Volk, Sophia. \emph{Comparative Communication Research: A Study of the
+Conceptual, Methodological and Social Challenges of International
+Collaborative Studies in Communication Science}. Wiesbaden: Springer VS,
+2022.
+
+Wessler, Hartmut, and Stefanie Averbeck-Lietz. ``Grenzüberschreitende
+Medienkommunikation: Konturen eines Forschungsfeldes im Prozess der
+Konsolidierung.'' In ``Grenzüberschreitende Medienkommunikation.''
+Special issue, \emph{Medien \& Kommunikationswissenschaft} 2 (2012):
+5--18.
+
+Wilhelm, Carsten, and Olivier Thévenin. ``The French Context of Internet
+Studies: Sociability and Digital Practice.'' In
+\emph{Kommunikationswissenschaft im internationalen Vergleich:
+Transnationale Perspektiven}, edited by Stefanie Averbeck-Lietz,
+161--83. Wiesbaden: Springer VS, 2017.
+
+Wilhelm, Carsten. ``Comparer les imaginaires sociaux du numérique en
+SIC: vers une théorie critique située des rationalisations numériques.``
+\emph{Approches Théoriques en Information-Communication} 3, no. 2
+(2021): 109--29.
+
+
+
+
+
+
+
+\end{hangparas}
+
+
+\end{document}
