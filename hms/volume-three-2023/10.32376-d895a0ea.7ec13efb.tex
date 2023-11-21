@@ -1,0 +1,2173 @@
+% see the original template for more detail about bibliography, tables, etc: https://www.overleaf.com/latex/templates/handout-design-inspired-by-edward-tufte/dtsbhhkvghzz
+
+\documentclass{tufte-handout}
+
+%\geometry{showframe}% for debugging purposes -- displays the margins
+
+\usepackage{amsmath}
+
+\usepackage{hyperref}
+
+\usepackage{fancyhdr}
+
+\usepackage{hanging}
+
+\hypersetup{colorlinks=true,allcolors=[RGB]{97,15,11}}
+
+\fancyfoot[L]{\emph{History of Media Studies}, vol. 3, 2023}
+
+
+% Set up the images/graphics package
+\usepackage{graphicx}
+\setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
+\graphicspath{{graphics/}}
+
+\title[How German Communication Research Discovered Bourdieu]{How German Communication Research Discovered Bourdieu but Missed His Potential for the Study of (Populist) Political Communication} % longtitle shouldn't be necessary
+
+% The following package makes prettier tables.  We're all about the bling!
+\usepackage{booktabs}
+
+% The units package provides nice, non-stacked fractions and better spacing
+% for units.
+\usepackage{units}
+
+% The fancyvrb package lets us customize the formatting of verbatim
+% environments.  We use a slightly smaller font.
+\usepackage{fancyvrb}
+\fvset{fontsize=\normalsize}
+
+% Small sections of multiple columns
+\usepackage{multicol}
+
+% Provides paragraphs of dummy text
+\usepackage{lipsum}
+
+% These commands are used to pretty-print LaTeX commands
+\newcommand{\doccmd}[1]{\texttt{\textbackslash#1}}% command name -- adds backslash automatically
+\newcommand{\docopt}[1]{\ensuremath{\langle}\textrm{\textit{#1}}\ensuremath{\rangle}}% optional command argument
+\newcommand{\docarg}[1]{\textrm{\textit{#1}}}% (required) command argument
+\newenvironment{docspec}{\begin{quote}\noindent}{\end{quote}}% command specification environment
+\newcommand{\docenv}[1]{\textsf{#1}}% environment name
+\newcommand{\docpkg}[1]{\texttt{#1}}% package name
+\newcommand{\doccls}[1]{\texttt{#1}}% document class name
+\newcommand{\docclsopt}[1]{\texttt{#1}}% document class option name
+
+
+\begin{document}
+
+\begin{titlepage}
+
+\begin{fullwidth}
+\noindent\LARGE\emph{French-German Communication Research
+} \hspace{27mm}\includegraphics[height=1cm]{logo3.png}\\
+\noindent\hrulefill\\
+\vspace*{1em}
+\noindent{\Huge{How German Communication Research\\\noindent Discovered Bourdieu but Missed His\\\noindent Potential for the Study of (Populist)\\\noindent Political Communication\par}}
+
+\vspace*{1.5em}
+
+\noindent\LARGE{Benjamin Krämer} \href{https://orcid.org/0000-0002-1351-2414}{\includegraphics[height=0.5cm]{orcid.png}}\par\marginnote{\emph{Benjamin Krämer, ``How German Communication Research Discovered Bourdieu but Missed His Potential for the Study of (Populist) Political Communication,'' \emph{History of Media Studies} 3 (2023), \href{https://doi.org/10.32376/d895a0ea.7ec13efb}{https://doi.org/ 10.32376/d895a0ea.7ec13efb}.} \vspace*{0.75em}}
+\vspace*{0.5em}
+\noindent{{\large\emph{LMU Munich}, \href{mailto:kraemer@ifkw.lmu.de}{kraemer@ifkw.lmu.de}\par}} \marginnote{\href{https://creativecommons.org/licenses/by-nc/4.0/}{\includegraphics[height=0.5cm]{by-nc.png}}}
+
+% \vspace*{0.75em} % second author
+
+% \noindent{\LARGE{<<author 2 name>>}\par}
+% \vspace*{0.5em}
+% \noindent{{\large\emph{<<author 2 affiliation>>}, \href{mailto:<<author 2 email>>}{<<author 2 email>>}\par}}
+
+% \vspace*{0.75em} % third author
+
+% \noindent{\LARGE{<<author 3 name>>}\par}
+% \vspace*{0.5em}
+% \noindent{{\large\emph{<<author 3 affiliation>>}, \href{mailto:<<author 3 email>>}{<<author 3 email>>}\par}}
+
+\end{fullwidth}
+
+\vspace*{1em}
+
+
+\hypertarget{abstract}{%
+\section{Abstract}\label{abstract}}
+
+Starting with an outline of Pierre Bourdieu's reception in
+German-speaking communication research, this article identifies an
+important omission: his writings on politics and the corresponding
+symbolic struggles. In particular, the field of research on political
+communication could profit from the approaches outlined in these
+publications. This is exemplified by research on populist communication,
+which has become one of the most important topics in the field of
+political communication. This contribution argues that, together with
+Bourdieu's theory of social class, his conception of politics could be a
+fruitful way to understand current (right-wing) populism, with its
+construction of ``the people,'' its particular claim to representation,
+as well as its social-structural basis and appeal to certain groups.
+However, there are several barriers immanent in the dominant approaches
+to research on political communication that can be understood from the
+history of the field and that have hindered the adoption of such a
+perspective in German-speaking communication research.
+
+
+
+
+\vspace*{2em}
+
+\noindent{\emph{History of Media Studies}, vol. 3, 2023}
+
+
+ \end{titlepage}
+
+% \vspace*{2em} | to use if abstract spills over
+
+\newthought{The reception of} a scholar's work, particularly from other disciplines,
+is always selective. This is an almost tautological claim, because
+scholarship always involves the selection of earlier research that new
+theories and studies can build on. What shapes this selectivity, and how
+different selections lead to different outcomes, are the more
+interesting questions. This article describes a case of selective
+appropriation across national, linguistic, and disciplinary borders with
+a complex pattern of openness and closure: In international comparison,
+German-speaking communication research\footnote{In this paper,
+  ``German(-speaking) communication research'' refers to a subfield of
+  communication research in which actors from Austria, Germany, and
+  (German-speaking) Switzerland are active (thus also potentially
+  competing for positions in departments where a certain fluency in
+  German is usually required, a barrier for international candidates.)
+  It thus seems justified to speak of a definable subfield. While most
+  of these actors occasionally publish in German, many if not most of
+  their publications are in English. I am only aware of a handful of
+  German-speaking researchers working outside French-speaking areas who
+  have ever published in French.} is somewhat open to social theory, but
+less open to the approaches from Francophone \emph{sciences de
+l'information et de la communication} (SIC) and to more semiological
+approaches.\footnote{On the historical differences between the two
+  fields, see Stefanie Averbeck, ``Comparative history of communication
+  studies: France and Germany,'' \emph{The Open Communication Journal}
+  2, no. 2 (2008). One of the rare exceptions of German-speaking
+  researchers of populism connecting with French-speaking literature is
+  the recent article by Peter Maurer \& Rajesh Sharma, ``L'usage de
+  narratifs populistes dans les~tweets des candidats `contestataires'
+  aux élections présidentielles en France (2017) et aux États-Unis
+  (2016),'' \emph{Revue internationale de politique comparée} 29, no.
+  2--3 (2022). However, apart from non-French-speaking scholars of
+  populism, they mostly cite French-speaking political scientists and
+  scholars from other disciplines rather than researchers in SIC.}
+Political communication is a field within (German and international)
+communication research that is somewhat less open to theories of society
+and rather internationalized, but mostly oriented towards Anglophone
+literature.
+
+\enlargethispage{\baselineskip}
+
+This contribution is a historical analysis of this status quo and an
+attempt at counterfactual history: It tries to locate some of the
+missing links arising from this disciplinary and cultural constellation,
+to explore its historical roots, and to imagine what could have happened
+if German or international research on political communication had
+opened up to concepts from French social theory related to the political
+use of language. It describes how German communication research
+discovered the work of Pierre Bourdieu but missed his potential for the
+study of political communication. It then illustrates the untapped
+potential of his work for this field and the historical reasons why it
+has not been used, focusing on the example of his writings on political
+sociology and the phenomenon of populist communication as one of the
+important concepts (or buzzwords) in recent research on political
+communication.
+
+If we want to make the most of our analysis of political trends and
+maximize our contribution to current debates, we should perhaps be
+prepared to cross several borders: from nomothetic toward interpretive
+or semiological, constructivist, or performative perspectives; from
+(social) psychology and mid-range sociological and politological
+perspectives as the most important external sources from which concepts
+are borrowed toward more general social theory; and from a cluster of
+Anglophone (and Germanophone, Dutch, Scandinavian, etc.) literature and
+scholars toward the Francophone sphere. Pierre Bourdieu's work
+exemplifies some of these potential new directions, providing a theory
+of society with its social classes and trajectories shaping their stance
+toward political developments such as the rise of populism. And it
+provides a performative theory of politics that sees language use as
+something shaping social fields rather than merely describing or
+evaluating social reality, such as populism trying to reconfigure the
+political field and people's vision of society.
+
+However, there are various barriers to the adoption of such approaches
+stemming from the history of German-speaking communication, which will
+be discussed below. Taken together, this contribution is an invitation
+to reflect on past and future paths in German-speaking and international
+research in political communication, both to the field itself and to
+everyone interested in the history and sociology of the field of
+communication research.
+
+\hypertarget{a-short-history-of-pierre-bourdieus-reception-in-german-communication-research}{%
+\section{A Short History of Pierre Bourdieu's Reception in German\\\noindent Communication
+Research}\label{a-short-history-of-pierre-bourdieus-reception-in-german-communication-research}}
+
+German-speaking communication research has been characterized
+historically as a field that has turned from normative, individualist,
+interpretive, and historical perspectives towards empirical social
+science between 1945 and the 1970s.\footnote{See Maria Löblich,
+  \emph{Die empirisch-sozialwissenschaftliche Wende in der Publizistik-
+  und Zeitungswissenschaft} (Köln: Halem, 2010). On the earlier
+  reception of sociological approaches, see Stefanie Averbeck,
+  \emph{Kommunikation als Prozess: Soziologische Perspektiven in der
+  Zeitungswissenschaft, 1927--1934} (Münster: Lit, 1999).} The most
+prominent proponent of this social-scientific turn in German-speaking
+communication research is probably Elisabeth Noelle-Neumann, the
+founding figure of the ``Mainz School,'' which epitomized this
+reorientation. The turn has been welcomed by its proponents as a sign of
+renewal for a discipline that had been discredited by its political
+conformity during National Socialism and as a path toward academic
+legitimacy by means of scientification. On the other side, this
+development has probably led to a reluctance toward anything that has
+either a literary or art criticism, or ``grand theory,'' feel to it.
+
+Those who were not willing to (completely) follow this turn or were
+later dissatisfied with the emerging mainstream paradigm of effects- and
+variable-oriented research had several possibilities:
+
+\begin{enumerate}
+\item
+  To defend the \emph{older paradigm} despite its reputation as
+  old-fashioned and descriptive---a reputation the proponents of the
+  turn had successfully created over time.
+\item
+  To (re-)turn to \emph{historical approaches}. The older schools cannot
+  be reduced to such perspectives, although some protagonists put a
+  strong emphasis on the study of past media institutions and actors.
+  Historical approaches did not completely vanish with the
+  social-scientific turn. There is still a remaining or renewed niche
+  for (often theoretically informed) historical scholarship that is
+  accepted by the discipline as a legitimate, albeit minor field of
+  research (as testified by a vibrant Section for Communication History
+  in the German Communication Association and a number of professorships
+  dedicated to the topic).
+\item
+  To turn to \emph{Marxism and critical theory.} Some scholars tried to
+  establish a school of critical communication research as early as the
+  1960s.\footnote{Andreas Scheu, \emph{Adornos Erben in der
+    Kommunikationswissenschaft: Eine Verdrängungsgeschichte?} (Köln:
+    Halem, 2012), 12.} However, in the rather centrist to conservative
+  climate in German-speaking communication research during the
+  post--World War II and Cold War eras, and the more general political
+  climate with its suspicion toward left-wing civil servants
+  (exemplified by the 1972 ``anti-radical decree'' essentially banning
+  them from their professions), those approaches were marginalized in
+  the following decades.\footnote{Scheu, \emph{Adornos Erben}.} One of
+  the few scholars from the Frankfurt School still cited today in
+  communication research is Jürgen Habermas.\footnote{As an example of
+    his reception in communication research, see Hartmut Wessler,
+    \emph{Habermas and the Media} (Cambridge, MA: Polity, 2018).} This
+  may be explained by his reputation not as a radical critical theorist
+  but one that has made him a kind of ``state philosopher'' of the
+  Federal Republic of Germany. His theories of communicative action and
+  deliberative ethics and democracy are used in German-speaking
+  communication research less as a foundation of a fundamental critique
+  of modern rationalization or of a radically new form of democracy, but
+  more as a template for the empirical analysis of actual discourses
+  along certain quantifiable norms of inclusivity and argumentativity.
+\item
+  To turn to \emph{constructivist social theory and epistemology}, most
+  importantly the alternative epistemology of radical constructivism or
+  Niklas Luhmann's social systems theory. In the 1990s, those looking
+  beyond low- and middle-range theories and ad hoc models and hypotheses
+  were often attracted to these schools. The ``radicalism'' of these
+  approaches, whose reception was most importantly centered around the
+  University of Münster, does not lie in their critique of the status
+  quo but in their opposition to naive realism and commonplace
+  conceptions of the social. However, the potential of these schools may
+  have seemed exhausted in the late 2000s (although many ideas in
+  Luhmann's work had not been adopted and others still somewhat
+  reverberate in journalism studies or theories of the public sphere).
+  Most of the German-speaking scientific community may have been tired,
+  if not outright skeptical, of the abstract discussions of concepts
+  such as autopoeisis (does only communication communicate or does
+  social systems theory erase humans as the center of communication?),
+  the ``code'' of journalism (is it published versus unpublished,
+  topical versus non-topical, information versus no information?), and
+  journalism's relationship with other systems (is it best described as
+  interpenetration, intersection, irritation, de-differentiation,
+  etc.?).
+\item
+  To ``import'' \emph{cultural studies approaches}.\footnote{For
+    example, Andreas Hepp has published an early introduction to
+    cultural studies for media and communication research: Andreas Hepp,
+    \emph{Cultural Studies und Medienanalyse: Eine Einführung}
+    (Wiesbaden: VS, 1999).} However, their reception came with its own
+  difficulties:\footnote{On the following, see Katja Schwer, ``Typisch
+    deutsch? Zur zögerlichen Rezeption der Cultural Studies in der
+    deutschen Kommunikationswissenschaft,'' \emph{Münchener Beiträge zur
+    Kommunikationswissenschaft}, no. 2 (2005).} Some scholars certainly
+  sought a niche for constructivism as an alternative to a mainstream
+  that claimed, based on its reading of critical rationalism, that
+  objective knowledge is possible or can at least be approached by
+  researchers and media professionals. However, this niche was already
+  occupied by the cognitivist epistemology of radical constructivism
+  instead of the social, culturalist, contextual, and self-reflexive
+  perspective of the cultural studies approach. Furthermore, this
+  approach had to compete with or had to endure the same suspicion as
+  other critical approaches, most importantly in Germany in the form of
+  critical theory. Meanwhile, many researchers who had introduced
+  cultural studies approaches into German-speaking communication
+  research have turned toward Continental social theorists or
+  qualitative and critical approaches less strictly tied to cultural
+  studies as foundation for their work.
+\end{enumerate}
+
+It may have been the search for alternative social theories that has led
+those unsatisfied with both the dominant ``realist''
+critical-rationalist paradigm and the established heterodoxy of social
+systems theory to explore the work of Bourdieu, starting in the 2000s.
+It addressed both dissatisfactions by proposing a perspective that is
+non-individualist but still actor-centric, dynamic, and focused around
+specific practices (as opposed to the seemingly static dichotomies of
+Luhmann's codes)---an encompassing, abstract description of society that
+is, at the same time, empirically fruitful.\footnote{The same could be
+  said, for example, about the theories of Anthony Giddens or Jürgen
+  Schimank that some German-speaking communication researchers have
+  turned to. For example, Christoph Neuberger names the theories of
+  Bourdieu, Giddens, Luhmann, and Schimank as foundations that have been
+  used for the analysis of mediatization. See Christoph Neuberger,
+  ``Journalismus und Medialisierung der Gesellschaft,'' in
+  \emph{Journalismusforschung: Stand und Perspektiven}, ed. Klaus Meier
+  and Christoph Neuberger (Baden-Baden: Nomos, 2023).}
+
+Thus, Bourdieu seems to be a good fit not for the absolute mainstream
+but for those looking beyond both the constructivist and functionalist
+schools and the variable-centered approaches. Still, certain aspects of
+his work were neglected, as will be shown below.
+
+Quantitative social scientists may find testable predictions,
+correspondence analyses, and other statistical data in Bourdieu's
+publications; but also pages of jargon, paradoxical and seemingly
+tautological phrases; long analyses of Flaubert's \emph{Sentimental
+Education}, photography in rural France, or Heidegger's worldview; and
+comparisons between political preferences and the taste for certain
+types of cheese. This is in stark contrast with the literature usually
+cited in a large part of the field---papers that review previous
+research, introduce a number of concepts, and deduce a few hypotheses,
+followed by a methodological section, the results, and a number of
+rather straightforward conclusions. Bourdieu's prose, some of his
+topics, and the complexity of his conceptual and theoretical framework
+made his oeuvre (like almost all general social theory) seem less useful
+to much of the dominant pole of the field but attractive to those
+looking for more than constructs with established scales to combine into
+hypotheses and models.
+
+Although Bourdieu can be read as a ``pure'' social theorist instead of
+an activist or critical scholar,\footnote{On the reception in Germany
+  beyond communication research and long before the adoption of
+  Bourdieu's theories in this field, see Michael Gemperle, ``The Double
+  Character of the German Bourdieu: On the Twofold Use of Pierre
+  Bourdieu's Work in the German-Speaking Social Sciences,''
+  \emph{Sociologica} 2009, no. 1 (2009). He notes that the more recent
+  reception has been increasingly apolitical.} and although his concepts
+can be used for the most conventional empirical social-scientific
+research, terms like bourgeoisie, domination, capital, etc., may still
+have some connotations of class struggle or armchair leftism and are not
+quite part of the usual vocabulary of German-speaking communication
+research.
+
+Where his work has been drawn upon, Bourdieu has therefore been read not
+so much as the ``political'' intellectual or ``activist'' investigator
+of \emph{misère} and suffering or of neoliberalism or as ``communication
+theorist'' (see below). He has instead been considered in German
+communication research (most notably in Munich) from three different
+perspectives---very much in line with his reception in the French social
+sciences and internationally:\footnote{See Thomas Wiedemann, ``Pierre
+  Bourdieu: Ein internationaler Klassiker der Sozialwissenschaft mit
+  Nutzen für die Kommunikationswissenschaft,'' \emph{Medien \&
+  Kommunikationswissenschaft} 62, no. 1 (2014). Interestingly, Wiedemann
+  (p. 97) emphasizes that Bourdieu's work ``has more to offer to the
+  discipline {[}of communication research---obviously in the
+  German-speaking context{]} than the publication `On television'
+  \emph{and a number of works on language and symbolism}'' (my
+  translation; emphasis added).}
+
+\begin{enumerate}
+\item
+  as an analyst of cultural \emph{distinctions},\footnote{Pierre
+    Bourdieu, \emph{La distinction: Critique sociale du jugement}
+    (Paris: Minuit, 1979).} to study the homology between social class
+  and media use;\footnote{E.g., Klaus Beck, Till Büser, and Christiane
+    Schubert, ``Medialer Habitus, mediales Kapital, mediales
+    Feld---oder: vom Nutzen Bourdieus für die Mediennutzungsforschung,''
+    in \emph{Pierre Bourdieu und die Kommunikationswissenschaft:
+    Internationale Perspektiven}, ed. Thomas Wiedemann and Michael Meyen
+    (Köln: Halem, 2013); Benjamin Krämer, \emph{Mediensozialisation:
+    Theorie und Empirie zum Erwerb medienbezogener Dispositionen im
+    Lebensverlauf} (Wiesbaden: Springer VS, 2013); Michael Meyen,
+    ``Medienwissen und Medienmenüs als kulturelles Kapital und als
+    Distinktionsmerkmale: Eine Typologie der Mediennutzer in
+    Deutschland,'' \emph{Medien und Kommunikationswissenschaft} 55, no.
+    3 (2007); Michael Meyen and Senta Pfaff-Rüdiger, \emph{Internet im
+    Alltag: Qualitative Studien zum praktischen Sinn von
+    Onlineangeboten} (Münster: Lit, 2009); Helmut Scherer,
+    ``Mediennutzung und soziale Distinktion,'' in \emph{Pierre Bourdieu
+    und die Kommunikationswissenschaft. Internationale Perspektiven},
+    ed. Thomas Wiedemann and Michael Meyen (Köln: Halem, 2013).}
+\item
+  as a field theorist and surveyor of scientific and other
+  fields,\footnote{Pierre Bourdieu, \emph{Homo academicus} (Paris:
+    Minuit, 1981); Pierre Bourdieu, \emph{Les règles de
+    l\textquotesingle art: Genèse et structure du champ littéraire}
+    (Paris: Seuil, 1992).} to describe the structures and trajectories
+  in the field of communication research\textsuperscript{15} and to analyze
+  the journalistic field;\textsuperscript{16} and
+\item
+  as a theorist of social practices and of the practical
+  sense,\textsuperscript{17} to conceptualize
+  journalistic or digital practices or practices of media
+  use.\textsuperscript{18}
+\end{enumerate}
+
+Interestingly, Bourdieu has not been ``imported'' via French
+\emph{sciences de l'information et de la communication} (SIC), but
+directly from sociology as another social theorist just like Luhmann and
+others. The reasons for this are twofold. First, there is little direct
+interaction between French and German communication researchers, both
+due to language barriers (with a lot of relevant research in France
+still published in French, as opposed to German researchers publishing
+some works, such as monographic dissertations, in German, but a large
+part in English-language journals) and paradigmatic
+differences.\textsuperscript{19} Second, Bourdieu is by no
+means a central figure in SIC as the references (or lack thereof) to his
+work in introductory textbooks demonstrate.\textsuperscript{20}
+
+A topic and perspective in Bourdieu's work that has been largely
+neglected can be found in his earlier writings on politics that analyze
+how political concepts and discourses acquire their meaning in symbolic
+struggles and the power of such discourses to constitute social
+reality.\textsuperscript{21} These
+writings, mostly published in the 1970s and early 1980s and often in
+\emph{Actes de la recherche en sciences sociales}, may be grouped
+together with other texts on the social role of language in general, on
+``what speaking means''\textsuperscript{22}---not only in terms of denotations proper, but more
+importantly, who is and feels entitled to speak, how different ways of
+speaking practiced by different groups\newpage\noindent are valued,\marginnote{\textsuperscript{15} E.g., Nathalie Huber,
+    \emph{Kommunikationswissenschaft als Beruf: Zum Selbstverständnis
+    von Professoren des Faches im deutschsprachigen Raum} (Köln: Halem,
+    2010); Maria Löblich and Andreas Scheu, ``Writing the History of
+    Communication Studies: A Sociology of Science Approach,''
+    \emph{Communication Theory} 21, no. 1 (2011); Michael Meyen, ``Der
+    Machtpol des kommunikationswissenschaftlichen Feldes,''
+    \emph{Studies in Communication and Media} 1, no. 3­­--4 (2012); Scheu,
+    \emph{Adornos Erben}; Thomas Wiedemann, \emph{Walter Hagemann:
+    Aufstieg und Fall eines politisch ambitionierten Journalisten und
+    Publizistikwissenschaftlers} (Köln: Halem, 2015).} and\marginnote{\textsuperscript{16} E.g., Thomas Hanitzsch, ``Populist
+    Disseminators, Detached Watchdogs, Critical Change Agents and
+    Opportunist Facilitators: Professional Milieus, the Journalistic
+    Field and Autonomy in 18 Countries,'' \emph{International
+    Communication Gazette} 73, no. 6 (2011); Peter Maurer and Andreas
+    Riedl, ``Why Bite the Hand That Feeds You? Politicians' and
+    Journalists' Perceptions of Common Conflicts,'' \emph{Journalism}
+    22, no. 11 (2011). For an analysis of the use of Bourdieu's concepts
+    in international journalism research, see Phoebe Maares and Folker
+    Hanusch, ``Interpretations of the Journalistic Field: A Systematic
+    Analysis of How Journalism Scholarship Appropriates Bourdieusian
+    Thought,'' \emph{Journalism} 23, no. 4 (2022).} how\marginnote{\textsuperscript{17} Pierre Bourdieu, \emph{Esquisse d\textquotesingle une
+    théorie de la pratique, précédé de Trois études
+    d\textquotesingle ethnologie kabyle} (Geneva: Droz, 1972); Pierre
+    Bourdieu, \emph{Le sens pratique} (Paris: Minuit, 1980); Pierre
+    Bourdieu, \emph{Raisons pratiques: Sur la théorie de
+    l\textquotesingle action} (Paris: Seuil, 1994).} speaking\marginnote{\textsuperscript{18} E.g., Benjamin Krämer, \emph{Mediensozialisation:
+    Theorie und Empirie zum Erwerb medienbezogener Dispositionen im
+    Lebensverlauf} (Wiesbaden: Springer VS, 2013); Benjamin Krämer,
+    ``Strategies of Media Use,'' \emph{Studies in Communication and
+    Media} 2, no. 1 (2013); Christian Pentzold, ``Praxistheoretische
+    Prinzipien, Traditionen und Perspektiven kulturalistischer
+    Kommunikations- und Medienforschung,'' \emph{Medien und
+    Kommunikationswissenschaft} 63 (2015); Christian Pentzold,
+    \emph{Zusammenarbeiten im Netz: Praktiken und Institutionen
+    internetbasierter Kooperation} (Wiesbaden: Springer VS, 2016);
+    Johannes Raabe, \emph{Die Beobachtung journalistischer Akteure:
+    Optionen einer empirisch-kritischen Jour-}}
+brings about social reality---and on symbolic power as such.\textsuperscript{23}
+
+This understanding of communication is rather at odds with the prevalent
+conception in German-speaking communication research that locates
+communicative ``power'' in the quantitative distribution of the
+``manifest'' media content,\textsuperscript{24} i.e., the objectively measurable mentions of topics, actors,
+and opinions, and the effects of this ``dose'' on a typical user or a
+user with a set of preexisting attitudes.
+
+Thus, although Bourdieu was attractive to a number of communication
+researchers looking for social theory that can be read both critically
+and as distanced analysis (but without the formalism of social systems
+theory or the stigma of critical theory), there have been particular
+barriers preventing the widespread adoption of Bourdieu's ideas in the
+German-speaking areas and in research on political communication in
+particular. To illustrate this last point and thus contribute to the
+self-reflection of this field, I will not simply list these obstacles,
+but use the potential of counterfactual history, taking the example of
+the recently much discussed topic of populist communication.
+
+To start with, it will be necessary to familiarize ourselves with the
+history of research on populist communication that shapes the
+intellectual landscape of this field today and mirrors many features of
+the overall field of research on political communication.
+
+\hypertarget{a-very-short-history-of-research-on-populist-communication}{%
+\section{A Very Short History of Research on Populist
+Communication}\label{a-very-short-history-of-research-on-populist-communication}}
+
+To the best of my knowledge, the concept or phenomenon of populism had
+not received considerable attention in the discipline of communication
+research until the 2010s,\textsuperscript{25} with a small
+number of publications in the 2000s (most notably by Gianpietro
+Mazzoleni\textsuperscript{26}). Subsequently,
+research quickly moved from a small number of publications investigating
+the relationship between journalist and populist logics\textsuperscript{27} to a
+strongly networked field (at least in Europe) that was able to take
+stock of its common activities and accomplishments in a number of
+collective volumes and special issues.\textsuperscript{28} In the context of European communication
+research, my impression is that of a consolidation and convergence
+toward a perspective that is very much in line with the most prevalent
+approach in political communication research as a whole: Populism is
+conceptualized rather formally as an ideology based on a combination of
+dimensions that can then be operationalized in standardized content
+analyses and questionnaires in order to explain the occurrence of
+populist messages and attitudes or related constructs. By combining the
+concept of populism with other constructs, usually from the repertoire
+of political communication, journalism\marginnote{\emph{nalismusforschung}
+    (Wiesbaden: VS, 2005); Ralph Weiß, ``\,`Praktischer Sinn,' soziale
+    Identität und Fern-Sehen: Ein Konzept für die Analyse der Einbettung
+    kulturellen Handelns in die Alltagswelt,'' \emph{Medien und
+    Kommunikationswissenschaft} 48, no. 1 (2000); Johannes Raabe,
+    ``Kommunikation und soziale Praxis: Chancen einer
+    praxistheoretischen Perspektive für Kommunikationstheorie und
+    -forschung,'' in \emph{Theorien der Kommunikations- und
+    Medienwissenschaft: Grundlegende Diskussionen, Forschungsfelder und
+    Theorieentwicklungen}, ed. Carsten Winter, Andreas Hepp, and
+    Friedrich Krotz (Wiesbaden: VS, 2008). Previously cited authors
+    Hanitzsch, Huber, Löblich, Meyen, Pfaff-Rüdiger, Scheu, Wiedemann,
+    and Krämer have all worked or still work in Munich, which highlights
+    the role of this single (but quite large) department for Bourdieu's
+    reception in German-speaking communication research.} studies,\marginnote{\textsuperscript{19} Stefanie Averbeck, ``Comparative History of
+  Communication Studies: France and Germany,'' \emph{The} \emph{Open
+  Communication Journal} 2, no. 2 (2008).} and\marginnote{\textsuperscript{20} Some introductions
+  to SIC do not cite Bourdieu at all (e.g., Daniel Bougnoux,
+  \emph{Introduction aux sciences de la communication} {[}Paris: La
+  Découverte, 2001{]}) or only with regard to rather peripheral aspects,
+  as opposed to dedicating a certain amount of space to his cultural
+  sociology, theory of practice, or works related to journalism (e.g.,
+  Bruno Ollivier, \emph{Les sciences de la communication: Théories et
+  acquis} {[}Paris: Armand Colin, 2007{]}).
+  Of course, there are some scholars in French sociology studying
+  communication and the media or working at the intersection between
+  sociology and SIC who treat Bourdieu as canonical, such as Éric
+  Maigret, \emph{Sociologie de la communication et des médias} (Paris:
+  Armand Colin, 2015); Jean-Pierre Esquenazi, ``Les médias et leurs
+  publics,`` in \emph{Sciences de l'information et de la communication},
+  ed. Stéphane Olivesi (Paris: PUG, 2013).} media\marginnote{\textsuperscript{21} One exception is Benjamin Krämer, ``Eine Bourdieu'sche
+  Kritik der politischen Urteilskraft,'' in \emph{Pierre Bourdieu und
+  die Kommunikationswissenschaft: Internationale Perspektiven}, ed.
+  Thomas Wiedemann and Michael Meyen (Köln: Halem, 2013).} or\marginnote{\textsuperscript{22}\setcounter{footnote}{22} Pierre Bourdieu, ``Ce que parler veut
+  dire,'' in \emph{Questions de sociologie}, ed. Pierre Bourdieu (Paris:
+  Minuit, 1980).} social
+psychology, the degree or frequency of populist communication from
+certain sources can be explained by differences among political actors
+or media outlets. This approach further allows researchers to
+experimentally investigate the effect of populist messages and to
+identify the correlates of populist attitudes---such as low trust in the
+media. This consolidation is certainly not without exceptions, but
+German-speaking researchers are among the main actors in the field who
+follow this paradigm.\textsuperscript{29} This leads to highly cumulative research efforts but also,
+almost inevitably, to a number of omissions and rigidities, such as:
+
+\begin{itemize}
+\item
+  that certain phenomena, such as ``the'' people, ``the'' elite, the
+  in-group, the out-group, etc., and perhaps even ``populism'' itself,
+  are more or less taken for granted (or even essentialized), rather
+  than analyzed in detail with respect to their discursive constitution;
+\item
+  the relative neglect of overarching social contexts (classes or
+  milieus), trajectories or biographies, and overall ideologies or
+  worldviews, often in favor of a strictly experimental logic of
+  stimulus and response or analyses including a small number of
+  pre-existing attitudes and covariates;
+\item
+  the dominance of quantitative over qualitative, interpretive,
+  biographical, historical, and iconographical studies that would focus
+  on meaning, performance, narrative, style, and symbolism; and
+\item
+  a certain distance toward critical and more or less openly left-wing
+  schools (including, for example, the Essex school of discourse
+  analysis and populism research associated with Ernesto Laclau and
+  Chantal Mouffe).
+\end{itemize}
+
+Somewhat distinct from the dominant paradigm, albeit not completely
+disconnected from it, other researchers have emphasized the
+performative, discursive, or stylistic aspects of populism. At the same
+time, they have also established a more explicit connection with
+communication, discursive practices, and the media (however, mostly
+outside the German-speaking region\textsuperscript{30}). This sets
+them apart from still other strands of populism research that remain
+very vague with regard to these aspects or are mostly interested in
+political theory, party strategies, electoral behavior, and the like.
+
+Based on this characterization of current research on populist
+communication by German-speaking researchers, we can now turn to the
+counterfactual question of what could have happened if Bourdieu's
+political sociology had been an established approach in German-speaking
+research in political communication, and to the historical reasons why
+this path has not been taken.
+
+\hypertarget{vous-avez-dit-populiste-bourdieus-political-sociology-and-populist-communication}{%
+\section{Vous\marginnote{\textsuperscript{23} Pierre
+  Bourdieu, ``Sur le pouvoir symbolique,'' \emph{Annales: Économies,
+  sociétés, civilisations} 32, no. 3 (1977).} Avez\marginnote{\textsuperscript{24} As in the famous definition of
+  content analysis by Bernhard Berelson and Paul F. Lazarsfeld,
+  \emph{The Analysis of Communication Content} (Chicago: University of
+  Illinois, 1948), 6. Despite different challenging paradigms, such as
+  the constructivist school, many scholars continue to adhere to the
+  epistemological or pragmatic principle that media content is a
+  reliably measurable object and as such an identifiable source of
+  effects.} Dit `Populiste'? Bourdieu's Political Sociology\\\noindent
+and Populist
+Communication}\label{vous-avez-dit-populiste-bourdieus-political-sociology-and-populist-communication}}
+
+\hypertarget{bourdieu-on-populism}{%
+\subsection{Bourdieu on
+Populism?}\label{bourdieu-on-populism}}
+
+To\marginnote{\textsuperscript{25} There have been, however, a number of
+  publications in political science with a certain focus on
+  communication. Probably the most important in terms of later citations
+  by communication researchers is Jan Jagers and Stefaan Walgrave,
+  ``Populism as Political Communication Style: An Empirical Study of
+  Political Parties\textquotesingle{} Discourse in Belgium,''
+  \emph{European journal of political research} 46 (2007).} the\marginnote{\textsuperscript{26} Gianpietro Mazzoleni, ``Mediatization and Political
+  Populism,'' in \emph{Mediatization of politics: Understanding the
+  Transformation of Western Democracies}, ed. Frank Esser and Jesper
+  Strömbäck (London: Palgrave Macmillan, 2014); Gianpietro Mazzoleni,
+  ``Populism and the Media,'' in \emph{Twenty-First Century Populism:
+  The Spectre of Western European Democracy}, ed. Daniele Albertazzi and
+  Duncan McDonnell (London: Palgrave Macmillan, 2008); Gianpietro
+  Mazzoleni, ``The Media and the Growth of Neo-Populism in Contemporary
+  Democracies,'' in \emph{The Media and Neo-Populism: A Contemporary
+  Comparative Analysis}, ed. Gianpietro Mazzoleni, Julianne Stewart, and
+  Bruce Horsfield (Westport, CT: Praeger, 2003); Julianne Stewart,
+  Gianpietro Mazzoleni, and Bruce Horsfield, ``Conclusion: Power to the
+  Media Managers,'' in \emph{The Media and Neo-Populism: A Contemporary
+  Comparative Analysis}, ed. Gianpietro Mazzoleni, Julianne Stewart, and
+  Bruce Horsfield (Westport, CT: Praeger, 2003).} best\marginnote{\textsuperscript{27} E.g.,
+  Stewart, Mazzoleni, and Horsfield, ``Conclusion''; Benjamin Krämer,
+  ``Media Populism: A Conceptual Clarification and Some Theses on Its
+  Effects,'' \emph{Communication Theory} 24, no. 1 (2014).} of\marginnote{\textsuperscript{28} E.g., Toril Aalberg et
+  al., eds., \emph{Populist Political Communication in Europe} (New
+  York: Routledge, 2017); Carsten Reinemann et al., eds.,
+  \emph{Communicating Populism: Comparing Actor Perceptions, Media
+  Coverage, and Effects on Citizens in Europe} (New York: Routledge,
+  2019); Benjamin Krämer and Christina Holtz-} my knowledge, Bourdieu never mentioned the concept of
+populism. So why read him as a theorist relevant to populism research
+and speculate about the trajectories of German-speaking political
+communication research had his concepts been adopted? Bourdieu came
+close to populism in three very different ways.
+
+First, without mentioning right-wing populism as a concept, Bourdieu
+distinguished between a liberal and a reactionary type of conservatism
+(the latter defined by its abhorrence of established politics and its
+fixation on the hypocrisy of the ruling class---reminiscent of populist
+anti-elitism).\textsuperscript{31} He
+linked this difference to his conception of social classes, which can
+thus be relevant to populism research (as discussed below).
+
+Second, his writings on politics focus on the concept of representation
+and of the idea and/or signifier of ``the popular'' (see below). We may
+also refer to Bourdieu's field theory to analyze the changing
+relationship between the journalistic and the political field due to
+populism or as a factor enabling populism. However, this idea of a
+changing relationship between politics and the media is more familiar to
+scholars of political communication, even if it is rarely expressed in
+terms of field theory, but more often in terms of concepts such as
+mediatization.\textsuperscript{32} This is why we will focus on the former
+aspect of representation and signification.
+
+Third and finally, we may speculate that his endorsement of the comedian
+Coluche's potential candidacy in the 1981 French presidential election
+followed a kind of ``populist'' impetus. Bourdieu supported the idea
+that ``just anybody can be a candidate'' and linked this to his
+criticism of politicians' ``monopoly'' on politics and of the exclusion
+of ``irresponsible'' outsiders from the arena of politics in the name of
+technocratic and juridical ``competence'' (see below on this division of
+labor and the resulting disenfranchisement of voters).\textsuperscript{33} However, his criticism of
+technocracy and political exclusion is often counterbalanced by a
+criticism of demagoguery. Still, he neither conceptualized the
+counterpart to technocracy as ``populism,'' nor saw demagoguery
+primarily in populist claims of representation. His critique instead
+centered on the construction of public opinion by means of opinion
+polls.\textsuperscript{34}
+
+We also have to note that in Bourdieu's writings on politics and
+symbolic struggles, the role of the media is hardly discussed.
+Meanwhile, his most important publications on the media focus on the
+heteronomy\marginnote{Bacha, eds.,
+  \emph{Perspectives on Populism and the Media: Avenues for Research}
+  (Baden-Baden: Nomos, 2020).} of\marginnote{\textsuperscript{29} E.g., Sven Engesser et al., ``Populism
+  and Social Media: How Politicians Spread a Fragmented Ideology,''
+  \emph{Information, Communication \& Society} 20, no. 8 (2017); Nayla
+  Fawzi, ``Untrustworthy News and the Media as `Enemy of the People?'
+  How a Populist Worldview Shapes Recipients' Attitudes toward the
+  Media,'' \emph{The International Journal of Press/Politics} 24, no. 2
+  (2019); Nayla Fawzi and Benjamin Krämer, ``The Media as Part of a
+  Detached Elite? Exploring Antimedia Populism among Citizens and Its
+  Relation to Political Populism,'' \emph{International Journal of
+  Communication} 15 (2021); Jörg Matthes and Desirée Schmuck, ``The
+  Effects of Anti-immigrant Right-Wing Populist Ads on Implicit and
+  Explicit Attitudes: A Moderated Mediation Model,'' \emph{Communication
+  Research} 44, no. 4 (2017); Martin Wettstein et al., ``What Drives
+  Populist Styles? Analyzing Immigration and Labor Market News in 11
+  Countries,'' \emph{Journalism \& Mass Communication Quarterly} 96, no.
+  2 (2019); Dominique S. Wirz et al., ``The Effects of Right-Wing
+  Populist Communication on Emotions and Cognitions toward Immigrants,''
+  \emph{The International Journal of Press/Politics} 23, no. 4 (2018).
+  With only one exception, all of these authors worked in Munich or
+  Zurich at the time of publication or at least before or after. These
+  two departments are among the largest, most well-resourced, and most
+  productive in the German-speaking field and could be described, from
+  the perspective of Bourdieusian field theory, as belonging to the
+  orthodox dominant pole of the field. Together, they have produced a
+  very large part of the literature on populist communication coming
+  from German-speaking universities. Interestingly, the circles in
+  Munich that are interested in Bourdieu and that publish on political
+  communication are almost entirely distinct (with the exception of
+  Krämer). There are of course German-speaking scholars outside this
+  cluster of populism research who also use the approach of populism as
+  multi-dimensional ideology---see, for example, with a rather detailed
+  analysis of different types or host ideologies of populism that are
+  combined with the usual dimensions of populism in the strict sense,
+  Peter Maurer and Trevor Diehl, ``What Kind of Populism? Tone} the journalistic field and its power over other fields of
+cultural production and the political field, and on the homogenization
+and \emph{doxa} of the field. In other words, his focus here is not on
+the media's role in symbolic struggles proper.\textsuperscript{35}
+
+\hypertarget{bourdieu-on-representation}{%
+\subsection{Bourdieu on
+Representation}\label{bourdieu-on-representation}}
+
+In the current and subsequent sections, we will start from a kind of
+straw man, a stereotypically naive understanding of populism which is,
+however, only a caricature of actual preconceptions about populism in
+public and academic discourse. We will not attribute these conceptions
+to individual authors but introduce them to provide a Bourdieusian
+criticism and give them a Bourdieusian turn. This allows us to discuss
+why German-speaking political communication research has not taken that
+turn and what would have happened if it had.
+
+One simple idea of politics would assume a static political space
+constituted by voters' more or less fixed ideologies or policy
+preferences, and by the strategic positioning of political parties that
+maximize their votes. If certain voters no longer feel represented, for
+example, by European conservative parties shifting toward the center or
+social-democratic parties neglecting the interests of ``the working
+class'' in favor of identity politics, new parties can position
+themselves in these gaps---for example, right-wing populist parties
+representing conservative workers (or so this explanation goes).
+
+Whether it is ``the working class,'' ``the people of Padania,'' ``the
+Hindus,'' or simply ``ordinary people,'' it would seem as if groups that
+feel disadvantaged and unrepresented (at least relative to their actual
+number and role in a country) are desperately looking for some
+representatives (most often a single person more or less supported or
+appointed by a party or movement). The group ``creates'' the
+representative, i.e., chooses this figure to represent them.\textsuperscript{36}
+
+But let us imagine another world, in which German-speaking communication
+researchers of political communication had already read one of the most
+prominent sociologists of their neighboring country when populism became
+a thing in the German public sphere or in the Anglophone research
+literature. These researchers could then point to Bourdieu and challenge
+the restrictive idea of politics outlined above. As Bourdieu argues,
+politics is only possible because actors have their own conceptions of
+the social world, which can be confirmed or changed in political
+discourse, and are often diffuse. There would be no struggles over the
+description of the social world if everyone had a precise and infallible
+idea about their social position and affiliation to social groups, and
+if actors were not capable of identifying\marginnote{and
+  Targets in the Twitter Discourse of French and American Presidential
+  Candidates,'' \emph{European Journal of Communication} 35, no. 5
+  (2020).} themselves\marginnote{\textsuperscript{30}\setcounter{footnote}{30} E.g., Niko Hatakka,
+  \emph{Populism in the Hybrid Media System: Populist Radical Right
+  Online Counterpublics Interacting with Journalism, Party Politics, and
+  Citizen Activism} (Turku: University of Turku, 2019); Benjamin
+  Moffitt, \emph{The Global Rise of Populism: Performance, Political
+  Style, and Representation} (Stanford: Stanford University Press,
+  2016); Lone Sorensen, \emph{Populist Communication: Ideology,
+  Performance, Mediation} (Cham: Palgrave Macmillan, 2021).} with\marginnote{\textsuperscript{31} Bourdieu, \emph{La distinction,} 528--30.} different\marginnote{\textsuperscript{32} E.g., Gianpietro Mazzoleni, ``Mediatization and
+  Political Populism,'' in \emph{Mediatization of Politics}, ed. Frank
+  Esser and Jesper Strömbäck (London: Palgrave Macmillan, 2014).
+
+  I would like to thank Peter Maurer who, in his open review of the
+  present article, emphasized the use of Bourdieu's \emph{field theory}
+  for the analysis of populism.}
+descriptions.\marginnote{\textsuperscript{33} Pierre
+  Bourdieu, \emph{Propos sur le champ politique} (Lyon: Presses
+  universitaires de Lyon, 2000), 55--56.}  However,\marginnote{\textsuperscript{34} See Pierre Bourdieu, ``Störenfried Soziologie,'' in
+  \emph{Wozu heute noch Soziologie?}, ed. Joachim Fritz-Vannahme
+  (Wiesbaden: VS, 1996). German communication researchers could have
+  also come across this short article on sociology and democracy by
+  Bourdieu in the weekly newspaper \emph{Die Zeit}.} such\marginnote{\textsuperscript{35} Pierre Bourdieu,
+  ``L'emprise du journalisme,'' \emph{Actes de la recherche en sciences
+  sociales} 101--2 (1994); Pierre Bourdieu, \emph{Sur le télévision}
+  (Paris: Liber, 1996); and Pierre Bourdieu, ``The Political Field, the
+  Social Science Field, and the Journalistic Field,'' in \emph{Bourdieu
+  and the Journalistic Field}, ed. Rodney Benson and Erik Neveu
+  (Cambridge, MA: Polity Press, 2005). In the last of these, he
+  discusses the commonalities between the political field, the field of
+  social science, and the journalistic field (in particular, the
+  struggles to impose a vision of society), and quickly returns to the
+  subject of the heteronomy of journalism in general as a threat to all
+  fields of cultural production.} struggles\marginnote{\textsuperscript{36}\setcounter{footnote}{36} Pierre
+  Bourdieu, ``La délégation et le fétichisme politique,'' \emph{Actes de
+  la recherche en sciences sociales} 52--53 (1984).} would also be pointless if,
+independently of their social position, everyone could find any
+description similarly plausible.\footnote{Pierre Bourdieu, ``Décrire et
+  préscrire,'' \emph{Actes de la recherche en sciences sociales} 38
+  (1981).}
+
+Surely, Bourdieu postulates a homology between political space and the
+space of social inequality (which he described in a particularly useful
+way for the explanation of certain current populist movements, as I will
+discuss below).\textsuperscript{38} A given group of
+persons will find certain political offers of representation more
+plausible and attractive. However, he describes how the representative
+also creates the group in the full sense. Someone speaks for a group,
+represents it, but it only fully exists and can be mobilized by virtue
+of this representation. In the extreme, this relationship between
+constitution and representation, between delegation and mobilization, is
+circular.\textsuperscript{39}
+
+The aspiring representative invests some symbolic work (in the form of
+words, theories in the broadest sense, rituals, and other symbolic
+means), and thus a way of seeing the world and living in it that has
+often only been vaguely felt (often as discontent) now becomes manifest
+and allows groups to recognize commonalities where a unifying principle
+had not been seen before.\textsuperscript{40} A group as a mere aggregate recognizes the representation and
+authorizes the representative, who then manifests and embodies the
+group, and draws their power from the ability to mobilize it.\textsuperscript{41}
+
+The German-speaking researchers who read their Bourdieu would maybe have
+to be socialized somewhat differently. They would not only have to be
+familiar with the academic prose that is typical in international
+journals (which have supplanted the German-speaking journals and
+monographs as the most legitimate outlets in German-speaking political
+communication research), but they would also have to be somewhat
+fascinated by this particular writer's complex, sometimes paradoxical
+and cryptic but often, at the same time, vivid, metaphorical style.
+Thus, it would not feel too strange when Bourdieu expresses the logic of
+political representation (and of any kind of investiture) in religious
+and magical metaphors: the mystery of ministry, political fetishism, or
+social magic.\textsuperscript{42} Representatives sacrifice
+themselves, ostentatiously giving up their person, and creating another,
+a social one, such as ``the people.''\textsuperscript{43} For example, when police searched his
+party's headquarters, Jean-Luc Mélenchon famously exclaimed: ``La
+République, c'est moi!'' and ``I am more than Jean-Luc Mélenchon, I am
+seven million people!''\textsuperscript{44}
+
+Bourdieu's analysis of the constitution of groups by their
+representation is not too different from discursive conceptions of
+populism.\textsuperscript{45} However, the connection with his concept of habitus
+allows for a quite substantial analysis of the schemata of perception
+and evaluation that are specific to social classes and other groups and
+make certain offers\marginnote{\textsuperscript{38} See Bourdieu, ``Décrire et préscrire.'' The
+  political field is structured by two complementary principles: the
+  homology with social groups and the historical and strategic relations
+  of the parties. Positions and shifts can only be understood with
+  regard to the internal logic and history of the field and in relation
+  to the positions and strategies of other actors.} of\marginnote{\textsuperscript{39} Bourdieu, ``La délégation et le fétichisme
+  politique.''} representation\marginnote{\textsuperscript{40} Pierre Bourdieu, ``La représentation
+  politique,'' \emph{Actes de la recherche en sciences sociales} 36­--37
+  (1981).} and\marginnote{\textsuperscript{41} Pierre
+  Bourdieu, ``Le mystère du ministère: Des volontés particulières à la
+  `volonté générale,'\,'' \emph{Actes de la recherche en sciences
+  sociales} 140 (2001).} certainmarginnote{\textsuperscript{42} Bourdieu, ``La délégation et le fétichisme
+  politique''; Bourdieu, ``Mystère du ministère''; Pierre Bourdieu,
+  \emph{Sur l\textquotesingle État: Cours au Collège de France
+  (1989--1992)} (Paris: Seuil, 2012), 400.} strategies\marginnote{\textsuperscript{43} Bourdieu, ``La délégation
+  et le fétichisme politique.''} for\marginnote{\textsuperscript{44} For an analysis of these and other
+  statements by Mélenchon in terms of a populist understanding of
+  representation, see Pierre Rosanvallon, \emph{Le siècle du populisme:
+  Histoire, théorie, critique} (Paris: Seuil, 2020), 55--56.}
+representing\marginnote{\textsuperscript{45}\setcounter{footnote}{45} Ernesto Laclau, \emph{On Populist Reason} (London:
+  Verso, 2005); Chantal Mouffe, \emph{For a Left Populism} (London:
+  Verso, 2018).} social reality and representing social groups acceptable to
+them.\footnote{Laclau and Mouffe represent a shift away from social
+  class as the main basis for (progressive) political mobilization and
+  democratic renewal, emphasizing that the constitution of ``the
+  people'' depends on the historical circumstances. However, to address
+  specific groups (which can be social classes as the focus on much of
+  Bourdieu's work, but also other groups, e.g., based on gender),
+  populist communication needs to fit their habitus. Therefore, a
+  discursive approach can benefit from the analysis of the habitus of
+  different groups. Such an analysis would likely not consider whole
+  classes, but factions thereof, perhaps also in combination with
+  gender, age, social trajectories, etc.).} Thus, even if our
+hypothetical German-speaking communication researchers found the
+discursive approach to populism research rather abstract and too far
+from any empirical application, they would not simply turn it away, but
+rather seek to specify it with regard to Bourdieusian conceptions of the
+group-to-be-represented and the group-as-represented.
+
+According to Bourdieu and his German disciples, if a strategy of
+representation works out, then the result seems natural. Not only the
+represented but also political opponents, commentators, and even
+researchers will be convinced, for example, that ``ordinary people'' are
+no longer taken seriously by established political actors, that they
+feel their concerns are neglected, that the political category of
+``ordinary people'' indeed exists in the first place (even if it is not
+the whole population) and that its concerns are legitimate ones (even if
+one does not share them).
+
+The rather abstract discursive theories of how populists establish an
+equivalence of different demands which they then articulate as the basis
+for antagonism between the people and an elite could be thus refined and
+extended in different ways based on Bourdieusian theories.\footnote{For
+  a review and discussion, see Yannis Stavrakakis, ``Antinomies of
+  Formalism: Laclau's Theory of Populism and the Lessons from Religious
+  Populism in Greece,'' \emph{Journal of Political Ideologies} 9, no. 3
+  (2004).}
+
+However, these discursive theories of populism à la Laclau and Mouffe
+have also been neglected in favor of ideational definitions (populism as
+ideology)\footnote{E.g., Kirk Hawkins and Christóbal Rovira Kaltwasser,
+  ``What the (Ideational) Study of Populism Can Teach Us, and What It
+  Can't,'' \emph{Swiss Political Science Review} 23, no. 4 (2017); Cas
+  Mudde, ``The Populist Zeitgeist,'' \emph{Government and Opposition}
+  39, no. 4 (2004); Ben Stanley, ``The Thin Ideology of Populism,''
+  \emph{Journal of Political Ideologies} 13, no. 1 (2008).} in research
+on populist communication in German-speaking countries and in the larger
+academic networks which this research is embedded in. This is probably
+the case because such research is more open to empirical approaches than
+to political theory and to research that positions itself as value-free
+rather than explicitly political, e.g., post-Marxist. In this context,
+the analysis of populist communication mostly starts with the centrality
+of the people,\textsuperscript{49} not with its
+construction, and explanations of effects start with the priming of
+social identities,\textsuperscript{50}
+not so much with how they are constructed and appropriated in the first
+place. Only the exclusionary or anti-elitist part of the construction of
+the people is sometimes posited as a central dimension of
+populism.\textsuperscript{51}
+
+When actually existing communication researchers attempt to explain the
+success of populist leaders and the formation or confirmation of
+populist attitudes, it may seem as if everything is a perfect fit: They
+identify the pre-existing attitudes, the features of populist messages
+or of the election programs, and the social-psychological mechanisms
+that\marginnote{\textsuperscript{49} For a somewhat more nuanced analysis of
+  ``people-centrism,'' see Martin Van Leuwen, ``Measuring
+  People-Centrism in Populist Political Discourse: A Linguistic
+  Approach,'' in \emph{Imagining the Peoples of Europe: Populist
+  Discourses across the Political Spectrum}, ed. Jan Zienkowski and Ruth
+  Breeze (Amsterdam: John Benjamins, 2019). Still, the analysis is about
+  how politicians refer to the people in terms of syntactics and
+  perspective as an indicator of how central ``the people'' is in their
+  discourse, not of how it is performatively constituted.} have\marginnote{\textsuperscript{50} For a discussion of this social identity
+  perspective with a relatively significant number of remarks on the
+  construction of ``popular'' identities, see Michael Hameleers et al.,
+  ``The Persuasiveness of Populist Communication: Conceptualizing the
+  Effects and Political Consequences of Populist Communication from a
+  Social Identity Perspective,'' in \emph{Communicating Populism:
+  Comparing Actor Perceptions, Media Coverage, and Effects on Citizens
+  in Europe}, ed. Carsten Reinemann et al. (New York: Routledge, 2019).} to\marginnote{\textsuperscript{51}\setcounter{footnote}{51} Communication researchers often refer to the
+  conceptualization of Jan Jagers and Stefaan Walgrave, ``Populism as
+  Political Communication Style: An Empirical Study of Political
+  Parties' Discourse in Belgium,'' \emph{European Journal of Political
+  Research} 46, no. 3 (2007). The authors consider exclusion as a
+  potential but not necessary element of populism which, when added to
+  ``thin'' populism that only ``refers'' to the people, creates
+  ``excluding populism.'' In this case, exclusion is an aspect that
+  politicians can freely combine with the others (at least logically
+  freely, not necessarily strategically) and that researchers can
+  operationalize independently from the other elements such as
+  anti-elitism. This makes this conceptualization highly attractive for
+  quantitative research, but it does not contribute that much to the
+  analysis of how ``the people'' is constituted if it is supposed to be
+  central to populism.} come together in order to convince voters that a populist
+politician or party represents them.
+
+However, when Bourdieu describes the dialectic of representation, he
+also emphasizes the dilemma of empowerment and disempowerment. Bourdieu
+starts from the diagnosis that modern political fields and symbolic
+production follow a division of labor: One side is the specialized
+production of cultural, political, and religious offers (among others),
+the struggle for the symbolic means of representing society, and the
+monopoly of symbolic power.\footnote{Which does not only take place
+  based on descriptions in the narrow sense but also on the quite
+  serious ``game'' of appropriation of nonverbal means and all kinds of
+  metaphors and analogies. See Pierre Bourdieu, ``Un jeu chinois: Notes
+  pour une critique sociale du jugement,'' \emph{Actes de la recherche
+  en sciences sociales} 2--4 (1976).} On the other side, consumption is
+largely limited to recognizing the types of available offers and
+identifying with some of them.\textsuperscript{53} With regard to
+political representation, this creates a dilemma, especially for the
+most disadvantaged groups, as even their representatives have to make
+concessions to conventional political language that is detached from the
+groups' experience. To the represented, this language feels
+``borrowed;'' it censors and euphemizes the description of social
+reality and creates a distance between the representatives and the
+represented.\textsuperscript{54} Representatives,
+having the symbolic means and access to the means of communication that
+the represented lack, can even disempower and betray those who, to gain
+more power, have themselves represented. In this way, they may
+appropriate the interests of the represented groups and usurp the
+resulting power as a means to their own ends.\textsuperscript{55} The
+resulting feeling (among their supporters) of powerlessness and
+resignation is rarely addressed in research on populist communication,
+whether this feeling is driven by negative coverage of populist actors
+as self-interested or by more direct contact with their messaging, which
+may feel inauthentic to some citizens or as a misrepresentation of their
+situation, experience, and identity.
+
+German-speaking research in political communication sees itself mainly
+as basic research (at least in comparison to applied research that would
+be directly applicable to, for example, strategic political
+communication), but it is often interested in topics that are already
+acknowledged as social problems in the political, journalistic, and
+academic mainstream (such as the rise of populism). More or less
+adopting the definition of such problems as they circulate in public
+discourse, the research being conducted usually does not propose
+immediate solutions but reveals relationships that become relevant in
+the search for causes or answers to these established
+problems.\textsuperscript{56} A theory on the dialectic
+of populist representation would only very indirectly fit this schema as
+it is not the most obvious topic in a field mostly oriented toward an
+analysis of the immediate causes of a phenomenon that is socially
+defined as relevant. In an alternative world, political communication
+research could, however, analyze how populists\marginnote{\textsuperscript{53} Pierre Bourdieu, ``Questions de
+  politique,'' \emph{Actes de la recherche en sciences sociales} 16
+  (1977); Bourdieu, ``Sur le pouvoir symbolique.'' Bourdieu would
+  probably deny that this has fundamentally changed in an online
+  environment in which almost everyone could in principle express
+  themselves politically. He would argue that there is still a
+  difference between those who feel entitled and able to comment on
+  political matters and those who do not, and between those who merely
+  express their approval of existing conceptions and reproduce them
+  without being able to successfully establish new ones, and those who
+  have the symbolic and institutional power to do so.} can symbolically
+dispossess and disempower their constituency. It might\marginnote{\textsuperscript{54} Bourdieu, \emph{La distinction}.} be\marginnote{\textsuperscript{55} Bourdieu,
+  ``Décrire et préscrire''; Bourdieu, ``Mystère du ministère.''} relevant\marginnote{\textsuperscript{56}\setcounter{footnote}{56} It is my impression that German-speaking
+  communication research has also tended to shift from research whose
+  relevance was grounded in ideological controversies and in journalism
+  education, such as research on the effects of journalists' political
+  attitudes on media content or on the quality of private and public
+  broadcasting, to research that is useful for the solution or
+  prevention of social problems, such as research on health
+  communication or prevention of extremism.} for a
+criticism of authoritarian populism to demonstrate in detailed empirical
+case studies how authoritarianism has disappointed or turned against its
+supporters (and, not to forget, to document the symbolic and often
+physical violence against the primary outgroups of each authoritarian
+movement and government without overly euphemizing it in abstract
+conceptions of populism). However, German-speaking researchers could
+associate such a ``paradoxical'' form of theorizing (e.g., people being
+both empowered and disempowered) with, in their view, ``empirically
+unfruitful'' social systems theory, as it is an emblematic form in which
+Luhmann formulated a large part of his framework.
+
+\hypertarget{bourdieu-on-the-possible-class-basis-of-populism}{%
+\subsection{Bourdieu on the Possible Class
+Basis of
+Populism}\label{bourdieu-on-the-possible-class-basis-of-populism}}
+
+Sometimes, a rather unfruitful understanding of populism as pure
+opportunism---a weathervane of public opinion,\footnote{Which, as
+  Bourdieu explained, does not exist, at least not in the form that is
+  presupposed by opinion polls: an aggregate of the answers to the same
+  genuinely political questions (assuming that the questions are
+  understood in the same way and that everyone, across all classes, is
+  able to answer them based on a political logic proper). See Pierre
+  Bourdieu, ``L'opinion publique n'existe pas,'' \emph{Les temps
+  modernes} 318 (1973).} or the politics of ``simple solutions''
+appealing to the uneducated masses, a politics that is or attempts to be
+``popular''---still circulates in public discourse. Political
+communication scholars informed by Bourdieu's sociology of education
+could warn us not to assume that education, as it is actually practiced,
+would simply endow young citizens with all necessary competences.
+Sometimes, they are only registered rather than conveyed by the
+education system and acquired earlier or outside school by a population
+that is then selected by institutions of higher education.\footnote{Pierre
+  Bourdieu and Jean-Claude Passeron, \emph{La reproduction: Éléments
+  pour une théorie du système d\textquotesingle enseignement} (Paris:
+  Minuit, 1970). Certainly, educational systems have been adapted since
+  Bourdieu's and Passeron's analysis, not the least due to the reception
+  of their and similar work. However, educational inequality is not a
+  problem of the past, as ongoing research and policy discussions
+  demonstrate.} It would also be classist to assume that a lack of
+formal education automatically drives people into the arms of more
+problematic varieties of populism;.\footnote{Without entering into the
+  discussion over ``good'' and ``bad'' varieties of populism, it is safe
+  to say that German-speaking communication research} It would be an oversimplification to assume
+that all types of populism have to be prevented by education or that
+education is necessarily sufficient to overcome any given form of
+illiberal populism. However, that populism must have something to do
+with certain ``popular'' classes seems to be conventional wisdom---maybe
+based on etymology or the notion that populism, due to its presumed
+``simplicity,'' can only speak to the relatively disadvantaged in
+society.
+
+In his essay \emph{``}Vous avez dit `populaire'?'' {[}Did you say
+``popular''?{]},\textsuperscript{60} Bourdieu analyzed how the understanding of ``the
+popular'' is prone to manipulation according to one's interests and
+prejudices and condescending views. According to a Bourdieusian
+interpretation, to praise the ``popular'' is also to affirm what is an
+ambivalent product of social domination.\textsuperscript{61}
+
+A simplistic historical narrative on the causes of right-wing populism
+in particular is that of right-wing populist parties as the ``new
+working class parties,'' since left-wing parties, with their turn toward
+``identity politics,''\marginnote{has mostly
+  justified its studies of populism based on its \emph{problematic}
+  relationship with liberal democracy and, in the case of right-wing
+  populism, standards of non-discrimination. More rarely, it is seen as
+  a challenge to democracy potentially leading to greater responsiveness
+  and the closure of gaps of representation. However, more elaborate
+  positive visions or existing models of populism, such as those
+  theorized by Laclau and Mouffe and practiced as inclusive, liberal
+  movements, are usually not addressed. Whether they represent an ideal
+  for democracy is nevertheless up for debate, but let us confine
+  ourselves to the quick clarification that they may at least be
+  considered less problematic than authoritarian, illiberal,
+  exclusionary varieties.} have\marginnote{\textsuperscript{60} Pierre Bourdieu, ``Vous avez
+  dit\emph{~}`populaire'?'' \emph{Actes de la recherche en sciences
+  sociales} 46 (1983).} driven\marginnote{\textsuperscript{61}\setcounter{footnote}{61} Pierre Bourdieu and
+  Jean-Claude Passeron, ``Sociologues des mythologies et mythologies de
+  sociologues,'' \emph{Les Temps Modernes} 211 (1963); Bourdieu, ``Vous
+  avez dit `populaire'?''; Pierre Bourdieu, ``Les usages du peuple,'' in
+  \emph{Choses dites}, ed. Pierre Bourdieu (Paris: Minuit, 1987).} their former voters into the arms of
+the extreme right.\footnote{For a recent criticism based on empirical
+  data, see Tarik Abou-Chadi, Reto Mitteregger, and Cas Mudde,
+  \emph{Left Behind by the Working Class? Social Democracy's Electoral
+  Crisis and the Rise of the Radical Right} (Berlin:
+  Friedrich-Ebert-Stiftung, 2021).\vspace{.1in}} In contrast, Bourdieu's conception
+of social space can help us disentangle the various influences on
+populist attitudes and the sometimes inconsistent findings on the
+social-structural basis of populism (even if we focus on Central
+European right-wing populism).
+
+When the social-structural and cultural conditions of right-wing
+populism are investigated, this usually takes one of two forms:
+
+\begin{itemize}
+\item
+  an analysis along single variables, most often for descriptive or
+  illustrative purposes (e.g., a comparison of the intention to vote for
+  a right-wing populist party by gender that is presented in the context
+  of a more encompassing argument) or as covariates or control variables
+  in more complex models; or
+\item
+  an analysis along certain key theses or concepts, such as the ``losers
+  of modernization'' or ``cultural backlash'' theses, the idea of a
+  silent or noisy counter-revolution to the ``silent revolution'' of
+  cultural change toward post-material values, or of a new divide
+  between cosmopolitanism and communitarianism.\footnote{Pieter De Wilde
+    et al., eds., \emph{The Struggle over Borders: Cosmopolitanism and
+    Communitarianism} (Cambridge: Cambridge University Press, 2019);
+    Piero Ignazi, ``The Silent Counter-Revolution: Hypotheses on the
+    Emergence of Extreme Right-Wing Parties in Europe,'' \emph{European
+    Journal of Political Research} 22, no. 1 (1992); Ronald Inglehart
+    and Pippa Norris, ``Trump and the Populist Authoritarian Parties:
+    The Silent Revolution in Reverse,'' \emph{Perspectives on Politics}
+    15, no. 2 (2017); Lars Rensmann, ``The Noisy Counter-Revolution:
+    Understanding the Cultural Conditions and Dynamics of Populist
+    Politics in Europe in the Digital Age,'' \emph{Politics and
+    Governance} 5, no. 4 (2017).\vspace{.08in}}
+\end{itemize}
+
+Even analyses based on the second type of explanation do not always draw
+on an elaborate conception of social structure, often quickly proceeding
+to the measurement of the variables implied in the hypotheses, and
+publications in communication research touch upon such theses only very
+briefly, if at all. The first type is more common in the field of
+communication research---if any social-structural covariates or control
+variables are included at all. Quantitative research in political
+communication often focuses on other variables and relies on age,
+education, and gender as proxies for more complex influences of social
+status and socialization, mostly without specifying any conceptual
+underpinnings or causal mechanisms. Research on the role of the media
+for right-wing populism mostly remains detached from analyses of
+social-structural causes, and German-speaking research on political
+communication in general has not developed a substantial tradition of
+social-structural analysis, whether Bourdieusian or otherwise. Due to
+its historical roots, it often remains media-related public opinion
+research, as in the beginnings of the Mainz School.\footnote{Elisabeth
+  Noelle-Neumann also founded a polling institute and relied heavily on
+  its results to substantiate her theory of public opinion.} It usually
+starts with opinions on a given issue (more rarely with behavior, such
+as voting), treating all individual opinions as equal in principle and
+their aggregate as a relevant social phenomenon because it is the object
+of both political influence and climate of opinion perceptions. Studies
+then analytically move backwards to the media-related causes of these
+opinions.\textsuperscript{65}
+
+Bourdieu has contributed at least two important aspects to a fruitful
+analysis of social inequality: multiple dimensions of social inequality\marginnote{\textsuperscript{65}\setcounter{footnote}{65} Alternatively, it has often been research on
+  published opinion, diagnosing some biases in the representation of
+  different camps and tracing them back to their causes---such as the
+  opinions of journalists.}
+and the role of trajectories in addition to positions.\footnote{Bourdieu,
+  \emph{La distinction.}} First, he described social classes not only in
+terms of their economic status or role in the relations of production,
+but in terms of the distribution of different forms of capital (he found
+economic and cultural capital to be most relevant in the context of his
+analyses of habitus and lifestyle). The cultural dimension of inequality
+also manifests itself in a homology between social positions and the
+structure of schemata of perception and evaluation that then result in
+differences in lifestyles and in different political and media choices.
+Second, he drew attention to the role of social trajectories
+(experienced or expected upward or downward mobility of individuals or
+whole fractions of classes) in addition to current positions in shaping
+people's schemata of perception and evaluation------in particular, their
+views of society and their place in it, and consequently also of
+politics. Bourdieu then explained the difference between liberal and
+reactionary conservatism by the different expectations of traditional
+and declining classes---whether or not they see a chance to preserve or
+improve their position.\footnote{Bourdieu, \emph{La distinction},
+  528--30.}
+
+One of the few analyses of right-wing populism that explicitly and
+strongly relies on Bourdieu's conception of social structure has been
+published by German sociologist Cornelia Koppetsch.\footnote{Cornelia
+  Koppetsch, \emph{Die Gesellschaft des Zorns: Rechtspopulismus im
+  globalen Zeitalter} (Bielefeld: transcript, 2019). A number of
+  criticisms have been raised against this book. For example, with
+  respect to her rather undifferentiated and politically problematic
+  diagnosis of a cosmopolitan (left-)liberal hegemony, see Floris
+  Biskamp, ``Hegemonie? Welche Hegemonie? Teil IV einer Kritik an
+  Cornelia Koppetschs Gesellschaft des Zorns,'' SozBlog: Blog der
+  Deutschen Gesellschaft für Soziologie, last modified August 16, 2019.
+  Furthermore, Koppetsch's university found that the book contained
+  multiple instances of plagiarism and it was revealed in a criminal
+  trial that the author's partner is a member of the German far-right
+  populist party AfD. However, we are not concerned with her overall
+  argument or potentially overly sympathetic attitudes toward right-wing
+  populists, but only with the potential (which even Koppetsch may not
+  fully use) of a Bourdieusian analysis of social structure for the
+  analysis of right-wing populism.} In a somewhat transformed
+Bourdieusian social space, she identifies three different groups whose
+perceptions of decline, insecurity, and contestation of the established
+social order lead them to support right-wing populism: the conservative
+upper class, the traditional middle class, and the precarious lower
+class. Without discussing this explanation and its merits in detail, it
+seems promising to consider the common \emph{and} differential appeal of
+right-wing populism to several classes and the alliances (and fault
+lines) in a multidimensional social space, instead of a single class or
+a small number of variables.\footnote{Or \emph{parts} of classes
+  because, despite some exceptions, it would of course be mistaken to
+  assume, for example, that non-white, non-heterosexual, etc. members of
+  the working class are equally supportive of right-wing populism as
+  their white etc. counterparts.} If such a perspective were combined
+with the more or less established Bourdieusian analysis of practices of
+media use, political communication researchers would be able to better
+understand audiences of populist communication within the
+social-structural and media-related opportunity structure of right-wing
+populism.
+
+As indicated above, German-speaking communication research often follows
+a variables-based logic of analysis instead of a holistic one (thinking
+in terms of the additive influence of individual properties instead of
+complex situations, ways of living, or worldviews with interconnected
+elements) and is more often interested in pre-existing attitudes instead
+of social-structural positions or even trajectories as independent
+variables or moderators. A Bourdieusian conception of social class,
+based on the specific combination of different features of social
+inequality and elements of lifestyles or evaluative schemata, is at odds
+with this logic.\footnote{The frequent use of regression, ANOVA, or
+  structural equation models instead of correspondence analysis, a tool
+  preferred by Bourdieu for his analysis of social fields, also reflects
+  these somewhat diverging logics.} In cases where a more holistic,
+typological approach is chosen, the German-speaking tradition of milieu
+analysis and consumer typologies is quite influential.\footnote{The
+  perfect example of such a typology is the concept of
+  ``Sinus-milieus,'' which has been developed by a private institute for
+  social and market research but also aspires to social-scientific
+  validity and recognition and has been adopted in academic research.}
+Both in sociology and market research, the search for models of social
+differentiation that reflect a presumed pluralization and
+individualization of lifestyles has often led to the development of
+typologies of milieus that while not outright ignoring Bourdieu's
+original theories are increasingly disconnected from them. Communication
+researchers have established a wide variety of typologies ranging from
+classifications that are mostly data-driven and more or less exclusively
+based on patterns of media use (sometimes, but not always, at the
+intersection of academic and commercial audience research) to
+theoretically informed conceptions of milieus that include social status
+and political orientations.\footnote{For a typology focusing on media
+  use in the context of other elements of lifestyles and value
+  orientations and with an academic interest (but an emphasis on its
+  applicability in applied audience research), see Peter H. Hartmann and
+  Anna Schlomann, ``MNT 2015: Weiterentwicklung der
+  MedienNutzerTypologie,'' \emph{Media Perspektiven} 2015, no. 11
+  (2015). For a rather rare theoretically informed typology with a focus
+  on politics and citing both German-speaking sociological theories of
+  social milieus and Bourdieu's \emph{Distinction}, see Raphael Kösters
+  and Olaf Jandura, ``A Stratified and Segmented Citizenry?
+  Identification of Political Milieus and Conditions for Their
+  Communicative Integration,'' \emph{Javnost---The Public} 26, no. 1
+  (2019).}
+
+There are thus three reasons for the hesitant adoption of Bourdieu's
+theory of social class and trajectories in German-speaking communication
+research, in particular, in political communication: the dominant
+variable- and attitude-based logic; the frequent use of cross-sectional
+or experimental designs and the neglect of biographies and trajectories;
+and the fact that the rather small ``niche'' of typological and
+lifestyle analysis is already occupied by other, often specifically
+German conceptions.\footnote{In addition to the examples in the previous
+  footnotes, German-speaking sociologists have theorized social status
+  and lifestyles as more individualized but open to typologies. See,
+  e.g., Ulrich Beck, ``Jenseits von Klasse und Stand? Soziale
+  Ungleichheiten, gesellschaftliche Individualisierungsprozesse und die
+  Entstehung neuer sozialer Formationen und Identitäten,'' in
+  \emph{Soziale Ungleichheiten}, ed. Reinhard Kreckel (Göttingen:
+  Schwartz, 1983); Stefan Hradil, \emph{Sozialstrukturanalyse in einer
+  fortgeschrittenen Gesellschaft: Von Klassen und Schichten zu Lagen und
+  Milieus} (Opladen: Leske and Budrich, 1987); Gerhard Schulze,
+  \emph{Die Erlebnisgesellschaft: Kultursoziologie der Gegenwart}
+  (Frankfurt: Campus, 1992).}
+
+In a different world, German-speaking political communication
+researchers would then analyze the biographies of voters and political
+leaders. They would not only include ``control variables'' such as age,
+education, and gender in their quantitative analysis, but more elaborate
+measures of social status, lifestyles, and trajectories, both with
+regard to their main effects and in interaction with mediated populist
+or other political communication. Finally, researchers would also
+conduct long-term studies of lifelong political socialization or the
+transformation of political milieus. However, such approaches are rare
+in a field of political communication research that mostly uses
+experiments, cross-sectional surveys, and shorter panel studies. In
+addition to the influence of its intellectual history, as one of the
+major fields in German-speaking and international communication
+research, political communication is also highly competitive and thus
+incentivizes designs that allow for quick and efficient data collection.
+
+\hypertarget{bourdieu-on-charisma-and-legitimacy}{%
+\subsection{Bourdieu on Charisma and
+Legitimacy}\label{bourdieu-on-charisma-and-legitimacy}}
+
+One tendency in scholarship on populist communication is to attribute
+the success of populism to the natural charisma of its leaders, their
+talent for communication or even manipulation, and a style that is
+naturally appealing to the masses. While this viewpoint is based on a
+naïve preconception and cannot be attributed to specific scholars, it
+nonetheless appears in many prominent publications on populism, where
+authors explicitly argue or uncritically imply that populists must
+somehow be particularly skilled communicators.
+
+Prior to Bourdieu, Max Weber introduced the concept of charisma as an
+extraordinary quality that is ascribed to a person who is therefore
+recognized as a leader. Included in this definition was Weber's
+observation that it is completely irrelevant how this property is
+evaluated by a third-party observer: What matters is how it is judged by
+the ``charismatically ruled.''\footnote{Max Weber, \emph{Wirtschaft und
+  Gesellschaft} (Tübingen: Mohr, 1922), 140.} Bourdieu refers to Weber's
+conception of charisma (and to Marx's analysis of fetishism) in his
+analysis of political representation.\footnote{Bourdieu, ``La délégation
+  et le fétichisme politique.''} Had they been familiar with Bourdieu's
+take on charisma, German-speaking communication researchers could have
+re-imported and updated Weber's concept in order to analyze how claims
+of representation can be centered on the populist leader. In his
+appropriation of the concept, Bourdieu emphasizes two aspects of
+representation that ultimately lead to this ascription of unique
+qualities that seem to exist on their own terms, to take on their own
+life: the idea of forgotten or ignored work of representation and its
+relationality.
+
+The work of representation not only consists of communicative efforts
+and institutional processes to establish a certain vision of society and
+certain categorizations, but also to convey a sense of the legitimacy of
+the representation. The power of the representative is then based on
+certain pre-existing or more newly established beliefs that are produced
+and reproduced in a given field, which in turn legitimize the
+representative and their claims and support their recognition by the
+(potentially) represented. The stronger the belief that the claim is not
+arbitrary---and that words do not produce but only describe
+reality---the stronger the relation between the represented and the
+representative, and the stronger the belief in their claims.\footnote{Bourdieu,
+  Pierre, ``Sur le pouvoir symbolique.''}
+
+Without recognition, any claim to representation or power is nonsense:
+``{[}Le roi,{]} c'est un fou qui se prend pour le roi avec l'approbation
+des autres''---someone claiming to be the king is usually considered
+``crazy,'' unless everyone agrees that he is the king (and it is still
+strange or mysterious, as Bourdieu reminds us, how someone can transform
+into a king just because people believe in him, his legitimacy or
+qualities, and in the vision of social order that justifies his
+power).\footnote{Bourdieu, \emph{Sur l\textquotesingle État}, 400.}
+
+If the represented accept the claim of representation, it is because the
+social categories it is based on have begun to appear self-evident. To
+use them seems to describe social reality, not to manipulate it. And the
+representative appears as the natural incarnation of the represented
+group. All the work that was necessary to establish the claim to
+representation can then be ignored or forgotten.
+
+The political field does not have any clear rules or authorities that
+would legitimate the ways of legitimating power. It thus constantly
+fluctuates between legitimacy by science and by plebiscite, between
+technocracy and democratic will, the force of conviction that something
+is true and the force of recognition by a mobilizable social
+group.\footnote{Bourdieu, ``Décrire et préscrire.''} Political claims
+are not to be judged against a fixed reality, as their ``truth'' depends
+on who utters them: If one is in the right position, a description or
+prediction has the chance to become true (in the extreme case, it is a
+self-fulfilling prophecy) and a promise can be kept by virtue of the
+beliefs and size of the relevant groups and due to the right
+institutional resources.\footnote{Bourdieu, ``Décrire et préscrire.''}
+This is a leader's political capital, which can take several forms:
+institutional (the symbolic, personal, and material resources
+temporarily transferred by an organization to its officials in return
+for loyalty to the organization or its positions) and personal (their
+prestige and popularity).\footnote{Bourdieu, ``Décrire et préscrire.''}
+
+While notables slowly accumulate their political capital over a whole
+life, the capital of ``charismatic'' (or heroic, prophetic) leaders is
+acquired in a situation of crisis, when the established institutions
+cannot provide answers, and is legitimated retrospectively if the
+rhetoric of crisis and the resulting mobilization are
+successful.\footnote{Bourdieu, ``Décrire et préscrire.''} If populism is
+always related to crises in one way or another, Bourdieu would most
+probably agree with those who emphasize that a crisis is not simply
+given as such but \emph{performed}.\footnote{Benjamin Moffitt, ``How to
+  Perform Crisis: A model for Understanding the Key Role of Crisis in
+  Contemporary Populism,'' \emph{Government \& Opposition} 50, no. 2
+  (2015).}
+
+This personal authority is, however, only possible through a group that
+authorizes it---and this in turn authorizes the group in their identity
+and unity: An actor speaks out what had been ignored or had only been
+tacitly felt, the pre-linguistic and pre-reflective dispositions in a
+population---sometimes theatrically in order not to let it pass over to
+silence again---and this resonates with the group if this discourse
+matches those dispositions.\footnote{Bourdieu, ``Décrire et préscrire.''}
+
+German-speaking (and international) mainstream research on political
+communication often sees populist leaders only as ``sources'' of
+messages whose ``manifest content'' or effect is to be analyzed, not as
+socially located, symbolic, admired (or hated) figures. Perhaps this
+shows an understanding of ``modern'' social-scientific research (as
+opposed to a past with supposedly merely ``individualist'' and not
+actually ``analytical'' approaches) as necessarily abstract,
+generalizable, and thus impersonal---or in other words, an attempt to
+distance oneself from interpretive, ``subjective,'' not actually
+``empirical'' research.
+
+Certainly, research on political communication is often, but not always,
+centered on the individual, in the sense that theories and studies focus
+on individual attitudes and political action. The only exception are a
+few researchers in political communication who strictly follow Luhmann's
+``anti-humanist'' theory of social systems to analyze the relationship
+between politics and the media. However, the interpretive analysis of
+the symbolic character of individual populist leaders and of their
+claims may be met with skepticism in German-speaking communication
+research, because it may be seen as a case study that is not clearly
+``empirical'' (but ``essayistic,'' ``impressionistic,'' merely
+``descriptive,'' etc.) and of questionable generalizability.
+
+We can imagine a set of German researchers, who instead of producing the
+rather prosaic and formalist research on political communication we see
+today would have somewhat rethought their style of research as a result
+of intensive contact with Bourdieu. These readers of the French theorist
+might have partly broken with their habitus in order to follow his
+somewhat paradoxical approach to the analysis of the social magic of
+representation: To understand this approach, it is necessary to look at
+politics with a disenchanted regard in order to be again astonished that
+it works and to grasp how it does so. Breaking the spell, we gain the
+ability to see what is---despite its real social consequences---only
+based on appearance and belief. Interpretative analyses should be
+conducted that take into account how crises are performed, how leaders
+try to authorize themselves, and how claims to power realize themselves
+if, together with the right styles and pre-linguistic dispositions, they
+produce charisma---or, on the other hand, how this all fails.
+
+\hypertarget{bourdieu-on-reflexivity}{%
+\subsection{Bourdieu on
+Reflexivity}\label{bourdieu-on-reflexivity}}
+
+Continuing with our counterfactual case, had German-speaking
+communication researchers been familiar with Bourdieu's general emphasis
+on reflexivity in the (social) sciences,\footnote{Pierre Bourdieu,
+  \emph{Science de la science et reflexivité} (Paris: Raisons
+  d\textquotesingle agir, 2001).} they might have reflected on the
+forces that shape their field and their perspective on social reality,
+and how their research itself is a social force that shapes social
+reality. Over the course of the last several decades, these readers of
+Bourdieu would have become aware of the reasons for the unquestioned
+legitimacy of their field within the overall field of communication
+researchers, of their unquestioned understanding of politics (the
+\emph{doxa} of their field, as Bourdieu would put it), and of the
+limitations of the prevalent realist epistemology.
+
+Historically, at least since the social-scientific turn, research on
+political communication can be considered the most legitimate field in
+communication research, a field that does not have to legitimize itself
+and that is almost equated with communication research as a
+whole.\footnote{Other fields with similar legitimacy are media effects
+  and journalism research. However, it may be said provocatively that
+  they are in fact sub-fields of political communication research as
+  journalism is almost reduced to political journalism and media effects
+  have almost always been effects on political or politically relevant
+  attitudes (although the rise of health and environmental communication
+  and similar fields has somewhat changed this almost exclusive focus).}
+Researchers engaging in self-reflection on the doxastic foundations of
+their field may speculate that the price for this legitimacy is that
+political communication research does not become overtly political
+itself, keeping its demonstrative equidistance toward ``the extremes,''
+and that it limits itself to a narrow understanding of the political as
+institutionalized politics.\footnote{On the narrow definition of the
+  political and the predominant functionalist and variable-based
+  paradigm in (US and European) political communication research, see
+  most recently, Sean Phelan and Pieter Maeseele, ``Where Is `The
+  Political' in the Journal \emph{Political Communication}? On the
+  Hegemonic Articulation of a Disciplinary Identity,'' \emph{Annals of
+  the International Communication Association} (2023). Notably, these
+  authors reference Laclau and Mouffe, but only cite Bourdieu once in
+  passing, with some of his terminology tingeing the text.}
+
+Even if German-speaking political communication research is usually not
+critical or political in the sense of challenging the very idea of the
+political, it is normative and in this sense ``critical'' by measuring
+empirical phenomena against the norms of liberal democracy and
+journalistic professionalism.\footnote{See the contributions in Matthias
+  Karmasin, Matthias Rath, and Barbara Thomaß, \emph{Normativität in der
+  Kommunikationswissenschaft} (Wiesbaden: Springer VS, 2013), on the
+  prevalent forms of normativity in (German-speaking) communication
+  research. In the same volume (p. 329--51), Christiane Eilders
+  identifies the main pattern of normativity in political communication
+  research as the expectation that the media inform the public and allow
+  for the formation of opinions in the free exchange of positions, thus
+  legitimizing democracy. She also discusses issues of integration and
+  fragmentation in relation to online communication. Christiane Eilders,
+  ``Öffentliche Meinungsbildung in Online-Umgebungen: Zur Zentralität
+  der normativen Perspektive in der politischen
+  Kommunikationsforschung,'' in \emph{Normativität in der
+  Kommunikationswissenschaft} (Wiesbaden: Springer VS, 2013). Other
+  contributions in the volume also deal with normativity in journalism
+  and media effects research and public sphere theory. Among the
+  critical schools, only feminist scholarship is represented in the
+  volume with a separate article: Tanja Thomas, ``Feministische
+  Kommunikations- und Medienwissenschaft,'' 397--420. While Thomas's
+  article references Bourdieu, other chapters briefly address the
+  Frankfurt School, Cultural Studies, and Marxism.} This implies a
+functionalist understanding of the media as objective, i.e., informative
+and balanced (with fears of bias and tabloidization, or more recently,
+disinformation), and integrative (with fears of fragmentation or, more
+recently, polarization).
+
+Populism then becomes relevant as a threat to liberal democracy and to
+quality journalism, undermining the trust in their existing institutions
+and contributing to polarization by strengthening the extremes. Of
+course, this understanding runs counter to a positive or critical
+understanding of class antagonism or an antagonism based on unfulfilled
+democratic potential and the closure of political space by elites, as
+emphasized by some theorists of left-wing populism.
+
+Based on Bourdieu's ``theory of political communication'' outlined
+above, researchers could also reflect on the realist understanding of
+the social world---and public opinion in particular---brought about by
+the social-scientific turn and probably associated most strongly with
+the Mainz School. In this paradigm, social phenomena are usually treated
+as given entities with measurable properties, such as a social group
+existing in society whose members have a range of sociodemographic
+characteristics and opinions with their causes and consequences.
+
+Furthermore, while typical studies in political communication may
+acknowledge that many concepts are contested in political discourse and
+that symbols or statements can be ambiguous, typical approaches and
+methods often require researchers to treat meaning as more or less fixed
+or the range of meanings as closed---for example, in standardized
+questionnaires or content analyses (which is, of course, perfectly
+legitimate in many contexts). A performative, almost circular
+understanding of communication, such as in Bourdieu's conception of
+symbolic power, assumes that communication can contribute to the
+constitution of the phenomena it claims to describe; its ``truth value''
+lies in the power to make itself true if the right social conditions are
+met.\footnote{Bourdieu would of course be the last social theorist to
+  deny that there is such a thing as true and false statements about the
+  social world or the world in general. He would only insist that it is
+  simplistic to assume that it is the sole purpose and/or effect of
+  political, social-scientific, journalistic, and other communication to
+  simply reflect reality or that all communication can be judged against
+  this standard.} In contrast, a more straightforwardly realist paradigm
+sees communication as conveying information and opinions. If it is
+assumed that communication can always be judged against an external
+standard of realism, then the main schemata of analysis are whether
+communication contains information or disinformation, represents
+opinions in an unbiased or unbiased way, or is objectively more or less
+persuasive.
+
+This realism concerning social entities and meaning leads to the risk of
+contributing to what Bourdieu has called a ``theory effect''\footnote{Bourdieu,
+  ``Décrire et préscrire.''} that (co-)creates and essentializes the
+very social phenomena that a theory, ideology, or discourse describes,
+if researchers do not break with unreflected scholarly or everyday
+preconceptions of the social world.
+
+Researchers informed by Bourdieu's reflexive social science would
+therefore be careful about how they might reproduce the very categories
+constructed in claims of representation or exclusion, and how their
+research inevitably contributes to the ineluctably politicized
+constitution of social reality: who is entitled to speak publicly, what
+categories speakers take for granted or successfully establish, and
+consequently, what the relevant objects and sides of ``public opinion''
+are.
+
+For example, in populism research, one may reproduce the idea of ``the
+people'' as a seemingly natural, pre-existing basis of sovereignty and
+exclusion.\footnote{On the risk of reifying ``the people,'' with a short
+  reference to Bourdieu, and the lack of analyses of how ``the people''
+  is constructed, see Benjamin De Cleen, ``The Populist Political Logic
+  and the Analysis of the Discursive Construction of `The People' and
+  `The Elite,'\,'' in \emph{Imagining the Peoples of Europe: Populist
+  Discourses across the Political Spectrum}, ed. Jan Zienkowski and Ruth
+  Breeze (Amsterdam: John Benjamins, 2019).} Or researchers might risk
+adopting the categorization of outgroups that right-wing populists
+perform, such as ``migrants'' as an almost eternal category of people
+that will always remain alien and incompatible to the native population,
+no matter their personal histories or legal status.
+
+A performative perspective or one that is based on symbolic struggles
+starts one step earlier, with the strategies and contexts in which those
+meanings are elaborated. It does not only ask, for example, how central
+``the people'' is in political discourse or in individual political
+beliefs, but how it is constituted. So if German-speaking political
+communication research had started to adopt Bourdieusian concepts and
+reflexivity a while ago, it would be able to take different perspectives
+on populism today.
+
+\hypertarget{conclusion}{%
+\section{Conclusion}\label{conclusion}}
+
+German-speaking research on political communication is a rather
+ahistorical field. There is not much interest in the field's history,
+maybe because the presently prevailing form of empirical research (with
+canonical methods, now facilitated by handy online tools, massively
+increasing volumes of data and computing power, etc.) is seen as the end
+of history or as the right path to progress by ever-accumulating
+knowledge (the right path that was taken when speculative, subjective,
+or ideological schools had been overcome). Theories like Bourdieu's may
+be adopted in such a field as a repertoire for timeless concepts to be
+cast into fixed scales, but would also offer the chance to study
+historical changes in social structure and in the political or
+journalistic field---for example, in order to identify the preconditions
+and opportunity structures for the success of populism, the chance for a
+theoretically informed social-historical and historical-reflective turn.
+
+However, as part of the social-scientific turn, German-speaking
+political communication research took a different intellectual and
+institutional form and position and epitomizes that very turn, with
+research on populist communication recently epitomizing political
+communication research. The field is centered on communicators and
+messages instead of social structure and ways of living, on constative
+and persuasive instead of performative communication, and on directional
+effects instead of the circular constitution of both sides of political
+communication, the communicators (or representatives) and the audience
+(or constituency). German-speaking political communication research is
+usually variables-based and most often cross-sectional instead of based
+on a holistic analysis of milieus and the trajectory of social groups,
+and it mostly relies on a realist epistemology of the social. It sees
+its relevance in the explanation of phenomena around institutionalized
+politics, most importantly dynamics of opinions, not in the uncovering
+or critique of ``social magic'' or dispossession. Bourdieu's reception
+in German-speaking research on political and populist communication has
+therefore not simply been hindered by the field's increasing orientation
+toward Anglophone literature and publication outlets and the neglect of
+Francophone contributions (his writings on politics have been translated
+to German and English over time, so accessibility is not the main
+barrier), but probably more importantly by the foundational, almost
+doxastic ideas about what makes communication research
+``(social-)scientific'' and relevant.
+
+Maybe we could have reached the same conclusions without the
+counterfactual encounter between Bourdieu and populism research by
+German-speaking political communication researchers. However, it seems
+that populism research in its dominant form and Bourdieu's concepts are
+something of a perfect mismatch, given populism's relationship with
+representation, charisma, social class, and the question of what makes
+it relevant. Such encounters, in particular when compared to seemingly
+similar ones (e.g., Bourdieu and media reception or journalism
+research), have a unique potential for historical self-reflection and
+for a renewal of fields of research with strongly institutionalized
+perspectives and practices.
+
+
+
+
+\newpage\section{Bibliography}\label{bibliography}
+
+\begin{hangparas}{.25in}{1} 
+
+
+
+Aalberg, Toril, Frank Esser, Carsten Reinemann, Jesper Strömbäck, and
+Claes De Vreese, eds. \emph{Populist Political Communication in Europe}.
+New York: Routledge, 2017.
+
+Abou-Chadi, Tarik, Reto Mitteregger, and Cas Mudde. \emph{Left Behind by
+the Working Class? Social Democracy's Electoral Crisis and the Rise of
+the Radical Right}. Berlin: Friedrich-Ebert-Stiftung, 2021.
+
+Averbeck, Stefanie. ``Comparative History of Communication Studies:
+France and Germany.'' \emph{The} \emph{Open Communication Journal} 2,
+no. 2 (2008): 1--13.
+\url{http://dx.doi.org/10.2174/1874916X00802010001}.
+
+Averbeck, Stefanie. \emph{Kommunikation als Prozess: Soziologische
+Perspektiven in der Zeitungswissenschaft, 1927--1934}. Münster: Lit,
+1999.
+
+Beck, Klaus, Till Büser, and Christiane Schubert. ``Medialer Habitus,
+mediales Kapital, mediales Feld--oder: vom Nutzen Bourdieus für die
+Mediennutzungsforschung.'' In \emph{Pierre Bourdieu und die
+Kommunikationswissenschaft: Internationale Perspektiven}, edited by
+Thomas Wiedemann and Michael Meyen, 243--62. Köln: Halem, 2013.
+
+Beck, Ulrich. ``Jenseits von Klasse und Stand? Soziale Ungleichheiten,
+gesellschaftliche Individualisierungsprozesse und die Entstehung neuer
+sozialer Formationen und Identitäten.'' In \emph{Soziale
+Ungleichheiten}, edited by Reinhard Kreckel, 35--74. Göttingen:
+Schwartz, 1983.
+
+Biskamp, Floris. ``Hegemonie? Welche Hegemonie? Teil IV einer Kritik an
+Cornelia Koppetschs Gesellschaft des Zorns.'' SozBlog: Blog der
+Deutschen Gesellschaft für Soziologie. Last modified August 16, 2019.
+\url{http://blog.soziologie.de/2019/08/hegemonie-welche-hegemonie-teil-iv-einer-kritik-an-cornelia-}\\\hspace{0.25in}\url{koppetschs-gesellschaft-des-zorns/}.
+
+Bougnoux, Daniel. \emph{Introduction aux sciences de la communication.}
+Paris: La Découverte, 2001.
+
+Bourdieu, Pierre. ``Ce que parler veut dire.'' In \emph{Questions de
+sociologie}, edited by Pierre Bourdieu, 95--112. Paris: Minuit, 1980.
+
+Bourdieu, Pierre. ``Décrire et préscrire.'' \emph{Actes de la recherche
+en sciences sociales} 38 (1981): 69--73.
+\url{https://doi.org/10.3406/arss.1981.2120}.
+
+Bourdieu, Pierre. \emph{Esquisse d'une théorie de la pratique, précédé
+de Trois études d'ethnologie kabyle}. Geneva: Droz, 1972.
+
+Bourdieu, Pierre. \emph{Homo academicus}. Paris: Minuit, 1981.
+
+Bourdieu, Pierre. ``L'emprise du journalisme.'' \emph{Actes de la
+recherche en sciences sociales} 101--102 (1994): 3--9.
+\url{https://doi.org/10.3917/arss.p1994.101n1.0003}.
+
+Bourdieu, Pierre. ``L'opinion publique n\textquotesingle existe pas.''
+\emph{Les temps modernes} 29 (1973): 1292--309.
+
+Bourdieu, Pierre. ``La délégation et le fétichisme politique.''
+\emph{Actes de la recherche en sciences sociales} 52--53 (1984): 49--55.
+\url{https://doi.org/10.3406/arss.1984.3331}.
+
+Bourdieu, Pierre. \emph{La distinction: Critique sociale du jugement}.
+Paris: Minuit, 1979.
+
+Bourdieu, Pierre. ``La représentation politique.'' \emph{Actes de la
+recherche en sciences sociales} 36--37 (1981): 3--24.
+\url{https://doi.org/10.3406/arss.1981.2105}.
+
+Bourdieu, Pierre. ``Le mystère du ministère: Des volontés particulières
+à la `volonté générale.'\,'' \emph{Actes de la recherche en sciences
+sociales} 140 (2001): 7--11.
+\url{https://doi.org/10.3406/arss.2001.2831}.
+
+Bourdieu, Pierre. \emph{Le sens pratique}. Paris: Minuit, 1980.
+
+Bourdieu, Pierre. \emph{Les règles de l\textquotesingle art: Genèse et
+structure du champ littéraire}. Paris: Seuil, 1992.
+
+Bourdieu, Pierre. ``Les usages du peuple.'' In \emph{Choses dites},
+edited by Pierre Bourdieu, 178--84. Paris: Minuit, 1987.
+
+Bourdieu, Pierre. \emph{Propos sur le champ politique}. Lyon: Presses
+universitaires de Lyon, 2000.
+
+Bourdieu, Pierre. ``Questions de politique.'' \emph{Actes de la
+recherche en sciences sociales} 16 (1977): 55--89.
+\url{https://doi.org/10.3406/arss.1977.2568}.
+
+Bourdieu, Pierre. \emph{Raisons pratiques: Sur la théorie de l'action}.
+Paris: Seuil, 1994.
+
+Bourdieu, Pierre. \emph{Science de la science et reflexivité}. Paris:
+Raisons d'agir, 2001.
+
+Bourdieu, Pierre. ``Störenfried Soziologie.'' In \emph{Wozu heute noch
+Soziologie?}, edited by Joachim Fritz-Vannahme, 65--70. Wiesbaden: VS,
+1996.
+
+Bourdieu, Pierre. \emph{Sur l'État: Cours au Collège de France
+(1989--1992).} Paris: Seuil, 2012.
+
+Bourdieu, Pierre. ``Sur le pouvoir symbolique.'' \emph{Annales:
+Économies, sociétés, civilisations} 32 (1977): 405--11.
+\url{https://doi.org/10.3406/ahess.1977.293828}.
+
+Bourdieu, Pierre. \emph{Sur le télévision}. Paris: Liber, 1996.
+
+Bourdieu, Pierre. ``The Political Field, the Social Science Field, and
+the Journalistic Field.'' In \emph{Bourdieu and the Journalistic Field},
+edited by Rodney Benson and Erik Neveu, 29--47. Cambridge, MA: Polity
+Press, 2005.
+
+Bourdieu, Pierre. ``Un jeu chinois: Notes pour une critique sociale du
+jugement.'' \emph{Actes de la recherche en sciences sociales} 2--4
+(1976): 91--101. \url{https://doi.org/10.3406/arss.1976.3467}.
+
+Bourdieu, Pierre. ``Vous avez dit `populaire'?'' \emph{Actes de la
+recherche en sciences sociales} 46 (1983): 98--105.
+\url{https://doi.org/10.3406/arss.1983.2179}.
+
+Bourdieu, Pierre, and Jean-Claude Passeron. \emph{La reproduction:
+Éléments pour une théorie du système d'enseignement}. Paris: Minuit,
+1970.
+
+Bourdieu, Pierre, and Jean-Claude Passeron. ``Sociologues des
+mythologies et mythologies de sociologues.'' \emph{Les Temps Modernes}
+211 (1963): 998--1021.
+
+De Cleen, Benjamin. ``The Populist Political Logic and the Analysis of
+the Discursive Construction of `The People' and `The Elite.'\,'' In
+\emph{Imagining the Peoples of Europe: Populist Discourses across the
+Political Spectrum}, edited by Jan Zienkowski and Ruth Breeze, 19--42.
+Amsterdam: John Benjamins, 2019.
+
+De Wilde, Pieter, Ruud Koopmans, Wolfgang Merkel, Oliver Strijbis, and
+Michael Zürn, eds. \emph{The Struggle over Borders: Cosmopolitanism and
+Communitarianism}. Cambridge: Cambridge University Press, 2019.
+
+Eilders, Christiane. ``Öffentliche Meinungsbildung in Online-Umgebungen:
+Zur Zentralität der normativen Perspektive in der politischen
+Kommunikationsforschung.`` In \emph{Normativität in der
+Kommunikationswissenschaft}, edited by Matthias Karmasin, Matthias Rath,
+and Barbara Thomaß, 329--51. Wiesbaden: Springer VS, 2013.
+
+Engesser, Sven, Nicole Ernst, Frank Esser, and Florin Büchel. ``Populism
+and Social Media: How Politicians Spread a Fragmented Ideology\emph{.''
+Information, Communication \& Society} 20, no. 8 (2017): 1109--26.
+\url{https://doi.org/10.1080/1369118X.2016.1207697}.
+
+Esquenazi, Jean-Pierre. ``Les médias et leurs publics.`` In
+\emph{Sciences de l'information et de la communication}, edited by
+Stéphane Olivesi, 9--24. Paris: PUG, 2013.
+
+Fawzi, Nayla. ``Untrustworthy News and the Media as `Enemy of the
+People?' How a Populist Worldview Shapes Recipients' Attitudes toward
+the Media.'' \emph{The International Journal of Press/Politics} 24, no.
+2 (2019): 146--64. \url{https://doi.org/10.1177/1940161218811981}.
+
+Fawzi, Nayla, and Benjamin Krämer. ``The Media as Part of a Detached
+Elite? Exploring Antimedia Populism Among Citizens and Its Relation to
+Political Populism.'' \emph{International Journal of Communication} 15
+(2021): 3292--314.
+\url{https://ijoc.org/index.php/ijoc/article/view/14795}.
+
+Gemperle, Michael. ``The Double Character of the German Bourdieu: On the
+Twofold Use of Pierre Bourdieu's Work in the German-Speaking Social
+Sciences.'' \emph{Sociologica} 2009, no. 1 (2009): 1--33.
+\url{https://doi.org/10.2383/29573}.
+
+Hameleers, Michael, Carsten Reinemann, Desiree Schmuck, and Nayla Fawzi.
+``The Persuasiveness of Populist Communication: Conceptualizing the
+Effects and Political Consequences of Populist Communication From a
+Social Identity Perspective.'' In \emph{Communicating Populism:
+Comparing Actor Perceptions, Media Coverage, and Effects on Citizens in
+Europe}, edited by Carsten Reinemann, James Stanyer, Toril Aalberg,
+Frank Esser, and Claes De Vreese, 143--67. New York: Routledge, 2019.
+
+Hanitzsch, Thomas. ``Populist Disseminators, Detached Watchdogs,
+Critical Change Agents and Opportunist Facilitators: Professional
+Milieus, the Journalistic Field and Autonomy in 18 Countries.''
+\emph{International Communication Gazette} 73, no. 6 (2011): 477--94.
+\url{https://doi.org/10.1177/1748048511412279}.
+
+Hartmann, Peter H., and Anna Schlomann. ``MNT 2015: Weiterentwicklung
+der MedienNutzerTypologie.'' \emph{Media Perspektiven} 2015, no. 11
+(2015): 497--504.
+
+Hatakka, Niko. \emph{Populism in the Hybrid Media System: Populist
+Radical Right Online Counterpublics Interacting with Journalism, Party
+Politics, and Citizen Activism}. Turku: University of Turku, 2019.
+
+Hawkins, Kirk, and Christóbal Rovira Kaltwasser. ``What the (Ideational)
+Study of Populism Can Teach Us, and What It Can't.'' \emph{Swiss
+Political Science Review} 23, no. 4 (2017): 526--42.
+\url{https://doi.org/10.1111/spsr.12281}.
+
+Hepp, Andreas. \emph{Cultural Studies und Medienanalyse: Eine
+Einführung.} Wiesbaden: VS, 1999.
+
+Hradil, Stefan. \emph{Sozialstrukturanalyse in einer fortgeschrittenen
+Gesellschaft: Von Klassen und Schichten zu Lagen und Milieus}. Opladen:
+Leske and Budrich, 1987.
+
+Huber, Nathalie. \emph{Kommunikationswissenschaft als Beruf: Zum
+Selbstverständnis von Professoren des Faches im deutschsprachigen Raum}.
+Köln: Halem, 2010.
+
+Ignazi, Piero. ``The Silent Counter-Revolution: Hypotheses on the
+Emergence of Extreme Right-Wing Parties in Europe.'' \emph{European
+Journal of Political Research} 22, no. 1 (1992): 3--34.
+\url{https://doi.org/10.1111/j.1475-6765.1992.tb00303.x}.
+
+Inglehart, Ronald, and Pippa Norris. ``Trump and the Populist
+Authoritarian Parties: The Silent Revolution in Reverse.''
+\emph{Perspectives on Politics} 15, no. 2 (2017): 443--54.
+\url{https://doi.org/10.1017/S1537592717000111}.
+
+Jagers, Jan, and Stefaan Walgrave. ``Populism as Political Communication
+Style: An Empirical Study of Political Parties' Discourse in Belgium.''
+\emph{European Journal of Political Research} 46, no. 3 (2007): 319--45.
+\url{https://doi.org/10.1111/j.1475-6765.2006.00690.x}.
+
+Karmasin, Matthias, Matthias Rath, and Barbara Thomaß.
+\emph{Normativität in der Kommunikationswissenschaft}. Wiesbaden:
+Springer VS, 2013.
+
+Koppetsch, Cornelia. \emph{Die Gesellschaft des Zorns: Rechtspopulismus
+im globalen Zeitalter.} Bielefeld: transcript, 2019.
+
+Kösters, Raphael, and Olaf Jandura. ``A Stratified and Segmented
+Citizenry? Identification of Political Milieus and Conditions for Their
+Communicative Integration.'' \emph{Javnost---The Public} 26, no. 1
+(2019): 33--53. \url{https://doi.org/10.1080/13183222.2018.1554845}.
+
+Krämer, Benjamin. ``Eine Bourdieu'sche Kritik der politischen
+Urteilskraft.'' In \emph{Pierre Bourdieu und die
+Kommunikationswissenschaft: Internationale Perspektiven}, edited by
+Thomas Wiedemann and Michael Meyen, 263--86. Köln: Halem, 2013.
+
+Krämer, Benjamin. ``Media Populism: A Conceptual Clarification and Some
+Theses on Its Effects.'' \emph{Communication Theory} 24, no. 1 (2014):
+42--60. \url{https://doi.org/10.1111/comt.12029}.
+
+Krämer, Benjamin. \emph{Mediensozialisation: Theorie und Empirie zum
+Erwerb medienbezogener Dispositionen im Lebensverlauf}. Wiesbaden:
+Springer VS, 2013.
+
+Krämer, Benjamin. ``Strategies of Media Use.'' \emph{Studies in
+Communication and Media} 2, no. 1 (2013): 199--222.
+\url{http://dx.doi.org/10.5771/2192-4007-2013-2-199}.
+
+Krämer, Benjamin, and Christina Holtz-Bacha, eds. \emph{Perspectives on
+Populism and the Media: Avenues for Research}. Baden-Baden: Nomos, 2020.
+
+Laclau, Ernesto. \emph{On Populist Reason}. London: Verso, 2005.
+
+Löblich, Maria. \emph{Die empirisch-sozialwissenschaftliche Wende in der
+Publizistik- und Zeitungswissenschaft}. Köln: Halem, 2010.
+
+Löblich, Maria, and Andreas Scheu. ``Writing the History of
+Communication Studies: A Sociology of Science Approach.''
+\emph{Communication Theory} 21, no. 1 (2011): 1--22.
+\url{https://doi.org/10.1111/j.1468-2885.2010.01373.x}.
+
+Maares, Phoebe, and Folker Hanusch. ``Interpretations of the
+Journalistic Field: A Systematic Analysis of How Journalism Scholarship
+Appropriates Bourdieusian Thought.'' \emph{Journalism} 23, no. 4 (2022):
+736--54. \url{https://doi.org/10.1177/1464884920959552}.
+
+Maigret, Éric. \emph{Sociologie de la communication et des médias}.
+Paris: Armand Colin, 2015.
+
+Matthes, Jörg, and Desirée Schmuck. ``The Effects of Anti-Immigrant
+Right-Wing Populist Ads on Implicit and Explicit Attitudes: A Moderated
+Mediation Model.'' \emph{Communication Research} 44, no. 4 (2017):
+556--81. \url{https://doi.org/10.1177/0093650215577859}.
+
+Maurer, Peter, and Trevor Diehl. ``What Kind of Populism? Tone and
+Targets in the Twitter Discourse of French and American Presidential
+Candidates.'' \emph{European Journal of Communication} 35\emph{,} no. 5
+(2022): 453--68. \url{https://doi.org/10.1177/0267323120909288}.
+
+Maurer, Peter, and Andreas Riedl. ``Why Bite the Hand that Feeds You?
+Politicians' and Journalists' Perceptions of Common Conflicts.''
+\emph{Journalism} 22, no. 11 (2020): 2855--72.
+\url{https://doi.org/10.1177/1464884919899304}.
+
+Maurer, Peter, and Rajesh Sharma. ``L'usage de narratifs populistes dans
+les~tweets des candidats `contestataires' aux élections présidentielles
+en France (2017) et aux États-Unis (2016).'' \emph{Revue internationale
+de politique comparée} 29, no. 2--3 (2022): 83--106.
+\url{https://doi.org/10.3917/ripc.292.0083}.
+
+Mazzoleni, Gianpietro. ``Mediatization and Political Populism.'' In
+\emph{Mediatization of Politics: Understanding the Transformation of
+Western Democracies}, edited by Frank Esser and Jesper Strömbäck,
+42--56. London: Palgrave Macmillan, 2014.
+
+Mazzoleni, Gianpietro. ``Populism and the Media.'' In \emph{Twenty-First
+Century Populism: The Spectre of Western European Democracy}, edited by
+Daniele Albertazzi and Duncan McDonnell, 49--64. London: Palgrave
+Macmillan, 2008.
+
+Mazzoleni, Gianpietro. ``The Media and the Growth of Neo-Populism in
+Contemporary Democracies.'' In \emph{The Media and Neo-Populism: A
+Contemporary Comparative Analysis}, edited by Gianpetro Mazzoleni,
+Julianne Stewart, and Bruce Horsfield, 1--20. Westport, CT: Praeger,
+2003.
+
+Meyen, Michael. ``Der Machtpol des kommunikationswissenschaftlichen
+Feldes.'' \emph{Studies in Communication and Media} 1, no. 3--4 (2012):
+299--321. \url{https://doi.org/10.5771/2192-4007-2012-3-299}.
+
+Meyen, Michael. ``Medienwissen und Medienmenüs als kulturelles Kapital
+und als Distinktionsmerkmale: Eine Typologie der Mediennutzer in
+Deutschland.'' \emph{Medien und Kommunikationswissenschaft} 55, no. 3
+(2007): 333--54. \url{https://doi.org/10.5771/1615-634x-2007-3-333}.
+
+Meyen, Michael, and Senta Pfaff-Rüdiger. \emph{Internet im Alltag:
+Qualitative Studien zum praktischen Sinn von Onlineangeboten}. Münster:
+Lit, 2009.
+
+Moffitt, Benjamin. ``How to Perform Crisis: A Model for Understanding
+the Key Role of Crisis in Contemporary Populism.'' \emph{Government \&
+Opposition} 50, no. 2 (2015): 189--217.
+\url{https://doi.org/10.1017/gov.2014.13}.
+
+Moffitt, Benjamin. \emph{The Global Rise of Populism: Performance,
+Political Style, and Representation}. Stanford: Stanford University
+Press, 2016.
+
+Mouffe, Chantal. \emph{For a Left Populism}. London: Verso, 2018.
+
+Mudde, Cas. ``The Populist Zeitgeist.'' \emph{Government and Opposition}
+39, no. 4 (2004): 541--63.
+\url{https://doi.org/10.1111/j.1477-7053.2004.00135.x}.
+
+Neuberger, Christoph. ``Journalismus und Medialisierung der
+Gesellschaft.'' In \emph{Journalismusforschung: Stand und Perspektiven},
+edited by Klaus Meier and Christoph Neuberger, 337--72. Baden-Baden:
+Nomos, 2023.
+
+Ollivier, Bruno. \emph{Les sciences de la communication: Théories et
+acquis}. Paris: Armand Colin, 2007.
+
+Pentzold, Christian. ``Praxistheoretische Prinzipien, Traditionen und
+Perspektiven kulturalistischer Kommunikations- und Medienforschung.''
+\emph{Medien und Kommunikationswissenschaft} 63 (2015): 229--45.
+\url{https://doi.org/10.5771/1615-634x-2015-2-229}.
+
+Pentzold, Christian. \emph{Zusammenarbeiten im Netz: Praktiken und
+Institutionen internetbasierter Kooperation}. Wiesbaden: Springer VS,
+2016.
+
+Phelan, Sean, and Pieter Maeseele. ``Where Is `The Political' in the
+\emph{Journal Political Communication}? On the Hegemonic Articulation of
+a Disciplinary Identity,'' \emph{Annals of the International
+Communication Association} 47, no. 2 (2023): 202--21.
+\url{https://dx.doi.org/10.1080/23808985.2023.2169951}.
+
+Raabe, Johannes. \emph{Die Beobachtung journalistischer Akteure:
+Optionen einer empirisch-kritischen Journalismusforschung}. Wiesbaden:
+VS, 2005.
+
+Raabe, Johannes. ``Kommunikation und soziale Praxis: Chancen einer
+praxistheoretischen Perspektive für Kommunikationstheorie und
+-forschung.'' In \emph{Theorien der Kommunikations- und
+Medienwissenschaft: Grundlegende Diskussionen, Forschungsfelder und
+Theorieentwicklungen}, edited by Carsten Winter, Andreas Hepp, and
+Friedrich Krotz, 363--81. Wiesbaden: VS, 2008.
+
+Reinemann, Carsten, James Stanyer, Toril Aalberg, Frank Esser, and Claes
+de Vreese, eds. \emph{Communicating Populism: Comparing Actor
+Perceptions, Media Coverage, and Effects on Citizens in Europe}. New
+York: Routledge, 2019.
+
+Rensmann, Lars. ``The Noisy Counter-Revolution: Understanding the
+Cultural Conditions and Dynamics of Populist Politics in Europe in the
+Digital Age.'' \emph{Politics and Governance} 5, no. 4 (2017): 123--35.
+\url{https://doi.org/10.17645/pag.v5i4.1123}.
+
+Rosanvallon, Pierre. \emph{Le siècle du populisme: Histoire, théorie,
+critique}. Paris: Seuil, 2020.
+
+Scherer, Helmut. ``Mediennutzung und soziale Distinktion.'' In
+\emph{Pierre Bourdieu und die Kommunikationswissenschaft: Internationale
+Perspektiven}, edited by Thomas Wiedemann and Michael Meyen, 100--22.
+Köln, Halem, 2013.
+
+Scheu, Andreas. \emph{Adornos Erben in der Kommunikationswissenschaft:
+Eine Verdrängungsgeschichte?} Köln: Halem, 2012.
+
+Schulze, Gerhard. \emph{Die Erlebnisgesellschaft: Kultursoziologie der
+Gegenwart.} Frankfurt: Campus, 1992.
+
+Sorensen, Lone. \emph{Populist Communication: Ideology, Performance,
+Mediation}. Cham, Switzerland: Palgrave Macmillan, 2021.
+
+Stanley, Ben. ``The Thin Ideology of Populism.'' \emph{Journal of
+Political Ideologies} 13, no. 1 (2008): 95--110.
+\url{https://doi.org/10.1080/13569310701822289}.
+
+Stavrakakis, Yannis. ``Antinomies of Formalism: Laclau's Theory of
+Populism and the Lessons from Religious Populism in Greece.''
+\emph{Journal of Political Ideologies} 9, no. 3 (2004): 253--67.
+\url{https://doi.org/10.1080/1356931042000263519}.
+
+Stewart, Julianne, Gianpietro Mazzoleni, and Bruce Horsfield.
+``Conclusion: Power to the Media Managers.'' In \emph{The Media and
+Neo-Populism: A Contemporary Comparative Analysis}, edited by Gianpetro
+Mazzoleni, Julianne Stewart, and Bruce Horsfield, 217--36. Westport, CT:
+Praeger, 2003.
+
+Thomas, Tanja. ``Feministische Kommunikationsund Medienwissenschaft.``
+In \emph{Normativität in der Kommunikationswissenschaft}, edited by
+Matthias Karmasin, Matthias Rath, and Barbara Thomaß, 397--420.
+Wiesbaden: Springer VS, 2013.
+
+Van Leuwen, Martin. ``Measuring People-Centrism in Populist Political
+Discourse: A Linguistic Approach.'' In \emph{Imagining the Peoples of
+Europe: Populist Discourses Across the Political Spectrum}, edited by
+Jan Zienkowski and Ruth Breeze, 315--40. Amsterdam: John Benjamins,
+2019.
+
+Weber, Max. \emph{Wirtschaft und Gesellschaft}. Tübingen: Mohr, 1922.
+
+Weiß, Ralph. ``\,`Praktischer Sinn,' soziale Identität und Fern-Sehen:
+Ein Konzept für die Analyse der Einbettung kulturellen Handelns in die
+Alltagswelt.'' \emph{Medien und Kommunikationswissenschaft} 48, no. 1
+(2000): 42--62. \url{https://doi.org/10.5771/1615-634x-2000-1-42}.
+
+Wendelin, Manuel. ``Systemtheorie als Innovation in der
+Kommunikationswissenschaft: Inhaltliche Hemmnisse und institutionelle
+Erfolgsfaktoren im Diffusionsprozess.'' \emph{Communicatio Socialis} 41,
+no. 4 (2008): 341--59.
+\url{https://ejournal.communicatio-socialis.de/index.php/cc/article/view/355}.
+
+Wessler, Hartmut. \emph{Habermas and the Media}. Cambridge, MA: Polity,
+2018.
+
+Wettstein, Martin, Frank Esser, Florin Büchel, Christian Schemer,
+Dominique S. Wirz, Anne Schulz, Nicole Ernst, Sven Engesser, Philipp
+Müller, and Werner Wirth. ``What Drives Populist Styles? Analyzing
+Immigration and Labor Market News in 11 Countries.'' \emph{Journalism \&
+Mass Communication Quarterly} 96, no. 2 (2019): 516--36.
+\url{https://doi.org/10.1177/1077699018805408}.
+
+Wiedemann, Thomas. ``Pierre Bourdieu: Ein internationaler Klassiker der
+Sozialwissenschaft mit Nutzen für die Kommunikationswissenschaft.''
+\emph{Medien \& Kommunikationswissenschaft} 62, no. 1 (2014): 83--101.
+\url{https://doi.org/10.5771/1615-634x-2014-1-83}.
+
+Wiedemann, Thomas. \emph{Walter Hagemann: Aufstieg und Fall eines
+politisch ambitionierten Journalisten und Publizistikwissenschaftlers}.
+Köln: Halem, 2015.
+
+Wirz, Dominique S., Martin Wettstein, Anne Schulz, Philipp Müller,
+Christian Schemer, Nicole Ernst, Frank Esser, and Werner Wirth. ``The
+Effects of Right-Wing Populist Communication on Emotions and Cognitions
+toward Immigrants.'' \emph{The International Journal of Press/Politics}
+23, no. 4 (2018): 496--16.
+\url{https://doi.org/10.1177/1940161218788956}.
+
+
+
+\end{hangparas}
+
+
+\end{document}
