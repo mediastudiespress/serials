@@ -1,0 +1,2002 @@
+% see the original template for more detail about bibliography, tables, etc: https://www.overleaf.com/latex/templates/handout-design-inspired-by-edward-tufte/dtsbhhkvghzz
+
+\documentclass{tufte-handout}
+
+%\geometry{showframe}% for debugging purposes -- displays the margins
+
+\usepackage{amsmath}
+
+\usepackage{hyperref}
+
+\usepackage{fancyhdr}
+
+\usepackage{hanging}
+
+\hypersetup{colorlinks=true,allcolors=[RGB]{97,15,11}}
+
+\fancyfoot[L]{\emph{History of Media Studies}, vol. 3, 2023}
+
+
+% Set up the images/graphics package
+\usepackage{graphicx}
+\setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
+\graphicspath{{graphics/}}
+
+\title[Media Studies in Germany]{Media Studies in Germany in the Context of Cultural Studies and Franco-German Cooperation} % longtitle shouldn't be necessary
+
+% The following package makes prettier tables.  We're all about the bling!
+\usepackage{booktabs}
+
+% The units package provides nice, non-stacked fractions and better spacing
+% for units.
+\usepackage{units}
+
+% The fancyvrb package lets us customize the formatting of verbatim
+% environments.  We use a slightly smaller font.
+\usepackage{fancyvrb}
+\fvset{fontsize=\normalsize}
+
+% Small sections of multiple columns
+\usepackage{multicol}
+
+% Provides paragraphs of dummy text
+\usepackage{lipsum}
+
+% These commands are used to pretty-print LaTeX commands
+\newcommand{\doccmd}[1]{\texttt{\textbackslash#1}}% command name -- adds backslash automatically
+\newcommand{\docopt}[1]{\ensuremath{\langle}\textrm{\textit{#1}}\ensuremath{\rangle}}% optional command argument
+\newcommand{\docarg}[1]{\textrm{\textit{#1}}}% (required) command argument
+\newenvironment{docspec}{\begin{quote}\noindent}{\end{quote}}% command specification environment
+\newcommand{\docenv}[1]{\textsf{#1}}% environment name
+\newcommand{\docpkg}[1]{\texttt{#1}}% package name
+\newcommand{\doccls}[1]{\texttt{#1}}% document class name
+\newcommand{\docclsopt}[1]{\texttt{#1}}% document class option name
+
+
+\begin{document}
+
+\begin{titlepage}
+
+\begin{fullwidth}
+\noindent\LARGE\emph{French-German Communication Research
+} \hspace{25mm}\includegraphics[height=1cm]{logo3.png}\\
+\noindent\hrulefill\\
+\vspace*{1em}
+\noindent{\Huge{Media Studies in Germany in the Context\\\noindent of Cultural Studies and Franco-German\\\noindent Cooperation\par}}
+
+\vspace*{1.5em}
+
+\noindent\LARGE{Hedwig Wagner}\par\marginnote{\emph{Hedwig Wagner, ``Media Studies in Germany in the Context of Cultural Studies and Franco-German Cooperation,'' \emph{History of Media Studies} 3 (2023), \href{https://doi.org/10.32376/d895a0ea.5644812e}{https://doi.org/ 10.32376/d895a0ea.5644812e}.} \vspace*{0.75em}}
+\vspace*{0.5em}
+\noindent{{\large\emph{Europa-Universität Flensburg, }, \href{mailto:hedwig.wagner@uni-flensburg.de}{hedwig.wagner@uni-flensburg.de}\par}} \marginnote{\href{https://creativecommons.org/licenses/by-nc/4.0/}{\includegraphics[height=0.5cm]{by-nc.png}}}
+
+% \vspace*{0.75em} % second author
+
+% \noindent{\LARGE{<<author 2 name>>}\par}
+% \vspace*{0.5em}
+% \noindent{{\large\emph{<<author 2 affiliation>>}, \href{mailto:<<author 2 email>>}{<<author 2 email>>}\par}}
+
+% \vspace*{0.75em} % third author
+
+% \noindent{\LARGE{<<author 3 name>>}\par}
+% \vspace*{0.5em}
+% \noindent{{\large\emph{<<author 3 affiliation>>}, \href{mailto:<<author 3 email>>}{<<author 3 email>>}\par}}
+
+\end{fullwidth}
+
+\vspace*{1em}
+
+
+\hypertarget{abstract}{%
+\section{\texorpdfstring{Abstract }{Abstract }}\label{abstract}}
+
+In this article\footnote{Parts of this article will be published in
+  German in Jonas Nesselhauf, ed., \emph{Handbuch
+  Kulturwissenschaftliche Studien} (Berlin: de Gruyter, forthcoming).} I
+describe the evolution of German media studies, and I do so with an
+awareness of the selection, exclusion, and canonization at work in this
+procedure. I explain the emergence of media studies in Germany from a
+cultural studies research desideratum. I do this with a concern for the
+establishment and institutionalization of media studies in Germany
+within the mainly German-national scientific community as well as
+German-language cultural studies. I focus primarily on the first two
+decades of the institutionalization of media studies as an academic
+discipline, with an attendant concern for the social and intellectual
+forces at work during that epoch. I then link all of this to more recent
+turns in media studies, with a concern for its central questions and
+methodological approaches. I conclude with a note regarding the outlook
+for German media studies. Though film studies has a certain place in
+media studies, and many scholars see film studies as the core discipline
+in media studies, I do not discuss film studies in this article. It
+deserves an article on its own. Neither do I address some of the crucial
+progenitors of media studies, including media theories of the 1920s or
+the relevant writings since Greek antiquity that reflect on textual
+media and cultural artifacts.
+
+\enlargethispage{2\baselineskip}
+
+\vspace*{2em}
+
+\noindent{\emph{History of Media Studies}, vol. 3, 2023}
+
+
+ \end{titlepage}
+
+% \vspace*{2em} | to use if abstract spills over
+
+\newthought{In this article} I outline a history of German media studies. The
+structure of the encyclopedic knowledge presented here begins with a
+definition of the research area of media studies, and then considers the
+societal background of media studies. I survey the influence of two
+prominent cultural turns and then gauge the proximity of media studies
+to other academic formations. I evaluate how media studies differs from
+other disciplines. I chart the institutionalization of German media
+studies through attention to conferences, research centers, degree
+programs, chairs, and publication of journals, handbooks, and
+anthologies/readers. The second section is dedicated to examples and
+exemplary questions. In the third section, I detail the embeddedness of
+media studies in Germany within cultural studies research in the
+German-speaking world. In the fourth section, I shed light on
+Franco-German cooperation in media and communication studies. The fifth
+section I devote to consideration of the potential of media studies,
+criticism of media studies, and the outlook for media studies.
+
+My own perspective here is informed by my engagement in the field of
+European collaborations, with a strong focus on German-French research,
+as well as by the research focus and institutional anchoring in the
+field of European media studies.
+
+\hypertarget{definition-of-the-research-field-of-media-studies}{%
+\section{Definition of the Research Field of Media
+Studies}\label{definition-of-the-research-field-of-media-studies}}
+
+Media studies covers the subject area of the media (individual media and
+media systems) in its own media-theoretical line of thought, which
+considers the media in terms of the interdependence of media in the
+sense of apparatuses and their transmitted content, technology, and
+culture. The academic association \emph{Gesellschaft für
+Medienwissenschaft} (GfM) formulates its scientific mission as follows:
+
+\begin{quote}
+Media studies is based on the assumption that an engagement with media,
+with their technical and aesthetic, their symbolic and communicative
+characteristics makes an essential contribution to the understanding of
+history, culture and society. . . . Media studies aims at an analysis of
+individual media and complex media systems with their respective
+specific forms of representation, apparatuses, institutions; in doing
+so, it employs a variety of methods that break down modes of production,
+text structures, contents, cultural practices and contexts. At the same
+time, it aims at a theory of media that attempts to determine the
+characteristics of the media/mediality in general by drawing on research
+in other disciplines.\footnote{Gesellschaft für Medienwissenschaft
+  {[}German Media Studies Association{]}, ``Selbstverständnis,
+  Forschungsfragen, Wissenschaftspolitik'' {[}Mission statement,
+  research questions, science policy{]}, GfM (website).}
+\end{quote}
+
+The intrinsic interconnectedness of media or media systems with the
+technical and the cultural forms one unbreakable triad:
+technics/technologies, culture and humans (individually/collectively:
+the public(s)/society), and the media placed in the center of this
+threefold structure, built up by it and encompassing it. The other triad
+is that of any cultural studies: history, theory, and aesthetics, which
+make up the core areas.\footnote{Strategy Commission of the GfM, ``Core
+  Areas of Media Studies: Resolution of the General Assembly of the
+  GfM,'' Mitgliederversammlung der GfM {[}GfM General Assembly{]},
+  Bochum, April 10, 2008.} According to the self-understanding of media
+studies, the areas of ``society,'' ``technology,'' and ``culture'' are
+subdivided into ``media theories and their methods,'' ``theories and
+methods of media history,'' and, thirdly, the ``theories and methods of
+media aesthetics.''\footnote{Strategy Commission of the GfM, ``Core
+  Areas of Media Studies.''} In addition to hyphenated
+sub-disciplines,\footnote{These include media economics, media
+  psychology, media policy, and media law. Unnamed by GfM: media
+  sociology and media geography.} which form intersections with a
+multitude of cultural and social science disciplines, there are
+transversal fields of knowledge, which are determined partly by their
+thematic features, partly by their methodological
+inclinations.\footnote{For example, actor network theory,
+  deconstruction, discourse analysis, gender theories, communication
+  theories, constructivism, critical theory, semiotics, and systems
+  theory.} There are also interdisciplinary ``studies.'' The classical
+subject areas of media studies, the individual media in their historical
+succession, are only shown in the section dealing with media history,
+due to the broad understanding of media that exists. Not only is the
+subject area of media studies extremely inclusive, media studies is also
+open to diverse methods and approaches. Limitations and thereby the
+identity of the subject arise from thinking in terms of the media, which
+provides information about ``the interactions of aesthetic, normative
+and social dynamics in societies. . . . This interrelation marks the
+epistemological location and the epistemological interest of general
+media studies, in which the various fields of media studies are
+integratively included.''\footnote{Strategy Commission of the GfM,
+  ``Core Areas of Media Studies.''}
+
+Media are technical in their basic conditions, always historically and
+culturally shaped. They organize sensory perception (apperception) and
+make perception possible in the first place. Media studies is based on a
+broad concept of media. Alongside mass media, individual media, digital,
+electronic, electric, and mechanical content-containing devices
+(`media'), there are other kinds of media (concepts), such as
+non-semantically decodable phenomena, e.g., the human voice
+(non-technical, bodily function) or choice-making (selection processes
+as cognitive operations with and without material/concrete
+manifestations). The broad concept of media also includes cultural
+techniques, such as the basic ones of reading, writing, calculating or,
+respectively, alphabet, image, number, and cultural manifestations such
+as dancing, for example. This conceptualization of media is neither
+necessarily bound to targeted publics, nor to apparatus/device, nor to
+content transmission. Media studies thinks of mediality fundamentally as
+a characteristic and as the basic functionality of apparatuses,
+artifacts and cultural techniques. Media are understood as entities
+conditioning perception and thinking\footnote{Lorenz Engell and Bernhard
+  Siegert, ``Medienphilosophie,'' \emph{Zeitschrift für Medien- und
+  Kulturforschung} 2 (2010).} or as ``apparatuses, institutions and
+functions, and the condition of processes of form
+formation.''\footnote{Joachim Paech, ``Warum `Medien'?'' (lecture,
+  University of Konstanz, Konstanz, Germany, 2006).}
+
+These introductory remarks may already give the reader an idea of the
+specificity of the German \emph{Medienwissenschaft} (media studies). In
+the following, the split between the disciplines dedicated to media,
+communication, and information will be described in detail, in order to
+explain the partial non-comparability of media studies as an umbrella
+term for \emph{Medienwissenschaft} and \emph{Kommunikationswissenschaft}
+in an international context.\footnote{The same claim, being an umbrella
+  discipline for media, communication, and information studies that does
+  not exist elsewhere, is made by French information and communication
+  studies (\emph{Sciences de l'information et de la communication}
+  {[}SIC{]}). See Stefanie Averbeck-Lietz, Fabien Bonnet, Sarah
+  Cordonnier, and Carsten Wilhelm, ``Communication Studies in France:
+  Looking for a `Terre du milieu'?,'' \emph{Publizistik} 64 (2019).}
+
+\hypertarget{differentiation-of-media-studies-from-communication-studies}{%
+\section{\texorpdfstring{Differentiation of Media Studies from
+Communication Studies
+}{Differentiation of Media Studies from Communication Studies }}\label{differentiation-of-media-studies-from-communication-studies}}
+
+Media studies (\emph{Medienwissenschaft}) is distinguished from social
+science communication studies (\emph{Kommunikationswissenschaft})
+primarily by their differing research methods, but also by
+epistemological interest and thus theoretical foundations. The common
+and divided history of these two strands has been of interest to
+scholars of both disciplines\footnote{Gudrun Schäfer, ``\,`Sie stehen
+  Rücken an Rücken und schauen in unterschiedliche Richtungen': Zum
+  Verhältnis von Medienwissenschaft und Publizistik- und
+  Kommunikationswissenschaft,'' in \emph{Über Bilder sprechen:
+  Positionen und Perspektiven der Medienwissenschaft}, ed. Heinz-B.
+  Heller (Marburg: Schüren, 2000); Werner Faulstich, ``Einführung: Zur
+  Entwicklung der Medienwissenschaft,'' in \emph{Grundwissen Medien},
+  ed. Werner Faulstich (München: Fink, 1994); Reinhold Viehoff, ``Von
+  der Literaturwissenschaft zur Medienwissenschaft, Oder: vom Text über
+  das Literatursystem zum Mediensystem,'' in \emph{Einführung in die
+  Medienwissenschaft: Konzeptionen, Theorien, Methoden, Anwendungen},
+  ed. Gebhard Rusch (Wiesbaden: Westdeutscher Verlag, 2002); Knut
+  Hickethier, \emph{Einführung in die Medienwissenschaft} (Stuttgart:
+  Metzler, 2003), 6--7.} in its particular and local history.\footnote{See
+  Christian Filk, \emph{Episteme der Medienwissenschaft:
+  Systemtheoretische Studien zur Wissenschaftsforschung eines
+  transdisziplinären Feldes} (Bielefeld: Transcript, 2015), 23.}
+
+Christian Filk points at the opposite evolution of international and
+German-language differentiation:
+
+\begin{quote}
+While the \emph{disciplinary dissolution of boundaries}, which is
+characteristic of the international development of media and
+communication studies, is sedimented in distinctly
+\textbf{intradisciplinary discourse formations}---here we should refer
+in particular to the Anglo-American academic context---such and similar
+transformations manifest themselves in other structures in this
+country.\footnote{Filk, \emph{Episteme der Medienwissenschaft}, 23--24
+  (emphasis in italics by Filk, my translation and emphasis in bold).}
+\end{quote}
+
+\noindent In the 1970s and 1980s, German-language scholars have seen (and actively
+participated in) the erection of disciplinary boundaries between media
+studies (\emph{Medienwissenschaft}) on the one hand and communication
+studies (\emph{Kommunikationswissenschaft}) on the other hand, whereas
+intradisciplinary discourse formations had previously been strong, at
+least in media studies.
+
+According to Knut Hickethier, media studies (\emph{Medienwissenschaft})
+sees itself as a ``text and cultural science,'' whereas journalism
+(\emph{Publizistik}) and communication studies
+(\emph{Kommunikationswissenschaft}), often referred to in this
+combination, sees itself ``primarily as a social science.'' Both were
+created, not by ``splitting off a new subject from the parent science,''
+but by ``internal differentiations within the disciplines,'' and in the
+1980s and 1990s, ``media studies has taken on a life of its
+own.''\footnote{Hickethier, \emph{Einführung in die Medienwissenschaft},
+  6--7.} The
+
+\begin{quote}
+disregard for qualitative methods compared to quantitative methods {[}in
+journalism/\emph{Publizistikwissenschaft}{]} favoured the
+\textbf{emergence of media studies
+(}\textbf{\emph{Medienwissenschaft}}\textbf{)}. . . . Media studies
+(\emph{Medienwissenschaft}) is predominantly concerned with the media
+film, television, radio and the internet, and here above all with the
+entertaining and fictional forms. Journalism
+(\emph{Publizistikwissenschaft}) particularly addresses journalistic
+forms in the media press, television, radio and the internet. Media
+studies (\emph{Medienwissenschaft}) works exemplarily and
+analytically-interpretatively as well as theoretically and historically.
+Journalism (\emph{Publizistikwissenschaft}) takes a more empirical
+approach in the sense of statistical procedures.\footnote{Hickethier, 8
+  (emphasis in original, my translation).}
+\end{quote}
+
+\noindent Communication studies, which focuses on the question of society in the
+sense of the social reality of life and its expression through mass
+media, is distinguished from media studies, which deals with the
+interaction of media, technology, and culture and includes aesthetics
+and history.
+
+The wide range of media conceptualizations in \emph{Medienwissenschaft}
+is a paramount difference to \emph{Kommunikationswissenschaft,} which
+finds its reason in the epistemological grounding of the speculative
+thinking of philosophy, which recognizes dialectics, in the inclusion of
+non-evidence-based or non-sensually-perceptible (intelligible)
+assumptions, in the recourse to, e.g., psychoanalysis, and in the
+methods of hermeneutics and deconstruction. Further references to the
+differences between media and communication studies often cite the
+interpretative methods of text studies, the methods of aesthetic
+analysis, whereas the quantitative and empirical---the
+social-scientific---are named as the core competences of communication
+studies.
+
+The demarcation of German-language media studies from the independent
+disciplines of German-language communication studies on the one hand,
+and journalism or \emph{Publizistik} on the other, formed a scientific
+configuration that is not found in other European/Western countries or
+languages.\footnote{On the question of European comparability, see
+  Hedwig Wagner, ed., \emph{Europäische Medienwissenschaft: Zur
+  Programmatik eines Fachs} (Bielefeld: Transcript, 2020). On
+  Canadian/North American comparability, see Norm Friesen, ed.,
+  \emph{Media Transatlantic: Developments in Media and Communication
+  Studies Between North American and German-Speaking Europe} (Cham:
+  Springer, 2016).} In the following, only media studies in the sense of
+\emph{Medienwissenschaft} is presented. Nevertheless, especially against
+the background of a European research cooperation related to media,
+which must necessarily go beyond the boundaries of scientific
+disciplines, it should be conceded that a ``procedure fixated on
+disciplinary nominalisms {[}can{]} hardly contribute anything to the
+multi- and/or transdisciplinarity of the scientific complex `media
+research' assumed here, if it does not---necessarily---end in aporia or
+apologetics anyway.''\footnote{Filk, \emph{Episteme der
+  Medienwissenschaft}, 25. The online book publication was preceded by
+  the print book publication in 2009, and the preparation of this
+  dissertation was completed in 2006. With ``media research'' now being
+  established as an undertaking encompassing media studies and
+  communication studies, the book's author not only sees the
+  disciplinary divide as principally surmountable, but also states:
+  ``Current evolutions in media research, however, point far beyond this
+  specifically bi-disciplinary focus. If one applies the structural
+  trend in research evolution identified in research on science,
+  according to which the constitution of intended transdisciplinary
+  research and development . . . has been a general feature in the field
+  of science and tech-}
+
+\hypertarget{societal-reasons-for-the-emergence-of-media-studies}{%
+\section{\texorpdfstring{Societal Reasons for the Emergence of Media
+Studies
+}{Societal Reasons for the Emergence of Media Studies }}\label{societal-reasons-for-the-emergence-of-media-studies}}
+
+Without a doubt, the social upheavals that led to the 1968 revolution
+and that then triggered the '68ers stands in the background (also
+biographically) of those who first turned to the analysis (and later
+theorization) of media, primarily film and television. A conscious
+turning away from the generation of fathers (who were suspected of
+denying their involvement in National Socialism) led to a disruption of
+continuity in society in general and at the universities in
+particular---a place of intensified social analysis, discursive
+comprehension of world conditions, and education in critical thinking.
+In addition to these general, well-known reasons, however, there are
+more specific, socio-demographic and\marginnote{nology for some time, a certain inevitability shows
+  up that the epistemological core of (media) research, defined as an
+  irreducible set of cognitive values and social practices, can neither
+  be subsumed under general methodologies nor under scientific cultures
+  of privileged provenance'' (25, my translation).} media-internal factors that
+contributed to the breakaway movement of the first generation of media
+scientists from their traditional academic disciplines.
+
+The decade from 1961 to 1971 can be considered a period of university
+expansion,\footnote{In 1960, there were 126 universities in Germany
+  (West Germany only); in 1980, that number rose to 230 (West Germany
+  only); and in 2000, it rose to 350 (West and East Germany). Ulrich
+  Schreiterer, ``Hochschulen im Wettbewerb: mehr Markt, mehr Freiheit,
+  mehr Unübersichtlichkeit'' {[}Universities in competition: more
+  market, more freedom, more confusion{]}, Bundeszentrale für politische
+  Bildung (blog), June 6, 2014, accessed February 25, 2023.} as the
+percentage of an age cohort entering higher education increased from 4
+percent in 1960 to 50 percent in 2014.\footnote{Schreiterer,
+  ``Hochschulen im Wettbewerb.''} In the 1970s especially, the number of
+students grew sharply, and their percentage went up exponentially in the
+1980s, more so for female students than for males, reaching just below
+1.75 million in 1989.\footnote{From under 500,000 in 1972 to 762,000 in
+  1973/1974. Bundeszentrale für politische Bildung, ``Wachsender
+  Studentenberg: Entwicklung der Studierendenzahlen in Deutschland;
+  Studierende nach Geschlecht: WS 1947/48--WS 2013/14'' {[}Rising
+  student enrollment: A growing number of students in Germany; Students
+  by gender: Winter semester 1947/48--Winter semester 2013/14{]},
+  accessed February 25, 2023,
+  \href{https://www.bpb.de/themen/bildung/dossier-bildung/190350/wachsender-studentenberg-entwicklung-der-studierendenzahlen-in-deutschland/}{https://www.bpb.de/themen/bildung/} \href{https://www.bpb.de/themen/bildung/dossier-bildung/190350/wachsender-studentenberg-entwicklung-der-studierendenzahlen-in-deutschland/}{dossier-bildung/190350/wachsender-studentenberg-entwicklung-der-studierendenzahlen-in-deutschland/}.}
+
+These socio-demographic changes led not only to an increase in the
+number of universities and teachers, but also to a massive
+differentiation of higher education into universities, universities of
+applied sciences (from 1970 onwards), universities of education, as well
+as art academies. Even within these institutions, a need for
+differentiation of the traditional canon of subjects was present and
+possible.
+
+The development of the media itself contributed significantly to an
+increasing mediatization of society, which gradually reached the general
+consciousness: The filmmaking of the 1960s was marked by upheavals and
+radical rejections, and so the highly left-wing (Marxist) students and
+lecturers also adopted an attitude of rejection toward the traditional
+aim for a coherent object of scientific debate to be analyzed by the
+scientist.
+
+Within the media system, there are further reasons internal to the
+media: for instance, the emergence of television in the 1950s\footnote{The
+  first public television station in West Germany, ARD, was founded in
+  1950, with the first broadcast in 1952. The second German television
+  channel, ZDF, began broadcasting in 1963.} and its gradual
+establishment as the leading medium, replacing film and newsreels in the
+cinema as well as radio in the 1960s. The sixties are the decade in
+which television entered households and became the leading entertainment
+medium. The question of media socialization (in childhood) shaped the
+first media scholars' generation, which, in addition to television, also
+witnessed the emergence of cinema festivals\footnote{E.g., Berlinale
+  since 1951, Mannheimer Kultur- und Dokumentarfilmwoche since 1952 (now
+  Internationales Filmfestival Mannheim-Heidelberg), Internationale
+  Kurzfilmtage Oberhausen since 1954, and Filmfestival Leipzig since
+  1955.} and art house cinemas\footnote{In 1970 the first German art
+  house cinema, Abaton, was opened in Hamburg.} as well as the
+increasing media practice in the private sphere, such as the emergence
+of slides, 8mm film, and, later, video. The video apparatus, its
+technical possibility of pausing, fast-forwarding, and rewinding moving
+images was, according to the first media scholars,\footnote{See Paech,
+  ``Warum `Medien'?''} the technical basis of an aesthetic analysis and
+led to a systematic theory formation, the step that distinguishes
+well-informed film criticism from scientific analysis. In the overall
+structure of the media, the emergence of new media may also bring about
+the ennoblement of the old. Thus, in addition to the development of
+auteur film,\footnote{Important representatives of the ``New German
+  Cinema'' are Volker Schlöndorff (\emph{Die Blechtrommel}, 1979),
+  Alexander Kluge (\emph{Abschied von gestern}, 1966), Rainer Werner
+  Fassbinder (\emph{Liebe ist kälter als der Tod}, 1969; \emph{Angst
+  essen Seele auf}, 1973), and Werner Herzog (\emph{Aguirre, der Zorn
+  Gottes}, 1972).} which distinguished itself from the conventional
+entertainment fare, film became acceptable at universities, even beyond
+literature's film adaptations and writers' radio plays, to be analyzed
+in a Germanic studies way. The historicization of film and film history
+also contributed to the need for trained expert knowledge that could no
+longer be imparted through traditional study programs alone.
+
+Media studies as an addressable field of knowledge and academic
+discipline in Germany has only existed since the 1980s, very late
+compared to other countries and younger than many other disciplines.
+``Media'' in the sense of the means of communication, storage, and
+information, and in the sense of ``\,`means of constructing
+objects,'\,''\footnote{Günter Helmes and Werner Köster, eds.,
+  \emph{Texte zur Medientheorie} (Stuttgart: Reclam, 2002).} as well as
+``media theory'' itself, is a young academic field and an even younger
+academic discipline. A ``specific complex of questions,''\footnote{Helmes
+  and Köster\emph{,} 15.} or an aspectual approach, a knowledge
+perspectivization, has developed in academia out of the blind spots of
+other academic disciplines and ``at the same time anchored itself in the
+consciousness of an interested public.''\footnote{Helmes and Köster, 15.}
+If media are as old as human history and so fundamental that they
+constitute the world, society, and human beings, the question arises as
+to why it took so long for this realization to be gained.
+
+Only with the process of a profound mediatization of society, i.e., with
+the rise of the so-called mass media, has the universalization and
+generalization of the problem (of the inescapable constitutional power
+of media) become possible and necessary, which media theory wants to
+contribute to illuminating.\footnote{Helmes and Köster, 15--16.}
+
+The emergence of the subject can be explained by the blind spots and
+desiderata of cultural studies, whose obliviousness to media and
+technology was to be overcome, as emphasized by many media theorists,
+such as Joachim Paech, who thus pays tribute to Friedrich Kittler, who
+ended the ``media oblivion of text theory.''\footnote{Joachim Paech,
+  ``Die Erfindung der Medienwissenschaft: Ein Erfahrungsbericht aus den
+  1970er Jahren,'' in \emph{Was waren Medien?}, ed. Claus Pias (Zürich:
+  Diaphanes, 2011), 51 (my translation).} This rhetorical trope of media
+studies, its repeatedly cited self-justification, is expressed
+particularly succinctly in a strategy paper by the GfM:
+
+\begin{quote}
+The long-lived media obliviousness of traditional cultural studies,
+which only became apparent through media studies and has since been
+eliminated, not only concerned the medial conditions of culture and its
+appropriation, but also to a special degree the medial constitution of
+educational processes.\footnote{GfM, "Medienkultur und Bildung,''
+  Positionspapier der GfM, Strategiekommission und AG Medienkultur \&
+  Bildung der GfM 2013, 3,
+  \url{https://gfmedienwissenschaft.de/sites/default/files/pdf/2017-10/2013-GfM-Positionspapier.pdf}.}
+\end{quote}
+
+\noindent Media studies thereby entered a paradigmatic break with cultural studies
+and formed its own epistemes.
+
+When the media conditions of any production of cultural texts or
+artifacts became the starting point of scientific analysis, and the
+specific media properties---which were summarized in the concept of
+mediality---became central, the epistemic foundation of media studies
+were established. As Hickethier writes:
+
+\begin{quote}
+In contrast to the concept of the media, which is more strongly
+connected to the objective form and the institutionalised structure, the
+concept of mediality means, on the one hand, a property that is
+determinative for all media in the same way. The mediality ``in itself''
+is thus something that transcends media, something fundamental that
+determines media communication as a whole. On the other hand, the term
+refers to the set of characteristics assumed to be typical and regarded
+as constitutive for respective media. This is understood to mean the
+``film-specific'' or ``filmic'' in the case of film, the ``televisual''
+in the case of television, the radio-phone in the case of
+radio.\footnote{Hickethier, \emph{Einführung in die Medienwissenschaft},
+  26 (my translation).}
+\end{quote}
+
+\noindent Areas of knowledge of media studies, though later institutionalized,
+developed from the 1960s onwards in German studies, among others, which
+brought expertise in radio and more especially film into the institutes
+and teaching as Germanist media studies. These fields of knowledge found
+their way into universities in the 1970s as institute/seminar names via
+institutes dedicated to film studies, and later as film and television
+studies (although the latter also has a completely different theoretical
+canon).
+
+The belated reception of the Frankfurt School (Adorno/Horkheimer's
+writings on media and Kracauer's writings on film) in Germany after the
+1960s was an initial spark that dominated media studies until the 1980s
+and manifested itself in society as a whole as an object of media
+criticism. This dominance was replaced by a paradigm shift in popular
+culture and its reflection in cultural studies. The French
+poststructuralism that followed this phase and other varieties of
+postmodernism (rather, its academic disciplinary--configuring power of
+reception) had an enormous influence on media studies---as in cultural
+studies as a whole. In this phase, the study of popular culture (e.g.,
+John Fiske, Stuart Hall) coexisted alongside Marshall McLuhan, the
+Toronto School of communication, and the orientation toward Michel
+Foucault, Jacques Derrida, and Gilles Deleuze/Felix Guattari as fields
+of knowledge that formed focal points. Media studies established itself
+institutionally on a broad basis in the 1980s and 1990s.
+
+A break with the seamless connection to hermeneutically shaped cultural
+studies occurred with the expulsion of the spirit from the
+humanities,\footnote{Friedrich A. Kittler, \emph{Austreibung des Geistes
+  aus den Geisteswissenschaften: Programme des Poststrukturalismus}
+  (Paderborn: Schöningh, 1980).} i.e., the assertion of a media-based a
+priori that granted technology primacy.
+
+\hypertarget{the-turns}{%
+\section{\texorpdfstring{The Turns }{The Turns }}\label{the-turns}}
+
+Various important turns have had an influence on the formation and
+development of media studies, including the spatial turn and the
+performative turn. The \emph{performative turn}, which became dominant
+in all cultural studies subjects in the 1990s and 2000s, has brought
+together the media and the performative in media studies, especially in
+media philosophy, as well as in gender media studies, which constitute
+the interfaces of ``gender and media'' (as a fundamental renewal of
+feminist film theory, which illuminated ``women and film''). Language
+was conceived as a medium of action, of mediating the production of the
+world, just as media became constitutive as performative actors, acting
+in their performance, producing the world. Performativity and mediality
+were assumed to be mutually constituting. Performativity as a concept in
+media studies\footnote{See Andrea Seier, \emph{Remediatisierung: Die
+  performative Konstitution von Gender und Medien} (Münster: LIT Verlag,
+  2015).} as well as performativity and mediality in popular culture
+media studies\footnote{Sybille Krämer, \emph{Technik als Kulturtechnik:
+  Kleines Plädoyer für eine kulturanthropologische Erweiterung des
+  Technikkonzeptes} (Ulm: Universität Ulm, 2004).} shaped theory
+formation and media analyses.
+
+The \emph{spatial turn,} so important for cultural studies,\footnote{See
+  Doris Bachmann-Medick, \emph{Cultural Turns: Neuorientierung in den
+  Kulturwissenschaften} (Reinbek bei Hamburg: Rowohlt, 2006), 284--329;
+  Jörg Döring and Tristan Thielmann, eds., \emph{Spatial Turn: Das
+  Raumparadigma in den Kultur- und Sozialwissenschaften} (Bielefeld:
+  Transcript, 2008).} has produced, among other things, spatial
+theory,\footnote{See Jörg Dünne and Stephan Günzel, eds.,
+  \emph{Raumtheorie: Grundlagentexte aus Philosophie und
+  Kulturwissenschaften} (Frankfurt: Suhrkamp, 2006).} spatial
+studies,\footnote{See Stephan Günzel, \emph{Handbuch Raum} (Stuttgart:
+  Metzler, 2009).} and works on topology\footnote{See Stephan Günzel,
+  \emph{Topologie:} \emph{Zur Raumbeschreibung in den Kultur- und
+  Medienwissenschaften} (Bielefeld: Transcript, 2007).} and
+topography\footnote{See Sigrid Weigel, ``Zum `topographical turn':
+  Kartographie, Topographie und Raumkonzepte in den
+  Kulturwissenschaften,'' \emph{KulturPoetik} (2002).} in the
+German-speaking world. The spatial turn reached its preliminary climax
+in cultural studies with cartography and in media studies with
+geo-media, media geosciences, and internet geographies. With the advent
+of \emph{Media Geography: Theory---Analysis---Discussion,}\footnote{Jörg
+  Döring and Tristan Thielmann, eds., \emph{Mediengeographie:
+  Theorie---Analyse---Diskussionen} (Bielefeld: Transcript, 2009).} a
+plea was made for geo-media science and geo-media theory. In the field
+of visual geography, media studies emphasized its relevance to the
+history of culture and knowledge,\footnote{Erhard Schüttpelz, ``Die
+  medientechnische Überlegenheit des Westens: Zur Geographie und
+  Geschichte von Bruno Latour's `Immutable Mobiles,'\,'' in
+  \emph{Mediengeographie: Theory, Analysis, Discussion}, ed. Jörg Döring
+  and Tristan Thielmann (Bielefeld: Transcript, 2009); Bruno Latour,
+  ``Die Logistik der \emph{immutable mobiles,}'' in
+  \emph{Mediengeographie: Theory, Analysis, Discussion}, ed. Jörg Döring
+  and Tristan Thielmann (Bielefeld: Transcript, 2009).} and it
+recognized the technicality of images as geo-medially
+significant.\footnote{Jens Schröter, ``Das transplane Bild und der
+  \emph{spatial turn,}`` in \emph{Mediengeographie: Theory, Analysis,
+  Discussion}, ed. Jörg Döring and Tristan Thielmann (Bielefeld:
+  Transcript, 2009).} Further on, it analyzed the geo-media impact in
+individual media and apparatuses,\textsuperscript{44} explicated geo-media in terms of geo-browsing (in
+the phenomenal areas of GIS, navigation, Google Earth, flight
+simulation), and addressed the connection between media, globalization,
+and the social.\textsuperscript{45} Mobile geo-media or locating media\textsuperscript{46} has
+evolved as a new strand within geo-media.
+
+\hypertarget{media-studies-in-conjunction-with-other-disciplines}{%
+\section{\texorpdfstring{Media Studies in Conjunction with Other
+Disciplines
+}{Media Studies in Conjunction with Other Disciplines }}\label{media-studies-in-conjunction-with-other-disciplines}}
+
+Media studies, a young academic discipline in Germany, embedded in the
+canon of the humanities, is very close to cultural studies (in the sense
+of ``\emph{die Kulturwissenschaft,}'' as a singular term, not
+``\emph{die Kulturwissenschaften},'' the plural term),\textsuperscript{47} and it has, in some respects, developed parallel to
+it.\textsuperscript{48} Media studies has emerged to a large extent from literary
+studies and has close kinship relations to theater studies, with film
+studies and, later, television studies as additional predecessor
+disciplines. It has developed in further distinction from German studies
+and is particularly close to the history of knowledge and cultural
+studies (in the sense of the narrower canon of disciplines), because the
+``development of the media techniques of generating, storage,
+representation and transmission of perceptions, experiences and
+knowledge''\textsuperscript{49} is one of the main aspects of media studies. The
+subject of media studies has its core identity in the media's logic or
+the entelechy of the media.
+
+\newpage Media\marginnote{\textsuperscript{44} Wolfgang Hagen,
+  ``Zellular---Parasozial---Ordal: Sketches for a Media Archaeology of
+  the Mobile Phone,'' in \emph{Mediengeographie: Theorie, Analyse,
+  Diskussionen}, ed. Jörg Döring and Tristan Thielmann (Bielefeld:
+  Transcript, 2009).} as\marginnote{\textsuperscript{45} Pablo Abend, \emph{Geobrowsing: Google Earth
+  und Co.; Nutzungspraktiken einer digitalen Erde} (Bielefeld:
+  Transcript, 2013).} an\marginnote{\textsuperscript{46} Regine
+  Buschauer and Katherine Willis, \emph{Locative Media:}
+  \emph{Medialität und Räumlichkeit} (Bielefeld: Transcript, 2013).} object\marginnote{\textsuperscript{47} The
+  plural form ``\emph{die Kulturwissenschaften}'' designates the
+  humanities, whereas the singular form designates one specific academic
+  discipline renewed in the eighties which seeks to investigate ``the
+  social and technical institutions created by human beings, the forms
+  of action and conflict formed between people, and their horizons of
+  values and norms, especially insofar as these require special levels
+  of symbolic and media-based mediation for their constitution,
+  transmission, and development.'' Hartmut Böhme,
+  ``Kulturwissenschaft,'' in \emph{Reallexikon der deutschen
+  Literaturwissenschaft}, vol. 2 (Berlin: DeGruyter, 2000), 356.
+  However, with respect to proximity to cultural studies, cf. Friedrich
+  Kittler, \emph{Eine Kulturgeschichte der Kulturwissenschaft} (München:
+  Fink, 2001).} of\marginnote{\textsuperscript{48} Independent developments took place in film and television
+  studies. For investigation of parallels and differences, see
+  "Kulturgeschichte als Mediengeschichte (oder vice versa)?,'' special
+  issue, \emph{Archiv für Mediengeschichte} (Bauhaus University Weimar)
+  6 (2006).} study\marginnote{\textsuperscript{49}\setcounter{footnote}{49} Strategy Commission of the GfM, ``Core Areas of
+  Media Studies.''} forms possible sub-disciplinary
+configurations far beyond cultural studies, as in the social sciences:
+e.g., media sociology, media law, media economics, and media psychology.
+And even in the natural sciences media are of disciplinary relevance,
+e.g., media informatics.
+
+Media as a designated research subject, represented using corresponding
+expertise, is usually found in German studies; often in the form of
+expertise in film history, theory, and aesthetics, and very often in
+other philologies. Adaptations, genres, and formats, as well as
+fundamental narratological questions and aesthetic-analytical procedures
+and methods of interpretation, which are linked to general intellectual
+history, are common to these disciplines. Media studies grew out of
+pedagogy adjacent to German studies and established itself in the 1970s,
+in its early days, as critical social studies in the form of media
+studies. For this reason, in addition to German media studies, classical
+media pedagogy and renewed media education are strong areas of knowledge
+of a theoretical, practical, and praxeological nature, where scholars
+from their respective disciplines meet.
+
+In theater studies and art, visual/electronic media are often included
+in seminars or institutes and represented in specializations of
+professorships, too. Media studies was able to connect to the research
+direction of cultural studies, which was dedicated to the materiality of
+communication.\footnote{Hans-Ulrich Gumbrecht and Karl Ludwig Pfeiffer,
+  \emph{Materialität der Kommunikation} (Frankfurt: Suhrkamp, 1988).}
+Aesthetics is understood as a media science \emph{avant la lettre} and
+is an integral part of the subject. Media studies does not make a clear
+distinction between methods and theories, and names in particular
+``philological-hermeneutic, art-scientific, philosophical, sociological
+and psychological theories and methods''\footnote{Strategy Commission of
+  the GfM, ``Core Areas of Media Studies.''} in its approach to
+theorizing, although the transformative power and enrichment of the
+repertoire of theories in cultural studies are emphasized.
+
+Parts of media studies configured themselves as ``media theory'' and
+were later perceived as German media theory in their
+specific---internationally distinct---epistemic grounding. In this
+current, German media theory, media philosophy, and cultural technology
+research\footnote{Lorenz Engell and Bernhard Siegert,
+  ``Medienphilosophie,'' \emph{Zeitschrift für Medien- und
+  Kulturforschung} 2 (2010).} became important from the beginning of the
+2000s.
+
+\hypertarget{institutionalization}{%
+\section{\texorpdfstring{Institutionalization
+}{Institutionalization }}\label{institutionalization}}
+
+The term \emph{Medienwissenschaft} showed up in the 1950s, first used by
+Erich Feldmann.\footnote{Friedrich Knilli, ``Wie aus den Medien eine
+  Wissenschaft wurde: Exposé für eine soziobiographische
+  Fachgeschichte,'' \emph{Medienwissenschaft: Rezensionen/Reviews} 20,
+  no. 1 (2003), 7.} In 1950, the Hans-Bredow-Institut in Hamburg was
+founded, directed by Egmont, with its most prominent researcher, Gerhard
+Maletzke. In 1961, followed the Institute for Language in the Technical
+Age (\emph{Sprache im technischen Zeitalter}, SPRITZ) at the TU
+(University of Technology) Berlin, founded by Walter Höllerer, in which
+media studies as an autonomous discipline was established by Friedrich
+Knilli. Knilli was appointed Professor of General Literary Studies, with
+a focus on media studies, at the TU Berlin in 1972. In 1982, Knilli
+founded the study program ``\emph{Medienberatung}'' (media advisory) at
+the TU Berlin, the first genuine media studies program, for which he was
+responsible, together with Siegfried Zielinski.\footnote{Siegfried
+  Zielinski was a student of Knilli and was appointed professor of
+  audio-visuals at the University of Salzburg in 1989.} Later on, three
+of Knilli's students became appointed professors: Siegfried Zielinski
+(Salzburg, Köln), Knut Hickethier (Hamburg), and Joachim Paech
+(Konstanz).
+
+As a sub-discipline of theater studies, there were professorships with a
+partial media studies specialization in the Institute for Theater
+Studies in Vienna from the beginning of the 1970s. Hans-Ulrich Gumbrecht
+at the University of Siegen organized five interdisciplinary research
+colloquia on the epistemological reorientation of the humanities between
+1981 and 1989. The initial spark, formative for the subject, was the
+media studies research association ``Aesthetics, Pragmatics and History
+of Screen Media,'' which was a DFG Collaborative Research Centre at the
+University of Siegen from 1985 to 2000, directed by Helmut Kreuzer, and
+later by Helmut Schanze.\footnote{Werner Faulstich, Siegfried Schmidt,
+  Irmela Schneider, Reinhold Viehoff, and Jutta Wermke participated and
+  were later appointed professors.} Knilli described the social and
+historical forces that united and divided early figures: ``What unites
+the stubborn media scholars from the various West German universities in
+the fifties, sixties and seventies is media criticism, for most of them
+are children of two wars: the Second World War and the Cold War, which
+at the same time splits them into several camps again.''\footnote{Knilli,
+  ``Wie aus den Medien eine Wissenschaft wurde,'' 19.} In 1987,
+Gumbrecht led the first DFG Research Training Group in the Humanities,
+entitled ``Forms of Communication as Forms of Life.'' The Käthe
+Hamburger Kolleg IKKM (2008--2020)\footnote{IKKM website, accessed
+  January 28, 2022, https://www.ikkm-weimar.de.} and the International
+College for Cultural Techniques Research and Media Philosophy at the
+Bauhaus University Weimar have had a significant influence on media
+studies. Furthermore, the DFG Research Training Group ``Locating Media''
+at the University of Siegen, which existed from 2009 to 2021, was of
+great influence.
+
+An academic association for media studies was founded in 1985 as the
+Society for Film and Television Studies (\emph{Gesellschaft für}
+\emph{Film- und Fernsehwissenschaft,} GFF), later renamed the Society
+for Media Studies (\emph{Gesellschaft für Medienwissenschaft,} GfM). The
+GfM currently has twenty-nine working groups. Between 2001 and 2007, the
+DFG research group ``\emph{Bild---Schrift---Zahl}''
+(Image---Writing---Number) worked at the Humboldt University of
+Berlin.\footnote{Image, writing, and number are basic media of modern
+  communication and have been studied in their historical genesis up to
+  their current effectiveness in digital encoding, storage, and
+  processing. See Helmholtz-Zentrum für Kulturtechnik, ``Founding
+  Project of the Helmholtz Centre for Cultural Technology: Theory and
+  History of Cultural Techniques,'' Humboldt University of Berlin
+  (website).}
+
+In 2009, the first DFG symposium on media studies took place, marking
+another symbolic stage in the establishment of the subject.\textsuperscript{59} The
+conference series ``Hyperkult'' has had a strong impact on media
+studies, especially media theory, since 1991.
+
+\newpage The\marginnote{\textsuperscript{59}\setcounter{footnote}{59} See
+  Ulrike Bergermann, \emph{Leere Fächer: Gründungsdiskurse in Kybernetik
+  und Medienwissenschaft} (Münster: LIT Verlag, 2015), 15.} beginnings of institutionalized German-language media studies are
+linked to research on literary adaptations (radio and film),\footnote{See,
+  e.g., Friedrich Knilli, Knut Hickethier, and Wolf-Dieter Lützen, eds.,
+  \emph{Literatur in den Massenmedien: Demontage von Dichtung?}
+  (München: Hanser, 1976); Franz-Josef Albersmeier, \emph{Die
+  Herausforderung des Films an die französische Literatur:}
+  \emph{Entwurf einer "Literaturgeschichte des Films}'' (Heidelberg: C.
+  Winter, 1985); Michael Schaudig, \emph{Literatur im Medienwechsel:
+  Gerhart Hauptmanns Tragikomödie ``Die Ratten'' und ihre Adaptionen für
+  Kino, Hörfunk, Fernsehen; Prolegomena zu einer Medienkomparatistik}
+  (München: Verlegergemeinschaft Schaudig, 1992).} on the nexus of media
+and the Holocaust,\footnote{See Friedrich Knilli and Siegfried
+  Zielinski, \emph{Holocaust zur Unterhaltung} (Berlin: Elefanten Press,
+  1982).} and on internationalization/Europeanization.\footnote{See,
+  e.g., Siegfried Zielinski and Kurt Luger, eds., \emph{Europäische
+  Audiovisionen: Film und Fernsehen im Umbruch}, Neue Aspekte in Kultur-
+  und Kommunikationswissenschaft, vol. 7 (Wien: Österreichischer Kunst-
+  und Kulturverlag, 1993); Siegfried Zielinski, \emph{Video:
+  Apparat/Medium, Kunst, Kultur; Ein internationaler Reader} (Frankfurt:
+  Peter Lang, 1992).} Before institutionalized media studies, ``media
+studies,'' primarily linked with the name of Helmut Schanze,\footnote{Helmut
+  Schanze, \emph{Medienkunde für Literaturwissenschaftler: Einführung
+  und Bibliographie} (München: Fink, 1974).} was the term for a
+configuration of knowledge that theorized mediality
+``media-reflexively'' or in ``thinking the media.'' Since media studies
+expertise developed within other disciplines, including theater studies
+and German studies, and many media studies writings can be identified
+avant la lettre in cultural history, a few publications will be
+mentioned here by way of example, without making any claim to firstness
+or exclusivity.
+
+\hypertarget{first-publications}{%
+\section{First Publications}\label{first-publications}}
+
+The first monographs in the discipline of media studies were published
+by Friedrich Knilli, who presented a work on radio plays in
+1959.\footnote{Friedrich Knilli, \emph{Das Hörspiel in der Vorstellung
+  der Hörer: Eine experimental-psychologische Untersuchung} (PhD diss.,
+  University of Graz, 1959).} Helmut Schanze published
+``\emph{Medienkunde für Literaturwissenschaftler}'' (Media Studies for
+Literary Scholars) in 1974, followed by ``\emph{Literaturgeschichte als
+Mediengeschichte}'' (Literary History as Media History) in 1976--1977.
+In addition to German media studies, the first monographs and conference
+papers with ``media analysis'' in the title can be traced back to 1972.
+``Media analysis,'' one of the first main currents of media studies,
+which also gave its name to the study program, was related to television
+and audio-visual media and was supported by educational societies, among
+others. ``Media knowledge'' (\emph{Medienkunde}) and ``media criticism''
+are further pre-disciplinary or early configurations of knowledge,
+followed by ``media work.'' In the second half of the 1980s, media
+effects research became a field of knowledge, mainly in communication
+studies, which attracted a lot of attention, as did media analysis as
+cultural and social criticism. During this period, titles mentioning
+``media theory,'' later a major paradigm of media studies, appeared for
+the first time. At the end of the 1990s, the first compendia\footnote{See,
+  e.g., Werner Faulstich, \emph{Medientheorien: Einführung und
+  Überblick} (Göttingen: Vandenhoeck \& Ruprecht, 1991); Daniela Kloock
+  and Angela Spahr, \emph{Medientheorien: Eine Einführung} (Paderborn:
+  Fink, 1997).} and handbooks appeared in renowned academic publishing
+houses. Moreover, in the second half of the 1990s, cultural studies (in
+conjunction with media analysis) moved into the core knowledge area of
+media studies.
+
+\hypertarget{special-focus-areas}{%
+\section{Special Focus Areas}\label{special-focus-areas}}
+
+One important strand in media studies is the orientation toward the
+history of knowledge, and with it towards the history of science, in a
+constant effort to bring the two poles of tension, the technical and the
+social, to a point of intersection, that of the media constituted for
+reflection. It was precisely this basic disciplinary configuration that
+led almost inevitably to the study of Actor--Network Theory (ANT).
+
+Due to the theoretical reflection of the fundamental role of technology
+for media in their social uses, German-language media studies is close
+to English-language Science and Technology Studies (STS), in particular
+to ANT, which emerged from it. ANT was strongly received\footnote{See,
+  e.g., Gerd Kneer, Marcus Schroer, and Erhard Schüttpelz, eds.,
+  \emph{Bruno Latours Kollektive: Kontroversen zur Entgrenzung des
+  Sozialen} (Frankfurt: Suhrkamp, 2008); Tristan Thielmann and Erhard
+  Schüttpelz, eds., \emph{Akteur---Medien---Theorie} (Bielefeld:
+  Transcript, 2013).} in media studies from the mid-2000s onwards and
+secured mainstream status until the mid-2010s, primarily through the
+International College for Cultural Techniques Research and Media
+Philosophy (IKKM, 2008--2020) at the Bauhaus University Weimar. ANT in
+media studies elaborates the agency of human and non-human actors in
+operative sign chains. Uncovering and conceptualizing the agency of
+media, artifacts, and inscriptions---as well as the media-bound nature
+of all technical and social processes\footnote{Thielmann and Schüttpelz,
+  \emph{Akteur---Medien---Theorie}, 15.} from which technical,
+scientific, and organizational operations emerge---has captured the
+profound interconnectedness of media, technology, and the social.
+
+\hypertarget{examples-and-exemplary-questions}{%
+\section{Examples and Exemplary
+Questions}\label{examples-and-exemplary-questions}}
+
+Media studies was expected to provide an answer to the question: ``What
+is a medium?''\footnote{Stephan Münker and Alexander Rösler, eds.,
+  \emph{Was ist ein Medium?} (Frankfurt: Suhrkamp, 2008).} More
+precisely, the question was aimed at the concept of media in media
+studies, when the field---while aiming at the media (individual, mass
+media, and media system) and claiming to have expertise in them and
+their teaching---did not follow the vernacular concept of media.
+
+Different definitions of media, each of them deriving from separate
+theories and schools, coexist peacefully, and many distinctions between
+media, such as those between storage and dissemination media, have
+attracted interest in media studies. The subject identity of media
+studies, which first distinguishes itself as a scientific discipline,
+was acquired in the struggle for the concept of media. This has been
+answered with the overarching, far more comprehensive category of
+mediality. The ``autonomy of the media,'' the ``media specific,'' the
+``thinking of the media property,'' and the ``media logic'' became the
+core identity of the discipline. A medium is thought of as an
+``actualization of the media potential,''\footnote{Lorenz Engell,
+  ``Tasten, Wählen, Denken: Genese und Funktion einer philosophischen
+  Apparatur,`` in \emph{Medienphilosophie: Beiträge zur Klärung eines
+  Begriffs}, ed. Stefan Münker, Alexander Roesler, and Mike Sandbothe
+  (Frankfurt: Fischer, 2003), 54\emph{--}55.} thus forcing an object
+construction through philosophical reflection, diametrically opposed to
+the everyday language concept of media, in which media are equated with
+transmission apparatuses (and their typified contents). The concept of
+``media'' in the substantial and historical sense is
+rejected.\footnote{Lorenz Engell and Joseph Vogl, ``Zur Einführung,'' in
+  \emph{Kursbuch Medienkultur: Die maßgeblichen Theorien von Brecht bis
+  Baudrillard,} ed. Claus Pias et al. (Stuttgart: DVA, 1999), 10.} The
+demarcation of ``media'' from forms of representation, techniques, and
+symbolism as a sufficient justification or form of thinking and
+negotiation of media is rejected, with the understanding that media
+studies should instead find its legitimacy in the relationship of the
+elements mentioned. Ulrike Bergermann has raised the question of whether
+this is media studies ``as form without subject or object,'' as ``pure
+media.''\footnote{Bergermann, \emph{Leere Fächer}, 20.} The foundational
+discourse represents an attempt to legitimize media studies in the void.
+A media science without an object or subject can exist, or can only
+exist in this way, because media science finds its core in ``placing a
+medium, a mediality, a translation, a blind spot, an empty centre at the
+centre of a discipline, which, after all, does not receive its
+legitimation as pure mediality research at all, but from the constantly
+new elaboration of references between individual media/artifacts and
+their mediality.''\footnote{Bergermann, 20.}
+
+In the many introductions to media studies during the first decade of
+the twenty-first century, the history of knowledge, mediality, and
+epistemology were conceptually intertwined---explicitly or implicitly in
+the context of the founding of a subject. To interrogate knowledge
+production in terms of mediality---in terms of its media constituents
+and legitimacy---has remained the mandate of media studies.
+
+\begin{quote}
+The path of media cultural studies leads into and out of the media and
+their processes. It takes many branches via techniques and technologies,
+materials and constitutions, the tangible and the invisible, and it
+still often takes the (re)route via literature.\footnote{Oliver Ruf,
+  Patrick Rupert-Kruse, and Lars C. Grabbe,
+  \emph{Medienkulturwissenschaf} (Wiesbaden: Springer, 2022), 25.}
+\end{quote}
+
+\noindent The term ``media cultural studies'' is evidence of a foundation in
+literary and cultural studies, but this is accomplished in a theory
+formation that grasps the fundamental constitutional power of the media.
+This constitutional force of media goes beyond individual media as a
+dispositive that is at the same time (culturally) technically based,
+symbolically configured, and operating via various types of signs
+(image, number, etc.). A medium has an effect on the individual as a
+subject-constituting power or on society as a collective. Of course, the
+converse is also true, as media and technology are deposits of the
+social.
+
+\hypertarget{cultural-studies-research-in-the-german-speaking-world}{%
+\section{Cultural Studies Research in the German-Speaking
+World}\label{cultural-studies-research-in-the-german-speaking-world}}
+
+Media studies, in its fundamental cultural-scientific
+self-understanding, can grasp any mediation that is based on a symbolic
+sign character as media-based and thus define writing, image, and
+number\footnote{Sybille Krämer and Horst Bredekamp, eds., \emph{Bild,
+  Schrift, Zahl} (Paderborn: Fink, 2003).} as media. It can also
+identify the cultural techniques\footnote{For fundamental information on
+  cultural techniques see Bernhard Siegert, \emph{Cultural Techniques:
+  Grids, Filters, Doors, and Other Articulations of the Real} (New York:
+  Fordham University Press, 2015).} of reading, writing, and arithmetic
+as media configurations. The cultural techniques perform embodied,
+culturally-configured mediations that are bound to symbolic signs. In
+this way, media studies not only reaches far into the historical realm
+(for example, the history of writing), but can also include any
+thematization\footnote{See also the treatise by Günter Helmes on the Old
+  Testament prohibition of images: Günter Helmes and Werner Köster,
+  \emph{Texte zur Medientheorie} (Ditzingen: Reclam, 2002), 23.} of
+image, writing, and number as a media-theoretical reflection in the
+canon of media studies, whereby texts from Greek and Roman antiquity
+also become parts of its foundation. The accompanying canonization, the
+establishment of reference texts, are reconfigurations of classical
+texts from history, aesthetics, literature, art, and philosophy under
+the new interest-guiding perspective of mediation, of being media-based
+as a condition sine qua non. Media also enable in the first place the
+more fundamental processes of perception, thinking, and feeling, thus
+tying media to the basic conditions of human existence. The
+physiological condition of perception, the five human senses, become
+mediated conditions by dint of their connection to perceiving and
+knowing as cognition and knowledge. Conceived as media configurations of
+knowledge, media and knowledge are short-circuited.
+
+Media as an anthropological constant can then be thematized in
+evolutionary terms as historically conditioned conditions of expression
+that prove themselves socially, culturally, and politically in their
+collective dimension as well as psychologically and pedagogically in
+their individual dimension.
+
+Under ``media,'' mediations located on different levels can be described
+according to: a) the different sign natures (image, writing, number); b)
+the arts (drama, painting, poetry, song and dance) and media as
+intermedia aesthetic manifestations; and c) the specific configuration
+levels of formats and genres.
+
+In addition to Kittler's media studies, intermediality was another major
+paradigm of media studies which was able to continuously differentiate
+itself into sub-disciplines after its successful founding while still
+maintaining an inner coherence in its identity core of media
+theory.\footnote{Rainer Leschke, ``Medienwissenschaften und Geschichte:
+  Morphologie einer Wissenschaft.''}
+
+Rainer Leschke describes how
+
+\begin{quote}
+intermediality analysis not only ensured a systematic networking of
+media studies within cultural studies, but as a science of the media
+system and media cultures, it virtually offers itself as an integration
+and anchor point of cultural studies. In this way, however, media
+studies has established itself as an independent system of knowledge
+with an object area that cannot be closed off in principle and an
+integral networking within cultural studies.\footnote{Leschke, 14.}
+\end{quote}
+
+\noindent As detailed, media studies considers any form of communication involving
+symbolic signs to be media-based, and ``sign'' here encompasses writing,
+images, and numbers. It also examines cultural techniques such as
+reading, writing, and arithmetic as forms of media configurations. The
+establishment of reference texts from various disciplines, reinterpreted
+under the perspective of mediation, contributes to the canonization of
+media studies.
+
+\newpage\hypertarget{franco-german-cooperation-in-media-and-communication-studies}{%
+\section{Franco-German Cooperation in Media and Communication\\\noindent
+Studies}\label{franco-german-cooperation-in-media-and-communication-studies}}
+
+Due to the above-mentioned division of the sciences dedicated to media
+and communication into cultural media studies and social communication
+studies (in Germany), cross-border cooperation poses a particular
+challenge. However, in many joint degree programs, and even more so in
+the bi-national research alliances (DFG-ANR, German Research Committee
+and French National Science Foundation), one finds examples of scholars
+who successfully negotiate this unusual terrain. Curricula are
+coordinated, if not developed jointly. Theses are jointly supervised.
+Advisory services, i.e., academic orientation of Bachelor's and Master's
+graduates, are coordinated. Even if this is not a transdisciplinary but
+an interdisciplinary cooperation, there must not only be openness to
+other methodological approaches, but these must also be appropriated in
+an integrative manner. Even if the other canon of theories could be
+handled additively, if linguistic and attention-economic obstacles were
+overcome, and if a number of theorists/theories could be identified that
+are read by both disciplines, this would turn out to be more difficult
+or even incompatible when it comes to the research design and the
+applied methodology or the form of argumentation.
+
+Cooperation in German-French media studies requires cognizance of three
+different levels of academic operation: a) institutional formations; b)
+policies and politics of knowledge acquisition and of science; and c)
+contours of intellectual practice, including research topics and
+theoretical orientations. The institutional level concerns German-French
+media organizations, about media-specific institutions, and thus
+captures formalized relations of broadcasters, regulatory authorities,
+and the like. German-French cooperation as it develops through its
+infrastructure and through its technological standardizations is also at
+the center of media studies. In terms of knowledge policy, questions
+arise about continuities and discontinuities from analogue to digital,
+especially in their different configurations in France and Germany. The
+disciplinary configuration of those sciences dedicated to the media in
+the individual German-speaking and Francophone countries is also an
+important domain of inquiry, one that connects with issues pertaining to
+the configuration of interdisciplinary research between German
+studies/French studies, media studies, and socio-political fields of
+knowledge. The most important scientific organizations (university and
+research organizations, determined by laws, ministerial
+responsibilities, and financial support for research) whose work
+directly relates to the issue of German-French cooperation in media
+studies are the German-French University (DFH-UFA), the bi-national
+research alliances (DFG-ANR, the German Research Committee and French
+National Science Foundation), the German Academic Exchange Service
+(DAAD), as well as many EU-funded research institutions and projects.
+Strategies of cooperation play an important role in the common
+German-French study program \emph{Europäische Medienkultur}.
+
+The connection between German-French cooperation and media studies
+prompts questions about the form of institutionalization, the subject
+area, the content, and the structure. In order to sound out perspectives
+of German-French media studies, we must consider the practices of
+teaching media studies in Germany and France. In terms of research, we
+must identify overlaps, intersections, and crossing references in the
+media of Germany and France. The conceptualization of Franco-German
+media studies can start from the respective national academic
+disciplines and pose questions about the cross-border dimension in
+several respects. The main respects are:
+
+\begin{enumerate}
+\item
+  the sociogenesis of the discipline (to be recorded via the founding of
+  institutes and designation of chairs and courses of study),
+\item
+  the intellectual biographies of its bearers and their European
+  intercultural experiences,
+\item
+  the disciplines from which they developed (history of knowledge or
+  history of science),
+\item
+  the scientific organizations (university and research organizations,
+  determined by laws, ministerial responsibilities, or financial support
+  for research),
+\item
+  the intellectual currents (within the country, or more broadly, in
+  Europe or around the world),
+\item
+  languages and language transfer (through translations, the phenomenon
+  of reception, and waves), language barriers (independent parallelisms,
+  opposites parallelisms, and national ``special paths''), and
+\item
+  the cooperation of science, including transnational joint study
+  programs as well as the cooperation between media actors (in the
+  cultural, in the media-economic, and in the field of media
+  technology).
+\end{enumerate}
+
+The object of study takes its starting point in the national framework,
+and we can ask whether or not this national framework can be transcended
+to include the bi-/tri-/multi-national dimension. Firstly, the
+cross-border dimension of the sociogenesis of the disciplines, which can
+be grasped through the founding of institutes and the appointment of
+professors and degree programs, shows that in France, as in Germany, the
+founding of institutions and the appointment of professors has so far
+taken place within a national framework. Anchoring in the national
+scientific community is indispensable, even when international
+networking is required.\footnote{Sarah Cordonnier and Hedwig Wagner,
+  ``Déployer l'interculturalité: les étudiants, un vecteur pour la
+  réflexion académique sur l'interculturel: Le cas des sciences
+  consacrées à la communication en France et en Allemagne,'' in
+  \emph{Interkulturelle Kompetenz in deutsch-französischen
+  Studiengängen: Les compétences interculturelles dans les cursus
+  franco-allemands} {[}Intercultural competency in German-French degree
+  programs: Key competencies for higher education and employability{]},
+  ed. Gundula Gwenn Hiller et al. (Wiesbaden: Springer VS, 2017), 232.}
+The supposed internationality and universalizing tendency of media
+theories---which produces theory that does not address the linguistic
+and intellectual context of origin and its conditions and
+limitations---becomes particular when addressed and more closely
+specified culturally, or reveals itself as a geo-media-political
+negotiating space. The consideration of geographical, institutional, and
+national coordinates in the formation of media studies theory even leads
+Norm Friesen and Richard Cavell to speak of the ``geography of media
+studies.''\footnote{Norm Friesen and Richard Cavell, ``Introduction,''
+  in \emph{Media Transatlantic: Developments in Media and Communication
+  Studies between North American and German-Speaking Europe}, ed. Norm
+  Friesen (Cham: Springer, 2016).} German-language pedagogy books on
+media studies show an account that disregards national frames and
+contexts of origin and traces lines of development purely from
+theory.\footnote{Wagner, \emph{Europäische Medienwissenschaft}.}
+Intellectual biographies and the history of reception have their place
+in this, albeit very marginally, but these books rarely include the
+institutional, geographical, and national dimensions of the origins of
+media theory, unless these are addressed from the perspective of
+regional studies, as for example in studies of Russian media, where
+media theory is overlaid by a centuries-long cultural
+imprint.\footnote{Ulrich Schmid, \emph{Russische Medientheorien} (Bern:
+  Haupt Verlag, 2005).} The consideration of geographical,
+institutional, and national coordinates in the formation of media theory
+has so far been almost completely absent from the contributions of
+European media studies,\footnote{An exception to this broad
+  generalization can be found in my own book: Hedwig Wagner,
+  \emph{Europäische Medienwissenschaft}.} including Franco-German media
+studies.
+
+The Franco-German degree programs, politically desired by the
+Franco-German Council of Ministers and promoted by the Franco-German
+University (DFH-UFA),\footnote{Université
+  franco-allemande/Deutsch-Französische Hochschule (website), accessed
+  February 5, 2022, https://www.dfh-ufa.org/.} are offered at
+Bachelor\textquotesingle s and Master\textquotesingle s levels. There
+are six such degree programs where media/communication form the main
+focus of study. Being in charge of a German-French joint degree program
+in media studies, the author's French colleague Sarah Cordonnier and the
+author conducted an interview series on the intercultural literacy among
+the academic staff. They thematized being in charge of a French-German
+cooperation, in a study program as well as in a research project.
+Created in 1997 with support from the Franco-German University (UFA),
+the Franco-German joint degree program \emph{Europäische Medienkultur}
+(EMK) is a long-term observation point of intercultural dynamics. The
+particularities of its history and the disciplines associated with it
+constitute relevant elements for the analysis or explanation of these
+dynamics. The content of the curricula themselves also has some
+interesting features. The courses offered by the EMK joint degree
+program are linked to the \emph{Sciences de
+l\textquotesingle information et de la communication} (SIC) in France
+and the \emph{Medienwissenschaft} in Germany. In general, the subject
+matter (media and communication) may seem to fit together harmoniously,
+but there are important differences in the objects, methods, theories,
+and modes of conceiving what needs to be investigated and taught.
+
+SIC was constituted as a section (the seventy-first) by the National
+Council of Universities in 1975. Some speak of it as an
+``interdiscipline,'' and there are many tensions within it, as much
+because of the initial juxtaposition between several fields (media
+content studies, library sciences, part of science studies, and
+museology---but not film studies) as well as the plurality of methods
+and theoretical resources that researchers solicit and import from other
+disciplines (sociology, language sciences, and semiotics).\footnote{Sarah
+  Cordonnier, ``Looking Back Together to Become `Contemporaries in
+  Discipline,'\,'' \emph{History of Media Studies} 1 (2021).}
+\emph{Medienwissenschaft} has been developing since the end of the 1980s
+and the 1990s, becoming independent of German studies and theatre
+studies, and then of film studies, which nevertheless remains an
+important subject; essentially based on speculative, hermeneutic
+reasoning, \emph{Medienwissenschaft} is impregnated with French
+poststructuralist references. This discipline is separate from
+\emph{Kommunikationswissenschaft}, a social and empirical science, whose
+objectives could, to a certain extent and in part, overlap with those of
+SIC.
+
+In the case of SIC, \emph{Medienwissenschaft}, and
+\emph{Kommunikationswissenschaft}, the situation is even more singular.
+Indeed, these disciplines are of recent vintage (or profoundly reshaped
+recently, in the case of \emph{Kommunikationswissenschaft}\footnote{Averbeck-Lietz,
+  ``Comparative History of Communication. Studies: France and Germany,''
+  \emph{The Open Communication Journal} 2, no. 1 (2008).}), and they
+have been shaped in contexts quite different from those which saw the
+advent of sociology, geography, history, and demography at the end of
+the nineteenth century. They do not even share a disciplinary title, and
+have received little scientific attention, even in their own countries,
+although student interest in the themes they cover is leading to
+significant institutional and academic development.
+
+The different disciplines in France and in Germany interact not as
+entangled history (\emph{histoire croisée})---i.e., not as a joint
+history of science---but rather as the history of knowledge in the sense
+of intellectual currents, which can of course also mean, as described
+above, the reception of individual theorists or schools, be it the
+Frankfurt School or French post-structuralism.\footnote{For an account
+  of the different histories of knowledge or history of science, see
+  Averbeck-Lietz, "Comparative History''; for mediology, see Birgit
+  Mersmann and Thomas Weber, eds., \emph{Mediologie als Methode}
+  (Berlin: Avinus, 2008); and for the branching out of cybernetics in an
+  international context, see Claus Pias, ed., \emph{Cybernetics: the
+  Macy Conferences 1946--1953: The Complete Transactions} (Chicago:
+  Chicago University Press, 2016).} Thus languages, language transfer
+(through translations, the phenomenon of reception, and waves) and
+language barriers (independent parallelisms, opposite parallelisms, and
+national ``special paths'') are reflected and acted upon by the creation
+of publishing houses\textsuperscript{88} and the translation policies of scientific
+journals.\textsuperscript{89} Outside academia (but as a core domain of
+employability of such transnational commuters) are the following media
+institutions, mentioned by the German-French council for culture: ARTE,\marginnote{\textsuperscript{88} Thomas Weber, a media scholar, runs the
+  Avinus-Verlag, where mediology and other French theory texts are
+  translated and published.}
+the\marginnote{\textsuperscript{89}\setcounter{footnote}{89} Take, for example, the \emph{Archiv für
+  Mediengeschichte}, or the \emph{Zeitschrift für Kultur- und
+  Mediengeschichte}.} German-French film academy Atelier Ludwigsburg-Paris, the Office of
+Film and Media of the Institut Français in Germany, and
+\emph{ParisBerlin}, a German-French news magazine.\footnote{Deutsch-Französischer
+  Kulturrat (website), accessed February 11, 2022,
+  http://www.dfkr.org/links/kultur-und-medien-allgemein/.}
+
+The study of the academic disciplines \emph{Medienwissenschaft} in
+Germany and \emph{Sciences de l\textquotesingle information et de la
+communication} in France by Cordonnier and myself\footnote{Sarah
+  Cordonnier and Hedwig Wagner, ``L'interculturalité académique entre
+  cadrages et interstices,'' in \emph{France-Allemagne: Incommunications
+  et convergences,} ed. Gilles Rouet and Michaël Oustinoff (Paris: CNRS
+  Éditions, 2018); Cordonnier and Wagner, ``Déployer
+  l'interculturalité''; Sarah Cordonnier and Hedwig Wagner, ``La
+  discipline au prisme des activités internationales dans les
+  trajectoires de chercheurs en France et en Allemagne (encadré),'' in
+  \emph{Discipline, interdisciplinarité, indiscipline,} ed. Jean-Michel
+  Besnier and Jacques Perriault (Paris: CNRS Éditions, 2013); Sarah
+  Cordonnier and Hedwig Wagner, ``Academic Interculturality in
+  Communication Studies'' (paper presented at the European Communication
+  Research and Education Association's 5th European Communication
+  Conference, Lisbon, November 12--15, 2014).} derives from the
+intellectual biographies of the researchers and is informed by their
+German-French intercultural experiences. We carried out the interviews
+with German and French professors under the following headings: a) age
+in intercultural academic engagement, b) the role of intercultural
+academic institutions, and c) the strategic implementation of future
+academic work. The results showed that academic interculturality is
+anchored in: a) disciplinary contexts, which are national and
+institutional; b) academic internationalization; c) established forms
+and formats (in the sense of dispositives); and d) non-institutionalized
+encounters.
+
+Thus, only the institutional inscription of the intercultural experience
+guarantees its durability, but it is then inscribed in multiple and
+often paradoxical ways. Indeed, interculturality understood as an
+encounter with researchers, students, theories, scientific practices,
+and especially interculturality understood as the ``international
+circulation of ideas'' with all the effects of inscription in national
+contexts that it presupposes, resonates with the policies of academic
+internationalization, where internationalization correlates with
+prestige but often by going toward the lowest common scientific and
+pedagogical denominator.\footnote{Cordonnier and Wagner, ``Déployer
+  l'interculturalité,'' 232--33.} Nevertheless, the international is
+needed in order to write a ``meaningful history'' of media studies, as
+Cordonnier clarifies:
+
+\begin{quote}
+Meaningful history implies not only theoretical reading and
+methodological compliance, but also clarification of irritating
+differences that turn out to be more ``cultural'' than ``scientific'' .
+. . the method of developing an argument, the writing style, the
+respective weight of the theory and the empirical material, the interest
+in remote domains or areas, and the acceptance that there is more than
+one, in the words of Donsbach, ``right way to scientific knowledge.'' In
+sum, meaningful history relies upon the resolute creation of an
+international ``milieu,'' where the delicate balance between
+methodological demand and political significance can be shaped afresh.
+\footnote{Cordonnier, ``Looking Back Together,'' 2--3. This passage
+  refers to Wolfgang Donsbach, ``The Identity of Communication
+  Research,'' \emph{Journal of Communication} 56, no. 3 (2006): 437.}
+\end{quote}
+
+\hypertarget{potential-criticism-and-outlook}{%
+\section{Potential, Criticism and
+Outlook}\label{potential-criticism-and-outlook}}
+
+The ``new materialist turn'' was a major development in the European
+Research Area (ERA). It continued the established strand of the
+materiality of communication in cultural studies and extended it to new
+academic disciplines (feminism, philosophy, science studies, history,
+and media studies), while expanding it from history (of technology) to
+the field of Theory of Knowledge (TOK). The focus shifted from
+exclusively text-based objects of study to the study of objects.
+Apparatuses, artifacts, and all other objects of the means of
+communication and information are understood as object-based traces
+pertaining to the history of knowledge, the history of ideas, and the
+circulation of ideas and knowledge. The focus on objects and ``boundary
+objects'' has been particularly pronounced in Science and Technology
+Studies (STS) and especially in Actor--Network Theory (ANT). The focus
+on networks and networks within and beyond ANT created an
+interdisciplinary field of research: network studies. The core of this
+new approach is to explore the material level, the institutional level,
+and the discursive level as such, with cognizance of their
+interconnectedness and their manifold interdependencies. Their
+interconnectedness brings new insights and counterbalances the
+prevailing, purely institutional approach. This new strand of research
+has been particularly fruitful for European studies, first and foremost
+the \emph{Tensions of Europe}\footnote{Tensions of Europe (website),
+  accessed October 30, 2021, https://www.tensionsofeurope.eu/.} research
+network. The analysis of how superior information and communication
+technologies (ICTs)---along with their foundation, the international
+media-technical infrastructure---provide pan-European (cross-bloc) means
+of communication is crucial and innovative in an East-West European
+perspective. These new ICTs have had a strong impact on the importance
+of communication.
+
+German-language media studies is not only very broad due to the wide
+range of individual media to which it devotes itself; the theoretical
+orientations are also very wide-ranging. In addition to the expected
+focus on individual media and media systems, media studies promotes a
+broad definition of media---since its understanding of ``media''
+deviates from the term's everyday usage. A sprawling concept of media
+that can define objects and practices as media and at the same time
+refuses to be delimited by sufficient, verifiable determinants of the
+media is a concept of media that is ripe for criticism. However, the
+strong historical orientation of media studies in combination with the
+critical-analytical approach to history, culture, and society gives it a
+fundamental and generalist claim to interpretation in order to provide a
+foil for reflection on current and future media and social
+developments.\footnote{``Positionen der GfM,'' Gesellschaft für
+  Medienwissenschaft (website), accessed September 9, 2021,
+  \url{https://gfmedienwissenschaft.de/positionen}.}
+
+The media-scientific thinking advocated by Friedrich Kittler\footnote{Friedrich
+  Kittler (1943--2011) was a German literary scholar and media theorist.
+  His research focused, among other things, on writing systems and the
+  theory and history of the cultural techniques of reading, writing, and
+  arithmetic. Kittler\textquotesingle s media theory is characterized by
+  a technological-materialist approach.} received great
+veneration\footnote{In the 1980s, Kittler\textquotesingle s media theory
+  gained increasing popularity among students, who were referred to as
+  the ``\emph{Kittler-Jugend}'' {[}Kittler Youth{]} (e.g., Bernhard
+  Siegert and Wolfgang Ernst).} and harsh criticism within and outside
+the discipline. This school of thought, rejected by some scholars as
+technological determinism, developed into cultural techniques studies.
+Thinking about the technicality of the media was not, however,
+restricted to the history of technology, but rather pursued as a
+reconstruction of its conditions and effects in the history of the
+humanities and social history, like the philosophy of technology, which
+was also widely perceived and connected in media studies.
+
+Rainer Leschke embarked on a critical self-questioning of media studies.
+He sees the focus on the media essence, the persistent question of
+mediality, as a perhaps-doomed attempt to lay an ontological foundation
+for the discipline. Jens Schröter provides a critical reflection on the
+emergence and evolution of media studies in Germany, as well as the
+limited works of German media theory that have been published in
+English. His chapter titled ``Disciplining Media Studies: An Expanding
+Field and Its (Self-)Definition''\footnote{Jens Schröter, "Disciplining
+  Media Studies: An Expanding Field and Its (Self-)Definition," in
+  \emph{Media Transatlantic: Developments in Media and Communication
+  Studies between North American and German-Speaking Europe,} ed. Norm
+  Friesen (Cham: Springer, 2016).} is framed by Norm Friesen's
+perspective in \emph{Media Transatlantic:} \emph{Developments in Media
+and Communication Studies between North American and German-Speaking
+Europe.}\footnote{Friesen, \emph{Media Transatlantic.}} Friesen insists
+that media and communication studies must be re-mediated with regard to
+geography, nation, and institutions. In the book's
+introductory\footnote{``Finally, and most importantly, this book
+  introduces readers to the new field of \emph{Medienwissenschaft} in
+  German-speaking Europe---its debates, discourses and modes of
+  self-legitimation.'' Friesen, \emph{Media Transatlantic}, 6.} and
+comparative approach, Friesen writes entangled histories for media
+studies, thus providing proof that Friedrich Kittler, often falsely
+thought to be the founder of German media theory (not media studies in
+Germany!), was influenced by Marshall McLuhan and Harold Adams Innis.
+
+Jens Schröter is aware of the pitfalls of a desired disciplinary
+unity\footnote{Sarah Cordonnier is also aware of these pitfalls, in the
+  context of the French SIC. See Cordonnier, ``Looking Back Together,''
+  4.} with respect to the dynamics of the field in research, the study
+object, or the evolution of media. For the dynamics while creating and
+evolving an academic discipline, Schröter refers to general findings
+pointing out that disciplinary unity is a desired goal but remains
+unattainable and has harmful homogenizing effects as well as
+idealizations outside reality. Given the lack of disciplinary unity and
+internal diversification, and the ``openness'' of media studies, he
+states three crucial points for the disciplinary configuration of media
+studies to which I add an easily overlooked fourth point:
+
+\begin{quote}
+\emph{Firstly}, there is the epistemic (theoretical, methodological) and
+institutional \emph{development} of ``media studies'' as an independent
+subject -- and the question of the feasibility or even desirability of
+this.
+
+\emph{Secondly}, there is the internal \emph{diversification} of media
+studies, and whether this diversification will at some point dissolve
+``media studies'' into new sub-disciplines.
+
+\emph{Thirdly}, there is the \emph{changing relationship} between
+``media studies'' and its neighbouring disciplines.\footnote{Schröter,
+  "Disciplining Media Studies," 32.}
+\end{quote}
+
+I have to add:
+
+\begin{quote}
+\emph{Fourthly, Internationalisation}.\footnote{Although Schröter quotes
+  two sources referencing the international aspect of media studies:
+  Hickethier, \emph{Einführung in die Medienwissenschaft}; and Tarmo
+  Malmberg, ``Nationalism and Internationalism in Media Studies: Europe
+  and America since 1945'' (paper presented at the First European
+  Communication Research Conference, Amsterdam, November 25--26, 2005).}
+Recent evolutions have produced a changing relationship between media
+studies in Germany and its European outlets throughout numerous European
+collaborations in which a multifaceted relationship of national
+determining factors and international or European necessities are
+altering media studies. Furthermore, bi- or trinational study programs
+come into play here, as well as translations (or not!) of main sources,
+EU-funded research projects, and increasing Europeanisation accompanied
+by international conferences and English language international
+journals.
+\end{quote}
+
+Center-periphery dynamics within the academic discipline of media
+studies is another aspect worth mentioning. Taking up Friesen's claim of
+geographically located media studies, I note the geographical
+differentiation within German-speaking media studies, whereby the
+dynamics of the discipline is characterized by a center-periphery
+exchange.
+
+The academic association for media studies (\emph{Gesellschaft für
+Medienwissenschaft}) has several hundred members,\footnote{After the
+  2007 reform, GfM grew from about three hundred fifty members to about
+  fifteen hundred members within five years, and it has maintained this
+  level for the past ten years.~} but not many of them are based in the
+small number of major media studies centers in Germany.\footnote{Major
+  media studies centers that are not, it should be noted, based in the
+  largest cities in Germany!} They have organized the collaborative
+research centers (\emph{Sonderforschungsbereiche}) and research training
+groups (\emph{Graduiertenkollegien}) of the German Research
+Foundation,\footnote{Indeed, they are important for the development of
+  the discipline, as pointed out by Schröter, "Disciplining Media
+  Studies," 37--38.} programming concerning the history of media studies
+in Germany, and contributed greatly to the discourses of the
+self-understanding debate.\footnote{See Rainer Bohn, Eggo Müller, and
+  Rainer Ruppert, eds., \emph{Ansichten einer künftigen
+  Medienwissenschaft} (Berlin: Sigma, 1988); and Schröter, "Disciplining
+  Media Studies."} They have written most of the manuals in this area,
+without their taking into account the evolution of media studies outside
+of these centers. As a result, much of the existing history of media
+studies in Germany isn't represented.
+
+The bulk of teaching (staff and module contents) within the more than
+fifty study programs in media studies mentioned above is integrated into
+a wide variety of institutional contexts. In some programs, the
+disciplinary boundaries of \emph{Kommunikationswissenschaft} and
+\emph{Medienwissenschaft} are imploding, whereas in others, media
+studies is becoming part of a more encompassing cultural studies
+perspective. Media scholars are often the only representatives of this
+diverse discipline, which highlights their research areas as being at
+the center of media studies.
+
+\hypertarget{conclusion}{%
+\section{Conclusion}\label{conclusion}}
+
+According to the German Media Studies Association,\footnote{Gesellschaft
+  für Medienwissenschaft, ``Selbstverständnis."} media studies is a
+research field that focuses on the study of media, including individual
+media and media systems. It examines the interdependence of media
+through the lens of apparatuses, content transmission, technology, and
+culture. The field aims to understand history, culture, and society by
+engaging with the technical, aesthetic, symbolic, and communicative
+characteristics of media.
+
+Media studies recognizes that media are fundamentally technical and
+culturally conditioned. They shape sensory perception and make
+perception possible. The field considers media in a broad sense,
+including mass media, individual media, digital and electronic devices,
+as well as non-semantically decodable phenomena and cultural techniques.
+Media are viewed as entities that condition perception and thinking,
+encompassing apparatuses, institutions, functions, and processes of
+cultural formation. Media studies is characterized by its focus on the
+interactions between aesthetic, normative, and social dynamics in
+societies. These factors define its epistemological location and
+interest.
+
+The specificity of German media studies, known as
+\emph{Medienwissenschaft}, becomes apparent through its
+conceptualization of media as encompassing various forms and functions
+with mediality as core concept. The field differentiates itself from
+other disciplines dedicated to media and communication.
+
+Here I have asserted that media studies (\emph{Medienwissenschaft}) and
+communication studies (\emph{Kommunikationswissenschaft}) differ
+primarily in their research methods, epistemological interests, and
+theoretical perspectives. While international media and communication
+studies have seen a dissolution of disciplinary boundaries, particularly
+in the Anglo-American context, German-language scholars have actively
+established boundaries between media studies and communication studies.
+Media studies is often viewed as a ``text and cultural
+science''\footnote{Hickethier, \emph{Einführung in die
+  Medienwissenschaft}, 6.} with a focus on film, television, radio, and
+the internet, emphasizing entertainment and fictional forms. It employs
+exemplary, analytical-interpretive, theoretical, and historical
+approaches. On the other hand, communication studies primarily addresses
+the social reality expressed through mass media and focuses on society.
+It employs interpretative methods, aesthetic analysis, and quantitative
+and empirical approaches.
+
+The distinction between German-language media studies and communication
+studies, as well as journalism (\emph{Publizistik}), is unique to the
+German context. The wide range of media conceptualizations in media
+studies (\emph{Medienwissenschaft}) is attributed to its epistemological
+grounding in speculative thinking, including dialectics,
+non-evidence-based assumptions, psychoanalysis, hermeneutics, and
+deconstruction. In contrast, communication studies is often associated
+with qualitative and quantitative empirical approaches. This
+differentiation has resulted in a scientific configuration specific to
+the German-language context, not commonly found in other European or
+Western countries. However, for European research cooperation in media
+studies, it is important to transcend disciplinary boundaries and
+embrace multi- and/or transdisciplinarity.
+
+Here I have also considered how far the emergence of media studies in
+Germany can be understood to be the outcome of certain social forces.
+Firstly, the social upheavals of the 1968 revolution and the subsequent
+rejection of the previous generation led to a disruption of continuity,
+particularly in universities. This created a space for critical
+analysis, including the study of media as a means of understanding the
+world and fostering critical thinking. Additionally, the expansion of
+universities during the 1960s and 1970s, with a significant increase in
+the number of students, including a higher percentage of female
+students, led to a need for differentiation and new academic
+disciplines.
+
+The development of the media itself also played a role in the emergence
+of media studies. The rise of television as the leading medium, along
+with the availability of new media technologies such as video, shaped
+the first generation of media scholars. These changes in media
+consumption and practices influenced the formation of aesthetic analysis
+and the need for expert knowledge in understanding film, television, and
+other media forms. The belated reception of the Frankfurt
+School\textquotesingle s writings on media and the influence of French
+post-structuralism and postmodernism further contributed to the
+establishment of media studies as an academic discipline in the 1980s
+and 1990s.
+
+Overall, the societal reasons for the emergence of media studies in
+Germany include the social and generational disruptions of the 1960s,
+the expansion of universities and the need for differentiation, the
+transformation of media technologies, and the influence of critical
+theories and cultural shifts. These factors led to a paradigmatic break
+with traditional cultural studies and the formation of media studies as
+a distinct field of knowledge and academic discipline.
+
+I have also tried to provide a clear understanding of the connections
+between media studies and other disciplines in Germany. Media studies in
+Germany is closely related to cultural studies and has developed
+parallel to it. It has emerged from literary studies and has connections
+with theatre studies, film studies, and television studies. Media
+studies is particularly aligned with the history of knowledge and
+cultural studies, focusing on the development and implications of media
+techniques in generating, storing, representing, and transmitting
+perceptions, experiences, and knowledge.
+
+Media studies extends beyond cultural studies and is relevant in other
+disciplines such as media sociology, media law, media economics, media
+psychology, and media informatics. In German studies, media are often
+studied in the context of film history, theory, and aesthetics. Media
+studies originated as critical social studies within pedagogy and German
+studies, which led to the strong presence of media pedagogy and media
+education as areas of knowledge. Visual/electronic media are also
+studied within theater studies and art.
+
+Aesthetics is considered an integral part of media studies, and the
+discipline encompasses various methods and theories, including
+philological-hermeneutic, art-scientific, philosophical, sociological,
+and psychological approaches. Media studies in Germany has also
+developed as ``media theory'' and gained recognition as German media
+theory, contributing to media philosophy and cultural technology
+research since the 2000s.
+
+Overall, the institutionalization of media studies in Germany involved
+the establishment of research institutes, the formation of dedicated
+study programs, the establishment of new scholarly organizations, and
+the interdisciplinary exploration of media\textquotesingle s cultural
+and historical significance. Media studies in the German context has a
+special focus on the history of knowledge and the intersection of
+technology and society. This has led to a close connection with Science
+and Technology Studies (STS), and with Actor--Network Theory (ANT). ANT
+gained prominence in media studies from the mid-2000s to the mid-2010s,
+and the concept of mediality became central to the discipline,
+emphasizing the autonomy and specific logic of media. Media studies
+grapples with the concept of a medium, rejecting the everyday language
+understanding that equates it with transmission apparatuses, and instead
+focusing on the broader notions of mediality and media potential. The
+discipline explores the relationship between individual media/artifacts
+and their mediality and seeks to understand knowledge production in
+terms of media constituents and legitimacy. Media cultural studies,
+rooted in literary and cultural studies, recognizes the constitutional
+power of media as a dispositive that operates through various signs and
+influences individuals and society.
+
+In \emph{Cultural Studies Research in the German-Speaking World}, there
+is a broad understanding of media as encompassing any form of
+communication involving symbolic signs, including writing, images, and
+numbers. It also recognizes cultural techniques such as reading,
+writing, and arithmetic as media configurations. The discipline draws
+from historical contexts, including the history of writing, and
+incorporates texts from Greek and Roman antiquity. Media studies
+considers media as fundamental to human existence, shaping perception,
+cognition, and knowledge. It explores media as conditions of expression
+with social, cultural, political, individual, psychological, and
+pedagogical dimensions. The concept of media encompasses different sign
+natures, artistic forms, intermedia manifestations, and specific
+configuration levels of formats and genres. Intermediality is another
+major paradigm in media studies, providing systematic networking within
+cultural studies and serving as an integration point for various
+disciplines. Media studies has established itself as an independent
+field of knowledge with an open-ended object area and integral
+connections to cultural studies.
+
+The cooperation between Germany and France in media and communication
+studies faces challenges due to the disciplinary division between
+cultural media studies and social communication studies. However, joint
+degree programs and research alliances have promoted collaboration. The
+coordination of curricula, joint supervision of theses, and advisory
+services demonstrate the effects of this cooperation. The three levels
+that need to be considered in Franco-German cooperation concern: 1)
+institutions, 2) knowledge acquisition and science policy, and 3)
+content-related research topics and theories. The sociogenesis of the
+disciplines, intellectual biographies, institutional and national
+factors, and cooperation among scientific organizations play a role in
+shaping media studies. The disciplines of \emph{Sciences de
+l\textquotesingle information et de la communication} (SIC) and
+\emph{Medienwissenschaft} have distinct characteristics and theoretical
+resources. The history of knowledge, including language transfer and
+barriers, influences the formation of media theory.
+Institutionalization, subject area, content, and structure are important
+considerations for Franco-German cooperation in media studies. The
+international dimension is necessary for a meaningful history of media
+studies, requiring understanding and integration of different approaches
+and contexts.
+
+Finally, in this article I described the ``new materialist turn'' in
+academic disciplines, particularly in the social sciences and humanities
+within the European Research Area. The materialist turn emphasizes the
+study of objects, apparatuses, and artifacts as they trace the history
+of knowledge and ideas. The focus on objects and boundary objects,
+especially in Science \& Technology Studies and Actor--Network Theory,
+led to the emergence of network studies and interdisciplinary research.
+This approach gained importance in European studies, particularly in
+analyzing the impact of information and communication technologies on
+pan-European communication. Internationalization is a crucial aspect of
+this project, with European collaborations, bi- or tri-national study
+programs, and increasing Europeanization shaping the field.
+
+
+
+
+\section{Bibliography}\label{bibliography}
+
+\begin{hangparas}{.25in}{1} 
+
+
+
+Abend, Pablo. \emph{Geobrowsing: Google Earth und Co.; Nutzungspraktiken
+einer digitalen Erde}. Bielefeld: Transcript, 2013.
+
+Albersmeier, Franz-Josef. \emph{Die Herausforderung des Films an die
+französische Literatur:} \emph{Entwurf einer ``Literaturgeschichte des
+Films.''} Heidelberg: C. Winter, 1985.
+
+Averbeck-Lietz, Stefanie. ``Comparative History of Communication
+Studies: France and Germany.'' \emph{The Open Communication Journal} 2,
+no. 1 (2008): 1--13.
+
+Averbeck-Lietz, Stefanie, Fabien Bonnet, Sarah Cordonnier, and Carsten
+Wilhelm. ``Communication Studies in France: Looking for a `Terre du
+milieu'?,'' \emph{Publizistik: Kommunikationswissenschaft International}
+64 (2019): 363--80. \url{https://doi.org/10.1007/s11616-019-00504-3}.
+
+Bachmann-Medick, Doris. \emph{Cultural Turns: New Orientations in the
+Study of Culture.} Berlin: de Gruyter, 2016.
+\url{https://doi.org/10.1515/9783110402988}.
+
+Bergermann, Ulrike. \emph{Leere Fächer: Gründungsdiskurse in Kybernetik
+und Medienwissenschaft.} Münster: LIT Verlag, 2015.
+
+Bohn, Rainer, Eggo Müller, and Rainer Ruppert, eds. \emph{Ansichten
+einer künftigen Medienwissenschaft}. Berlin: Sigma, 1988.
+
+Buschauer, Regine, and Katherine Willis, eds. \emph{Locative Media:}
+\emph{Medialität und Räumlichkeit.} Bielefeld: Transcript, 2013.
+
+Cordonnier, Sarah. ``Looking Back Together to Become `Contemporaries in
+Discipline.'\,'' \emph{History of Media Studies} 1 (2021).
+\url{https://doi.org/10.32376/d895a0ea.b8153251}
+
+Cordonnier, Sarah, and Hedwig Wagner. ``Déployer l'interculturalité: les
+étudiants, un vecteur pour la réflexion académique sur l'interculturel;
+Le cas des sciences consacrées à la communication en France et en
+Allemagne.'' In \emph{Interkulturelle Kompetenz in deutsch-französischen
+Studiengängen: Les compétences interculturelles dans les cursus
+franco-allemands allemands} {[}Intercultural competency in German-French
+degree programs: Key competencies for higher education and
+employability{]}, edited by Gundula Gwenn Hiller, Hans-Jürgen Lüsebrink,
+Patricia Oster-Stierle, and Christoph Vatter, 221--34. Wiesbaden:
+Springer VS, 2017.
+
+Cordonnier, Sarah, and Hedwig Wagner. ``La discipline au prisme des
+activités internationales dans les trajectoires de chercheurs en France
+et en Allemagne (encadré).'' In \emph{Hermès 67: Discipline,
+interdisciplinarité, indiscipline}, edited by Jean-Michel Besnier and
+Jacques Perriault, 137--40. Paris: CNRS Éditions, 2013.
+
+Cordonnier, Sarah, and Hedwig Wagner. ``L'interculturalité académique
+entre cadrages et interstices.'' In \emph{France-Allemagne:
+Incommunications et convergences,} edited by Gilles Rouet and Michaël
+Oustinoff, 169--82. Paris: CNRS Éditions, 2018.
+
+Donsbach, Wolfgang. ``The Identity of Communication Research.''
+\emph{Journal of Communication} 56, no. 3 (2006): 437.
+
+Döring, Jörg. ``Zur Geschichte der Literaturkarte 1907\emph{--}2008.''
+In \emph{Mediengeographie: Theorie---Analyse---Diskussion}, edited by
+Jörg Döring and Tristan Thielmann, 247--90. Bielefeld: Transcript, 2009.
+
+Döring, Jörg, and Tristan Thielmann, eds. \emph{Mediengeographie:
+Theorie---Analyse---Diskussionen}. Bielefeld: Transcript, 2009.
+
+Döring, Jörg, and Tristan Thielmann, eds. \emph{Spatial Turn: Das
+Raumparadigma in den Kultur- und Sozialwissenschaften}. Bielefeld:
+Transcript, 2008.
+
+Dünne, Jörg, and Stephan Günzel, eds. \emph{Raumtheorie: Grundlagentexte
+aus Philosophie und Kulturwissenschaften}. Frankfurt: Suhrkamp, 2006.
+
+Engell, Lorenz. ``Tasten, Wählen, Denken: Genese und Funktion einer
+philosophischen Apparatur.'' In \emph{Medienphilosophie: Beiträge zur
+Klärung eines Begriffs,} edited by Stefan Münker, Alexander Roesler, and
+Mike Sandbothe, 53\emph{--}77. Frankfurt: Fischer, 2003.
+
+Engell, Lorenz, and Bernhard Siegert. ``Editorial: Medienphilosophie.''
+\emph{Zeitschrift für Medien- und Kulturforschung} 2 (2010): 6--11.
+
+Engell, Lorenz, and Joseph Vogl. ``Zur Einführung.'' In \emph{Kursbuch
+Medienkultur: Die maßgeblichen Theorien von Brecht bis Baudrillard,}
+edited by Claus Pias, Joseph Vogl, Lorenz Engell, Oliver Fahle, and
+Britta Neitzel, 8\emph{--}11. Stuttgart: Deutsche Verlagsanstalt, 1999.
+
+Faulstich, Werner. \emph{Medientheorien: Einführung und Überblick}.
+Göttingen: Vandenhoeck \& Ruprecht, 1991.
+
+Filk, Christian. \emph{Episteme der Medienwissenschaft:
+Systemtheoretische Studien zur Wissenschaftsforschung eines
+transdisziplinären Feldes}. Bielefeld: Transcript, 2015.
+
+Friesen, Norm, ed. \emph{Media Transatlantic: Developments in Media and
+Communication Studies Between North American and German-Speaking
+Europe}. Cham: Springer, 2016.
+
+Gesellschaft für Medienwissenschaft. ``Selbstverständnis,
+Forschungsfragen, Wissenschaftspolitik'' {[}Mission statement, research
+questions, science policy{]} GfM (website). Updated February 27, 2018.
+\url{https://gfmedienwissenschaft.de/gesellschaft}.
+
+Gumbrecht, Hans-Ulrich, and Karl Ludwig Pfeiffer. \emph{Materialität der
+Kommunikation}. Frankfurt: Suhrkamp, 1988.
+
+Günzel, Stephan. \emph{Handbuch Raum.} Stuttgart: Metzler, 2009.
+
+Günzel, Stephan. \emph{Topologie:} \emph{Zur Raumbeschreibung in den
+Kultur- und Medienwissenschaften.} Bielefeld: Transcript, 2007.
+
+Hagen, Wolfgang. ``Zellular---Parasozial---Ordal: Skizzen zu einer
+Medienarchäologie des Handys.'' In \emph{Mediengeographie:
+Theorie---Analyse---Diskussionen}, edited by Jörg Döring and Tristan
+Thielmann, 359--82. Bielefeld: Transcript, 2009.
+
+Helmes, Günter, and Werner Köster, eds. \emph{Texte zur Medientheorie.}
+Stuttgart: Reclam, 2002.
+
+Helmholtz-Zentrum für Kulturtechnik. ``Founding Project of the Helmholtz
+Centre for Cultural Technology: Theory and History of Cultural
+Techniques.'' Humboldt University of Berlin (website). Accessed December
+13, 2021.
+\url{https://www.kulturtechnik.hu-berlin.de/bild-schrift-zahl/}.
+
+Hickethier, Knut. \emph{Einführung in die Medienwissenschaft.}
+Stuttgart: Metzler, 2003.
+
+Kittler, Friedrich A. \emph{Austreibung des Geistes aus den
+Geisteswissenschaften: Programme des Poststrukturalismus}. Paderborn:
+Fink, 1980.
+
+Kloock, Daniela, and Angela Spahr. \emph{Medientheorien: Eine
+Einführung.} Paderborn: Fink, 1997.
+
+Kneer, Gerd, Marcus Schroer, and Erhard Schüttpelz, eds. \emph{Bruno
+Latours Kollektive: Kontroversen zur Entgrenzung des Sozialen}.
+Frankfurt: Suhrkamp, 2008.
+
+Knilli, Friedrich. \emph{Das Hörspiel in der Vorstellung der Hörer}:
+\emph{Eine experimental-psychologische Untersuchung.} PhD diss.,
+University of Graz, 1959.
+
+Knilli, Friedrich. ``Wie aus den Medien eine Wissenschaft wurde: Exposé
+für eine soziobiographische Fachgeschichte.'' \emph{Medienwissenschaft:
+Rezensionen/Reviews} 20, no. 1 (2003).
+\url{https://doi.org/10.17192/ep2003.1.2101}.
+
+Knilli, Friedrich, Knut Hickethier, and Wolf-Dieter Lützen, eds.
+\emph{Literatur in den Massenmedien: Demontage von Dichtung?} München:
+Hanser, 1976.
+
+Knilli, Friedrich, and Siegfried Zielinski. \emph{Holocaust zur
+Unterhaltung}. Berlin: Elefanten Press, 1982.
+
+Krämer, Sybille. \emph{Technik als Kulturtechnik: Kleines Plädoyer für
+eine kulturanthropologische Erweiterung des Technikkonzeptes}. Ulm:
+Universität Ulm, 2004.
+
+Krämer, Sybille, and Horst Bredekamp, eds. \emph{Bild, Schrift, Zahl}.
+Paderborn: Fink, 2003.
+
+Latour, Bruno. ``Die Logistik der \emph{immutable mobiles}.'' In
+\emph{Mediengeographie: Theorie---Analyse---Diskussionen}, edited by
+Jörg Döring and Tristan Thielmann, 111\emph{--}44. Bielefeld:
+Transcript, 2009.
+
+Leschke, Rainer. ``Medienwissenschaften und Geschichte: Morphologie
+einer Wissenschaft.'' Accessed June 30, 2023. \href{https://docplayer.org/storage/97/131650175/1688120570/R4jNja6ZxG-BoJ3esevqww/131650175.pdf}{https://docplayer} \href{https://docplayer.org/storage/97/131650175/1688120570/R4jNja6ZxG-BoJ3esevqww/131650175.pdf}{.org/storage/97/131650175/1688120570/R4jNja6ZxG-BoJ3esevqww/} \href{https://docplayer.org/storage/97/131650175/1688120570/R4jNja6ZxG-BoJ3esevqww/131650175.pdf}{131650175.pdf}
+(link no longer accessible).
+
+Malmberg, Tarmo. ``Nationalism and Internationalism in Media Studies:
+Europe and America since 1945.'' Paper presented at the First European
+Communication Research Conference, Amsterdam, November 25--26, 2005.
+Accessed February 10, 2022.
+\href{https://genderi.org/nationalism-and-internationalism-in-media-studies--europe-and.html}{https://genderi.org/nationalism-and-internationalism-in-media-} \href{https://genderi.org/nationalism-and-internationalism-in-media-studies--europe-and.html}{studies--europe-and.html}.
+
+Mersmann\emph{,} Birgit, and Thomas Weber, eds. \emph{Mediologie als
+Methode.} Berlin: Avinus, 2008.
+
+Muhle, Maria. ``Medienwissenschaft als theoretisch-politisches Milieu.''
+\emph{Zeitschrift für Medienwissenschaft} 10, no. 1 (2014):
+137\emph{--}42.
+
+Münker, Stephan, and Alexander Rösler, eds. \emph{Was ist ein Medium?}
+Frankfurt: Fischer, 2008.
+
+Paech, Joachim. ``Die Erfindung der Medienwissenschaft: Ein
+Erfahrungsbericht aus den 1970er Jahren.'' In \emph{Was waren Medien?},
+edited by Claus Pias, 31\emph{--}55. Zürich: Diaphanes, 2011.
+
+Paech, Joachim. ``Warum `Medien'?'' Lecture, University of Konstanz,
+Konstanz, Germany, 2006. Accessed February 15, 2022.
+\url{http://medientheorie.com/aktuell/WasWarenMedien/03_Paech.mp3}.
+
+Pias, Claus, ed. \emph{Cybernetics: The Macy Conferences 1946--1953; The
+Complete Transactions}. Chicago: Macy Conferences, 2016.
+
+Pias, Claus. ``Was waren Medien-Wissenschaften? Stichworte zu einer
+Standortbestimmung.'' In \emph{Was waren Medien?}, edited by Claus Pias,
+7\emph{--}30. Zürich: Diaphanes, 2011.
+
+Ruf, Oliver, Patrick Rupert-Kruse, and Lars C. Grabbe.
+\emph{Medienkulturwissenschaft}. Wiesbaden: Springer, 2022.
+
+Schanze, Helmut. \emph{Medienkunde für Literaturwissenschaftler:
+Einführung und Bibliographie}. München: Fink, 1974.
+
+Schaudig, Michael. \emph{Literatur im Medienwechsel: Gerhart Hauptmanns
+Tragikomödie ``Die Ratten'' und ihre Adaptionen für Kino, Hörfunk,
+Fernsehen; Prolegomena zu einer Medienkomparatistik}. München:
+Verlegergemeinschaft Schaudig, 1992.
+
+Schmid, Ulrich. \emph{Russische Medientheorien}. Bern: Haupt Verlag,
+2005.
+
+Schröter, Jens. ``Das transplane Bild und der \emph{spatial turn.''} In
+\emph{Mediengeographie: Theorie---Analyse---Diskussionen,} edited by
+Jörg Döring and Tristan Thielmann, 167\emph{--}78. Bielefeld:
+Transcript, 2009.
+
+Schröter, Jens. "Disciplining Media Studies: An Expanding Field and Its
+(Self-) Definition." In \emph{Media Transatlantic: Developments in Media
+and Communication Studies between North American and German-Speaking
+Europe,} edited by Norm Friesen, 29--48. Cham: Springer, 2016.
+
+Schröter, Jens. ``Einleitung'' {[}Introduction{]}. In \emph{Handbuch
+Medienwissenschaft}, edited by Jens Schröter, 1\emph{--}11. Stuttgart:
+Metzler, 2014.
+
+Schüttpelz, Erhard. ``Die medientechnische Überlegenheit des Westens:
+Zur Geschichte und Geographie der \emph{immutable mobiles} Bruno
+Latours.'' In \emph{Mediengeographie: Theorie---Analyse---Diskussionen,}
+edited by Jörg Döring and Tristan Thielmann, 67\emph{--}110. Bielefeld:
+Transcript, 2009.
+
+Seier, Andrea. \emph{Remediatisierung: Die performative Konstitution von
+Gender und Medien.} Münster: LIT Verlag, 2015.
+
+Schreiterer, Ulrich. ``Hochschulen im Wettbewerb: mehr Markt, mehr
+Freiheit, mehr Unübersichtlichkeit'' {[}Universities in competition:
+more market, more freedom, more confusion{]}. Bundeszentrale für
+politische Bildung (blog), June 6, 2014. Accessed February 25, 2023.
+\href{https://www.bpb.de/themen/bildung/dossier-bildung/185865/hochschulen-im-wettbewerb-mehr-markt-mehr-freiheit-mehr-unuebersichtlichkeit/}{https://www.bpb.de/themen/bildung/dossier-bildung/} \href{https://www.bpb.de/themen/bildung/dossier-bildung/185865/hochschulen-im-wettbewerb-mehr-markt-mehr-freiheit-mehr-unuebersichtlichkeit/}{185865/hochschulen-im-wettbewerb-mehr-markt-mehr-freiheit-mehr-unuebersichtlichkeit/}.
+
+Siegert, Bernhard. \emph{Cultural Techniques: Grids, Filters, Doors, and
+Other Articulations of the Real}. New York: Fordham University Press,
+2015.
+
+Strategiekommission der GfM. ``Kernbereiche der Medienwissenschaft:
+Beschluss der Mitgliederversammlung der GfM'' {[}Core areas of Media
+Studies: Resolution of the General Assembly of the GfM{]}.
+Mitgliederversammlung der GfM {[}GfM General Assembly{]}, Bochum, April
+10, 2008. Accessed September 9, 2021.
+\url{https://www.online.uni-marburg.de/blog-mediarep/blog/wp-content/uploads/2020/02/2008-GfM-Strategiepapier.pdf}.
+
+Thielmann, Tristan, and Erhard Schüttpelz, eds.
+\emph{Akteur---Medien---Theorie.} Bielefeld: Transcript, 2013.
+
+Wagner, Hedwig, ed. \emph{Europäische Medienwissenschaft: Zur
+Programmatik eines Fachs.} Bielefeld: Transcript, 2020.
+
+Weigel, Sigrid. ``Zum `topographical turn': Kartographie, Topographie
+und Raumkonzepte in den Kulturwissenschaften.'' \emph{KulturPoetik}
+(2002): 151\emph{--}65.
+
+Zielinski, Siegfried\emph{. Video: Apparat/Medium, Kunst, Kultur; Ein
+internationaler Reader}. Frankfurt: Peter Lang, 1992.
+
+Zielinski, Siegfried, and Kurt Luger, eds. \emph{Europäische
+Audiovisionen: Film und Fernsehen im Umbruch}. Neue Aspekte in Kultur-
+und Kommunikationswissenschaft, vol. 7\emph{.} Wien: Österreichischer
+Kunst- und Kulturverlag, 1993.
+
+
+
+\end{hangparas}
+
+
+\end{document}
