@@ -1,0 +1,1895 @@
+% see the original template for more detail about bibliography, tables, etc: https://www.overleaf.com/latex/templates/handout-design-inspired-by-edward-tufte/dtsbhhkvghzz
+
+\documentclass{tufte-handout}
+
+%\geometry{showframe}% for debugging purposes -- displays the margins
+
+\usepackage{amsmath}
+
+\usepackage{hyperref}
+
+\usepackage{fancyhdr}
+
+\usepackage{hanging}
+
+\hypersetup{colorlinks=true,allcolors=[RGB]{97,15,11}}
+
+\fancyfoot[L]{\emph{History of Media Studies}, vol. 3, 2023}
+
+
+% Set up the images/graphics package
+\usepackage{graphicx}
+\setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
+\graphicspath{{graphics/}}
+
+\title[Journalism Studies in France and in Germany]{Journalism Studies and journalism education in France and in Germany} % longtitle shouldn't be necessary
+
+% The following package makes prettier tables.  We're all about the bling!
+\usepackage{booktabs}
+
+% The units package provides nice, non-stacked fractions and better spacing
+% for units.
+\usepackage{units}
+
+% The fancyvrb package lets us customize the formatting of verbatim
+% environments.  We use a slightly smaller font.
+\usepackage{fancyvrb}
+\fvset{fontsize=\normalsize}
+
+% Small sections of multiple columns
+\usepackage{multicol}
+
+% Provides paragraphs of dummy text
+\usepackage{lipsum}
+
+% These commands are used to pretty-print LaTeX commands
+\newcommand{\doccmd}[1]{\texttt{\textbackslash#1}}% command name -- adds backslash automatically
+\newcommand{\docopt}[1]{\ensuremath{\langle}\textrm{\textit{#1}}\ensuremath{\rangle}}% optional command argument
+\newcommand{\docarg}[1]{\textrm{\textit{#1}}}% (required) command argument
+\newenvironment{docspec}{\begin{quote}\noindent}{\end{quote}}% command specification environment
+\newcommand{\docenv}[1]{\textsf{#1}}% environment name
+\newcommand{\docpkg}[1]{\texttt{#1}}% package name
+\newcommand{\doccls}[1]{\texttt{#1}}% document class name
+\newcommand{\docclsopt}[1]{\texttt{#1}}% document class option name
+
+
+\begin{document}
+
+\begin{titlepage}
+
+\begin{fullwidth}
+\noindent\LARGE\emph{French-German Communication Research
+} \hspace{27mm}\includegraphics[height=1cm]{logo3.png}\\
+\noindent\hrulefill\\
+\vspace*{1em}
+\noindent{\Huge{Journalism Studies and Journalism\\\noindent Education in France and in Germany\par}}
+
+\vspace*{1.5em}
+
+\noindent\LARGE{Lisa Bolz} \href{https://orcid.org/0000-0001-5255-6404}{\includegraphics[height=0.5cm]{orcid.png}}\par\marginnote{\emph{Lisa Bolz, ``Journalism Studies and journalism education in France and in Germany,'' \emph{History of Media Studies} 3 (2023), \href{https://doi.org/10.32376/d895a0ea.b732c99f}{https://doi.org/ 10.32376/d895a0ea.b732c99f}.} \vspace*{0.75em}}
+\vspace*{0.5em}
+\noindent{{\large\emph{Sorbonne University}, \href{mailto:lisa.bolz@sorbonne-universite.fr}{lisa.bolz@sorbonne-universite.fr}\par}} \marginnote{\href{https://creativecommons.org/licenses/by-nc/4.0/}{\includegraphics[height=0.5cm]{by-nc.png}}}
+
+% \vspace*{0.75em} % second author
+
+% \noindent{\LARGE{<<author 2 name>>}\par}
+% \vspace*{0.5em}
+% \noindent{{\large\emph{<<author 2 affiliation>>}, \href{mailto:<<author 2 email>>}{<<author 2 email>>}\par}}
+
+% \vspace*{0.75em} % third author
+
+% \noindent{\LARGE{<<author 3 name>>}\par}
+% \vspace*{0.5em}
+% \noindent{{\large\emph{<<author 3 affiliation>>}, \href{mailto:<<author 3 email>>}{<<author 3 email>>}\par}}
+
+\end{fullwidth}
+
+\vspace*{1em}
+
+
+\hypertarget{abstract}{%
+\section{Abstract}\label{abstract}}
+
+Journalism research and journalism education are highly interlinked, but
+in each country or in each cultural context there is a certain way of
+teaching and researching journalism. France and Germany, despite their
+proximity, have two different histories and developments regarding these
+topics that have an impact on today's journalism studies in both
+countries. While journalism is one of the main research topics in German
+communication studies (\emph{Kommunikationswissenschaft}), this is not
+the case in France within French communication studies (\emph{Sciences
+de l'information et de la communication, SIC}). A look at today's
+research topics and perspectives underlines the differences between
+these two countries: Whereas German journalism studies are more theory
+oriented with some dominant theoretical perspectives and approaches,
+French journalism studies are less structured around major theories.
+
+
+\enlargethispage{2\baselineskip}
+
+\vspace*{18em}
+
+\noindent{\emph{History of Media Studies}, vol. 3, 2023}
+
+
+ \end{titlepage}
+
+% \vspace*{2em} | to use if abstract spills over
+
+ \hypertarget{introduction}{%
+\section{Introduction}\label{introduction}}
+
+Studying journalism in France is not the same as studying the same topic
+in Germany. It is not only a matter of language; the differences go well
+beyond that, extending to different research traditions, different
+turning points, the influence of certain research personalities on the
+academic landscape, and certain ways of conceptualizing the research
+topic and research methods that vary between the two countries on either
+side of the Rhine. Although it seems that France and Germany have
+similar media and journalism systems,\footnote{Daniel C. Hallin and
+  Paolo Mancini, \emph{Comparing Media Systems: Three Models of Media
+  and Politics} (Cambridge: Cambridge University Press, 2004).} a closer
+look reveals numerous differences. We find, of course, reasons for these
+differences in history, politics, and culture. More precisely, an
+analysis of different dynamics in the development of journalism research
+and the interplay with academic journalism education allows the
+differences that exist today between two research communities to be
+better understood. These two research communities rarely cooperate in
+the field of communication research in general and journalism research
+in particular.\footnote{Stefanie Averbeck-Lietz, Fabien Bonnet, Sarah
+  Cordonnier, and Carsten Wilhelm, ``Communication Studies in France:
+  Looking for a `Terre du milieu'?'' \emph{Publizistik} 64 (2019).}
+
+Of course, there are many examples of French-German cooperation in the
+field of journalism---among them ARTE, binational university degree
+programs, programs for young journalists, French-German associations,
+etc. However, in the scientific community, few researchers are working
+at this intersection.\footnote{Cf. the Franco-German University's
+  workshop series for young scholars, ``Exploration transnationale des
+  milieux de communication franco-allemands: science, design, culture
+  numérique, journalism,'' Program description, the Franco-German
+  University (website), last modified July 12, 2021.} The lack of a
+French-German dialogue in the field of journalism studies might seem
+astonishing from an outside perspective. A look at the history of German
+and French journalism studies and journalism education provides a better
+understanding of the different pathways that the disciplines have taken
+in each country and their impact (or not) on academic journalism
+education.
+
+Any research into the epistemology of a research field, the development
+of its institutionalization, the evolution of methodological approaches,
+and the different scientific discourses requires that the researcher
+take a step back and distance themself from their own academic field and
+their own academic routines.\footnote{Nicolas Hubé, ``À la recherche
+  d'une universalité du journalisme: la \emph{Journalistik}
+  allemande,''~\emph{Revue française des sciences de l'information et de
+  la communication} 19 (2020).} Especially given the risks of personal
+bias, it is impossible for the current study to do justice to more than
+a century of journalism research in Germany and in France. This
+contribution can only be an attempt to shed light on the parallels and
+differences between two research landscapes that are not as homogenous
+as they might seem.
+
+The different developments and institutionalizations make it difficult
+to name the academic disciplines. The German
+\emph{Kommunikationswissenschaft} can be translated as communication
+science, especially as both (the German and the Anglo-Saxon strand of
+communication science) are epistemologically and methodologically
+relatively close. And the German field of journalism research, called
+\emph{Journalismusforschung} or \emph{Journalistik} is relatively close
+to international journalism studies. A closer look at the editorial
+boards of international journals or the representatives of international
+associations in the field of journalism studies shows that German
+scholars are internationally active and present, which underlines the
+similarities between the academic disciplines. It is more difficult to
+translate the names of the disciplines on the French side: The
+translation of the French \emph{sciences de l'information et de la
+communication} is ``sciences of information and communication,'' and
+there is no equivalent to journalism studies in French, as will be
+explained later. When naming the German and French academic disciplines
+in English, one has to keep in mind the complexity behind the
+denominations. Even though journalism research preceded the
+institutionalized communication studies in both countries, it makes
+sense to consider the linkage between the research field of journalism
+studies and the contemporary institutionalization of the field within
+communication studies in France and in Germany.
+
+This article is a possible response to the main question as to why there
+is no German-French dialogue in the field of journalism studies and how
+the development of journalism studies and university journalism training
+in France and Germany might have an impact on journalism studies. As a
+first step, it is important to comprehend the different developments of
+journalism research in France and in Germany and to understand the
+institutionalization of journalism research as well as the role of
+journalism research within communication science. Then, in a second
+step, an analysis of the development of journalism research and academic
+journalism education reveals a particular relationship between the two:
+Their dynamics are different in each country. Finally, in the third
+chapter, a closer look at aspects of past and current French and German
+journalism research accentuates the differences between them, while also
+revealing the possible complementarity as well.
+
+\enlargethispage{\baselineskip}
+
+\hypertarget{the-history-of-journalism-studies-in-france-and-germany}{%
+\section{The History of Journalism Studies in France and
+Germany}\label{the-history-of-journalism-studies-in-france-and-germany}}
+
+Today, journalism studies is an international field of studies, being
+one of the biggest divisions within international scientific
+associations such as the ICA or ECREA, and there are research
+communities in many countries. But the origins and the development of
+journalism studies differ between countries, in this case France and
+Germany. A look at the history of the academic disciplines and the place
+of journalism studies within the national communication associations
+enables us to better understand why there are such different
+perspectives on journalism, which even today are hardly perceived in the
+other country.
+
+\hypertarget{the-beginnings-in-germany-and-france-in-the-first-half-of-the-twentieth-century-journalism-as-a-new-field-of-study}{%
+\subsection{The Beginnings in Germany and
+France in the First Half of the\\\noindent Twentieth Century: Journalism as a New
+Field of
+Study}\label{the-beginnings-in-germany-and-france-in-the-first-half-of-the-twentieth-century-journalism-as-a-new-field-of-study}}
+
+The theories of Max Weber are considered by some journalism scholars to
+be a part of German journalism research as Weber's research concerned
+journalism and media among other things.\footnote{Siegfried
+  Weischenberg, \emph{Max Weber und die Entzauberung der Medienwelt:
+  Theorien und Querelen---eine andere Fachgeschichte} (Wiesbaden:
+  Springer, 2012), 14; Gilles Bastin, ``La presse au miroir du
+  capitalisme moderne: Un projet d\textquotesingle enquête de Max Weber
+  sur les journaux et le journalisme,'' \emph{Réseaux} 109, no. 5
+  (2001).} In 1910, Weber conceptualized and presented a research plan
+to study the press from a sociological point of view.\footnote{Weischenberg,
+  78.} Even though the study was never completed, it can be interpreted
+as the first demand for journalism to be studied using empirical
+research methods. His wish was first fulfilled approximately sixty years
+later.\footnote{Martin Löffelholz, ``Theorien des Journalismus: Eine
+  historische, metatheoretische und synoptische Einführung,'' in
+  \emph{Theorien des Journalismus: Ein diskursives Handbuch}, ed. Martin
+  Löffelholz (Wiesbaden: Springer, 2004), 21.} At first, academic
+research into journalism and newspapers, the so-called
+\emph{Zeitungswissenschaft} (``science of newspapers''), had a
+historical and normative approach and journalism was considered to be
+the result of the talent and the capabilities of a few
+individuals.\footnote{Löffelholz, 39.}
+
+Thoughts on journalism go well beyond the foundation of the academic
+institutions. Even though different authors throughout the centuries
+wrote about communication, newspapers, or journalism, the first
+systematic approach to journalism in Germany (which did not yet exist as
+a nation-state at this time) might be the text ``Über Zeitungen'' (About
+Newspapers) written by Joachim von Schwarzkopf in 1795.\footnote{Heinz
+  Pürer, ``Zur Fachgeschichte der Kommunikationswissenschaft in
+  Deutschland,'' \emph{Biographisches Lexikon der
+  Kommunikationswissenschaft} (October 2017).} Several authors, such as
+Karl Knies and Robert Prutz, during the nineteenth century analyzed the
+new profession that emerged at this time and provided academic texts on
+topics like press legislation, the formation of public opinion, the
+history of German journalism, and symbolic communication.\footnote{Hanno
+  Hardt, \emph{Social Theories of the Press: Constituents of
+  Communication Research, 1840s to 1920s} (Lanham, MD: Rowman \&
+  Littlefield, 2002); Jürgen Wilke, ``Von der Zeitungskunde zur
+  Integrationswissenschaft: Wurzeln und Dimensionen im Rückblick auf
+  hundert Jahre Fachgeschichte der Publizistik-, Medien- und
+  Kommunikationswissenschaft in Deutschland,'' \emph{M\&K} 64, no. 1
+  (2016).} In France, journalism was also the topic of several
+publications throughout the centuries about the role of journalists or
+press history, demonstrating that there was already interest in studying
+journalism, both academically and scientifically, in both countries
+before the foundation of the first academic departments.
+
+The first German journalism departments were founded at the beginning of
+the twentieth century. In 1916, Karl Bücher founded the first German
+department in the large field of communication studies. The Institut für
+Zeitungskunde in Leipzig offered an academic program for future
+journalists as well as a place to study journalism and
+newspapers.\footnote{Erik Koenen, ed., \emph{Die Entdeckung der
+  Kommunikationswissenschaft: 100 Jahre kommunikationswissenschaftliche
+  Fachtradition in Leipzig; Von der Zeitungkunde zur Kommunikations- und
+  Medienwissenschaft} (Köln: Herbert von Halem Verlag, 2016).} The
+second department was founded three years later in Münster (1919), the
+so-called Lektorat für Zeitungskunde under the direction of the
+journalist Friedrich Castelle and with Karl D'Ester as an academic
+teacher.\footnote{Bettina Maoro, \emph{Die Zeitungswissenschaft in
+  Westfalen 1914--45: Das Institut für Zeitungswissenschaften in Münster
+  und die Zeitungswissenschaft in Dortmund} (Munich: K.G. Saur, 1987).}
+Both are today two of the biggest departments for communication studies
+in Germany. In both cases, the scientific interest in journalism
+resulted in the creation of departments that would soon work not only on
+journalism research but on communication as well.
+
+The lack of empirical studies on journalism and journalists in the early
+phase of the German newspaper science called \emph{Zeitungswissenschaft}
+was a topic that caused Ferdinand Tönnies in 1930 to publicly criticize
+the lack of a sociological approach in the \emph{Zeitungswissenschaft}
+and to describe it as a part of sociology. Emil Dovifat, however, was of
+the opinion that \emph{Zeitungswissenschaft} should be an independent
+academic discipline and couldn't imagine it being studied as a mere
+aspect of different disciplines such as sociology, literature,
+economics, and psychology.\footnote{Emil Dovifat,
+  \emph{Zeitungswissenschaft, Band I: Allgemeine Zeitungslehre} (Berlin:
+  Walter de Gruyter \& Co., 1931).} The dispute showed the first steps
+towards the institutionalization of journalism studies as an academic
+discipline and the emergence of a scientific community. From that
+beginning until 1960, the German \emph{Zeitungswissenschaft} passed
+through four stages: Between 1890 and 1925, scholars began to identify
+the newspaper as their common research object. During the second stage
+(1925--1933), researchers intensified research on newspapers and started
+to create a scientific network around this object of study. The third
+phase (1933--1945) was overshadowed by World War II and Nazi ideology,
+and so the fourth stage was about the reconstruction of journalism
+research after 1945.\footnote{Stefanie Averbeck and Arnulf Kutsch,
+  ``Thesen zur Geschichte der Zeitungs- und Publizistikwissenschaft
+  1900--1960,'' \emph{Medien \& Zeit} 17, no. 2--3 (2002); Stefanie
+  Averbeck and Arnulf Kutsch, \emph{Zeitung, Werbung, Öffentlichkeit:
+  Biographisch-systematische Studien zur Frühgeschichte der
+  Kommunikationsforschung} (Köln: Herbert von Halem Verlag, 2005), 12.}
+
+In the first half of the twentieth century, communication studies or
+journalism studies did not exist as an institutionalized research field
+in France, but different projects and initiatives nonetheless emerged as
+a result of academic interest in journalism. In 1937, the then
+Université de Paris founded the Institute of Press Science (Institut de
+Science de la Presse, ISP), which disappeared during World War II and
+was again founded in 1945, becoming in 1951 the French Press Institute
+(Institut Français de Presse, IFP), one of the leading French research
+centers for journalism and media studies today. Its founding father and
+first director, Fernand Terrou, sought international exchanges and
+participated in a conference in Strasbourg where he was part of an
+``Interim Committee'' that convened the founding conference of the
+International Association for Media and Communication Research (IAMCR)
+at UNESCO in December 1957.\footnote{Cees Hamelink and Kaarle
+  Nordenstreng, ``Overview of IAMCR History: Looking at History through
+  the International Association for Media and Communication Research
+  (IAMCR),'' IAMCR (website).} Terrou then became the first president of
+the IAMCR. In 1946, Terrou also founded the French academic journal for
+journalism research, \emph{Études de presse,} which he later co-edited
+with other IFP members.
+
+It is notable that the early French journalism research was
+internationally oriented, with Terrou being involved in international
+associations and with UNESCO's Department of Mass Communication, for
+example.
+
+\newpage\hypertarget{new-developments-in-the-1960s-a-turning-point-in-germany-a-new-institutionalized-field-of-study-in-france}{%
+\subsection{New Developments in the 1960s: A
+Turning Point in Germany,\\\noindent a New Institutionalized Field of Study in
+France}\label{new-developments-in-the-1960s-a-turning-point-in-germany-a-new-institutionalized-field-of-study-in-france}}
+
+Although German journalism studies has always been a field of research
+that integrates different fields of expertise and academics, in 1960
+Werner Schöllgen introduced the notion of ``integrating science''
+(\emph{Integrationswissenschaft})\footnote{Wilke, 76.}---meaning an
+academic discipline that would include research approaches and
+perspectives from different fields of research such as sociology,
+history, or political science. The 1960s also marked a turning point in
+German journalism studies, which transitioned from a normative human
+science (\emph{Geisteswissenschaft}) to an academic field that
+incorporated sociological and psychological perspectives as well as
+the---at that time in particular, quantitative---methods of empirical
+social research.\footnote{Löffelholz, 46.} The inspiration came from
+observation of US communication research, which led German journalism
+studies to reposition itself as a social science.\footnote{Maria
+  Löblich, \emph{Die empirisch-sozialwissenschaftliche Wende in der
+  Publizistik- und Zeitungswissenschaft} (Köln: Herbert von Halem
+  Verlag, 2010).} Different researchers described this transition as a
+liberating and new and necessary recommencement after World War II,
+while others are still criticizing the neglect of certain perspectives
+and research methods.\footnote{Löblich, 13--14.}
+
+In France, the first center for communication studies (Centre d'Études
+des Communications de Masse, CECMAS) was founded in 1960 with the aim of
+conducting research into ``massive phenomena of our contemporary society
+such as press, radio, television, cinema, advertising'' with all their
+different dimensions: ``economic, sociological, ideological, even
+anthropological.''\footnote{Roland Barthes, ``Le centre
+  d\textquotesingle études des communications de masse: Le C.E.C.MAS,''
+  \emph{Annales: Economies, sociétés, civilisations} 16, no. 5 (1961):
+  991.} Methodologically, the research center concentrated on content
+analysis, but Roland Barthes indicated that this would not be sufficient
+as the so-called mass media had a language that needed to be analyzed
+along with the content.\footnote{Barthes, 992.} Despite collaborative
+work on popular culture, researchers did not want to found an academic
+discipline that would concentrate on communication phenomena.\footnote{Stefanie
+  Averbeck, ``Über die Spezifika `nationaler Theoriediskurse':
+  Kommunikationswissenschaft in Frankreich,'' in \emph{Theorien der
+  Medien- und Kommunikationswissenschaft: Grundlegende Diskussionen,
+  Forschungsfelder und Theorieentwicklungen}, ed. Carsten Winter,
+  Andreas Hepp, and Friedrich Krotz (Wiesbaden: Verlag für
+  Sozialwissenschaften, 2008).} But the CECMAS paved the way for the
+later establishment of the new academic discipline. Roland Barthes, for
+example, would be one of the founding members of the French
+\emph{sciences de l'information et de la communication} as an academic
+field that was officially created in 1975, and CECMAS's academic
+journal, \emph{Communications}, is to this day one of the major French
+journals in communication science.
+
+\hypertarget{the-science-of-communication-and-journalism-studies-since-the-1970s}{%
+\subsection{The Science of Communication and
+Journalism Studies since\\\noindent the
+1970s}\label{the-science-of-communication-and-journalism-studies-since-the-1970s}}
+
+As media forms expanded, so too did the field of communication studies,
+and journalism was no longer the only center point in Germany. With the
+renaming of the national association from ``Deutsche Gesellschaft für
+Publizistik- und Zeitungswissenschaft'' (created in 1963)---with an
+emphasis on journalism---to ``Deutsche Gesellschaft für Publizistik- und
+Kommunikationswissenschaft'' (1972), communication science in Germany
+formally became a field of study that covered a huge variety of topics.
+
+The historical development in Germany from journalism to the wider field
+of communication was not mirrored in France. The French \emph{sciences
+de l'information et de la communication} (SIC) were founded by Roland
+Barthes, Robert Escarpit, and Jean Meyriat and have a strong literature
+tradition.\footnote{Jean-François Tétu, ``Sur les origines littéraires
+  des sciences de l'information et de la communication,'' in \emph{Les
+  origines des sciences de l'information et de la communication: Regards
+  croisés}, ed. Robert Boure (Lille: Presses universitaires du
+  Septentrion, 2002).} During the first conference, Escarpit explained
+the new way of thinking and analyzing information and communication:
+information as data and communication as a permanent process.\footnote{Robert
+  Escarpit, ``Pour une nouvelle épistémologie de la communication''
+  (introductory presentation, Premier congrès français des sciences de
+  l'information et de la communication {[}first convention of the French
+  information and communication sciences conference{]}, Compiègne, April
+  21, 1978).} The pluralistic-disciplinary approach to communication
+changed into a discipline that distinguished itself from others while
+still maintaining a pluralistic-theoretical interdisciplinary approach.
+It was not the research topic---communication---that was (and is)
+specific to the new field of study, but how researchers think and work
+in their discipline. Yves Jeanneret and Bruno Ollivier summarize this by
+focusing on two main aspects: the idea that information and
+communication are one ensemble and an emphasis on interdisciplinary
+research.\footnote{Yves Jeanneret and Bruno Ollivier, ``Introduction:
+  Les Sic en perspective,'' \emph{Hermès} 38 (2004): 88.} Specific to
+French communication research is the pragmatic-cultural-semiotic
+approach to analyzing simultaneous interaction on different levels, such
+as public, interpersonal, or mediated communication.\footnote{Averbeck,
+  212.}
+
+Löffelholz describes Manfred Rühl's ``Die Zeitungsredaktion als
+organisiertes soziales System'' (The Newsroom as an Organized Social
+System) (1969) as the turning point in German journalism theory. Instead
+of an individualistic approach---that is to say, journalists in the
+center of research---Rühl describes journalism as a system.\footnote{Löffelholz,
+  53.} According to Rühl, newsrooms are based on the structures of roles
+within the newsroom and decision-making processes during the
+work.\footnote{Manfred Rühl, \emph{Die Zeitungsredaktion als
+  organisiertes soziales System} (Berlin: Bertelsmann
+  Universitätsverlag, 1969).} This meant no longer seeing journalism as
+a purely talent-based profession and seeing newspapers within their
+societal structures. Journalism research in Germany thus converted from
+an ideology regarding the profession to ``modern empirical-analytical
+journalism research.''\footnote{Löffelholz, 46.}
+
+Journalism studies in France, in contrast, is a quite recent field of
+studies, established for the most part in the 1990s.\footnote{Nicolas
+  Pélissier and François Demers, ``Recherches sur le journalisme: Un
+  savoir dispersé en voie de structuration,'' \emph{Revue française des
+  sciences de l'information et de la communication} 5 (2014).} At that
+time, different researchers in France studied the development,
+institutionalization, and societal challenges of journalism and the
+journalistic profession during the first half of the twentieth century.
+Denis Ruellan underlines that the first studies in the 1990s
+concentrated on different aspects of journalism while highlighting that
+journalists functioned as a ``group''\footnote{Denis Ruellan, \emph{Les
+  ``Pro'' du journalisme: De l\textquotesingle état au statut, la
+  construction d\textquotesingle un espace professionnel} (Rennes:
+  Presses universitaires de Rennes, 1997).} with its own structures and
+a voluntarily composed collective dynamic. While journalism was the
+starting point of the history of communication science in Germany, it
+was the opposite in France: A specific interest in journalism emerged
+approximately three decades after the creation of the CECMAS. Journalism
+studies as such still do not exist in France, which results in the lack
+of visibility of journalism research in France.\footnote{Pélissier and
+  Demers, para. 5.}
+
+Nicolas Pélissier and François Demers identify three time periods in the
+development of French journalism research. During the first phase
+(1937--1976), researchers developed a common understanding of press and
+journalism, even though they marginalized journalism research at the
+same time. The French Institute for Press (Institut Français de Presse,
+IFP) played a crucial role during the first period, as it was one of the
+few places dedicated to journalism and press with the first doctoral
+dissertations on journalism in France in the 1970s. The second stage
+(1976--1996) was characterized by the affirmation of academic knowledge
+on journalism. Researchers began to work on different topics within
+journalism research and they started to interact and align with
+researchers abroad. Topics of research included other media as well,
+especially television. Even though different academic disciplines
+(political science, sociology, economics, linguistics, etc.) began
+working on journalism and contributed to a dispersed field of research,
+the second phase of journalism research at the beginning of the 1990s is
+marked by its initial structuring. The authors see the beginning of the
+third phase in journalism studies as being kickstarted by Pierre
+Bourdieu, who presented and published his famous \emph{Sur la
+télévision} in 1996. (See Benjamin Krämer's
+\href{https://hms.mediastudies.press/pub/kramer-bourdieu/}{contribution}
+in this Special Section.) Different research methods and perspectives
+were applied to journalism research (content analysis, discourse
+analysis, qualitative research methods, narratology, anthropological and
+experimental approaches, constructivism). In contrast to Germany, French
+journalism research generally uses qualitative methods to understand the
+``mechanisms of journalistic productions as a collective
+action.''\footnote{Hubé, para. 21.} Since 1996, different coalitions and
+cooperation have enabled new dynamics within the field of journalism
+studies, which will be explained in the next chapter.
+
+\hypertarget{journalism-research-and-the-structure-of-academia-in-germany-and-france}{%
+\subsection{Journalism Research and the
+Structure of Academia in Germany\\\noindent and
+France}\label{journalism-research-and-the-structure-of-academia-in-germany-and-france}}
+
+German communication studies in general and journalism studies in
+particular are much more internationally oriented than in France. Many
+in Germany (and German-speaking colleagues) are on the editorial boards
+of the international journals and are representatives of different
+associations and divisions on an international level. Without diving
+deeper into the different ways in which international careers and
+publication activities are recognized by the scientific community in
+France and in Germany, it is obvious that international activities are
+very visible within the German community of communication science,
+whereas international activities in France have traditionally been
+limited to Francophone communities.\footnote{However, the SFSIC has
+  institutionalized links outside these historic communities in the past
+  ten years, connecting with other national associations, such as DGPuK
+  and SGKM, as well as with international associations such as ICA and
+  ECREA.}
+
+The German association of communication studies (DGPuK) holds an annual
+conference, and each of its divisions, such as the division of
+journalism studies, holds an annual conference as well. As many German
+scholars attend international conferences (ICA, ECREA) as well as local
+ones, and journalism studies divisions exist both internationally and
+locally, it is quite easy to identify the scholars that are working in
+the same field. The annual meetings enable researchers to create bonds
+beyond the presentations. The German journalism division (Fachgruppe
+Journalistik/Journalismusforschung) was founded in 1991 and is one of
+the biggest divisions within the DGPuK. A statement describing the
+group's aims lists a wide range of interests that researchers are
+working on, such as: ``journalistic practices and contents, the
+structures that shape journalism, the general framework of journalism
+and its role in society as well as the relationship between journalism
+and its public.''\footnote{DGPuK, ``Selbstverständnis der
+  DGPuK-Fachgruppe Journalistik/Journalismusforschung'' (mission
+  statement, Hamburg, September 24, 2020).} In other words, this
+division is for researchers who are working on theory and on empirical
+questions regarding journalism, on the academic and practical education
+of journalists, as well as on the application of scientific knowledge in
+journalistic practice. All in all, \emph{Journalistik}---German
+journalism studies---combines ``different theoretical perspectives with
+a variety of empirical and normative approaches.''\footnote{DGPuK,
+  ``Selbstverständnis.''} The authors of the statement underlined the
+importance of international research and debates; however, in reality,
+researchers tend to prioritize exchange between countries in which the
+research approach is similar and where the main research language is
+English. This is certainly one of the main reasons why there is little
+French-German exchange within journalism studies.
+
+Even though the SFSIC (Société Française des Sciences de l'Infor-\\\noindent mation
+et de la Communication) is the singular national communication
+association in France and plays an important role in planning and
+organizing academic careers in the field of communication science,
+researchers do not necessarily connect via events organized by the
+SFSIC. There are some formal interest groups, called GER (Groupes
+d'Etudes et de Recherche), but they have to be renewed every two years
+after examination. There are not as many formal and institutionalized
+divisions as in Germany, and there is no French interest group dedicated
+to journalism research (yet), nor are there annual conferences,
+dissertation prizes, junior groups, and the like comparable to those
+that exist within the ICA and the ECREA. Academic research in France is
+organized in research units (\emph{laboratoires de recherche}) that
+organize smaller conferences, research seminars, or working groups. In
+the field of journalism studies---which does not exist as such in
+France---there are two working groups or consortiums that should be
+mentioned to give an idea of research dynamics on journalism in France:
+REJ and the GIS Journalisme.
+
+The REJ (Réseau d'études sur le journalisme) is an international
+research network of journalism scholars spanning France, Quebec, Brazil,
+and Mexico that was created in 1999 with the aim of developing a
+theoretical framework in order to unite different methodological
+approaches. Hence, all kinds of (new) journalism and (new) journalism
+practices were taken into consideration, without establishing a specific
+definition of journalism.\footnote{Fabio Henrique Pereira, Tredan
+  Olivier, and Langonné Joël, ``Penser les mondes du journalisme,''
+  \emph{Hermès} 82, no. 3 (2018): 101--2. See also Roselyne Ringoot and
+  Jean-Michel Utard, ``Introduction,'' in \emph{Le journalisme en
+  invention: Nouvelles pratiques, nouveaux acteurs} (Rennes: Presses
+  universitaires de Rennes, 2006).} The GIS Journalisme (Groupement
+d'Intérêt Scientifique Journalisme) was created in 2010 as French
+journalism scholars wished to give more visibility and vitality to
+journalism research in France, which at that point in time was done by
+individuals scattered around France without any clear common structure.
+Its founding members came from four French universities: CARISM
+(Paris-Panthéon-Assas University), CRAPE (University of Rennes 1), ELICO
+(Lumière University Lyon 2), and GRIPIC (Sorbonne University). The
+members of these four distinct research units together organized five
+conferences between 2011 and 2017, allowing scholars to exchange their
+knowledge of this relatively new field of study. There are, of course,
+other research collectives, such as the Brazil-France-Francophone
+Belgium Journalism Research Conference, or the French-Brazilian
+collaboration called MEJOR, or the conferences for young scholars in
+journalism (\emph{Jeunes chercheur·es en journalisme}). In addition, the
+French-Québecois journal \emph{Les Cahiers du Journalisme}, as well as
+the international and multilingual (English, French, Portuguese, and
+Spanish) journal \emph{Sur le journalisme, About journalism, Sobre
+jornalismo} provide other ways of increasing the visibility of French
+journalism studies.
+
+Whereas in Germany journalism studies is a major field of study in
+communication science with one formal division within the national
+association of communication studies, French journalism research and the
+visibility of a French journalism academic community relies more on
+individual initiative and efforts. The frequently deplored lack of
+international visibility of French journalism scholars can be explained
+by the structure of the French academic system and by how academic
+recruitment works in France. As young scholars in France do not
+necessarily need international experience or international publications
+to get a tenured academic position (though this might be an asset and it
+becomes more and more important as labs need international competence to
+have good evaluations), there is no specific need to spend time abroad
+or to publish internationally.
+
+Of course, each country has its own way of creating and structuring
+scientific communities, and France and Germany are only two examples
+that illustrate how scholars and exchange are organized within the field
+of journalism studies. The structure of the main scientific association,
+the way recruitment works in different countries, and the role and
+importance of certain individuals regarding the structure of the
+scientific community all have an impact on research topics and research
+habits as well. In the case of France and Germany, it is striking to see
+how journalism studies and communication studies have had such different
+dynamics in their development; and these were caused by differences in
+the history of the academic disciplines in each country, the point of
+view and influence of certain individuals, the timing of certain
+decisions, and traditions within the scientific communities.
+
+\hypertarget{journalism-education-in-france-and-germany}{%
+\section{Journalism Education in France and
+Germany}\label{journalism-education-in-france-and-germany}}
+
+Both in France and in Germany, there are many ways to become a
+journalist and there is no (formal) need to have a certain degree or to
+have studied at a journalism school. There are more or less common ways
+to enter the profession of journalism, but in both countries, there are
+numerous examples of journalists who have not followed a journalistic
+degree program or any other kind of formal professional training.
+However, the connection between university journalism education and
+journalism studies in France and in Germany differs slightly and this
+difference is indicative of variations within journalism studies in each
+country. In France, journalism studies is strongly linked to journalism
+education and related activities. Before taking a closer look at
+journalism studies and its link to journalism education, it is important
+to understand the main ways of becoming a journalist in France and in
+Germany, since academic journalism education doesn't have the same
+significance in both countries.
+
+\hypertarget{becoming-a-journalist-in-germany-choosing-between-traineeship-journalism-schools-and-academic-journalism-education}{%
+\subsection{Becoming a Journalist in Germany:
+Choosing between Traineeship,\\\noindent Journalism Schools, and Academic
+Journalism
+Education}\label{becoming-a-journalist-in-germany-choosing-between-traineeship-journalism-schools-and-academic-journalism-education}}
+
+In Germany, there are three main ways to become a journalist: A
+traineeship (\emph{Volontariat}) at a media organization, which usually
+takes about eighteen to twenty-four months, enables prospective
+journalists to learn and work in a newsroom and to contribute directly
+to the daily journalistic tasks. Further training complements the
+professional experience, even though the standards and benefits can
+vary.\footnote{Matthias Kurp, ``Volontariat: Reformstau auf dem
+  Königsweg: Diskussion mit Michael Geffken, Annette Hillebrand,
+  Christian Lindner, Ulrich Pätzold, Maximiliane Rüggeberg,'' in
+  \emph{Dokumentation: IQ-Herbstforum; Qualität und Qualifikation:
+  Impulse zur Journalistenausbildung} (Berlin, 2013), 24.} The second
+path to a career as a journalist in Germany is through journalism
+school. Many of these were founded in the 1980s when different media
+organizations decided to take care of the education of their future
+colleagues. In addition, there are journalism schools that belong to an
+association or an institution.\footnote{Walther von La Roche, Gabriele
+  Hooffacker, and Klaus Meier, ``Journalistenschulen,'' in
+  \emph{Einführung in den praktischen Journalismus: Journalistische
+  Praxis} (Wiesbaden: Springer, 2013).} Studying at one of these
+journalism schools sometimes does not require a degree, but
+realistically, the candidates need a university degree in order to enter
+the most prestigious schools, such as the German Journalism School in
+Munich (Deutsche Journalisten Schule). The third main way to get
+journalism training is by studying at one of the universities that offer
+academic journalism training (\emph{Journalistik}). In the 1970s a
+greater exchange regarding journalism education took place with the aim
+to reform journalism training and to install university degrees that
+would meet the new demands required of journalists. The universities of
+Dortmund and Munich were the first to really combine theory and
+practice. These are the three most common pathways to a career in
+journalism, but there are many other possibilities and smaller programs
+for professional journalism education, too.
+
+\hypertarget{becoming-a-journalist-in-france-fourteen-elite-schools-for-journalism-education}{%
+\subsection{Becoming a Journalist in France:
+Fourteen Elite Schools for\\\noindent Journalism
+Education}\label{becoming-a-journalist-in-france-fourteen-elite-schools-for-journalism-education}}
+
+In France, the main pathway into journalism is by studying journalism at
+a university. Even though there are over a hundred journalism
+degree--granting programs in France, many journalists hope to break into
+the industry by studying at one of the fourteen journalism schools that
+are ``recognized'' by the profession (``\emph{reconnues par la
+profession}'')---even though only about 20 percent of new journalists
+come from one of these schools.\footnote{Ivan Chupin, \emph{Les écoles
+  du journalisme: Les enjeux de la scolarisation d\textquotesingle une
+  profession (1889--2018)} (Rennes: Presses universitaires de Rennes,
+  2018), 9.} The ``recognition'' by the profession means that the
+degrees at those fourteen schools are more valued by media organizations
+than other degree programs, which means that graduates have better
+prospects in journalism. As most of these schools offer a master's
+degree, students in France start their journalism training right after a
+three-year bachelor's degree.
+
+\hypertarget{history-of-journalism-education-and-journalism-studies}{%
+\section{History of Journalism Education and Journalism
+Studies}\label{history-of-journalism-education-and-journalism-studies}}
+
+It is, of course, impossible to take into consideration all of the
+journalism degree programs in these two countries. In the following
+sections, I will return to just a few aspects of journalism education
+that are directly linked to journalism studies---which is to say,
+university journalism programs in Germany and the journalism schools in
+France.
+
+\hypertarget{the-history-and-development-of-academic-journalism-education-in-germany}{%
+\subsection{The History and Development of
+Academic Journalism Education\\\noindent in
+Germany}\label{the-history-and-development-of-academic-journalism-education-in-germany}}
+
+Both in France and in Germany, the first attempts to establish
+journalism education go back to the nineteenth century. Authors and
+journalists wrote about their experiences in journalism and gave advice
+to future journalists. J. H. Wehle, for example, gave insights into
+journalism and newspapers as well as the work of journalists in order to
+teach a new generation of journalists that would be able to meet new
+demands in the journalistic field.\footnote{J. H. Wehle, \emph{Die
+  Zeitung: Ihre Organisation und Technik} (Vienna: A. Hartleben's
+  Verlag, 1883).} And in 1899, Richard Wrede founded a private
+journalism school in Berlin and published a handbook shortly afterwards
+in 1902.\footnote{Martin Löffelholz, ``Kommunikatorforschung:
+  Journalistik,'' in \emph{Öffentliche Kommunikation: Studienbücher zur
+  Kommunikations- und Medienwissenschaft}, ed. Günter Bentele,
+  Hans-Bernd Brosius, and Otfried Jarren (Wiesbaden: Verlag für
+  Sozialwissenschaften, 2003), 29.} Despite these early attempts and the
+journalism focus of the first academic institutions that today are among
+the biggest departments for communication studies, Günter Kieslich's
+working paper from 1970 on problems of journalistic education
+(``Probleme der journalistischen Aus- und Fortbildung'') marks the
+beginning of academic journalism education in Germany.\footnote{Michael
+  Steinbrecher, ``Alte Werte, neue Kompetenzen: was sich in der
+  Journalistenausbildung ändern muss,'' in \emph{Dokumentation:
+  IQ-Herbstforum; Qualität und Qualifikation: Impulse zur
+  Journalistenausbildung} (Berlin, 2013), 11; Walter Hömberg,
+  ``Expansion und Differenzierung: Journalismus und
+  Journalistenausbildung in den vergangenen drei Jahrzehnten,'' in
+  \emph{Journalistenausbildung für eine veränderte Medienwelt:
+  Diagnosen, Institutionen, Projekte}, ed. Klaus-Dieter Altmeppen and
+  Walter Hömberg (Wiesbaden: Westdeutscher Verlag, 2002), 18.} This text
+led to the ``Memorandum of Journalism Education'' (``Memorandum der
+Journalistenausbildung'') that the German Press Council published one
+year later, describing journalism education in Germany and asking for
+specialized university degrees and academic professional training. A
+second memorandum two years later (1973) insisted even more on the
+necessity of (applied) academic journalism education and marked a
+turning point regarding the perception of the profession of journalists,
+which was now no longer considered purely talent based.\footnote{Wolfgang
+  Donsbach, ``Hausaufgaben noch immer nicht gemacht: Versäumnisse und
+  Konzepte der Journalismusforschung,'' in \emph{Didaktik der
+  Journalistik: Konzepte, Methoden und Beispiele aus der
+  Journalistenausbildung}, ed. Beatrice~Dernbach and Wiebke~Loosen
+  (Wiesbaden: Springer, 2012), 33.}
+
+These texts were the beginning of a larger discourse on academic
+journalism education. The German association for communication studies
+(DGPuK) organized a first conference on this topic in 1976, at which the
+curricula from three universities (Munich, Dortmund, Hohenheim) that
+combined theory and practice were presented.\footnote{Hömberg, 18.}
+Different German universities developed different ways of incorporating
+applied journalism education into their curricula. It is impossible to
+explain every characteristic of all these degree programs as they are
+quite different, but two German universities have each implemented their
+own interesting program in an effort to combine theory and practice: the
+University of Dortmund and the University of Munich. The so-called
+Dortmund Model (Dortmunder Modell) favored the ``integration of theory
+and practice''\footnote{Steinbrecher, 13.} by integrating a practical
+traineeship (\emph{Volontariat}) into the academic curriculum that
+allows the department to build extended partnerships with media
+organizations in order to regularly adapt the study program.\footnote{Ulrich
+  Pätzold, ``Die Anfänge in Dortmund: eine Erfolgsgeschichte mit viel
+  Glück,'' in \emph{Journalismus und Öffentlichkeit}, ed. Tobias
+  Eberwein and Daniel Müller (Wiesbaden: Verlag für
+  Sozialwissenschaften, 2010).} In Munich, the department for
+communication research cooperates with the German journalism school
+(Deutsche Journalistenschule).\textsuperscript{48}
+
+In the\marginnote{\textsuperscript{48}\setcounter{footnote}{48} Michael Meyen and Manuel
+  Wendelin, eds., \emph{Journalistenausbildung, Empirie und
+  Auftragsforschung: Neue Bausteine zu einer Geschichte des Münchners
+  Institution für Kommunikationswissenschaft; Mit einer Bibliographie
+  der Dissertationen von 1925 bis 2007} (Köln: Herbert von Halem Verlag,
+  2008).} 1990s, Siegfried Weischenberg, Klaus-Dieter Altmeppen, and Martin
+Löffelholz described the main skills that journalists would need in
+order to be professional journalists. They identified journalistic
+knowledge (\emph{Fachkompetenz}) as important---a skill which included,
+for example, the ability to investigate, to select the right news item,
+and to write news, as well as knowledge about media economics, media
+politics, media law, media history, and media technique. The second
+competence these authors describe is intermediation
+(\emph{Vermittlungskompetenz}), which they specify is the ability to
+articulate and to present news for a certain public or audience, as well
+as knowledge of genres and formats. The third competence refers to
+specific knowledge (\emph{Sachkompetenz}) that journalists need in order
+to write news for society: knowledge about their specialty and knowledge
+of societal issues (sociology, politics, etc.), as well as knowledge of
+sources, scientific work, and research methods.\footnote{Siegfried
+  Weischenberg, Klaus-Dieter Altmeppen, and Martin Löffelholz, \emph{Die
+  Zukunft des Journalismus: Technologische, ökonomische und
+  redaktionelle Trends} (Opladen: Westdeutscher Verlag, 1994), 48.}
+Later researchers extended this framework by adding further competences
+that became important as a result of changes in the media landscape.
+Some of these additions included technical and entrepreneurial
+competences\footnote{Löffelholz, ``Theorien des Journalismus,'' 29.} and
+an understanding of professional values. Explaining why prospective
+journalists would need specific instruction and how this knowledge would
+be necessary for working as a journalist was important to Wolfgang
+Donsbach, who called for interdisciplinary ``team-teaching.''\footnote{Donsbach,
+  42.} All in all, there is a rich tradition of academic exchange about
+journalism education in Germany which attempts to combine theory and
+practice.
+
+The question of how to integrate theory and practice is one of the main
+concerns of academic journalism education. Whereas journalism schools do
+not have to justify their curriculum, since their main goal (and their
+legitimation) is the professional education of future
+journalists,\footnote{Klaus-Dieter Altmeppen and Walter Hömberg,
+  ``Traditionelle Prämissen und neue Ausbildungsangebote: Kontinuitäten
+  oder Fortschritte in der Journalistenausbildung?'' in
+  \emph{Journalistenausbildung für eine veränderte Medienwelt:
+  Diagnosen, Institutionen, Projekte}, ed. Klaus-Dieter Altmeppen and
+  Walter Hömberg (Wiesbaden: Westdeutscher Verlag, 2002), 9.} it is more
+complicated for academic or university journalism training programs,
+which try to offer practical training through external teachers and
+exchanges or internships with media companies, for example. Even though
+the metaphor of a zipper\footnote{Michael Haller, ``Didaktischer
+  Etikettenschwindel? Die Theorie-Praxis-Verzahnung in der
+  Journalistik,'' in \emph{Didaktik der Journalistik: Konzepte, Methoden
+  und Beispiele aus der Journalistenausbildung}, ed. Beatrice Dernbach
+  and Wiebke Loosen (Wiesbaden: Springer, 2012), 48.} describes the
+ambition of combining theory and practice, practical elements are
+usually additional to the theoretical studies rather than being really
+integrated into the discussion about journalism.\footnote{Altmeppen and
+  Hömberg, 9.}
+
+\hypertarget{the-history-and-the-development-of-journalism-schools-in-france}{%
+\subsection{The History and the Development of
+Journalism Schools in
+France}\label{the-history-and-the-development-of-journalism-schools-in-france}}
+
+Even though Delphine Girardin wrote a theatrical piece about a
+journalism school in 1839, and she was not the only one during the
+nineteenth century to envision journalism education in
+France,\footnote{Thomas Ferenczi, \emph{L'invention du journalisme en
+  France: Naissance de la presse moderne à la fin du XIXème siècle}
+  (Paris: Payot, 1996), 251--52; Christophe Charle, \emph{Le siècle de
+  la presse (1830--1939)} (Paris: Seuil, 2004), 217--21.} the first
+French journalism school was founded in 1899 by Jeanne Weill, better
+known as Dick May.\textsuperscript{56} This happened at a time when journalism
+had a great impact\marginnote{\textsuperscript{56}\setcounter{footnote}{56} Vincent Goulet, ``\,`Transformer la société
+  par l'enseignement social': La trajectoire de Dick May entre
+  littérature, sociologie et journalisme,'' \emph{Revue d'Histoire des
+  Sciences Humaines} 19 (2008).} on French society (e.g., the Dreyfus affair) and when
+journalism underwent many changes---for example, the shift from
+political and literature journalism towards reportage journalism and a
+more popular journalism for a broad readership. The peak of this
+development was during the so-called golden press era (``\emph{âge d'or
+de la presse}'').\footnote{Michael Palmer, ``L'âge d'or de la presse,''
+  \emph{Le Temps des médias} 27, no. 2 (2016).} Strictly speaking, the
+first journalism school was one of four departments of the School of
+Social Science (École des hautes études sociales), but it was less
+popular than the other departments. Dick May was interested in
+journalism and the emerging field of sociology and combined both by
+teaching the newly founded social science within the journalism
+program.\footnote{Vincent Goulet, ``Dick May et la première école de
+  journalisme en France: Entre réforme sociale et
+  professionnalisation,''~\emph{Questions de communication} 16 (2009).}
+Well known journalists such as Jules Cornély, Henry Fouquier, and Jules
+Claretie, as well as two historians, Alphonse Aulard and Charles
+Seignobos, were among the educational advisory board.\footnote{Ferenczi,
+  254.} A journalistic article about Dick May and the new journalism
+school from December 1, 1899 even mentions Gabriel Tarde, who wrote
+about newspapers and public opinion,\footnote{See Elihu Katz,
+  ``Influence et réception chez Gabriel Tarde: Un paradigme pour la
+  recherche sur l'opinion et les communications,'' in \emph{La
+  réception}, ed. Cécile Méadel (Paris: CNRS Éditions, 2009).} as one of
+the teachers.\footnote{\emph{``L'école du journalisme,'' La Femme:
+  journal bi-mensuel}, December 1, 1899, 182.} Contemporary journalists
+criticized the new journalism program as the profession was still viewed
+as talent based.\footnote{Chupin, 54.} Before the rise of formal
+journalism education, journalistic writing was not yet perceived as a
+technique but rather as a writing style that could be learned from older
+journalists.\footnote{Ruellan, para. 4.24.} Hence, Robert de Jouvenel, a
+member of the labor union of French journalists (Syndicat national des
+journalistes, SNJ) writing in 1920, criticized the idea of journalism
+schools that would undermine the secrets of newspaper
+production.\footnote{Ruellan, para. 4.25.} When in 1929 the labor union
+was asked to help develop the curriculum of the Parisian journalism
+school, the labor union, in return, demanded that a greater emphasis be
+put on practical teaching as the conferences did not seem to prepare the
+students for later professional life as journalists.
+
+At the same time, the labor union was also interested in a theoretical
+discussion about journalism, especially Georges Bourdon, who had
+returned from Germany, where he had heard about the newly founded Berlin
+institute for press research, the Deutsches Institut für Zeitungskunde
+(1927)\emph{.} In 1929, he founded the center for journalism studies
+(Centre d'études journalistiques)---which would later inspire the
+creation of the Institut de Science de la Presse, ISP---and envisioned a
+press science.\footnote{Ruellan, para. 4.27.} Denis Ruellan points out
+that the labor union's interventions gave it control in journalism
+education as well as in scientific discourse on journalism, with still
+the same goal in mind: the recognition of journalism as a collective
+profession.\footnote{Ruellan, para. 4.28.} After World War II, the ISP
+was transformed into the French Institution for Press (Institut Français
+de Presse, IFP). Nicolas Pélissier and François Demers describe how
+academic interest decreased as journalists instead turned to the newly
+founded journalism school.\footnote{Pélissier and Demers, para. 15.} The
+ESJ (École supérieure de journalisme) in Lille is the oldest journalism
+school in France, founded in 1924. This was followed in 1945 by the
+foundation of the Parisian journalism school CFJ (Centre de formation
+des journalistes). Both schools gained official recognition by the
+journalistic profession in 1956. Other journalism schools were founded
+after World War II.\footnote{For the history of journalism schools in
+  France, see Chupin, \emph{Les écoles du journalisme}.}
+
+In France, journalism research and journalism education have strong
+links, which can be explained by looking at the structure of academic
+research as well as at the collaboration between researchers and
+journalists. However, journalism research was for a long time not done
+within journalism schools.\footnote{Groupe de Recherche sur les Enjeux
+  de la Communication (GRESEC), ``La recherche sur le journalisme:
+  Apports et perspectives,'' \emph{Les Enjeux de l'information et de la
+  communication}, no. 1 (2005).} Today, in France, faculty members are
+responsible for certain degree programs or part of them. This means that
+during the recruitment process for a specific position, the candidate's
+experience and research agenda have to fit with the needs of the
+institution. Colleagues that are responsible for a journalism degree
+program are usually researchers with a proven expertise in journalism
+research that would be needed for teaching in journalism programs and
+for linking journalism research and journalism education,\footnote{Jacques
+  Walter et al., eds., \emph{Dynamiques des recherches en sciences de
+  l'information et de la communication} (Conférence permanente des
+  directeur.trices d'Unité de Recherche en Sciences de l'information et
+  de la communication {[}CPDirSIC{]}, 2018).} although there are cases
+where journalists are recruited in order to supervise a degree program.
+
+Today, the fourteen main journalism schools in France are grouped as the
+Conférence des écoles de journalisme (CEJ) and are all ``recognized'' by
+the national committee of employers and the trade unions (Commission
+paritaire nationale de l'emploi des journalistes, CPNEJ). For students,
+this status is a guarantee that they will have a quality education and
+an easier start in their professional career thanks to privileged
+pathways into the media organizations (stipends, awards, etc.). The
+collaboration between these fourteen journalism schools as members of
+the CEJ enables them to have a collective voice. For example, during the
+COVID-19 pandemic, their collective effort allowed journalism students
+to continue their practical journalism sessions even during the strict,
+nation-wide lockdown or to return to campus earlier than other students
+as the technical equipment available there was indispensable for their
+education. Once a year the CEJ schools take part in a national
+conference on journalistic professions (Conférence nationale des métiers
+du journalism, CNMJ), where researchers, journalists, and others discuss
+current topics in journalism. In 2019, members of the CEJ organized the
+World Journalism Education Congress, which took place in Paris. Another
+annual meeting, the Assises du journalisme, independent of the CEJ,
+reunites researchers and journalists to discuss a main topic that
+changes each year. These different working groups show how journalism
+education is linked to a greater debate concerning journalism, in which
+journalism researchers are involved.
+
+The dynamics between journalism studies and journalism education in
+France and in Germany are quite different: In Germany, journalism was
+the main interest that led Bücher to found the first institute to
+analyze journalism in 1916. This was the beginning of German
+\emph{Zeitungswissenschaft}, which later became German communication
+studies. In numerous debates, conferences, and publications, German
+researchers exchange views about the relationship between journalism
+studies and journalism education and try to find the right balance
+between practice and theory. In France, journalism education preceded
+the French science of communication, and journalism research does not
+exist as a division within the French communication science association
+(SFSIC). The orientation of journalism schools towards practical
+education has led to less research in the field of journalism studies,
+which might explain why the majority of research on journalism has been
+conducted outside journalism schools\footnote{Groupe de Recherche sur
+  les Enjeux de la Communication (GRESEC).} and why journalism research
+in France is so scattered.
+
+\hypertarget{journalism-studies-in-france-and-germany-today}{%
+\section{Journalism Studies in France and Germany
+Today}\label{journalism-studies-in-france-and-germany-today}}
+
+Journalism studies in France and Germany have certain commonalities, and
+yet when looked at in detail, they are quite different. As seen above,
+the thought processes underlying the early phases of communication
+science in Germany (\emph{Kommunikationswissenschaft}) and
+\emph{sciences de l'information et de la communication} in France were
+not the same. In Germany, there was a need to better understand
+journalism at the beginning of the twentieth century, whereas mass media
+related questions were the starting point of a new academic discipline
+in France. Several researchers underline the differences between the two
+sciences of communication as they are represented in each
+country:\footnote{Averbeck, ``Über die Spezifika `nationaler
+  Theoriediskurse'\,''; Sarah Cordonnier and Hedwig Wagner, ``La
+  discipline au prisme des activités internationales dans les
+  trajectoires de chercheurs en France et en Allemagne,'' \emph{Hermès}
+  (2013): 133--35; Lisa Bolz, ``Recherches sur le journalisme en France
+  et en Allemagne, un dialogue impossible? Regards croisés sur des
+  méthodologies et des développements divergents,'' \emph{Revue
+  française des sciences de l'information et de la communication} 18
+  (2019); Averbeck-Lietz et al., ``\,`Terre du milieu'?''; Hubé, ``À la
+  recherche d'une universalité.''} The German
+\emph{Kommunikationswissenschaft} addresses questions regarding public
+and mass media communication using empirical research methods, whereas
+the French SIC have a broader understanding of social communication when
+analyzing the mediation of signification through communication
+processes.\footnote{Averbeck, 212.}
+
+Even though it is impossible to point out every development within
+journalism studies in a given country, a look at the tendencies of
+journalism research and the major readings in journalism studies helps
+one to better understand the \emph{esprit} of journalism studies in
+France and in Germany, especially against the background of the history
+of its development in alliance with academic journalism education.
+Journalism studies in France and Germany are geographically close, but
+differ in many respects---with notable differences in their
+methodological approaches and core texts, for instance.\footnote{Averbeck;
+  Bolz; Hubé.} The object of analysis---journalism---is the same, but
+the way researchers approach and analyze it differs between France and
+Germany. It is quite astonishing to see that certain topics are well
+studied in one country, while receiving little attention in the other.
+
+Especially in Germany, many researchers analyzed the history of the
+academic discipline, and the history and development of journalism
+studies in particular, and divided the academic field into several
+different approaches to journalism research. Several handbooks and
+collaborative books attempt to provide an overview of the many different
+methodological and theoretical approaches to journalism while at the
+same time presenting a survey of the large field of journalism as an
+academic discipline and offering insights into the evolution of
+journalism research and journalism theory in Germany. In fact, the
+profusion of handbooks and other such texts in Germany shows that
+journalism studies in Germany are more structured than in
+France.\footnote{Hubé, para. 7.}
+
+There are different kinds of theories and theoretical approaches to
+journalism research in Germany.\footnote{Löffelholz, 21.} While the
+early days of German journalism research saw more normative
+considerations and empiricism, the field from the 1960s on has primarily
+adopted a sociological orientation, and today's research is mainly
+theory driven with several theoretical perspectives and approaches.
+Based on the overviews written by Martin Löffelholz (2004) as well as by
+Martin Löffelholz and Liane Rothenberger (2016), four main perspectives
+might best describe current research within today's German journalism
+studies: functionalist system theories, (critical) action theory,
+integrative social theories, and cultural studies.\footnote{Löffelholz,
+  62; Löffelholz, ``Paradigmengeschichte der Journalismusforschung,'' in
+  Martin Löffelholz and Liane Rothenberger, eds., \emph{Handbuch
+  Journalismustheorien} (Wiesbaden: Springer, 2016), 54. For an English
+  (but older and shorter and therefore less detailed) text, see: Thomas
+  Hanitzsch, ``Journalism Research in Germany: Origins, Theoretical
+  Innovations and Future Outlook,'' \emph{Brazilian Journalism Research}
+  2, no. 1 (2006).} This list represents neither a chronological
+development nor a hierarchy among the theories but instead represents
+the coexistence of multiple theories and the ``discontinuous development
+of a multi-perspective.''\footnote{Löffelholz, ``Theorien des
+  Journalismus,'' 35.} Löffelholz states that journalism theory is
+neither a linear process nor a process with different ``revolutionary''
+phases, but rather is characterized by the existence of different
+theoretical perspectives at the same time, even though the
+empirical-analytical perspective has been the dominant one in Germany
+since World War II.\footnote{Löffelholz, 35.}
+
+The first perspective is mainly based on Niklas Luhmann's theory of
+social systems (\emph{Systemtheorie}), which has had a major influence
+on German journalism studies since the 1990s. The system approach to
+journalism enabled researchers to understand and study journalism within
+society and journalism as a system in and of itself,\footnote{Frank
+  Marcinkowski, \emph{Publizistik als autopoietisches System: Politik
+  und Massenmedien; Eine systemtheoretische Analyse} (Wiesbaden:
+  Springer, 1993); Bernd Blöbaum, \emph{Journalismus als soziales
+  System: Geschichte, Ausdifferenzierung und Verselbständigung}
+  (Wiesbaden: Springer, 1994); Matthias Kohring, ``Journalismus als
+  soziales System: Grundlagen einer systemtheoretischen} alongside other systems such as politics
+or the economy. Social systems, according to Luhmann, are systems of
+communication and are defined by the boundary between themselves and the
+environment, between the interior and the exterior. The distinction
+between systems is a distinction of meaning (\emph{Sinn}). Considering
+journalism as a system, therefore, is to define boundaries that
+distinguish journalism from other\marginnote{Journalismustheorie,'' in \emph{Theorien des Journalismus}, ed. Martin
+  Löffelholz (Wiesbaden: Springer, 2004); Bernd Blöbaum, ``Die Struktur
+  des Journalismus in systemtheoretischer Perspektive,'' in
+  \emph{Theorien des Journalismus}, ed. Martin Löffelholz (Wiesbaden:
+  Springer, 2004); Alexander Görke, ``Programmierung, Netzwerkbildung,
+  Weltgesellschaft: Perspektiven einer systemtheoretischen
+  Journalismustheorie,'' in \emph{Theorien des Journalismus}, ed. Martin
+  Löffelholz (Wiesbaden: Springer, 2004); Wiebke Lossen, ``Journalismus
+  als (ent-)differenziertes Problem,'' in \emph{Handbuch
+  Journalismustheorien}, ed. Martin Löffelholz and Liane Rothenberger
+  (Wiesbaden: Springer, 2016).} areas\footnote{Matthias Kohring,
+  ``Komplexität ernst nehmen: Grundlagen systemtheoretischer
+  Journalismustheorie,'' in \emph{Theorien des Journalismus}, ed. Martin
+  Löffelholz (Opladen: Westdeutscher Verlag, 2000); Kohring,
+  ``Autopoiesis und Autonomie des Journalismus: Zur notwendigen
+  Unterscheidung von zwei Begriffen,'' \emph{Communication Socialis} 34,
+  no. 1 (2001).} and to define its structure and functions. The systemic
+approach underlines the stability of journalistic structures and
+routines and allows us to understand why new media technologies are not
+always immediately adopted as ``innovation as well as tradition enable
+evolution.''\footnote{Löffelholz, 27.} Different scholars have suggested
+different ways of applying the theory of social systems to
+journalism.\footnote{Armin Scholl and Siegfried Weischenberg,
+  \emph{Journalismus in der Gesellschaft: Theorie, Methodologie und
+  Empirie} (Wiesbaden: Verlag für Sozialwissenschaften, 1998), 76.}
+Siegfried Weischenberg introduced an analytical framework that enabled
+empirical research on journalism according to the system-theoretical
+dictum. He suggested four axes for the analysis of journalism: media
+systems (societal frameworks, historical foundation, professional and
+ethical standards), media institutions (economic, political,
+organizational, and technical contexts), media statements (information
+sources, formats, construction of reality) and media actors (demography
+of journalists, political orientation, understanding of the journalistic
+role, professionalization).\footnote{Siegfried Weischenberg,
+  \emph{Journalistik: Theorie und Praxis aktueller Medienkommunikation;
+  Band 1, Mediensysteme, Medienethik, Medieninstitutionen} (Opladen:
+  Westdeutscher Verlag, 1992), 69.} This way of perceiving and studying
+journalism is still a current framework among German journalism
+scholars. During the 2019 conference of the German association for
+communication science (DGPuK) in Münster, researchers even organized a
+panel to discuss system theory and journalism (``\emph{Journalismus als
+System} revisited''). In France, in contrast, this approach is not found
+in journalism research. On the one hand, Luhmann's books \emph{Social
+Systems} and \emph{Theory of Society} were only translated into French
+in 2011 and 2021, and therefore do not (yet) play an important role in
+French communication and journalism research. On the other hand, the
+perspective of social systems does not coincide with the \emph{esprit}
+of French journalism research, which emerged with a more materialistic
+perspective on journalism and journalistic products taking into
+consideration both the technical dimension of communication devices and
+social interaction (``\emph{conception informationnelle}'').\footnote{Nicolas
+  Pélissier, \emph{Journalisme: avis de recherches; La production
+  scientifique française dans son contexte international} (Bruxelles:
+  Bruylant, 2008), 4.}
+
+Along with the functionalist system theory, action theories are another
+of the major perspectives on journalism in German journalism studies.
+Whereas functionalist system theory excludes the individual actor in the
+theoretical framework, action theories take into consideration
+individual and collective actors. Action theory focuses on the
+``formalized processes which build the frame of reference for
+journalistic activities and the consumption of news by the
+public.''\footnote{Hanitzsch, 45.} Based on Habermas's \emph{Theory of
+Communicative Action}, certain researchers explain journalistic action
+as ``social action in both its everyday life and its systemic
+contexts.''\footnote{Hanitzsch, 45.} Susanne Fengler, for example,
+examines economic-rational motives of actors withing journalistic
+contexts.\footnote{Susanne Fengler, ``Journalismus als rationales
+  Handeln,'' in \emph{Handbuch Journalismustheorien}, ed. Martin
+  Löffelholz and Liane Rothenberger (Wiesbaden: Springer, 2016).}
+Hans-Jürgen Bucher insists that analyzing journalistic actions and
+system theory can be complementary, as journalists are not only acting
+on a personal or individual level but also within social structures.
+Certain tendencies in journalism cannot be reduced to individual actions
+and have to be considered as collective dynamics---for example,
+digitalization within journalism.\footnote{Hans-Jürgen Bucher,
+  ``Journalismus als kommunikatives Handeln: Grundlagen einer
+  handlungstheoretischen Journalismustheorie,'' in \emph{Theorien des
+  Journalismus}, ed. Martin Löffelholz (Wiesbaden: Springer, 2004).}
+
+The huge importance of the systemic point of view within German
+journalism research can eclipse the journalist from the theoretical
+framework. In order to go beyond the division between individual and
+system, or between individual action and structure, several German
+journalism scholars introduced theoretical models that combine macro and
+micro level perspectives on journalism, relying, for example, on the
+actor-structure dynamics by the sociologist Uwe Schimank.\footnote{For
+  more on this, see Hanitzsch.} Christoph Neuberger points out that
+journalism should be analyzed on different levels that would include
+other sociological concepts beyond social system theory.\footnote{Christoph
+  Neuberger, ``Journalismus als systembezogene Akteurskonstellation:
+  Grundlagen einer integrativen Journalismustheorie,'' in \emph{Theorien
+  des Journalismus}, ed. Martin Löffelholz (Wiesbaden: Springer, 2004).}
+Sabine Schäfer is another researcher who seeks to overcome the division
+between actor-centered theory and system theory. She suggests that
+journalism be thought of as a social field based on the theory of Pierre
+Bourdieu.\footnote{Sabine Schäfer, ``Journalismus als soziales Feld: Das
+  relationale Denken Pierre Bourdieus als Grundlage für eine
+  Journalismustheorie,'' in \emph{Theorien des Journalismus: Ein
+  diskursives Handbuch}, ed. Martin Löffelholz (Wiesbaden: Springer,
+  2004).}
+
+Some of the most recent journalism research in Germany is influenced by
+cultural studies\footnote{See also Andreas Heep, \emph{Cultural Studies
+  und Medienanalyse: Eine Einführung} (Wiesbaden: Springer, 2010).} and
+focuses more on the journalistic product, the consumer perspective, and
+journalism as cultural discourse\footnote{Rudi Renger, ``Journalismus
+  als kultureller Diskurs: Grundlagen der Cultural Studies als
+  Journalismustheorie,'' in \emph{Theorien des Journalismus: Ein
+  diskursives Handbuch}, ed. Martin Löffelholz (Wiesbaden: Springer,
+  2004); Margreth Lünenborg, ``Journalismus als kultureller Diskurs,''
+  in \emph{Handbuch Journalismustheorien}, ed. Martin Löffelholz and
+  Liane Rothenberger (Wiesbaden: Springer, 2016).} and cultural
+practice.\footnote{Johannes Raabe, ``Journalismus als kulturelle
+  Praxis,'' in \emph{Handbuch Journalismustheorien}, ed. Martin
+  Löffelholz and Liane Rothenberger (Wiesbaden: Springer, 2016).}
+
+Even though the research field is quite structured, this should not
+undermine the multiplicity of points of view in German journalism
+studies. Perspectives beyond the theoretical approaches discussed here
+exist, of course. Among these are research on journalism
+ethics,\footnote{See, for example, Barbara Thomaß, ``Ethik des
+  Journalismus,'' in \emph{Handbuch Journalismustheorien}, ed. Martin
+  Löffelholz and Liane Rothenberger (Wiesbaden: Springer, 2016).}
+research on journalism and gender topics,\footnote{See, for example,
+  Elisabeth Klaus and Margreth Lünenborg, ``Der Wandel des
+  Medienangebots als Herausforderung an die Joumalismusforschung:
+  Plädoyer fur eine kulturorientierte Annäherung,'' \emph{Medien \&
+  Kommunikationswissenschaft} 48, no. 2 (2000); Elisabeth Klaus, ``Von
+  Subjekt und System zur Kultur: Theorien zur Analyse der
+  Geschlechterverhältnisse im Journalismus,'' in \emph{Theorien des
+  Journalismus: Ein diskursives Handbuch}, ed. Martin Löffelholz
+  (Wiesbaden: Springer, 2004).} and comparative research,\textsuperscript{98} not to
+mention all the research done in other academic disciplines, such as
+media studies, for example. Even though German journalism research is
+mainly theory based, researchers have also been critical of this way of
+doing research, with some arguing that theory building might
+predetermine the research and, accordingly, calling for more theory
+openness.
+
+As the major research perspectives in German journalism studies are
+based on the texts of German sociologists such as Luhmann, Habermas, and
+Schimank, whose texts were not received at the same time and in the same
+way in France, and as major French texts that influenced French
+journalism studies are not read in Germany---with the exception of
+Pierre Bourdieu's texts---it is no surprise that each of these countries
+has a different approach to journalism. Nevertheless, certain points of
+view and research areas seem similar, such as sociological approaches
+regarding the main actor in journalism---the journalists---as an
+individual or as a collective actor\textsuperscript{99} and within
+a journalistic field.\textsuperscript{100} More macro perspectives\textsuperscript{101} were and are also common, as
+well as culture-oriented research\textsuperscript{102} and the analysis of gender topics\textsuperscript{103} in French
+journalism studies. The field of journalism research in France is not as
+structured and institutionalized as in Germany,\marginnote{\textsuperscript{98} See,
+  for example, Frank Esser, ``Journalismustheorie und komparative
+  Forschung,'' in \emph{Handbuch Journalismustheorien}, ed. Martin
+  Löffelholz and Liane Rothenberger (Wiesbaden: Springer, 2016).} and\marginnote{\textsuperscript{99} See, for example, Rémy
+  Rieffel, \emph{L'élite des journalistes} (Paris: Presses
+  universitaires de France, 1984); Denis Ruellan, \emph{Le
+  professionnalisme du flou: Identité et savoir-faire des journalistes
+  français} (Grenoble: Presses universitaires de Grenoble, 1993); Eric
+  Neveu, \emph{Sociologie du journalisme} (Paris: La Découverte, 2001);
+  Roselyne Ringoot and Jean-Michel Utard, \emph{Le Journalisme en
+  invention: Nouvelles pratiques, nouveaux acteurs} (Rennes: Presses
+  universitaires de Rennes, 2006). See also the issue of \emph{Réseaux}
+  on the sociology of journalists, \emph{Réseaux} 1 (1992).} the\marginnote{\textsuperscript{100} See, for example, Rodney Benson and Erik
+  Neveu, \emph{Bourdieu and the Journalistic Field} (Cambridge, MA:
+  Polity Press, 2005).}\marginnote{\textsuperscript{101} See, for
+  example, Michel Mathien, \emph{Les journalistes et le système
+  médiatique} (Paris: Hachette, 1992).} journalism\marginnote{\textsuperscript{102} See, for example, Nicolas
+  Pélissier, ``Journalisme et études culturelles: de nouveaux
+  positionnements de la recherche française?'' \emph{Questions de
+  communication} 1 (2010).}
+research\marginnote{\textsuperscript{103}\setcounter{footnote}{103} See,
+  for example, Virginie Julliard, \emph{De la presse à Internet: la
+  parité en question} (Paris: Hermès-Lavoisier, 2012).} community is therefore less visible and cohesive. Whereas
+German journalism studies have a theory-based approach to journalism and
+media, involving rather strict research protocols (validation or not of
+a hypothesis), and aim to systematize empirical research results and to
+obtain a holistic perspective; French journalism research values the
+heterogeneity of different research approaches.\footnote{Hubé, para.
+  20--21.} There is not one common way of doing journalism research in
+France or a common methodology. In fact, the openness of journalism
+research with respect to other academic disciplines has been one of the
+main developments in the field since 1996. The qualitative approach, as
+well as the disciplinary openness (interdisciplinary and
+transdisciplinary) in France, is seen as a lack of methodological rigor
+by some German researchers, whereas others perceive this as a chance to
+pursue other research questions.\footnote{Stefanie Averbeck-Lietz,
+  Fabien Bonnet, and Jacques Bonnet, ``Le discours épistémologique des
+  Sciences de l\textquotesingle information et de la communication,''
+  \emph{Revue française des sciences de l'information et de la
+  communication} 4 (2014).}
+
+While discussion of theory, models, and empiricism is important in
+German journalism studies and defines this field of research,\footnote{Hans
+  Matthias Kepplinger, ``Problemdimensionen des Journalismus:
+  Wechselwirkung von Theorie und Empirie,'' in \emph{Theorien des
+  Journalismus: Ein diskursives Handbuch}, ed. Martin Löffelholz
+  (Wiesbaden: Springer, 2004); Johannes Raabe, ``Theoriebildung und
+  empirische Analyse: Überlegungen zu einer hinreichend theorieoffenen,
+  empirischen Journalismusforschung,'' in \emph{Theorien des
+  Journalismus: Ein diskursives Handbuch}, ed. Martin Löffelholz
+  (Wiesbaden: Springer, 2004).} French journalism research is structured
+by a large panel of topics that are the core identity of the academic
+discourse as well as the volitional openness regarding disciplines and
+research methods. The association of directors of the French research
+units in communication science (Conférence permanente des
+directeur.trices d'Unité de Recherche en Sciences de l'information et de
+la communication, CPDirSIC) has provided an overview of current research
+in the field of journalism. The five main orientations they have
+identified are: social and economic aspects of media organizations, the
+morphology and working conditions of the journalistic profession, media
+coverage and media representation of events and social identities, media
+as places of discussion, and the interdisciplinary dimension.\footnote{Walter
+  et al., 19­--36.}
+
+There is more and more research on journalism within French
+communication research,\footnote{Christine Leteinturier, ``Journalistes
+  et journalismes en France: Bibliographie analytique 1990--2012,''
+  Université Panthéon-Assas, 2015.} and journalism is still an
+interdisciplinary research topic in France. In particular, historians,
+sociologists, and scholars of literary studies participate in the
+general research into journalism which underlines the interdisciplinary
+history of French journalism research. Pélissier and Demers identify
+three characteristics of French journalism research: the concentration
+on the activity of journalistic production, which mainly means a focus
+on journalists and the media message; the collection as well as the
+editing and the dissemination of journalistic news; and, finally, the
+internal interactions within newsrooms and external interaction between
+journalists and other actors in society.\textsuperscript{109} The focus on the writing and editing process,\textsuperscript{110} with a discourse analytical
+approach\textsuperscript{111}
+or a semiotic-pragmatic interpretation, as well as on concrete and daily
+journalistic practices, is specific to French journalism research in
+comparison to Germany: \emph{écritures} and \emph{pratiques} of
+journalism are the two terms\marginnote{\textsuperscript{109} Pélissier and Demers,
+  para. 5--9.} that\marginnote{\textsuperscript{110} Jean-François
+  Tétu and Maurice Mouillaud, \emph{Le journal quotidien} (Lyon: Presses
+  universitaires de Lyon, 1989); Marc Lits and Adeline Wrona,
+  ``Permanence et renouveau des recherches sur l'écriture
+  journalistique,''~\emph{Revue française des sciences de l'information
+  et de la communication} 5 (2014).} characterize\marginnote{\textsuperscript{111}\setcounter{footnote}{111} Patrick Charaudeau, \emph{Le discours d'information
+  médiatique: La construction du miroir social} (Paris: Nathan, 1997).} a major part of
+contemporary journalism research in France, especially within the
+academic discipline of the French SIC.
+
+\hypertarget{conclusion}{%
+\section{Conclusion}\label{conclusion}}
+
+It is striking to know that two neighboring countries have such
+different histories regarding the development of journalism studies and
+points of view concerning journalism research. On the one hand, German
+journalism studies position themselves as an empirical social science
+that uses empirical research methods. Theoretical frameworks shape the
+scientific discourse. This was not always the case, as the
+\emph{Zeitungswissenschaft} at the beginning of the twentieth century
+was more historically oriented. The empirical turning point after World
+War II was not only inspired by the reception of American empirical
+social research, but also a way to leave behind Nazi ideology.
+Journalism and newspapers that were the first research topics in Germany
+underwent the same evolution towards an empirical orientation.
+
+In France, research on journalism mainly came after the
+institutionalization of French communication science, and mass media
+were the primary topic of interest in the 1960s. The history of
+journalism education and the orientation towards the practical side of
+the profession enables us to understand why it took so long before
+journalism research was an important part of communication studies in
+France and why journalism research remains scattered today.
+
+Research practices and research habits depend on many factors, whether
+it be the history and the development of the discipline as an academic
+institution, certain turning points, or the influence of earlier
+researchers and their opinions. The different dynamics between
+journalism research and journalism education in France and Germany hark
+back to such factors and can explain the gap that seems to exist between
+the two counties, despite efforts on the part of some communication
+science scholars actively involved in the French-German academic
+discussion today to establish a ``terre de milieu'' where not only the
+differences but also the complementarities would be
+acknowledged.\footnote{Averbeck-Lietz et al., ``\,`Terre du milieu'?,''
+  363--80.}
+
+All in all, the different dynamics between journalism studies and
+journalism education, as well as between France and Germany, oblige
+researchers to recognize the impact that their own education and
+integration into a particular academic discipline can have on their
+ability to truly understand the habits of a different research
+community.
+
+
+
+
+\section{Bibliography}\label{bibliography}
+
+\begin{hangparas}{.25in}{1} 
+
+
+
+Altmeppen, Klaus-Dieter, and Walter Hömberg. ``Traditionelle Prämissen
+und neue Ausbildungsangebote: Kontinuitäten oder Fortschritte in der
+Journalistenausbildung?'' In \emph{Journalistenausbildung für eine
+veränderte Medienwelt: Diagnosen, Institutionen, Projekte}, edited by
+Klaus-Dieter Altmeppen and Walter Hömberg, 7--16. Wiesbaden:
+Westdeutscher Verlag, 2002.
+
+Averbeck, Stefanie. ``Über die Spezifika `nationaler Theoriediskurse':
+Kommunikationswissenschaft in Frankreich.'' In \emph{Theorien der
+Medien- und Kommunikationswissenschaft: Grundlegende Diskussionen,
+Forschungsfelder und Theorieentwicklungen}, edited by Carsten Winter,
+Andreas Hepp, and Friedrich Krotz, 211--28. Wiesbaden: Verlag für
+Sozialwissenschaften, 2008.
+
+Averbeck-Lietz, Stefanie, Fabien Bonnet, and Jacques Bonnet. ``Le
+discours épistémologique des Sciences de l\textquotesingle information
+et de la communication.'' \emph{Revue française des sciences de
+l'information et de la communication} 4 (2014).
+\url{https://doi.org/10.4000/rfsic.823}.
+
+Averbeck-Lietz, Stefanie, Fabien Bonnet, Sarah Cordonnier, and Carsten
+Wilhelm. ``Communication Studies in France: Looking for a `Terre du
+milieu'?'' \emph{Publizistik} 64, (2019): 363--80.
+
+Averbeck, Stefanie, and Arnulf Kutsch. ``Thesen zur Geschichte der
+Zeitungs- und Publizistikwissenschaft 1900--1960,'' \emph{medien \&
+zeit} 17, no. 2--3 (2002): 57--66.
+
+Averbeck, Stefanie, and Arnulf Kutsch. \emph{Zeitung, Werbung,
+Öffentlichkeit: Biographisch-systematische Studien zur Frühgeschichte
+der Kommunikationsforschung}. Köln: Herbert von Halem Verlag, 2005.
+
+Barthes, Roland. ``Le centre d\textquotesingle études des communications
+de masse: Le C.E.C.MAS.'' In \emph{Annales: Economies, sociétés,
+civilisations} 16, no. 5 (1961): 991--92.
+\url{https://doi.org/10.3406/ahess.1961.420775}.
+
+Bastin, Gilles. ``La presse au miroir du capitalisme moderne: Un projet
+d\textquotesingle enquête de Max Weber sur les journaux et le
+journalisme.'' \emph{Réseaux} 109, no. 5 (2001): 172--208.
+
+Benson, Rodney, and Erik Neveu. \emph{Bourdieu and the Journalistic
+Field}. Cambridge, MA: Polity Press, 2005.
+
+Blöbaum, Bernd. \emph{Journalismus als soziales System: Geschichte,
+Ausdifferenzierung und Verselbständigung.} Wiesbaden: Springer, 1994.
+
+Blöbaum, Bernd. \emph{Zwischen Redaktion und Reflexion: Die Integration
+von Theorie und Praxis in der Journalistenausbildung}. Münster: LiT,
+2000.
+
+Blöbaum, Bernd. ``Die Struktur des Journalismus in systemtheoretischer
+Perspektive.'' In \emph{Theorien des Journalismus}, edited by Martin
+Löffelholz, 201--15. Wiesbaden: Springer, 2004.
+
+Bolz, Lisa. ``Recherches sur le journalisme en France et en Allemagne,
+un dialogue impossible? Regards croisés sur des méthodologies et des
+développements divergents.'' \emph{Revue française des sciences de
+l'information et de la communication} 18 (2019).
+\url{https://doi.org/10.4000/rfsic.7702}.
+
+Bucher, Hans-Jürgen. ``Journalismus als kommunikatives Handeln:
+Grundlagen einer handlungstheoretischen Journalismustheorie.'' In
+\emph{Theorien des Journalismus}, edited by Martin Löffelholz, 263--85.
+Wiesbaden: Springer, 2004.
+
+Champagne, Patrick. \emph{La double dépendance: Sur le journalisme.}
+Paris: Raisons d'agir, 2016.
+
+Charaudeau, Patrick. \emph{Le discours d'information médiatique: La
+construction du miroir social}. Paris: Nathan, 1997.
+
+Charle, Christophe. \emph{Le siècle de la presse (1830--1939)}. Paris:
+Seuil, 2004.
+
+Chupin, Ivan. \emph{Les écoles du journalisme: Les enjeux de la
+scolarisation d'une profession (1889--2018)}. Rennes: Presses
+universitaires de Rennes, 2018.
+
+Cordonnier, Sarah, and Hedwig Wagner. ``La discipline au prisme des
+activités internationales dans les trajectoires de chercheurs en France
+et en Allemagne.'' \emph{Hermès}, (2013): 133--35.
+
+Deutscher Presserat {[}German Press Council{]}. \emph{Memorandum zur
+Journalistenausbildung} {[}Memorandum on journalism training{]}.
+Bonn-Bad Godesberg, 1971.
+
+Deutscher Presserat {[}German Press Council{]}. \emph{Neues Memorandum
+für einen Rahmenplan zur Journalistenausbildung} {[}New memorandum for a
+journalism training framework{]}. Düsseldorf, 1973.
+
+Deutsche Gesellschaft für Publizistik- und Kommunikationswissenschaft
+(DGPuK). ``Selbstverständnis der DGPuK-Fachgruppe
+Journalistik/Journalismusforschung.'' Mission statement DGPuK general
+meeting of September 24, 2020.
+\url{https://www.dgpuk.de/de/selbstverst\%C3\%A4ndnis.html-9}.
+
+Donsbach, Wolfgang. ``Hausaufgaben noch immer nicht gemacht:
+Versäumnisse und Konzepte der Journalismusforschung.'' In \emph{Didaktik
+der Journalistik: Konzepte, Methoden und Beispiele aus der
+Journalistenausbildung}, edited by Beatrice~Dernbach and Wiebke~Loosen,
+31--44. Wiesbaden: Springer, 2012.
+
+Dovifat, Emil. \emph{Zeitungswissenschaft, Band I: Allgemeine
+Zeitungslehre}. Berlin: Walter de Gruyter \& Co., 1931.
+
+Escarpit, Robert. ``Pour une nouvelle épistémologie de la
+communication.'' Introductory presentation at the Premier congrès
+français des sciences de l'information et de la communication {[}first
+convention of the French Information and Communication Sciences
+Conference{]}, Compiègne, April 21, 1978.
+http://palimpsestes.fr/communication/escarpit1.htm.
+
+Esser, Frank. ``Journalismustheorie und komparative Forschung.'' In
+\emph{Handbuch Journalismustheorien}, edited by Martin Löffelholz and
+Liane Rothenberger, 111--30. Wiesbaden: Springer, 2016.
+
+Fengler, Susanne. ``Journalismus als rationales Handeln.'' In
+\emph{Handbuch Journalismustheorien}, edited by Martin Löffelholz and
+Liane Rothenberger, 234--48. Wiesbaden: Springer, 2016.
+
+Ferenczi, Thomas. \emph{L'invention du journalisme en France: Naissance
+de la presse moderne à la fin du XIXème siècle}. Paris: Payot, 1996.
+
+The Franco-German University. ``Exploration transnationale des milieux
+de communication franco-allemands: science, design, culture numérique,
+journalisme.'' Program description. Last modified July 12, 2021.
+\href{https://www.dfh-ufa.org/fr/?research=explorations-transnationale-des-milieux-de-communication-franco-allemands-science-design-culture-numerique-jounalisme\&noredirect=fr\_FR}{https://www.dfh-ufa.org/fr/?research=} \href{https://www.dfh-ufa.org/fr/?research=explorations-transnationale-des-milieux-de-communication-franco-allemands-science-design-culture-numerique-jounalisme\&noredirect=fr\_FR}{explorations-transnationale-des-milieux-de-communication-franco-allemands-science-design-culture-numerique-jounalisme} \href{https://www.dfh-ufa.org/fr/?research=explorations-transnationale-des-milieux-de-communication-franco-allemands-science-design-culture-numerique-jounalisme\&noredirect=fr\_FR}{\&noredirect=fr\_FR}.
+
+Görke, Alexander. ``Programmierung, Netzwerkbildung, Weltgesellschaft:
+Perspektiven einer systemtheoretischen Journalismustheorie.'' In
+\emph{Theorien des Journalismus}, edited by Martin Löffelholz, 233--47.
+Wiesbaden: Springer, 2004.
+
+Goulet, Vincent. ``\,`Transformer la société par
+l\textquotesingle enseignement social': La trajectoire de Dick May entre
+littérature, sociologie et journalisme.'' \emph{Revue
+d\textquotesingle Histoire des Sciences Humaines} 19 (2008): 117--42.
+\url{https://doi.org/10.3917/rhsh.019.0117}.
+
+Goulet, Vincent. ``Dick May et la première école de journalisme en
+France: Entre réforme sociale et professionnalisation.''~\emph{Questions
+de communication} 16 (2009): 27--44.
+\url{https://doi.org/10.4000/questionsdecommunication.81}.
+
+Groupe de Recherche sur les Enjeux de la Communication (GRESEC), ``La
+recherche sur le journalisme: Apports et perspectives.'' \emph{Les
+Enjeux de l\textquotesingle information et de la communication}, no. 1
+(2005): 109--28. \url{https://doi.org/10.3917/enic.005.1000}.
+
+Haller, Michael. ``Die zwei Kulturen: Joumalismustheorie und
+journalistische Praxis.'' In \emph{Theorien des Journalismus: Ein
+diskursives Handbuch}, edited by Martin Löffelholz, 106--29. Wiesbaden:
+Springer, 2004.
+
+Haller, Michael. ``Didaktischer Etikettenschwindel? Die
+Theorie-Praxis-Verzahnung in der Journalistik.'' In \emph{Didaktik der
+Journalistik: Konzepte, Methoden und Beispiele aus der
+Journalistenausbildung}, edited by Beatrice Dernbach and Wiebke Loosen,
+45--58. Wiesbaden: Springer, 2012.
+
+Hallin, Daniel C., and Paolo Mancini. \emph{Comparing Media Systems:
+Three Models of Media and Politics}. Cambridge: Cambridge University
+Press, 2004.
+
+Hamelink, Cees, and Kaarle Nordenstreng, ``Overview of IAMCR History:
+Looking at History through the International Association for Media and
+Communication Research (IAMCR).'' IAMCR (website).
+\url{https://iamcr.org/node/3578\#n1}.
+
+Hanitzsch, Thomas. ``Journalism Research in Germany: Origins,
+Theoretical Innovations and Future Outlook.'' \emph{Brazilian Journalism
+Research} 2, no. 1 (2006).
+
+Hardt, Hanno. \emph{Social Theories of the Press: Constituents of
+Communication Research, 1840s to 1920s}. Lanham, MD: Rowman \&
+Littlefield, 2002.
+
+Heep, Andreas. \emph{Cultural Studies und Medienanalyse: Eine
+Einführung}. Wiesbaden: Springer, 2010.
+
+Hömberg, Walter. ``Expansion und Differenzierung: Journalismus und
+Journalistenausbildung in den vergangenen drei Jahrzehnten.'' In
+\emph{Journalistenausbildung für eine veränderte Medienwelt: Diagnosen,
+Institutionen, Projekte}, edited by Klaus-Dieter Altmeppen and Walter
+Hömberg, 17--30. Wiesbaden: Westdeutscher Verlag, 2002.
+
+Hubé, Nicolas. ``À la recherche d'une universalité du journalisme: la
+\emph{Journalistik} allemande.''~\emph{Revue française des sciences de
+l'information et de la communication} 19 (2020).
+\url{https://doi.org/10.4000/rfsic.9269}.
+
+Jeanneret, Yves, and Bruno Ollivier. ``Introduction: Les Sic en
+perspective.'' \emph{Hermès} 38 (2004): 86--88.
+\url{https://doi.org/10.4267/2042/9429}.
+
+Julliard, Virginie. \emph{De la presse à Internet: la parité en
+question}. Paris: Hermès-Lavoisier, 2012.
+
+Katz, Elihu. ``Influence et réception chez Gabriel Tarde: Un paradigme
+pour la recherche sur l'opinion et les communications.'' In \emph{La
+réception}, edited by Cécile Méadel, 23--40, Paris: CNRS Éditions, 2009.
+
+Kepplinger, Hans Matthias. ``Problemdimensionen des Journalismus:
+Wechselwirkung von Theorie und Empirie.'' In \emph{Theorien des
+Journalismus: Ein diskursives Handbuch}, edited by Martin Löffelholz,
+87--106. Wiesbaden: Springer, 2004.
+
+Klaus, Elisabeth, and Margreth Lünenborg. ``Der Wandel des
+Medienangebots als Herausforderung an die Joumalismusforschung: Plädoyer
+fur eine kulturorientierte Annäherung.'' \emph{Medien \&
+Kommunikationswissenschaf} 48, no. 2 (2000): 188--211.
+
+Klaus, Elisabeth. ``Von Subjekt und System zur Kultur: Theorien zur
+Analyse der Geschlechterverhältnisse im Journalismus.'' In
+\emph{Theorien des Journalismus: Ein diskursives Handbuch}, edited by
+Martin Löffelholz, 377--92. Wiesbaden: Springer, 2004.
+
+Koenen, Erik, ed. \emph{Die Entdeckung der Kommunikationswissenschaft:
+100 Jahre kommunikationswissenschaftliche Fachtradition in Leipzig; Von
+der Zeitungkunde zur Kommunikations- und Medienwissenschaft}. Köln:
+Herbert von Halem Verlag, 2016.
+
+Kohring, Matthias. ``Komplexität ernst nehmen: Grundlagen
+systemtheoretischer Journalismustheorie.'' In \emph{Theorien des
+Journalismus}, edited by Martin Löffelholz, 153--68. Opladen:
+Westdeutscher Verlag, 2000.
+
+Kohring, Matthias. ``Autopoiesis und Autonomie des Journalismus: Zur
+notwendigen Unterscheidung von zwei Begriffen.'' \emph{Communication
+Socialis} 34, no. 1 (2001): 77--89.
+
+Kohring, Matthias. ``Journalismus als soziales System: Grundlagen einer
+systemtheoretischen Journalismustheorie.'' In \emph{Theorien des
+Journalismus}, edited by Martin Löffelholz, 185--200. Wiesbaden:
+Springer, 2004.
+
+Kurp, Matthias. ``Volontariat: Reformstau auf dem Königsweg: Diskussion
+mit Michael Geffken, Annette Hillebrand, Christian Lindner, Ulrich
+Pätzold, Maximiliane Rüggeberg.'' In \emph{Dokumentation:
+IQ-Herbstforum; Qualität und Qualifikation: Impulse zur
+Journalistenausbildung}, 24--25. Berlin: October 14, 2013.
+
+Leteinturier, Christine. ``Journalistes et journalismes en France:
+Bibliographie analytique 1990--2012.'' Université Panthéon-Assas, 2015.
+\url{https://docassas.u-paris2.fr/nuxeo/site/esupversions/099a4f18-e92b-4f57-a1f0-3d544608e97f?inline}.
+
+Lemieux, Cyril. \emph{Mauvaise presse: Une sociologie compréhensive du
+travail journalistique et de ses critiques}. Paris: Édition Métailié,
+2000.
+
+Lits, Marc, and Adeline Wrona. ``Permanence et renouveau des recherches
+sur l'écriture journalistique.''~\emph{Revue française des sciences de
+l'information et de la communication} 5 (2014).
+\url{https://doi.org/10.4267/2042/9429}.
+
+Löblich, Maria. \emph{Die empirisch-sozialwissenschaftliche Wende in der
+Publizistik- und Zeitungswissenschaft}. Köln: Herbert von Halem Verlag,
+2010.
+
+Löffelholz, Martin. ``Kommunikatorforschung: Journalistik.'' In
+\emph{Öffentliche Kommunikation: Studienbücher zur Kommunikations- und
+Medienwissenschaft}, edited by Günter Bentele, Hans-Bernd Brosius, and
+Otfried Jarren. Wiesbaden: Verlag für Sozialwissenschaften, 2003.
+\href{https://doi.org/10.4267/2042/9429}{https://doi.org/10.1007/978-3-322-80383-2\_3.}
+
+Löffelholz, Martin. ``Theorien des Journalismus: Eine historische,
+metatheoretische und synoptische Einführung.'' In \emph{Theorien des
+Journalismus: Ein diskursives Handbuch}, edited by Martin Löffelholz,
+17--64. Wiesbaden: Springer, 2004.
+
+Löffelholz, Martin, and Liane Rothenberger, eds. \emph{Handbuch
+Journalismustheorien}. Wiesbaden: Springer, 2016.
+
+Loosen, Wiebke. ``Journalismus als (ent-)differenziertes Problem.'' In
+\emph{Handbuch Journalismustheorien}, edited by Martin Löffelholz and
+Liane Rothenberger, 177--89. Wiesbaden: Springer, 2016.
+
+Lünenborg, Margreth. ``Journalismus in der Mediengesellschaft: Ein
+Plädoyer für eine integrative Journalistik.'' In \emph{Theorien der
+Medien- und Kommunikationswissenschaft: Grundlegende Diskussionen,
+Forschungsfelder und Theorieentwicklungen}, edited by Carsten Winter,
+Andreas Hepp, and Friedrich Krotz, 269--90. Wiesbaden: Verlag für
+Sozialwissenschaften, 2008.
+
+Lünenborg, Margreth. ``Journalismus als kultureller Diskurs.'' In
+\emph{Handbuch Journalismustheorien}, edited by Martin Löffelholz and
+Liane Rothenberger, 325--38. Wiesbaden: Springer, 2016.
+
+Malik, Maja. \emph{Journalismusjournalismus: Funktion, Strukturen und
+Strategien der journalistischen Selbstthematisierung}. Wiesbaden:
+Springer, 2004.
+
+Maoro, Bettina. \emph{Die Zeitungswissenschaft in Westfalen 1914--45:
+Das Institut für Zeitungswissenschaften in Münster und die
+Zeitungswissenschaft in Dortmund}. Munich: K.G. Saur, 1987.
+
+Marchetti, Dominique, and Denis Ruellan. \emph{Devenir journalistes:
+Sociologie de l'entrée sur le marché du travail.} Paris: La
+Documentation française, 2001.
+
+Marchetti, Dominique, and Géraud Lafarge. ``Les hiérarchies de
+l'information: Les légitimités `professionnelles' des étudiants en
+journalisme.'' \emph{Sociétés contemporaines} 106 (2017): 21--44.
+
+Marcinkowski, Frank. \emph{Publizistik als autopoietisches System:
+Politik und Massenmedien; Eine systemtheoretische Analyse}. Wiesbaden:
+Springer, 1993.
+
+Mathien, Michel. \emph{Les journalistes et le système médiatique}.
+Paris: Hachette, 1992.
+
+Mercier, Arnaud. ``L'institutionalisation de la profession des
+journalistes.'' \emph{Hermès} 13--14 (1994): 219--35.
+
+Meyen, Michael, and Manuel Wendelin, eds. \emph{Journalistenausbildung,
+Empirie und Auftragsforschung: Neue Bausteine zu einer Geschichte des
+Münchners Institution für Kommunikationswissenschaft; Mit einer
+Bibliographie der Dissertation von 1925 bis 2007}. Köln: Herbert von
+Halem Verlag, 2008.
+
+Neuberger, Christoph. ``Journalismus als systembezogene
+Akteurskonstellation: Grundlagen einer integrativen
+Journalismustheorie.'' In \emph{Theorien des Journalismus}, edited by
+Martin Löffelholz, 287--303. Wiesbaden: Springer, 2004.
+
+Neveu, Eric. \emph{Sociologie du journalisme}. Paris: La Découverte,
+2001.
+
+Palmer, Michael. ``L'âge d'or de la presse.'' \emph{Le Temps des médias}
+27, no. 2 (2016): 97--110.
+
+Pätzold, Ulrich. ``Die Anfänge in Dortmund---eine Erfolgsgeschichte mit
+viel Glück.'' In \emph{Journalismus und Öffentlichkeit}, edited by
+Tobias Eberwein and Daniel Müller. Wiesbaden: Verlag für
+Sozialwissenschaften, 2010.
+
+Pélissier, Nicolas. \emph{Journalisme: avis de recherches; La production
+scientifique française dans son contexte international}. Bruxelles:
+Bruylant, 2008.
+
+Pélissier, Nicolas. ``Journalisme et études culturelles: de nouveaux
+positionnements de la recherche française?'' \emph{Questions de
+communication} 1 (2010): 273--90. \href{https://doi.org/10.4000/questionsdecommunication.391}{https://doi.org/10.4000/questions} \href{https://doi.org/10.4000/questionsdecommunication.391}{decommunication.391}.
+
+Pélissier, Nicolas, and François Demers. ``Recherches sur le
+journalisme: Un savoir dispersé en voie de structuration.'' \emph{Revue
+française des sciences de l'information et de la communication} 5
+(2014). \url{https://doi.org/10.4000/rfsic.1135}.
+
+Pereira, Fabio Henrique, Tredan Olivier, and Langonné Joël. ``Penser les
+mondes du journalisme.'' \emph{Hermès} 82, no. 3 (2018): 99--106.
+
+Pörksen, Bernhard, Wiebke Loosen, and Armin Scholl. ``Paradoxien der
+Journalistik Ein Gespräch mit Siegfried Weischenberg.'' In
+\emph{Paradoxien des Journalismus: Theorie--Empirie--Praxis; Festschrift
+für Siegfried Weischenberg}, edited by Bernhard Pörksen, Wiebke Loosen,
+and Armin Scholl, 721--43. Wiesbaden: Springer, 2008.
+
+Pürer, Heinz. ``Zur Fachgeschichte der Kommunikationswissenschaft in
+Deutschland.'' \emph{Biographisches Lexikon der
+Kommunikationswissenschaft.} (October 2017).
+\url{http://blexkom.halemverlag.de/kommunikationswissenschaft-in-deutschland/}.
+
+Raabe, Johannes. ``Theoriebildung und empirische Analyse: Überlegungen
+zu einer hinreichend theorieoffenen, empirischen
+Journalismusforschung.'' In \emph{Theorien des Journalismus: Ein
+diskursives Handbuch}, edited by Martin Löffelholz, 107--28. Wiesbaden:
+Springer, 2004.
+
+Raabe, Johannes. ``Journalismus als kulturelle Praxis.'' In
+\emph{Handbuch Journalismustheorien}, edited by Martin Löffelholz and
+Liane Rothenberger, 339--54. Wiesbaden: Springer, 2016.
+
+Renger, Rudi. ``Journalismus als kultureller Diskurs: Grundlagen der
+Cultural Studies als Journalismustheorie.'' In \emph{Theorien des
+Journalismus: Ein diskursives Handbuch}, edited by Martin Löffelholz,
+359--71. Wiesbaden: Springer, 2004.
+
+Rieffel, Rémy. \emph{L'élite des journalistes}. Paris: Presses
+universitaires de France, 1984.
+
+Ringoot, Roselyne, and Jean-Michel Utard. \emph{Le Journalisme en
+invention: Nouvelles pratiques, nouveaux acteurs}. Rennes: Presses
+universitaires de Rennes, 2006.
+
+Rühl, Manfred. \emph{Die Zeitungsredaktion als organisiertes soziales
+System}. Berlin: Bertelsmann Universitätsverlag, 1969.
+
+Rühl, Manfred. ``Des Journalismus vergangene Zukunft: Zur Emergenz der
+Journalistik.'' In \emph{Theorien des Journalismus: Ein diskursives
+Handbuch}, edited by Martin Löffelholz, 69--86. Wiesbaden: Springer,
+2004.
+
+Ruellan, Denis. \emph{Le professionnalisme du flou: Identité et
+savoir-faire des journalistes français.} Grenoble: Presses
+universitaires de Grenoble, 1993.
+
+Ruellan, Denis. \emph{Les ``Pro'' du journalisme: De
+l\textquotesingle état au statut, la construction d\textquotesingle un
+espace professionnel}. Rennes: Presses universitaires de Rennes, 1997.
+\url{http://books.openedition.org/pur/24592}.
+
+Schäfer, Sabine. ``Journalismus als soziales Feld: Das relationale
+Denken Pierre Bourdieus als Grundlage für eine Journalismustheorie.'' In
+\emph{Theorien des Journalismus: Ein diskursives Handbuch}, edited by
+Martin Löffelholz, 321--34. Wiesbaden: Springer, 2004.
+
+Scholl, Armin, and Siegfried Weischenberg. \emph{Journalismus in der
+Gesellschaft: Theorie, Methodologie und Empirie}. Wiesbaden: Verlag für
+Sozialwissenschaften, 1998.
+
+Steinbrecher, Michael. ``Alte Werte, neue Kompetenzen: was sich in der
+Journalistenausbildung ändern muss.'' In \emph{Dokumentation:
+IQ-Herbstforum; Qualität und Qualifikation: Impulse zur
+Journalistenausbildung}, 11--23. Berlin, October 14, 2013.
+
+Tétu, Jean-François. ``Sur les origines littéraires des sciences de
+l'information et de la communication.'' In \emph{Les origines des
+sciences de l'information et de la communication: regards croisés},
+edited by Robert Boure, 71--93. Lille: Presses universitaires du
+Septentrion, 2002.
+
+Tétu, Jean-François, and Maurice Mouillaud. \emph{Le journal quotidien}.
+Lyon: Presses universitaires de Lyon, 1989.
+
+Thomaß, Barbara. ``Ethik des Journalismus.'' In \emph{Handbuch
+Journalismustheorien}, edited by Martin Löffelholz and Liane
+Rothenberger, 537--50. Wiesbaden: Springer, 2016.
+
+von La Roche, Walther, Gabriele Hooffacker, and Klaus Meier.
+``Journalistenschulen.'' In \emph{Einführung in den praktischen
+Journalismus: Journalistische Praxis}, edited by Walther von La Roche,
+Gabriele Hooffacker, and Klaus Meier, 255--63. Wiesbaden: Springer,
+2013. \url{https://doi.org/10.1007/978-3-658-01699-9_15}.
+
+Walter, Jacques, David Douyère, Jean-Luc Bouillon, and Caroline
+Ollivier-Yaniv, eds. \emph{Dynamiques des recherches en sciences de
+l'information et de la communication}. Conférence permanente des
+directeur.trices d'Unité de Recherche en Sciences de l'information et de
+la communication (CPDirSIC), 2018.
+\href{https://hal.univ-lorraine.fr/hal-01885229/file/dynamiques-recherches-en-information-communication-190627.pdf}{https://hal.univ-lorraine.fr/hal-01885229/file/dynamiques-recherches-en-information-communi-} \href{https://hal.univ-lorraine.fr/hal-01885229/file/dynamiques-recherches-en-information-communication-190627.pdf}{cation-190627.pdf}.
+
+Wehle, J. H. \emph{Die Zeitung: Ihre Organisation und Technik}. Vienna:
+A. Hartleben's Verlag, 1883.
+
+Weischenberg, Siegfried, Klaus-Dieter Altmeppen, and Martin Löffelholz.
+\emph{Die Zukunft des Journalismus: Technologische, ökonomische und
+redaktionelle Trends}. Opladen: Westdeutscher Verlag, 1994.
+
+Weischenberg, Siegfried. \emph{Journalistik: Theorie und Praxis
+aktueller Medienkommunikation; Band 1, Mediensysteme, Medienethik,
+Medieninstitutionen.} Opladen: Westdeutscher Verlag, 1992.
+
+Weischenberg, Siegfried. \emph{Journalistik: Theorie und Praxis
+aktueller Medienkommunikation; Band 2: Medientechnik, Medienfunktionen,
+Medienakteure}. Opladen: Westdeutscher Verlag, 1995.
+
+Weischenberg, Siegfried, Martin Löffelholz, and Armin Scholl. ``Merkmale
+und Einstellungen von Journalisten.`` \emph{Media Perspektiven} 4
+(1994): 154--67.
+
+Weischenberg, Siegfried, Maja Malik, and Armin Scholl. \emph{Die
+Souffleure der Mediengesellschaft, Report über die Journalisten in
+Deutschland}. Konstanz: UVK Verlagsgesellschaft, 2006.
+
+Weischenberg, Siegfried. \emph{Max Weber und die Entzauberung der
+Medienwelt: Theorien und Querelen---eine andere Fachgeschichte}.
+Wiesbaden: Springer, 2012.
+
+Wilke, Jürgen. ``Von der Zeitungskunde zur Integrationswissenschaft:
+Wurzeln und Dimensionen im Rückblick auf hundert Jahre Fachgeschichte
+der Publizistik-, Medien- und Kommunikationswissenschaft in
+Deutschland.'' \emph{Medien \& Kommunikationswissenschaft} 64, no. 1
+(2016): 74--92.
+
+
+
+\end{hangparas}
+
+
+\end{document}
