@@ -49,3 +49,5 @@
 * [Send desk reject](/hms/workflows/send-desk-reject.md)
 * [Send out blinded manuscript to reviewer](/hms/workflows/send-out-blinded-manuscript-to-reviewer.md) 
 * [Thank reviewer](/hms/workflows/thank-reviewer.md) 
+
+## Post-publication 
