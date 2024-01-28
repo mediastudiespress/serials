@@ -51,3 +51,5 @@
 * [Thank reviewer](/hms/workflows/thank-reviewer.md) 
 
 ## Post-publication 
+
+* [Update crossref xml](/hms/workflows/update-crossref-xml.md)
