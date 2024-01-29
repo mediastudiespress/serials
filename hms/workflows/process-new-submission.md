@@ -2,8 +2,14 @@
 
 #submission #airtable
 
-- [ ] navigate to the [Airtable Submission  view](x-icabmobile://x-callback-url/open?url=https://airtable.com/appXhmKzo4WMgQJnn/tblkbjPK1lfVmbzhY/viwGPymdoQQTwZZGW?blocks=hide) 
-- [ ] check the main fields and open the Word submission. Check word count and citations, and enter into table 
-- [ ] is the submission within scope? If not, send a [rejection letter](shortcuts://run-shortcut?name=HMS%20desk%20reject email), and change status to Rejected on [Airtable](x-icabmobile://x-callback-url/open?url=https://airtable.com/appXhmKzo4WMgQJnn/tblkbjPK1lfVmbzhY/viwGPymdoQQTwZZGW?blocks=hide) 
-- [ ] if the submission is within scope, run the [submission reply Shortcut](shortcuts://run-shortcut?name=HMS%20submission%20email%20reply), and change status to *Initial submission* on [Airtable](x-icabmobile://x-callback-url/open?url=https://airtable.com/appXhmKzo4WMgQJnn/tblkbjPK1lfVmbzhY/viwGPymdoQQTwZZGW?blocks=hide)
-- [ ] copy the email from Drafts and run Send HMS Email
+## If the submission came through email
+
+- [ ] download the Word document
+- [ ] rename {{lastname}}-submission-{{iso}}
+- [ ] navigate to the [Submission form](https://hms.mediastudies.press/submit), and fill out plus upload
+
+## Add to Reviews Airtable
+
+- [ ] download submitted version
+- [ ] make sure the paper has identifying information taken out and save as {{title-keywords}}-blinded-{{iso-year-month}}
+- [ ] navigate to [Reviews Airtable](x-icabmobile://x-callback-url/open?url=https://airtable.com/appFYX775h7rC8THX/tblu5II5NKmkzPWqh/viwBVXkekIFsiQP3e?blocks=hide), and, in the Submission Table, add the paper (including upload)
