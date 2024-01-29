@@ -53,3 +53,4 @@
 ## Post-publication 
 
 * [Update crossref xml](/hms/workflows/update-crossref-xml.md)
+* [Upload xml to DOAJ](/hms/workflows/upload-xml-to-doaj.md) 
