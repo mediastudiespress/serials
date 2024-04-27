@@ -15,7 +15,7 @@
 
 Reading for discussion:
 
-* Angus Burgin, Title TBAe			
+* Angus Burgin, Title TBA 	
 
 *For the Zoom link and the reading download, visit the [Working Group page](https://www.chstm.org/media-studies). Instructions for joining the group are [here](https://hms.mediastudies.press/working-group). Questions? [Contact us](mailto:hms@mediastudies.press)*
 
