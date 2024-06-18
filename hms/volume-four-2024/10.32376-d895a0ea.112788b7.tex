@@ -1,0 +1,1853 @@
+% see the original template for more detail about bibliography, tables, etc: https://www.overleaf.com/latex/templates/handout-design-inspired-by-edward-tufte/dtsbhhkvghzz
+
+\documentclass{tufte-handout}
+
+%\geometry{showframe}% for debugging purposes -- displays the margins
+
+\usepackage{amsmath}
+
+\usepackage{hyperref}
+
+\usepackage{fancyhdr}
+
+\usepackage{hanging}
+
+\hypersetup{colorlinks=true,allcolors=[RGB]{97,15,11}}
+
+\fancyfoot[L]{\emph{History of Media Studies}, vol. 3, 2023}
+
+
+% Set up the images/graphics package
+\usepackage{graphicx}
+\setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
+\graphicspath{{graphics/}}
+
+\title[Notes for Historicizing]{Notes for Historicizing the Disintegrated Internationalization of Communication Studies in Latin America} % longtitle shouldn't be necessary
+
+% The following package makes prettier tables.  We're all about the bling!
+\usepackage{booktabs}
+
+% The units package provides nice, non-stacked fractions and better spacing
+% for units.
+\usepackage{units}
+
+% The fancyvrb package lets us customize the formatting of verbatim
+% environments.  We use a slightly smaller font.
+\usepackage{fancyvrb}
+\fvset{fontsize=\normalsize}
+
+% Small sections of multiple columns
+\usepackage{multicol}
+
+% Provides paragraphs of dummy text
+\usepackage{lipsum}
+
+% These commands are used to pretty-print LaTeX commands
+\newcommand{\doccmd}[1]{\texttt{\textbackslash#1}}% command name -- adds backslash automatically
+\newcommand{\docopt}[1]{\ensuremath{\langle}\textrm{\textit{#1}}\ensuremath{\rangle}}% optional command argument
+\newcommand{\docarg}[1]{\textrm{\textit{#1}}}% (required) command argument
+\newenvironment{docspec}{\begin{quote}\noindent}{\end{quote}}% command specification environment
+\newcommand{\docenv}[1]{\textsf{#1}}% environment name
+\newcommand{\docpkg}[1]{\texttt{#1}}% package name
+\newcommand{\doccls}[1]{\texttt{#1}}% document class name
+\newcommand{\docclsopt}[1]{\texttt{#1}}% document class option name
+
+
+\begin{document}
+
+\begin{titlepage}
+
+\begin{fullwidth}
+\noindent\Large\emph{History of Communication Studies across the Americas} \hspace{20mm}\includegraphics[height=1cm]{logo3.png}\\
+\noindent\hrulefill\\
+\vspace*{1em}
+\noindent{\Huge{Notes for Historicizing the Disintegrated\\\noindent Internationalization of Communication\\\noindent Studies in Latin America\par}}
+
+\vspace*{1.5em}
+
+\noindent\LARGE{Raúl Fuentes Navarro} \href{https://orcid.org/0000-0001-6494-8122}{\includegraphics[height=0.5cm]{orcid.png}}\par\marginnote{\emph{Raúl Fuentes Navarro, ``Notes for Historicizing the Disintegrated Internationalization of Communication Studies in Latin America,'' \emph{History of Media Studies} 4 (2024), \href{https://doi.org/10.32376/d895a0ea.112788b7}{https://doi.org/ 10.32376/d895a0ea.112788b7}.} \vspace*{0.75em}}
+\vspace*{0.5em}
+\noindent{{\large\emph{Universidad de Guadalajara}, \href{mailto:raul@iteso.mx}{raul@iteso.mx}\par}} \marginnote{\href{https://creativecommons.org/licenses/by-nc/4.0/}{\includegraphics[height=0.5cm]{by-nc.png}}}
+
+% \vspace*{0.75em} % second author
+
+% \noindent{\LARGE{<<author 2 name>>}\par}
+% \vspace*{0.5em}
+% \noindent{{\large\emph{<<author 2 affiliation>>}, \href{mailto:<<author 2 email>>}{<<author 2 email>>}\par}}
+
+% \vspace*{0.75em} % third author
+
+% \noindent{\LARGE{<<author 3 name>>}\par}
+% \vspace*{0.5em}
+% \noindent{{\large\emph{<<author 3 affiliation>>}, \href{mailto:<<author 3 email>>}{<<author 3 email>>}\par}}
+
+\end{fullwidth}
+
+\vspace*{5em}
+
+
+\hypertarget{abstract}{%
+\section{Abstract}\label{abstract}}
+
+This essay characterizes a ``disintegrated internationalization'' as the
+main trend in the development of communication studies in Latin America.
+This hypothetical approach is based on critical readings of multiple
+bibliographical sources generated in the most recent decades and
+published in Spanish, Portuguese, or English, both in the form of essays
+and empirical studies, somewhat supporting a historical sociology. The
+systematic and rigorously analyzed and interpreted documentation,
+following the methodological example of Luis Ramiro Beltrán, allows us
+to advance in the recognition of some factors that separate national
+``academic fields'' from their integration in broader scales---Latin
+American or global. The conclusion proposes what the elaboration of a
+historical narrative needs to recognize to be more useful: the
+complexity and multiplicity of the historical-social processes that have
+been interwoven and interdetermined in each of the spatiotemporal stages
+that it is pertinent to define as Latin America's own.
+
+
+
+
+ 
+
+\enlargethispage{2\baselineskip}
+
+\vspace*{8em}
+
+\noindent{\emph{History of Media Studies}, vol. 4, 2024}
+
+
+ \end{titlepage}
+
+% \vspace*{2em} | to use if abstract spills over
+
+\hypertarget{introduction}{%
+\section{Introduction}\label{introduction}}
+
+\newthought{These ``notes'' emerge} from a decades-long trajectory researching the
+processes of institutionalization of the study of communication and the
+constitution of a correlative \emph{academic field,}\footnote{Pierre
+  Bourdieu, ``La specificité du champ scientifique et les conditions
+  sociales du progrès de la raison,'' \emph{Sociologie} \emph{et}
+  \emph{Societés} 7, no. 1 (1975); Bourdieu, \emph{Homo Academicus}
+  (Stanford: Stanford University Press, 1988); Bourdieu, \emph{Science
+  of Science and Reflexivity} (Chicago: University of Chicago Press, 2004).} situated first in Mexico, and which in some aspects and
+occasions has been extended towards broader scales, as ``Latin
+America,''\footnote{Raúl Fuentes-Navarro, \emph{La emergencia de un
+  campo académico: Continuidad utópica y estructuración científica de la
+  investigación de la comunicación en México} (Guadalajara: ITESO /
+  Universidad de Guadalajara, 1998); Fuentes-Navarro, \emph{Un campo
+  cargado de futuro: El estudio de la comunicación en América Latina}
+  (Mexico City: FELAFACS, 1992); Fuentes-Navarro ``La investigación de
+  la comunicación en América Latina: Condiciones y perspectivas para el
+  siglo XXI,'' \emph{Comunicación y Sociedad}, no. 36 (1999).}
+eventually as ``Ibero-America,'' or even as an ``Inter-American''
+macro-region that includes Canada, the United States (of America), and
+the other countries of origins and languages other than Spanish and
+Portuguese in the continent.\footnote{During the most recent decade,
+  this trajectory has found great stimulus and impulse in the context of
+  the international academic community developed on the initiative of
+  Park, Pooley, and Simonson---most significantly, through the Communication History Division
+  of the International Communication Association (ICA)
+  (\url{https://www.icahdq.org/}), the ``History of Media Studies''
+  working group of the Consortium for History of Science, Technology,
+  and Medicine (CHSTM) (\url{https://www.chstm.org/media-studies}), and
+  the journal \emph{History of Media Studies}
+  (\url{https://hms.mediastudies.press/}); and, more specifically,
+  through the July 2022 virtual roundtable they organized on the
+  ``History of Communication Studies in the Americas,'' at which an
+  earlier draft of this essay was presented. It is important for the
+  author to acknowledge the highly qualified and careful reviewers who
+  read the essay at that stage and offered thoughtful recommendations
+  with deep implications for the work, particularly in terms of its
+  theoretical framework; most of these recommendations, for that reason,
+  can only be appropriately addressed at a future occasion.} Although
+these denominations are just convenient heuristics and therefore
+contingent, they are never innocuous, since they refer to a complex,
+challenging, and ``enigmatic'' spatiotemporal
+multidimensionality.\footnote{Octavio Ianni, \emph{Enigmas da
+  modernidade-mundo} (Rio de Janeiro: Civilização Brasileira, 2000).}
+
+As noted elsewhere,\textsuperscript{5} ``the term `Latin
+America' was probably invented by the French in their attempts in the
+nineteenth century to colonize the Americas to the south of the Rio
+Grande.''\textsuperscript{6} It has been used at times as
+a kind of counterpart to the term ``manifest destiny,'' coined by US
+journalists and politicians to justify as ``God's will'' the annexation
+of territories and the military interventions abroad, but above all as a
+common identity mark for the more than 650 million
+inhabitants\textsuperscript{7} of twenty modern
+countries on the continent. ``Ibero-America,'' in turn, refers to
+another regional composition, more historical-cultural than
+geographical, as it includes Spain and Portugal, the imperial ``mother
+countries'' of Latin America, together with the countries that were once
+their overseas colonies, which increases the current reference
+population to more than seven hundred million people, that is, almost 9
+percent of the world\textquotesingle s total.
+
+The intellectual dimension of this work takes a cue from the thesis of
+Mexican historian and philosopher Edmundo O'Gorman (1906--1995),
+originally published in 1958, where he writes that ``America was not
+discovered, but invented.'' Therefore, the key to understanding America
+lies not in its identity but in its \emph{historical sense}, that is,
+not in the past but in the future. O'Gorman pointed out that ``America,
+in effect, was invented under the physical species of `continent' and
+under the historical species of `the new world.' It emerged, then, as a
+given physical entity, already made and unalterable, and as a moral
+entity endowed with the possibility of realizing itself in the order of
+historical being.''\textsuperscript{8} Discarding the idea that the world was
+an island with three parts (Europe, Asia, and Africa) was an Iberian
+contribution, and rejecting that the European model was the pinnacle of
+civilization was an Anglo-Saxon one. Together, these are the two
+``liberations'' in which ``the greatness of the invention of America,
+the\marginnote{\textsuperscript{5} Raúl Fuentes-Navarro,
+  ``Institutionalization and Internationalization of the Field of
+  Communication Studies in Mexico and Latin America,'' in \emph{The
+  International History of Communication Study}, ed. Peter Simonson and
+  David W. Park (New York: Routledge, 2016), 338.} double\marginnote{\textsuperscript{6} Francisco Salzano and Maria C. Bortolini, \emph{The
+  Evolution and Genetics of Latin American Populations} (Cambridge:
+  Cambridge University Press, 2002), 328.} step,\marginnote{\textsuperscript{7} Updated as of July 2023.} decisive\marginnote{\textsuperscript{8}\setcounter{footnote}{8} Edmundo O'Gorman, \emph{La invención de
+  América: Investigación acerca de la estructura histórica del nuevo
+  mundo y del sentido de su devenir}, 2nd ed. (Mexico City: Fondo de
+  Cultura Económica, 1977), 152.} and irreversible, in the fulfillment of the
+ecumenical program of the Culture of the West'' can be
+understood.\footnote{O'Gorman, \emph{La invención de América}, 159.}
+Seen from this perspective, in sum, colonial conservatism, and not ``the
+Western,'' was and is the main enemy of the ``historical realization''
+of America,\footnote{Julimar del Carmen Mora Silva, ``Utopias and
+  Dystopias of Our History: Historiographical Approximation to `The
+  Latin American' in the Mexican Social Thought of the 20th Century
+  (Edmundo O'Gorman, Guillermo Bonfil Batalla and Leopoldo Zea),''
+  \emph{História} \emph{da} \emph{Historiografia} 11, no. 28 (2018):
+  209.} a polemical position that, although it has never been
+predominant in historical-philosophical debates, retains a high
+heuristic value in sociocultural terms and is worth pondering as a
+contextual background for the institutionalization of academic fields
+such as that of communication studies.\footnote{Raúl Fuentes-Navarro,
+  ``Apresentação: Comunicação e fronteiras; Geografias e espaços
+  simbólicos das práticas comunicativas na América Latina,'' in
+  \emph{Fronteiras culturais e práticas comunicativas,} ed. Daniela
+  Cristiane Ota and Marcus Paulo da Silva (Campo Grande, Brazil: Editora
+  UFMS, 2023).} In addition to the imperative of escaping this
+``colonial conservatism,'' it can be argued that even without
+specialized training in the historical disciplines, as professionals in
+higher education in communication we understand the need to strengthen
+knowledge platforms that facilitate the historicization of our objects
+of research and learning,\footnote{Benedict Anderson, \emph{Comunidades
+  imaginadas: Reflexiones sobre el origen y la difusión del
+  nacionalismo} (Mexico City: Fondo de Cultura Económica, 1993);
+  Immanuel Wallerstein, ``From Sociology to Historical Social Science:
+  Prospects and Obstacles,'' \emph{British Journal of Sociology} 51, no.
+  1 (2000).} through a dense contextualization, in time and space, of
+sociocultural processes that are obviously anything but simple and
+straightforward, one-dimensional or constant.
+
+Although it might seem obvious that the processes of constitution of
+scientific, cultural, and educational institutions recognizable as
+``academic fields'' have been diversely related to each other throughout
+their history, the transnational factors of influence and
+inter-determination between such unequal entities as the American
+nation-states, their development, or their culture, are scarcely
+recognized. Consequently, this paper proposes to heuristically identify
+some of the most relevant institutionalization trends of the field on
+the American continental scale, analyzable as differential structuring
+processes and their mutual constants and influences, that is, their
+``internationalization,'' in different spaces and times, as academic
+proposals that have been articulated in a very special way by academic
+associations, and thus have counteracted the disarticulating influences
+of other factors.\footnote{Associations, as well as publications and
+  university educational programs, are a concrete product of the
+  interactions between projects and the sociocultural dynamics of the
+  academic fields to which they belong and of the groups of subjects
+  they represent. As such, they are \emph{objective referents} of the
+  processes of institutionalization. Beyond their utility as objects of
+  critical reflection, these processes are also a reflection of the
+  objectives that motivate university formative interventions. As these
+  processes are communicatively mediated, they can therefore be
+  interpreted---from}
+
+This idea is proposed as part of a line of work that has been developed
+within the frameworks of a critical, sociocultural, processual, and
+historical-structural sociology of science, based on contributions from
+several authors,\textsuperscript{14} all
+read from a Latin American perspective, and sustains some points of
+coincidence with better known analyses in the international literature
+that refer to other countries and regions.\textsuperscript{15}
+
+The reflective and critical contributions of particular individuals and
+academic communities are at the same time indispensable references for
+the historical reconstruction of the field in the Latin American region
+and require us to recognize that both the field itself and its study are
+complex and heterogeneous, and that therefore simultaneous tendencies of
+convergence and fragmentation are manifested\marginnote{a praxeological model of institutionalized
+  collective agency (consisting of the exercise of ``the social
+  production of meaning on the social production of meaning'')---as key
+  factors in the generation of the dynamics of the field. Raúl
+  Fuentes-Navarro, ``La producción social de sentido sobre la producción
+  social de sentido: De un marco epistemológico a un modelo metodológico
+  mediado por la metainvestigación,'' in \emph{Experiências
+  metodológicas na comunicação}, ed. Laura Wottrich and Nísia M. do
+  Rosário (São Paulo: Pimenta Cultural, 2022).} in\marginnote{\textsuperscript{14} Bourdieu, \emph{Science of Science and
+  Reflexivity}; Anthony Giddens, \emph{The Constitution of Society:
+  Outline of the Theory of Structuration} (Berkeley: University of
+  California Press, 1984); Andrew Abbott, \emph{Methods of Discovery:
+  Heuristics for the Social Sciences} (New York: W. W. Norton, 2004);
+  Abbott, \emph{Processual Sociology} (Chicago: University of Chicago
+  Press, 2016); Immanuel Wallerstein, \emph{Impensar las ciencias
+  sociales: Límites de los paradigmas decimonónicos} (Mexico City: Siglo
+  XXI / CIICH UNAM, 1998); Wallerstein, ``From Sociology to Historical
+  Social Science''; Wallerstein, \emph{The Uncertainties of Knowledge}
+  (Philadelphia: Temple University Press, 2004); Enrique E.
+  Sánchez-Ruiz, \emph{Medios de difusión y sociedad: Notas críticas y
+  metodológicas} (Guadalajara: Universidad de Guadalajara, 1992);
+  Sánchez-Ruiz, ``Recuperar la crítica: Algunas reflexiones personales
+  en torno al estudio de las industrias culturales en Iberoamérica en
+  los últimos decenios,'' in \emph{Qué pasa con el estudio de los
+  medios: Diálogo con las ciencias sociales en Iberoamérica}, ed.
+  Sánchez-Ruiz (Sevilla, Spain: Comunicación Social ediciones y publicaciones,
+  2011); Fernando Henrique Cardoso and Enzo Faletto, \emph{Dependencia y
+  desarrollo en América Latina} (Mexico City: Siglo XXI, 1969).} academic\marginnote{\textsuperscript{15}\setcounter{footnote}{15} Manuel Parés i
+  Maicas, ed., ``La recerca europea em Comunicació Social,''
+  \emph{Anàlisi, quaderns de comunicació i cultura}, no. 27 (1997);
+  Robert T. Craig, ``Communication Theory as a Field,''
+  \emph{Communication Theory} 9, no. 2 (1999); Craig, ``Communication as
+  a Field and Discipline,'' in vol. 2 of \emph{The International
+  Encyclopedia of Communication}, ed. Wolfgang Donsbach (New York:
+  Blackwell, 2008); Timothy Glander, \emph{Origins of Mass Communication
+  Research during the Cold War: Educational Efforts and Contemporary
+  Implications} (Mahwah, NJ: Lawrence Erlbaum, 2000); Juha Koivisto and
+  Peter D. Thomas, eds., \emph{Mapping}} production and
+in its meta-research.\textsuperscript{16} In this sense, the hypothetical
+characterization of communication research in Latin America as subject
+to a ``disintegrated internationalization,'' and the aim to promote a
+collective reflection based on systematic and rigorously analyzed
+documentation, ``in the manner of Luis Ramiro Beltrán
+(1974),''\textsuperscript{17} incorporate, among others, contributions
+by Jesús Martín-Barbero, José Marques de Melo, Carlos
+Gómez-Palacio, Guillermo Orozco, Gustavo Adolfo León, and Erick Torrico,\textsuperscript{18}
+as well as those contained in several empirical studies of scientific
+production in the field.\textsuperscript{19}
+
+\hypertarget{convergences-divergences-and-fragmentations-disintegrated-internationalization}{%
+\section{Convergences, Divergences, and Fragmentations: Disintegrated\\\noindent Internationalization}\label{convergences-divergences-and-fragmentations-disintegrated-internationalization}}
+
+While allusions to the relations between national entities often refer
+to the past---a point in time before it became commonplace to speculate
+that the very idea of the nation-state, a category of Western modernity,
+was ``on the verge of extinction'' and that attention should be paid to
+the processes of transition from the ``transnational'' to the
+``post-national''---the geopolitics of the most recent decades requires
+a more critical reconsideration.\textsuperscript{20} It can be argued from this point
+of view that the existence in Latin America of diverse and changing
+national (not all ``nationalist'') patterns of development\textsuperscript{21} has not substantially
+modified the relations between states, which are for the most part
+peaceful despite multiple ongoing conflicts.\textsuperscript{22} However, the general conditions and rhetoric of
+``integration,'' a subject and term that frequently appears in Latin
+American communication research of the 1970s and 1980s,\textsuperscript{23} as well as in much of the intergovernmental discourse of the
+time, have substantially changed.
+
+Within this general historical context, communication teaching and
+research that can be properly called ``Latin American'' have been
+supported by institutions created precisely for that purpose, especially
+CIESPAL (International Center for Higher Studies in Journalism {[}later,
+Communication{]} for Latin America), an international organization
+operating since 1959 with headquarters in Quito; ALAIC (Latin American
+Association of Communication Researchers), established in 1977; and
+FELAFACS (Latin American Federation of Social Communication Schools and
+Faculties), established in 1981. More than others, these three
+institutions have been assumed as fundamental referents for articulating
+reflection with action, attention to national processes with the
+construction of continental links, and the formulation of critical
+proposals of broad coverage---all on a regional scale. Many of these
+proposals have been adopted as common challenges by academic communities
+as disparate as those that have developed over\marginnote{\emph{Communication and Media Research:
+  Paradigms, Institutions, Challenges} (Helsinki: University of
+  Helsinki, Communication Research Center, 2008); Maria Löblich and
+  Andreas Matthias Scheu, ``Writing the History of Communication
+  Studies: A Sociology of Science Approach,'' \emph{Communication
+  Theory} 21, no. 1 (2011); José Luis Piñuel-Raigada, \emph{La docencia y la
+  investigación universitarias en torno a la comunicación como objeto de
+  estudio en Europa y América Latina}, Colección Cuadernos Artesanos de
+  Latina 15 (La Laguna, Spain: Sociedad Latina de Comunicación Social,
+  2011); Silvio Waisbord, ``Communication Studies without Frontiers?
+  Translation and Cosmopolitanism across Academic Cultures,''
+  \emph{International Journal of Communication} 10 (2016); Waisbord,
+  \emph{Communication: A Post-Discipline} (Cambridge, MA: Polity Press,
+  2019); Jefferson D. Pooley, ``The Four Cultures: Media Studies at the
+  Crossroads,'' \emph{Social Media and Society} 2, no. 1 (2016); Pooley,
+  ``Die abnehmende Bedeutung des disziplinären Gedächtnisses: Der Fall
+  der Kommunikationsforschung,'' in \emph{Handbuch
+  kommunikationswissenschaftliche Erinnerungsforschung}, ed. Christian
+  Pentzold and Christine Lohmeier (Berlin: De Gruyter, 2023); Stefanie
+  Averbeck-Lietz, ``Communication Studies Beyond the National:
+  Connections and Disconnections Between Research Communities and How to
+  Study Them,'' \emph{Global Media Journal: German Edition} 2, no. 2
+  (2012); Stefanie Averbeck-Lietz and Sarah Cordonnier, ``French and
+  German Theories of Communication: Comparative Perspectives with Regard
+  to the Social and the Epistemological Body of Science,'' in \emph{The
+  Handbook of Global Interventions in Communication Theory}, ed.
+  Yoshitaka Miike and Jing Yin (New York: Routledge, 2022); Marton
+  Demeter, Dina Vozab, and Francisco José Segado-Boj, ``From
+  Westernization to Internationalization: Research Collaboration
+  Networks of Communication Scholars from Central and Eastern Europe,''
+  \emph{International Journal of Communication} 17 (2023).} the\marginnote{\textsuperscript{16} Raúl Fuentes-Navarro, ``Investigación y
+  meta-investigación sobre comunicación en América Latina,''
+  \emph{MATRIZes} 13, no. 1 (2019).} last\marginnote{\textsuperscript{17} Raúl Fuentes-Navarro, ``La investigación de la
+  comunicación en América Latina: una internacionalización
+  desintegrada,'' \emph{Oficios Terrestres}, no. 31 (2014);
+  Fuentes-Navarro, ``Tendencias regionales y transnacionales de la
+  investigación de la comunicación en América Latina,'' in
+  \emph{Tejiendo nuestra historia: investigación de la comunicación en
+  América Latina}, ed. Delia Crovi Druetta and Raúl Trejo Delarbre
+  (Mexico City: UNAM, 2018).} half century in
+Latin America, in a context that has been characterized as one of
+``multiple disarticulation'' and ``triple marginality'' of communication
+studies with respect to the social sciences, to scientific research in
+general, and to the priorities of national development.\textsuperscript{24}
+
+According to a summary of diverse sources, modern reflection on ``the
+social'' began in Latin America between the last decades of the
+nineteenth and the first decades of the twentieth centuries, in the form
+of scholarly studies of a philosophical, legal, and historical
+nature.\textsuperscript{25} The first studies on communication, referring to
+journalism, followed this general pattern.\textsuperscript{26} Later, Latin America received
+as part of the ``modernization'' process in the 1950s and 1960s the
+dominant theories and methods of the North American social sciences
+(empiricism, functionalism, diffusionism, and
+developmentalism).\textsuperscript{27} In the field of
+communication studies, research on effects, audiences, public opinion,
+and the like then spread, along with the expansion of mass media,
+advertising, and the commercial model of mass communication, all
+imported as well from the United States.
+
+In particular, the ``diffusion of innovations'' approach, first assessed
+in the US Midwest, was extensively employed in the rural areas of
+several Latin American countries, notably Colombia, Brazil, and Mexico,
+to investigate the effects of small-scale social transformation
+projects.\textsuperscript{28} The research thus conducted
+was often characterized as ``dependent'' because Latin American scholars
+pursuing graduate studies in the United States, upon returning to their
+countries, served as mere field agents in large US-led
+projects.\textsuperscript{29} In fact, although most of the academic
+communication research in Latin America in the 1950s and 1960s was
+conducted or directed by---or under the influence of---American
+researchers,\textsuperscript{30} there were also
+notable examples of critical contributions to theory and methodology by
+some Latin Americans, such as Beltrán and Díaz-Bordenave, contributions
+that were clearly recognized by their US colleagues.\textsuperscript{31}
+
+The eventual emergence of ``hybrid perspectives'' in Latin America from
+the ``empirical and critical schools,''\textsuperscript{32} could be imagined based
+on the revitalizing movement of Latin American social sciences,
+especially originating in Santiago de Chile, where several important
+international research, teaching, and planning institutions, such as
+FLACSO (Latin American Faculty of Social Sciences) and CEPAL (Economic
+Commission for Latin America and the Caribbean), were operating. The
+triumph of the Cuban revolution in 1959 was key to promoting critical
+thinking in the academy and in societies, since it showed that there was
+an option for socialist development within reach, which was viewed with
+much optimism at first, given the multiple injustices, imbalances, and
+contradictions evident in Latin American\marginnote{\textsuperscript{18} Jesús Martín-Barbero, ``Retos a la investigación
+  de comunicación en América Latina,'' \emph{Comunicación y Cultura},
+  no. 9 (1982); Martín-Barbero, ``Pensar la comunicación en
+  Latinoamérica,'' \emph{Redes: Revista do Desenvolvimento Regional},
+  no. 10 (2014); José Marques de Melo, ``La investigación
+  latinoamericana en Comunicación,'' \emph{Chasqui}, no. 11 (1984);
+  Marques de Melo, \emph{Entre el saber y el poder: Pensamiento
+  comunicacional latinoamericano} (Monterrey, Mexico: Comité Regional
+  Norte de Cooperación con la UNESCO, 2007); Carlos Gómez-Palacio y
+  Campos, ``The Origins and Growth of Mass Communication Research in
+  Latin America'' (PhD diss., Stanford University, 1989); Guillermo
+  Orozco, \emph{La investigación de la comunicación dentro y fuera de
+  América Latina: Tendencias, perspectivas y desafíos del estudio de los
+  medios} (La Plata, Argentina: Universidad Nacional de La Plata, 1997);
+  Gustavo Adolfo León Duarte, \emph{La nueva hegemonía en el pensamiento
+  latinoamericano de la comunicación: Un acercamiento a la producción
+  científica de la escuela latinoamericana de la comunicación}
+  (Hermosillo, Mexico: Universidad de Sonora, 2007); Erick Torrico
+  Villanueva, \emph{La comunicación pensada desde América Latina
+  (1960--2009)} (Salamanca, Spain: Comunicación Social, ediciones y
+  publicaciones, 2016).} countries.\marginnote{\textsuperscript{19} Steven H Chaffee, Carlos
+  Gómez-Palacio, and Everett M. Rogers, ``Mass Communication Research in
+  Latin America: Views from Here and There,'' \emph{Journalism \& Mass
+  Communication Quarterly} 67, no. 4 (1990); Robert Huesca and Brenda
+  Dervin, ``Theory and Practice in Latin American Alternative
+  Communication Research,'' \emph{Journal of Communication} 44, no. 4
+  (1994); Sarah Anne Ganter and Félix Ortega, ``The Invisibility of
+  Latin American Scholarship in European Media and Communication
+  Studies: Challenges and Opportunities of De-Westernization and
+  Academic Cosmopolitanism,'' \emph{International Journal of
+  Communication} 13 (2019); Martín Becerra and Florencia Enghel,
+  ``Pluralismo agonista en la internacionalización de los estudios
+  latinoamericanos de la comunicación: Reflexiones a partir de la
+  práctica,'' \emph{Comunicación y Medios} 30, no. 43 (2021); Santiago
+  Gándara and Yamila Heram, ``Los estudios Latinoamericanos de
+  comunicación (2000--2018): Consolidación académica, estancamiento
+  burocrático o dispersión temática?''}  At the same time,
+both in communication studies and in the rest of the social sciences,
+the search for pertinence of the analysis to the complex Latin American
+realities made some scholars think that it was possible to generate
+totally original and ``autochthonous'' theory, methodology, and even
+epistemology, independent or even opposed to ``Western scientific
+colonialism,'' a position that paradoxically, with European or American
+support, continues to have an important presence today. But there is
+also still present the conviction that the best Latin American
+contributions to the social sciences have been the product of ``creative
+syntheses'' of elements of diverse origins with locally generated
+elements and facts pertinent to the concrete social reality, its
+processes, and transformations.\textsuperscript{33} The theory or approach of dependency, and the
+innovative approach of Paulo Freire's \emph{Pedagogy of the Oppressed},
+strongly associated with Liberation Theology, are two good examples of
+this.\textsuperscript{34}
+
+On the bases of these and other antecedents---which it should be
+emphasized were mostly ``external'' to the universities---the
+institutionalization of communication research in Latin America and the
+constitution of the corresponding academic field were clearly manifested
+from the 1970s onwards. In documents from those years, in which for the
+first time the diagnoses and strategic programs for the development of
+``Latin American communication research'' were formulated, analyses can
+be found that, updating the data, could very well refer to the present
+day, although they undoubtedly also evidence the radical changes that
+the decades have generated in the referents, contexts, and premises
+adopted to guide this articulated development. Among such
+``foundational'' documents are the final report of the Seminar on
+Communication Research in Latin America organized by CIESPAL in La
+Catalina, Costa Rica in September 1973\textsuperscript{35}; and the paper presented
+by Luis Ramiro Beltrán at the IAMCR International Scientific Conference
+in Leipzig a year later. Beltrán's text, entitled ``Communication
+Research in Latin America: The Blindfolded Inquiry?''\textsuperscript{36}
+was based on the documentation presented at the CIESPAL seminar and
+similarly emphasized the scientific and social foundations that should
+be developed for the area. The La Catalina seminar assumed a clearly and
+forcefully normative tone in its report:
+
+\begin{quote}
+The main objective of research should be the critical analysis of the
+role of communication at all levels of functioning, without omitting its
+relations with internal domination and external dependence and the study
+of new channels, media, messages, communication situations, etc., which
+contribute to the process of social transformation.\textsuperscript{37}
+\end{quote}
+
+\noindent Undoubtedly, the drafters of this text were aware of the conditions
+necessary to advance this objective. Particularly striking is their
+warning\marginnote{\emph{Astrolabio}, no. 27 (2021);
+  Francisco Segado-Boj, Juan José Prieto-Gutiérrez, and Jesús
+  Díaz-Campo, ``Redes de coautorías de la investigación Española y
+  Latinoamericana en comunicación (2000--2019): Cohesión interna y
+  aislamiento transcontinental,'' \emph{Profesional de la información}
+  30, no. 3 (2021); Jesús Arroyave Cabrera and Rafael González Pardo,
+  ``Bibliometric Research on Communication in Scientific Journals in
+  Latin America (2009--2018),'' \emph{Comunicar} 30, no. 70 (2022);
+  María Elena Rodríguez-Benito, María Esther Pérez-Peláez, and Teresa
+  Martín-García, ``Investigación en comunicación: Diferencias entre
+  Península Ibérica y América Latina,'' \emph{Cuadernos.info}, no. 54
+  (2023).} that\marginnote{\textsuperscript{20} Arie Kacowitz, ``América
+  Latina en el mundo: Globalización, regionalización y fragmentación,''
+  \emph{Nueva Sociedad}, no. 124 (2008); Andrés Serbin, ed.,
+  \emph{América Latina y El Caribe Frente a un nuevo orden mundial:
+  Poder, globalización y respuestas regionales} (Buenos Aires: Icaria
+  Editorial / Ediciones CRIES, 2018).} ``up\marginnote{\textsuperscript{21} Anderson,
+  \emph{Comunidades imaginadas}, 99--101.} to\marginnote{\textsuperscript{22} A 2022 BBC report
+  (\url{https://www.bbc.com/mundo/noticias-america-latina-59579795})
+  mentions seven ongoing territorial disputes, five of which have
+  required intervention from the International Court of Justice at The
+  Hague: Guyana vs. Venezuela over Essequibo; the border between Belize
+  and Guatemala; Colombia vs. Nicaragua over the archipelago of San
+  Andres, Providencia, and Santa Catalina; Chile vs. Bolivia over the
+  Silala River; Honduras and Nicaragua vs. El Salvador over the Gulf of
+  Fonseca; Argentina vs. Chile over the Drake Passage; and, of course,
+  Argentina vs. the United Kingdom over the Falklands/Malvinas Islands
+  and Antarctica.} now,\marginnote{\textsuperscript{23} Peter
+  Schenkel, ``La importancia del consenso latinoamericano,'' \emph{Nueva
+  Sociedad}, no. 15 (1974); Schenkel\emph{, La integración
+  latinoamericana y el desarrollo} (Quito: CIESPAL, 1984);
+  Fuentes-Navarro, \emph{Un campo cargado de futuro}; Luis Núñez and
+  Beatriz Solís, eds., \emph{Comunicación, identidad e integración
+  Latinoamericana} (Mexico City: FELAFACS / CONEICC / Universidad
+  Iberoamericana, 1994); Néstor García-Canclini, ed., \emph{Culturas en
+  globalización: América Latina-Europa-Estados Unidos; Libre comercio e
+  integración} (Caracas: Nueva Sociedad /}  Latin America does not have a sufficient
+number of specialists in research, since there is not even an
+institution specialized in the training of high-level experts in this
+field.''\textsuperscript{38} This lack would obviously be a determining factor
+in attending to the three areas of research that should be considered a
+priority: the formulation, refinement, and testing of theories and
+methods on the various aspects of ``the communication process and its
+relationship with the process of social transformation; the role of
+communication in education; and the role of communication in popular
+organization and mobilization.''\textsuperscript{39}
+
+Context cannot be ignored here: amid the world oil supply crisis of the
+1970s, Latin American countries were subject to the internal and
+external contradictions of the Cold War and the ideological, political,
+and economic polarization associated with that world order. Thus was the
+incipient and precariously institutionalized field of Latin American
+communication research marked by all the contradictions that---sometimes
+with extreme violence---characterized the social dynamics in which
+communication tended to be instrumentalized rather than researched. And
+in this context, Luis Ramiro Beltrán, with greater clarity despite his
+subtlety than the speakers at the La Catalina seminar, formulated what
+can be considered the \emph{essential tension} of communication research
+in Latin America throughout its very intense and complex history: the
+relationship between scientific rigor and dogmatic thinking. This
+``tension,'' which is much more than a mere epistemological problem, is
+an eloquent synthesis of the various dimensions of ``disintegrated
+internationalization.'' Beltrán's work, in fact, ended with critical
+comments on ``the mythology of a science free of values'' and on ``the
+risk of dogmatism,'' whether in the form of the postulates of classical
+liberalism or Marxism. In particular, the opposition between the rigor
+of science and the political commitment to the transformation of
+reality---referring directly to the polemic that had just begun between
+the groups of researchers led by Armand Mattelart in Chile and Eliseo
+Verón in Argentina---gave rise to a final crucial question:
+
+\begin{quote}
+Could this mean that Latin American communication research will one day
+run into danger of substituting ideologically conservative and
+methodologically rigorous functionalism with unrigorous radicalism? May
+the patient reader of this already too lengthy report kindly provide an
+answer. And may that answer give us lucid clues as whether Latin
+American's communication research will cease to be the blind-folded
+search which it appears at times to have been . . . be that blindfold of
+any color.\textsuperscript{40}
+\end{quote}
+
+\noindent Despite the fact that this ``essential tension'' that can be identified
+in the ``blindfolded research'' tends easily to be reduced to a
+Manichean opposition,\marginnote{Seminario de Estudios de la
+  Cultura / CLACSO, 1996); Franz Portugal Bernedo, ed., \emph{La
+  investigación en comunicación social en América Latina 1970--2000}
+  (Lima: Universidad Nacional Mayor de San Marcos, 2000); Carlos Véjar
+  Pérez-Rulfo, ed., \emph{Globalización, Comunicación e integración
+  Latinoamericana} (Mexico City: Plaza y Valdés / CIICH UNAM / UACM,
+  2006).} to\marginnote{\textsuperscript{24} Enrique
+  E. Sánchez-Ruiz and Raúl Fuentes-Navarro, \emph{Algunas condiciones
+  para la investigación científica de la comunicación en México},
+  Cuadernos Huella 17 (Guadalajara: ITESO, 1989), 12--13.} an\marginnote{\textsuperscript{25} Guillermo Boils Morales and Antonio Murga Frassinetti,
+  eds., \emph{Las ciencias sociales en América Latina} (Mexico City:
+  UNAM, 1979).} authoritarian\marginnote{\textsuperscript{26} Marques de Melo,
+  ``La investigación Latinoamericana.''} \marginnote{\textsuperscript{27} Raúl Trejo-Delarbre, ``Seis décadas de
+  investigación Latinoamericana sobre comunicación: Una propuesta de
+  periodización,'' in \emph{Tejiendo nuestra historia: Investigación de
+  la comunicación en América Latina}, ed. Delia Crovi Druetta and Raúl
+  Trejo Delarbre (Mexico City: UNAM, 2018), 322.}``all\marginnote{\textsuperscript{28} Everett M. Rogers, ``Communication and Development:
+  The Passing of the Dominant Paradigm,'' in \emph{Communication and
+  Development: Critical Perspectives}, ed. Everett M. Rogers (Beverly
+  Hills, CA: SAGE, 1976); Raúl Fuentes-Navarro, ``Everett M. Rogers
+  (1931--2004) y la investigación Latinoamericana de la comunicación,''
+  \emph{Comunicación y Sociedad} 4 (2005).} or\marginnote{\textsuperscript{29} Pablo González Casanova, \emph{Las categorías del
+  desarrollo económico y la investigación en ciencias sociales} (Mexico
+  City: UNAM, 1977).} nothing,''\marginnote{\textsuperscript{30} Luis Ramiro Beltrán, ``Alien Premises, Objects,
+  and Methods in Latin American Communication Research,'' in
+  \emph{Communication and Development: Critical Perspectives}, ed.
+  Everett M. Rogers (Beverly Hills, CA: SAGE, 1976).} the\marginnote{\textsuperscript{31} Raúl
+  Fuentes-Navarro, ``Latin American Interventions to the Practice and
+  Theory of Communication and Social Development: On the Legacy of Juan
+  Díaz Bordenave,'' in \emph{The Handbook of Global Interventions in
+  Communication Theory}, ed. Yoshitaka Miike and Jing Yin (New York:
+  Routledge, 2022).} very\marginnote{\textsuperscript{32} Everett M. Rogers,
+  ``The Empirical and the Critical Schools of Communication Research,''
+  \emph{ICA Communication Yearbook} 5 (1982).}
+evolution of Beltrán's thought and discourse, as well as his continued
+influence as an interlocutor or mediator between the academic
+communities and the national and international public agencies of the
+communications sector, maintained for decades a ``critical openness''
+that was not the most common attitude in the field, but which, due to
+his recognized intellectual authority, provided opportunities for
+dialogue and mutual respect among many of the agents of the nascent
+specialty, not yet clearly differentiated from journalism. Two
+anthologies of his texts and interventions attest to this ability finely
+cultivated by Beltrán.\textsuperscript{41} But finally, it is unquestionable that both at the
+epistemological or methodological level and at the (axiological) level
+of the transforming action of social communication systems and
+practices, processes of fragmentation or multiple divergence have
+replaced in Latin America the typical polarizations of other times,
+unfortunately without reducing the risks of dogmatism.
+
+\hypertarget{the-disjointed-development-of-latin-american-communicational-thought}{%
+\section{The Disjointed Development of ``Latin American\\\noindent
+Communicational
+Thought''}\label{the-disjointed-development-of-latin-american-communicational-thought}}
+
+In the academic spaces opened in several Latin American universities in
+the 1970s, within journalism schools or outside them, including the
+first postgraduate programs in communication, there was a proliferation
+of theoretical-methodological perspectives imported and appropriated in
+some way in each place. Within a few years, other European currents of
+thought on the social---together with the influence of the ``Frankfurt
+School,'' spread by pioneering authors such as Antonio
+Pasquali,\textsuperscript{42} and the classical Marxism
+already present in Latin America---were incorporated into the academic
+field of communication studies, which was already incipiently
+configured. These European influences included structuralism\textsuperscript{43} with linguistic roots and its
+developments in semiology, psychoanalysis, and sociology, as well as the
+influential ``structuralist'' Marxism of Louis Althusser and his
+followers.
+
+Then came the ``rediscovery'' of Antonio Gramsci's thought, particularly
+in relation to popular culture studies, and the French school of
+discourse analysis, among other contributions. But this constant flow of
+analytical frameworks, which very often became nothing more than
+intellectual fads, hindered the development of rational debates that
+would focus the critical discussion of such frameworks to support their
+relevance. However, on other occasions and in other places, these and
+other analytical frameworks have been critically adopted, incorporated
+into the intellectual heritage, and made relevant to the understanding
+of Latin American realities through articulated empirical\marginnote{\textsuperscript{33} Sánchez-Ruiz, \emph{Medios de
+  difusión y sociedad}.} research\marginnote{\textsuperscript{34} Fernando Henrique Cardoso and Enzo Faletto,
+  \emph{Dependencia y desarrollo en América Latina} (Mexico City: Siglo
+  XXI, 1969); Paulo Freire, \emph{Pedagogía del oprimido} (Mexico City:
+  Siglo XXI, 1970).} and\marginnote{\textsuperscript{35} CIESPAL, ``Seminario
+  sobre la investigación de la comunicación en América Latina: Informe
+  provisional,'' \emph{Chasqui}, no. 4 (1973).}
+practical\marginnote{\textsuperscript{36} Luis
+  Ramiro Beltrán, ``Communication Research in Latin America: The
+  Blindfolded Inquiry?'' (paper presented at International Association
+  for Media and Communication Research, Leipzig, East Germany, 1974).} action\marginnote{\textsuperscript{37} CIESPAL,
+  ``Seminario sobre la investigación de la comunicación,'' 15.}---central\marginnote{\textsuperscript{38} CIESPAL, ``Seminario sobre la investigación de la
+  comunicación,'' 25.} formative\marginnote{\textsuperscript{39} CIESPAL, ``Seminario sobre la
+  investigación de la comunicación,'' 18.} tasks\marginnote{\textsuperscript{40} Beltrán, ``Communication Research in Latin
+  America,'' 40.} of\marginnote{\textsuperscript{41} Luis Ramiro Beltrán, \emph{Investigación
+  sobre comunicación en Latinoamérica: Inicio, trascendencia y
+  proyección} (La Paz: Plural Editores / Universidad Católica Boliviana,
+  2000); Beltrán, \emph{Comunicación, política y desarrollo: Selección
+  de textos publicados en la revista Chasqui entre 1982 y 2009} (Quito:
+  CIESPAL, 2014).} graduate\marginnote{\textsuperscript{42} Antonio Pasquali, \emph{Comunicación y cultura de
+  masas} (Caracas: Monte Avila, 1972); Pasquali\emph{, Comprender la
+  comunicación} (Caracas: Monte Avila, 1978).} programs\marginnote{\textsuperscript{43}\setcounter{footnote}{43} Eliseo
+  Verón, \emph{Conducta, estructura y comunicación}, 2nd ed. (Buenos
+  Aires: Tiempo Contemporáneo, 1972).} and
+fundamental objectives of research centers such as ININCO (Institute for
+Communication Research, Central University of Venezuela) or ILET (Latin
+American Institute for Transnational Studies), which promoted the strong
+and vital presence of the ``Latin American critical current'' in
+UNESCO's programs that led in 1980 to the well-known \emph{MacBride
+Report}.\footnote{Sean MacBride et al., \emph{Un solo mundo, voces
+  múltiples: Comunicación e información en nuestro tiempo} (Mexico City:
+  Fondo de Cultura Económica, 1980).}
+
+However, the focus of global attention and concern on ``communication''
+amid the major world economic, political, and ideological-cultural
+crises of the 1980s and onward, as well as the growth and institutional
+consolidation of the academic field and the proliferation of multi-,
+inter-, trans- and even ``post-disciplinary'' perspectives, generated in
+Latin America a growing series of tensions that, in their most positive
+aspect, were manifested in valuable contributions from Jesús
+Martín-Barbero, Eliseo Verón, Renato Ortiz, and Néstor García
+Canclini,\footnote{Jesús Martín-Barbero, \emph{De los medios a las
+  mediaciones: Comunicación, cultura y hegemonía} (Mexico City: Gustavo
+  Gili, 1987); Eliseo Verón, \emph{La semiosis social: Fragmentos de la
+  una teoría de la discursividad} (Buenos Aires: Gedisa, 1988); Renato
+  Ortiz, \emph{Cultura Brasileira e identidade nacional} (São Paulo:
+  Brasiliense, 1985); Ortiz, \emph{A moderna tradição brasileira} (São
+  Paulo: Brasiliense, 1988); Néstor García-Canclini, \emph{Culturas
+  híbridas: Estrategias para entrar y salir de la modernidad} (Mexico
+  City: Grijalbo, 1989).} among others, whose work brought together the
+social sciences and culture and society studies and would come to be
+identified (although not by them) as ``Latin American communicational
+thought.'' This label itself merits some additional reflection.
+
+One of the most elaborate and internationally appreciated formulations
+of the label ``communicational thought'' is that of Bernard Miège,
+clearly located in the French debate for the academic legitimization of
+the Information and Communication Sciences, and sustained in the face of
+the double tension between ``discipline'' and ``interdiscipline'' on the
+one hand, and intellectual consistency and its instrumental uses on the
+other. But ``the condition of this communicational thought is still
+profoundly undecided,'' since it is at the same time an organizer of
+scientific, reflexive, or professional practices and a response to the
+demands of states and large organizations and an inspiration for changes
+in them. ``In one word,'' Miège writes, ``{[}communicational thought{]}
+can be at the origin of or accompany changes in cultural practices or
+modes of dissemination or acquisition of knowledge.''\footnote{Bernard
+  Miège, \emph{El pensamiento comunicacional} (Mexico City: Universidad
+  Iberoamericana, Cátedra UNESCO de Comunicación, 1996), 9--10.} This
+``profound indecision'' is also implicit in the version of the label
+formulated in Brazil by José Marques de Melo\textsuperscript{47} about
+Latin American ``communicational thought,'' although it refers more
+emphatically to an explicit socio-political project, based on a highly
+debatable but influential diagnosis:
+
+\begin{quote}
+The affirmation of the Latin American gaze, vindicating the
+sociocultural identity of studies and research that for half a century
+have been in the process of development in our mega-region, corresponds
+to the purpose of confronting the traditional complex of the colonized.
+Reflecting a type of congenital dependence, this distortion of
+personality supports the production of theoretical frameworks generated
+in ecologies that are distanced from our ways of being, thinking and
+acting. Faced with challenges of this nature, the academic segment of
+communication\marginnote{\textsuperscript{47}\setcounter{footnote}{47} José Marques de
+  Melo, ``Communication Research: New Challenges of the Latin American
+  School,'' \emph{Journal} \emph{of} \emph{Communication} 43, no. 4
+  (1993); Marques de Melo, \emph{Entre el saber y el poder}.} in Latin America does not always react positively,
+adopting a defensive behavior instead of occupying its rightful space at
+the forefront of the world scientific community.\footnote{Marques de
+  Melo, \emph{Entre el saber y el poder,} 16--17.}
+\end{quote}
+
+\noindent Although it could be mistaken as a re-edition of ``the blindfolded
+inquiry,'' this Manichean formulation may have had more of a
+``provocative'' intention, as part of a polemical and strategic
+disposition of the leadership exercised by Marques de Melo to rescue the
+``Latin American School'' in the face of the ``great fascination for
+digital technologies and for the relations of sociability cultivated
+through global computer networks'' of the new generation of students and
+scholars of communication, and to the ``compulsory connection'' to the
+process of scientific and technological globalization, towards which we
+would be being led, ``in tune with the heralds of cultural
+globalization, but without awareness of its effects, especially by the
+gradual erosion of our regional/national identities.''\footnote{Marques
+  de Melo, \emph{Entre el saber y el poder,} 383.} Although the Latin
+American School ``has not yet conquered hegemony'' in the study of
+communication in Latin America, its future ``depends basically on the
+generational transition that is now in process,'' Marques de
+Melo\footnote{Marques de Melo, \emph{Entre el saber y el poder,} 380,
+  382.} affirmed. On this conviction, perhaps, he dedicated a great
+effort throughout his life to the creation and institutional
+strengthening of academic associations of different scales of coverage
+(Brazilian, Lusophone, Latin American, Ibero-American).
+
+Even earlier, in the context of the turn of the century, Latin America
+had to ``accept that the times are not for synthesis,'' as
+Martín-Barbero formulated it, and that it would be necessary to
+``advance gropingly, without a map or with only a nocturnal map . . . a
+map not for escape but for the recognition of the situation from the
+mediations and the subjects,''\footnote{Martín-Barbero, \emph{De los
+  medios a las mediaciones}, 229.} a position that apparently coincided
+with the change of perspective pointed out in the journal
+\emph{Comunicación y Cultura} by Héctor Schmucler, one of its editors,
+although the differences between them were later emphasized. Schmucler
+proposed in 1984 that ``communication is not everything, but it must be
+spoken from everywhere; it must cease to be a constituted object, to be
+an objective to be achieved. From culture . . . communication will have
+a meaning transferable to everyday life.''\footnote{Héctor Schmucler,
+  ``Un proyecto de comunicación/cultura,'' \emph{Comunicación y
+  cultura}, no. 12 (1984): 8.}
+
+Few of the texts that appeared in those years with self-critical reviews
+of the past and prefigurations of the future of the field, written by
+several of the most influential Latin American researchers, were
+optimistic or inspired enthusiastic action. Martín-Barbero himself came,
+a few years later, to promote with others a very radical criticism of
+the academic field, and more precisely of the tendencies he perceived in
+universities, related to ``the slowness, and even stagnation, of a
+critical thinking that, entangled in the internal discussions of the
+academy and ideological inertia, is unable to closely accompany the
+transformations of the social and cultural real.''\footnote{Jesús
+  Martín-Barbero, ed., \emph{Entre saberes desechables y saberes
+  indispensables: Agendas de país desde la Comunicación} (Bogotá: Centro
+  de Competencia en Comunicación para América Latina, 2009), 6.} In view
+of this, Martín-Barbero and others argued, research should be better
+linked to a ``country agenda.'' Despite the growth and institutional
+consolidation of ``training'' programs in communication in all Latin
+American countries, and some progress in research, ``linkage,'' and
+internationalization, inertia and dissatisfaction have been constant, at
+the same time as changes in communication systems, technologies,
+policies, habits, and applications have proliferated.
+
+It is then evident that the use of terms such as ``communicational
+thought'' or ``country agenda'' is usually associated with a position in
+a debate, in a struggle for domination (and denomination) of the field,
+and that is why they serve to reconstruct a history in which certain
+contributions are considered more valuable or significant than others:
+to justify the perspectives adopted in the present, and from there to
+draw lines of development and future action. Something similar can be
+said to be proposed, albeit in different and divergent ways, by two
+books of great erudition and critical acuity that appeared in the last
+decade of the twentieth century outside the Latin American region, but
+also of relevance there, since both display a history of the main
+sources of influence exerted over the Latin American academic field and
+communicational thought: from a French angle, \emph{The Invention of
+Communication} by Armand Mattelart,\footnote{Armand Mattelart, \emph{La
+  invención de la comunicación} (Mexico City: Siglo XXI, 1995).} and
+from an American perspective, \emph{Speaking into the Air: A History of
+the Idea of Communication} by John Durham Peters.\footnote{John Durham
+  Peters, \emph{Speaking into the Air: A History of the Idea of
+  Communication} (Chicago: University of Chicago Press, 1999).} The two
+books have been translated to Spanish and Mattelart's also to
+Portuguese. By way of contrast, Beltrán and co-authors published
+\emph{La Comunicación antes de Colón: Tipos y formas en Mesoamérica y
+Los Andes} (2008)\emph{,} a wonderful historical reconstruction of
+ancient communication practices held by several civilizations before the
+fifteenth century European arrival to ``America.''\footnote{Luis Ramiro
+  Beltrán et al., \emph{La comunicación antes de Colón: Tipos y formas
+  en Mesoamérica y los Andes} (La Paz: Centro Interdisciplinario
+  Boliviano de Estudios de la Comunicación, 2008).} Not surprisingly,
+this book has not been translated to other languages, and even the
+Spanish edition is difficult to get outside Bolivia since there is no
+digital edition.
+
+However, the predominant tension in the Latin American academic field
+since the 1990s centers not on ``historicization'' but rather on
+diverging debates on the ``abandonment of critical
+premises''\footnote{Carlos Ossandón, Claudio Salinas, and Hans Stange,
+  \emph{La impostura crítica: Desventuras de la investigación en
+  comunicación} (Salamanca, Spain: Comunicación Social, ediciones y
+  publicaciones / ICEI Universidad de Chile, 2019).}; the adoption of
+the ``inevitable validity'' of the laws of the market in the field of
+research\footnote{Carlos Hoevel, \emph{La industria académica: La
+  universidad bajo el imperio de la tecnocracia global} (Buenos Aires:
+  Teseo, 2021).}; the dispersion of approaches to the multiple cultural
+``mediations'' of social practices and ``mediatizations'' in
+society\footnote{Mario Carlón, \emph{Circulación del sentido y
+  construcción de colectivos: En una sociedad hipermediatizada} (San
+  Luis, Argentina: Universidad Nacional de San Luis, 2020).}; or in
+other directions, among which ``technologization'' has an important
+place.\textsuperscript{60} In its most general lines, in the
+second decade of the twenty-first century, this \emph{fragmentation}
+could very well continue to describe Latin American communication
+research, which has nevertheless advanced considerably in extension and
+recognition, following very diverse and even divergent patterns of
+academic institutionalization\marginnote{\textsuperscript{60}\setcounter{footnote}{60} Luciano Sanguinetti, \emph{Las revoluciones de la
+  comunicación: Información, conocimiento y cultura; resistencia y
+  hegemonía} (La Plata, Argentina: Universidad Nacional de La Plata,
+  Facultad de Periodismo, 2021).} depending on the country in question, and
+showing complex and opaque structural features that ``foster
+asymmetrical pluralism throughout the region, such that certain Latin
+American scholars are overrepresented in the most prestigious
+international publications while others barely figure.''\footnote{Becerra
+  and Enghel, ``Pluralismo agonista en la internacionalización,'' 31.}
+
+Faced with the accumulation of complaints and data about the scarce
+participation of Latin American production in the most globally
+recognized academic journals, Florencia Enghel and Martín
+Becerra\footnote{Florencia Enghel and Martín Becerra, ``Here and There:
+  (Re)Situating Latin America in International Communication Theory,''
+  \emph{Communication Theory} 28, no. 2 (2018).} coordinated a special
+edition of \emph{Communication Theory} and produced an interesting
+critical reflection on the matter that was subsequently published in
+Spanish in Chile. In their journal article, the authors recognize that
+inequity exists and should not be ignored by those who promote it or
+benefit directly or indirectly from it. ``But paying attention to the
+structural dimension means also taking into account the limitations
+coming from Latin America itself.''\footnote{Becerra and Enghel,
+  ``Pluralismo agonista en la internacionalización,'' 31.} The three
+``structural'' factors they point out as determinants are, first, the
+general context in which communication studies are produced in Latin
+America, characterized ``by the scarcity of non-commercial public
+service media systems'' and by ``the hyper-concentration of private
+media ownership''; second, in relation to academic systems, the
+``absence of public policies and resources---material and
+symbolic---aimed at fostering the wide dissemination of knowledge
+produced at national, regional and international levels''; and third,
+that institutional pressure ``for Latin American communication and media
+studies to adopt thematic concerns and publication formats typical of
+academic work in the North erodes plurality and diversity for South and
+North alike.''\footnote{Becerra and Enghel, ``Pluralismo agonista en la
+  internacionalización,'' 30--31.}
+
+  \enlargethispage{\baselineskip}
+
+This last sentence by Becerra and Enghel, although they do not make it
+explicit, can also be interpreted with regard to the development of
+graduate programs (master's and doctorates) in communication in Latin
+America, their remarkable growth since the 1990s, and the structural
+conditions that characterize them differentially. Coordinated by Maria
+Immacolata Vassallo de Lopes in 2011 as part of the Ibero-American
+Forums organized by Confibercom,\footnote{Ibero-American Confederation
+  of Scientific and Academic Communication Associations (Confederación
+  Iberoamericana de Asociaciones Científicas y Académicas en
+  Comunicación).} the study identified 249 master's and thirty-eight
+doctoral programs in communication operating under very different
+conditions and university regimes in nineteen Latin American countries.
+Despite this large number, most were less than ten years old and had few
+provisions for their ``internationalization.'' The Forum sought to
+cooperatively meet the following \emph{initial} objectives:
+
+\begin{quote}
+1) To draw up a descriptive inventory of the postgraduate programs in
+Communication operating in the Ibero-American region, understanding as
+such the study programs aimed at obtaining doctoral and/or
+master\textquotesingle s degrees, officially recognized by national
+higher education regulations.
+
+2) To identify national trends in the development of postgraduate
+systems in Communication during the last decade, within the framework of
+the educational legislation of each country, including especially the
+evaluation and accreditation systems in force.
+
+3) To explore the institutional frameworks of academic cooperation and
+exchange and of the national mechanisms in force and susceptible to
+being used for the internationalization of the programs.\footnote{Maria
+  Immacolata Vassallo de Lopes, ed., \emph{Posgrados en comunicación en
+  Iberoamérica: Políticas nacionales e internacionales} (São Paulo:
+  Confibercom, 2012), 8.}
+\end{quote}
+
+Unfortunately, this Ibero-American project would not be renewed or
+updated on an ongoing basis, nor was the project taken up by other
+associations. The other two academic projects would suffer the same
+abandonment, as did the international teams formed to develop the
+``Forums'' of ``Public Policies of Communication'' and of ``Scientific
+Journals of Communication Sciences,'' which together with that of
+``Graduate Studies,'' were designed by a group of researchers led by
+José Marques de Melo.\footnote{Margarida Maria Krohling-Kunsch, ed.,
+  \emph{La comunicación en Iberoamérica: Políticas científicas y
+  tecnológicas, posgrado y difusión del conocimiento} (Quito: CIESPAL /
+  Confibercom, 2013).} Although the purpose was to build an entity that
+would bring together the national and regional associations already
+existing in Ibero-America, and the format designed for it seemed very
+appropriate to strengthen internationalization, its institutionalization
+lost continuity and viability in a brief time, coinciding with Marques
+de Melo's illness and death in 2018.
+
+\hypertarget{latin-american-academic-organizations-and-the-internationalization-of-the-field}{%
+\section{Latin American Academic Organizations and the\\\noindent
+Internationalization of the
+Field}\label{latin-american-academic-organizations-and-the-internationalization-of-the-field}}
+
+Over five decades, ALAIC and FELAFACS have alternately gone through
+periods of growth and stability and periods of precarity, as has
+CIESPAL, but with differences due to the latter's character as an
+international organization which is subject to different structural
+factors. At their best these associations have strengthened and expanded
+the ``field'' through their contributions to the consolidation of trends
+of institutional development and regional integration of academic
+studies on communication; while, at their worst, they have failed to
+close evident ``gaps.'' The associations' different compositions and
+priority areas of intervention were conceived from the outset as
+complementary, and on several occasions their leaders have prioritized
+collaboration over the division of tasks, and many of their members have
+been simultaneously or successively members or officials of both.
+However, there have also been episodes of estrangement, mutual
+discredit, or even political confrontation, such as when the Latin
+American support for the IAMCR presidential candidate was divided in
+1996.
+
+As for other regions of the world, IAMCR has been an academic
+organization of significant importance for the development of the
+academic field of communication in Ibero-America.\footnote{Jörg Becker
+  and Robin Mansell, eds., \emph{Reflections on the International
+  Association for Media and Communication Research: Many Voices, One
+  Forum} (Cham, Switzerland: Palgrave Macmillan, 2023).} Since its
+foundation in 1957, due to direct promotion by UNESCO, IAMCR has
+included members from Ibero-America, both individual and institutional,
+and although it has never been notably intense, this participation has
+been constant and has remained a factor that has ``modeled'' the
+functions of international associations of regional scale. According to
+Kaarle Nordenstreng, there is no doubt that the initiative to create
+IAMCR was dominated by Europeans, particularly the French, ``but
+colleagues from countries such as Brazil, Peru, Uruguay, Egypt, Israel,
+India, Indonesia, Japan, Australia, the United States and Canada also
+intervened.''\footnote{Kaarle Nordenstreng, ``Institutional Networking:
+  The Story of the International Association for Media and Communication
+  Research (IAMCR),'' in \emph{The History of Media and Communication
+  Research: Contested Memories}, ed. David W. Park and Jefferson D.
+  Pooley (New York: Peter Lang, 2008), 229.} Since 1968, when IAMCR met
+in Pamplona, its conferences have been hosted by an Ibero-American city
+eleven times: four in Spain, two in Brazil, two in Mexico, and one each
+in Argentina, Venezuela, and Colombia---which constitutes 25 percent of
+the venues in that period.
+
+Simonson and Park assert that transnational academic associations ``have
+been major forces in facilitating the flow of ideas and people,
+solidifying hegemonic and counter-hegemonic paradigms and political
+orientations to communication research and social networks of
+scholars''\footnote{Peter Simonson and David W. Park, eds., \emph{The
+  International History of Communication Study} (New York: Routledge,
+  2016), 69--70.}; and Miquel de Moragas emphasizes the importance of
+academic cooperation in countering the competitiveness that ``the logics
+of current science policy tend to prioritize'' and urges that
+globalization be understood not as unification but as ``interconnection
+of nodes of influence.''\footnote{Miquel de Moragas, ``Las asociaciones
+  de investigación de la comunicación: Funciones y retos'' (paper
+  presented at the Encuentro Internacional de Asociaciones Académicas de
+  Comunicación, Bilbao, Spain, 2014): 6.} By following these and other
+confluent leads, it becomes increasingly clear that the focus of
+attention on tensions and counter-positions is much more illuminating of
+international institutionalization processes than unidirectional flows
+of influences or resources, or the defense of national historical
+``exceptionalisms.'' On the other hand, it also confirms that it is
+methodologically convenient to define both spatial and temporal scales
+to adequately and diversely contextualize transnationalization
+processes.\footnote{Maria Löblich and Stefanie Averbeck-Lietz, ``The
+  Transnational Flow of Ideas and \emph{Histoire Croisée} with Attention
+  to the Cases of France and Germany,'' in \emph{The International
+  History of Communication Study}, ed. Peter Simonson and David W. Park
+  (New York: Routledge, 2016).}
+
+It has already been pointed out that ALAIC was founded and developed in
+its early years as a forum for ``counter-hegemonic action,'' and at the
+same time ``intra-regional cooperation,'' in a socio-political context
+of resistance to authoritarianism (particularly to the military
+governments of the Southern Cone) and to what was then referred to as
+``cultural imperialism.''\footnote{Martin Carnoy, \emph{La educación
+  como imperialismo cultural} (Mexico City: Siglo XXI, 1977); Ariel
+  Dorfman, \emph{Reader's nuestro que estás en la tierra: Ensayos sobre
+  el imperialismo cultural} (Mexico City: Nueva Imagen, 1980).} Given
+the scarcity and fragility of university institutions and academic
+centers for communication research in Latin America during the sixties,
+seventies, and eighties, the research and ``militant theory'' that
+characterized the region were strongly international, or even
+transnational, but were far removed from the more orthodox \emph{canons}
+of scientific-academic institutionalization and university teaching.
+Regarding communication and culture in Latin America until at least the
+1990s, Luiz Gonzaga Motta writes that
+
+\begin{quote}
+\ldots{} the Weberian institutionalization of science (consecration of
+behaviors of the ``scientific community'' through the assimilation of
+social roles proper to science, such as political disinterest,
+rationality, and emotional neutrality) has not taken place, at least not
+in the North American molds. Scientific activity in communication during
+the last three decades (perhaps excepting Brazil), has not been
+institutionalized even in terms of the installation of a proper and
+accepted place for research. In fact, the most significant scientific
+production in this area took place, and still takes place, outside the
+mechanisms of the state (universities, techno-bureaucracy,
+etc.)\footnote{Luiz Gonzaga Motta, ``Las revistas de comunicación en
+  América Latina: Creación de la teoría militante,'' \emph{Telos}, no.
+  19 (1989): 150--51.}
+\end{quote}
+
+\noindent In this line, ALAIC was constituted in response to a growing interest in
+socio-political processes related to the ``media'' yet not oriented
+toward ``academization.'' As such, ALAIC promoted the articulation of
+intellectual positions and research projects developed from thematically
+specialized centers and institutes, with a focus on ``opposing'' social
+movements, even as it also promoted the realization and publication of
+bibliographic accounts of ``research in social communication'' and the
+formation or incorporation of national associations of researchers.
+Nonetheless, and for many reasons, ALAIC's activities decreased in
+intensity and scope from the mid-1980s on, to the extent that a process
+of ``reconstitution'' had to be initiated in 1988 on new bases and
+impulses---precisely those typical of an international academic
+organization, with not only socio-political but also scientific and
+professional references. This institutional ``transformation'' has
+endured such trials as the periodical renewal of its leadership, the
+strengthening and expansion of joint projects with other regional and
+global associations in the field, the biennial organization of
+international congresses and seminars, and the maintenance of two
+scientific journals: \emph{Revista Latinoamericana de Ciencias de la
+Comunicación}, with forty-two issues edited in Portuguese and Spanish
+since 2004; and \emph{Journal of Latin American Communication Research},
+in English and Spanish, with eleven issues published since 2011. Despite
+the growing disproportion between Brazil and the rest of the Latin
+American countries in the number of qualified participants and the
+degrees of institutionalization of the field,\footnote{Maria Immacolata
+  Vassallo de Lopes and Richard Romancini, ``History of Communication
+  Study in Brazil: The Institutionalization of an Interdisciplinary
+  Field,'' in \emph{The International History of Communication Study},
+  ed. Peter Simonson and David W. Park (New York: Routledge, 2016).}
+ALAIC has managed to consolidate itself as a ``Latin American space,''
+open both to the very diverse national and local realities of the region
+and to contact and collaboration with academic bodies from other regions
+of the planet.
+
+Although its scope of action is not primarily research, FELAFACS has
+also been a major driving force for academic support and dissemination
+of Latin American research ever since its formation in October 1981. Its
+work in bringing together university training programs, especially
+undergraduate, and their national associations, and articulating them
+through joint projects on a regional scale, had a determining influence
+on the institutionalization of the academic field. The activities of
+FELAFACS have been widely varied and influential, and have covered the
+twenty countries of the region, although these activities have decreased
+in recent years. Of note are the Latin American \emph{Encuentros}
+(meetings) which FELAFACS convenes every two or three years, the
+countless workshops and training seminars it organizes for teachers and
+scholars across many different universities, cities, and countries, and
+its publication of the journal \emph{Diá-logos de la
+Comunicación}.\footnote{In its print version, fifty-seven issues
+  published from 1987 to 2007 (after sixteen issues of \emph{Bulletin}),
+  and then in digital format until issue ninety-two in 2016.
+  Unfortunately, the collection is not currently available on the
+  internet.} Together these resources have made it possible to
+articulate and address the problems of teaching and, to a lesser extent,
+of communication research around concrete, complex, and often rapidly
+changing social situations. In an unpublished, internal ``evaluative
+report'' from 1997, Wolfgang Donsbach described three basic functions,
+``manifest and latent,'' fulfilled by the Federation:
+
+\begin{quote}
+First, the organization is a forum and a communicational network for
+Latin American faculties of social communication. In this function, the
+organization creates something like a common identity of Latin American
+faculties of social communication.
+
+Secondly, FELAFACS is an educational institution, dedicated to the
+``training of trainers.'' In this sense, the organization creates
+quality. This quality refers on the one hand to the teaching and
+research work and on the other hand to the level of graduates of the
+careers represented in FELAFACS.
+
+Thirdly, FELAFACS fulfills the function of an institution that promotes
+research. In this capacity, FELAFACS can contribute to obtaining more
+knowledge about specific Latin American phenomena and problems in the
+field of public communication.\footnote{Wolfgang Donsbach, ``Proyecto
+  Federación Latinoamericana de Facultades de Comunicación Social
+  (FELAFACS), Informe Evaluativo'' (unpublished report, Fundación Konrad
+  Adenauer, Buenos Aires, 1997), 76, photocopy of a letter addressed to
+  FELAFACS's president.}
+\end{quote}
+
+\noindent It is instructive to weigh this evaluation against FELAFACS's original
+objectives. As Donsbach's description here suggests, the organization
+was ``overtaken'' by the growth in the number of schools and students of
+communication and the modification of national support policies in
+several countries, but also by the generalized predominance of
+professional training projects different from the ``humanistic'' ones
+that motivated its constitution and by the very transformation of social
+communication systems in local, national, and transnational contexts. It
+remains to be seen, twenty-five years later, whether the efforts of the
+current directors of the Federation will lead to renewed perspectives of
+action and reflection as influential as those achieved in the past. The
+``alliance'' with CIESPAL to jointly organize the First Congress of
+Latin American Communication CIESPAL/FELAFACS in October 2023 will have
+to have that renewing effect for both institutions and for the field.
+Many agents of Latin American ``communication fields'' other than the
+strictly academic or scientific ones were invited to join panels and
+seminars set up for reflecting upon the ``Millennium Goals'' and to
+participate in dialogues among diverse communities of ``communicators.''
+
+For more than four decades, ALAIC and FELAFACS have been responsible for
+facilitating the participation of researchers, professors, students, and
+professionals in Latin American meetings that can be considered
+``massive'' by bringing together hundreds or even thousands of
+registered participants in both formal and informal academic activities.
+Amid travel restrictions imposed by the COVID-19 pandemic, the two
+institutions were able to replace face-to-face gatherings with
+``online'' activities while ensuring a return to in-person formats as
+soon as possible. It will soon be necessary to evaluate which of these
+formats ought to be replicated, but surely ``live personal
+communication'' will have to be preserved and strengthened in the field
+of ``communication.''
+
+For now, it should be noted that, during the last thirty years, Latin
+America has regularly held one or two of these meetings per year, either
+an ALAIC Congress or a FELAFACS \emph{Encuentro}, or both. There have
+been a total of thirty-five Latin American meetings, held in fourteen
+different countries: seven in Colombia; five in Peru, Mexico, and
+Brazil; two in Chile, Argentina, and Uruguay; one in Panama, Venezuela,
+Bolivia, Puerto Rico, Cuba, Costa Rica, and Ecuador. In all these
+meetings, a Latin American community of agents of different generations
+and specialties has been consolidated and strengthened, and a
+predictable yet ambivalent result of this consolidation has been the
+fragmentation and dispersion of the academic field, given that these
+newly formed communities are tendentially specialized and have less and
+less in common.
+
+Obviously, this situation is perfectly common---in the disciplines and
+in the specialties of research or action---and the way out may be the
+same as was suggested by sociologist Craig Calhoun in the context of an
+ICA conference some years ago:
+
+\begin{quote}
+In this heterogeneous field what is needed is not pressure towards
+conformity but the production of more and better connections between
+different lines of work. . . . {[}Theory{]} has a special role to play
+in this, but asking the big questions that connect different lines of
+work is something that goes far beyond the domain of theory.\footnote{Craig
+  Calhoun, ``Communication as Social Science (and More),''
+  \emph{International Journal of Communication} 5 (2011).}
+\end{quote}
+
+\hypertarget{towards-an-integrative-internationalization-of-the-latin-american-academic-field}{%
+\section{Towards an Integrative Internationalization of the Latin\\\noindent
+American Academic
+Field}\label{towards-an-integrative-internationalization-of-the-latin-american-academic-field}}
+
+The hypothetical characterization in recent decades of communication
+research as subject to a ``disintegrated internationalization,'' and the
+aim to promote a collective historical reflection based on systematic
+and rigorously analyzed documentation recovered in this work, were also
+the central axes of the inaugural keynote speech which this author
+delivered under the title ``Memory and Historicity of Communication
+Research in Latin America'' at the Fortieth Congress of the Sociedade
+Brasileira de Estudos Interdisciplinares da Comunicação (INTERCOM),
+thanks to a generous invitation aimed at ``internationalizing'' the
+conference.\footnote{Raúl Fuentes-Navarro, ``Memoria e historicidad de
+  la Investigación en Comunicación en América Latina'' (Opening Conference
+  at the Congresso de la Sociedade Brasileira de Estudos
+  Interdisciplinares da Comunicação {[}INTERCOM{]}, Curitiba, Brazil,
+  September 6, 2017).} Both arguments imply the conviction and the
+consequent recognition that the academic field of communication is
+diverse and heterogeneous in Latin America, and therefore simultaneous
+trends of convergence and fragmentation in academic production are
+frequently and clearly manifested. What the main Latin American academic
+associations have managed to consolidate in more than four decades is
+still open to an undetermined future in terms of regional
+``integration,'' but inescapably also to the ``international'' dynamics
+of the field in the broadest sense---that is, on the ``global'' scale,
+or at least on the scale of Western academia. One critical movement,
+which has had its own international correspondences, has been the
+recognition of women in the histories of national and Latin American
+communication fields. Several books on this subject have been edited
+recently, mainly following the initiative of Omar Rincón from the
+Friedrich Ebert Stiftung Program for Latin America and the Caribbean,
+whose anthology \emph{Mujeres de la Comunicación}\footnote{Clemencia
+  Rodríguez et al., eds., \emph{Mujeres de la comunicación} (Bogotá: FES
+  Comunicación, 2020); Vania Sandoval Arenas et al., eds., \emph{Mujeres
+  de la comunicación: Bolivia} (La Paz, Bolivia: FES Comunicación,
+  2022); Claudia Magallanes Blanco and Paola Ricaurte Quijano, eds.,
+  \emph{Mujeres de la comunicación: México} (Mexico City: FES
+  Comunicación, 2022); Alejandra García Vargas, Nancy Díaz Larrañaga,
+  and Larisa Kejval, eds., vol. 1, \emph{Mujeres de la comunicación:
+  Argentina} (Buenos Aires, FES Comunicación, 2022); Clemencia
+  Rodríguez, Amparo Marroquín Parducci, and Omar Rincón, eds.,
+  \emph{Mujeres de la comunicación 2: América Latina y el Caribe}
+  (Bogotá: FES Comunicación, 2023). In 2021, \emph{Pioneras en los
+  estudios latinoamericanos de comunicación}, edited by Yamila Heram and
+  Santiago Gándara, appeared in Argentina. Among the six books, all of
+  them with digital open circulation, 128 profiles of outstanding Latin
+  American women in the field, were published.} offers a collection of
+valuable yet stylistically heterogeneous profiles of women researchers.
+
+While some scholars ``remain convinced that the field primarily reflects
+external paradigms and concerns,'' Latin American development cannot be
+reduced to a projection of foreign contributions.\footnote{Waisbord,
+  ``Communication Studies without Frontiers?,'' 876.} Over a decade ago,
+Miquel de Moragas pointed out that communication research in Latin
+America ``is not homogeneous,'' and yet it responds to a particular,
+common imperative: ``sharing diversity and deconstructing theoretical
+apparatuses on communication based on the foreign experience of the
+great metropolises of the developed Western world.''\footnote{Miquel de
+  Moragas, \emph{Interpretar la comunicación: Estudios sobre medios en
+  América y Europa} (Barcelona: Gedisa, 2011), 302.} It does not seem
+viable or convenient to insist on a mere ``epistemological''
+reconstruction of the evolution of ideas. Nor would it suffice to merely
+acknowledge individual contributions, however extraordinary they may be,
+or to rely solely on a deterministic explanation---wherein macroeconomic
+and geopolitical factors are offered as an explanation for specific
+modalities of cultural or even ideological reproduction of reductionist
+notions of communication. Instead, the elaboration of a consistent and
+guiding historical narrative needs to recognize the complexity and
+multiplicity of the social-historical processes that have been
+interwoven and interdetermined at each of the spatiotemporal scales that
+it is relevant to define as one's own. As part of the social world,
+``which is continually being made, un-made, re-made,'' the
+social-scientific discourse implies a perpetual self-revision of its
+premises and its proposals, its methods and its articulations with the
+other practices and social structures it takes as its object.\footnote{Abbott,
+  \emph{Processual Sociology}.} And thus, reflexively and critically,
+through communication and not in some other way, will the international
+integration Latin American communication scholarship be strengthened and
+advanced.
+
+
+
+
+\section{Bibliography}\label{bibliography}
+
+\begin{hangparas}{.25in}{1} 
+
+
+
+Abbott, Andrew. \emph{Methods of Discovery: Heuristics for the Social
+Sciences}. New York: W. W. Norton, 2004.
+
+Abbott, Andrew. \emph{Processual Sociology.} Chicago: University of
+Chicago Press, 2016.
+
+Anderson, Benedict. \emph{Comunidades imaginadas: Reflexiones sobre el
+origen y la difusión del nacionalismo.} Mexico City: Fondo de Cultura
+Económica, 1993.
+
+Arroyave Cabrera, Jesús, and Rafael González Pardo. ``Bibliometric
+Research on Communication in Scientific Journals in Latin America
+(2009--2018).'' \emph{Comunicar} 30, no. 70 (2022): 85--96.
+\url{https://doi.org/10.3916/C70-2022-07}.
+
+Averbeck-Lietz, Stefanie. ``Communication Studies Beyond the National:
+Connections and Disconnections Between Research Communities and How to
+Study Them.'' \emph{Global Media Journal: German Edition} 2, no. 2
+(2012): 1--10.
+\url{https://www.globalmediajournal.de/index.php/gmj/article/view/113}.
+
+Averbeck-Lietz, Stefanie, and Sarah Cordonnier. ``French and German
+Theories of Communication: Comparative Perspectives with Regard to the
+Social and the Epistemological Body of Science.'' In \emph{The Handbook
+of Global Interventions in Communication Theory,} edited by Yoshitaka
+Miike and Jing Yin, 373--92. New York: Routledge, 2022.
+\url{https://doi.org/10.4324/9781003043348-28}.
+
+Becerra, Martín, and Florencia Enghel. ``Pluralismo agonista en la
+internacionalización de los estudios latinoamericanos de la
+comunicación: Reflexiones a partir de la práctica.'' \emph{Comunicación
+y Medios} 30, no. 43 (2021): 24--35.
+\url{https://doi.org/10.5354/0719-1529.2021.60718}.
+
+Becker, Jörg, and Robin Mansell, eds. \emph{Reflections on the
+International Association for Media and Communication Research: Many
+Voices, One Forum.} Cham, Switzerland: Palgrave Macmillan, 2023.
+\url{https://doi.org/10.1007/978-3-031-16383-8}.
+
+Beltrán, Luis Ramiro. ``Communication Research in Latin America: The
+Blindfolded Inquiry?'' Paper presented at the International Association
+for Media and Communication Research, Leipzig, East Germany, 1974.
+
+Beltrán, Luis Ramiro. ``Alien Premises, Objects, and Methods in Latin
+American Communication Research.'' In \emph{Communication and
+Development: Critical Perspectives}, edited by Everett M. Rogers,
+15--42. Beverly Hills, CA: Sage, 1976.
+
+Beltrán, Luis Ramiro. \emph{Investigación sobre comunicación en
+Latinoamérica: Inicio, trascendencia y proyección.} La Paz: Plural
+Editores / Universidad Católica Boliviana, 2000.
+
+Beltrán, Luis Ramiro. \emph{Comunicación, política y desarrollo:
+Selección de textos publicados en la revista Chasqui entre 1982 y 2009.}
+Quito: CIESPAL, 2014.
+
+Beltrán, Luis Ramiro, Karina Herrera, Esperanza Pinto, and Erick
+Torrico. \emph{La comunicación antes de Colón: Tipos y formas en
+Mesoamérica y los Andes.} La Paz: Centro Interdisciplinario Boliviano de
+Estudios de la Comunicación, 2008.
+
+Boils Morales, Guillermo, and Antonio Murga Frassinetti, eds. \emph{Las
+ciencias sociales en América Latina.} Mexico City: UNAM, 1979.
+
+Bourdieu, Pierre. ``La specificité du champ scientifique et les
+conditions sociales du progrès de la raison.'' \emph{Sociologie et
+Societés} 7, no. 1 (1975): 91--118.
+
+Bourdieu, Pierre. \emph{Homo Academicus.} Stanford: Stanford University
+Press, 1988.
+
+Bourdieu, Pierre. \emph{Science of Science and Reflexivity.} Chicago:
+University of Chicago Press, 2004.
+
+Calhoun, Craig. ``Communication as Social Science (and More).''
+\emph{International Journal of Communication} 5 (2011): 1479--96.
+\href{https://ijoc.org/index.php/ijoc/article/view/1331/622}{https:
+/ijoc.org/index.php/ijoc/article/view/1331/622}.
+
+Cardoso, Fernando Henrique, and Enzo Faletto. \emph{Dependencia y
+desarrollo en América Latina.} Mexico City: Siglo XXI, 1969.
+
+Carlón, Mario. \emph{Circulación del sentido y construcción de
+colectivos: En una sociedad hipermediatizada.} San Luis, Argentina:
+Universidad Nacional de San Luis, 2020.
+
+Carnoy, Martin. \emph{La educación como imperialismo cultural.} Mexico
+City: Siglo XXI, 1977.
+
+Chaffee, Steven H., Carlos Gomez-Palacio, and Everett M. Rogers. ``Mass
+Communication Research in Latin America: Views from Here and There.''
+\emph{Journalism \& Mass Communication Quarterly} 67, no. 4 (1990):
+1015--24. \url{https://doi.org/10.1177/107769909006700402}.
+
+CIESPAL. ``Seminario sobre la investigación de la comunicación en
+América Latina: Informe provisional.'' \emph{Chasqui: Revista
+Latinoamericana de Comunicación}, no. 4 (1973): 11--25.
+\url{https://revistachasqui.org/index.php/chasqui/article/view/2358}.
+
+Craig, Robert T. ``Communication Theory as a Field.''
+\emph{Communication Theory} 9, no. 2 (1999): 119--61.
+\url{https://doi.org/10.1111/j.1468-2885.1999.tb00355.x}.
+
+Craig, Robert T. ``Communication as a Field and Discipline.'' In vol. 2
+of \emph{The International Encyclopedia of Communication,} edited by
+Wolfgang Donsbach, 675--88. New York: Blackwell, 2008.
+
+Demeter, Marton, Dina Vozab, and Francisco José Segado-Boj. ``From
+Westernization to Internationalization: Research Collaboration Networks
+of Communication Scholars from Central and Eastern Europe.''
+\emph{International Journal of Communication} 17 (2023): 1211--31.
+\url{https://ijoc.org/index.php/ijoc/article/view/20176/4046}.
+
+Donsbach, Wolfgang. ``Proyecto Federación Latinoamericana de Facultades
+de Comunicación Social (FELAFACS), Informe Evaluativo.'' Unpublished
+report, Fundación Konrad Adenauer, Buenos Aires, 1997. Photocopy of a
+letter addressed to FELAFACS's president.
+
+Dorfman, Ariel. \emph{Reader's nuestro que estás en la tierra: Ensayos
+sobre el imperialismo cultural.} Mexico City: Nueva Imagen, 1980.
+
+Enghel, Florencia, and Martín Becerra. ``Here and There: (Re)Situating
+Latin America in International Communication Theory.''
+\emph{Communication Theory} 28, no. 2 (2018): 111--30.
+\url{https://academic.oup.com/ct/article-abstract/28/2/111/4994890}.
+
+Freire, Paulo. \emph{Pedagogía del oprimido}. Mexico City: Siglo XXI,
+1970.
+
+Fuentes-Navarro, Raúl. \emph{La emergencia de un campo académico:
+Continuidad utópica y estructuración científica de la investigación de
+la comunicación en México}. Guadalajara: ITESO/Universidad de
+Guadalajara, 1998.
+
+Fuentes-Navarro, Raúl. \emph{Un campo cargado de futuro: El estudio de
+la comunicación en América Latina}. Mexico City: FELAFACS, 1992.
+
+Fuentes-Navarro, Raúl. ``La investigación de la comunicación en América
+Latina: condiciones y perspectivas para el siglo XXI.''
+\emph{Comunicación y Sociedad}, no. 36 (1999): 105--32.
+
+Fuentes-Navarro, Raúl. ``Everett M. Rogers (1931--2004) y la
+investigación Latinoamericana de la comunicación.'' \emph{Comunicación y
+Sociedad} 4 (2005): 93--125.
+\url{https://www.comunicacionysociedad.cucsh.udg.mx/index.php/comsoc/article/view/4096/3853}.
+
+Fuentes-Navarro, Raúl. ``La investigación de la comunicación en América
+Latina: Una internacionalización desintegrada.'' \emph{Oficios
+Terrestres}, no. 31 (2014): 11--22.
+\url{http://perio.unlp.edu.ar/ojs/index.php/oficiosterrestres}.
+
+Fuentes-Navarro, Raúl. ``Institutionalization and Internationalization
+of the Field of Communication Studies in Mexico and Latin America.'' In
+\emph{The International History of Communication Study,} edited by Peter
+Simonson and David W. Park, 325--45. New York: Routledge, 2016.
+
+\pagebreak Fuentes-Navarro, Raúl. ``Memoria e historicidad de la Investigación en
+Comunicación en América Latina.'' Opening Conference at the Congresso de la
+Sociedade Brasileira de Estudos Interdisciplinares da Comunicação
+(INTERCOM), Curitiba, Brazil, September 6, 2017.
+
+Fuentes-Navarro, Raúl. ``Tendencias regionales y transnacionales de la
+investigación de la comunicación en América Latina.'' In \emph{Tejiendo
+nuestra historia: Investigación de la comunicación en América Latina,}
+edited by Delia Crovi Druetta and Raúl Trejo Delarbre, 295--315. Mexico
+City: UNAM, 2018.
+
+Fuentes-Navarro, Raúl. ``Investigación y meta-investigación sobre
+comunicación en América Latina.'' \emph{MATRIZes} 3, no. 1 (2019):
+27--48. \url{http://dx.doi.org/10.11606/issn.1982-8160.v13i1p27-48}.
+
+Fuentes-Navarro, Raúl. ``La producción social de sentido sobre la
+producción social de sentido: De un marco epistemológico a un modelo
+metodológico mediado por la metainvestigación.'' In \emph{Experiências
+metodológicas na comunicação,} edited by Laura Wottrich and Nísia M. do
+Rosário, 343--56. São Paulo, Brazil: Pimenta Cultural, 2022.
+\url{https://doi.org10.31560/pimentacultural/2022.95514}.
+
+Fuentes-Navarro, Raúl. ``Latin American Interventions to the Practice
+and Theory of Communication and Social Development: On the Legacy of
+Juan Díaz Bordenave.'' In \emph{The Handbook of Global Interventions in
+Communication Theory,} edited by Yoshitaka Miike and Jing Yin, 310--23.
+New York: Routledge, 2022.
+\url{https://doi.org/10.4324/9781003043348-23}.
+
+Fuentes-Navarro, Raúl. ``Apresentação: Comunicação e fronteiras;
+Geografias e espaços simbólicos das práticas comunicativas na América
+Latina.'' In \emph{Fronteiras Culturais e Práticas Comunicativas,}
+edited by Daniela Cristiane Ota and Marcus Paulo da Silva, 13--33. Campo
+Grande, Brazil: Editora UFMS, 2023.
+
+Gándara, Santiago, and Yamila Heram. ``Los estudios latinoamericanos de
+comunicación (2000--2018): Consolidación académica, estancamiento
+burocrático o dispersión temática?'' \emph{Astrolabio}, no. 27 (2021):
+276--97. \url{https://doi.org/10.55441/1668.7515.n27.26556}.
+
+Ganter, Sarah Anne, and Félix Ortega. ``The Invisibility of Latin
+American Scholarship in European Media and Communication Studies:
+Challenges and Opportunities of De-Westernization and Academic
+Cosmopolitanism.'' \emph{International Journal of Communication} 13
+(2019): 68--91.
+
+García-Canclini, Néstor. \emph{Culturas híbridas: Estrategias para
+entrar y salir de la modernidad.} Mexico City: Grijalbo, 1989.
+
+\pagebreak García-Canclini, Néstor, ed. \emph{Culturas en globalización: América
+Latina-Europa-Estados Unidos; libre comercio e integración.} Caracas:
+Nueva Sociedad / Seminario de Estudios de la Cultura / CLACSO, 1996.
+
+García Vargas, Alejandra, Nancy Díaz Larrañaga, and Larisa Kejval, eds.
+Vol. 1, \emph{Mujeres de la comunicación: Argentina.} Buenos Aires, FES
+Comunicación, 2022.
+
+Giddens, Anthony. \emph{The Constitution of Society: Outline of the
+Theory of Structuration.} Berkeley: University of California Press,
+1984.
+
+Glander, Timothy. \emph{Origins of Mass Communication Research during
+the Cold War: Educational Efforts and Contemporary Implications.}
+Mahwah, NJ: Lawrence Erlbaum, 2000.
+
+Gómez-Palacio y Campos, Carlos. ``The Origins and Growth of Mass
+Communication Research in Latin America.'' PhD diss., Stanford
+University, 1989.
+
+González-Casanova, Pablo. \emph{Las categorías del desarrollo económico
+y la investigación en ciencias sociales}. Mexico City: UNAM, 1977.
+
+Heram, Yamila, and Santiago Gándara, eds. \emph{Pioneras en los estudios
+Latinoamericanos de comunicación.} Buenos Aires: Teseo Press, 2021.
+
+Hoevel, Carlos. \emph{La industria académica: La universidad bajo el
+imperio de la tecnocracia global.} Buenos Aires: Teseo, 2021.
+
+Huesca, Robert, and Brenda Dervin. ``Theory and Practice in Latin
+American Alternative Communication Research.'' \emph{Journal of
+Communication} 44, no. 4 (1994): 53--73.
+
+Ianni, Octavio. \emph{Enigmas da modernidade-mundo.} Rio de Janeiro:
+Civilização Brasileira, 2000.
+
+Kacowitz, Arie. ``América Latina en el mundo: globalización,
+regionalización y fragmentación.'' \emph{Nueva Sociedad}, no. 124
+(2008): 112--23.
+
+Koivisto, Juha, and Peter D. Thomas, eds. \emph{Mapping Communication
+and Media Research: Paradigms, Institutions, Challenges.} Helsinki:
+University of Helsinki, Communication Research Center, 2008.
+
+Krohling-Kunsch, Margarida Maria, ed. \emph{La comunicación en
+Iberoamérica: Políticas científicas y tecnológicas, posgrado y difusión
+del conocimiento.} Quito: CIESPAL / Confibercom, 2013.
+
+León Duarte, Gustavo Adolfo. \emph{La nueva hegemonía en el pensamiento
+latinoamericano de la comunicación: Un acercamiento a la producción
+científica de la escuela latinoamericana de la comunicación.}
+Hermosillo, Mexico: Universidad de Sonora, 2007.
+
+Löblich, Maria, and Andreas Matthias Scheu. ``Writing the History of
+Communication Studies: A Sociology of Science Approach.''
+\emph{Communication Theory} 21, no. 1 (2011): 1--22.
+\url{https://doi.org/10.1111/j.1468-2885.2010.01373.x}.
+
+Löblich, Maria, and Stefanie Averbeck-Lietz. ``The Transnational Flow of
+Ideas and \emph{Histoire} \emph{Croisée} with Attention to the Cases of
+France and Germany.'' In \emph{The International History of
+Communication Study}, edited by Peter Simonson and David W. Park,
+25--46. New York: Routledge, 2016.
+
+MacBride, Sean, et al. \emph{Un solo mundo, voces multiples:
+Comunicación e Información en Nuestro Tiempo.} Mexico City: Fondo de
+Cultura Económica, 1980.
+
+Magallanes Blanco, Claudia, and Paola Ricaurte Quijano, eds.
+\emph{Mujeres de la comunicación: México.} Mexico City: FES
+Comunicación, 2022.
+
+Marques de Melo, José. ``La investigación Latinoamericana en
+comunicación.'' \emph{Chasqui: Revista Latinoamericana de Comunicación},
+no. 11 (1984): 4--11.
+
+Marques de Melo, José. ``Communication Research: New Challenges of the
+Latin American School.'' \emph{Journal of Communication} 43, no. 4
+(1993): 182--90.
+
+Marques de Melo, José. \emph{Entre el saber y el poder: Pensamiento
+comunicacional latinoamericano.} Monterrey, Mexico: Comité Regional
+Norte de Cooperación con la UNESCO, 2007.
+
+Martín-Barbero, Jesús. ``Retos a la investigación de comunicación en
+América Latina.'' \emph{Comunicación y Cultura}, no. 9 (1982): 99--114.
+
+Martín-Barbero, Jesús. \emph{De los medios a las mediaciones:
+Comunicación, cultura y hegemonía}. Mexico City: Gustavo Gili, 1987.
+
+Martín-Barbero, Jesús, ed. \emph{Entre saberes desechables y saberes
+indispensables: Agendas de país desde la comunicación}. Bogotá: Centro
+de Competencia en Comunicación para América Latina, 2009.
+
+Martín-Barbero, Jesús. ``Pensar la comunicación en Latinoamérica.''
+\emph{Redes: Revista do Desenvolvimento Regional}, no. 10 (2014):
+20--39.
+
+Mattelart, Armand. \emph{La invención de la comunicación.} Mexico City:
+Siglo XXI, 1995.
+
+Miège, Bernard. \emph{El pensamiento comunicacional.} Mexico City:
+Universidad Iberoamericana, Cátedra UNESCO de Comunicación, 1996.
+
+Mora Silva, Julimar del Carmen. ``Utopias and Dystopias of Our History:
+Historiographical Approximation to `The Latin American' in the Mexican
+Social Thought of the 20th Century (Edmundo O'Gorman, Guillermo Bonfil
+Batalla and Leopoldo Zea).'' \emph{História da Historiografia} 11, no.
+28 (2018): 195--218. \url{https://doi.org/10.15848/hh.v0i28.1232}.
+
+Moragas, Miquel de. \emph{Interpretar la comunicación: Estudios sobre
+medios en América y Europa.} Barcelona: Gedisa, 2011.
+
+Moragas, Miquel de. ``Las asociaciones de investigación de la
+comunicación: Funciones y retos.'' Paper presented at the Encuentro
+Internacional de Asociaciones Académicas de Comunicación, Bilbao, Spain,
+2014.
+
+Motta, Luiz Gonzaga. ``Las revistas de comunicación en América Latina:
+Creación de la teoría militante.'' \emph{Telos}, no. 19 (1989): 147--51.
+
+Nordenstreng, Kaarle. ``Institutional Networking: The Story of the
+International Association for Media and Communication Research
+(IAMCR).'' In \emph{The History of Media and Communication Research:
+Contested Memories}, edited by David W. Park and Jefferson Pooley,
+225--48. New York: Peter Lang, 2008.
+
+Núñez Gornés, Luis, and Beatriz Solís Leree, eds. \emph{Comunicación,
+identidad e integración latinoamericana: VII Encuentro Latinoamericano
+de Facultades de Comunicación Social.} Mexico City: FELAFACS / CONEICC /
+Universidad Iberoamericana, 1994.
+
+O'Gorman, Edmundo. \emph{La invención de América: Investigación acerca
+de la estructura histórica del nuevo mundo y del sentido de su devenir}.
+2nd ed. Mexico City: Fondo de Cultura Económica, 1977.
+
+Orozco Gómez, Guillermo. \emph{La investigación de la comunicación
+dentro y fuera de América Latina: Tendencias, perspectivas y desafíos
+del estudio de los medios.} La Plata, Argentina: Universidad Nacional de
+La Plata, 1997.
+
+Ortiz, Renato. \emph{Cultura Brasileira e identidade nacional.} São
+Paulo: Brasiliense, 1985.
+
+Ortiz, Renato. \emph{A moderna tradição Brasileira}. São Paulo:
+Brasiliense, 1988.
+
+Ossandón, Carlos, Claudio Salinas, and Hans Stange. \emph{La impostura
+crítica: Desventuras de la investigación en Comunicación.} Salamanca,
+Spain: Comunicación Social, ediciones y publicaciones / ICEI Universidad
+de Chile, 2019.
+
+Parés i Maicas, Manuel, ed. ``La recerca europea em Comunicació
+Social.'' \emph{Anàlisi, quaderns de comunicació i cultura}, no. 21
+(1997): 1--283.
+
+Pasquali, Antonio. \emph{Comunicación y cultura de masas.} Caracas:
+Monte Avila, 1972.
+
+Pasquali, Antonio. \emph{Comprender la comunicación.} Caracas: Monte
+Avila, 1978.
+
+Peters, John Durham. \emph{Speaking into the Air. A History of the Idea
+of Communication.} Chicago: University of Chicago Press, 1999.
+
+Piñuel-Raigada, José Luis. \emph{La docencia y la investigación
+universitarias en torno a la Comunicación como objeto de estudio en
+Europa y América Latina}. Colección Cuadernos Artesanos de Latina 15. La
+Laguna, Spain: Sociedad Latina de Comunicación Social, 2011.
+
+Pooley, Jefferson D. ``The Four Cultures: Media Studies at the
+Crossroads.'' \emph{Social Media and Society} 2, no. 1 (2016): 1--4.
+\url{https://doi.org/10.1177/2056305116632777}.
+
+Pooley, Jefferson D. ``Die abnehmende Bedeutung des disziplinären
+Gedächtnisses: Der Fall der Kommunikationsforschung.'' In
+\emph{Handbuch} \emph{kommunikationswissenschaftliche}
+\emph{Erinnerungsforschung}, edited by Christian Pentzold and Christine
+Lohmeier, 369--90. Berlin: De Gruyter, 2023.
+
+Portugal Bernedo, Franz, ed. \emph{La investigación en comunicación
+social en América Latina 1970--2000.} 2nd ed. Lima: Universidad Nacional
+Mayor de San Marcos, 2000.
+
+Rodríguez, Clemencia, Claudia Magallanes Blanco, Amparo Marroquín
+Parducci, and Omar Rincón, eds. \emph{Mujeres de la comunicación.}
+Bogotá: FES Comunicación, 2020.
+
+Rodríguez, Clemencia, Amparo Marroquín Parducci, and Omar Rincón, eds.
+\emph{Mujeres de la comunicación 2: América Latina y el Caribe.} Bogotá:
+FES Comunicación, 2023.
+
+Rodríguez-Benito, María Elena, María Esther Pérez-Peláez, and Teresa
+Martín-García. ``Investigación en comunicación: Diferencias entre
+Península Ibérica y América Latina.'' \emph{Cuadernos.info}, no. 54
+(2023): 182--204. \url{https://doi.org/10.7764/cdi.54.51309}.
+
+Rogers, Everett M. ``Communication and Development: The Passing of the
+Dominant Paradigm.'' In \emph{Communication and Development: Critical
+Perspectives,} edited by Everett M. Rogers, 213--40. Beverly Hills, CA:
+SAGE, 1976.
+
+Rogers, Everett M. ``The Empirical and the Critical Schools of
+Communication Research.'' \emph{ICA Communication Yearbook} 5 (1982):
+125--44.
+
+Salzano, Francisco M., and Maria C. Bortolini. \emph{The Evolution and
+Genetics of Latin American Populations.} Cambridge: Cambridge University
+Press, 2002.
+
+Sánchez-Ruiz, Enrique E. \emph{Medios de difusión y sociedad: Notas
+críticas y metodológicas}. Guadalajara: Universidad de Guadalajara,
+1992.
+
+Sánchez-Ruiz, Enrique E. ``Recuperar la crítica: Algunas reflexiones
+personales en torno al estudio de las industrias culturales en
+Iberoamérica en los últimos decenios.'' In \emph{Qué pasa con el estudio
+de los medios:} \emph{Diálogo con las ciencias sociales en
+Iberoamérica,} edited by Enrique E. Sánchez-Ruiz, 121--75. Sevilla, Spain:
+Comunicación Social ediciones y publicaciones, 2011.
+
+Sánchez-Ruiz, Enrique E., and Raúl Fuentes-Navarro. \emph{Algunas
+condiciones para la investigación científica de la comunicación en
+México.} Cuadernos Huella 17. Guadalajara: ITESO, 1989.
+
+Sandoval Arenas, Vania, Rigliana Portugal Escobar, and Sandra Villegas
+Taborga, eds. \emph{Mujeres de la comunicación: Bolivia.} La Paz,
+Bolivia: FES Comunicación, 2022.
+
+Sanguinetti, Luciano. \emph{Las revoluciones de la comunicación:
+Información, conocimiento y cultura; resistencia y hegemonía.} La Plata,
+Argentina: Universidad Nacional de La Plata, Facultad de Periodismo,
+2021.
+
+Schenkel, Peter. ``La importancia del consenso Latinoamericano.''
+\emph{Nueva Sociedad}, no. 15 (1974): 3--10.
+
+Schenkel, Peter. \emph{La integración latinoamericana y el desarrollo}.
+Cuadernos de Chasqui 1. Quito: CIESPAL, 1984.
+
+Schmucler, Héctor. ``Un proyecto de comunicación/cultura.''
+\emph{Comunicación y Cultura}, no. 12 (1984): 3--8.
+
+Segado-Boj, Francisco, Juan José Prieto-Gutiérrez, and Jesús Díaz-Campo.
+``Redes de coautorías de la investigación Española y Latinoamericana en
+comunicación (2000--2019): Cohesión interna y aislamiento
+transcontinental.'' \emph{Profesional de la Información} 30, no. 3
+(2021): 1--34. \url{https://doi.org/10.3145/epi.2021.may.05}.
+
+Serbin, Andrés, ed. \emph{América Latina y el Caribe Frente a un nuevo
+orden mundial: Poder, globalización y respuestas regionales.} Buenos
+Aires: Icaria Editorial / Ediciones CRIES, 2018.
+
+Simonson, Peter, and David W. Park, eds. \emph{The International History
+of Communication Study}. New York: Routledge, 2016.
+
+Torrico Villanueva, Erick. \emph{La comunicación pensada desde América
+Latina (1960--2009)}. Salamanca, Spain: Comunicación Social, ediciones y
+publicaciones, 2016.
+
+Trejo-Delarbre, Raúl. ``Seis décadas de investigación latinoamericana
+sobre comunicación: Una propuesta de periodización.'' In \emph{Tejiendo
+nuestra historia: Investigación de la comunicación en América Latina,}
+edited by Delia Crovi Druetta and Raúl Trejo Delarbre, 312--52. Mexico
+City: UNAM, 2018.
+
+Vassallo de Lopes, Maria Immacolata, ed. \emph{Posgrados en comunicación
+en Iberoamérica: Políticas nacionales e internacionales.} São Paulo:
+Confibercom, 2012.
+
+Vassallo de Lopes, Maria Immacolata, and Richard Romancini. ``History of
+Communication Study in Brazil: The Institutionalization of an
+Interdisciplinary Field.'' In \emph{The International History of
+Communication Study}, edited by Peter Simonson and David W. Park,
+346--66. New York: Routledge, 2016.
+
+Véjar Pérez-Rulfo, Carlos, ed. \emph{Globalización, comunicación e
+integración Latinoamericana.} Mexico City: Plaza y Valdés / CIICH UNAM /
+UACM, 2006.
+
+Verón, Eliseo. \emph{Conducta, estructura y comunicación}. 2nd ed.
+Buenos Aires: Tiempo Contemporáneo, 1972.
+
+Verón, Eliseo. \emph{La semiosis social: Fragmentos de una teoría de la
+discursividad.} Buenos Aires: Gedisa, 1988.
+
+Waisbord, Silvio. ``Communication Studies without Frontiers? Translation
+and Cosmopolitanism across Academic Cultures.'' \emph{International
+Journal of Communication} 10 (2016): 868--86.
+
+Waisbord, Silvio. \emph{Communication: A Post-Discipline.} Cambridge,
+MA: Polity Press, 2019.
+
+\pagebreak Wallerstein, Immanuel. \emph{Impensar las ciencias sociales: Límites de
+los paradigmas decimonónicos.} Mexico City: Siglo XXI / CIICH UNAM,
+1998.
+
+Wallerstein, Immanuel. ``From Sociology to Historical Social Science:
+Prospects and Obstacles.'' \emph{British Journal of Sociology} 51, no. 1
+(2000): 25--35.
+
+Wallerstein, Immanuel. \emph{The Uncertainties of Knowledge.}
+Philadelphia: Temple University Press, 2004.
+
+
+
+\end{hangparas}
+
+
+\end{document}
