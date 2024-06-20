@@ -1,0 +1,1123 @@
+% see the original template for more detail about bibliography, tables, etc: https://www.overleaf.com/latex/templates/handout-design-inspired-by-edward-tufte/dtsbhhkvghzz
+
+\documentclass{tufte-handout}
+
+%\geometry{showframe}% for debugging purposes -- displays the margins
+
+\usepackage{amsmath}
+
+\usepackage{hyperref}
+
+\usepackage{fancyhdr}
+
+\usepackage{hanging}
+
+\hypersetup{colorlinks=true,allcolors=[RGB]{97,15,11}}
+
+\fancyfoot[L]{\emph{History of Media Studies}, vol. 4, 2024}
+
+
+% Set up the images/graphics package
+\usepackage{graphicx}
+\setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
+\graphicspath{{graphics/}}
+
+\title[Forgetting / Cybernetics]{Forgetting / Cybernetics} % longtitle shouldn't be necessary
+
+% The following package makes prettier tables.  We're all about the bling!
+\usepackage{booktabs}
+
+% The units package provides nice, non-stacked fractions and better spacing
+% for units.
+\usepackage{units}
+
+% The fancyvrb package lets us customize the formatting of verbatim
+% environments.  We use a slightly smaller font.
+\usepackage{fancyvrb}
+\fvset{fontsize=\normalsize}
+
+% Small sections of multiple columns
+\usepackage{multicol}
+
+% Provides paragraphs of dummy text
+\usepackage{lipsum}
+
+% These commands are used to pretty-print LaTeX commands
+\newcommand{\doccmd}[1]{\texttt{\textbackslash#1}}% command name -- adds backslash automatically
+\newcommand{\docopt}[1]{\ensuremath{\langle}\textrm{\textit{#1}}\ensuremath{\rangle}}% optional command argument
+\newcommand{\docarg}[1]{\textrm{\textit{#1}}}% (required) command argument
+\newenvironment{docspec}{\begin{quote}\noindent}{\end{quote}}% command specification environment
+\newcommand{\docenv}[1]{\textsf{#1}}% environment name
+\newcommand{\docpkg}[1]{\texttt{#1}}% package name
+\newcommand{\doccls}[1]{\texttt{#1}}% document class name
+\newcommand{\docclsopt}[1]{\texttt{#1}}% document class option name
+
+
+\begin{document}
+
+\begin{titlepage}
+
+\begin{fullwidth}
+\noindent\LARGE\emph{Overlay Re-publication
+} \hspace{66mm}\includegraphics[height=1cm]{logo3.png}\\
+\noindent\hrulefill\\
+\vspace*{1em}
+\noindent{\Huge{Forgetting / Cybernetics\par}}
+
+\vspace*{1.5em}
+
+\noindent\LARGE{Diego Gómez-Venegas} \href{https://orcid.org/0000-0001-5640-204X}{\includegraphics[height=0.5cm]{orcid.png}}\par\marginnote{\emph{Diego Gómez-Venegas, ``Forgetting / Cybernetics,'' \emph{History of Media Studies} 4 (2024), \href{https://doi.org/10.32376/d895a0ea.c519a1b0}{https://doi.org/ 10.32376/d895a0ea.c519a1b0}.} \vspace*{0.75em}}
+\vspace*{0.5em}
+\noindent{{\large\emph{Humboldt-Universität zu Berlin}, \href{mailto:diego@gomezvenegas.com}{diego@gomezvenegas.com}\par}} \marginnote{\href{https://creativecommons.org/licenses/by-nc/4.0/}{\includegraphics[height=0.5cm]{by-nc.png}}}
+
+% \vspace*{0.75em} % second author
+
+% \noindent{\LARGE{<<author 2 name>>}\par}
+% \vspace*{0.5em}
+% \noindent{{\large\emph{<<author 2 affiliation>>}, \href{mailto:<<author 2 email>>}{<<author 2 email>>}\par}}
+
+% \vspace*{0.75em} % third author
+
+% \noindent{\LARGE{<<author 3 name>>}\par}
+% \vspace*{0.5em}
+% \noindent{{\large\emph{<<author 3 affiliation>>}, \href{mailto:<<author 3 email>>}{<<author 3 email>>}\par}}
+
+\end{fullwidth}
+
+\vspace*{2em}
+
+
+\hypertarget{abstract}{%
+\section{Abstract}\label{abstract}}
+
+This article aims to trace epistemological connections between
+cybernetics and German media theory by emphasizing the notion of
+\emph{forgetting}. This notion is presented as a central condition for
+problematizing, first, the human-machine coupling pointed out by
+cybernetics and, second, the rise of the machines that has concerned
+German media theory for decades. To this end, the article draws a line
+connecting an early text by Friedrich Kittler and Heinz von Foerster's
+work on memory---a connection that will also be discussed in the light
+of findings and statements by Moritz Hiller and Jan Müggenburg. Finally,
+this article will outline a (still hypothetical) way to problematize the
+techno-epistemological scope of Project Cybersyn through the lens of
+such a notion.\footnote{This is an updated version---mostly in terms of
+  language and structure, but also slightly in terms of content---of an
+  article published in early-2020 in the first issue of Chronus Art
+  Center's \emph{CAC/CAFAcat Editorial} journal. Diego Gómez-Venegas,
+  ``Forgetting / Cybernetics. History of Media Studies,''
+  \emph{CAC/CAFAcat Editorial} 1, no. 1 (2020). Republished with
+  permission. This article is also part of the author's doctoral
+  research on Project Cybersyn, developed at the Institute for
+  Musicology and Media Studies, Humboldt-Universität zu Berlin.}
+
+
+
+
+
+\enlargethispage{2\baselineskip}
+
+\vspace*{23em}
+
+\noindent{\emph{History of Media Studies}, vol. 4, 2024}
+
+
+ \end{titlepage}
+
+ \newthought{In 2013, a large group} of scholars gathered at New York University's
+Deutches Haus to commemorate the work and life of the late media
+theorist Friedrich Kittler. There, Bernhard Dotzler, who gave the only
+German-language presentation\footnote{See Bernhard Dotzler, ``The Sirens
+  Go Silent - Friedrich Kittler Part 11: Bernhard Dotzler,'' filmed
+  March 2013 at Deutsches Haus at NYU, New York, NY, video, 48:34,
+  \url{https://youtu.be/_uZJg8lwfJU}.} of what would later be translated
+as \emph{Idiocy, Forgetting, and Outdatedness,}\footnote{See Bernhard
+  Dotzler, ``Idiocy, Forgetting, and Outdatedness: Friedrich Kittler's
+  Avant-Gardism and the `Time for Other Stories','' in \emph{The
+  Technological Introject: Friedrich Kittler between Implementation and
+  the Incalculable}, eds. Jeffrey Champlin et al (New York: Fordham
+  University Press, 2018), 35--45.} emphasized what he calls Kittler's
+``avant-gardism.'' Namely, the approach that the author of the
+\emph{Aufschreibesysteme} unfolded---there, in the now distant days of
+the late-1970s---by declaring that it was already ``time for other
+stories.''\footnote{Friedrich Kittler, ``Forgetting,'' \emph{Discourse}
+  3 (1981{[}1979{]}): 116; quoted in Dotzler, ``Idiocy, Forgetting, and
+  Outdatedness,'' 38.} Accordingly, by moving beyond and somehow
+escaping from literary studies, Kittler would pave the way for what
+would later be known as German media theory---the field that would
+remain recursively connected to cybernetic thinking from its
+foundations.\footnote{See Jan Müggenburg, ``Bats in the Belfry: On the
+  Relationship of Cybernetics and German Media Theory,'' \emph{Canadian
+  Journal of Communication} 42 (2017): 467--84.} Thus, through an
+intervention that forced his audience to automatically switch languages
+for encoding and decoding on the fly, or simply invited them ``to feel
+free to leave,''\footnote{Dotzler, ``The Sirens Go Silent - Friedrich
+  Kittler Part 11,'' 2:22.} Dotzler reminds us of the structural
+centrality of the notion of \emph{forgetting} in Kittler's radical move.
+
+In that spirit, this article will look back to a time before the
+publication of Kittler's pivotal habilitation thesis, \emph{Discourse
+Networks} {[}\emph{Aufschreibesysteme}{]},\footnote{See Friedrich
+  Kittler, \emph{Aufschreibesysteme 1800/1900} (München: Fink, 1985).
+  Also, see Friedrich Kittler, \emph{Discourse Networks 1800/1900}
+  (Stanford: Stanford University Press, 1990).} and will pay particular
+attention to Dotzler's remarks in order to trace the nodal point that
+would help us to witness, to understand, and ideally to problematize,
+the connection between cybernetics and German media theory. But this
+will also imply looking at Moritz Hiller's research\footnote{See Moritz
+  Hiller, ``Unter Aufschreibesystemen: `Eine Adresse im
+  \sout{Adressbuch} IC der Kultur,'\,'' \emph{Metaphora} 1 (2015):
+  II/1--26.} when he claims that, contrary to what Kittler later
+claimed,\footnote{See John Armitage, ``From Discourse Networks to
+  Cultural Mathematics: An Interview with Friedrich A. Kittler,''
+  \emph{Theory, Culture \& Society} 23, no. 7-8 (2006): 17--38.} the
+founding discussion around the notion of \emph{Discourse Networks} was
+neither influenced by Shannon's mathematical theory of
+communication,\footnote{See Claude E. Shannon and Warren Weaver,
+  \emph{The Mathematical Theory of Communication} (Urbana: University of
+  Illinois Press, 1998 {[}1949{]}).} nor was a ``free
+application''\footnote{Armitage, ``From Discourse Networks to Cultural
+  Mathematics,'' 19.} of it\emph{.} Rather, as Jan Müggenburg has
+pointed out,\footnote{See Müggenburg, ``Bats in the Belfry,'' 475--78.}
+it was rather a development influenced by an early familiarity with the
+work of cyberneticians such as Heinz von Foerster.
+
+Consequently, the central issue that this article seeks to address lies
+in the fact that, beyond any implicit emphasis on the
+\emph{transmission} and \emph{processing} functions of media technology
+that Friedrich Kittler had deployed by stressing, with Shannon, the role
+of statistics, probabilities, noise, and channel, the actual operation
+that activated the link between German media theory and cybernetics
+would be the \emph{problem of memory}. In other words, given that
+``transfer and storage are two sides of one coin,''\footnote{Wolfgang
+  Ernst, ``Archives in Transition: Dynamic Media Memories,'' in
+  \emph{Digital Memory and the Archive} (Minneapolis: University of
+  Minnesota Press, 2013), 100.} as Wolfgang Ernst has pointed out, what
+seems to define not only the link between cybernetics and German media
+theory, but perhaps the very essence of each of these fields, is the key
+ambivalence between \emph{transmission} and \emph{storage} that media
+technologies produce. Therefore, the human-machine coupling---insofar as
+it is understood here as a central object of research for both
+cybernetics and German media theory---will be considered in these pages
+as the actual manifestation of the aforementioned nodal point; i.e., as
+the true embodiment of the scope of cybernetics, and even more so, of
+its entangled existence around and within German media theory. Thus, the
+sentence ``Media determine our situation,''\footnote{Friedrich Kittler,
+  \emph{Gramophone, Film, Typewriter} (Stanford: Stanford University
+  Press, 1999), xxxix.} one of Kittler's most well-known statements and
+perhaps the (deceptive) starting point of his explicit analytical
+program on media technologies, can find its rationale a few hundred
+pages back.\footnote{The above quote---``Media determine our
+  situation''---marks the actual beginning of Kittler's book
+  \emph{Gramophone, Film, Typewriter}, and so it could be argued that
+  all the reasoning that supports such a statement is to be found in the
+  remaining chapters and pages of that book. Even more, it could be also
+  argued that this work marks the beginning of Kittler's second
+  period---the one concerned with media technologies---and thus, that
+  the cybernetic strands of his work must be found there. This article
+  contends, however, that it is his earlier work that draws the
+  theoretical complex that, as a \emph{hinge} between his literary and
+  media theoretical periods, points to Kittler's cybernetic program. On
+  Kittler\textquotesingle s periods, see Geoffrey Winthrop-Young,
+  ``Introduction,'' in \emph{Kittler and the Media} (Cambridge: Polity
+  Press, 2011), 1--7.} Paradoxically, despite the warning of the Berlin
+School of Media Archaeology and, of course, of Kittler himself, it is
+through the study of written texts that this article will address these
+questions. For this reason, what follows should not necessarily be seen
+as a media archaeology, but rather as a kind of genealogy.
+
+\hypertarget{forgetting}{%
+\section{Forgetting}\label{forgetting}}
+
+In 1979, in a small anthology entitled \emph{Texthermeneutik:
+Aktualität, Geschichte, Kritik} {[}Text-Hermeneutics: Present, History,
+Critique{]}, the 36-year-old (still) literary scholar Friedrich Kittler
+presented an article succinctly titled \emph{Vergessen
+}{[}Forgetting{]}.\footnote{See Friedrich Kittler, ``Vergessen,'' in
+  \emph{Texthermeneutik: Aktualität, Geschichte, Kritik}, ed. Ulrich
+  Nassen (Paderborn: Ferdinand Schöningh, 1979), 195--221\emph{.}} Two
+years later, in 1981, an English translation appeared in the US journal
+\emph{Discourse.}\footnote{See Kittler, ``Forgetting.''} There, Kittler
+laid out an early set of arguments that, as the recursion of time now
+reveals, would not only outline a critique of the traditions that
+sustained the field that demarcated the scholar's own position at the
+time, but would also constitute an act of radical departure that would,
+in turn, mark the attempt to draw a new field---a field whose boundaries
+would be as fragmented as to seek and promote the struggle between the
+old world of letters and the not-so-old realm of circuits. Such a task,
+however, begins by looking at Nietzsche. It is in the work of the
+(first) philosopher and (then) genealogist that Kittler finds the thread
+to begin weaving the notion of \emph{forgetting} as a key element for
+understanding the media-conditioned scope of the processes of memory in
+contemporary cultures. Interestingly, this connection invoked an
+\emph{untimely}---perhaps a too early one\footnote{In the German
+  article, \emph{Vergessen}, Kittler cites Nietzsche's work \emph{Vom
+  Nutzen und Nachteil der Historie für das Leben} {[}On the Utility and
+  Liability of History for Life{]} from the collection
+  \emph{Unzeitgemässe Betrachtungen} {[}Unfashionable Observations, or
+  Untimely Meditations{]}, which was originally published in Leipzig in
+  1874. However, in the English translation of this article,
+  \emph{Forgetting}, the editors of the journal \emph{forgot} to use the
+  already translated and published English version of Nietzsche's work,
+  and instead allowed the translators to automatically translate---that
+  is, without paying attention to already archived storage devices---the
+  quote in question. In this article, as it will be seen below, such a
+  particular act of \emph{forgetting} is challenged.}---reflection on
+the then impossible systems of control and communication between the
+animal and the human being:
+
+\begin{quote}
+The human being might ask the animal: `Why do you just look at me like
+that instead of telling me about your happiness?' The animal wanted to
+answer, `Because I always immediately forget what I wanted to say'---but
+it had already forgotten this answer and hence said nothing, so that the
+human being was left to wonder.\footnote{Friedrich Nietzsche, ``On the
+  Utility and Liability of History for Life,'' in \emph{Unfashionable
+  Observations} (Stanford: Stanford University Press, 1995), 87.}
+\end{quote}
+
+\noindent Kittler thus embarks himself on a project, on a journey, that will lead
+him to analyze the techniques and technologies that would allow humans
+to distance themselves from other animals: speaking, reading, writing,
+and thus \emph{storage devices}. ``So,'' Kittler argues, ``it is only on
+paper that the `human being' originates, this being, \emph{per
+definitionem} distinct from the animal.''\footnote{Kittler
+  ``Forgetting,'' 90.} In other words, what preoccupies Kittler in the
+ante-penultimate decade of the 20th century, are the material processes
+that not only define the human condition, but even more so configure the
+transitions and transformations of such a condition. For if these
+material processes, these techniques and technologies, change, then it
+is not only not strange, but expected, that human beings will also
+change as a consequence.
+
+However, the German scholar's main concern is that these elements have
+historically been taken for granted, as if ``memory {[}were{]}
+considered an attribute or even a peculiarity of the `human
+being.'\,''\footnote{Kittler ``Forgetting,'' 90.} But on the contrary,
+precisely because we forget, and moreover because we have entrusted our
+memory and knowledge to what he calls ``storage devices'' and
+``mnemo-techniques,''\footnote{Kittler ``Forgetting,'' 90.} Kittler
+initially sees in discourse analysis---not only Foucault's, but also
+Nietzsche's---the procedure for inquiring into these \emph{writing
+systems}. But such an approach also implies a critique, and thus it is
+possible to argue that another mode of analysis must underlie the
+researcher's general program:
+
+\begin{quote}
+Discourse analysis, by contrast, means to let the `human being' be. I
+forget every day whether I forget or remember. But that is not the
+question. The question is where and how those memory systems function
+that philosophy ascribed to the `human being.'\footnote{Kittler
+  ``Forgetting,'' 90.}
+\end{quote}
+
+\noindent And later, \emph{literally} announcing his departure, he continues:
+
+\begin{quote}
+Archives themselves provide plenty of material to archivize. Only
+imperial myths propagate the belief that sentences are eternal once they
+have been hewn into stone, once they have become lapidary. No storage
+device operates in isolation. Archives are hooked up with other
+archives, directly or via interfaces, and are themselves archivized in
+other archives. Archives require input and output stations (even if
+these be just sense organs and brains). Archives contain mechanisms that
+bring about and/or prevent the erasure of their data. The development of
+electronic computers has merely provided precise terms and circuit
+diagrams for factors which come into play in all cases of
+archivizing.\footnote{Kittler ``Forgetting,'' 93.}
+\end{quote}
+
+\noindent 
+For Kittler, therefore, no more simple discourse analyses---as if that
+had ever been the case---because even archives have to operate in
+networks in order to avoid \emph{forgetting}, or rather to prevent us
+humans from doing so. Ironically, however, insightful Friedrich knows
+that not everything has been said or written. This is because Kittler's
+main criticism of Foucauldian discourse analysis is precisely what the
+old-fashioned ``archeologist simply forgot''\footnote{Friedrich Kittler,
+  \emph{Gramophone, Film, Typewriter} (Stanford: Stanford University
+  Press, 1999), 5.}: that in the 20th century such networks went far
+beyond books and letters. Thus, in 1979, just\newpage\noindent as he would put it almost
+15 years later\footnote{See Friedrich Kittler, ``The World of The
+  Symbolic -- A World of The Machine,'' in \emph{Literature, Media,
+  Information Systems}, ed. John Johnston (Amsterdam: OPA Amsterdam
+  B.V., 1997), 133. See also Friedrich Kittler, ``Die Welt des
+  Symbolischen -- eine Welt der Maschine,'' in \emph{Draculas
+  Vermächtnis. Technische Schriften} (Leipzig: Reclam, 1993), 62.} in
+the midst of his media-analytical phase, Kittler refers to computer data
+storage devices as the actual material manifestation of the processes
+that regulate the circulation of information---at that time still mostly
+characterized as knowledge---in modern cultures. According to the
+fugitive literary scholar,\footnote{According to Moritz Hiller, by
+  1976---the year in which Friedrich Kittler would have first publicly
+  referred to his research subject in technological terms---the scholar
+  would have already spent years experimenting with electrotechnical
+  media. See Hiller, ``Unter Aufschreibesystemen,'' II--8.} programmable
+read-only memories (PROMs), on the one hand, and random-access memories
+(RAMs), on the other, become the key operational model and thus a
+critical media-epistemological way to characterize the flow, the
+circuit, the exchange of information between archives and human beings.
+Since PROMs are the set of deeper permanent instructions to initiate
+operations within the system, and RAMs are the devices to store only the
+necessary data to operate in the present, this new coupling between
+humans and archival (information) systems emerges as conditioned by the
+ambivalent nature of a programmable permanence and a permanent
+transition.\footnote{See Ernst, ``Archives in Transition,'' 99.}
+
+\begin{quote}
+People, once simply PROM's who were programmed once and for all through
+baptism, village schools, and the order of estates, became RAM's. In
+order to supply storage space for new books, new knowledge, new
+programs, information had to be made erasable---and according to
+Nietzsche understanding is the erasure of signifiers.\footnote{Kittler
+  ``Forgetting,'' 99.}
+\end{quote}
+
+\noindent In other words, what Kittler is able to discern at this early stage of
+his career is that when, in the mid-1900s, archives become technological
+information systems, the only thing that remains permanent is not
+knowledge but the commands to access it---the entry barriers or
+protocols---and then knowledge itself becomes information that is
+constantly erasable and rewritable---that is, \emph{forgettable}. What
+is more, by being plugged into these systems, our very being as humans
+becomes not only a product, but the embodiment of such a technological
+\emph{forgetting}. Whereas in earlier epochs, in many cultures, people
+were encouraged, if not forced, to learn by heart the knowledge they
+could acquire from the archives and storage devices to which they had
+access---i.e., libraries and books---in modern times, not only the
+ever-increasing amount of information, but also the very techno-logical
+structures that sustained it, would have turned people into RAM modules.
+From then on, the very act of searching for the desired information
+implied running the protocols that would make this procedure possible,
+and looking for the requested data points one address \emph{at a time.}
+But since all the many addresses and data points that would have to be
+consulted before a successful search could be carried out would occupy
+valuable and limited memory capacity, such \emph{at a time} would always
+imply \emph{forgetting} the previously registered data, and then it
+would also literally mean operating in\newpage\noindent one and only one time---as in a
+random-access memory, in a present that unfolds as presence.
+
+Then, people learn to learn by technologically \emph{forgetting}. Here
+seems to lie the cybernetic core of Friedrich Kittler's media
+theoretical program.
+
+In this regard, there are two paths that might show that the emergence
+of this program may also respond to concrete connections between the
+fields in question---literary studies and cybernetics. Thus, following
+what Jan Müggenburg has shown,\footnote{Although Jan Müggenburg
+  emphasizes the fact that cybernetic thinking and theories became
+  popular among German postmodernists in the 1980s, thus influencing
+  German media theory from then on, he also points out, following Moritz
+  Hiller (2015), that Kittler may have received the influence of
+  cybernetics indirectly, already in the 1970s, through the works of
+  Watzlawick, Luhmann, and Schmidt. However, this article suggests that
+  Kittler may have been directly exposed to the work of Heinz von
+  Foerster already in that decade, obscure and indirect references
+  notwithstanding. See Müggenburg, ``Bats in the Belfry,'' 475--78.}
+this article argues that both of these paths, as the conjecture has it,
+lead to Heinz von Foerster's work on memory.
+
+On the one hand, and even beyond the particularly precise conceptual
+coincidence, Kittler's ``Forgetting'' offers a specific indication that
+allows this article to strongly suggest that Kittler might have
+indirectly referred to von Foerster's lecture \emph{Quantum Mechanical
+Theory of Memory}\footnote{See Heinz von Foerster, ``Quantum Mechanical
+  Theory of Memory,'' in \emph{Cybernetics \textbar{} Kybernetik: The
+  Macy-Conferences 1946-1953. Volume I / Band I. Transactions /
+  Protokolle}, ed. Claus Pias (Zurich-Berlin: Diaphanes, 2003), 98--121.}
+in his arguments. Comparing the library system with computational
+memories and procedures, and further referring to a ``cunning reader''
+or user of such a library, who in the scholar's view ``is an address
+selector of the sort that is hooked up to the latest generations of IBM
+computers,'' Kittler adds that when this search system overcomes
+``harmless books'' and libraries, ``the {[}computational{]} address
+selector equipped with a \emph{randomness generator} sends the incoming
+data to \emph{free positions}, the exact address of which does not
+appear at any of the many output stations.''\footnote{Kittler,
+  ``Forgetting,'' 94. {[}Emphasis in the published English translation.
+  However not present in the original in German{]}.} It is precisely
+this techno-logical explanation---the one with \emph{randomness
+generators} and \emph{free positions}---that gives this article the
+space to unfold its conjecture.
+
+What Heinz von Foerster, the Austrian-American cybernetician, presented
+in the aforementioned lecture at the Macy Conferences in 1949, was the
+outline of a theory of memory in three steps: the phenomenological
+(explained by quantum mechanical means), the psychological, and the
+biophysical.\footnote{See von Foerster, ``Quantum Mechanical Theory of
+  Memory,'' 98.} The second step---which may have been of particular
+interest to Kittler given his ongoing attention to poststructuralism and
+psychoanalysis\footnote{Kittler, ``Forgetting,'' 94.}---explains
+diagrammatically how the mental procedure by which a human being
+memorizes a series of nonsense syllables would work. Such a procedure is
+defined by this nonsense information being ``fixed on a certain carrier,
+many of which may be in the brain ready to be impregnated by such an
+elementary impression.''\footnote{von Foerster, ``Quantum Mechanical
+  Theory of Memory,'' 100.} Von Foerster calls these
+ready-to-be-impregnated elements ``free carriers,''\footnote{von
+  Foerster, ``Quantum Mechanical Theory of Memory,'' 101.} and goes on
+to point out that it is possible to ``assume that such a carrier is not
+able to carry forever its impregnation but only during a certain time
+and decays after time τ to a free carrier.''\footnote{von Foerster,
+  ``Quantum Mechanical Theory of Memory,'' 101.} In other words, if
+\emph{nonsense syllables} are tantamount to \emph{random data}, which is
+sent to \emph{free positions} or \emph{carriers}, then Kittler's early
+media theory of \emph{forgetting} could have found its origin right at
+the dawn of cybernetics. And, of course, this correlation, this
+conjecture, does not simply obey the interpretation of meanings, or even
+the equivalence of syntactic structures, but the exact matching of
+characters. Says von Foerster:
+
+\begin{quote}
+Some time ago I was trying to work out a relation between the physical
+and the psychological time. Certainly, both these times would be
+proportional to each other if our memory would work like a
+tape-recorder: any incoming information would be stored indefinitely.
+Recall of a certain event would give exactly the same time structure as
+previously observed. We know, however, that isn't so. As time elapses we
+lose a certain amount of information by forgetting. Hence I tried to
+start with a simple theory of forgetting.\footnote{von Foerster,
+  ``Quantum Mechanical Theory of Memory,'' 98.}
+\end{quote}
+
+\noindent What is more, in his lecture the cybernetician argues that in order to
+develop such a theory, he needs ``a psychological process which deals
+with impressions of which the elements are as independent as possible of
+each other.''\footnote{von Foerster, ``Quantum Mechanical Theory of
+  Memory,'' 98.} Interestingly, von Foerster finds his case study---and
+this point takes this article already to the second path of its
+argument---in the work on memory developed by the German psychologist
+Hermann Ebbinghaus.\footnote{von Foerster, ``Quantum Mechanical Theory
+  of Memory,'' 99.}
+
+As Moritz Hiller points out, while the first part of Friedrich Kittler's
+seminal work \emph{Aufschreibesysteme} {[}Discourse Networks{]} was
+practically finished by 1976, the second part, on ``the language of
+technical communication,'' would be written ``between the end of 1979
+and May 1982.''\footnote{Hiller, ``Unter Aufschreibesystemen,'' II--10.
+  {[}Translation by the author{]}.} In other words, the article
+\emph{Vergessen}, published around July 1979,\footnote{See Ulrich
+  Nassen, ``Vorwort,'' in \emph{Texthermeneutik: Aktualitat, Geschichte,
+  Kritik}, ed. Ulrich Nassen (Paderborn: Ferdinand Schöningh, 1979), 7.}
+could be read as the epistemic hinge that draws the radical turn that
+characterizes Kittler's work, and perhaps the new field of German media
+theory as a whole. For, once again in the case of the
+\emph{Aufschreibesysteme}, one can observe that Kittler devotes an
+entire section of the second part of this book to Ebbinghaus's
+psychophysics:
+
+\begin{quote}
+Nietzsche and Ebbinghaus presupposed forgetfulness, rather than memory
+and its capacity, in order to place the medium of the soul against a
+background of emptiness or erosion. A zero value is required before acts
+of memory can be quantified. Ebbinghaus banned introspection and thus
+restored the primacy of forgetting on a theoretical level. On the one
+hand, there was Nietzsche's delirious joy at forgetting even his
+forgetfulness; on the other, there was a psychologist who forgot all of
+psychology in order to forge its algebraic formula.\footnote{Kittler,
+  \emph{Discourse Networks}, 207.}
+\end{quote}
+
+\noindent As Heinz von Foerster pointed out in his 1949 Macy Conference lecture,
+he would ``use results observed by Ebbinghaus during his study of the
+forgetting process'' where ``the experimenter teaches a group of
+subjects 100 nonsense syllables until everyone knows these syllables by
+heart.''\footnote{von Foerster, ``Quantum Mechanical Theory of Memory,''
+  99.} According to von Foerster, the experimenter would have examined
+the subjects daily, plotting the number of syllables remembered on a
+graph whose baseline would be a function of time. Thus, if ``any
+observed event leaves an impression which can be divided into a lot of
+elementary impressions,'' where ``any event leads initially to number
+\emph{N}\textsubscript{0} of elementary impressions,'' then it would be
+possible to state that ``{[}a{]}fter a certain time \emph{t} the number
+of existing elementary impressions may be called \emph{N.}'' What the
+cybernetician is looking for, then, ``is a function which connects the
+number \emph{N} with number \emph{N}\textsubscript{0} and the time
+\emph{t},'' that is to say, the ``forgetting-coefficient.''\footnote{von
+  Foerster, ``Quantum Mechanical Theory of Memory,'' 98.}
+
+The human being forgets, and such a process can be scientifically
+quantified in order to know exactly both the amount of information that
+can be humanly memorized---either consciously, unconsciously, or
+hallucinatorily,\footnote{von Foerster, ``Quantum Mechanical Theory of
+  Memory,'' 105.} and the time it takes for this information to
+disappear from our being. And what Friedrich Kittler knew in his
+all-too-contemporary journey was that, ironically, in order to control
+the forgetting-coefficient, the only resource left to humans was to be
+permanently coupled to machines whose internal operations were based
+precisely on processes of \emph{forgetting}---``{[}t{]}his is how
+electronic memories forget the `human being.'\,''\footnote{Kittler,
+  ``Forgetting,'' 94.}
+
+\hypertarget{cybernetics}{%
+\section{Cybernetics}\label{cybernetics}}
+
+Therein lies the paradox that runs through cybernetics and German media
+theory---a paradox that prevents us from answering in a single movement
+whether such a coupling would respond to a case of negative or rather
+positive feedback. And just as Norbert Wiener---one of the founding
+fathers of cybernetics---acknowledged J. Clerk Maxwell's paper on
+governors as a cornerstone in the prehistory of this interdisciplinary
+field,\footnote{See Norbert Wiener, ``Introduction,'' in
+  \emph{Cybernetics: or Control and Communication in the Animal and the
+  Machine} (Cambridge: MIT Press, 1985 {[}1948/1961{]}), 11.} perhaps
+this article will benefit from a brief digression to try to prove how
+rooted the idea of \emph{forgetting} might be in cybernetics.
+
+Although Maxwell's work on governors---the mechanical devices used in
+the 18th and 19th centuries as ``regulators of
+machinery''\footnote{See J. Clerk Maxwell, ``On Governors,''
+  \emph{Proceedings of the Royal Society of London} 16 (1867-1868): 271.}---is
+more clearly related to the realm of physics and mechanical engineering,
+its conceptual scope can shed some light on the issue of feedback in the
+way it is discussed here. Accordingly, this work will prove essential in
+the long run for measuring the extent of cybernetics\footnote{See Otto
+  Mayr, ``Maxwell and the Origins of Cybernetics,'' \emph{Isis} 62, no.
+  4 (1971): 424--44.} and, more importantly here, the human-machine
+coupling in which \emph{forgetting} operates. Maxwell offers a
+conceptual distinction between \emph{moderators} and \emph{governors}.
+In the former, the ``the corrective action {[}\ldots{]} is directly
+proportional to {[}the{]} overspeed''\footnote{Mayr, ``Maxwell and the
+  Origins of Cybernetics,'' 427.} to be regulated in a given machine,
+this process of regulation thus being prone to receive the internal
+malfunctions of the machine in question. The latter, on the other hand,
+the actual object of Maxwell's interest, would be those devices
+constituted by an ``additional {[}and independent{]} mechanism that
+translates any output error into a corrective action that increases
+steadily until the output error has entirely disappeared.''\footnote{Mayr,
+  ``Maxwell and the Origins of Cybernetics,'' 427.} This description
+offers us an interesting point of reflection, because if such
+independent devices are conceptually equivalent, or at least similar, to
+the carriers that are ``not able to carry forever its impregnation but
+only during a certain time,'' which then decay and become ``a free
+carrier,''\footnote{von Foerster, ``Quantum Mechanical Theory of
+  Memory,'' 101.} ready to be impregnated by the immediately following
+amount of information---as if the previous one had never existed---it
+would be fair to argue that the essential structure of the notion of
+\emph{forgetting} can already be found in the early rise of machines,
+whose increasing autonomy cybernetics described and helped to improve.
+If this is the case, then perhaps it would be possible to say that what
+cyberneticians like von Foerster did was to identify a kind of autonomy
+whose operational nature was already present in human biological
+behavior---an operational nature that scholars like Kittler would later
+place at the center of an enterprise aimed at updating the humanities,
+by redescribing the human condition itself.
+
+\enlargethispage{\baselineskip}
+
+When Norbert Wiener, the Mexican physician Arturo Rosenblueth, and
+Wiener's research assistant Julian Bigelow wrote \emph{Behavior, Purpose
+and Teleology}\footnote{See Arturo Rosenblueth, Norbert Wiener, and
+  Julian Bigelow, ``Behavior, Purpose and Teleology,'' \emph{Philosophy
+  of Science} 10, no. 1 (January 1943): 18--24.} in Cambridge,
+Massachusetts, in 1943---more than 70 years after Maxwell's paper on
+governors---an early yet inevitable problematization and categorization
+of the human and machine (co-)existence was set in motion. Through a
+conceptual analysis of behavior, the authors sought to emphasize the
+role of purpose and the importance of negative feedback---teleology in
+their terminology---in constructing a transversal understanding of the
+modes in which both organisms and machines respond to their environment,
+and pursue goals in such a context.\footnote{See Rosenblueth, Wiener,
+  and Bigelow, ``Behavior, Purpose and Teleology,'' 24.} Thus,
+cybernetics begins to emerge as an analytical way of thinking that
+focuses on the becoming of the entities that populate this world, in
+which biological and machine structures not only merge, but also
+recursively explain each other.\footnote{See Rosenblueth, Wiener, and
+  Bigelow, ``Behavior, Purpose and Teleology,'' 22.} Moreover, the
+contribution of Maxwell's study of governors to science in general drew
+a thin but strong line that allowed these 1940s researchers to argue
+that every purposeful behavior in the world is driven by negative
+feedback; i.e., by ``the margin of error at which {[}an{]} object {[}or
+organism{]} stands at a given time with reference to a relatively
+specific goal,''\footnote{Rosenblueth, Wiener, and Bigelow, ``Behavior,
+  Purpose and Teleology,'' 19.} where such an error is informed by the
+output of the object-organism, and the margin is then fed back to it in
+the form of input. Consequently, even if these researchers would state
+that, unlike human organisms, ``{[}l{]}earning and memory'' in machines
+would remain ``quite rudimentary'' for a while, what Heinz von Foerster
+proposed six years later with his ``forgetting-coefficient'' should be
+seen here as a substantial escalation of the Massachusetts team's
+argument.
+
+The question remains, however, whether von Foerster's and Kittler's
+\emph{forgetting} would obey purposeful behavior in the long run. For
+both the cybernetician and the media theorist would assert that such a
+process, \emph{forgetting}, prevails even in unconscious behavior. On
+the one hand, von Foerster argued that in the human organism ``sensory
+receptors'' can also be seen as ``short-term'' carriers ``which transmit
+consciously or unconsciously their impregnation immediately to the
+carriers''\footnote{von Foerster, ``Quantum Mechanical Theory of
+  Memory,'' 105.} of the memory; an argument that, from the point of
+view of this analysis, renders unclear the existence of a control
+mechanism that regulates the margin of error between the output of the
+human body and its eventual goal, if it does not simply declare its
+absence---all this, of course, with the understanding that the
+cybernetician did not really discuss the human-machine coupling in his
+lecture at the Macy Conference, but only human memory by cybernetic
+means. On the other hand, Kittler would explicitly ``attach'' machines
+to the human body in order to develop his approach to \emph{forgetting}.
+In this line, he will insist on that such a process requires
+acknowledging that ``consciousness is only the imaginary interior view
+of media standards.''\footnote{Kittler, ``The World of The Symbolic -- A
+  World of The Machine,'' 132.} In other words, Kittler's media
+theoretical program even radicalizes cybernetics by not only suggesting
+but stating that humans have delegated the control mechanisms that
+regulate the difference between their outputs and purposes---voluntarily
+or not, consciously or not---to machines. ``Le monde symbolique, c'est
+le monde de la machine,''\footnote{Jacques Lacan, \emph{Le séminaire II:
+  Le moi dans la théorie de Freud et dans la technique de la
+  psychanalyse} (Paris: Le Seuil, 1978), 63, quoted in Kittler,
+  ``Vergessen,'' 202.} Kittler wrote in \emph{Vergessen}, because, as he
+well knew, by the 1970s Ebbinghaus's nonsense syllables had already been
+replaced, through the materialization of ``presence and
+absence,''\footnote{Jacques Lacan, ``Psychoanalysis and cybernetics, or
+  on the nature of language,'' in \emph{The Seminar of Jacques Lacan,
+  Book II, The Ego in Freud's Theory and in the Technique of
+  Psychoanalysis 1954-1955}, ed. Jacques-Alain Miller, trans. Sylvana
+  Tomaselli (New York: W.W. Norton \& Company, 1991), 303.} by ASCII
+series of seven or eight bits. Nevertheless, the question remains: How
+is it that such an apparently unconscious technological
+delegation---given that it operates as a continuous feedback---avoids
+the emergence of ``clumsy behavior'' derived from the feedback, which
+becomes ``positive instead of negative for certain frequencies of
+oscillation''?\footnote{Rosenblueth, Wiener, and Bigelow, ``Behavior,
+  Purpose and Teleology,'' 20.}
+
+Thus, the human might have asked the machine: Why are you just reading
+my output like that instead of telling me about your presence? But the
+human, unconsciously, had already forgotten about awareness and such
+presence, and so said nothing---leaving themself to wonder.
+
+\hypertarget{cybernetic-synergy}{%
+\section{Cybernetic Synergy}\label{cybernetic-synergy}}
+
+Turing tests aside,\footnote{See Alan M. Turing, ``Computing Machinery
+  and Intelligence,'' \emph{Mind: A Quarterly Review of Psychology and
+  Philosophy} 59, no. 236 (October 1950): 433--60.} it is worth
+insisting on and recalling that the problem of memory, both in ``the
+animal and the machine,'' has concerned cybernetics since its nominal
+foundation: ``A very important function of the nervous system, and, as
+we have said, a function equally in demand for computing machines, is
+that of \emph{memory}, the ability to preserve the results of past
+operations for use in the future.''\footnote{Norbert Wiener, ``Computing
+  Machines and the Nervous System,'' in \emph{Cybernetics: or Control
+  and Communication in the Animal and the Machine} (Cambridge: MIT
+  Press, 1985 {[}1948/1961{]}), 121. {[}Emphasis in the original{]}.}
+But as Norbert Wiener also knew---in the wake of Alan Turing's
+work\footnote{See Wiener, ``Computing Machines and the Nervous System,''
+  125.}---on the radical threshold of this machine-driven era that he so
+eloquently analyzed and described, a correlation between past and future
+could only be activated through the mediation of a memory that could
+``record quickly, be read quickly, and be erased quickly.''\footnote{Wiener,
+  ``Computing Machines and the Nervous System,'' 121.} In other words,
+already in the 1940s, if not even in the previous decade,\footnote{See
+  Alan M. Turing, ``On Computable Numbers, With and Application to the
+  Entscheidungsproblem,'' \emph{Proceedings of the London Mathematical
+  Society} s2-42, no. 1 (January 1937): 230--65.} the forerunners of
+cybernetics understood that any ``permanent record'' that was to
+constitute an analytical source for ``future behavior,''\footnote{See
+  Wiener, ``Computing Machines and the Nervous System,'' 121.} had to be
+processed through technologies of erasure. Even more, Wiener argued that
+just as a ``short-time memory'' could be implemented in electrical
+circuits by using devices such as ``\emph{telegraph-type
+repeaters},''\footnote{Wiener, ``Computing Machines and the Nervous
+  System,'' 122. {[}Emphasis in the original{]}.} there was already
+sufficient evidence at that time ``to believe that {[}something
+similar{]} happens in our brains during the retention of
+impulses.''\footnote{Wiener, ``Computing Machines and the Nervous
+  System,'' 122.}
+
+However, despite any possible implicit connection between the
+developments unfolded in Princeton, (any) Cambridge, or Manchester, the
+explicit articulation and inclusion of the notion of \emph{forgetting}
+as a key element of the field of cybernetics is done only by Heinz von
+Foerster.
+
+The Austrian-American cybernetician reaffirmed this premise during his
+later days in Pescadero, California, in the preface to his book
+\emph{Understanding Understanding} (2003). Given that it is only through
+learning and understanding that it is possible to discover that ``one
+forgets an amount of data proportional to the amount of data one has in
+store at any one time,'' a truly mathematical mind would conclude very
+early, even as a schoolboy, that such a proportion ``corresponded to
+some sort of logarithmic decay of memory.''\footnote{Heinz von Foerster,
+  ``Preface,'' in \emph{Understanding Understanding: Essays on
+  Cybernetics and Cognition} (New York: Springer-Verlag, 2003), v.}
+Moreover, since it is only by browsing through bookshelves\footnote{See
+  Kittler, ``Forgetting,'' 93--94.} that one arrives at the material
+proof of the fact that the operations of the human mind can be
+interrogated by algebraic analyses, and thus that it responds to
+them---such as in ``a graph showing a decaying line labeled
+`Ebbinghaus's Forgetting Curve'\,''\footnote{von Foerster, ``Preface,''
+  v.}---the epistemological core of cybernetics cannot be disassociated
+from a genealogy of knowledge and its apparatuses.
+
+Thus, apart from the experiments of the psychologist Hermann Ebbinghaus,
+when it comes to cybernetic apparatuses as such, it might seem that
+there are not many applied cases that can help us to genealogically and
+archaeologically investigate how the operational constitution of the
+human-machine coupling---perhaps the main condition of contemporary
+media cultures---is based on the cybernetic operation of
+\emph{forgetting}. There is, however, at least one case that is useful.
+
+In 1971, an epistolary exchange between technologists in Chile and
+England activated a plan to design a system that would apply the
+principles of management cybernetics to the Chilean economy.\footnote{See
+  Diego Gómez-Venegas, ``Cybersyn y la memoria simbólica del papel,''
+  \emph{Artnodes,} no. 23 (January 2019).} This country had just
+undergone unprecedented socialist political reforms that included the
+nationalization of several companies. This process required the
+implementation of truly sophisticated management techniques if the
+government was to effectively keep pace with the increasing complexity
+of the state-run economy. Thus, this correspondence began with the
+technological director of the Chilean Development Agency, Fernando
+Flores, who asked the management cybernetics expert Stafford Beer to
+guide the implementation of his own work in the Chilean context. The
+exchange continued with the British cybernetician typing his response to
+Flores's call, which was not only positive, but enthusiastic.\footnote{See
+  Alberto Mayol, ``Cuando la utopía es el fórceps para alumbrar una
+  nueva era,'' in \emph{The Counterculture Room}, ed. FabLab Santiago
+  (Barcelona: Polígrafa, 2017), 24--25.} Thus, the project later known
+as Cybersyn was configured as an enterprise consisting of four parts: 1)
+a network of teletypewriters called Cybernet, which would place an
+input/output node in each nationalized company participating in the
+system; 2) a central processing node called Cyberstride, which would
+statistically analyze the data sent by the companies; 3) a simulation
+suite called CHECO, which would model possible scenarios for the local
+economy, based on relations between the processed information and
+international economic flows; and 4) an operations room called the
+Opsroom, where seven senior government officials and experts would
+discuss and make data-driven decisions, which would then be fed back to
+the nodes in the companies, always through the system's
+infrastructure.\footnote{See Eden Medina, \emph{Cybernetic
+  Revolutionaries: Technology and Politics in Allende's Chile}
+  (Cambridge: The MIT Press, 2011), 96.} And while important scholarship
+has been written about the socio-technical and political aspects that
+surrounded the case and would have defined its scope,\footnote{See Claus
+  Pias, ``Unruhe und Steuerung. Zum utopischen Potential der
+  Kybernetik,'' in \emph{Die Unruhe der Kultur. Potentiale des
+  Utopischen}, ed. Jörn Rosen and Michael Fehr (Weilerswist-Metternich:
+  Velbrück Wissenschaft, 2004); ``Der Auftrag. Kybernetik und Revolution
+  in Chile,'' in \emph{Politiken der Medien}, ed. Daniel Gethmann and
+  Markus Stauff (Zurich-Berlin: Diaphanes, 2005); Sebastian Vehlken,
+  ``Environment for Decision -- Die Medialität einer kybernetischen
+  Staatsregierung. Eine medienwissenschaftliche Untersuchung des
+  Projekts Cybersyn in Chile 1971-73'' (master\RL{'}s thesis,
+  Ruhr-Universität Bochum, 2004); Eden Medina, ``Designing Freedom,
+  Regulating a Nation: Socialist Cybernetics in Allende\RL{'}s Chile,''
+  \emph{Journal of Latin American Studies} 38, no. 3 (2006): 571--606;
+  \emph{Cybernetic Revolutionaries.}} this article argues that not
+enough has yet been said about the actual cybernetic human-machine
+coupling that Cybersyn could have set in motion.
+
+Hence the importance of \emph{forgetting} as a (first) conceptual
+apparatus linking cybernetics and German media theory. And for the same
+reason, there is the importance of Project Cybersyn as perhaps one of
+the few applied cases of cybernetics that could help us to witness
+whether such a theoretical apparatus transcends its \emph{symbolic}
+status and proves to be as \emph{real} as it is
+\emph{imaginary}\textsubscript{78}---that
+is, truly technological.
+
+In each input/output node of the Cybernet, a human being would type a
+series of information according to the protocols implemented by the
+system, by the project. Thus, through the persistent severity of the
+Q-W-E-R-T-Y keyboards, through the implacable grids drawn by the punched
+paper tapes of the teletypewriter, this procedure would silently
+eradicate any space for semantics and interpretation. The bodies of the
+typists would then become, perforation by perforation, a surface\marginnote{\textsubscript{78}\setcounter{footnote}{78} This refers to Jacques Lacan's registers of
+  the real, the symbolic, and the imaginary which Friedrich Kittler
+  translated into media theory in order to explain how the technological
+  functions of transmission, processing, and storage define our
+  situation. See Kittler ``The World of the Symbolic -- A World of The
+  Machine,'' 135. {[}Note added in the 2024 update for clarification{]}.} of
+inscription---an always erasable surface of inscription. Attached to the
+machine by a procedure that divided every meaning into individual
+symbols, and thus, into a code of presence and absence that could only
+be read by other machines, ``humans change their position.''\footnote{Kittler,
+  \emph{Gramophone, Film, Typewriter}, 210.} This is why random access
+memory seems to have been a key and distributed cybernetic component of
+Project Cybersyn.\footnote{In an earlier paper, I argued that the
+  typists behind Cybernet's teletypewriters had to be considered
+  read-only memory modules, or ROMs. I was wrong. This was a
+  misinterpretation of Kittler's article ``The World of the Symbolic --
+  A World of the Machine,'' which, ironically, I formulated before
+  including ``Forgetting'' in my research. According to Kittler, every
+  typist, or more radically, every human being, must be considered here
+  as a RAMs. See Gómez-Venegas, ``Cybersyn y la memoria simbólica del
+  papel''; and Kittler, ``Forgetting.''} But again, this is still a
+conjecture. More research is needed to determine the exact nature of the
+protocols mentioned above, and thus, the exact structure of the series
+of information that the typists typed into their teletypewriters. In the
+same way, a media archaeological work on such a device is also
+necessary. This is so, because we must be able to structurally define
+the input/output operations of the teletypewriter with precision if we
+want to technologically understand the data-driven human-machine
+coupling that this device could have activated. However, what we already
+know---e.g., that Cybersyn's telex network proved to be reliable and
+strong,\footnote{See Medina, \emph{Cybernetic Revolutionaries}, 149.}
+that a specific protocol was designed for each industrial sector and
+company, and that every day a typist sat in front of a teletypewriter
+device to serially enter the company's daily
+operations\footnote{Isaquino Benadof (former Cyberstride chief
+  programmer), email message to the author, August 21, 2018.}---allows
+this article to outline a preliminary hypothesis, suggesting that such a
+network would have constituted an always erasable, an always rewritable,
+network of information and telecommunications where device and human
+being were part of a single but interconnected random access node, where
+the technological operation of \emph{forgetting} was
+sovereign.\footnote{A friendly reminder to the reader that the original
+  version of this article was published in early-2020---but actually
+  written in late 2018---and that all of the research necessary to turn
+  this informed conjecture into an archivally documented investigation
+  has already been done---a process that, in turn, has refined and even
+  corrected some of the statements in this and the next paragraph. Until
+  the dissertation containing this final research is published, see
+  Diego Gómez-Venegas, ``Encoding from/to the Real: On Cybersyn's
+  Symbolic Politics of Transmission,'' in \emph{Frictions: Inquiries
+  into Cybernetic Thinking and Its Attempts towards
+  Mate{[}real{]}ization} , ed. Diego Gómez-Venegas (Lüneburg: meson
+  press, 2023), 91--117. {[}Note added in the 2024 update for
+  clarification{]}.}
+
+Similarly, the central processing node, an IBM 360/50 mainframe computer
+connected to a teletype machine that served as an input peripheral,
+received the data coming from the Cybernet nodes in the form of punched
+paper tapes.\footnote{Benadof, email message to the author.} There, a
+software suite programmed in Assembler and PL360---plus some routines
+written in Cobol and Fortran where punched paper cards were also
+fundamental---allowed the daily statistical analysis of the
+data.\footnote{Benadof, email message to the author.} In other words,
+the permanent procedures of the system, its ROM, either written in the
+machine itself or stored on perforated pieces of paper that the machine
+could handle and decode, would ensure that \emph{forgetting} would not
+be forgotten.
+
+If ``it is only on paper that the `human being' originates,'' it may be
+that, as a reborn or renewed species, ``humans change their position''
+through it as well. Thus, it seems that German media theory and
+cybernetics---as an essential composite---can help us understand how and
+why media cultures have moved from storing to remembering to erasing to
+\emph{forgetting}; and, perhaps more importantly, how this technological
+process came to determine our relationship to the past, the present, and
+the future---our condition as historical or, rather,\newpage\noindent
+more-than-historical beings. A case like Cybersyn provides the facts;
+Kittler's and von Foerster's theories of \emph{forgetting} provides the
+methods.
+
+
+
+In summary, this article has first attempted to genealogically trace the
+emergence and relevance of the notion of \emph{forgetting} in both
+German media theory and in cybernetics. To this end, connections were
+drawn between the early works of Friedrich Kittler and Heinz von
+Foerster. This was done in the wake of Jan Müggenburg's article ``Bats
+in the Belfry,'' in which he points out that von Foerster's thinking
+could have reached Kittler indirectly through Siegfried J. Schmidt, for
+example.\footnote{Müggenburg, ``Bats in the Belfry,'' 476--77.}
+Alternatively, however, this text has re-read and examined Kittler's
+``Forgetting'' and von Foerster's \emph{Quantum Mechanical Theory of
+Memory} to suggest a more direct influence, the ramifications of which
+can also be seen in Kittler's \emph{Discourse Networks}, as well as in
+\emph{Gramophone, Film, Typewriter}, and \emph{The World of the Symbolic
+-- A World of the Machine}. Second, this article has also studied Moritz
+Hiller's \emph{Unter Aufschreibesystemen} in order to insist with him
+that just as Shannon's \emph{Mathematical Theory of Communication} is
+not a founding element of German media theory, the \emph{problem of
+memory}, and more precisely the question of \emph{forgetting}, signals
+such a founding root. Accordingly, the fact that this question---as a
+thin, sometimes hard to see, but nevertheless strong, matted
+thread---crosses German media theory and cybernetics weaving a web of
+relations, can ultimately be seen as a unique fabric that constitutes
+the common core of both fields. Finally, this article has attempted to
+outline a preliminary re-examination of Project Cybersyn through the
+question of \emph{forgetting}, in order to not only point out the
+centrality that this transversal fabric would play in the analysis of
+media cultures and their antecedents, but also to suggest that such a
+project could prove critical in assessing the scope of the notion of
+\emph{forgetting}, and, similarly, the performance of German media
+theories and cybernetics when it comes to the analysis of modern
+knowledge and its technologies.
+
+As a result, some questions are only sketched here, not in search of
+immediate answers, but in an attempt to delineate future areas of
+investigation. For example, only two of Cybersyn's
+subprojects---Cybernet and Cyberstride---have been preliminarily
+discussed in these pages, deliberately avoiding the spectacular Opsroom,
+the part of the project that has received, unfairly, all the attention
+in the past. And while I have stated in previous articles that the
+Opsroom must be forgotten in order to grasp the true cybernetic scope of
+Project Cybersyn,\footnote{See Gómez-Venegas, ``Cybersyn y la memoria
+  simbólica del papel.''} a more nuanced approach will make it possible
+to understand that only by focusing our attention and archaeological
+gaze on efforts like Cybernet and Cyberstride will we be able to fully
+comprehend the role that spaces and devices such as the Opsroom would
+have played in the configuration of technologies of \emph{forgetting},
+as well as in the transitional state of \emph{the archive}, and even
+more so in the permanent but somehow always forgotten presence of
+cybernetics in our cultures.
+
+``Black out.''\footnote{Kittler, ``Forgetting,'' 116.} In times of
+cybernetics, when presence equals present in a constant feedback loop,
+``memory is literally permanently in transition.''\footnote{Ernst,
+  ``Archives in Transition,'' 97.}
+
+
+
+
+\section{Bibliography}\label{bibliography}
+
+\begin{hangparas}{.25in}{1} 
+
+
+
+Dotzler, Bernhard. ``The Sirens Go Silent - Friedrich Kittler Part 11:
+Bernhard Dotzler.'' Filmed March 2013 at Deutsches Haus at NYU, New
+York, NY, video, 48:34. \url{https://youtu.be/_uZJg8lwfJU}.
+
+Dotzler, Bernhard. ``Idiocy, Forgetting, and Outdatedness: Friedrich
+Kittler's Avant-Gardism and the `Time for Other Stories'.'' In \emph{The
+Technological Introject: Friedrich Kittler between Implementation and
+the Incalculable}, edited by Jeffrey Champlin et al, 35--45. New York:
+Fordham University Press, 2018.
+
+Armitage, John. ``From Discourse Networks to Cultural Mathematics: An
+Interview with Friedrich A. Kittler.'' \emph{Theory, Culture \& Society}
+23, no. 7--8 (2006): 17--38.
+
+Ernst, Wolfgang. ``Archives in Transition: Dynamic Media Memories.'' In
+\emph{Digital Memory and the Archive}, edited by Jussi Parikka, 95--101.
+Minneapolis: University of Minnesota Press, 2013.
+
+Gómez-Venegas, Diego. ``Forgetting / Cybernetics. History of Media
+Studies.'' \emph{CAC/CAFAcat Editorial} 1, no. 1 (2020).
+
+Gómez-Venegas, Diego. ``Encoding from/to the Real: On Cybersyn's
+Symbolic Politics of Transmission.'' In \emph{Frictions: Inquiries into
+Cybernetic Thinking and Its Attempts towards Mate{[}real{]}ization},
+edited by Diego Gómez-Venegas, 91--117. Lüneburg: meson press, 2023.
+
+Gómez-Venegas, Diego. ``Cybersyn y la memoria simbólica del papel.''
+\emph{Artnodes}, no. 23 (January 2019).
+
+Hiller, Moritz. ``Unter Aufschreibesystemen: `Eine Adresse im IC der
+Kultur'.'' \emph{Metaphora} 1 (2015): II/1--26.
+
+Kittler, Friedrich. ``Vergessen.'' In \emph{Texthermeneutik: Aktualität,
+Geschichte, Kritik}, edited by Ulrich Nassen, 195--221. Paderborn:
+Ferdinand Schöningh, 1979.
+
+Kittler, Friedrich. ``Forgetting.'' \emph{Discourse} 3 (1981{[}1979{]}):
+88--121.
+
+Kittler, Friedrich. \emph{Aufschreibesysteme 1800/1900}. München: Fink,
+1985.
+
+Kittler, Friedrich. \emph{Discourse Networks 1800/1900}. Stanford:
+Stanford University Press, 1990.
+
+Kittler, Friedrich. ``The World of The Symbolic -- A World of The
+Machine.'' In \emph{Literature, Media, Information Systems}, edited by
+John Johnston, 130--46. Amsterdam: OPA Amsterdam B.V., 1997.
+
+Kittler, Friedrich. ``Die Welt des Symbolischen --- eine Welt der
+Maschine.'' In \emph{Draculas Vermächtnis. Technische Schriften},
+58--80. Leipzig: Reclam, 1993.
+
+Kittler, Friedrich. \emph{Gramophone, Film, Typewriter}. Stanford:
+Stanford University Press, 1999.
+
+Lacan, Jacques. \emph{Le séminaire II: Le moi dans la théorie de Freud
+et dans la technique de la psychanalyse}. Paris: Le Seuil, 1978. Quoted
+in Kittler, ``Vergessen.''
+
+Lacan, Jacques. ``Psychoanalysis and cybernetics, or on the nature of
+language.'' In \emph{The Seminar of Jacques Lacan, Book II, The Ego in
+Freud's Theory and in the Technique of Psychoanalysis 1954-1955}, edited
+by Jacques-Alain Miller, translated by Sylvana Tomaselli, 294--308. New
+York: W.W. Norton \& Company, 1991.
+
+Mayol, Alberto. ``Cuando la utopía es el fórceps para alumbrar una nueva
+era.'' In \emph{The Counterculture Room}, ed. FabLab Santiago, 16--43.
+Barcelona: Polígrafa, 2017.
+
+Mayr, Otto. ``Maxwell and the Origins of Cybernetics.'' \emph{Isis} 62,
+no. 4 (Winter 1971): 424--44.
+
+Maxwell, J. Clerk. ``On Governors,'' \emph{Proceedings of the Royal
+Society of London} 16 (1867--1868): 270--83.
+
+Medina, Eden. ``Designing Freedom, Regulating a Nation: Socialist
+Cybernetics in Allende's Chile.'' \emph{Journal of Latin American
+Studies} 38, no. 3 (2006): 571--606.
+
+Medina, Eden. \emph{Cybernetic Revolutionaries: Technology and Politics
+in Allende's Chile}. Cambridge: The MIT Press, 2011.
+
+Müggenburg, Jan. ``Bats in the Belfry: On the Relationship of
+Cybernetics and German Media Theory.'' \emph{Canadian Journal of
+Communication} 42 (2017): 467--84.
+
+Nassen, Ulrich. ``Vorwort.'' In \emph{Texthermeneutik: Aktualität,
+Geschichte, Kritik}, edited by Ulrich Nassen, 7. Paderborn: Ferdinand
+Schöningh, 1979.
+
+Nietzsche, Friedrich. ``On the Utility and Liability of History for
+Life.'' In \emph{Unfashionable Observations}, 83--168. Stanford:
+Stanford University Press, 1995.
+
+Pias, Claus. ``Unruhe und Steuerung. Zum utopischen Potential der
+Kybernetik.'' In \emph{Die Unruhe der Kultur. Potentiale des
+Utopischen}, edited by Jörn Rosen and Michael Fehr, 313--25.
+Weilerswist-Metternich: Velbrück Wissenschaft, 2004.
+
+Pias, Claus. ``Der Auftrag. Kybernetik und Revolution in Chile.'' In
+\emph{Politiken der Medien}, edited by Daniel Gethmann and Markus
+Stauff, 131--53. Zurich-Berlin: Diaphanes, 2005.
+
+Rosenblueth, Arturo, Norbert Wiener and Julian Bigelow. ``Behavior,
+Purpose and Teleology.'' \emph{Philosophy of Science} 10, no. 1 (January
+1943): 18--24.
+
+Shannon, Claude E. and Warren Weaver. \emph{The Mathematical Theory of
+Communication}. Urbana: University of Illinois Press, 1998 {[}1949{]}.
+
+Turing, Alan M. ``On Computable Numbers, With an Application to the
+Entscheidungsproblem.'' \emph{Proceedings of the London Mathematical
+Society} s2-42, no. 1 (January 1937): 230--65.
+
+Turing, Alan M. ``Computing Machinery and Intelligence.'' \emph{Mind: A
+Quarterly Review of Psychology and Philosophy} 59, no. 236 (October
+1950): 433--60.
+
+Vehlken, Sebastian. ``Environment for Decision -- Die Medialität einer
+kybernetischen Staatsregierung. Eine medienwissenschaftliche
+Untersuchung des Projekts Cybersyn in Chile 1971--73.'' Master's thesis,
+Ruhr-Universität Bochum, 2004.
+
+von Foerster, Heinz. ``Quantum Mechanical Theory of Memory.'' In
+\emph{Cybernetics \textbar{} Kybernetik: The Macy-Conferences 1946-1953.
+Volume I / Band I. Transactions / Protokolle}, edited by Claus Pias,
+98--121. Zurich-Berlin: Diaphanes, 2003.
+
+von Foerster, Heinz. ``Preface.'' In \emph{Understanding Understanding:
+Essays on Cybernetics and Cognition}, v-ix. New York: Springer-Verlag,
+2003.
+
+Wiener, Norbert. ``Introduction.'' In \emph{Cybernetics: or Control and
+Communication in the Animal and the Machine}, 1--29. Cambridge: MIT
+Press, 1985 {[}1948/1961{]}.
+
+Wiener, Norbert. ``Computing Machines and the Nervous System.'' In
+\emph{Cybernetics: or Control and Communication in the Animal and the
+Machine}, 116--32. Cambridge: MIT Press, 1985 {[}1948/1961{]}.
+
+Winthrop-Young, Geoffrey. ``Introduction.'' In \emph{Kittler and the
+Media}, 1--7. Cambridge: Polity Press, 2011.
+
+
+
+\end{hangparas}
+
+
+\end{document}
