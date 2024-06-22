@@ -1,0 +1,305 @@
+% see the original template for more detail about bibliography, tables, etc: https://www.overleaf.com/latex/templates/handout-design-inspired-by-edward-tufte/dtsbhhkvghzz
+
+\documentclass{tufte-handout}
+
+%\geometry{showframe}% for debugging purposes -- displays the margins
+
+\usepackage{amsmath}
+
+\usepackage{hyperref}
+
+\usepackage{fancyhdr}
+
+\usepackage{hanging}
+
+\hypersetup{colorlinks=true,allcolors=[RGB]{97,15,11}}
+
+\fancyfoot[L]{\emph{History of Media Studies}, vol. 4, 2024}
+
+
+% Set up the images/graphics package
+\usepackage{graphicx}
+\setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
+\graphicspath{{graphics/}}
+
+\title[Review of Hristova, Dorsten, \& Stabile]{\emph{The Ghost Reader: Recovering Women’s Contributions to Media Studies}} % longtitle shouldn't be necessary
+
+% The following package makes prettier tables.  We're all about the bling!
+\usepackage{booktabs}
+
+% The units package provides nice, non-stacked fractions and better spacing
+% for units.
+\usepackage{units}
+
+% The fancyvrb package lets us customize the formatting of verbatim
+% environments.  We use a slightly smaller font.
+\usepackage{fancyvrb}
+\fvset{fontsize=\normalsize}
+
+% Small sections of multiple columns
+\usepackage{multicol}
+
+% Provides paragraphs of dummy text
+\usepackage{lipsum}
+
+% These commands are used to pretty-print LaTeX commands
+\newcommand{\doccmd}[1]{\texttt{\textbackslash#1}}% command name -- adds backslash automatically
+\newcommand{\docopt}[1]{\ensuremath{\langle}\textrm{\textit{#1}}\ensuremath{\rangle}}% optional command argument
+\newcommand{\docarg}[1]{\textrm{\textit{#1}}}% (required) command argument
+\newenvironment{docspec}{\begin{quote}\noindent}{\end{quote}}% command specification environment
+\newcommand{\docenv}[1]{\textsf{#1}}% environment name
+\newcommand{\docpkg}[1]{\texttt{#1}}% package name
+\newcommand{\doccls}[1]{\texttt{#1}}% document class name
+\newcommand{\docclsopt}[1]{\texttt{#1}}% document class option name
+
+
+\begin{document}
+
+\begin{titlepage}
+
+\begin{fullwidth}
+\noindent\LARGE\emph{Book review
+} \hspace{87mm}\includegraphics[height=1cm]{logo3.png}\\
+\noindent\hrulefill\\
+\vspace*{1em}
+\noindent{\Huge{\emph{The Ghost Reader: Recovering Women’s\\\noindent Contributions to Media Studies}\par}}
+
+\vspace*{1.5em}
+
+\noindent\LARGE{Leonarda García-Jiménez}\par\marginnote{\emph{Leonarda García-Jiménez and Esperanza Herrero, ``\emph{The Ghost Reader: Recovering Women’s Contributions to Media Studies},'' \emph{History of Media Studies} 4 (2024), \href{https://doi.org/10.32376/d895a0ea.02cbe46d}{https://doi.org/ 10.32376/d895a0ea.02cbe46d}.} \vspace*{0.75em}}
+\vspace*{0.5em}
+\noindent{{\large\emph{Universidad de Murcia}, \href{mailto:leonardagj@um.es address}{leonardagj@um.es address}\par}} \marginnote{\href{https://creativecommons.org/licenses/by-nc/4.0/}{\includegraphics[height=0.5cm]{by-nc.png}}}
+
+\vspace*{0.75em} 
+
+\noindent{\LARGE{Esperanza Herrero}\par}
+\vspace*{0.5em}
+\noindent{{\large\emph{Universidad de Murcia}, \href{mailto:mariaesperanza.herrero@um.es}{mariaesperanza.herrero@um.es}\par}}
+
+% \vspace*{0.75em} % third author
+
+% \noindent{\LARGE{<<author 3 name>>}\par}
+\vspace*{0.5em}
+% \noindent{{\large\emph{<<author 3 affiliation>>}, \href{mailto:<<author 3 email>>}{<<author 3 email>>}\par}}
+
+\end{fullwidth}
+
+\vspace*{1em}
+
+
+\noindent Elena D. Hristova, Aimee-Marie Dorsten, and Carol A.
+Stabile, eds. \emph{The Ghost Reader: Recovering
+Women's Contributions to Media Studies.} 256 pp.
+London: Goldsmiths Press, 2024. \$30 (paperback).
+
+\vspace{1em}
+
+\newthought{One of the main} outcomes of the current wave of feminism is the growing
+effort to recover historical female referents in many different areas of
+society. This is also happening in the field of communication. This
+feminist reconstruction of communication's intellectual history is based
+on a fundamental conviction: gender has been a constitutive element of
+communication studies from its very beginning.\footnote{Karen Lee
+  Ashcraft and Peter Simonson, ``Gender, Work, and the History of
+  Communication Research,'' in \emph{The International History of
+  Communication Study}, ed. Peter Simonson and David W. Park (New York:
+  Routledge, 2015); Sue Curry Jansen, ``The Future Is Not What It Used
+  to Be: Gender, History and Communication Studies,''
+  \emph{Communication Theory} 3, no. 2 (1993).} The book \emph{Women in
+Communication: A Biographical Sourcebook} was a pioneering act in this
+line of research.\footnote{Nancy Signorielli, \emph{Women in
+  Communication: A Biographical Sourcebook} (Westport, CT: Greenwood
+  Press, 1996).} Ever since it was published, many other approaches have
+worked towards reclaiming women as an essential piece in the foundation
+of communication studies,  especially regarding European and North
+American histories.\footnote{See, e.g., Christian Fleck, ``Lazarsfeld's
+  Wives or What Happened to Women Sociologists in the Twentieth
+  Century,'' \emph{International Review of Sociology} 31, no. 1 (2021);
+  Aimee-Marie Dorsten, ``Thinking Dirty: Digging up Three Founding
+  Matriarchs of Communication Studies,'' \emph{Communication Theory} 22,
+  no. 1 (2012); Leonarda García-Jiménez, ``Female Contributions to
+  Communication Theories: A Teaching and Scientific Proposal,''
+  \emph{Anàlisi} 65 (2021).} Of particular note is the recent feminist
+revival that has also emerged in Latin America.\textsuperscript{4}
+
+  This body of research points to an obvious but often ignored fact: women
+have always been present wherever communication and media studies have
+been developed, even if most of them later became ghosts or, at best,
+simple footnotes. The narrow historiography of the field has erased
+their names and, in return, constructed a very masculinized history in
+which women have no place.\textsuperscript{5} In
+response, a new, valuable reference work has been added to the field: \emph{The Ghost Reader: Recovering Women\textquotesingle s Contributions
+to Media Studies} is a book
+
+\enlargethispage{2\baselineskip}
+
+\vspace*{2em}
+
+\noindent{\emph{History of Media Studies}, vol. 4, 2024}
+
+
+ \end{titlepage}
+
+% \vspace*{2em} | to use if abstract spills over
+
+
+
+
+\noindent that\marginnote{\textsuperscript{4} See, e.g.,
+  Clemencia Rodríguez, Claudia Magallanes, Amparo Marroquín, and Omar
+  Rincón, \emph{Mujeres de la comunicación} (Berlin: FES Comunicación,
+  2021); Yamila Heram and Santiago Gándara, ``Visibilidad y
+  reconocimiento a las mujeres pioneras del campo comunicacional
+  Latinoamericano,'' \emph{Revista Mediterránea de Comunicación} 12, no.
+  2 (2021).} claims\marginnote{\textsuperscript{5}\setcounter{footnote}{5} Dorsten, ``Thinking Dirty.''} that the intellectual history of
+communication studies can no longer be told without addressing women
+scholars. 
+The authors draw on Rebecca Solnit's reflections on ghost
+libraries to address the ``ghosts in our canon'' (1--3) those
+individuals---those women---who contributed to the construction of media
+studies from the margins, excluded or relegated. The ghosts they refer
+to are those ever-present but invisible figures, those who often
+embodied different traditions of research, and whose loss is nothing
+less than a narrowing and homogenization of communication studies
+scholarship. Our field's tradition needs to be contested, they claim, by
+un-ghosting the stories of many of these forgotten women.
+
+Framed by meta-analysis and feminist epistemologies, the book
+reconstructs the biographical profiles and recovers the work of eighteen
+women who worked in Europe and North America between the 1930s and
+1950s. These were the years in which the field of communication and
+media studies began, a field that was not only shaped by the success
+stories of its ``founding fathers,'' but also by the ambivalent stories
+of success and suffering of these intelligent and strong women---some of
+them immigrants---who lived and developed their careers in the turbulent
+twentieth century, a century that was particularly hard for women
+researchers who did not want to become ghosts confined in private
+spaces, but rather wanted to reclaim and regain their place in the
+public sphere and in the labor market.
+
+The book is made up of eighteen chapters (with fifteen different
+authors) in which some of the stories of pioneering female researchers
+in the North American and European tradition are recovered. These are
+eighteen women who deserve a place of their own in our intellectual
+history; they are Gretel K. Adorno, Violet E. Lavine, Marjorie E. Fiske
+Lissance Löwenthal, Shirley G. Du Bois, Herta Herzog, Mae Huettig
+Churchill, Marie Jahoda, Romana Javitz, Claudia Jones, Dorothy B. Jones,
+Patricia L. Kendall, Eleanor Leacock, Helen M. Lynd, Hortense
+Powdermaker, Jeanette S. Smith, Lisa Sergio, Fredi Washington, and Gene
+Weltfish. All of them studied communication, or aspects relevant to
+understanding communication, while simultaneously inhabiting a hostile
+academic environment, much more hostile to women than most professional
+spaces, activist circles, or even the media.
+
+In this book, each of these eighteen pioneers of communication research
+is recovered from a double perspective: first, the authors propose a
+biographical-experiential profile of each of the women; then, an excerpt
+of their work is included. We believe that this twofold approach is
+appropriate, especially because the recovery of intellectual figures
+cannot be done without considering life stories, giving that knowledge
+is also a personal and lived experience. Ultimately, the
+biographical-experiential approach recovers the personal stories that
+are often key for understanding an author's work. Can we fully
+understand Herta Herzog's (chapter 6) contribution to audience analysis,
+or Mae Huettig Churchill's (chapter 7) critical approach to the US film
+industry without understanding the circumstances of their personal
+lives? We do not think so, hence the importance of placing each of these
+women's works in their own specific and biographical context. For
+Herzog's ``intellectual curiosity and analytical bears,'' as Elana
+Levine states on page 67, underlie her long research career (e.g., her
+study on anti-Semitism cited in the chapter was published just a few
+years before her death). Something similar happens with Mae Huettig
+Churchill and the rest of the women included in the book. Huettig
+Churchill, the daughter of Russian émigré anarchist parents, was also a
+person harassed by the FBI for her membership in the Communist Party.
+Research and researcher are but one and the same, so knowing her
+personal circumstances helps us understand her critique of the low
+quality of Hollywood cinema and the threat posed by the ``maze of
+intricate relationships'' behind the film industry (including
+``distribution and exhibition''), as Aimee-Marie Dorsten points out
+(77).
+
+At the same time, the selection of original works authored by women that
+is included in each chapter functions as an invitation to read them and
+give them a voice. It is them speaking directly to us, after we have
+been introduced to their personal lives and struggles. At first glance,
+selecting a few pages from an entire career seems like a titanic and
+enormously difficult editorial task. We believe there is an unavoidable
+risk of oversimplifying an author\textquotesingle s work. However,
+\emph{The Ghost Reader: Recovering Women\textquotesingle s Contributions
+to Media Studies} rises to the challenge, and we find a brilliant
+selection of texts to offer as a first step in getting to know the
+authors and their contributions to early media studies. We sincerely
+believe that reading a few pages of ``What Do We Really Know about
+Daytime Serial Listeners?'' (67--72), one of Herta
+Herzog\textquotesingle s most emblematic works, or \emph{Economic
+Control of the Motion Picture Industry} (78--83), one of Mae Huettig
+Churchill's most important contributions, will make the reader want to
+turn to the original sources and continue the dialogue with these
+fascinating researchers. If this does not happen, there is a risk that
+the ghost will continue to hover over our heads.
+
+The result is not an ordinary book. Rather, it is a sourcebook: a book
+designed to be consulted by professors, students, and researchers. In
+general, a book written for anyone and everyone who wants to pluralize
+their approaches to communication research through women's voices.
+
+\newpage The eighteen European and North American women recovered by \emph{The
+Ghost Reader: Recovering Women\textquotesingle s Contributions to Media
+Studies} were present in the early moments of the field but were
+eventually consciously or unconsciously erased by an androcentric field.
+Thanks to this book, these brave and resilient women will no longer be
+ghostly shadows in the history of communication and media studies.
+
+
+
+
+\section{Bibliography}\label{bibliography}
+
+\begin{hangparas}{.25in}{1} 
+
+
+
+Ashcraft, Karen Lee, and Peter Simonson. ``Gender, Work, and the History
+of Communication Research.'' In \emph{The International History of
+Communication} Study, edited by Peter Simonson and David W. Park,
+47--68. London: Routledge, 2015.
+
+Dorsten, Aimee-Marie. ``Thinking Dirty: Digging up Three Founding
+Matriarchs of Communication Studies.'' \emph{Communication Theory} 22,
+no. 1 (2012): 25--47.
+\url{https://doi.org/10.1111/j.1468-2885.2011.01398}.
+
+Fleck, Christian. ``Lazarsfeld's Wives or What Happened to Women
+Sociologists in the Twentieth Century.'' \emph{International Review of
+Sociology} 31, no. 1 (2021): 49--71.
+\url{https://doi.org/10.1080/03906701.2021.1926672}.
+
+García-Jiménez, Leonarda. ``Female Contributions to Communication
+Theories: A Teaching and Scientific Proposal.'' \emph{Anàlisi} 65
+(2021): 121--35. \url{https://doi.org/10.5565/rev/analisi.3327}.
+
+Heram, Yamila, and Santiago Gándara. ``Visibilidad y reconocimiento a
+las mujeres pioneras del campo comunicacional latinoamericano: Un
+análisis de la trayectoria de Mabel Piccini.'' \emph{Revista
+Mediterránea de Comunicación} 12, no. 2 (2021): 65--75.
+\url{https://doi.org/10.14198/MEDCOM.19151}.
+
+Jansen, Sue Curry. ``The Future Is Not What It Used to Be: Gender,
+History and Communication Studies.'' \emph{Communication Theory} 3, no.
+2 (1993): 136--48.
+\url{https://doi.org/10.1111/j.1468-2885.1993.tb00063.x}.
+
+Rodríguez, Clemencia, Claudia Magallanes, Amparo Marroquín, and Omar
+Rincón. \emph{Mujeres de la comunicación}. Berlin: FES Comunicación,
+2021.
+
+Signorielli, Nancy. \emph{Women in Communication: A Biographical
+Sourcebook}. Westport, CT: Greenwood Publishers, 1996.
+
+
+
+\end{hangparas}
+
+
+\end{document}
