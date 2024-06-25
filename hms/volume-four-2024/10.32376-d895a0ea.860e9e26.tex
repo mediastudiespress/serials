@@ -1,0 +1,1243 @@
+% see the original template for more detail about bibliography, tables, etc: https://www.overleaf.com/latex/templates/handout-design-inspired-by-edward-tufte/dtsbhhkvghzz
+
+\documentclass{tufte-handout}
+
+%\geometry{showframe}% for debugging purposes -- displays the margins
+
+\usepackage{amsmath}
+
+\usepackage{hyperref}
+
+\usepackage{fancyhdr}
+
+\usepackage{hanging}
+
+\hypersetup{colorlinks=true,allcolors=[RGB]{97,15,11}}
+
+\fancyfoot[L]{\emph{History of Media Studies}, vol. 4, 2024}
+
+
+% Set up the images/graphics package
+\usepackage{graphicx}
+\setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
+\graphicspath{{graphics/}}
+
+\title[Elizabeth Fox]{Elizabeth Fox: Intellectual Biography and History of a Field of Study} % longtitle shouldn't be necessary
+
+% The following package makes prettier tables.  We're all about the bling!
+\usepackage{booktabs}
+
+% The units package provides nice, non-stacked fractions and better spacing
+% for units.
+\usepackage{units}
+
+% The fancyvrb package lets us customize the formatting of verbatim
+% environments.  We use a slightly smaller font.
+\usepackage{fancyvrb}
+\fvset{fontsize=\normalsize}
+
+% Small sections of multiple columns
+\usepackage{multicol}
+
+% Provides paragraphs of dummy text
+\usepackage{lipsum}
+
+% These commands are used to pretty-print LaTeX commands
+\newcommand{\doccmd}[1]{\texttt{\textbackslash#1}}% command name -- adds backslash automatically
+\newcommand{\docopt}[1]{\ensuremath{\langle}\textrm{\textit{#1}}\ensuremath{\rangle}}% optional command argument
+\newcommand{\docarg}[1]{\textrm{\textit{#1}}}% (required) command argument
+\newenvironment{docspec}{\begin{quote}\noindent}{\end{quote}}% command specification environment
+\newcommand{\docenv}[1]{\textsf{#1}}% environment name
+\newcommand{\docpkg}[1]{\texttt{#1}}% package name
+\newcommand{\doccls}[1]{\texttt{#1}}% document class name
+\newcommand{\docclsopt}[1]{\texttt{#1}}% document class option name
+
+
+\begin{document}
+
+\begin{titlepage}
+
+\begin{fullwidth}
+\noindent\Large\emph{History of Communication Studies across the Americas
+} \hspace{19mm}\includegraphics[height=1cm]{logo3.png}\\
+\noindent\hrulefill\\
+\vspace*{1em}
+\noindent{\Huge{Elizabeth Fox: Intellectual Biography and\\\noindent History of a Field of Study\par}}
+
+\vspace*{1.5em}
+
+\noindent\LARGE{Yamila Heram} \href{https://orcid.org/0000-0002-9209-4571}{\includegraphics[height=0.5cm]{orcid.png}}\par\marginnote{\emph{Yamila Heram and Santiago Gándara, ``Elizabeth Fox: Intellectual Biography and History of a Field of Study,'' \emph{History of Media Studies} 4 (2024), \href{https://doi.org/10.32376/d895a0ea.860e9e26}{https://doi.org/ 10.32376/d895a0ea.860e9e26}.} \vspace*{0.75em}}
+\vspace*{0.5em}
+\noindent{{\large\emph{Universidad de Buenos Aires}, \href{mailto:yaheram@yahoo.com.ar}{yaheram@yahoo.com.ar}\par}} \marginnote{\href{https://creativecommons.org/licenses/by-nc/4.0/}{\includegraphics[height=0.5cm]{by-nc.png}}}
+
+\vspace*{0.75em} 
+
+\noindent{\LARGE{Santiago Gándara} \href{https://orcid.org/0000-0003-3350-7417}{\includegraphics[height=0.5cm]{orcid.png}}\par}
+\vspace*{0.5em}
+\noindent{{\large\emph{Universidad de Buenos Aires}, \href{mailto:sjgandar@gmail.com}{sjgandar@gmail.com}\par}}
+
+% \vspace*{0.75em} % third author
+
+% \noindent{\LARGE{<<author 3 name>>}\par}
+\vspace*{0.5em}
+% \noindent{{\large\emph{<<author 3 affiliation>>}, \href{mailto:<<author 3 email>>}{<<author 3 email>>}\par}}
+
+\end{fullwidth}
+
+\noindent\emph{Translated by William Quinn}
+
+\vspace*{1em}
+
+\hypertarget{abstract}{%
+\section{Abstract}\label{abstract}}
+
+The aim of this article is to highlight and recognize the contributions
+of one of the pioneers in Latin American communication studies,
+Elizabeth Fox, who since the late 1960s in Colombia has investigated
+media ownership and inequalities in the flow of information in the
+region. At the same time, the description of her intellectual journey
+reveals a transnational figure who established relations not only
+between different countries in the region but also with universities and
+agencies in the United States and Europe. In order to examine her
+trajectory, a meta-analysis of her academic publications serves to
+identify changes, ruptures, and continuities in her research topics and
+theoretical positions; an interview with the author was also conducted
+to complement the reconstruction of her trajectory. The main results and
+conclusions of the article are synthesized in a recovery of the critical
+traditions of the political economy of communication in her works
+published in the 1970s.
+
+
+
+
+
+\enlargethispage{2\baselineskip}
+
+\vspace*{10em}
+
+\noindent{\emph{History of Media Studies}, vol. 4, 2024}
+
+
+ \end{titlepage}
+
+% \vspace*{2em} | to use if abstract spills over
+
+
+
+\hypertarget{introduction}{%
+\section{Introduction}\label{introduction}}
+
+To advance our understanding of the contributions made by women pioneers
+in communication studies in Latin America, it is necessary not only to
+highlight and recognize the place these women have occupied, but also to
+recover the perspectives and ways of working that gave rise to
+communication studies in the region. In recent years, a series of works
+have emerged that examine and reassert the impact of women researchers
+on the history of the field; this research is situated in the Latin
+American region in general, and particularly in Argentina, Mexico, and
+Bolivia.\footnote{Alejandra García Vargas, Nancy Díaz Larrañaga, and
+  Larisa Kejval, \emph{Mujeres de la comunicación: Argentina} (Buenos
+  Aires: FES Comunicación, 2022); Yamila Heram and Santiago Gándara,
+  "Pioneira: As contribuições de Michèle Mattelart para o campo da
+  comunicação," \emph{MATRIZes} 14, vol. 3 (2020); Yamila Heram and
+  Santiago Gándara, \emph{Pioneers in Latin American Communication
+  Studies} (Buenos Aires: Teseo, 2021; Yamila Heram and Santiago
+  Gándara, "Visibility and Recognition of Pioneer Women in the Field of
+  Latin American Communication: An Analysis of the Trajectory of Mabel
+  Piccini,'' \emph{Revista Mediterránea De Comunicación} 12, no. 2
+  (2021); Yamila Heram and Santiago Gándara, "Mantener vivo un
+  pensamiento crítico: Entrevista a Elizabeth Fox," \emph{Comunicación},
+  no. 50 (2024); Claudia Magallanes Blanco and Paola Ricaurte Quijano,
+  \emph{Mujeres de la comunicación: México} (Mexico City: FES
+  Comunicación, 2022); Guillermo Mastrini, \emph{Margarita Graziano:
+  Entre la academia y la acción política} (Buenos Aires: Universidad
+  Nacional de General Sarmiento, 2020); Clemencia Rodríguez, Claudia
+  Magallanes Blanco, Amparo Marroquín Parducci, and Omar Rincón,
+  \emph{Mujeres de la comunicación} (Bogotá: FES Comunicación, 2020);
+  Vania Sandoval Arenas, Rigliana Portugal Escóbar, and Sandra Villegas
+  Taborga, \emph{Mujeres de la comunicación: Bolivia} (La Paz, Bolivia:
+  FES Comunicación, 2022).} These studies reflect a historical need to
+recover the intellectual work carried out in the early days of
+communication studies by many women who have been overlooked,
+marginalized, or excludedin the reconstruction of the field's
+history.\footnote{Jesús Arroyave, ``Unveiling the Reasons for
+  Asymmetrical Dialogue: Exploring Exclusion in the Field of
+  Communication,'' \emph{Comunicación y Sociedad} (2023).} From this
+perspective, this work is part of a larger series of investigations into
+the trajectories of pioneering women in communication studies in Latin
+America.\footnote{Yamila Heram and Santiago Gándara, dirs., "Los
+  estudios en comunicación argentinos en las revistas latinoamericanas:
+  Tendencias y contratendencias de un campo en disputa (2010--2020)"
+  (research project, UBACyT, University of Buenos Aires, 2023--2024).} A
+public communication of science project is currently being developed in
+which the voices and recollections of these protagonists will be
+recovered and presented in the form of a podcast, as part of an effort
+to reconstruct the history of communication in the region.
+
+The article presented here has a twofold objective: to highlight the
+contributions of one of the pioneers in Latin American communication
+studies, Elizabeth Fox, and to recognize and characterize Fox as a
+transnational figure, whose career has extended throughout South
+America, North America, and Europe---spanning at least eleven countries
+(United States, Colombia, Peru, Venezuela, Chile, Mexico, Argentina,
+France, Canada, Spain, and Germany)---with some of her main
+collaborators also being transnational figures: Ramiro Beltrán,
+Schmucler, Waisbord, and in a more limited way, Rose Kohn Goldsen. The
+article is part of a recent line of collaboration between scholars from
+North, South, and Central America and the Caribbean on "Exclusions in
+the History and Historiography of Communication Studies" and "History of
+Communication Studies in the Americas," the themes of the 2021 ICA
+conference and July 2022 roundtable, respectively. Two special issues
+published by the scientific journals \emph{Comunicación y Sociedad} in
+Mexico and \emph{MATRIZes} in Brazil give an account of this line of
+research that aims to "promote academic dialogue about the history of
+media studies in the different national and linguistic contexts of the
+Americas, and to open new perspectives for transnational comparative
+research.''\textsuperscript{4} Or, in the words of Peter Simonson and his co-authors,
+``to trace transnational flows and interregional dynamics that have
+constituted communication studies in all its versions throughout the
+Americas.''\textsuperscript{5} In this
+way, an attempt is made\marginnote{\textsuperscript{4} Raúl Fuentes Navarro, "Presentation: Histories of
+  Communication Studies in the Americas," \emph{Comunicación y Sociedad}
+  (Fall 2023).} to\marginnote{\textsuperscript{5}\setcounter{footnote}{5} Peter Simonson, Jefferson Pooley, and David Park,
+  "The History of Communication Studies across the Americas: A View from
+  the United States," \emph{MATRIZes} 17, no. 3 (2023): 191.} begin to settle a debt of imbalance in the
+recognition of South--North interconnections in the Americas, as
+proposed by Simonson et al.
+
+It is precisely for this reason that we have chosen to focus on the
+figure of Elizabeth Fox: not only because of her pioneering perspective
+on the political economy of communication, but also because of the
+marginal, almost excluded place she has had in the reconstruction of the
+communication field itself. Very little has been written about Fox; we
+have found a few limited references that remember her for her work in
+academic dissemination and publication. For example, Heriberto Muraro
+highlights ``the great task of dissemination of our work carried out by
+our dear `gringa,' Elizabeth Fox.''\footnote{Delia Crovi Druetta and
+  Gustavo Cimadevilla, coords., \emph{Del mimeógrafo a las redes
+  digitales: Narrativas, testimonios y análisis del campo comunicacional
+  en el 40 aniversario de ALAIC} (Lima: ALAIC, 2022), 152.} Luis Peirano
+mentions Fox's support for ``the publication of the first accounts of
+research in Latin America,''\footnote{Crovi Druetta and
+  Cimadevilla\emph{,} 179.} and Beltrán highlights the outstanding work
+of Fox, ``my partner in work and ideals,''\footnote{Luis Ramiro Beltrán,
+  \emph{Comunicología de la liberación, desarrollismo y políticas
+  públicas} (Madrid: Luces de Galibo, 2014), 94.} in the theoretical
+construction of the National Communication Policies (NCPs). Not only are
+the references to Fox remarkably scarce, but the first two researchers
+seem to praise Fox more for her work in supporting them in their tasks
+than for her own achievements. This article seeks to fill in this gap in
+the history of the communications field.
+
+In order to give an account of Fox's trajectory, we conducted a
+meta-analysis of her academic publications and identified changes,
+ruptures, and continuities in her research topics and theoretical
+positions, and we also conducted an interview with the
+author.\footnote{We are especially grateful to Elizabeth Fox for
+  granting us the interview and subsequently answering key questions by
+  e-mail.} In bringing together the results of this dual approach, we
+were able to recover the history of a critical intellectual current of
+the 1970s and the personal trajectory of one of its pioneering figures.
+The article begins with a methodological section, followed by an
+overview of major moments in Fox's intellectual biography, and finally,
+our conclusions.
+
+\hypertarget{methodology}{%
+\section{Methodology}\label{methodology}}
+
+This work is part of a larger series on major moments and figures in
+communication research in Latin America, and therefore our techniques
+and instruments, drawn from that larger project, are not specific to the
+case of Elizabeth Fox.
+
+In the construction of Fox's intellectual biography, we postulated three
+phases: 1) in the seventies, her first studies on the economic structure
+of the media system and her interventions with respect to the National
+Communication Policies (NCPs) from the perspective of dependency theory;
+2) in the first half of the eighties, the critical balance of the
+interventions of the previous period and a reconceptualization---from
+new theoretical-methodological paradigms---of the relationship between
+communication, culture,\\\noindent and civil society; and 3) from the end of the
+1980s to the present, when Fox's trajectory shifts towards research and
+the implementation of communication and health programs. We then
+situated these phases within the broader context of the field of
+communication studies in Latin America.\footnote{Various periodizations
+  of the history of the field of communication have been proposed. The
+  first, for the regional sphere, was that of Mexican researcher Raúl
+  Fuentes Navarro (1992); and one of the most complete (because it
+  articulates political-economic processes, theoretical matrices, and
+  approaches) is the one formulated by Bolivian researcher Erick Torrico
+  Villa (2004). Here, in order to understand Elizabeth
+  Fox\textquotesingle s trajectory, we adopt a periodization that
+  includes a period of autonomization (mid-sixties and seventies),
+  institutionalization (eighties) and professionalization (nineties to
+  2000). For a justification of this periodization, see Carlos Mangone,
+  "The Bureaucratization of Cultural Analyses," \emph{Zigurat}, no. 4
+  (2003).}
+
+In order to produce a comprehensive account of Elizabeth Fox's
+contributions to Latin American communication studies, we conducted a
+meta-analysis of her academic publications, which allowed us to identify
+the main trends in her research, as well as changes, ruptures, and
+shifts in focus. In addition, we conducted an interview with the author
+in order to reconstruct her trajectory in greater detail and, crucially,
+in her own voice. The materials we included in our corpus for analysis
+ranged from articles in scientific journals and book chapters to reports
+and books authored or co-authored by Fox, from her first publications to
+the present. While these selections span her entire career, from her
+first publications to the present, particular consideration was given to
+recovering her pioneering contributions. We understand, following
+Barthes,\footnote{Roland Barthes, \emph{Elementos de semiología} (Buenos
+  Aires: Tiempo Contemporáneo, 1971).} that a corpus is a finite
+collection of materials whose construction is informed by the analyst's
+objectives as well as a certain degree of arbitrariness. Nevertheless,
+we have tried to build a corpus that also includes the scarce secondary
+sources, and that is broad enough to allow us to reconstruct the
+author's trajectory. From this meta-analysis of her publications, we can
+identify changes, ruptures, and continuities in her research topics and
+theoretical positions.
+
+The technique of interviewing the author was also used both to gather
+biographical data not present in secondary sources, and to reconstruct
+her intellectual trajectory on the basis of her own testimony. The
+interview was conducted by video call since the author lives in
+Washington, DC. It followed a semi-structured interview model, with
+issues and questions prepared in advance and additional questions
+introduced by the interviewer over the course of the seventy-five-minute
+interview for the purposes of clarification or to obtain more
+information.\footnote{Roberto Hernández-Sampieri, Carlos Fernández, and
+  María del Pilar Baptista, \emph{Metodología de la investigación}
+  (Mexico City: McGraw Hill, 2014), 403.} Within the category of the
+semi-structured interview, we chose to conduct a ``focused interview'':
+an informal talk that focuses on a single topic and is usually used to
+collect testimonies about some fact or event---in our case, the
+interviewee's academic career.\footnote{Robert Merton, Marjorie Fiske,
+  and Patricia Kendall, "Propósitos y criterios de la entrevista
+  focalizada," \emph{EMPIRIA: Revista de Metodología de Ciencias
+  Sociales}, no. 1 (1998).} The purpose of the interview was mainly
+exploratory, since as mentioned above, there is very little literature
+on the author. Therefore, we focused on getting to know and trying to
+periodize her academic work from its beginnings to the present, as well
+as on understanding the institutional and academic relationships that
+marked her intellectual trajectory.\footnote{For more details, see Heram
+  and Gándara, "Keeping Critical Thinking Alive: An Interview with
+  Elizabeth Fox."}
+
+\hypertarget{results}{%
+\section{Results}\label{results}}
+
+\hypertarget{the-beginnings-the-sixties-and-seventies}{%
+\subsection{The Beginnings (The Sixties and
+Seventies)}\label{the-beginnings-the-sixties-and-seventies}}
+
+Elizabeth Fox was born in Ithaca, New York, in 1947, and grew up in
+Ohio, Massachusetts, and Washington, DC. Her father, Frederic Ewing Fox,
+was a Congregationalist minister and journalist who in the 1950s served
+as special assistant to President Dwight Eisenhower. Elizabeth Fox spent
+most of her teenage years in Washington, but graduated from high school
+in Princeton, New Jersey, in 1965. Her studies continued at Vassar
+College. During her first years at Vassar, she had two experiences
+living in Spanish-speaking countries: in 1966 she worked at a hotel in
+Spain, and she also lived for a time in Guadalajara, Mexico, in 1967. In
+her third year of college, she spent six months at the Universidad de
+Los Andes in Bogotá, Colombia, for the purpose of continuing her studies
+in political science. There she met her first husband and decided to
+stay in Colombia but changed her career and discipline, beginning
+studies in journalism at the Universidad Javeriana.
+
+It is there that the author locates her academic beginnings in the
+communications field:
+
+\begin{quote}
+I got in touch with a woman who was in Colombia, who came from the Ford
+Foundation,\footnote{The Ford Foundation was one of the private US
+  institutions with the strongest presence in Latin America starting in
+  1962, when it opened its first office in Colombia. In the context of
+  the Cold War and the revolutionary processes in the region, it
+  increased its contributions to finance research in different fields,
+  particularly in the social sciences. Following the denunciations of
+  the Camelot Project in the mid-sixties---the financing of social
+  science research to identify the causes of possible insurgency
+  processes in Latin America---other institutions of Canadian and German
+  origin gradually took over as a source of funding for communication
+  research.} Rose Kohn Goldsen, a very important figure in the early
+years of communication studies in the US. She worked at Cornell
+University and formed a study group on communication, to analyze above
+all the structure of the media, which was a very important topic and on
+which, at that time, there was not much research.
+\end{quote}
+
+\noindent Under that umbrella and with Goldsen's guidance, Fox did her
+undergraduate thesis on ``the new media communication policy laws in
+Colombia, which focused on how television was organized, whether it was
+public or private, also highlighting the foreign influence.'' Regarding
+her graduation as a journalist, Fox comments: ``I took a couple of extra
+years to graduate because I didn't speak Spanish very well. I had to
+start from scratch, more or less.''
+
+According to Fox, Goldsen was very relevant in her early formative years
+because she organized a communication studies group with some students
+from Javeriana---in which the later prominent Colombian sociologist and
+writer Azriel Bibliowicz also participated. This first study group,
+based in Bogotá, would contribute to the delimitation of one of the key
+themes of early communication research in Latin America: National
+Communication Policies (NCPs). Goldsen was also relevant not only
+because she directed Fox's graduation thesis, but also because she
+helped both Fox and Bibliowicz to obtain funds from the Ford Foundation
+to pursue graduate studies in the United States, where Fox returned as a
+Colombian with a scholarship between 1971 and 1973 to pursue a master's
+degree in communications at the University of Pennsylvania. There she
+worked with Canadian policy expert and political economist William H.
+``Bill'' Melody. At the time, she had a son and lived with her husband
+in Princeton, New Jersey, where her husband was on a scholarship.
+
+Goldsen's mentorship, the Ford Foundation scholarship, the back and
+forth between Colombia and her country of origin, and that first contact
+with the Canadians all helped to shape Fox's incipient transnational
+career. In 1973, at a very young age, she returned to Colombia and made
+contact with Luis Ramiro Beltrán,\footnote{Luis Ramiro Beltrán
+  (1930--2015), a Bolivian-born journalist and researcher, is considered
+  one of the pioneering intellectuals in the field of communication
+  studies in Latin America and a central figure in the debates and
+  proposals for national communication policies in the region. In his
+  doctoral thesis, entitled \emph{Communication in Latin America:
+  Persuasion for Status Quo or for National Development}? (1970), he
+  anticipated his first questioning of the dominant paradigm in US
+  research since the 1950s, which conceived of the mass media as
+  instruments of modernization, development, and social change. Against
+  this perspective, Beltrán would postulate a perspective that was
+  sensitive to socio-economic conditions; he would research and denounce
+  the monopolistic tendencies of the media system in the region and
+  question the relations of dependence with the United States as a
+  decisive factor in the underdevelopment of our countries. He was the
+  author of numerous publications, many of which he co-wrote with
+  Elizabeth Fox. For more information, see José Luis Aguirre Alvis, "La
+  investigación para democratizar la comunicación: Los aportes de Luis
+  Ramiro Beltrán," \emph{Revista Ciencia y Cultura}, no. 1 (1997).} who
+had completed his doctorate in communication at Michigan State
+University and was the Latin American representative for the Information
+Sciences division of the International Development Research Centre in
+Canada.\footnote{The International Development Research Centre (IDRC) is
+  a public corporation created by the Parliament of Canada in 1970,
+  whose statement of purpose was "to initiate, encourage, support and
+  conduct research into the problems of the developing regions of the
+  world and into the means of applying and adapting scientific,
+  technical and other knowledge to the economic and social advancement
+  of those regions." Tahira Gonsalves and Stephen Baranyi,
+  \emph{Research for Policy Influence: A History of IDRC Intent}
+  (Ottawa: International Development Research Centre, 2003), 5.}
+
+With funding from this Canadian institution, they undertook a series of
+investigations in the region, as Fox recounts:
+
+\begin{quote}
+{[}Beltrán{]} asked me to go to Venezuela to do the same type of
+research that I had done in Colombia. That was in seventy-three,
+seventy-four. It was a short stay, a couple of months. Then I came back
+and joined IDRC working with Luis Ramiro: we started to develop, among
+other things, a program to apply communication research in different
+Latin American countries, because Beatriz Solís was already starting in
+Mexico, Giselle Munizaga was in Chile.
+\end{quote}
+
+\noindent Beltrán and Fox's collaboration is noteworthy, as many of their
+publications show, and yet Fox is all but absent from existing accounts
+of the field's history and those which are still being written today,
+where there remains a tendency to highlight certain figures and neglect
+others.\textsuperscript{18} We share with Simonson and his co-authors the conviction
+that "exclusions involving gender, race, language, colonialism,
+geopolitical location, and institutionally endorsed privilege will be
+reproduced in the formal and informal accounts of our
+fields\textquotesingle{} pasts."\textsuperscript{19} This is the case of Fox, who, having worked and published numerous
+articles together with Beltrán, remains an indistinct figure with few
+mentions. For example, in the book \emph{Comunicología de la liberación,
+desarrollismo y políticas públicas} (2014) by Luis Ramiro Beltrán, with
+a foreword by Manuel Chaparro and an introduction by Alejandro
+Barranquero, Fox is mentioned only briefly. Perhaps Fox, as a figure,
+has also been marginalized due to her transnational career that has made
+her an \emph{outsider} in Latin America and also in the United States.
+After all, she was a native of the United States who wrote from Latin
+America against the power wielded in the region by her country of
+origin.
+
+\newpage Fox\marginnote{\textsuperscript{18} Arroyave, "Unveiling the Reasons for Asymmetric
+  Dialogue.''} participated\marginnote{\textsuperscript{19}\setcounter{footnote}{19} Peter D. Simonson, David Park,
+  and Jefferson Pooley, "Exclusions/Exclusiones: The Role for History in
+  the Field's Reckoning,'' \emph{History of Media Studies} 2 (2022), 1.} in the drafting of reports and documents used for the
+preliminary meetings and debates on National Communication Policies
+(NCPs) and the New World Information and Communication Order (NWICO).
+She also collaborated as an external advisor for the RATELVE
+project\footnote{"The Radio and Television Committee was in charge of
+  preparing a report on mass cultural production. From his position as
+  director of the Committee, Pasquali established dialogues with a range
+  of experts from the cultural, political, and intellectual fields, who,
+  between November 1974 and May 1975, met in twenty-eight working
+  sessions to formulate the broadcasting policy of the Venezuelan State.
+  The Ratelve Report was finalized in May 1975, and was subsequently
+  published in book form by the bookstore and publishing house SUMA in
+  1977 under the title \emph{Proyecto Ratelve}. Emiliano Sánchez
+  Narvarte, "Antonio Pasquali y las políticas de comunicación en
+  Venezuela (1974--1979)," 5.} and was president of the Colombian
+Association of Communication Researchers from 1978 to 1980). Her
+contribution---like that of many other researchers---was decisive in the
+context of revolutionary processes of social transformation and national
+liberation in the post-war period, when the entry of countries belonging
+to what was then known as the ``Third World'' weakened the US's defense
+of the free flow of information as an ideal. Not only was the inequality
+of flows questioned, but an alternative communicational order was also
+proposed.
+
+In the period of autonomization of communication studies in the
+region,\footnote{Raúl Fuentes Navarro, \emph{Un campo cargado de futuro:
+  El estudio de la comunicación en América Latina} (Mexico City:
+  FELAFACS, 1992).} institutional resources played a key role in
+fostering and contributing to research. In our interview, Fox highlights
+in particular the role played by the Canadians through the International
+Development Research Centre (ISDR):
+
+\begin{quote}
+They wanted to support this research because it was a time when Canada
+was running a different media model than the US. Canada was also
+supporting NWICO, unlike the US. In fact they were resisting the whole
+influx of US programming in their own country.
+\end{quote}
+
+\noindent The financing of research projects meant that resources were available
+to convene researchers from Latin America, Fox explains:
+
+\begin{quote}
+So we financed meetings. We went to Cartagena, to Santa Marta, to Cali,
+to Peru. We could not do things in Chile, because the dictatorship was
+already in place, but we did them at ILET\footnote{The Latin American
+  Institute for Transnational Studies (ILET, in its initials in Spanish)
+  was founded in 1975 and had an area of communication and development
+  in which the Chileans Juan Somovía (1941) and Fernando Reyes Matta
+  (1938) participated, later to be joined by the Argentines Héctor
+  Schmucler (1931--2018), Sergio Caletti (1947--2015) and Alcira
+  Argumedo (1940--2021), among others. See Facundo Altamirano,
+  "Intelectuales, exilio y comunicación en el Instituto Latinoamericano
+  de Estudios Transnacionales (ILET) (1975--1984)," \emph{Journal of the
+  Red Intercátedras de Historia de América Latina Contemporánea} 7, no.
+  13 (2020/2021).} in Mexico, which was then run by Juan Somovía. ILET
+became the other focus of critical media studies. Somavía, Rafael
+Roncagliolo were there. . . . It was fundamental that Luis Ramiro and I
+had a stable institutional base, that I had a telephone, that I was able
+to call long distance whenever I wanted, that we had money to finance
+meetings . . .
+\end{quote}
+
+\hypertarget{her-first-publications-the-seventies}{%
+\subsection{Her First Publications (The
+Seventies)}\label{her-first-publications-the-seventies}}
+
+The articles Fox produced throughout the 1970s---a time when she was
+primarily based in Bogotá but continued to travel to and concern herself
+with different sites in Latin America---can be organized around a common
+diagnostic throughline. By and large, this work called attention to the
+preponderance of data coming from the United States and decried the
+disproportionate penetration of that information within the field. The
+pioneering nature of these investigations is also revealed in the
+absence of a library---authors, bibliography, theories---that could
+serve as a general framework. As Fox points out, there was "nothing" in
+that library. That is why, she recalls:
+
+\begin{quote}
+Rose Kohn Goldsen\textquotesingle s teaching was so important, because
+there were such studies in the United States, where they began to
+investigate the media. But there were no studies on Latin America. So my
+sources were primary, that is, legislation, interviews with congressmen,
+with businessmen, with people from educational TV.
+\end{quote}
+
+\noindent One of the most representative publications of her stay in Colombia is
+"La televisión norteamericana en América Latina" (1974), published in
+the journal \emph{Chasqui}, where she examines the state of the art of
+television in the region: the profits obtained from the sale of canned
+programming; the role played by the networks ABC, CBS, NBC, and
+\emph{Time} in providing capital and technical assistance; the
+advertising business and the direct sale of programming; as well as the
+development of and changes in commercial operations. Her conference
+paper ``Políticas Nacionales de Comunicación en América Latina''
+summarizes the central aspects of the meeting of experts on
+Communication Policies and Planning in Latin America, held in Bogotá in
+July 1974. This meeting---together with another held in Quito in 1975 on
+the exchange of news---provided input for discussion at the Seminar on
+National Communication Policies in Latin America held by the
+International Center for Higher Education in Communication in Latin
+America (CIESPAL),\footnote{Based in Quito, Ecuador, the International
+  Center for Higher Education in Communication in Latin America
+  (CIESPAL) was created by UNESCO in 1959 to train journalists. By 1970,
+  it had become a center for dissemination and consultation for
+  communication researchers.} the Center for Democratic Studies for
+Latin America (CEDAL),\footnote{The Costa Rica-based Center for
+  Democratic Studies for Latin America (CEDAL), founded in 1968,
+  promoted scholarships and publications to undertake communication
+  studies, among other topics.} and the Friedrich Ebert
+Foundation\footnote{The Friedrich Ebert Foundation, linked to German
+  social democracy, was another key institution in financing the
+  training of journalists and regional meetings, scholarships, and
+  research.} in April 1975 in San José, Costa Rica, in preparation for
+the following year's conference.
+
+Together with Luis Ramiro Beltrán, Fox published "La influencia de los
+Estados Unidos en la comunicación masiva en América Latina:
+desequilibrio en el flujo de información" (1976) for the meeting on Fair
+Policy in International Information Exchange in Hawaii; this report was
+then requested by CIESPAL to be used in the seminar "La radio y la
+televisión" held in San José, Costa Rica, in April 1976, under the
+auspices of CEDAL and CIESPAL. Fox and Beltrán also published, in 1980,
+an abridged version of the document, with the title "Medios de
+comunicación de masas y dominación cultural," which they presented in
+1979 at the Symposium on the Role of International Broadcasting,
+sponsored by Radio Nederland and held in Hilversum, the Netherlands.
+
+The common denominator in all of these articles---among many others
+published during this period---is the search for data and an explanation
+of the difficulties in obtaining them, since it is precisely data that
+are needed to accompany and support the denunciations of inequality in
+the flow of information and the structure of the media. We share some
+quotations from these works:
+
+\begin{quote}
+It is difficult to obtain unbiased data on the growth of the US
+television industry overseas.\footnote{Elizabeth Fox de Cardona, "La
+  televisión norteamericana en América Latina," \emph{Chasqui} 6 (1974):
+  56.}
+
+The basic document for this conference asked whether there was any clear
+evidence of foreign penetration within a country\textquotesingle s
+communication system. It seemed to question whether there was
+necessarily a communication imbalance between developed and
+underdeveloped countries.\footnote{Elizabeth Fox de Cardona and Luis
+  Ramiro Beltrán, "La influencia de Estados Unidos en la comunicación
+  masiva en América Latina," 53.}
+
+The following pages will examine some of these indicators in order to
+briefly illustrate the situation, with emphasis on Latin America and
+broadcasting (radio and television), where the available data
+allow.\footnote{Luis Ramiro Beltrán and Elizabeth Fox de Cardona, "
+  Medios de comunicación de masas y dominación cultural,"
+  \emph{Perspectiva} 10 (1980): 88.}
+
+Empirical evidence justifies the dissatisfaction of Third World
+countries with the international communication situation. \footnote{Beltrán
+  and Fox de Cardona, 91.}
+\end{quote}
+
+\noindent The pioneering value of these investigations produced in Latin America
+is that they lay bare the economic and cultural domination of the United
+States in the region. Fox was among a group of pioneering
+researchers---which also included Argentina\textquotesingle s Margarita
+Graziano and Mexico\textquotesingle s Fátima Fernández---who sought and
+produced data on the structure of the media in order to support their
+denunciations and interventions under the imprint of dependency theory
+and cultural imperialism. Their shared concerns reflect the same hopes
+and later disappointments with respect to the NCPs and NWICO. Both
+Graziano and Fox published very similar articles in 1974: the former in
+the magazine \emph{Comunicación y Cultura}, the latter in
+\emph{Chasqui.} Both seek data, critique, and promote discussions.
+
+Fox's final work in this stage was the book \emph{Comunicación dominada:
+Estados Unidos en los medios de América Latina}, co-written with
+Beltrán, which published in 1980 as Fox left Colombia for Buenos Aires.
+This was her last publication whose primary focus was the analysis of
+cultural domination, defined as "a verifiable process of social
+influence by which a nation imposes on other countries its set of
+beliefs, values, knowledge and norms of behavior, as well as its general
+way of life."\footnote{Luis Ramiro Beltrán and Elizabeth Fox, \emph{La
+  comunicación dominada} (Mexico City: ILET-Nueva Visión, 1980), 20.}
+The book compiled "a large part of the information resulting from the
+systematic verification of the phenomenon of communications in Latin
+America and its relationship with the United States."\footnote{Beltrán
+  and Fox\emph{,} 21.} Fox and Beltrán reviewed a mass of research
+undertaken up to that time in the region, which demonstrated the degree
+of concentration of the industry (radio, television, advertising,
+press), the penetration of US capital in local corporations, and the
+falsity of the thesis of the free flow of information, which provided a
+flimsy cover for the unilateral diffusion driven by imperialism.
+Likewise, in the last chapter, they pointed out the need to formulate
+alternative communication policies.
+
+\newpage\hypertarget{from-bogot-to-buenos-aires-disenchantment-and-balance-the-eighties}{%
+\subsection{From Bogotá to Buenos Aires:
+Disenchantment and Balance\\\noindent (The
+Eighties)}\label{from-bogot-to-buenos-aires-disenchantment-and-balance-the-eighties}}
+
+In 1980 Fox left Bogotá and moved to Buenos Aires, where she continued
+working for the International Development Research Center until 1984. We
+can locate here a second moment in her trajectory based on her
+disenchantment with the truncated projects of the NCPs. This can be
+explained by the role played by the governments of the region with
+respect to the recommendations that they themselves made at the San José
+de Costa Rica meeting, which proved to be a pious statement of good
+intentions with no real transformative impact on a continent that, to a
+large extent, was being governed by military dictatorships. This is how
+Luis Gonzaga Motta summarized it six years after the declaration:
+
+\begin{quote}
+The proposal of national communication policies, which at the beginning
+seemed to the progressive sectors a promising path to follow, must now
+be re-discussed in the light of recent experiences and revised as an
+alternative for the democratization of communication. The
+continent\textquotesingle s theoretical and practical communication
+professionals (professors, researchers, journalists, educators, etc.)
+must reformulate their own positions of the past decade and reorient
+their attitudes and struggles based on concrete experiences.\footnote{Luis
+  Gonzaga Motta, "Costa Rica: Six Years Later," \emph{Chasqui,} no. 3
+  (1982): 14--15.}
+\end{quote}
+
+\noindent In line with these and other disenchantments, the introduction to the
+book \emph{Comunicación y democracia en América Latina} (1982)---written
+together with Héctor Schmucler and emerging from meetings of the group
+on communication of the Latin American Council of Social Sciences
+(CLACSO)\footnote{CLACSO is an institution created in 1967 at the
+  initiative of UNESCO, with headquarters in Buenos Aires, Argentina,
+  whose objectives are related to the promotion, dissemination, and
+  exchange of research in the field of social sciences.}---presented a
+critical assessment of the communication studies of the previous decade:
+
+\begin{quote}
+Dependency theory---which contributed data that had barely been
+considered until then---became a rigid, restrictive framework . . . the
+absolute responsibility assigned to the external enemy repeatedly
+overshadowed the analysis of forces.\footnote{Elizabeth Fox and Héctor
+  Schmucler, "Introducción," in \emph{Comunicación y democracia en
+  América Latina,} ed. Elizabeth Fox and Héctor Schmucler (Lima: CLACSO,
+  1982), 18.}
+\end{quote}
+
+\noindent Fox mentions that, in this period, she began to look more at the subject
+of social movements and the relationship between communication and
+democracy:
+
+\begin{quote}
+Well, it was a natural evolution. And I also believe that it was the
+contact with the intellectuals from the Southern Cone, from Uruguay,
+from Chile, at that time, from Argentina, from Brazil, who were thinking
+about rebuilding democracy, about the role of civil society, of the
+State, about the nature of the State . . . because it was the moment
+when things were beginning, at least in Argentina, to return to
+democracy.
+\end{quote}
+
+\noindent The book \emph{Comunicación y democracia} proposed other questions and
+new paradigms:
+
+\begin{quote}
+History demands the refinement, and often the replacement, of the
+concepts we use to think about how to redesign society . . . it is not
+very useful to think about communication theories without alluding to
+the social practices that condition communicative forms.\footnote{Fox
+  and Schmucler, 15.}
+\end{quote}
+
+\noindent In this regard, the book advocated the relevance of reception studies:
+
+\begin{quote}
+The contradictory nature of communication phenomena was not always
+emphasized with sufficient force. The stories of the media were often
+repeated, and they were interpreted taking into account the way they
+were managed by the dominant sectors of local societies or by the
+central countries in the international arena. Little effort was directed
+at the analysis of the other pole: that of the dominated. In the
+venerable sender-receiver dichotomy, the concern of scholars was
+generally directed towards the former variable. \footnote{Fox and
+  Schmucler, 12.}
+\end{quote}
+
+\noindent Along these lines, Fox and Schmucler questioned the place of Power with
+a capital P and proposed reflecting in terms of multi-situated power:
+"Power as a monolithic and singular nucleus that establishes its
+dominion over society as a whole is now regarded as a concept that needs
+to be replaced . . . infrequent questions arise about the concept of
+hegemony."\footnote{Fox and Schmucler, 15.} In the same sense, the
+article "Comunicación y sociedad civil: Una temática incipiente" served
+as a balance and projection. Fox asked why study communications from the
+perspective of civil society, and the answer situated her in the context
+of a region subjected to authoritarian regimes:
+
+\begin{quote}
+The suppression or elimination of many of the more traditional forms of
+communication is the norm in the countries of the region, with few
+exceptions. The question then becomes: what communication processes
+continue among the members of society?; how do they receive, send and
+process information?; and what are the consequences for the social
+fabric?\footnote{Elizabeth Fox," Comunicación y sociedad civil: Una
+  temática incipiente," \emph{Crítica \& Utopia} 7 (1982): 1.}
+\end{quote}
+
+
+\noindent As can be seen, these reconsiderations and reconceptualizations of
+communicational processes were in line with the shifts that were taking
+place in those same years in the field of communication in Latin
+America. It can be summed up in terms of the most significant
+theoretical shift: from dependency theory to the theory of hegemony, a
+re-reading of Gramscian thought which, in turn, connected with the
+circulation of British cultural studies in our region.\footnote{We are
+  aware that we are just pointing out the main changes---which we label
+  as "shifts"---that can be observed in the field of communication in
+  Latin America. We can also note the passage from production to
+  reception, from media to mediations, from mass culture to popular
+  culture and everyday life. To the re-reading of Gramsci and the
+  circulation of British cultural studies we should add the works of
+  Pierre Bourdieu, Michel Foucault, and Michel de Certeau, among others,
+  which also had a widespread reception in the field of communication
+  and social sciences in our region during this period.}
+
+
+
+During this same period, between 1980 and 1984, Fox served as
+vice-president of ALAIC\textsuperscript{40}---with
+the presidency in the hands of Patricia Anzola. This was a complicated
+moment for the association: it had emerged in 1978 with the objective of
+giving "a greater institutional representation of the region before the
+United Nations Educational, Scientific and Cultural Organization
+(UNESCO) and the\newpage\noindent International Association for Media and Communication
+Research (IAMCR),"\textsuperscript{41} but the new Latin American political
+context, the weakening\marginnote{\textsuperscript{40} The Latin American Association of
+  Communication Researchers (ALAIC) was founded in 1978, with
+  headquarters in Caracas, Venezuela, on the initiative of Antonio
+  Pasquali, Luis Ramiro Beltrán, Elizabeth Fox, among many others.} of\marginnote{\textsuperscript{41}\setcounter{footnote}{41} Cicilia Krohling, "La presencia de ALAIC en
+  la comunidad latinoamericana de Ciencias de la Comunicación,"
+  \emph{Telos}, no. 61 (2004): 1.} UNESCO, and \textbf{"}the withdrawal of funds
+led to the isolation of ALAIC, although it remained alive in a more
+informal way."\footnote{María Victoria Martin and Leila Vicentini,
+  "Comunicación y memoria: ALAIC en el contexto latinoamericano,"
+  \emph{Oficios Terrestre}, 15/16 (2004): 265.}
+
+Different initiatives were developed in the association, and Fox,
+together with Luis Ramiro Beltrán, Luis Peirano, and Patricia Anzola,
+worked on a project to make an inventory of academic publications on
+communication in Argentina, Brazil, Colombia, Chile, and Peru. Financial
+support for this initiative came from the International Development
+Research Centre of Canada.
+
+In 1984 Fox moved to Paris, where she lived until 1990, working as a
+consultant for different organizations. From then on she gradually moved
+away from the field of communication and media: in 2002 she edited,
+together with Silvio Waisbord, \emph{Latin Politics Global Media}, which
+would be her last book. Fox explains how this project came about:
+
+\begin{quote}
+In 1984 I left Buenos Aires, married an American journalist, and went to
+Paris. I spent five years there. While I was there, working with Rafael
+Roncagliolo at ILET, in Peru, the Germans financed a study for me;
+because I left the IDRC, the Germans financed a study to make
+comparative policies for Latin America. That was the basis of that book,
+which is an edited book on communication policies in Latin America,
+which is more of a historical review. I wrote it in Paris.
+\end{quote}
+
+\noindent Between 1986 and 1987 Fox worked for the Volkswagen Foundation under the
+Communications Policy in Latin America program, between 1987 and 1988
+for UNESCO, and in 1988 for the World Bank. In addition, between 1990
+and 1991 she held the UNESCO Chair of Communication at the Autonomous
+University of Barcelona. Since 1988 she has been involved in the field
+of communication and health, where she has worked for the last
+thirty-five years.
+
+\hypertarget{intervention-work-involving-communication-and-health-since-the-nineties}{%
+\subsection{Intervention Work Involving
+Communication and Health\\\noindent (Since the
+Nineties)}\label{intervention-work-involving-communication-and-health-since-the-nineties}}
+
+In 1990 Fox moved to Washington, DC, where she worked until 1995 at the
+Pan American Health Organization and later for the United States Agency
+for International Development (USAID),\footnote{In an interview with
+  Beltrán on the history of communication for development, he explains,
+  "In the 1980s and 1990s, some international organizations took great
+  pains to support the National Communication Program for
+  People\textquotesingle s Health and Nutrition, the foundations of
+  development. Unicef and USAID made considerable contributions in this
+  sense and the Pan American Health Organization (PAHO) made an effort}
+ in different
+positions and functions: from 1996 to 2004 as Senior Technical Advisor
+in Health Communications and Behavior Change; from 2004 to 2011 as
+Deputy Director; from 2011 to 2016 as Director of the Office of Health,
+Infectious Diseases and Nutrition; and from 2017 to 2019 as Deputy
+Coordinator for Maternal and Child Survival. She was also Vice President
+of the International Association for Media and Communication Research
+(IAMCR) from 1996 to 2000. Finally, from 2007 to 2015\marginnote{to help the ministries of health, giving priority to primary health
+  care and education of the people on the main health problems, so that
+  they would strive to strengthen the goal of \textquotesingle Health
+  for All in the Year 2000.\textquotesingle" Fanny Patricia Franco
+  Chávez and Ana María López Rojas, "Una mirada a las raíces de la
+  comunicación para el Desarrollo: Entrevista con Luis Ramiro Beltrán
+  Salmón," \emph{Signo y Pensamiento}, no. 58 (2011): 172.} she worked as an
+adjunct professor of the subject "Communication, Health, and
+Development" at the American University in Washington, DC. Fox
+elaborates on this shift in her career:
+
+\begin{quote}
+I started a career at USAID in public health, as a social scientist,
+studying how tuberculosis and malaria programs are organized, how child
+and maternal and child health is done, how information is brought to
+women. In other words, I became much more involved in applied research.
+I had a twenty-five-year career. I retired four years ago, and I was not
+going to do anything. However, I went back to work where I am now, at
+the Pan American Development Foundation, which is a foundation that
+supports social sciences in Latin America. I'm having fun, working more
+on democracy programs, transition of democracy, migration, peace and
+justice, a little bit of health. But more like human rights and
+democracy.
+\end{quote}
+
+\noindent To close her pioneering career in communication studies in Latin
+America, in 2007 she was named Doctor Honoris Causa by the Pontificia
+Universidad Católica del Perú, an academic institution to which she
+donated her entire library of Latin American authors twenty years ago.
+This is how Fox remembers it:
+
+\begin{quote}
+With so much moving, when I was widowed, I packed it all up and gave it
+all to the Catholic University of Lima. So it is in their library, at
+the Catholic University of Lima, in the School of Communication, because
+my friend Luis Peirano was dean at that time. That is why I made a
+donation of about two thousand books to the Catholic University. Because
+I was not doing research and there were many primary sources.
+\end{quote}
+
+\hypertarget{conclusions}{%
+\section{Conclusions}\label{conclusions}}
+
+In this article we have presented the professional and academic
+trajectory of Elizabeth Fox, with a twofold purpose: on the one hand, to
+shed light on her pioneering contributions to the Latin American
+communicational field, "trying to situate our fields in their
+corresponding local, national and regional scales and the processes of
+their institutionalization and development in their respective
+historical contexts"\footnote{Maria Immacolata Vassallo de Lopes and
+  Raúl Fuentes Navarro, "Histórias da internacionalização do campo de
+  estudos da comunicação," \emph{MATRIZes} 17, no. 3(2023): 6.}; and on
+the other hand, to recognize Fox as a transnational figure, since, as
+mentioned by Simonson and his co-authors,\footnote{Simonson, Pooley, and
+  Park, "A história dos estudos de comunicaçãonas Américas," 190.} there
+has been a pattern of imbalance in the recognition of South--North
+interconnections in the Americas. This is precisely what sparked our
+interest in the author: the limited visibility of her contributions both
+in Latin America---the region where she worked and lived for more than a
+decade---and also in the United States, the author\textquotesingle s
+country of origin and where she has lived and worked for more than three
+decades.
+
+Elizabeth Fox's intellectual biography spans the history of
+communication studies in Latin America, particularly the last decades of
+the last century in which she was one of its key figures. What she
+called "national communication policies" was not only about
+consolidating what would later become one of the most productive Latin
+American traditions---that of critical political economy---it also
+responded to a critical mass of empirical research that was being
+undertaken in each of the countries of the region. Its
+results---accumulating data on the US's concentration and penetration in
+the region's media---allowed the scholarly community to demonstrate and
+denounce this "dominated communication" in times of cultural
+imperialism. Fox\textquotesingle s history and story reveal both the
+pioneering nature of this research enterprise---where libraries served
+as primary sources, to borrow an image from Fox herself---and the
+collective dimension of this undertaking, which brought together
+researchers from the region and inaugurated the first institutions where
+they met to debate and where they had access to financial resources in
+an international context that, until the 1980s, was still open to the
+debate about unequal information and cultural flows. Fox not only
+produced prolific academic literature but also played a central role as
+an organizer, bringing together many other researchers in the region to
+participate in the institutions that were beginning to take shape and
+promoting collaborative interventions in regional and national
+communication policies. She played a very important role in the
+beginnings of the field, was able to move around to different countries
+and continents, and worked alongside other transnational figures such as
+Beltrán. Despite this, she is only sporadically mentioned in the
+reconstruction of the history of the communication field, both in the
+United States and in Latin America.
+
+As early as the 1980s, Fox critically reviewed the perspectives of the
+foundational period and began to share the theoretical and
+methodological shifts that were developing in the field of communication
+in Latin America. Democracy, civil society, and reception were some of
+the key words in that era of closure of the processes of social
+transformation, of more or less weak democratic transitions, and of the
+construction of new consensuses. Even in this context---which would lead
+in the 1990s to the consolidation of a neoliberal consensus---Fox
+persisted in placing her trust in the communication practices of civil
+society.
+
+One fact that stands out in Fox\textquotesingle s account is the role
+played by different institutions that financed work, research, and
+collective meetings. According to her testimony, she obtained different
+types of funding from at least eight institutions at the beginning of
+her career: the Ford Foundation (United States), International
+Development Research Centre (Canada), CIESPAL (Ecuador), CEDAL (Costa
+Rica), Friedrich Ebert Foundation (Germany), Latin American Institute of
+Transnational Studies (Mexico), and CLACSO (Argentina), in addition to
+actively participating in the Latin American Association of
+Communication Researchers (ALAIC), where she eventually rose to the
+position of vice-president. Surprisingly, such funding did not limit
+research that challenged an unequal international order. A series of
+confluences helped to finance projects and research, pay salaries, and
+guarantee the necessary conditions for academic production, such as the
+organization of events and creation of media networks that enabled
+permanent contact and exchange (as Fox recalled: "We could make
+long-distance calls.''). In the interview, Fox points out at least two
+converging factors. On the one hand, she highlights the "very liberal"
+orientation of the Ford Foundation in those early years, which favored
+criticism of the functioning of mass media in the region and of US
+cultural domination. On the other hand, she points out that Canadian and
+German interests coincided with those of the so-called Third World
+countries, strengthening support for a New World Information and
+Communication Order and leading to greater promotion of research that
+worked from that perspective. Canada confronted in a relatively similar
+way the growing media and cultural influence of the United States in its
+territory, while at the same time supporting a public communication
+model opposed to that of its neighbor. Germany, through the Ebert
+Foundation, recovered the more liberal traditions of social democracy
+and had a public media system. For our part, we add a third factor: in
+the 1970s, UNESCO was still receptive to debates on NWICO, to the
+formulation of national or regional communication policies, and to the
+denunciation of the unequal North--South flow of information. Only a
+decade later, in the early 1980s, the withdrawal of the United States
+and Great Britain from UNESCO would alter the situation of this
+organization and of the European media landscape, which was beginning a
+process of privatization of its audiovisual market.
+
+Half a century later, this regional movement that investigated
+communication policies is part of a history that deserves to be
+recovered. Researchers in this field today must review these archives in
+order to avoid crystallizing their exclusions in memory and to instead
+update these records and make them available again as the basis for a
+critical perspective of communication studies in Latin America. Celia
+Del Palacio Montiel proposes not only giving visibility but also
+advancing in a process of "searching for connections and analyzing from
+the local space . . . but without taking our eyes off the
+world."\footnote{Celia Del Palacio Montiel, "History of Communication
+  Studies from the Regions of Latin America," \emph{Comunicación y
+  Sociedad} (2023): 16.} These "connected histories" of which she speaks
+create a tension between homogenizing views and particularist
+pretensions, and also mark the next horizon for this critical project,
+in part because the processes and demands that gave rise to it are still
+open: the profound communicational inequality between the global north
+and south, and the lack of communicational democracy in each of our
+countries.
+
+
+
+
+\section{Bibliography}\label{bibliography}
+
+\begin{hangparas}{.25in}{1} 
+
+
+Bibliography}{ Bibliography}}\label{bibliography}}
+
+Altamirano, Facundo. ``Intelectuales, exilio y comunicación en el
+Instituto Latinoamericano de Estudios Transnacionales (ILET)
+(1975--1984).'' \emph{Revista de la Red Intercátedras de Historia de
+América Latina Contemporánea} 7, no. 13 (2020/2021): 250--58.
+
+Aguirre Alvis, José Luis. ``La investigación para democratizar la
+comunicación: Los aportes de Luis Ramiro Beltrán.'' \emph{Revista
+Ciencia y Cultura}, no. 1 (1997).
+\url{http://www.scielo.org.bo/scielo.php?script=sci_arttext\&pid=S2077-33231997000100011}.
+
+Arroyave, Jesús. ``Unveiling the Reasons for Asymmetric Dialogue:
+Exploring Exclusion in the Field of Communication.'' \emph{Comunicación
+y Sociedad} (2023): 1--21.
+\url{https://doi.org/10.32870/cys.v2023.8719}.
+
+Barthes, Roland. \emph{Elementos de semiología}. Buenos Aires: Tiempo
+Contemporáneo, 1971.
+
+Beltrán, Luis Ramiro. \emph{Comunicación, política y desarrollo}. Quito:
+CIESPAL, 2014.
+
+Beltrán, Luis Ramiro. \emph{Comunicología de la liberación,
+desarrollismo y políticas públicas.} Madrid: Luces de Galibo, 2014.
+
+Beltrán, Luis Ramiro, and Elizabeth Fox de Cardona. ``Medios de
+comunicación de masas y dominación cultural.'' \emph{Perspectivas} 10,
+no. 1 (1980): 84--98.
+
+Beltrán, Luis Ramiro, and Elizabeth Fox de Cardona. \emph{Comunicación
+dominada: Estados Unidos en los medios de América Latina}. Mexico City:
+Editorial ILET-Nueva Visión, 1980.
+
+Cimadevilla, Gustavo. ``Entrevista a Heriberto Muraro `El viento sopla
+por donde quiere.'\,'' \emph{Revista Latinoamericana de Ciencias de la
+Comunicación} 15, no. 28 (2017): 148--54.
+
+Crovi Druetta, Delia, and Gustavo Cimadevilla, coords. \emph{Del
+mimeógrafo a las redes digitales: Narrativas, testimonios y análisis del
+campo comunicacional en el 40 aniversario de ALAIC}. Mexico City: ALAIC,
+2018.
+
+Del Palacio Montiel, Celia. ``History of Communication Studies from
+Latin American Regions: Connected Histories as a Resource for
+Analysis.'' \emph{Comunicación y Sociedad} (2023): 1--19.
+\url{https://doi.org/10.32870/cys.v2023.8609}.
+
+Fox, Elizabeth. ``Comunicación y sociedad civil: Una temática
+incipiente.'' \emph{Crítica \& Utopía,} no. 7 (1982).
+
+Fox, Elizabeth. \emph{Latin American Broadcasting: From Tango to
+Telenovela.} Luton, England: University of Luton Press, 1997.
+
+Fox, Elizabeth. \emph{Media and Politics in Latin America, The Struggle
+for Democracy}. London: Sage, 1988.
+
+Fox, Elizabeth. ``Perplejidades compartidas sobre la comunicación
+democrática'' {[}Shared perplexities about Democratic communication{]}.
+\emph{Crítica \& Utopía,} no. 9 (1983).
+
+Fox, Elizabeth. ``La política de reforma de la comunicación en América
+Latina.'' \emph{Diálogos de la comunicación,} no. 21 (1988).
+
+Fox, Elizabeth. ``Políticas nacionales de comunicación en América
+Latina.'' In \emph{Políticas de comunicación en sociedades de cambio},
+edited by Marco Ordoñez, Elizabeth Fox de Cardona, and Benjamin Ortiz
+Brennan, 91--97. San José, Costa Rica: Cuadernos CEDAL, 1975.
+
+Fox, Elizabeth. ``Tres visitas al paradigma de la dependencia
+cultural.'' \emph{Chasqui,} no. 44 (1993): 80--87.
+
+Fox de Cardona, Elizabeth. ``Colombia.'' In \emph{Políticas Nacionales
+de Comunicación}, edited by Peter Schenkel, 243--86. Quito: Editorial
+Época, 1981.
+
+Fox de Cardona, Elizabeth. \emph{Medios de comunicación y política en
+América Latina}. Barcelona: Gustavo Gili, 1989.
+
+Fox de Cardona, Elizabeth. ``Situación y Política de Comunicación en
+Colombia: El caso de la prensa, la radio y la televisión.''
+\emph{Cultura y Comunicación en América Latina}, no. 7 (1982).
+
+Fox de Cardona, Elizabeth. ``La televisión norteamericana en América
+Latina.'' \emph{Chasqui}, no. 6 (1974): 53--70.
+
+Fox de Cardona, Elizabeth, and Luis Ramiro Beltrán. ``La influencia de
+Estados Unidos en la comunicación masiva en América Latina:
+desequilibrios en el flujo de información.'' (Paper prepared for the
+Meeting on Fair Policy in International Information Exchange, East-West
+Center, East West Communication Institute, Honolulu, Hawaii, 1976).
+
+Fox, Elizabeth, and Hector Schmucler. ``Introducción.'' In
+\emph{Comunicación y democracia en América Latina}. Buenos Aires:
+CLACSO, 1982.
+
+Fox, Elizabeth, Héctor Schmucler, Patricia Terrero, Giselle Munizaga,
+Luis Gonzaga Motta, Luis Peirano, Oswaldo Carpriles, et al.
+\emph{Comunicación y democracia en América Latina}. Lima: CLACSO, 1982.
+
+Fox, Elizabeth, and Silvio Waisbord. \emph{Latin Politics, Global
+Media.} Austin: University of Texas Press, 2002.
+
+Fuentes Navarro, Raúl. \emph{Un campo cargado de futuro: El estudio de
+la comunicación en América Latina}. Mexico City: FELAFACS, 1992.
+
+Fuentes Navarro, Raúl. ``Introduction: Histories of Communication
+Studies in the Americas.'' \emph{Comunicación y Sociedad} (2023): 1--5.
+\href{https://doi.org/10.32870/cys.v2023.8737}{https://doi.org/10.32870/cys.v2023.8737.}
+
+Franco Chávez, Fanny Patricia, and Ana María López Rojas. ``Una mirada a
+las raíces de la comunicación para el desarrollo: Entrevista con Luis
+Ramiro Beltrán Salmón.'' \emph{Signo y Pensamiento}, no. 58 (2011):
+170--77.
+
+García Vargas, Alejandra, Nancy Díaz Larrañaga, and Larisa Kejval.
+\emph{Mujeres de la comunicación: Argentina}. Buenos Aires: FES
+Comunicación, 2022.
+
+Gonsalves, Tahira, and Stephen Baranyi. \emph{Research for Policy
+Influence: A History of IDRC Intent}. Ottawa: International Development
+Research Centre, 2003.
+
+Graziano, Margarita. \emph{Guía teórica primera parte: Carrera de
+Ciencia de la Comunicación}. Buenos Aires: University of Buenos Aires,
+1997.
+
+Hernández-Sampieri, Roberto, Carlos Fernández, and María del Pilar
+Baptista. \emph{Metodología de la investigación}. Mexico City: McGraw
+Hill, 2014.
+
+Heram, Yamila, and Santiago Gándara. ``Mantener vivo un pensamiento
+crítico: Entrevista a Elizabeth Fox.'' \emph{Comunicación}, no. 50
+(2024): 140--51\href{https://doi.org/10.18566/comunica.n50.a07}{.
+https://doi.org/10.18566/comunica.n50.a07.}
+
+Heram, Yamila, and Santiago Gándara. ``Pioneira: As contribuições de
+Michèle Mattelart para o campo da comunicação.'' \emph{MATRIZes} 14, no.
+3 (2020):
+51­--68\href{https://doi.org/10.11606/issn.1982-8160.v14i3p51-68}{.
+https://doi.org/10.11606/issn.1982-8160.v14i3p51-68.}
+
+Heram, Yamila, and Santiago Gándara. \emph{Pioneras en los estudios
+latinoamericanos de Comunicación}. Buenos Aires: Teseo, 2021. \\\hspace{.25in}\href{https://www.teseopress.com/pionerasenlosestudioslatinoamericanosdecomunicacion}{https://www.teseopress.com/pionerasenlosestudioslatino}\\\hspace{.24in}\href{https://www.teseopress.com/pionerasenlosestudioslatinoamericanosdecomunicacion}{americanosdecomunicacion/}.
+
+Heram, Yamila, and Santiago Gándara. ``Visibility and Recognition of
+Pioneer Women in the Latin American Communicational Field: An Analysis
+of the Trajectory of Mabel Piccini.'' \emph{Revista Mediterránea de
+Comunicación} 12, no. 2 (2021):
+65--75\href{file:///Users/Emily/Desktop/.\%20https:/doi.org/10.14198/MEDCOM.19151.}{.
+https://doi.org/10.14198/MEDCOM.19151.}
+
+Krohling, Cicilia. ``La presencia de ALAIC en la comunidad
+latinoamericana de Ciencias de la Comunicación.'' \emph{Telos,} no. 61
+(2004). Segunda Época.
+
+Magallanes Blanco, Claudia, and Paola Ricaurte Quijano. \emph{Mujeres de
+la comunicación: México.} Mexico City: FES Comunicación, 2022.
+
+Mangone, Carlos. ``La burocratización de los análisis culturales.''
+\emph{Zigurat}, no. 4 (2003): 135--58.
+
+Martin, María Victoria, and Leila Vicentini. ``Comunicación y memoria:
+ALAIC en el contexto latinoamericano.'' \emph{Oficios terrestres}, no.
+15/16 (2004): 262--67.
+
+Mastrini, Guillermo. \emph{Margarita Graziano: Entre la academia y la
+acción política}. Buenos Aires: Universidad Nacional de General
+Sarmiento, 2020.
+
+Merton, Robert, Marjorie Fiske, and Patricia Kendall. ``Propósitos y
+criterios de la entrevista focalizada.'' \emph{EMPIRIA: Revista de
+Metodología de Ciencias Sociales}, no. 1 (1998):
+215--27. \url{https://doi.org/10.5944/empiria.1.1998.740}.
+
+Motta, Luis Gonzaga. ``Costa Rica: Seis años después.'' \emph{Chasqui,}
+no. 3 (1982): 14--19.
+
+Rodríguez, Clemencia, Claudia Magallanes Blanco, Amparo Marroquín
+Parducci, and Omar Rincón. \emph{Mujeres de la comunicación}. Bogotá:
+FES Comunicación, 2020.
+
+Sánchez Narvarte, Emilio. ``Antonio Pasquali y las políticas de
+comunicación en Venezuela (1974--1979).'' \emph{Avatares}, no. 19
+(2020): 1--18.
+
+Sandoval Arenas, Vania, Rigliana Portugal Escóbar, and Sandra Villegas
+Taborga. \emph{Mujeres de la comunicación: Bolivia}. La Paz, Bolivia:
+FES Comunicación, 2022.
+
+Simonson, Peter, David Park, and Jefferson Pooley.
+``Exclusions/\\\hspace{.25in}Exclusiones: The Role for History in the Field's
+Reckoning.'' \emph{History of Media Studies}, no. 2 (2022).
+\url{https://doi.org/10.32376/d895a0ea.cb32b735}.
+
+Simonson, Peter, Jefferson Pooley, and David Park. ``The History of
+Communication Studies across the Americas: A View from the United
+States.'' \emph{MATRIZes} 17, no. 3 (2023): 189--216.
+\url{https://doi.org/10.11606/issn.1982-8160.v17i3p189-216}.
+
+Torrico Villanueva, Erick. \emph{Abordajes y períodos de la teoría de la
+comunicación.} Bogotá: Norma, 2004.
+
+Vassallo de Lopes, Maria Immacolata, and Raul Fuentes Navarro.
+"Histórias da internacionalização do campo de estudos da comunicação."
+\emph{MATRIZes} 17, no. 3 (2023):
+5--16. \url{https://doi.org/10.11606/issn.1982-8160.v17i3p5-16}.
+
+
+
+\end{hangparas}
+
+
+\end{document}
