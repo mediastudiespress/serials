@@ -1,0 +1,1501 @@
+% see the original template for more detail about bibliography, tables, etc: https://www.overleaf.com/latex/templates/handout-design-inspired-by-edward-tufte/dtsbhhkvghzz
+
+\documentclass{tufte-handout}
+
+%\geometry{showframe}% for debugging purposes -- displays the margins
+
+\usepackage{amsmath}
+
+\usepackage{hyperref}
+
+\usepackage{fancyhdr}
+
+\usepackage{hanging}
+
+\hypersetup{colorlinks=true,allcolors=[RGB]{97,15,11}}
+
+\fancyfoot[L]{\emph{History of Media Studies}, vol. 4, 2024}
+
+
+% Set up the images/graphics package
+\usepackage{graphicx}
+\setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
+\graphicspath{{graphics/}}
+
+\title[Borderline Cases]{Borderline Cases: Crossing Borders in Canadian Communication Studies, 1960s–1980s} % longtitle shouldn't be necessary
+
+% The following package makes prettier tables.  We're all about the bling!
+\usepackage{booktabs}
+
+% The units package provides nice, non-stacked fractions and better spacing
+% for units.
+\usepackage{units}
+
+% The fancyvrb package lets us customize the formatting of verbatim
+% environments.  We use a slightly smaller font.
+\usepackage{fancyvrb}
+\fvset{fontsize=\normalsize}
+
+% Small sections of multiple columns
+\usepackage{multicol}
+
+% Provides paragraphs of dummy text
+\usepackage{lipsum}
+
+% These commands are used to pretty-print LaTeX commands
+\newcommand{\doccmd}[1]{\texttt{\textbackslash#1}}% command name -- adds backslash automatically
+\newcommand{\docopt}[1]{\ensuremath{\langle}\textrm{\textit{#1}}\ensuremath{\rangle}}% optional command argument
+\newcommand{\docarg}[1]{\textrm{\textit{#1}}}% (required) command argument
+\newenvironment{docspec}{\begin{quote}\noindent}{\end{quote}}% command specification environment
+\newcommand{\docenv}[1]{\textsf{#1}}% environment name
+\newcommand{\docpkg}[1]{\texttt{#1}}% package name
+\newcommand{\doccls}[1]{\texttt{#1}}% document class name
+\newcommand{\docclsopt}[1]{\texttt{#1}}% document class option name
+
+
+\begin{document}
+
+\begin{titlepage}
+
+\begin{fullwidth}
+\noindent\Large\emph{History of Communication Studies across the Americas
+} \hspace{18mm}\includegraphics[height=1cm]{logo3.png}\\
+\noindent\hrulefill\\
+\vspace*{1em}
+\noindent{\Huge{Borderline Cases: Crossing Borders in\\\noindent Canadian Communication Studies,\\\noindent 1960s–1980s\par}}
+
+\vspace*{1.5em}
+
+\noindent\LARGE{Michael Darroch} \href{https://orcid.org/https://www.orcid.org/0009-0001-4820-8746}{\includegraphics[height=0.5cm]{orcid.png}}\par\marginnote{\emph{Michael Darroch, ``Borderline Cases: Crossing Borders in Canadian Communication Studies, 1960s–1980s,'' \emph{History of Media Studies} 4 (2024), \href{https://doi.org/10.32376/d895a0ea.f76fdf03}{https://doi.org/ 10.32376/d895a0ea.f76fdf03}.} \vspace*{0.75em}}
+\vspace*{0.5em}
+\noindent{{\large\emph{York University}, \href{mailto:mdarroch@yorku.ca}{mdarroch@yorku.ca}\par}} \marginnote{\href{https://creativecommons.org/licenses/by-nc/4.0/}{\includegraphics[height=0.5cm]{by-nc.png}}}
+
+% \vspace*{0.75em} % second author
+
+% \noindent{\LARGE{<<author 2 name>>}\par}
+% \vspace*{0.5em}
+% \noindent{{\large\emph{<<author 2 affiliation>>}, \href{mailto:<<author 2 email>>}{<<author 2 email>>}\par}}
+
+% \vspace*{0.75em} % third author
+
+% \noindent{\LARGE{<<author 3 name>>}\par}
+% \vspace*{0.5em}
+% \noindent{{\large\emph{<<author 3 affiliation>>}, \href{mailto:<<author 3 email>>}{<<author 3 email>>}\par}}
+
+\end{fullwidth}
+
+\vspace*{1em}
+
+
+\hypertarget{abstract}{%
+\section{Abstract}\label{abstract}}
+
+Communication studies has been shaped by the affective contexts of
+border cultures and bordering practices. Human experiences of living in
+borderlands, of migrating across borders, and the concomitant bridging
+of cultural and linguistic contexts have influenced theories, metaphors,
+and methods within communication and media studies. The multicultural
+and multilingual contexts of Canada and Quebec provide an important case
+study for a history of communication and media studies across the
+Americas.~This paper explores the history of these fields in the
+Canadian context through the lens of bordering practices: Canada--US
+relations, but also the cultural and linguistic borderlines between
+English Canada, Quebec, and beyond. I develop these themes by exploring
+specific cases and considerations of early Canadian scholars and
+programs, as well as key organizations and publications. If 1950s and
+1960s new media, including primarily television, promised to
+de-emphasize official borders, where circuits of media accessibility
+began to knit US and Canadian cultural practices together, we should not
+neglect the forces of national concerns on media industries or use.~My
+goal in this paper is not to contribute another institutional study, but
+rather to offer an interpretative lens on intersecting histories of the
+field in the context of Canadian pluralisms.
+
+\enlargethispage{2\baselineskip}
+
+\vspace*{4em}
+
+\noindent{\emph{History of Media Studies}, vol. 4, 2024}
+
+\hypertarget{resumen}{%
+\section{Resumen}\label{resumen}}
+
+Los estudios en comunicación se han visto configurados por los contextos
+afectivos de las culturas fronterizas y las prácticas
+\emph{fronterizantes}. ~Las experiencias humanas de vivir en las zonas
+fronterizas y de migrar a través de fronteras, así como los puentes que
+se tienden entre contextos culturales y lingüísticos, han incidido en
+teorías, metáforas y métodos dentro de los estudios de comunicación y
+medios. Los contextos multiculturales y multilingües de Quebec nos
+proporcionan un importante caso de estudio para una historia de los
+estudios de comunicación y medios en las Américas. En este trabajo se
+explora la historia de estos campos en el contexto canadiense, con la
+mirada puesta en las prácticas \emph{fronterizantes:} las relaciones
+entre Canadá y Estados Unidos, pero también las fronteras culturales y
+lingüísticas entre la Canadá anglófona, Quebec y más allá. Desarrollo
+estos temas explorando casos concretos, teniendo en cuenta las
+consideraciones específicas de algunos de los primeros investigadores y
+programas de estudio canadienses, así como analizando organizaciones y
+publicaciones clave. Si bien los nuevos medios de las décadas de los 50
+y 60, sobre todo la televisión, prometían desdibujar las fronteras
+oficiales, donde los circuitos de acceso mediático empezaron a fundir
+las prácticas culturales de Estados Unidos y Canadá, no debemos
+subestimar las fuerzas de los intereses nacionales y su impacto en las
+industrias mediáticas y los usos de los medios. Mi objetivo con este
+trabajo no es generar otro estudio institucional, sino aportar un
+enfoque para interpretar las historias entrecruzadas del campo en el
+contexto de los pluralismos canadienses.
+
+
+
+
+ \end{titlepage}
+
+% \vspace*{2em} | to use if abstract spills over
+
+\newthought{The multicultural and} multilingual contexts of Canada and Quebec provide
+an important case study for a history of communication and media studies
+across the Americas.\footnote{Research for this paper was supported by
+  an Insight Grant (2021--2026) from the Social Sciences and Humanities
+  Research Council of Canada: \emph{Distributed Networks: Media
+  Archaeologies of Educational TV and Communication Studies in Canada,
+  1945--1975}.} This paper explores the history of these fields in the
+Canadian context through the lens of bordering practices: Canada--US
+relations, but also the cultural and linguistic borderlines between
+English Canada, Quebec, and beyond. Robert Holub's 1992 study of the
+treatment of reception theory, poststructuralism, and deconstruction in
+Germany and the United States is instructive for other historiographies
+of intellectual traditions that bridge cultural and linguistic divides.
+Holub argued that ``although theory presents itself as abstract and
+applicable without regard to temporal and geographical boundaries, its
+appropriation and understanding were evidently bound to
+context.''\footnote{Robert C. Holub, \emph{Crossing Borders: Reception
+  Theory, Poststructuralism, Deconstruction} (Madison: University of
+  Wisconsin Press, 1992), ix.} According to Holub, ``what matters most
+in the appropriation of a theory from a foreign country is how it fits
+into an already established constellation in the importing country'' and
+that ``the vicissitudes and preferences in theoretical endeavour in the
+United States and Germany cannot be adequately understood without
+reference to a notion of cross-cultural contextualization.''\footnote{Holub,
+  \emph{Crossing Borders}, ix.} The history of communication studies has
+long been shaped by such affective contexts of border cultures and
+bordering practices. Human experiences of living in borderlands, of
+migrating across borders, and the concomitant bridging of cultural and
+linguistic contexts have influenced theories, metaphors, and methods
+within communication and media studies. This is not surprising since
+human experiences of living in borderlands regions or crossing borders
+can be both stimulating and terrifying. Communication practices and
+material media forms both absorb and circulate the narratives we carry
+from such experiences.
+
+Scholars of the history of communication and media study have begun to
+address the twentieth-century transnational origins and legacies of
+these fields.\footnote{Stefanie Averbeck-Lietz,
+  \emph{Kommunikationswissenschaft im internationalen Vergleich:
+  Transnationale Perspektiven (Medien, Kultur, Kommunikation)}
+  (Wiesbaden, Germany: Springer, 2017); Norm Friesen, ed., \emph{Media
+  Transatlantic: Developments in Media and Communication Studies between
+  North American and German-Speaking Europe} (Vienna: Springer, 2016);
+  Maria Löblich and Stefanie Averbeck-Lietz, ``The Transnational Flow of
+  Ideas and \emph{Histoire Croisée} with Attention to the Cases of
+  France and Germany,'' in \emph{The International History of
+  Communication Study}, ed. Peter Simonson and David W. Park (New York:
+  Routledge, 2016), 25--46; David W. Park and Jefferson Pooley, eds.,
+  \emph{The History of Media and Communication}} Have transnational flows of intellectual thought influenced
+the idea of bordering as a method of theory and practice? In this paper,
+I suggest that we have yet to recognize fully the role played by what my
+colleague Lee Rodney has called a ``frontier imagination'' in the North
+American context.\textsuperscript{5}
+For this contribution to \emph{Communication Studies Across the
+Americas}, I develop these themes by exploring specific cases and
+considerations of early Canadian scholars and programs, as well as key
+organizations and publications. If 1950s and 1960s new media including
+primarily television promised to usher in a period of de-emphasizing
+official borders, where circuits of media accessibility began
+increasingly to knit US and Canadian cultural practices together, we
+should not neglect the forces of national concerns on media industries
+or use. The networked and mediatized characteristics of transborder,
+diasporic, and multilingual\marginnote{\emph{Research: Contested
+  Memories} (New York: Peter Lang, 2008); Peter Simonson and John Durham
+  Peters, ``Communication and Media Studies: History to 1968,'' in
+  \emph{International Encyclopedia of Communication}, ed. Wolfgang
+  Donsbach (2014); Peter Simonson and David W. Park, eds., \emph{The
+  International History of Communication Study} (New York: Routledge,
+  2016).} environments\marginnote{\textsuperscript{5}\setcounter{footnote}{5} Lee Rodney, \emph{Looking Beyond Borderlines:
+  North America's Frontier Imagination} (New York: Routledge, 2017).} of contemporary Canada reach
+beyond the image of English and French Canada as ``two solitudes'' and
+reflect more importantly the multicultural landscape of Canada's urban
+environments.
+
+After early ``echo chambers'' of communication thought and studies took
+shape in the 1940s and 1950s and first university programs were
+established in the 1960s and 1970s, a number of historiographies have
+been published to ``take stock'' of the field in Canada and Quebec.
+These include \emph{Studies in Canadian Communications}, edited by
+Donald Theall and Gertrude Robinson and published by the McGill
+Programme in Communications;\footnote{Donald Theall and Gertrude
+  Robinson, eds., \emph{Studies in Canadian Communications} (Montreal:
+  Graduate Program in Communications, McGill University, 1975).} and the
+volume \emph{Communication Studies in Canada}, edited by Liora Salter at
+Simon Fraser University in Vancouver, a bilingual collection of articles
+selected from the founding conference of the Canadian Communication
+Association held in Montreal in 1980.\footnote{Liora Salter, ed.,
+  \emph{Communication Studies in Canada} (Toronto: Butterworth, 1981).}
+Rowland Lorimer and Jean McNulty's \emph{Mass Communication in Canada}
+was published in 1987, the first English textbook to introduce students
+to themes in communication and media studies from a Canadian
+perspective.\footnote{Rowland Lorimer and Jean McNulty, \emph{Mass
+  Communication in Canada} (Toronto: McClelland and Stewart, 1987). Now
+  in its ninth edition as Mike Gasher, David Skinner, and Natalie
+  Coulter, \emph{Media and Communication in Canada: Networks, Culture,
+  Technology, Audience} (Toronto: Oxford University Press Canada, 2020).}
+Further reflections on the field were published in the \emph{Canadian
+Journal of Communication} in 1988 and a special issue dedicated to the
+theme in 2000. Studies taking stock of the field in Quebec were also
+published in the 1980s in journals including \emph{Communication
+Information.}\footnote{Serge Proulx, ``Les communications: Vers un
+  nouveau savoir savant?'' \emph{Recherches Sociographiques} 20, no. 1
+  (1979): 103--17; Jean-Guy Lacroix and Benoit Lévesque, ``L'émergence
+  et l'institutionnalisation de la recherche en communication au
+  Quebec,'' \emph{Communication Information} 7, no. 2 (1985); Jean-Guy
+  Lacroix and Benoit Lévesque, ``Principaux thèmes et courants
+  théoriques dans la littérature scientifique en communication au
+  Quebec,'' \emph{Communication Information} 7, no. 3 (1985).} In
+Quebec, scholars involved with the founding of communications studies
+programs at Francophone universities, such as Roger de la Garde and
+Gaëtan Tremblay, have published numerous accounts of institutional
+histories, while a more recent generation have increasingly focused on
+microhistories of communication studies.\footnote{François Yelle,
+  ``Étude de la littérature réflexive de la recherche universitaire
+  québécoise en communication médiatique'' (PhD diss., University of
+  Montreal, 2004); François Yelle, ``L'histoire des études en
+  communication au Québec et le dogme de la rupture, ou l'héritage peu
+  célébré des intellectuels canadiens-français des années 1940 et
+  1950,'' \emph{Revista Eptic} 19, no. 1 (2017).} These studies have
+already laid the foundation for a well-documented comparative
+historiography of the field, including institutional histories of first
+programs and the key commitments of scholars who founded them. They
+emphasize the bridging moments across intellectual traditions in
+rhetoric, literary studies, speech communication, journalism, and the
+arts broadly, with political economy, sociology, and
+psychology.\textsuperscript{11}
+
+My goal in this paper is not to contribute yet another institutional
+study, but rather to offer an interpretative lens on intersecting
+histories of the field in the context of Canadian pluralisms. To
+undertake this study, I first wish to acknowledge my own position as a
+white English-speaking Canadian scholar. As a native of Toronto,
+Ontario, my personal experience derives from undergraduate and graduate
+studies in second languages and literatures, theater and creative arts,
+and communication and media studies in Montreal, Quebec from the
+mid-1990s to the early 2000s (encompassing Quebec's second referendum
+for independence from Canada in 1995), as well as two separate years
+studying in Germany. I also spent twelve years, from 2008\marginnote{\textsuperscript{11}\setcounter{footnote}{11} Robert E. Babe, \emph{Canadian Communication
+  Thought: Ten Foundational Writers} (Toronto: University of Toronto
+  Press, 2000); Roger de la Garde, ``The 1987 Southam Lecture: Mr.
+  Innis, Is There Life after the \textquotesingle American
+  Empire\textquotesingle?,'' \emph{Canadian Journal of Communication}
+  13, no. 5 (1988); Roger de la Garde and François Yelle, ``Coming of
+  Age: Communication Studies in Quebec,'' in \emph{Mediascapes: New
+  Patterns in Canadian Communication}, ed. Paul Attalah and Leslie Regan
+  Shade (Toronto: Thomson-Nelson, 2002); Gertrude Robinson,
+  ``Remembering Our Past: Reconstructing the Field of Communication
+  Studies,'' \emph{Canadian Journal of Communication} 25, no. 1 (2000);
+  Liora Salter, ``Taking Stock: Communication Studies in 1987,''
+  \emph{Canadian Journal of Communication} 13, no. 5 (1988); Eugene D.
+  Tate, Andrew Osler, Gregory Fouts, and Arthur Siegel, ``The Beginnings
+  of Communication Studies in Canada: Remembering and Narrating the
+  Past,'' \emph{Canadian Journal of Communication} 25, no. 1 (2000);
+  Michael Dorland, ``Knowledge Matters: The Institutionalization of
+  Communication Studies in Canada,'' in \emph{Mediascapes: New Patterns
+  in Canadian Communication}, ed. Paul Attalah and Leslie Regan Shade
+  (Toronto: Thomson-Nelson, 2002); Gaëtan Tremblay, ``Journey of a
+  Researcher,'' \emph{Canadian Journal of Communication} 39, no. 1
+  (2014); Gregory Taylor and Ray op'tLand, ``Communication Research and
+  Teaching in Canada,'' \emph{Publizistik} 64 (2019).} to 2020, as a
+faculty member at the University of Windsor, a city located on the
+Canadian side of the US-Canada border, opposite the city of Detroit,
+Michigan. Here, my interest in multilingualism in cultural and artistic
+industries began to influence a growing focus on comparative cultural
+borderlands studies, inspired by the unusual cross-border urbanized
+context of Windsor-Detroit. Given Detroit's prominence in media
+industries, particularly its early facilitation of US cable television
+to a breadth of Canadian centres, it is perhaps no coincidence that the
+University of Windsor, incorporated in 1962, proposed one of Canada's
+earliest programs in communication studies, a Department of
+Communication Arts, as early as 1969. It is impossible to live or study
+in Windsor without reflecting on the border's influence on a near-daily
+basis. These experiences have shaped my own relationship to the history
+of communication and media studies. In this contribution, it is not my
+goal to develop a single, overarching history of Canadian communication
+and media studies, but rather to highlight several intersecting
+histories in which taking a leap across cultural divisions was central
+to ways in which the field developed in specific locations. The paper
+first reviews metaphors of crossing borders and translating cultures as
+part of the lived experiences of influential communications and media
+scholars. It next considers notions of a ``frontier imagination'' and a
+``bi-focal habit of vision'' that drew upon Canada's cultural and
+linguistic pluralisms as early communication and media thought took
+shape. The paper then dives deeper into the rich disciplinary and
+discursive border crossings that accompanied the establishment of
+pedagogical programs, institutional frameworks, and sites of research
+dissemination. Canada's ``borderline case'' might ultimately be derived
+from multi- rather than bi-focal habits of understanding, experience,
+and indeed, communication.
+
+\hypertarget{media-metaphors-crossing-borders-and-translating-cultures}{%
+\section{Media Metaphors: Crossing Borders and Translating
+Cultures}\label{media-metaphors-crossing-borders-and-translating-cultures}}
+
+Crossing borders, translating between cultures, and living in ``margi-\\\noindent
+nal'' contexts have long influenced metaphors for media and for
+acts of communication.\footnote{Rainer Guldin, ``From Transportation to
+  Transformation: On the Use of the Metaphor of Translation within Media
+  and Communication Theory,'' \emph{Global Media Journal: Canadian
+  Edition} 5, no. 1 (2012).} In the twentieth and twenty-first
+centuries, experiences of international conflict and friction in border
+zones, historic flows of migration, and the affective implications of
+crossing borders and cultural divides have featured prominently in the
+research and writings of key theorists. Among these central figures are
+scholars such as Harold Innis, who researched cross-border continental
+patterns in North American staples industries, and later the history of
+communication and media in terms of imperial legacies across space and
+time.\footnote{Harold Adams Innis, \emph{Empire and Communications}
+  (Oxford: Oxford University Press, 1950); Harold Adams Innis, \emph{The
+  Bias of Communication} (Toronto: University of Toronto Press, 1951).}
+Innis's studies of empires were driven in part by his personal
+experiences in the first World War. The post--World War II European
+``intellectual migration'' of cultural scholars to the United States
+included Paul Lazarsfeld, Herta Herzog, and members of the Frankfurt
+School.\footnote{Laura Fermi, \emph{Illustrious Immigrants: The
+  Intellectual Migration from Europe, 1930--1941} (Chicago: University
+  of Chicago Press, 1968); Donald Fleming and Bernard Bailyn, eds.,
+  \emph{The Intellectual Migration: Europe and America, 1930--1960}
+  (Cambridge, MA: Belknap Press of Harvard University Press, 1969);
+  Martin Jay, \emph{Permanent Exiles: Essays on the Intellectual
+  Migration from Germany to America} (New York: Columbia University
+  Press, 1985); Gertrude Robinson, ``The Katz/Lowenthal Encounter: An
+  Episode in the Creation of \emph{Personal Influence},'' \emph{Annals
+  of the American Academy of Political and Social Science} 608 (2006).}
+The profound influence of these scholars can only be considered through
+the lens of their existential border crossings, and the imperative to
+operate in a second language. Writing about Canada's particular
+``marginal'' condition, Donald Theall once noted that the aesthetic
+interpretative character of the work of Innis and Marshall McLuhan could
+be compared with the dialectic procedures and aesthetic interests of
+``the philosophers of the Frankfurt School, who themselves occupied a
+marginal position to the United States by continuing to write in German
+after their emigration.''\footnote{Donald Theall, ``Communication Theory
+  and the Marginal Culture: The Socio-Aesthetic Dimensions of
+  Communication Study,'' in \emph{Studies in Canadian Communications},
+  ed. Gertrude Robinson and Donald Theall (Montreal: Graduate Program in
+  Communications, McGill University, 1975), 19.} Gertrude Robinson (who
+along with Theall founded the MA {[}1973{]} and PhD {[}1976{]} programs
+in Communication Studies at McGill University) has contributed poignant
+remarks on the field's history. Tracing the work of Elihu Katz and Leo
+Lowenthal, Robinson (herself originally from Germany) characterized
+these scholars as ``border travelers,'' contributing to the
+``geographical transfer of ideas'' and also ``setting up new research
+institutions, which would utilize their scholarly
+expertise.''\footnote{Robinson, ``The Katz/Lowenthal Encounter,'' 94.}
+In the 1960s, McLuhan drew on a frontier imagination to build his many
+neologisms such as the ``global village'' or ``centres without
+margins,'' as well as his arguments about ``media as translators''
+across cultures and borderline conditions as interfaces, or intervals of
+cultural resonance. In 1980s Germany, particularly in Berlin, it is
+arguable that the experience of living at the edge of the Iron Curtain
+contributed to new theories of media and the materialities of
+communication, including Friedrich Kittler's emphasis on media
+materialities in terms of the translatability of information. Perhaps
+the most important communications and media theorist of the twentieth
+century to have been influenced by his personal history of migration was
+Vilém Flusser. Having fled his multilingual home in Prague during the
+period of Nazi Germany, Flusser landed in Brazil before producing an
+exceptional array of multilinguistic writings on communication and
+media, including his emphasis on ``nomadic thinking'' and the experience
+of the migrant as a quintessential global citizen.\footnote{Vilém
+  Flusser, \emph{Ende der Geschichte, Ende der Stadt?} (Vienna: Picus,
+  1992); Vilém Flusser, \emph{Freedom of the Migrant,} trans. Kenneth
+  Kronenberg, ed. Anke Finger (Urbana: University of Illinois Press,
+  2003).} These are but a few examples of the central role played by
+national, cultural, and linguistic border crossing in developing
+intellectual and institutional traditions of theoretical and creative
+communications and media research.
+
+To pursue two of these examples, McLuhan's writings on the global
+village can be juxtaposed with Flusser's thesis of an emergent
+posthistorical telematic society. These two central contributors to
+theories of communication and media wrote from vastly different vantage
+points in the Americas, Canada and Brazil, two countries which, as
+Alfred Braz has argued, occupy comparably peripheral statuses in
+inter-American discourse.\footnote{Albert Braz, ``Outer America: Racial
+  Hybridity and Canada's Peripheral Place in Inter-American Discourse,''
+  in \emph{Canada and Its Americas: Transnational Navigations}, ed.
+  Winfried Siemerling and Sarah Phillips Casteel (Montreal:
+  McGill-Queen's University Press, 2010).} Reflecting their own
+histories, McLuhan and Flusser each represent European-oriented
+experiences of the Americas, yet they returned time and again to broad
+metaphors of borderlines and translations as sites and methods of
+interpenetrations between cultures and languages, spaces and cities,
+senses, images, and codes, and diverse material media forms themselves.
+As Flusser wrote in 1967, ``The problem of translation and
+translatability takes on the cosmic dimensions of all existential
+issues: it encompasses everything.''\footnote{Vilém Flusser, ``Essays,''
+  in \emph{Writings}, ed. Andreas Ströhl, trans. Erik Eisel
+  (Minneapolis: University of Minnesota Press, 2002),~194.} The
+multilingual landscape of Flusser's writings in German, Czech,
+Portuguese, French, and English (requiring his own body of work to be
+translated in multiple directions in order for scholars of different
+backgrounds to be able to trace the full trajectory of his thought) is
+characterized by his personal experiences of displacement,
+groundlessness, loss, migration, and unsettlement---first from fleeing
+Nazi-occupied, multilingual Prague for the United Kingdom, and later
+from landing in São Paulo, Brazil for some twenty years and then
+returning to Europe. It was from these vantage points that he developed
+theses on cultures and cities as relational fields, and of communication
+and media as intricate and overlapping networks of intersubjective
+relations. Flusser's commitment to the positive outcomes of what he
+termed ``nomadic thinking'' and his capacity to move and write around
+and between languages led to his theorization of modes of communication
+and media forms as fundamentally translational and processual. His
+theories of communication embrace dialogic encounters and translations
+as a series of jumps or leaps from one language, experience, code, or
+format to another. These theories can be contrasted with McLuhan's focus
+on hybrid media, and on forms of cultural, perceptual, and sensual
+interpenetrations.\footnote{Rainer Guldin, ``Die Zweite Unschuld:
+  Heilsgeschichtliche und Eschatologische Perspektiven im Werk Vilém
+  Flussers und Marshall McLuhans,'' \emph{Flusser Studies} 6 (2008);
+  Michael Darroch, ``Medial Translations and Human Unsettlements:
+  Planetary Urbanisms from McLuhan to Flusser,'' in \emph{Speaking
+  Memory: How Translation Shapes Cities}, ed. Sherry Simon (Montreal:
+  McGill-Queen's University Press, 2016).}
+
+McLuhan's references to bordering practices and translation focus not on
+crossing or overcoming linear borderlines or edges of media forms, but
+rather deep intervals of resonance and cultural interpenetration. These
+references can also be read in the context of his experiences moving as
+a scholar across North America and the United Kingdom from the 1930s to
+the 1970s, including sites such as Edmonton, Winnipeg, Cambridge, St.
+Louis, Windsor-Detroit, Toronto, and New York. Such cross-border
+experiences were ripe for thinking about Canada: the nation's
+marginality to the United States, Britain, and continental Europe
+arguably framed perceptions and scholarly outlooks across multiple
+fields of study, positioning scholars such as Innis and McLuhan as
+observers from just outside yet still involved with the maelstroms of
+technological change. Canada's self-perceived marginality also
+influenced its many institutions of nation-building and governance
+through communicational structures and cultural technologies that became
+closely aligned with theories of communication and media, as well as
+fledgling programs of communication studies, in the mid-twentieth
+century. According to Robinson, ``this `symbolic environment' was
+constructed by royal commissions and publicly owned Crown corporations,
+including the Canadian Broadcasting Corporation (CBC), the National Film
+Board (NFB), the Canada Council, the Canadian Radio-television and
+Telecommunications Commission (CRTC), and Téléfilm Canada, as well as
+the statutory legislation which defines their mandates.''\footnote{Robinson,
+  ``Remembering Our Past,'' 107.} Yet the thesis of Canada's
+marginality, as Sheryl Hamilton has argued, makes many assumptions about
+Canada's place in the world. Is it Canada's marginality, its
+``edginess'' at the margins of Empire, or rather its deep cross-border
+cultural interpenetrations with the United States and Europe, that drove
+scholars to develop studies of communication?\footnote{Sheryl Hamilton,
+  ``Considering Critical Communication Studies in Canada,'' in
+  \emph{Mediascapes: New Patterns in Canadian Communication}, ed. Paul
+  Attalah and Leslie Regan Shade (Toronto: Thomson-Nelson, 2002).}
+
+\hypertarget{frontier-imaginations-cross-border-interpenetrations}{%
+\section{Frontier Imaginations, Cross-Border
+Interpenetrations}\label{frontier-imaginations-cross-border-interpenetrations}}
+
+McLuhan's treatise on Canada's ``Borderline Case,'' which he first
+proposed in 1967 during Canada's centennial celebrations, perhaps
+captures the idea that Canada is a site of constant bordered conditions,
+marginality, in-betweenness, and dualisms (as framed by author Hugh
+MacLennan's famous 1945 novel \emph{The Two Solitudes}). Canada's
+position between French and British colonial histories, between the
+influence of European and growing US cultural hegemony, and its later
+national characterization as simultaneously bilingual and multicultural,
+have contributed to a sense of national ambiguity that has also shaped
+the history of these fields. McLuhan's proposal characterizes Canada as
+many-bordered: historically, geographically, culturally, linguistically,
+and symbolically. In his 1975 essay, ``Communication Theory and the
+Marginal Culture,'' Theall surmised that the ``communication theory that
+arose in Canada . . . arose to a considerable extent as a strategy of
+culture and consequently the theorists concerned themselves with
+questions of a cultural nature and with a critique of the conflicting
+demands of British, Continental and U.S. traditions.''\footnote{Theall,
+  ``Communication Theory and the Marginal Culture,'' 10.} Similarly,
+Arthur Kroker once argued that a discourse on technology is ``central to
+the Canadian imagination'' because it is ``situated \emph{midway}
+between the future of the New World and the past of European culture,
+between the rapid unfolding of the `technological imperative' in
+American empire and the classical origins of the technological dynamo in
+European history.''\footnote{Arthur Kroker, \emph{Technology and the
+  Canadian Mind: Innis, McLuhan, Grant} (Montreal: New World
+  Perspectives, 1984). See also Maurice Charland, ``Technological
+  Nationalism,'' \emph{Canadian Journal of Political and Social Theory}
+  10, no. 1 (1996).} In Richard Cavell's reconsideration of McLuhan's
+``Borderline Case'' essay, he notes that ``even if the cultural threat''
+of US hegemony ``has receded . . . the issue of borderlines is still
+important culturally and politically.''\footnote{Richard Cavell,
+  ``McLuhan's `Borderline Case' Revisted,'' in \emph{Comment comparer le
+  Canada avec les États-Unis aujourd'hui}, ed. Hélène Quanquin,
+  Christine Lorre-Johnston, and Sandrine Ferré-Rode (Paris: Presses
+  Sorbonne Nouvelle, 2009), para. 6.} In my own contributions, I have
+argued that Toronto School media theorization in the 1950s---primarily
+through McLuhan and Edmund Carpenter's production of the journal
+\emph{Explorations} with their colleagues in Toronto---represented
+cross-border and transnational intellectual entanglements through the
+core research group members' commitment to interdisciplinarity and to
+studying patterns that connect peoples and cultures across space and
+time, a precedent for contemporary media studies that emphasize shared
+methodologies, collaborative projects, experiments in research-creation,
+and new critical pedagogies reflecting the changing shape of university
+research cultures.\footnote{Michael Darroch, ``Bridging Urban and Media
+  Studies: Jaqueline Tyrwhitt and the \emph{Explorations} Group,
+  1951--1957,'' \emph{Canadian Journal of Communication} 33, no. 2
+  (2008); Michael Darroch, ``The Toronto School: Cross-Border
+  Encounters, Intellectual Entanglements,'' in \emph{The International
+  History of Communication Studies}, ed. Peter Simonson and David Park
+  (London: Routledge, 2016).}
+
+Intertwined with these considerations is the history of communication
+and media studies in Quebec, where we must recognize deep
+interpenetrations of academic fields with English Canada, but also
+arguably a gaze that reached further to anti-colonialist thought in
+Latin America, South America, and North Africa. The earliest Canadian
+English-language undergraduate and graduate studies programs in
+communication studies were established in Quebec: a BA at Concordia
+University (then Loyola College) in 1965, and an MA and PhD at McGill
+University in 1973--1974 and 1976, respectively. These programs were
+established within the bilingual context of Montreal, a city that has
+become increasingly intercultural, multilingual, and diasporic since the
+1960s. These initiatives paralleled other programs emerging in Ontario,
+Saskatchewan, British Columbia, and later the Maritimes. Quebec
+universities including Laval University (in Quebec City) and the
+University of Montreal also initiated the first French-language programs
+and departments in communication studies in the late 1960s and early
+1970s.\footnote{University of Montreal, BA {[}1969{]}; Laval University,
+  BA {[}1969{]}; University of Quebec at Montreal, BA, {[}1973{]};
+  University of Montreal, MA {[}1973{]}.} The sheer number of university
+programs in communication and media studies, and adjacent fields, that
+emerged in and near Quebec in the 1960s and 1970s invites an important
+historiographical examination of scholarly trends across these
+political, cultural, and linguistic spaces. Intercultural experiences of
+moving between cultural contexts and languages in part underpinned these
+foundational programs. Founding program scholars, including Father John
+O'Brien at Loyola, Gertrude Robinson at McGill, and James Taylor at the
+University of Montreal, had completed doctoral studies in the United
+States; others, including Line Ross at Laval and Gaëtan Tremblay at the
+University of Quebec at Montreal, had pursued degrees in France.
+
+Lee Rodney's thesis of North America's ``frontier imagination'' provides
+a useful framework for considering multidimensional contexts of
+communication studies. Rodney develops a critical reassessment of the
+role played by the US-Canadian and US-Mexican borderlines, not as linear
+boundaries dividing territorial spaces but rather through the historical
+and contemporary perceptual imaginaries of these border environments and
+the bordering logics of the twentieth and twenty-first centuries. We
+must look beyond the idea of the borderline---that is, beyond official
+and legal narratives about the boundaries that mark such national
+divides, to reconsider how borders also encompass historical division,
+political shifts, and racialized experiences of nation and space that
+have had tangible effects on different communities. Indeed, as Rodney
+and I argued in a research-creation initiative called \emph{Sensing
+Borders}, borders are highly mediated and abstract archives of stories
+and images that shape political imaginaries and
+repercussions.\footnote{See Michael Darroch, Karen Engle, and Lee
+  Rodney, ``Introduction: Sensing Borders,'' in ``Ressentir (les
+  frontières)/Sensing (Borders),'' special issue,
+  \emph{Intermédialités}, no. 34 (Autumn 2019).} McLuhan's thesis of
+Canada itself as a ``borderline case'' remains pertinent here. His
+metaphor that a border is not ``a connection but an interval of
+resonance'' continues to evoke a compelling framework for understanding
+cultural borderlands in the twenty-first century.\footnote{Marshall
+  McLuhan, ``Canada: The Borderline Case,'' in \emph{The Canadian
+  Imagination}, ed. David Staines (Cambridge, MA: Harvard University
+  Press, 1977), 226.} McLuhan suggested that Canada's historical
+position produced a frontier condition of identity and perspective, a
+``space between two worlds'' distinguished not by linear modes of
+thought but rather by the metaphors of interval and interface. Such
+cultural intervals are both spatial and temporal, but they are not
+necessarily apolitical, harmonious, or representative of cultural
+hybridity in complacent terms. Rather, borders as intervals of resonance
+are collective cultural spaces that also produce abrasions or
+irritations within them, requiring the acknowledgement of cultural
+differences and necessitating modes of co-existence---or alternatively,
+igniting fears, crises, and violence. Canada in this reading is not just
+\emph{a} borderline case, but \emph{the} quintessentially postmodern
+case constituted by multiple borderlines, many sites of mutual
+irritation articulated through language, culture, and communication
+technologies. Jody Berland has claimed that the ``consciousness of the
+border's arbitrary location'' has led to labeling Canada ``the world's
+first postmodern country,'' a country that ``registers the prospect of
+reconciliation among multiple identities, `in-process' rather than
+complete; `in-between' rather than whole; a `contrapuntal' form rather
+than a singular narrative.''\footnote{Jody Berland, \emph{North of
+  Empire: Essays on the Cultural Technologies of Space} (Durham, NC:
+  Duke University Press, 2009), 52.} These many metaphors lend
+themselves to the networked and mediatized characteristics of
+transborder, diasporic, or multilingual environments in other regions
+and times.
+
+\hypertarget{a-bifocal-habit-of-vision}{%
+\section{A ``Bifocal Habit of
+Vision''}\label{a-bifocal-habit-of-vision}}
+
+It is worth recalling that one foundational moment in the Canadian
+context, an early ``echo chamber'' that pre-dated the formation of
+programs or centers of study, started with a 1953 Ford Foundation grant
+application submitted by McLuhan, Edmund Carpenter, and their colleagues
+that promised to explore the ``Changing Patterns of Language and
+Behavior in the New Media of Communication.''\footnote{See La Garde,
+  ``The 1987 Southam Lecture,'' 8--9.} Their successful Ford grant
+facilitated a two-year graduate seminar in Culture and Communications,
+and the launch of the journal \emph{Explorations in Culture and
+Communication} that the applicant team co-edited between 1953 and 1958.
+The Ford proposal portrayed a specific Canadian dualistic mindset that
+drew in part from their reading of the Canadian political economist
+Harold Innis. Key moments in Canadians' history, they argued, created
+``a bi-focal habit of vision in their culture which makes natural to
+their outlook the historical and the scientific, the humanist and the
+technological simultaneously.''\footnote{Edmund S. Carpenter, Jaqueline
+  Tyrwhitt, H. M. McLuhan, W. T. Easterbrook, and D. C. Williams,
+  ``University of Toronto: Changing Patterns of Language and Behavior
+  and the New Media of Communication (1953--1955),'' Ford Foundation
+  Archives, Rockefeller Archive Center, New York, grant file PA 53--70,
+  section 1, 1.} They believed this dualistic sensibility offered a rich
+perspective on all of North America, where Canada worked as an ``early
+warning system'' for the United States, another border metaphor based on
+the DEW-line radar in the Canadian arctic. As I have traced in other
+contributions, what later became known as the ``Toronto School'' was set
+in motion by a group of scholars from Canada, the United States, and the
+United Kingdom who sought to bridge historical, cultural, and
+disciplinary borders.\footnote{Darroch, ``Bridging Urban and Media
+  Studies''; Darroch, ``The Toronto School.''} They equally embraced
+contributions from other transatlantic thinkers such as the Swiss
+architectural historian Siegfried Giedion. While they were very
+different scholars, Innis and Giedion shared some common research and
+pedagogical goals in the late 1940s: Innis's encyclopaedical studies on
+\emph{Empire and Communication} (1950) and the \emph{Bias of
+Communication} (1951) were compiled in largely the same period that
+Giedion scoured patent offices across the United States to develop his
+monumental volume \emph{Mechanization Takes Command} (1948). Both
+scholars approached space and time as key dimensions of technological
+history and cultural analysis. And this should not be surprising in the
+wake of World War II, when evolving theories in natural sciences and
+physics in space-time relations also shaped works such as Norbert
+Wiener's \emph{Cybernetics} (1948). Co-applicant Jaqueline Tyrwhitt, a
+British town planner linked to CIAM and the London-based MARS group, and
+a longtime colleague and translator of Giedion's work, used her own
+voice to shape his writings for consumption within anglophone
+countries.\footnote{See Ellen Shoshkes, \emph{Jaqueline Tyrwhitt: A
+  Transnational Life in Urban Planning and Design} (Farnham, UK:
+  Ashgate, 2013).} Tyrwhitt came to Toronto in 1951 and participated in
+the Ford Foundation project bringing scholarly interests from across
+disciplines and languages to the table.\footnote{Darroch, ``Bridging
+  Urban and Media Studies.''} And Edmund Carpenter, an American
+anthropologist who with McLuhan most shaped Toronto School thought,
+arrived in 1948 with experiences including his World War II soldier
+years in Japan, and with connections to a vast network of scholars in
+anthropology and intercultural communications in the United States.
+Carpenter actively solicited contributions from scholars such as Ashley
+Montagu, David Bidney, and Irving Hallowell for the journal
+\emph{Explorations}, for which he acted as chief editor from 1953 to
+1958. In 1959, Carpenter left Toronto to serve as chair of a new
+anthropology department at San Fernando Valley State College in
+Northridge, California (now a campus in the University of California
+system), where he helped shape the curriculum in visual and film
+anthropology, and across the arts. \emph{Explorations} was borne out of
+the Ford Foundation grant and took a bi-focal or even mosaic habit of
+vision as its mantra. It was a journalistic experiment meant to
+integrate research in anthropology, culture, and communication, and to
+provide a mosaic of approaches, studies, and understandings.
+
+While the notion of a ``bi-focal'' habit of vision influenced the early
+Toronto School and English-Canadian approaches to communication and
+media, the story in Quebec is different. While Innis was English
+Canada's most prominent political economist and overall scholar in the
+1940s and early 1950s, he was received much more hesitantly in Quebec.
+In \emph{Harold Innis in the New Century,} Daniel Salée and, in a
+separate chapter, Alain-G Gagnon and Sarah Fortin review the many
+reasons that Innis's staples theories and major writings received such a
+different audience there.\footnote{Daniel Salée, ``Innis and Quebec: The
+  Paradigm That Would Not Be,'' in \emph{Harold Innis in the New
+  Century}, ed. Charles R. Acland and William J. Buxton (Montreal:
+  McGill-Queen's University Press, 1999); Alain-G Gagnon and Sarah
+  Fortin, ``Innis in Quebec: Conjectures and Conjunctures,'' in
+  \emph{Harold Innis in the New Century}, ed. Charles R. Acland and
+  William J. Buxton (Montreal: McGill-Queen's University Press, 1999).}
+Just as Canadian scholars of Innis's generation most often took their
+doctorates in the United States, Britain, or France, Quebec
+undergraduates also left for the United States and Europe, as well as
+English Canada. As Salée notes:
+
+\begin{quote}
+In the late 1940s, the first crop of graduates from
+Laval\textquotesingle s École des sciences sociales returned from the
+United States and English Canada with postgraduate degrees to fill new
+academic positions. It was only then that a more positivistic and
+theoretically inclined outlook on social questions began to emerge in
+Quebec\textquotesingle s sociographical and historiographical
+discourse.\footnote{Salée, ``Innis and Quebec,'' 200.}
+\end{quote}
+
+
+
+\noindent Nevertheless, Innis's preoccupations and outlooks did not widely
+resonate with scholars of his generation. ``The scholarly traditions out
+of which each emerged, the imperatives of their milieux, and the
+characteristic objectives of their respective intellectual endeavours
+were so divergent that they would have had little to say to each
+other.''\footnote{Salée, 202.}
+
+
+Innis's scholarship came back into prominence in English Canada in the
+early 1960s through political economists such as Mel Watkins at the
+University of Toronto. Watkins was, intriguingly, one of the graduate
+students in the Culture and Communications Seminar provided by the Ford
+grant, working under the supervision of Innisian political economist
+Thomas Easterbrook. Watkins became part of a generation of scholars
+concerned with Canadian economic dependence on the United States,
+inspired by Innis's studies of Canada's economic history.\footnote{For
+  example, M. H. Watkins, ``A Staple Theory of Economic
+  Growth,''~\emph{Canadian Journal of Economics and Political Science}
+  296, no. 2 (1963).} As Salée notes, however, in Quebec the same
+generation of scholars working towards radical analyses of economic\newpage\noindent
+history and dependence did not share Watkins's reinterpretation of
+Innis:
+
+\begin{quote}
+Quebec\textquotesingle s young radical intellectuals and academics found
+much with which to agree in such an objective, but that was not going
+far enough. They explained Quebec\textquotesingle s experience in the
+light of its political, economic, and cultural oppression in the
+post-Conquest (English)-Canadian state. Their reading of
+Quebec\textquotesingle s situation through authors such as {[}Frantz{]}
+Fanon and {[}Albert{]} Memmi clearly indicated that they equated
+Quebec\textquotesingle s plight with that of Third World colonies and
+developing nations.\footnote{Salée, ``Innis and Quebec,'' 204--5.}
+\end{quote}
+
+While neo-Innisians such as Watkins sought to reinforce Canadian
+economic autonomy through state structures, Quebec's radical political
+economic scholars during the province's growing nationalist movement and
+Quiet Revolution cast their look farther south and beyond, to
+anti-colonialist struggles in North Africa and to Latin American
+dependency theory.
+
+Yet a reading of Innis also needs to be positioned through his influence
+on McLuhan and on the general orbit of the Toronto School, and the
+emerging field of communication studies in the mid-to-late 1960s across
+Canada, including Quebec. By the time new programs in communication
+studies were being established from 1965 onwards, understandings of his
+thought began to circulate among Quebec-based scholars, both anglophone
+and Francophone, many of whom were bilingual themselves or at least
+willing to work across the linguistic cleavage. This is to note again
+that the bi- and multilingualism of many of Quebec scholars facilitated
+and influenced emergent programs in this province. If Innis's work
+itself was only selectively taken up by Quebec's Francophone scholars in
+political economy and political science, the themes of his key 1950s
+communications studies were announced and recirculated through the
+excitement that McLuhan garnered across Canada and Quebec, first when
+McLuhan rose to fame in the early 1960s and again when the translation
+of his work into French coincided with Expo 67 in Montreal. With the
+dawn of communications programs and related journals in Quebec in the
+1960s, Innis began to receive a new readership. Roger de le Garde and
+Line Ross, founding members of Laval University's program and the
+journal \emph{Communication Information}, later published the only (to
+my knowledge) translation of Innis's work in French, the famous first
+chapter ``Minerva's Owl'' from \emph{The Bias of Communication},
+explaining that ``Innis outlines a new field of communication research
+in which media history is related to its cultural, economic, political
+and military context.''\footnote{Harold Adams Innis, ``L'Oiseau de
+  Minerve,'' trans. by Roger de la Garde and Line Ross,
+  \emph{Communication Information} 5, no. 2--3 (1983): 266.} La Garde
+would also reconsider Innis directly in his Southam Lecture address to
+the Canadian Communication Association in 1987: ``Mr. Innis, Is There
+Life after the `American Empire'?''\footnote{La Garde, ``The 1987
+  Southam Lecture.''} Gaëtan Tremblay, founding member of the University
+of Quebec at Montreal's program in communication (established in 1975)
+and first President of the Canadian Communication Association, has also
+recognized the profound influence of reading both Innis and McLuhan, the
+former when he was an undergraduate student in sociology at Laval
+University,\footnote{Gaëtan Tremblay, ``From Marshall McLuhan to Harold
+  Innis, or From the Global Village to the World Empire,''
+  \emph{Canadian Journal of Communication} 37, no. 4 (2012): 563.} and
+the latter after his undergraduate studies and in the heyday of Expo
+67.\footnote{Gaëtan Tremblay, ``Journey of a Researcher,''
+  \emph{Canadian Journal of Communication} 39, no. 1 (2014): 11.}
+
+\hypertarget{disciplinary-and-discursive-border-crossings}{%
+\section{Disciplinary and Discursive Border
+Crossings}\label{disciplinary-and-discursive-border-crossings}}
+
+Accounts such as Tremblay's invite us to recall the diversity of
+cultural and linguistic experiences for many Canadians, particularly in
+key urban centers such as Montreal where both English- and
+French-language universities established programs of study, and thus to
+the role played not only by the promotion of Canadian and Québécois
+linguistic and multicultural policies, but also to the city's everyday
+multilingualism and acts of translation. They also invite us to consider
+the influence of core translations of communication and media
+theorization that facilitated access to scholarship for a rising
+generation of scholars in Quebec and across Canada. In Quebec
+especially, the French journal \emph{Communications}, launched in 1961
+by Roland Barthes, George Friedmann, and Edgar Morin, was a major
+resource for studies in mass communications and theories of semiotics.
+The translation into French of McLuhan's most influential writings in
+the late 1960s by Quebec journalist Jean Paré further promoted the study
+of media and communication. The establishment of scholarly journals in
+Canada and Quebec also provided sites for translations of intellectual
+positions as well as reviews of books across languages: the
+\emph{Canadian Journal of Communication}, originally based in Toronto,
+and the journal \emph{Communication Information}, based in Quebec City
+at Laval University, were launched in 1974 and 1975, respectively. Yet
+scholars and students in the bilingual capital of Quebec played a
+central role. La Garde and Yelle note that:
+
+\begin{quote}
+The newness of the field of communication studies has meant that there
+is a relative scarcity of books and articles devoted to it. Until the
+end of the 1980s, Quebec students drew on their knowledge of English,
+which was fortunately reasonably good, in order to gain access to the
+broader disciplinary debates. Of course, certain extracts from classic
+American texts of the 1940s, 1950s, and 1960s had been translated into
+French by European researchers.\footnote{La Garde and Yelle, ``Coming of
+  Age,'' 73.}
+\end{quote}
+
+\noindent These include the first significant volumes of French translations of
+core writings from US-based scholars which provided even further access
+to Francophone students, such as \emph{Sociologie de l'Information:
+Textes fondamentaux}, edited by Francis Balle and Jean G. Padioleau in
+1972, and \emph{La Nouvelle Communication}, edited in 1981 by Yves
+Winkin. These two contributions provided translations of core
+communications scholarship, including, among many others, writings by
+Harold Lasswell, Talcot Parsons, Elihu Katz, Gregory Bateson, Ray
+Birdwhistell, Erving Goffman, and Edward T. Hall.\footnote{I wish to
+  express my appreciation here to my colleague François Yelle at the
+  University of Sherbrooke for a discussion of key sites and collections
+  of communication thought in French translation. See also Yelle's
+  (2004) exhaustive bibliography of publications in Europe for
+  francophone communication studies, including those published in
+  English, those co-authored by a Québécois scholar, and those written
+  by an anglophone: ``Étude de la littérature réflexive de la recherche
+  universitaire québécoise en communication médiatique'' (PhD diss.,
+  University of Montreal, 2004), lxiv--lxxii.}
+
+What became the \emph{Canadian Journal of Communication} (\emph{CJC})
+was first launched in 1974 as \emph{Media Probe} by Earle Beatie, a York
+University professor of journalism and the journal's first editor.
+Beatie explained that there was ``no organization worrying about how
+news is presented and how that presentation can be achieved.''
+\emph{Media Probe} no doubt provided a nod to McLuhan's theses on the
+artist and academic as cultural probe, but also to organizations such as
+Pollution Probe that were active at the time. Among the journal's
+initial areas of focus were analysis of how information circulates and
+questions of access, library sciences and the responsibilities of
+libraries, and ``understanding . . . the process of communication, the
+roles of communication agencies, and the characteristics of the various
+communication media.''\footnote{Earle Beattie, ``What Media Probe Is All
+  About,'' \emph{Canadian Journal of Communication} 1, no. 1 (1974): 12.}
+\emph{Media Probe} was established in metropolitan Toronto after
+meetings in 1973 at York and the then Ryerson Polytechnical Institute.
+While the journal was initiated in Toronto, its ``area of coverage'' was
+planned to ``include other parts of Canada'' with the suggestion that
+``local or regional Media Probes may be organized in other areas and
+linking up will constitute a national organization.''\footnote{Beattie,
+  11.} By 1978, \emph{Media Probe} had transitioned officially into the
+\emph{Canadian Journal of Communication} (\emph{CJC}). A conference held
+at the University of Windsor in 1979 facilitated initial discussions for
+forming a Canadian Communications Association (CCA) as a learned
+society. The \emph{CJC} was recommended to act as the association's
+publication arm, but the ``necessity to encompass French language
+scholarship in the field'' also led to the concern from ``Quebec
+participants . . . that trying to incorporate the two language groups
+into a single journal would be inappropriate and impracticable, given
+not only the language question, but also the differing areas of emphasis
+of French and English language scholars.''\footnote{Stewart Ferguson,
+  ``Communication as a Discipline,'' \emph{Canadian Journal of
+  Communication} 5, no. 1 (1978): 3.} An alternative affiliation for the
+association was proposed with the ``University of Laval, which now
+publishes a scholarly journal involving itself with communication
+concerns.''\footnote{Ferguson, 3.} This journal, \emph{Communication
+Information} (\emph{CI}), launched in 1975 with Line Ross, Michel de
+Repentigny, and Roger de la Garde as part of the editorial
+team.\footnote{The journal would later be renamed \emph{Communication,
+  Information, Médias, Théories} in 1983.} Ultimately, \emph{CI} did not
+become officially associated with the Canadian Communications
+Association. The \emph{CJC} took on this mantle for the association's
+initial years, although there was no legally binding arrangement.
+
+Both journals contributed to disciplinary and linguistic border
+crossing. \emph{Media Probe}/\emph{CJC} started as a more modest
+publication and until the early 1980s remained largely focused on
+English Canadian explorations of media industries, communications
+policy, and theory. The journal has moved to the home university of each
+subsequent editor. When the second editor, Eugene Tate from St. Thomas
+More College, University of Saskatchewan took the reins in January 1982,
+the \emph{CJC} began requiring abstracts in English and French, and
+published its first full essay in French in the April 1985 issue (vol.
+11, no. 4). It was not until Gertrude Robinson and Liss Jeffrey took
+over the editorship at McGill University in 1988 that the journal
+actively sought more submissions in French with the offer of translating
+them where possible, noting as well that \emph{CI} was the leading
+publication for Francophone research in communications.\footnote{See
+  also Karla Margarita Ramírez y Ramírez's bibliometric analysis of the
+  \emph{CJC} and \emph{CI}: ``Analyse bibliométrique des revues
+  \emph{Canadian Journal of Communication} et \emph{Communication}
+  1974--2005'' (PhD diss., University of Montreal, 2010).}
+
+From the vantage point of Quebec City, the early issues of \emph{CI}
+survey Quebec-based communications issues and industries, but also more
+directly sought to incorporate research from beyond Quebec's borders. To
+be sure, this outreach included reporting on research from English
+Canada, the United States, and Europe. The original cover of \emph{CI}
+through its first six issues (vols. 1 and 2, 1975--1978) features the
+image of a human ear with an eye within it---a likely gesture to
+McLuhan's neologism of an ``eye for an ear,'' resembling the inside
+cover of \emph{Explorations 8: Verbi-Voco-Visual} (1957), a reference to
+the interconnected sensory perceptions afforded by new media and an ode
+to the polyphonic writing of James Joyce. However, \emph{CI} quickly
+adopted an interest reaching beyond North American and European sources.
+As early as its fifth edition (vol. 2, no. 2), \emph{CI} began
+publishing abstracts in French, English, and Spanish. The journal's
+Winter 1980 edition (vol. 3, no. 2) focused on ``L'information
+internationale: commerce ou propagande ?,'' included a primary section
+of articles stemming from a symposium on February 24, 1979 on
+``L\textquotesingle échange inégal des informations dans le monde: le
+cas de l\textquotesingle Amérique Latine,'' including a contribution
+from Armand Mattelart after he had left the Pontifical Catholic
+University of Chile and returned to France. In 1983, \emph{CI} announced
+a partnership with the journal \emph{ININCO} of the Insitutio de
+Investigaciones de la Communicación, Universidad Central de Venezuela
+(vol. 6, no. 1), with the promise that each journal would publish a
+contribution from the other, followed by a similar arrangement with
+\emph{Communicación y cultura} in Mexico (vol. 7, no. 1). If English
+Canadian communication thought and studies were wrapped up with
+east-west cross-border disciplinary- (and nation-) building exercises,
+Quebec-based communications scholars were casting their gaze beyond the
+continent.
+
+In her 1999 Southam Lecture for the Canadian Communication Association,
+Gertrude Robinson set out to ``reconstruct'' the field of Canadian
+communication studies. Drawing on previous historical accounts of the
+field, she examines three interrelated phases: ``The first inquires into
+when and how our field was institutionalized into the university system,
+the second probes into the `founders' who set up the 10 graduate
+programs, and the third addresses the French-English division of labour
+in building our interdiscipline.''\footnote{Robinson, ``Remembering Our
+  Past.''} In the first phase, she reminds us (following Roger de la
+Garde) of a range of ``echo chambers'' from the 1940s to early 1960s
+that predated university programs and other institutional
+frameworks.\footnote{See La Garde, ``The 1987 Southam Lecture.''} These
+are largely framed within central Canada, between the axes of Toronto
+and Montreal. In Toronto, they include the 1950s Ford Grant and
+\emph{Explorations} period of Toronto School thinkers described in the
+previous section.
+
+In his own 1987 Southam Lecture, La Garde took stock of such echo
+chambers in the Quebec context, some twenty years after the first
+programs had been institutionalized. These include Radio-Canada's
+research division; the Centre catholique national; journals and
+magazines including \emph{Cité Libre}~(1950) and \emph{Parti
+Pris}~(1960), and le Centre de recherche sur l\textquotesingle opinion
+publique (CROP), the province's first privately owned public opinion
+firm.\footnote{La Garde, ``The 1987 Southam Lecture.'' See also
+  Robinson, ``Remembering Our Past''; Lévesque, ``L'émergence et
+  L'institutionnalisation.''} It is essential to recall that this phase
+took place during Quebec's Quiet Revolution, overlapping with the launch
+of television by CBC/Radio-Canada in 1952, a period of intense
+nation-building and modernization during which the state wrestled social
+power and educational oversight from the Catholic Church. Taking place
+towards the end of this period and coinciding with the launch of
+Quebec's first communication studies programs was of course the
+much-celebrated world exposition in Montreal, Expo 67.
+
+The founding of the first university programs in communication arts or
+studies thus overlapped with the Canadian centennial celebrations of
+1967, monumentalized by Expo 67. The bi-focal habit of perception that
+inspired Toronto School scholars in the 1950s was in many ways echoed at
+these celebrations. McLuhanism was a major influence at Expo 67 after
+the publication of \emph{The Gutenberg Galaxy} (1962) and
+\emph{Understanding Media} (1964), and their translation into French by
+Jean Paré in 1967 and 1968. The first program in Communication Arts in
+Canada was founded in 1965 by Father John O'Brien at Loyola, an
+English-language Jesuit College in Montreal that graduated students with
+BA degrees first through Laval University and later through the
+University of Montreal, before the institution merged with Sir George
+Williams University to become today's Concordia University. O'Brien
+would contribute to designing the Christian Pavilion at Expo 67, which
+featured the renowned film \emph{The Eighth Day} by filmmaker and Loyola
+Communications faculty member Charles Gagnon. At McGill University,
+Donald Theall led a ``McGill Study of Expo 67'' with graduate student
+researchers from the Department of English, and later planned to
+complete a manuscript on ``Expo 67 as Total Environment'' in the same
+year (1976) that Theall and Robinson helped establish the first PhD in
+Communication Studies at McGill.\footnote{Monika Kin Gagnon and Janine
+  Marchessault, \emph{Reimagining Cinema: Film at Expo 67} (Montreal:
+  McGill-Queen's University Press, 2014), 10.} In 1971, Theall also
+recruited Jacques Languirand, a Quebec dramatist and novelist, who had a
+major presence in radio and television, to join McGill's English
+Department, where he taught until 1980. Languirand had helped coordinate
+Expo 67, contributing to the design of several key installations: the CN
+Pavilion, the Polar Regions, the Ville des solitudes, and most notably,
+the Citérama as part of the Man and his Community Pavilion.\footnote{François
+  Yelle, ``McLuhan at McGill: a Brief Look at Theall and Languirand''
+  (paper presented at the Edgy Media Symposium, University of Windsor,
+  Canada, March 1, 2019).}
+
+Michael Dorland reminds us that Robinson's brief reference to the
+French-English divide in her 1999 address
+
+\begin{quote}
+does at least raise the linguistic/cultural question, which surely
+constitutes a crucial defining characteristic of the
+institutionalization of communication studies in the Canadian
+context---indeed, a characteristic as significant as the role of the
+state in setting research priorities and establishing graduate programs.
+The ``linguistic divide,'' therefore, reinforces the highly fragmented
+nature of communication studies in Canada, a fragmentation already
+encouraged by the various disciplines from which different programs
+emerged and by their regional location.\footnote{Dorland, ``Knowledge
+  Matters,'' 56.}
+\end{quote}
+
+\noindent The disciplinary and discursive fragmentation that Dorland alludes to
+represents in part the variety of communication studies or cognate
+programs across the Canadian horizon. In the 1960s and 1970s, these
+include communications-related programming at the University of
+Saskatchewan, particularly its Regina campus in the 1960s and early
+1970s; the University of Windsor, which established a degree in
+Communication Arts in 1969; and Simon Fraser University's Vancouver
+campus, which launched a BA program in 1973. Alongside Quebec
+institutions, participation from these institutions came together to
+form the Canadian Communication Association (CCA) in 1979.
+
+The CCA was first proposed at a meeting of scholars at the University of
+Windsor in Spring 1978. In Fall 1978, Donald Theall chaired a steering
+committee meeting in Ottawa to consider the formation of the new
+academic society. The association itself was established the following
+year at the learned societies meeting in Saskatoon, Saskatchewan, with a
+board of directors and steering committee chaired by Theall. At the
+following learned societies meeting in Montreal in 1980, Gaëtan Tremblay
+was elected as the first president of the association. Windsor thus
+played an important but underreported role in establishing the CCA as a
+cross-nation initiative for the field of Canadian communication studies.
+Windsor had in fact been home to McLuhan from 1944 to 1946 when he
+taught at the university's predecessor, Assumption College. As I have
+argued elsewhere, McLuhan's experience living in the Windsor-Detroit
+borderlands, where one of his idols, Wyndham Lewis, was also actively
+lecturing, can only have influenced his later concept of borderlines as
+intervals of resonance.\footnote{Michael Darroch, ``Border Environments:
+  Theorising Media and Culture in the Windsor-Detroit Borderlands,
+  1943--1946,'' in ``Borders and Spaces in the English-Speaking World,''
+  ed. Jean-Jacques Chardin, special issue, \emph{RANAM: Recherches
+  Anglaises et Nord-Américain}, no. 52 (2019).} In 1965, Windsor
+commissioned a report by instructors at Wayne State University in
+Detroit which recommended a ``suggested structure and application of a
+closed circuit television system to the instructional program of the
+University of Windsor'' based on research and institutional experience
+with educational television at American universities.\footnote{James B.
+  Tintera and Stuart K. Bergsma, ``A Report to the University of
+  Windsor: The Suggested Structure and Application of a Closed Circuit
+  Television System to the Instructional Program of the University of
+  Windsor'' (Detroit: Mass Communications Centre, Wayne State
+  University, November 30, 1965), original document, Department of
+  Communication, Media, and Film, University of Windsor.} In short
+order, a Communications Centre was established in 1966 to provide CCTV
+and other media services across faculties at the University of Windsor.
+By 1968, however, it became clear that media services would become in
+demand across the institution and that the study of communication and
+media practices would require a different entity. The Department of
+Communication Arts ``sprung from the Communications Centre,''
+particularly through the leadership of the Centre's first director,
+Walter Romanow, who then became the initial Chair of Communication
+Arts.\footnote{``The Future of the Media Centre at the University of
+  Windsor'' (unpublished manuscript, August 1971), original document,
+  Department of Communication, Media, and Film, University of Windsor.}
+Windsor grew into a prominent Communications program; faculty took part
+in international conferences and contributed to a number of Royal
+Commissions, most importantly Ontario's LaMarsh Royal Commission on
+Violence in the Communications Industry (1975).
+
+
+
+\hypertarget{borderline-cases-multifocal-habits-of-vision}{%
+\section{Borderline Cases: Multifocal Habits of
+Vision}\label{borderline-cases-multifocal-habits-of-vision}}
+
+Communication studies in Canada from the 1960s to the 1980s was an
+environment that bridged disciplinary but also cultural divides, in
+Flusser's terms, requiring translative leaps across linguistic and
+disciplinary horizons. These acts of border crossing took place
+particularly due to the people involved, scholars and students who were
+committed to writing and studying in French and English, or to
+publishing their scholarly work in both languages. Many of these
+scholars came from backgrounds that afforded them the multilinguistic
+capital to pursue these avenues; others worked tirelessly to overcome
+the linguistic divide, taking pride in even working on translations of
+their own work. The stories told by founding figures in the field are
+therefore important, even as they at times question and contradict each
+other. We may recognize that communication and media studies in Canada
+have been shaped by the symbolic environment of the powerful discourses
+of Canadian dualisms, including the binational status of English and
+French as official languages; and by the many royal and provincial
+commissions and Crown corporations established to examine and promote
+bilingual cultural and communication\newpage\noindent institutions and infrastructures
+(mostly in cities huddled along the physical border).\footnote{Michael
+  Dorland, ed., \emph{The Cultural Industries in Canada} (Toronto: James
+  Lorimer and Company, 1996), xii.}
+
+McLuhan's notion of Canada's borderline case expressed the perspective
+that Canadian identities, during the time when communications studies
+programs took root across the country from the 1960s to 1980s, were
+ambivalent and post-national. In the twenty-first century, this has
+become a more difficult perspective to maintain. Since the beginning of
+the century, borders have become more firmly entrenched and militarized,
+and offer more hesitantly the same metaphorical resonance of openness,
+allegiances, or forms of cultural interpenetration.\footnote{Lee Rodney,
+  \emph{Looking Beyond Borderlines: North America's Frontier
+  Imagination} (New York: Routledge, 2017), 104--6.} Within Canada, the
+``two solitudes'' motif has faded as multicultural policies have
+embraced Canada's pluralism, its First Nations, Métis, and Inuit
+communities, and as immigration has rapidly risen. Political momentum to
+restrict immigration and assert a firmer Canadian identity ensconced in
+settler colonial histories and ideological images of Canada as a
+northern state today collides with increased recognition of Indigenous
+peoples' histories across Canada and decolonial narratives advanced by
+scholars, activists, and artists, particularly after the final report of
+the 2015 Canada's Truth and Reconciliation Commission.
+
+However, rather than viewing Canadians' ``bi-focal habit of vision,''
+celebrated by McLuhan and his \emph{Explorations} colleagues, as out of
+step with twenty-first century realities, I would argue that the
+metaphorical power of the notion of the borderline case still resides in
+its multiplicity. As McLuhan indicated in his 1967 lectures, Canada was
+never \emph{a} borderline case, but rather is constituted by multiple
+borderlines. Janine Marchessault remarks that McLuhan
+
+\begin{quote}
+was able to recognize and understand as radical methodology in Innis's
+work {[}that{]} the borderline is historical, charged with emotional
+intensities, and in Canada's case is ``porous.'' History written from a
+location along the borderline can reanimate and challenge official
+history and reassert the effects of time.\footnote{Janine Marchessault,
+  \emph{Marshall McLuhan: Cosmic Media} (London: Sage, 2005), 100.}
+\end{quote}
+
+\noindent This recognition was amplified by the various proposals for establishing
+communications studies in Canada in the late 1960s. To stick with
+musical metaphors, borders (national, cultural, linguistic) may be
+spaces of intense resonances, but that does not necessarily make them
+harmonious. A frontier imagination enables cultural collisions and
+consonances, facilitates contradictions and agreements, and provides
+sites for processes of conflict, power, force, and aggression to
+function against and alongside hospitality, openness, and, indeed,
+communication. For the history of Canadian communication studies,
+Canada's many borderlines continue to provide fertile ground for
+multifocal habits of vision.
+
+
+
+
+\section{Bibliography}\label{bibliography}
+
+\begin{hangparas}{.25in}{1} 
+
+
+
+Averbeck-Lietz, Stefanie. \emph{Kommunikationswissenschaft im
+Internationalen Vergleich: Transnationale Perspektiven (Medien, Kultur,
+Kommunikation).} Wiesbaden, Germany: Springer, 2017.
+
+Babe, Robert E. \emph{Canadian Communication Thought: Ten Foundational
+Writers}. Toronto: University of Toronto Press, 2000.
+
+Beattie, Earle. ``What Media Probe Is All About.'' \emph{Canadian
+Journal of Communication} 1, no. 1 (1974): 11--12.
+
+Berland, Jody. \emph{North of Empire: Essays on the Cultural
+Technologies of Space}. Durham, NC: Duke University Press, 2009.
+
+Braz, Albert. ``Outer America: Racial Hybridity and Canada's Peripheral
+Place in Inter-American Discourse.'' In \emph{Canada and Its Americas:
+Transnational Navigations}, edited by Winfried Siemerling and Sarah
+Phillips Casteel\emph{,} 119--34. Montreal: McGill-Queen's University
+Press, 2010.
+
+Carpenter, Edmund S., Jaqueline Tyrwhitt, H. M. McLuhan, W. T.
+Easterbrook, and D. C. Williams. ``University of Toronto: Changing
+Patterns of Language and Behavior and the New Media of Communication
+(1953--1955).'' Ford Foundation Archives, Rockefeller Archive Center,
+New York. Grant File PA 53--70, Section 1, 1--11.
+
+Cavell, Richard. ``McLuhan's `Borderline Case' Revisted.'' In
+\emph{Comment comparer le Canada avec les États-Unis aujourd'hui},
+edited by Hélène Quanquin, Christine Lorre-Johnston, and Sandrine
+Ferré-Rode, 25--50. Paris: Presses Sorbonne Nouvelle, 2009.
+
+Charland, Maurice. ``Technological Nationalism.'' \emph{Canadian Journal
+of Political and Social Theory} 10, no. 1 (1996): 196--220.
+
+Darroch, Michael. ``Border Environments: Theorising Media and Culture in
+the Windsor-Detroit Borderlands, 1943--1946.'' In ``Borders and Spaces
+in the English-Speaking World,'' edited by Jean-Jacques Chardin. Special
+issue, \emph{RANAM: Recherches anglaises et nord-américain}, no. 52
+(2019): 11--32.
+
+Darroch, Michael. ``Bridging Urban and Media Studies: Jaqueline Tyrwhitt
+and the \emph{Explorations} Group, 1951--1957.'' \emph{Canadian Journal
+of Communication} 33, no. 2 (2008): 147--63.
+
+Darroch, Michael. ``Giedion and Explorations: Confluences of Space and
+Media in Toronto School Theorisation.'' In \emph{Media Transatlantic:
+Developments in Media and Communication Studies between North American
+and German-Speaking Europe}, edited by Norm Friesen, 63--90. Vienna:
+Springer, 2016.
+
+Darroch, Michael. ``Medial Translations and Human Unsettlements:
+Planetary Urbanisms from McLuhan to Flusser.'' In \emph{Speaking Memory:
+How Translation Shapes Cities}, edited by Sherry Simon, 169--88.
+Montreal: McGill-Queen's University Press, 2016.
+
+Darroch, Michael. ``The Toronto School: Cross-Border Encounters,
+Intellectual Entanglements.'' In \emph{The International History of
+Communication Studies}, edited by Peter Simonson and David W. Park,
+276--301. London: Routledge, 2016.
+
+Darroch, Michael, Karen Engle, and Lee Rodney. ``Introduction: Sensing
+Borders.'' In ``Ressentir (les frontières)/Sensing (Borders).'' Special
+issue, \emph{Intermédialités}, no. 34 (Autumn 2019).
+\url{https://doi.org/10.7202/1070869ar}.
+
+Dorland, Michael, ed. \emph{The Cultural Industries in Canada}. Toronto:
+James Lorimer and Company, 1996.
+
+Dorland, Michael. ``Knowledge Matters: The Institutionalization of
+Communication Studies in Canada.'' In \emph{Mediascapes: New Patterns in
+Canadian Communication}, edited by Paul Attalah and Leslie Regan Shade,
+46--64. Toronto: Thomson-Nelson, 2002.
+
+Ferguson, Stewart. ``Communication as a Discipline.'' \emph{Canadian
+Journal of Communication} 5, no. 1 (1978): 1--5.
+
+Fermi, Laura. \emph{Illustrious Immigrants: The Intellectual Migration
+from Europe, 1930--1941}. Chicago: University of Chicago Press, 1968.
+
+Fleming, Donald, and Bernard Bailyn, eds. \emph{The Intellectual
+Migration: Europe and America, 1930--1960.} Cambridge, MA: Belknap Press
+of Harvard University Press, 1969.
+
+Flusser, Vilém. \emph{Ende der Geschichte, Ende der Stadt?} Vienna:
+Picus, 1992.
+
+Flusser, Vilém. ``Essays.'' In \emph{Writings}, edited by Andreas
+Ströhl, translated by Erik Eisel, 192--96. Minneapolis: University of
+Minnesota Press, 2002.
+
+Flusser, Vilém. \emph{Freedom of the Migrant.} Translated by Kenneth
+Kronenberg. Edited by Anke Finger. Urbana, IL: University of Illinois
+Press, 2003.
+
+Friesen, Norm, ed. \emph{Media Transatlantic: Developments in Media and
+Communication Studies between North American and German-Speaking
+Europe}. Vienna: Springer, 2016.
+
+``The Future of the Media Centre at the University of Windsor.''
+Unpublished manuscript, August 1971. Original Document, Department of
+Communication, Media, and Film, University of Windsor.
+
+Gagnon, Alain-G, and Sarah Fortin. ``Innis in Quebec: Conjectures and
+Conjunctures.'' In \emph{Harold Innis in the New Century}, edited by
+Charles R. Acland and William J. Buxton, 209--24. Montreal:
+McGill-Queen's University Press, 1999.
+
+Giedion, Sigfried. \emph{Mechanization Takes Command}. Cambridge, MA:
+Harvard University Press, 1948.
+
+Guldin, Rainer. ``Die Zweite Unschuld: Heilsgeschichtliche und
+Eschatologische Perspektiven im Werk Vilém Flussers und Marshall
+McLuhans.'' \emph{Flusser Studies} 6 (2008): 1--24.
+
+Guldin, Rainer. ``From Transportation to Transformation: On the Use of
+the Metaphor of Translation within Media and Communication Theory.''
+\emph{Global Media Journal: Canadian Edition} 5, no. 1 (2012): 39--52.
+
+Hamilton, Sheryl. ``Considering Critical Communication Studies in
+Canada.'' In \emph{Mediascapes: New Patterns in Canadian Communication},
+edited by Paul Attalah and Leslie Regan Shade, 4--26. Toronto:
+Thomson-Nelson, 2002.
+
+Holub, Robert C. \emph{Crossing Borders: Reception Theory,
+Poststructuralism, Deconstruction}. Madison: University of Wisconsin
+Press, 1992.
+
+Innis, Harold Adams. \emph{The Bias of Communication}. Toronto:
+University of Toronto Press, 1951.
+
+Innis, Harold Adams. \emph{Empire and Communications}. Oxford: Oxford
+University Press, 1950.
+
+Innis, Harold Adams. ``L'Oiseau de Minerve.'' Translated by Roger de la
+Garde and Line Ross. \emph{Communication Information} 5, no. 2--3
+(1983): 266--97.
+
+Jay, Martin. \emph{Permanent Exiles: Essays on the Intellectual
+Migration from Germany to America}. New York: Columbia University Press,
+1985.
+
+Kin Gagnon, Monika, and Janine Marchessault. \emph{Reimagining Cinema:
+Film at Expo 67.} Montreal: McGill-Queen's University Press, 2014.
+
+Kroker, Arthur. \emph{Technology and the Canadian Mind: Innis, McLuhan,
+Grant}. Montreal: New World Perspectives, 1984.
+
+Lacroix, Jean-Guy, and Benoit Lévesque. ``L'émergence et
+l'institution- nalisation de la recherche en communication au Quebec.''
+\emph{Communication Information} 7, no. 2 (1985): 7--31.
+
+Lacroix, Jean-Guy, and Benoit Lévesque. ``Principaux thèmes et courants
+théoriques dans la littérature scientifique en communication au
+Quebec.'' \emph{Communication Information} 7, no. 3 (1985): 153--211.
+
+La Garde, Roger de, and François Yelle. ``Coming of Age: Communication
+Studies in Quebec.'' In \emph{Mediascapes: New Patterns in Canadian
+Communication}, edited by Paul Attalah and Leslie Regan Shade,
+65\emph{--}86. Toronto: Thomson-Nelson, 2002.
+
+Löblich, Maria, and Stefanie Averbeck-Lietz. ``The Transnational Flow of
+Ideas and \emph{Histoire Croisée} with Attention to the Cases of France
+and Germany.'' In \emph{The International History of Communication
+Study}, edited by Peter Simonson and David W. Park, 25--46. New York:
+Routledge, 2016.
+
+Lorimer, Rowland, and Jean McNulty. \emph{Mass Communication in Canada}.
+Toronto: McClelland and Stewart, 1987. Now in its ninth edition as
+Gasher, Mike, David Skinner, and Natalie Coulter. \emph{Media and
+Communication in Canada: Networks, Culture, Technology, Audience}.
+Toronto: Oxford University Press Canada, 2020.
+
+McLuhan, Marshall. ``Canada: The Borderline Case.'' In \emph{The
+Canadian Imagination}, edited by David Staines, 226--48. Cambridge, MA:
+Harvard University Press, 1977.
+
+McLuhan, Marshall. \emph{The Gutenberg Galaxy: The Making of Typographic
+Man}. Toronto: University of Toronto Press, 1962.
+
+McLuhan, Marshall. \emph{La Galaxie Gutemberg: La Génèse de
+L\textquotesingle homme Typographique}. Translated by Jean Paré.
+Montreal: Éditions H. M. H. Ltée, 1967.
+
+McLuhan, Marshall. ``The Marfleet Lectures (1967): Part 1; Canada the
+Borderline Case.'' In \emph{Understanding Me}: \emph{Lectures and
+Interviews}, edited by Stephanie McLuhan and David Staines, 104‒22.
+Toronto: McClelland \& Stewart, 2003.
+
+McLuhan, Marshall. \emph{Pour Comprendre Les Medias}. Translated by Jean
+Paré. Montreal: Éditions H. M. H. Ltée, 1968.
+
+McLuhan, Marshall. \emph{Understanding Media: The Extensions of Man}.
+New York: McGraw Hill, 1964.
+
+McLuhan, Marshall, and Edmund Carpenter, eds. ``Verbi-Voco-Visual.''
+Special issue, \emph{Explorations}, no. 8 (1957).
+
+Park, David W., and Jefferson Pooley, eds. \emph{The History of Media
+and Communication Research: Contested Memories.} New York: Peter Lang,
+2008.
+
+Proulx, Serge. ``Les communications: Vers un nouveau savoir savant?''
+\emph{Recherches sociographiques} 20, no. 1 (1979): 103--17.
+
+Ramírez y Ramirez, Karla Margarita. ``Analyse bibliométrique des revues
+\emph{Canadian Journal of Communication} et \emph{Communication}
+1974--2005.'' PhD diss., University of Montreal, 2010.
+
+Robinson, Gertrude. ``The Katz/Lowenthal Encounter: An Episode in the
+Creation of Personal Influence.'' \emph{Annals of the American Academy
+of Political and Social Science} 608 (November 2006): 76--96.
+
+Robinson, Gertrude. ``Remembering Our Past: Reconstructing the Field of
+Communication Studies.'' \emph{Canadian Journal of Communication} 25,
+no. 1 (2000).
+
+Rodney, Lee. \emph{Looking Beyond Borderlines: North America's Frontier
+Imagination.} New York: Routledge, 2017.
+
+Salée, Daniel. ``Innis and Quebec: The Paradigm That Would Not Be.'' In
+\emph{Harold Innis in the New Century}, edited by Charles R. Acland and
+William J. Buxton, 196--208. Montreal: McGill-Queen's University Press,
+1999.
+
+Salter, Liora, ed. \emph{Communication Studies in Canada.} Toronto:
+Butterworth, 1981.
+
+Salter, Liora. ``Taking Stock: Communication Studies in 1987.''
+\emph{Canadian Journal of Communication} 13, no. 5 (1988): 23--45.
+
+Shoshkes, Ellen. \emph{Jaqueline Tyrwhitt: A Transnational Life in Urban
+Planning and Design}. Farnham, UK: Ashgate, 2013.
+
+Simonson, Peter, and David W. Park, eds. \emph{The International History
+of Communication Study}. New York: Routledge, 2016.
+
+Simonson, Peter, and John D. Peters. ``Communication and Media Studies:
+History to 1968.'' In \emph{International Encyclopedia of
+Communication}, edited by Wolfgang Donsbach. Article published September
+1, 2014. https://doi.org/10.1002/9781405186407.wbiecc087.pub2.
+
+Tate, Eugene D., Andrew Osler, Gregory Fouts, and Arthur Siegel. ``The
+Beginnings of Communication Studies in Canada: Remembering and Narrating
+the Past.'' \emph{Canadian Journal of Communication} 25, no. 1 (2000).
+
+Taylor, Greg, and Ray op'tLand. ``Communication Research and Teaching in
+Canada.'' \emph{Publizistik} 64 (2019): 79--101.
+
+Theall, Donald. ``Communication Theory and the Marginal Culture: The
+Socio-Aesthetic Dimensions of Communication Study.'' In \emph{Studies in
+Canadian Communications}, edited by Gertrude Robinson and Donald Theall,
+7--26. Montreal: Graduate Program in Communications, McGill University,
+1975.
+
+Tintera, James B., and Stuart K. Bergsma. ``A Report to the University
+of Windsor: The Suggested Structure and Application of a Closed Circuit
+Television System to the Instructional Program of the University of
+Windsor.'' Detroit: Mass Communications Centre, Wayne State University,
+November 30, 1965. Original Document, Department of Communication,
+Media, and Film, University of Windsor.
+
+Tremblay, Gaëtan. ``From Marshall McLuhan to Harold Innis, or From the
+Global Village to the World Empire.'' \emph{Canadian Journal of
+Communication} 37, no. 4 (2012): 561--75.
+
+Tremblay, Gaëtan. ``Journey of a Researcher.'' \emph{Canadian Journal of
+Communication} 39, no. 1 (2014): 9--28.
+
+Watkins, M. H. ``A Staple Theory of Economic Growth.''~\emph{Canadian
+Journal of Economics and Political Science} 296, no. 2 (1963): 141--58.
+
+Wiener, Norbert. \emph{Cybernetics}. Cambridge, MA: MIT Press, 1948.
+
+Yelle, François. ``Étude de la littérature réflexive de la recherche
+universitaire québécoise en communication médiatique.'' PhD diss.,
+University of Montreal, 2004.
+
+Yelle, François. ``L'histoire des études en communication au Québec et
+le dogme de la rupture, ou l'héritage peu célébré des intellectuels
+canadiens-français des années 1940 et 1950.'' \emph{Revista Eptic} 19,
+no. 1 (2017): 115--35.
+
+Yelle, François. ``McLuhan at McGill: A Brief Look at Theall and
+Languirand.'' Paper presented at the Edgy Media Symposium, University of
+Windsor, Canada, March 1, 2019.
+
+
+
+\end{hangparas}
+
+
+\end{document}
