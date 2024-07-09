@@ -1,0 +1,1239 @@
+% see the original template for more detail about bibliography, tables, etc: https://www.overleaf.com/latex/templates/handout-design-inspired-by-edward-tufte/dtsbhhkvghzz
+
+\documentclass{tufte-handout}
+
+%\geometry{showframe}% for debugging purposes -- displays the margins
+
+\usepackage{amsmath}
+
+\usepackage{hyperref}
+
+\usepackage{fancyhdr}
+
+\usepackage{hanging}
+
+\usepackage{tabu}
+
+\usepackage{longtable}[=v4.13]
+
+\hypersetup{colorlinks=true,allcolors=[RGB]{97,15,11}}
+
+\fancyfoot[L]{\emph{History of Media Studies}, vol. 4, 2024}
+
+
+% Set up the images/graphics package
+\usepackage{graphicx}
+\setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
+\graphicspath{{graphics/}}
+
+\title[`Western Communication']{`Western Communication': Eurocentrism and Modernity: Marks of the Predominant Theories in the Field} % longtitle shouldn't be necessary
+
+% The following package makes prettier tables.  We're all about the bling!
+\usepackage{booktabs}
+
+% The units package provides nice, non-stacked fractions and better spacing
+% for units.
+\usepackage{units}
+
+% The fancyvrb package lets us customize the formatting of verbatim
+% environments.  We use a slightly smaller font.
+\usepackage{fancyvrb}
+\fvset{fontsize=\normalsize}
+
+% Small sections of multiple columns
+\usepackage{multicol}
+
+% Provides paragraphs of dummy text
+\usepackage{lipsum}
+
+% These commands are used to pretty-print LaTeX commands
+\newcommand{\doccmd}[1]{\texttt{\textbackslash#1}}% command name -- adds backslash automatically
+\newcommand{\docopt}[1]{\ensuremath{\langle}\textrm{\textit{#1}}\ensuremath{\rangle}}% optional command argument
+\newcommand{\docarg}[1]{\textrm{\textit{#1}}}% (required) command argument
+\newenvironment{docspec}{\begin{quote}\noindent}{\end{quote}}% command specification environment
+\newcommand{\docenv}[1]{\textsf{#1}}% environment name
+\newcommand{\docpkg}[1]{\texttt{#1}}% package name
+\newcommand{\doccls}[1]{\texttt{#1}}% document class name
+\newcommand{\docclsopt}[1]{\texttt{#1}}% document class option name
+
+
+\begin{document}
+
+\begin{titlepage}
+
+\begin{fullwidth}
+\noindent\Large\emph{History of Communication Studies across the Americas
+} \hspace{18mm}\includegraphics[height=1cm]{logo3.png}\\
+\noindent\hrulefill\\
+\vspace*{1em}
+\noindent{\Huge{`Western Communication': Eurocentrism\\\noindent and Modernity: Marks of the Predominant Theories in the Field\textsuperscript{1}\setcounter{footnote}{1}\par}}
+
+\vspace*{1.5em}
+
+\noindent\LARGE{Erick R. Torrico Villanueva}\par\marginnote{\emph{Erick R. Torrico Villanueva, ```Western Communication': Eurocentrism and Modernity: Marks of the Predominant Theories in the Field,'' \emph{History of Media Studies} 4 (2024), \href{https://doi.org/10.32376/d895a0ea.2097c669}{https://doi.org/ 10.32376/d895a0ea.2097c669}.} \vspace*{0.75em}}
+\vspace*{0.5em}
+\noindent{{\large\emph{Universidad Andina Simón Bolívar}, \href{mailto:etorrico@uasb.edu.bo}{etorrico@uasb.edu.bo}\par}} \marginnote{\href{https://creativecommons.org/licenses/by-nc/4.0/}{\includegraphics[height=0.5cm]{by-nc.png}}}
+
+% \vspace*{0.75em} % second author
+
+% \noindent{\LARGE{<<author 2 name>>}\par}
+% \vspace*{0.5em}
+% \noindent{{\large\emph{<<author 2 affiliation>>}, \href{mailto:<<author 2 email>>}{<<author 2 email>>}\par}}
+
+% \vspace*{0.75em} % third author
+
+% \noindent{\LARGE{<<author 3 name>>}\par}
+% \vspace*{0.5em}
+% \noindent{{\large\emph{<<author 3 affiliation>>}, \href{mailto:<<author 3 email>>}{<<author 3 email>>}\par}}
+
+\end{fullwidth}
+
+\vspace*{1em}
+
+
+
+
+\noindent\emph{Translation by William Quinn}
+
+\hypertarget{abstract}{%
+\section{Abstract}\label{abstract}}
+
+The\marginnote{\textsuperscript{1} This article is
+  a translation of Erick R. Torrico Villanueva, ``La `comunicación
+  occidental': Eurocentrismo y Modernidad: Marcas de las teorías
+  predominantes en el campo,'' \emph{Journal de Comunicación Social} 3,
+  no. 3 (2015). The original article carries a
+  \href{https://jcomsoc.ucb.edu.bo/a/openaccess}{Creative Commons
+  BY-NC-SA license}.} main communication theories in use have been developed primarily by
+American and European authors, reflect the characteristics of the
+industrialized societies of the North, and are framed within the
+parameters of scientificity as established by modernity. They focus on
+mass communication, its technological means and its effects. Thus, with
+a framework constituted above all by positivist epistemology,
+empirical-quantitative research strategies, and functionalist
+sociological theory, communication, as a field of knowledge, has
+structured its profile of scientificity to conform to modern procedural
+requirements as well as the expansionist objectives of the
+civilizational model in which it was born. Such theories have reached,
+in practice, a ``universal'' scope, a ``canonical'' recognition and
+level, and are reproduced in the most diverse latitudes in both training
+processes and professional practice, as well as in mainstream discourse.
+Faced with the predominance of this ``Western'' communication, Latin
+American critical communicational thought is challenged to seek a new
+understanding of the phenomenon of communication and its study in the
+perspective of its de-Westernization. 
+
+\vspace*{6em}
+
+\noindent{\emph{History of Media Studies}, vol. 4, 2024}
+
+\hypertarget{resumen}{%
+\section{Resumen}\label{resumen}}
+
+Las principales teorías de la Comunicación en uso han sido
+fundamentalmente desarrolladas por autores estadounidenses y europeos,
+responden a las características de las sociedades industrializadas del
+Norte y se enmarcan en los parámetros de cientificidad establecidos por
+la Modernidad. Están focalizadas en la comunicación masiva, sus medios
+tecnológicos y sus efectos. De esa forma, con una armazón constituida
+ante todo por la epistemología positivista, las estrategias
+investigativas empírico-cuantitativas y la teoría sociológica
+funcionalista, la Comunicación, en cuanto campo de saber, estructuró su
+perfil de cientificidad a la medida de las exigencias procedimentales
+modernas como también de los objetivos de expansión del modelo
+civilizatorio en que vio la luz. Tales teorías han alcanzado, en la
+práctica, un alcance ``universal'', un reconocimiento y un nivel
+``canónicos'' y son reproducidas en las más diversas latitudes tanto en
+los procesos de formación como en el ejercicio profesional, lo mismo que
+en el sentido común. Ante el predominio de esa ``Comunicación
+`occidental'\,'', el pensamiento comunicacional crítico latinoamericano
+está desafiado a buscar un nuevo entendimiento del fenómeno de la
+comunicación y de su estudio en la perspectiva de su
+desoccidentalización.
+
+
+\enlargethispage{2\baselineskip}
+
+
+
+
+ \end{titlepage}
+
+% \vspace*{2em} | to use if abstract spills over
+
+\newthought{Like practically all} fields of knowledge, communication is dominated by
+the assumptions, purposes, and scientificity criteria of the ``modern''
+and ``Western'' world, i.e., those established within the framework of
+racialized hierarchies and dualistic reasoning\footnote{Racialization
+  involves the adoption of the idea of \emph{race} to differentiate
+  biologically and culturally ``superior'' and ``inferior'' populations.
+  In turn, \emph{dualistic reason} is what operates with such binary
+  classifications and is also linked to the emergence of the so-called
+  ``two cultures,'' i.e., the separation between the search for the true
+  (science) and the good (philosophy).} that became the norm when Europe
+became the economic and political center of the planet after controlling
+the Atlantic at the end of the fifteenth century and conquering the
+``New World,"\footnote{Also known as the ``West Indies,'' this
+  geographical space found by Christopher Columbus's expedition in 1492
+  was called America from 1507 onwards.} which it then proceeded to
+colonize.
+
+Although there is no explicit agreement among scholars in the field
+regarding the existence of a canon in the field of communication
+theory,\footnote{The controversy in this regard is raised in the
+  introduction to the book by Elihu Katz et al., eds., \emph{Canonic
+  Texts in Media Research: Are There Any? Should There Be? How About
+  These?} (New York: Polity Press, 2008), 1--8, which rightly asks
+  whether there are any canonical texts as much as whether there should
+  be.} the idea is implicitly manifested through the prevalence of a set
+of ideas and assertions from a handful of American and European authors
+which are widely seen as canonical. The repeated reference, both in
+texts for a general audience and in university programs on different
+continents, to a few notions and theories, as well as to a limited
+number of thinkers responsible for their elaboration, has ended up
+sedimenting an accepted way of thinking about communication and of
+characterizing its analysis, which, almost without discussion, is
+considered to be of universal scope and validity.
+
+The tangible result of this predominance is a Euro-American conception
+of communication---basically understood as the transmission of mass
+messages, through technology, to exert political, business, or religious
+influence---with an outsized presence and use not only in academia but
+also in the professional practices of the field and even in non-experts'
+shared discourse. This ``dominant paradigm'' sees communication above
+all as an instrumental resource, supporting the interests of power (of
+the emitters and/or their financial backers), which is why it confers on
+its research an immediately practical utility rather than a capacity to
+generate autonomous social knowledge that can be scientifically and
+socially relevant.
+
+In addition, the identification of four ``initiators'' or ``founding
+fathers'' of communication research and theorizing---Kurt Lewin
+(Prussian, psychologist), Carl Hovland (American, psychologist), Harold
+Lasswell (American, political scientist) and Paul Lazarsfeld (Austrian,
+sociologist)---by the American writer Wilbur Schramm not only was and
+continues to be taken as the word of authority, but also almost rules
+out the possibility of recognizing any other pre--World War II origin
+for these matters, or at least of assuming that there was some other
+contemporary source.\footnote{Wilbur Schramm, ed., \emph{La ciencia de
+  la comunicación humana} (Quito: CIESPAL, 1965).} In this sense, even
+precedents of research and reflection on the press that were found in
+the sociological works of seminal European thinkers such as Gabriel
+Tarde, Karl Marx, Émile Durkheim, or Max Weber\footnote{See, for
+  example, Blanca Muñoz, \emph{Cultura y comunicación: Introducción a
+  las teorías contemporáneas} (Barcelona: Barcanova, 1989); Éric
+  Maigret, \emph{Sociología de la comunicación y los medios} (Bogotá:
+  Fondo de Cultura Económica, 2005); and Paulo Serra, \emph{Manual de
+  teoria da comunicação} (Convilhã, Portugal: Universidade da Beira
+  Interior, 2007).} were shunted aside, not to mention those that can be
+found in Latin American thought from the nineteenth century
+onwards.\textsuperscript{7}
+
+Consequently,\marginnote{\textsuperscript{7}\setcounter{footnote}{7} Cf. Luis Ramiro Beltrán, ``Estado y perspectivas de la
+  investigación en comunicación en América Latina,'' \emph{SIDCOM}, no.
+  2 (1982); and José Marques de Melo, ``Difusão dos paradigmas da escola
+  latino-americana de comunicação nas universidades brasileiras,''
+  \emph{Comunicação e Sociedade}, no. 25 (1996).} as a field dedicated to the examination of processes of
+meaningful (inter)relation, communication emerged in the West during the
+first third of the twentieth century with the stamp of empirical,
+measurable, and applicable knowledge, linked from its beginnings to the
+political and economic interests of capitalism, since its first
+developments took place within the liberal framework of research
+initiatives undertaken by the government, business foundations, and
+certain private corporations in the United States of America.\footnote{See
+  Jefferson Pooley, ``The New History of Mass Communication Research,''
+  in \emph{The History of Media and Communication Research: Contested
+  Memories}, ed. David W. Park and Jefferson Pooley (New York: Peter
+  Lang, 2008).}
+
+A process of formulating a canon was thus generated, in the sense that
+the field of communication found itself ensconced, albeit indirectly, in
+a predominant mode of intellectual organization that conditioned both
+the apprehension of the phenomena of interest and the constitution of
+the main currents of theoretical production and dissemination on the
+subject.
+
+\hypertarget{the-wests-knowledge}{%
+\section{The West's Knowledge}\label{the-wests-knowledge}}
+
+The West, in addition to referring geographically to one of the cardinal
+points, is a historical metaphor that, in terms of knowledge,
+prioritizes the founding condition and the supposedly superior
+capacities of imperial Europe and its North American extension in the
+``New World,'' and is therefore also the ideological metaphor of
+cultures (European and Europeanized) that define themselves as a
+universal civilizing pattern marked by the ideals of individual freedom,
+economic accumulation, and endless material progress. This model, apart
+from being intrinsically connected to technology and its logic of
+permanent obsolescence, is also directly linked to the rationalist and
+empiricist concept of science that was perfected within the second
+modernity from the seventeenth century onwards\footnote{Enrique Dussel,
+  \emph{1492: El encubrimiento del Otro; Hacia el origen del ``Mito de
+  la modernidad''} (La Paz, Bolivia: Biblioteca Indígena, 2008). For
+  this author---and his criterion is shared here---the first modernity
+  began in 1492 when it became possible, with the incorporation of
+  America into universal geography, for history to be unified on a
+  universal scale as well.} and that gave rise to what Boaventura de
+Sousa Santos calls ``abysmal thinking.''\footnote{Boaventura de Sousa
+  Santos, \emph{Para descolonizar Occidente: Más allá del pensamiento
+  abismal} (Buenos Aires: CLACSO, 2010).}
+
+This way of thinking granted the monopoly of true knowledge to positive
+science, disqualified alternative ways of knowing represented by
+philosophy or theology, and established a \emph{line of the abyss}
+beyond which there are only ``beliefs, opinions, magic, idolatry,
+intuitive or subjective understandings'' and never ``real
+knowledge''\footnote{de Sousa Santos, 14.}; it also established two key
+epistemological premises: the symmetry between present, past, and future
+(which comes from Isaac Newton), and the body-soul dualism (which comes
+from René Descartes).
+
+De Sousa himself summarizes elsewhere the fundamental ideas that make up
+this positivist approach:
+
+\begin{quote}
+. . . the distinction between subject and object and between nature and
+society or culture; the reduction of the complexity of the world to
+simple laws, susceptible of being formulated mathematically; a
+conception of reality dominated by a deterministic mechanism and of
+truth as a transparent representation of reality; a strict distinction
+between scientific knowledge---considered the only rigorous and valid
+kind---and other forms of knowledge, such as common sense or the
+knowledge considered in the humanities; priority given to functional
+causality, and hostility to the investigation of ``ultimate causes''
+considered metaphysical and focused on the manipulation and
+transformation of the reality studied by science.\footnote{José de Souza
+  Silva, ``Desobediencia epistémica desde ABYA YALA (América Latina):
+  Tiempos de descolonización y reconstrucción en el pensamiento social
+  latinoamericano'' (paper presented at the Primer Congreso Internaciona
+  Pensamiento Social Latinoamericano, Cuenca, Ecuador, June 2008),
+  41--42.}
+\end{quote}
+
+\noindent To these features was added the belief in the self-constitution of
+modern science as a \emph{zero point} of observation, i.e., as a
+platform from which it is possible to observe the real without being the
+object of observation---in other words, as a privileged, neutral, and
+absolute standpoint that would therefore enable the observer to grasp
+universal truths without distortion or bias.\footnote{Cf. Santiago
+  Castro-Gómez and Ramón Grosfoguel, eds., \emph{El giro decolonial:
+  Reflexiones para una diversidad epistémica más allá del capitalismo
+  global} (Bogotá: IESCO-Pensar, 2007), in particular 79--85; and
+  Santiago Castro-Gómez, \emph{La hybris del punto cero: Ciencia, raza e
+  ilustración en la Nueva Granada (1750--1816)} (Bogotá: Pontificia
+  Universidad Javeriana, 2010).}
+
+Consequently, all the knowledge developed in and by the West adopted
+these epistemological assumptions of modern science and was inscribed
+within the limits of its perspective, i.e., of its linear
+self-referential gaze centered on the profiles, developments, problems,
+and teleology of societies with capitalist and industrial development,
+which led them to treat other peoples and their ways of conceiving,
+knowing, and interpreting the world with a subordinating and even
+contemptuous air.
+
+Even though communication was a latecomer to the field of scientific
+knowledge,\footnote{This emergence took place in the late 1920s, with
+  Lasswell's first analyses of war propaganda (cf. John Durham Peters
+  and Peter Simonson, eds., \emph{Mass Communication and American Social
+  Thought: Key Texts 1919--1968} {[}Lanham, MD: Rowman \& Littlefield,
+  2004{]}, 47--50), but its relative consolidation began twenty years
+  later with Lasswell himself and the other three ``initiators'' already
+  mentioned.} it could not escape this context, and very soon the
+authors who established this new field developed arguments in favor of
+empiricism, objectivist evidence, and the instrumental usefulness of
+knowledge. In a famous article published in 1949, Lasswell not only
+corrected himself regarding his inaugural qualitative analysis of war
+propaganda in 1927, but also defended the importance of quantitative
+procedures to control the uncertainty of data.\footnote{Harold D.
+  Lasswell, ``Why Be Quantitative?,'' in \emph{Language and Politics:
+  Studies in Quantitative Semantics}, ed. Lasswell and Nathan Leites
+  (Cambridge, MA: MIT Press, 1949).} And it was from that same decade
+until the 1960s that the still current main line of communication
+studies was deployed, oriented towards the verification and presumed
+measurement of the effects produced by the mass dissemination of
+messages, opting for statistical and even experimental methods to verify
+said effects.\footnote{See Schramm, \emph{La ciencia de la comunicación
+  human}; and Abraham Nosnik, \emph{El desarrollo de la comunicación
+  social: Un enfoque metodológico} (Mexico City: Trillas, 1991).}
+
+Thus, with a framework consisting primarily of positivist epistemology,
+empirical-quantitative research strategies, and functionalist
+sociological theory, communication structured its profile of
+scientificity to meet modern procedural requirements as well as the
+expansion objectives of the civilizational model in which it was born.
+This is the origin of its ``Westernism,'' i.e., its adherence to the
+nature, characteristics, and purposes of Western science but at the same
+time to the purported supremacy of ``Western culture'' and its global
+capitalist designs.\footnote{Cf. Walter Mignolo, \emph{Historias
+  locales/diseños globales: Colonialidad, conocimientos subalternos y
+  pensamiento fronterizo} (Madrid: Akal, 2003).} Moreover, this is also
+the origin of its \emph{Europhony},\textsuperscript{18}
+i.e., its\marginnote{\textsuperscript{18}\setcounter{footnote}{18} Cf. Ousmane Kane,
+  \emph{África y la producción intelectual no eurófona: Introducción al
+  conocimiento islámico al sur del Sáhara} (Madrid: Oozebap, 2011).} condition as a terrain of expression of the Western
+epistemological order in one or more of the European languages that have
+dominated scientific production, publication, and debate for centuries:
+English, French, and German (in that order of hierarchy), followed far
+behind by Spanish.
+
+However, it should be added that, despite all this epistemological,
+theoretical, and methodological subjection, communication has not yet
+been fully admitted into the privileged circle of consecrated
+disciplines due to, among other things, the unresolved discussion
+regarding its object of study\footnote{For several decades, disagreement
+  has persisted about this question, during which time the preferences
+  of authors have shifted the identification of the object of
+  communicational study from the fidelity of technical transmission, the
+  peculiarities and habits of the audiences, and the manifest and latent
+  meanings of the messages, to the competencies of the receivers,
+  cultural mediations, and the alleged democratizing benefits of
+  technologies.} or its theoretical shortcomings.\footnote{The latter
+  issue is discussed in Luiz Martino, ed., \emph{Teorias da comunicação:
+  Muitas ou poucas?} (São Paulo: Ateliê, 2007).} The elements of
+relativization introduced since the mid-1980s by the postmodernist and
+\emph{cultural studies} currents, although they contributed to opening
+other fronts of analysis such as transdisciplinarization or
+postdisciplinarity,\footnote{Cf. Immanuel Wallerstein, ``El
+  eurocentrismo y sus avatares: los dilemas de las ciencias sociales''
+  (paper presented at the Future of Sociology in East Asia, Seoul,
+  November 1996); and Eduardo Restrepo et al., eds., \emph{Sin
+  garantías: Trayectorias y problemáticas en estudios culturales}
+  (Popayán, Colombia: Envión, 2010).} did not provide a concrete
+solution to the problem of the secondary position of the field of
+communication in the spectrum of established academic knowledge, or to
+the question of its scientific status.
+
+\hypertarget{locus-features-and-actors-of-western-communication}{%
+\section{Locus, Features, and Actors of ``Western''
+Communication}\label{locus-features-and-actors-of-western-communication}}
+
+The basic ideas about communication that prevail at the international
+level, as well as the contours attributed to the field of communication,
+are above all the product of Euro-American elaborations, as has already
+been pointed out, that obviously respond to the nature and needs of the
+social orders within which they emerged.
+
+As early as 1976, in a seminal article, Luis Ramiro Beltrán referred to
+this fact, concluding that communication (communicology, for him) was
+born of this same process:
+
+\begin{quote}
+Understandably and legitimately, the United States designed and
+constructed, in philosophy, object and method, the type of social
+sciences that corresponded to its particular structural circumstances
+(cultural, economic and political). They were, eminently, sciences for
+adjustment, oriented fundamentally to studying conformity with the
+prevailing needs, goals, values and norms of the established social
+order, in such a way as to help the ruling system achieve ``normalcy''
+and avoid ``deviant'' behaviors.\footnote{Quoted in Miquel de Moragas,
+  ed., \emph{Sociología de la comunicación de masas} (Barcelona: Gustavo
+  Gili, 1982), 103.}
+\end{quote}
+
+\noindent And in 1978 Jesús Martín-Barbero argued that Latin Americans' dependence
+in this field should not be seen only in the practice of repeating
+imported theories but also ``in the very conception of science, of
+scientific work and its function in society'' that prevailed in the
+region; he also added that ``The `science' of communication is born
+controlled and oriented toward perpetuating the `North American style of
+democracy.'\,''\footnote{Jesús Martín-Barbero, \emph{Procesos de
+  comunicación y matrices de cultura: Itinerario para salir de la razón
+  dualista} (Mexico City: Gustavo Gili, 1987), 20, 21.}
+
+Thus, the initial \emph{locus} of enunciation of communicational
+knowledge was specifically marked by a geographical location, a
+historical situation, an epistemological conception, a notion of
+science, a methodological criterion, and a linguistic-cultural device,
+as well as by historical-social interests and purposes aligned with the
+Eurocentric civilizational designs.
+
+Within this framework, thinkers and analysts of the capitalist North,
+imbued with the facts and aspirations of modernity, granted prerogatives
+of scientificity to mediatized communication and devoted most of their
+explicatory efforts to it, leaving aside the basic fact of
+meaning-bestowing human (inter)relation itself. These factors, in the
+end, shaped the ``Western'' intellectual tradition that continues to
+prevail as the main reference in the field.
+
+\hypertarget{towards-a-brief-profile-of-the-western-viewpoint}{%
+\section{Towards a Brief Profile of the ``Western''
+Viewpoint}\label{towards-a-brief-profile-of-the-western-viewpoint}}
+
+But what are the distinctive aspects of this predominant communicational
+vision? In order to answer this question, below is a brief approximation
+to the proposals of eleven theorists from Europe and the United States
+of America whose texts were and continue to be widely used in university
+training and research processes in Ibero-America.\textsuperscript{24} The
+books and authors selected for this purpose are the following:
+\begin{fullwidth}
+
+\tabulinesep=1.9mm
+{\begin{longtabu} to 1.55\textwidth { X[l] X[c] X[c] X[c]} 
+\large{\emph{Title} & \emph{Author(s)} & \emph{Nationality} & \emph{Year}}\\
+\endfirsthead
+\large{\emph{Title} & \emph{Author(s)} & \emph{Nationality} & \emph{Year}}\\
+\endhead
+\emph{Theories of Mass Communication} & Melvin L. DeFleur & American &
+1966 \\
+\emph{Mass Communication Theory: An Introduction} & Denis McQuail &
+English & 1983 \\
+\emph{Teorie delle comunicazioni di massa} & Mauro Wolf & Italian &
+1985 \\
+\emph{Cultura y comunicación: Introducción a las teorías
+contemporáneas} & Blanca Muñoz & Spanish & 1989 \\
+\emph{La pensée communicationnelle} & Bernard Miège & French & 1995 \\
+\emph{La science de la communication} & Judith Lazar & French &
+1996 \\
+\emph{Historia de las teorías de la comunicación} & Armand and Michèle
+Mattelart & Belgian & 1997 \\
+\emph{Teorías de la comunicación: Ámbitos, métodos y perspectivas} &
+Miquel R. Alsina & Spanish & 2001 \\
+\emph{Sociologie de la communication et des médias} & Éric Maigret &
+French & 2003 \\
+\emph{Teoría de la comunicación: La comunicación, la vida y la
+sociedad} & Manuel Martín Serrano & Spanish & 2007
+\end{longtabu}}
+
+
+
+\hspace{.08in}\textsuperscript{* The original titles and the years of appearance of the
+first editions are cited here.}
+
+\end{fullwidth}
+
+\vspace{1em}
+
+A\marginnote{\textsuperscript{24}\setcounter{footnote}{24} The
+  bibliographic and state-of-the-art accounts of communication theories
+  in Latin America list each of these texts at least once among the
+  theoretical reference materials considered to be fundamental. See
+  Jesús Galindo et al., \emph{Cien libros hacia una comunicología
+  posible} (Mexico City: Universidad Autónoma de la Ciudad de México,
+  2005); Luiz Martino, ``Teorias da comunicação: O estado da arte no
+  Universo de Língua Espanhola'' (paper presented at the XXIX Encuentro
+  de los Núcleos de Investigación de la INTERCOM, Brasilia, August 29,
+  2007); and Raúl Fuentes Navarro, ``Bibliografías, biblionomías,
+  bibliometrías: Los libros fundamentales en el estudio de la
+  comunicación,'' \emph{Comunicación y Sociedad}, no. 10 (2008).} look at the aspects of each of these books that relate to the notions
+of scientific knowledge, science, theory, and communication; and at the
+theoretical sources used by their authors, at the lines of specialized
+thought they identify or else the type or types of communication they
+favor, and at the geographical areas they consider relevant in the
+origin of the ideas or theories may allow us to outline the defining
+features of what we have come to call ``Western'' communication. See now
+briefly each of the cases based on this initial evaluation scheme.
+
+\hypertarget{book-by-book}{%
+\section{Book by Book}\label{book-by-book}}
+
+The title of Melvin DeFleur's book already gives two valuable clues for
+what we are interested in examining here: he speaks of theories, in the
+plural, and of mass communication, which quickly establishes the
+orientation adopted by this author, who in this book summarizes and
+explains a small group of psychological and sociological
+theories\footnote{These are theories of individual differences, social
+  categories, social relations, and cultural norms.} of communication
+based on the use of mass media, all of them related to the idea of media
+influence on individual behaviors. Thus, DeFleur finds only a reduced
+range of scarcely elaborated theoretical approaches to the mass
+communication phenomenon, which is why he demands a ``theoretical
+integration'' (which, however, he does not consider very feasible),
+while he also proposes the need for a logical and empirical
+strengthening of the existing theories. In this respect, he says that
+these theories are in fact ``pre-theories'' due to their degree of
+simplicity, the vagueness of their formulations and their lack of both
+systematicity and supporting evidence.\footnote{Melvin DeFleur,
+  \emph{Teorías de la comunicación masiva} (Buenos Aires: Paidós, 1976),
+  223--28.}
+
+DeFleur distinguishes human communication from that of other non-human
+organisms, to which he attributes a lack of conscious processes,
+learning, and culture, while affirming that the key to human
+communication systems lies in the achievement of ``isomorphism of
+meanings'' among those who participate in the ``symbolic
+interaction.''\footnote{DeFleur, 121, 137--38.} Although he speaks of
+this ``communicative exchange'' between individuals, the descriptive
+model that he introduces shows a one-way relationship that goes from a
+``source'' to a ``destination'' mediated by a technical ``transmitter''
+and a technical ``receiver.''\footnote{DeFleur, 140.}
+
+Among the authors on which DeFleur bases his ideas are Paul Lazarsfeld,
+Bernard Berelson, Joseph T. Klapper, Charles Osgood, Charles Wright,
+Robert Merton, Carl Hovland, Elihu Katz, Harold Lasswell, and Wilbur
+Schramm.
+
+Denis McQuail's book assumes, in the title itself, that it is feasible
+to speak in the singular of ``the theory of mass communication,''
+although in its content (first contradiction) he provides a rather long
+list of different theoretical elaborations.\footnote{In general terms,
+  these refer to the relationships between mass communication, society,
+  and social change, as well as to the objectives, functions, roles,
+  contents, audiences, and effects of mass media.} His second
+contradiction has to do with the fact that he doubts the existence of
+the theory he claims to affirm because ``it tends to be imprecisely
+formulated'' and has ``made little progress in the constitution of a
+`science of mass communication,' in the sense of a set of firm theses
+that can be used to improve the effectiveness of communication
+media.''\footnote{Denis McQuail, \emph{Introducción a la teoría de la
+  comunicación de masas} (Barcelona: Paidós, 1985), 267, 268.}
+
+The other element that should be highlighted in McQuail's text is that
+it focuses exclusively on the \emph{mass media} form of communication,
+from which we can derive a practical equivalence between the phenomenon
+itself (which the author does not define in any precise sense) and the
+technological media in which this phenomenon manifests itself: press,
+book, radio, television, cinema, and recorded music.\footnote{McQuail,
+  17--37.}
+
+The authors McQuail most frequently cites in his bibliographical
+references are Bernard Berelson, Jay Blumler, George Gerbner, James
+Halloran, Elihu Katz, Paul Lazarsfeld, Everett Rogers, Karl Rosengren,
+Gaye Tuchman, Jeremy Tunstall, and Charles Wright, who all belong to a
+similar ideological register, although he also mentions Theodor Adorno,
+Raymond Williams, Louis Althusser, Antonio Gramsci, Armand Mattelart,
+and Stuart Hall, occasionally used to account for what he calls
+``alternative approaches to mass communication.''
+
+In his book, Mauro Wolf offers a chronological overview of the currents
+and theories that have marked the trajectory of mass communication
+research, leading to what he describes as ``new trends'' of this
+``dominant paradigm.''
+
+As in the preceding case, while the original title speaks of theory in
+the singular, the content of the text presents at least nine different
+traditional theories and another three later ones,\footnote{The author
+  details them: ``the hypodermic theory, the theory linked to
+  empirical-experimental visions, the theory derived from empirical
+  field research, the theory of the structural-} all
+related to the use of mass media to communicate, and the author admits
+not only that it is not always accurate to use the term theory to
+designate\marginnote{functionalist approach,
+  the critical theory of the media, the culturological theory,
+  \emph{cultural studies}, the communicative theories.'' Mauro Wolf,
+  \emph{La investigación de la comunicación de masas} (Barcelona:
+  Paidós, 1987), 22. In the second part (155ff.), he adds the theories
+  of long-term effects and those of the sociology of emitters.} the explanatory tables in use---since, he says, they are
+sometimes far from being sets of coherent and verified propositions and
+hypotheses---but also that the object to which they refer varies: it is
+sometimes identified as the ``mass media'' and sometimes as ``mass
+culture.''\footnote{Wolf, 22}
+
+The main authors considered by Wolf are Theodor Adorno, Raymond Bauer,
+Umberto Eco, Carl Hovland, Elihu Katz, Paul Lazarsfeld, Denis McQuail,
+Claude Shannon, Gaye Tuchman, and Charles Wright.
+
+For Blanca Muñoz it is possible to articulate a ``theory of
+communication'' on the basis of concepts derived from theories that came
+out of social philosophy, as well as the sociology of knowledge and
+empirical sociology, but such a theory concerns an area that in her
+opinion is delimited by the relationship between communication and mass
+media and by an effective equivalence between ``communicative system''
+and ``cultural system.''\footnote{Muñoz, \emph{Cultura y comunicación,}
+  2, 1.}
+
+This author assumes the validity of the Lasswellian model as a
+``methodological perspective'' (idem) and recognizes ``two major lines
+of research'' in the field of communication: ``the North American
+paradigm,'' concerned with effects, and ``the European paradigm,''
+centered on ideology.\footnote{Muñoz, 3.} Consequently, her focus is on
+mass communication as a phenomenon of contemporary society and her
+central proposition is that the two lines that nourish the ``theory of
+mass communication'' converge, in the end, in the ``analysis of the
+formation of symbolic processes in post-industrial
+societies.''\footnote{Muñoz, 419}
+
+Therefore, Muñoz finds theoretical unity possible and argues that,
+consequently, communication theory becomes a kind of superior synthesis
+of the descriptive (sociological) and interpretative (philosophical)
+approaches to social reality and that it also serves as a ``bridge''
+between them.
+
+Theodor Adorno, Louis Althusser, Roland Barthes, Jean Baudrillard,
+Daniel Bell, Walter Benjamin, Umberto Eco, Michel Foucault, Jürgen
+Habermas, Max Horkheimer, Claude Lévy-Strauss, Herbert Marcuse, and Max
+Weber are the authors most frequently mentioned in the book's
+bibliographical references. The only Latin American who appears in this
+bibliography is Eliseo Verón.
+
+The multiplicity and disconnection of specialized scientific production
+are probably the two main features that Bernard Miège looks at as he
+examines the stages of development of ``communicational
+thinking.''\footnote{``Even if it has reached a certain level of
+  elaboration, which allows it from now on to understand the complexity
+  of the phenomena it is trying to explain, this thought is not unified,
+  and is not ready to present itself as such.'' Wolf, \emph{La
+  investigación de la comunicación de masas}, 114.} This is clearly
+reflected in the very organization of his book, in which it is very
+difficult to find a consistent organizing axis.\textsuperscript{38} Thus, when he refers to the fact that ``there are three
+founding currents,'' it must be deduced that these are ``the cybernetic
+model,'' ``the empirical-functionalist approach to the media,'' and
+``the structural method\marginnote{\textsuperscript{38}\setcounter{footnote}{38} The book is
+  structured in three parts: ``The Founding Currents (1950s and
+  1960s),'' ``The Expansion of the Issues (1970s and 1980s),'' and
+  ``Current Questions.'' It is clear that this delimitation does not
+  follow a substantial homogeneous criterion. Bernard Miège, \emph{El
+  pensamiento comunicacional} (Mexico City: Universidad Iberoamericana,
+  1996).} and its linguistic applications,'' even though
+he then proceeds, without making any distinction as to the foundational
+or derivative character he attributes to them, to expound on his
+appreciations of the ``sociology of mass culture,'' ``critical
+thinking,'' ``psychology,'' and ``McLuhanian thought.''\footnote{Miège,
+  13--43.}
+
+Apart from this, however, what is interesting is the
+author\textquotesingle s use of the notion of ``communicational
+thinking'' to refer to the set of existing ideas and theories on
+communication, which, while understanding it as the fruit of modernity,
+he defines as a ``requisite for facilitating the modernization of social
+structures.''\footnote{Miège, 10.}
+
+Miège states that this thinking ``participates at the same time in
+speculative reflection and scientific production,'' has diverse
+disciplinary origins, and is concerned with observing a variety of
+phenomena ranging from state policies to the practices of social actors;
+he also notes that it assumes a more practical orientation in the United
+States of America and initially a more critical one in Western
+Europe.\footnote{Miège, 9.} Finally, he points out that as a product of
+theoreticians, practitioners, and social activity itself, this thinking
+has partially become an ideology in the sense that it produces and
+circulates myths in contemporary society.\footnote{Miège, 115--16.}
+
+Miége\textquotesingle s bibliography includes Theodor Adorno, Max
+Horkheimer, Bernard Berelson, Regis Debray, Patrice Flichy, Jürgen
+Habermas, Elihu Katz, Harold Lasswell, Paul Lazarsfeld, Claude
+Lévy-Strauss, Marshall McLuhan, Armand Mattelart, Edgar Morin, Herbert
+Schiller, Wilbur Schramm, Lucien Sfez, Claude Shannon, Warren Weaver,
+Paul Watzlawick, and Raymond Williams.
+
+Judith Lazar, for her part, is categorical in affirming the existence of
+a ``science of communication,'' the nature of which would be based on
+the fact that communication ``has become a well-established, rigorous
+discipline with university departments, doctoral programs, research
+methods, publications and scientific organizations.''\footnote{Judith
+  Lazar, \emph{La ciencia de la comunicación} (Mexico City:
+  Publicaciones Cruz O., 1995), 6.} To this she adds that this
+``science'' encompasses the individual, interpersonal, intergroup,
+organizational, and mass levels, the last ranking highest because it is
+related ``to the totality of social life.''\footnote{Lazar, 7.}
+
+As for its object of study, citing Steven Chafee and Charles Berger, she
+says that it would be ``the production, processing and effects of
+symbols and sign systems,'' which can be observed using quantitative and
+qualitative procedures and which ties in with the ``universe of social
+science research.''\footnote{Lazar, 6--7.}
+
+In terms of what interests us here, the book offers in its first two
+chapters a brief overview of the history of communication research
+starting with the ``Chicago School'' and the ``founding fathers,'' then\newpage\noindent
+describes the ``diverse orientations"\footnote{Among these
+  ``orientations,'' she cites, for example, without resorting to any
+  criterion of order: political economy, cultural imperialism, the use
+  of media, the diffusion of innovations, dependency, technological
+  determinism, agenda setting, and the spiral of silence (26--32).} and
+presents four ``general approaches": ``cybernetics,'' ``anthropology,''
+``psychology,'' and ``semiology and structuralism.''\footnote{Lazar,
+  33--46.}
+
+The main authors referred to in her bibliography are Carl Hovland, Elihu
+Katz, Harold Lasswell, Paul Lazarsfeld, Kurt Lewin, Marshall McLuhan,
+Robert Merton, Wilbur Schramm, Roland Barthes, Gregory Bateson, Ludwig
+Bertalanffy, Umberto Eco, and Erving Goffman.
+
+In their survey of the history of communication theories, Armand and
+Michèle Mattelart assume from the outset a polysemic vision of this
+notion, and therefore a multiplicity of issues and of analytical
+approaches to the study of the phenomenon of communication.
+
+The overview they present follows the ``order of appearance'' of the
+``schools, currents or trends'' that have dealt with issues related to
+communication---from the development of communication systems (means of
+transportation and channels of communication) to the economic,
+political, and subjective implications of mass media processes and
+technologized networks---thus providing a complex panorama of the
+complementary or opposing ideas generated in different fields and from
+the perspective of different specializations.\footnote{Armand Mattelart
+  and Michèle Mattelart, \emph{Historia de las teorías de la
+  comunicación} (Barcelona: Paidós, 1997), 14. These ideas are organized
+  in the book starting with those related to the ``social organism'' as
+  a network of information exchange and then moving on to those
+  contributed by ``New World empiricism,'' reviewing ``information
+  theory,'' ``critical theory,'' ``\emph{Cultural Studies,''}
+  ``political economy'' with its variants and studies on the actor and
+  reception, and ending with the currents that examine ``postmodernity''
+  in the world of networks.} Hence, the Mattelarts speak of ``the
+plurality and fragmentation of this field of scientific observation''
+and emphasize the impossibility of positing a linear and chronological
+history of communicational theories.\footnote{Mattelart and Mattelart,
+  9.} At the same time, they note that there has been a generalization
+of ``administrative research'' that ``goes hand in hand with the
+liberalization of the mode of communication,'' which has impregnated
+with pragmatism ``even the ways of saying communication'' and feeds an
+instrumentalism that hinders the attainment of ``true legitimacy'' for
+the communicational field.\footnote{Mattelart and Mattelart, 126.}
+
+The bibliography used by the Mattelarts is one of the most extensive; in
+addition to classic Western authors such as Louis Althusser, Bernard
+Berelson, Umberto Eco, Theodor Adorno, Jürgen Habermas, Stuart Hall,
+Elihu Katz, Harold Lasswell, Paul Lazarsfeld, Marshall McLuhan, Herbert
+Schiller, Wilbur Schramm, and Raymond Williams, it includes references
+to important Latin American thinkers: Luis Ramiro Beltrán, Juan Díaz
+Bordenave, Oswaldo Capriles, Paulo Freire, Néstor García Canclini,
+Humberto Maturana, Francisco Varela, Antonio Pasquali, Héctor Schmucler,
+Jesús Martín-Barbero, and Eliseo Verón.
+
+Miquel Rodrigo Alsina, who accepts the existence of ``communication
+sciences,'' maintains that ``the object of study of communication
+theories is human communication in its manifestations in everyday
+life,'' although he indicates that ``mass communication'' constitutes
+``a preferential object of study'' for these sciences.\footnote{Miquel
+  Rodrigo Alsina, \emph{Teorías de la comunicación: Ámbitos, métodos y}
+  perspectivas (Barcelona: Aldea Global, 2001), 14, 44.} He then
+identifies three ``perspectives'' of analysis---the ``interpretative,''
+the ``functionalist,'' and the ``critical''---which, in turn, imply
+``currents,'' i.e., the ``sources'' that ``feed theories of
+communication with theoretical content.''\footnote{Rodrigo Alsina, 161.
+  This author says that a ``perspective'' implies ``a similar approach
+  to a similar object of study and a similar conception of communication
+  within society'' (163). The ``currents'' he identifies in the
+  ``interpretative perspective'' are the ``Palo Alto School,''
+  ``symbolic interactionism,'' ``Erving Goffman,'' ``constructionism,''
+  and ``ethnomethodology"; in the ``functionalist perspective,'' on the
+  other hand, he gives a brief historical review of functionalism and
+  presents its principles, describes the functions and dysfunctions of
+  mass communication, and summarizes the criticisms of functionalism;
+  finally, in the ``critical perspective,'' he returns to the
+  ``currents": ``the Frankfurt school,'' ``political economy,'' and
+  ``cultural studies.'' (163--207).}
+
+In this case, among the authors with the most bibliographical references
+are the Spaniards Luis Badía, Jordi Berrío, Manuel Castells, Josep
+Gifreu, Daniel Jones, Miquel de Moragas, Manuel Parés i Maicas, Miquel
+Rodrigo himself, Enric Saperas, Felicísimo Valbuena, and Manuel Vázquez
+Montalbán, as well as Jay Blumler, Pierre Bourdieu, Umberto Eco, Anthony
+Giddens, Erving Goffman, William Gudykunst, Michel Mafessoli, Edgar
+Morin, Herbert Schiller, Wilbur Schramm, Paul Watzlawick, and Mauro
+Wolf. Also on the list are the Latin Americans Néstor García Canclini,
+José Carlos Lozano, Jesús Martín-Barbero, Humberto Maturana, Guillermo
+Orozco, and Antonio Pasquali.
+
+Éric Maigret focuses his sociological examination on the field of
+``communication and media'' (up to the internet) and expresses that
+``any theory of communication proposes a set of momentarily indivisible
+elements: a model of the functional exchange between people, a point of
+view regarding their relations of power and culture, a vision of the
+political order that unites them''; it can be said that these three
+elements give rise to the three levels of the communication phenomenon
+as he understands them: ``natural or functional,'' ``social or
+cultural,'' and ``creativity,'' which ``correspond to the levels of
+people\textquotesingle s involvement in the universe of objects, of
+interindividual relations and of sociopolitical orders.''\footnote{Éric
+  Maigret, \emph{Sociología de la comunicación y los medios} (Bogotá:
+  Fondo de Cultura Económica, 2005), 15--16.}
+
+``Communication is primarily a cultural and political fact and not a
+technical one'' and any theory consists of ``scientific presuppositions
+and ideological, ethical and political points of view,'' he says,
+assertions that undoubtedly translate into his proposal of ``applying
+the gaze of the social sciences to the media,'' with which he conducts
+an overview that goes from nineteenth-century European studies of the
+press to the ``new technologies'' and ``electronic
+democracy.''\footnote{Maigret, 17, 16, 49. The critical review provided
+  by this author involves, among other theoretical approaches, studies
+  of effects, the Frankfurt School, the theory of mass culture, the
+  mathematical model of information, the anthropology of communication,
+  technological determinism, semiology, \emph{Cultural Studies,} and
+  theories of public opinion and public space (85--463).}
+
+
+A singular element of Maigret\textquotesingle s book is the
+incorporation of ``European founding fathers'' into the most widely
+known theoretical tradition: Karl Marx, Émile Durkheim, Alexis de
+Tocqueville, Georg Simmel, Ferdinand Tönnies, and Max Weber. However,
+his criticism of them suggests why for the most part they did not
+generate research traditions in the field:
+
+\begin{quote}
+On the question of the media, most of the European Founding Fathers were
+not close-lipped but short-sighted. They looked closely---they kept
+their distance from the common people with respect to the harmful
+effects of the media or proposed practical study programs---but\end{quote}\newpage \begin{quote}they
+misunderstood the place of communication in modernity, they
+underestimated its social importance.\footnote{Maigret, 67.}
+\end{quote}
+
+\noindent The authors repeatedly cited in this work are Roland Barthes, Pierre
+Bourdieu, Michel de Certeau, John Dewey, Émile Durkheim, Umberto Eco,
+Anthony Giddens, Erving Goffman, Jürgen Habermas, Stuart Hall, Richard
+Hoggart, Max Horkheimer, Elihu Katz, Harold Lasswell, Paul Lazarsfeld,
+Walter Lippmann, Sonia Livingstone, Karl Marx, Armand Mattelart,
+Marshall McLuhan, David Morley, Érik Neveu, Dominique Pasquier,
+Jean-Claude Passeron, Ferdinand de Saussure, Philip Schlesinger, Roger
+Silverstone, Georg Simmel, Gabriel Tarde, Alexis de Tocqueville, Alain
+Touraine, Gaye Tuchman, Jeremy Tunstall, Max Weber, Norbert Wiener, and
+Dominique Wolton. The only Latin Americans included in the references
+are Jesús Martín-Barbero and Eliseo Verón.
+
+Finally, Manuel Martín Serrano proposes his own original explanation of
+the development and nature of communication, as well as the construction
+of theory about it and the place of this theorization among current
+knowledge.
+
+This author questions the ``communicative anthropocentrism'' that, in
+his opinion, confines communication theories to a ``pre-scientific''
+state, and defends the need to develop theory from an evolutionary
+conception and not just a cultural one.\footnote{Manuel Martín Serrano,
+  \emph{Teoría de la comunicación: La comunicación, la vida y la
+  sociedad} (Madrid: McGraw Hill, 2007), xiv, xxi, xx.} He views
+communication as ``a type of interaction that is initially at the
+service of biological needs and that follows zoological patterns,'' and
+which, therefore, ``becomes a support for culture, but does not start
+with it.''\footnote{Serrano, xviii.} This means that before ``human
+communication'' there were ``pre-communicative uses of information'' in
+other living beings---which is why, he emphasizes, it is necessary to
+understand the general processes of evolution in order to know and
+theorize communication.\footnote{Serrano, 23.}
+
+Consequently, he considers that there is a notable gap between current
+theorizing about communication and scientific knowledge in other areas
+and states that ``the study of communication has to start when there was
+neither culture nor society, nor values.\footnote{This has to do with
+  what Martín Serrano calls the ``paleontology of communication''
+  (51--66).} And it only concludes when it becomes clear how
+communication has participated in the characteristics of humans, of
+their societies: in the existence of an abstract and axiological
+universe.''\footnote{Serrano, xviii, xix.}
+
+Since this is not an account of existing theories, the only authors
+traditionally linked to the field of communication mentioned in the
+bibliography are Theodor Adorno, Roland Barthes, Émile Durkheim, Ludwig
+von Bertalanffy, Max Horkheimer, Karl Marx, Abraham Moles, Claude
+Shannon, Paul Watzlawick, and Norbert Wiener, to which are added others
+coming from philosophy or language studies, epistemology, zoology,
+biological evolution, or culture in general, such as Ernst Cassirer,
+Charles Darwin, Friedrich Engels, Georg Hegel, Edmund Husserl, André
+Leroi-Gourhan, Konrad Lorenz, Jean Piaget, Jean J. Rousseau, Ian
+Tattersall, Nikolaas Tinbergen, and Ludwig Wittgenstein.
+
+\hypertarget{elements-of-western-ideas-of-communication-and-communication}{%
+\section{Elements of ``Western'' Ideas of Communication}\label{elements-of-western-ideas-of-communication-and-communication}}
+
+From the brief review made in the previous section, it is possible to
+tease out some noteworthy common elements among the books examined:
+
+The primary focus of the theories in use is on ``mass communication.``
+
+\begin{itemize}
+\item
+  Communication is conceived first and foremost as a
+  \emph{mass-mediated} process and, therefore, as a process of
+  transmitting content to specific audiences.
+\item
+  This communication is related to the power of the media or power over
+  the media, thus emphasizing its instrumental aspect or use.
+\item
+  It is recognized that the study of communication has a plural origin
+  in a number of disciplinary fields.
+\item
+  Theories identify repeatedly two basic blocs: pragmatic and critical.
+\item
+  The few references made to the necessary scientificity refer to
+  positivist guidelines: provision of evidence, quantification, and even
+  assimilation to the natural sciences.
+\item
+  The main source authors used, all of them American and European, are
+  recurrent, while Latin American authors, cited at best exceptionally,
+  are not given the same prominence.
+\item
+  The epistemological concern for the definition of theory, object, and
+  method is circumstantial, low-priority, and lacking in consistency.
+\item
+  Except in the case of Martín Serrano, there is no evident ontological
+  concern about communication as a phenomenon.
+\item
+  There are also no explicit, rigorous criteria for classifying the
+  theories presented and their corresponding components.
+\item
+  And it is generally assumed that existing theories, apart from being
+  weak and even unsystematic, are distinguished by their multiplicity,
+  disconnection, and fragmentation.
+\end{itemize}
+
+As for the differences between the visions of the eleven authors whose
+books have been presented so far, the following can be pointed out:
+
+\begin{itemize}
+\item
+  The mention of several theories prevails over the eventual allusion to
+  the possibility of developing a unified theory.
+\item
+  Some distinguish ``human communication'' from ``animal
+  communication.'' Most converge on ``mass communication."
+\item
+  Some speak of a ``science of communication,'' some of ``communication
+  sciences'' and others claim that communication cannot be a science.
+\item
+  The foundations for the study of communication are found in different
+  sources: in communication itself, in the social sciences, in the
+  humanities, in the cognitive sciences, and even in the natural
+  sciences.
+\item
+  The greatest disagreement seems to be in the naming and classification
+  of the theoretical frameworks that---without any visible conceptual
+  analysis---are called theories, currents, perspectives, paradigms,
+  lines, or schools, even within the proposal of a single author.
+\end{itemize}
+
+From all these elements it is possible to infer that in the ``Western''
+conception, communication is a technologically mediated process that
+generates effects and in which the unilateral action of the transmitters
+has preeminence over the receivers, even as receivers are recognized as
+having competences of re-signification; at the same time, communication
+is seen as an area of knowledge that lacks a defined scientific status,
+deals with multiple objects and shows a theoretical weakness that might
+nonetheless be manageable when specific research aims at influencing
+certain practices.
+
+As was bound to happen, this ``Western-centric''\footnote{``Westcentric''
+  in the original version of Shelton Gunaratne, ``De-Westernizing
+  Communication/Social Science Research: Opportunities and
+  Limitations,'' \emph{Media, Culture \& Society} 32, no. 3 (2010): 475.}
+view of the communicational phenomenon and its study is inscribed in the
+epistemological space of modernity, and both its scope (what it allows
+us to think) and its conditioning factors (the way it suggests what is
+thinkable) are those installed in the general social theories or
+theoretical matrices that serve as its frame of reference.\footnote{On
+  the characteristics of these matrices, see Erick Torrico,
+  \emph{Comunicación: De las matrices a los enfoques} (Quito: CIESPAL,
+  2010), 25--59.} And this is precisely where its link with coloniality
+comes from,\footnote{This concept, initially developed by Aníbal
+  Quijano, refers to the hierarchies of power inherited from the
+  colonial era, which after independence have been traditionally
+  reproduced by the institutional devices and control structures of
+  non-imperial nations and internalized by their subalternized
+  populations. Cf. Eduardo Restrepo and Axel Rojas, \emph{Inflexión
+  decolonial: Fuentes, conceptos y cuestionamientos} (Popayán, Colombia:
+  Universidad del Cauca, 2010), 15ff.} since this view, both in its
+conservative wing and in the one that claims to be progressive,
+effectively imposes and legitimizes the Eurocentric civilizing model
+whose age-old universal pretension prevents it from realizing that, in
+reality, it is nothing more than a provincialism projected from the
+colonial core of the fifteenth century which persists in denying and
+disqualifying worldviews and histories that it sees as ``other.''
+
+Consequently, due to the frequency with which Latin American
+academia---as well as Asian and African academia---has been imitating or
+uncritically repeating certain imported conceptions for decades, as well
+as adopting certain intellectual fashions, ``Western'' communication was
+successfully implanted in quasi-canonical terms in the region and beyond
+without any significant resistance, with the main effect of
+marginalizing or simply inhibiting the regions' own reflections.
+
+\hypertarget{de-westernizing-communication}{%
+\section{De-Westernizing
+Communication?}\label{de-westernizing-communication}}
+
+Notwithstanding this long ``Western'' predominance and the custom of
+epistemic, theoretical, and methodological ``borrowing,'' Latin America
+generated from the 1960s onwards a critical-utopian vision in
+communication that, while not homogeneous, has been marking an
+alternative analytical route and today faces the challenge of
+de-Westernization and, consequently, of its own emancipation.
+
+This option is new given that for the first time, within the framework
+of the ``decolonial turn'' initiated at the end of the 1990s, discussion
+has occurred about the possibility of reinterpreting world history and
+thereby dismantling the Eurocentric logic with which this notion had
+been constructed.\footnote{Castro-Gómez and Grosfoguel, \emph{El giro
+  decolonial}. This academic dependence was critically portrayed in the
+  excellent article cited above by Luis Ramiro Beltrán on the foreign
+  character of the premises, objects, and methods present in Latin
+  American communicational research, a text which for this very reason,
+  since its publication in 1976, has never ceased to be relevant. See
+  Restrepo and Rojas, 94--119.} This implies, at the same time, the
+opportunity to overcome, via ``epistemic disobedience,'' the constraints
+of the paradigms established by the West to guarantee for itself the
+oligopolistic advantage of knowledge.\footnote{Souza Silva,
+  ``Desobediencia epistémica.''}
+
+It is worth remembering that the previous Latin American critique was
+almost always derived from intellectual and political positions---from
+historical materialism to postmodernism---born in the heart of modernity
+and that at no time proposed going beyond the borders of that project
+forged in unison with the reign of capital, resulting from the
+incorporation of America into the planetary map.
+
+This is why the challenge of the present is different and bigger, and
+meeting it still calls for a great deal of preparation. In any case, it
+is not a matter of throwing overboard all the knowledge already
+accumulated or of chasing dreamy autochthonisms, but rather of
+critically reevaluating what is already known and channeling another
+understanding of communication---more human, social, communitarian,
+inclusive, humanizing, and democratizing than that of the ``dominant
+paradigm''---as well as instituting a space of quali-quantitative
+knowledge around a theoretical core that gives priority to consensus as
+its purpose and to interrelation over technical mediations.
+
+De-Westernizing, therefore, means ceasing to see communication and its
+field through the eyes of technocracy, the market, blind faith, and
+political control, and in so doing, to recover the liberating content of
+its meaning and praxis.
+
+
+
+
+\section{Bibliography}\label{bibliography}
+
+\begin{hangparas}{.25in}{1} 
+
+
+Bibliography}{ Bibliography}}\label{bibliography}}
+
+Beltrán, Luis Ramiro. ``Estado y perspectivas de la investigación en
+comunicación en América Latina.'' \emph{SIDCOM}, no. 2 (1982): 41--49.
+
+Castro-Gómez, Santiago. \emph{La hybris del punto cero: Ciencia, raza e
+ilustración en la Nueva Granada (1750--1816).} Bogotá: Pontificia
+Universidad Javeriana, 2010.
+
+Castro-Gómez, Santiago, and Ramón Grosfoguel, eds. \emph{El giro
+decolonial: Reflexiones para una diversidad epistémica más allá del
+capitalismo global.} Bogotá: IESCO-Pensar, 2007.
+
+DeFleur, Melvin. \emph{Teorías de la comunicación masiva}. Buenos Aires:
+Paidós, 1976.
+
+Dussel, Enrique. \emph{1492: El encubrimiento del Otro; Hacia el origen
+del ``Mito de la modernidad.''} La Paz, Bolivia: Biblioteca Indígena,
+2008.
+
+Fuentes Navarro, Raúl. ``El campo académico de la comunicación: 25 años
+de fermentación.'' \emph{Anuario ININCO} 21, no. 1 (2009): 25--42.
+
+Fuentes Navarro, Raúl. ``Bibliografías, biblionomías, bibliometrías: Los
+libros fundamentales en el estudio de la comunicación.''
+\emph{Comunicación y Sociedad}, no. 10 (2008): 15--53.
+
+Galindo, Jesús, et al. \emph{Cien libros hacia una comunicología
+posible}. Mexico City: Universidad Autónoma de la Ciudad de México,
+2005.
+
+Gunaratne, Shelton. ``De-Westernizing Communication/Social Science
+Research: Opportunities and Limitations.'' \emph{Media, Culture \&
+Society} 32, no. 3 (2010): 473--500.
+
+Kane, Ousmane. \emph{África y la producción intelectual no eurófona:
+Introducción al conocimiento islámico al sur del Sáhara}. Madrid:
+Oozebap, 2011.
+
+Katz, Elihu, John Durham Peters, Tamar Liebes, and Avril Orloff, eds.
+\emph{Canonic Texts in Media Research: Are There Any? Should There Be?
+How About These?} New York: Polity Press, 2008.
+
+Lasswell, Harold D. ``Why Be Quantitative?'' In \emph{Language and
+Politics: Studies in Quantitative Semantics}, edited by Harold D.
+Lasswell and Nathan Leites, 40--52. Cambridge, MA: MIT Press, 1949.
+
+Lazar, Judith. \emph{La ciencia de la comunicación.} Mexico City:
+Publicaciones Cruz O., 1995.
+
+Maigret, Éric. \emph{Sociología de la comunicación y los medios}.
+Bogotá: Fondo de Cultura Económica, 2005.
+
+Marques de Melo, José. ``Difusão dos paradigmas da escola
+latino-americana de comunicação nas universidades brasileiras.''
+\emph{Comunicação e Sociedade}, no. 25 (1996): 9--20.
+
+Martín-Barbero, Jesús. \emph{Procesos de comunicación y matrices de
+cultura: Itinerario para salir de la razón dualista}. Mexico City:
+Gustavo Gili, 1987.
+
+Martín Serrano, Manuel. \emph{Teoría de la comunicación: La
+comunicación, la vida y la sociedad.} Madrid: McGraw Hill, 2007.
+
+Martino, Luiz, ed. \emph{Teorias da comunicação: Muitas ou poucas?} São
+Paulo: Ateliê, 2007.
+
+Martino, Luiz. ``Teorias da comunicação: O estado da arte no Universo de
+Língua Espanhola.'' Paper presented at the XXIX Encuentro de los Núcleos
+de Investigación de la INTERCOM, Brasilia, August 29, 2007.
+
+Mattelart, Armand, and Michèle Mattelart. \emph{Historia de las teorías
+de la comunicación}. Barcelona: Paidós, 1997.
+
+McQuail, Denis. \emph{Introducción a la teoría de la comunicación de
+masas.} Barcelona: Paidós, 1985.
+
+Miège, Bernard. \emph{El pensamiento comunicacional}. Mexico City:
+Universidad Iberoamericana, 1996.
+
+Mignolo, Walter. \emph{Historias locales/diseños globales: Colonialidad,
+conocimientos subalternos y pensamiento fronterizo.} Madrid: Akal, 2003.
+
+Moragas, Miquel de, ed. \emph{Sociología de la comunicación de masas}.
+Barcelona: Gustavo Gili, 1982.
+
+Muñoz, Blanca. \emph{Cultura y comunicación: Introducción a las teorías
+contemporáneas}. Barcelona: Barcanova, 1989.
+
+Nosnik, Abraham. \emph{El desarrollo de la comunicación social: Un
+enfoque metodológico.} Mexico City: Trillas, 1991.
+
+Peters, John Durham, and Peter Simonson, eds. \emph{Mass Communication
+and American Social Thought: Key Texts 1919--1968.} Lanham, MD: Rowman
+\& Littlefield, 2004.
+
+Pooley, Jefferson. ``The New History of Mass Communication Research.''
+In \emph{The History of Media and Communication Research: Contested
+Memories}, edited by David W. Park and Jefferson Pooley, 43--69. New
+York: Peter Lang, 2008.
+
+Restrepo, Eduardo, et al., eds. \emph{Sin garantías: Trayectorias y
+problemáticas en estudios culturales.} Popayán, Colombia: Envión, 2010.
+
+Restrepo, Eduardo, and Axel Rojas. \emph{Inflexión decolonial: Fuentes,
+conceptos y cuestionamientos.} Popayán, Colombia: Universidad del Cauca,
+2010.
+
+Rodrigo Alsina, Miquel. \emph{Teorías de la comunicación: Ámbitos,
+métodos y perspectivas.} Barcelona: Aldea Global, 2001.
+
+Schramm, Wilbur, ed. \emph{La ciencia de la comunicación humana}. Quito:
+CIESPAL, 1965.
+
+Serra, Paulo. \emph{Manual de teoria da comunicação}. Convilhã:
+Universidade da Beira Interior, 2007.
+
+Sousa Santos, Boaventura de. \emph{Para descolonizar Occidente: Más allá
+del pensamiento abismal.} Buenos Aires: CLACSO, 2010.
+
+Souza Silva, José de. ``Desobediencia epistémica desde ABYA YALA
+(América Latina): Tiempos de descolonización y reconstrucción en el
+pensamiento social latinoamericano.'' Paper presented at the Primer
+Congreso Internaciona Pensamiento Social Latinoamericano, Cuenca,
+Ecuador, June 2008.
+
+Torrico Villanueva, Erick R. \emph{Comunicación: De las matrices a los
+enfoques.} Quito: CIESPAL, 2010.
+
+Torrico Villanueva, Erick R. ``La `comunicación occidental':
+Eurocentrismo y Modernidad: Marcas de las teorías predominantes en el
+campo.'' \emph{Journal de Comunicación Social} 3, no. 3 (2015): 41--64.
+\url{https://doi.org/10.35319/jcomsoc.201531062}.
+
+Wallerstein, Immanuel. \emph{Impensar las ciencias sociales: Límites de
+los paradigmas decimonónicos.} Mexico City: Siglo XXI, 1998.
+
+Wallerstein, Immanuel. ``El eurocentrismo y sus avatares: los dilemas de
+las ciencias sociales.'' Paper presented at the Future of Sociology in
+East Asia, Seoul, November 1996.
+
+Wolf, Mauro. \emph{La investigación de la comunicación de masas}.
+Barcelona: Paidós, 1987.
+
+
+
+\end{hangparas}
+
+
+\end{document}
