@@ -1,0 +1,967 @@
+% see the original template for more detail about bibliography, tables, etc: https://www.overleaf.com/latex/templates/handout-design-inspired-by-edward-tufte/dtsbhhkvghzz
+
+\documentclass{tufte-handout}
+
+%\geometry{showframe}% for debugging purposes -- displays the margins
+
+\usepackage{amsmath}
+
+\usepackage{hyperref}
+
+\usepackage{fancyhdr}
+
+\usepackage{hanging}
+
+\hypersetup{colorlinks=true,allcolors=[RGB]{97,15,11}}
+
+\fancyfoot[L]{\emph{History of Media Studies}, vol. 4, 2024}
+
+
+% Set up the images/graphics package
+\usepackage{graphicx}
+\setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
+\graphicspath{{graphics/}}
+
+\title[Americas Introduction]{The History of Communication Studies across the Americas: An Introduction} % longtitle shouldn't be necessary
+
+% The following package makes prettier tables.  We're all about the bling!
+\usepackage{booktabs}
+
+% The units package provides nice, non-stacked fractions and better spacing
+% for units.
+\usepackage{units}
+
+% The fancyvrb package lets us customize the formatting of verbatim
+% environments.  We use a slightly smaller font.
+\usepackage{fancyvrb}
+\fvset{fontsize=\normalsize}
+
+% Small sections of multiple columns
+\usepackage{multicol}
+
+% Provides paragraphs of dummy text
+\usepackage{lipsum}
+
+% These commands are used to pretty-print LaTeX commands
+\newcommand{\doccmd}[1]{\texttt{\textbackslash#1}}% command name -- adds backslash automatically
+\newcommand{\docopt}[1]{\ensuremath{\langle}\textrm{\textit{#1}}\ensuremath{\rangle}}% optional command argument
+\newcommand{\docarg}[1]{\textrm{\textit{#1}}}% (required) command argument
+\newenvironment{docspec}{\begin{quote}\noindent}{\end{quote}}% command specification environment
+\newcommand{\docenv}[1]{\textsf{#1}}% environment name
+\newcommand{\docpkg}[1]{\texttt{#1}}% package name
+\newcommand{\doccls}[1]{\texttt{#1}}% document class name
+\newcommand{\docclsopt}[1]{\texttt{#1}}% document class option name
+
+
+\begin{document}
+
+\begin{titlepage}
+
+\begin{fullwidth}
+\noindent\Large\emph{History of Communication Studies across the Americas
+} \hspace{18mm}\includegraphics[height=1cm]{logo3.png}\\
+\noindent\hrulefill\\
+\vspace*{1em}
+\noindent{\Huge{The History of Communication Studies\\\noindent across the Americas: An Introduction\par}}
+
+\vspace*{1.5em}
+
+\noindent\LARGE{David W. Park}  \href{https://orcid.org/0000-0001-7019-1525}{\includegraphics[height=0.5cm]{orcid.png}}\par\marginnote{\emph{David W. Park, Jefferson Pooley, Peter Simonson, and Esperanza Herrero, ``The History of Communication Studies across the Americas: An Introduction,'' \emph{History of Media Studies} 4 (2024), \href{https://doi.org/10.32376/d895a0ea.a8f26bf1}{https://doi.org/ 10.32376/d895a0ea.a8f26bf1}.} \vspace*{0.75em}}
+\vspace*{0.5em}
+\noindent{{\large\emph{Lake Forest College}, \href{mailto:park@lakeforest.edu}{park@lakeforest.edu}\par}} \marginnote{\href{https://creativecommons.org/licenses/by-nc/4.0/}{\includegraphics[height=0.5cm]{by-nc.png}}}
+
+\vspace*{0.75em} 
+
+\noindent{\LARGE{Jefferson Pooley}  \href{https://orcid.org/0000-0002-3674-1930}{\includegraphics[height=0.5cm]{orcid.png}}\par}
+\vspace*{0.5em}
+\noindent{{\large\emph{Muhlenberg College}, \href{mailto:pooley@muhlenberg.edu}{pooley@muhlenberg.edu}\par}}
+
+\vspace*{0.75em} % third author
+
+\noindent{\LARGE{Peter Simonson}  \href{https://orcid.org/0000-0001-7156-467X}{\includegraphics[height=0.5cm]{orcid.png}}\par}
+\vspace*{0.5em}
+\noindent{{\large\emph{University of Colorado Boulder}, \href{mailto:peter.simonson@colorado.edu}{peter.simonson@colorado.edu}\par}}
+
+\vspace*{0.75em} % third author
+
+\noindent{\LARGE{Esperanza Herrero}  \href{https://orcid.org/0000-0001-5926-2142}{\includegraphics[height=0.5cm]{orcid.png}}\par}
+\vspace*{0.5em}
+\noindent{{\large\emph{Universidad de Murcia}, \href{mailto:mariaesperanza.herrero@um.es}{mariaesperanza.herrero@um.es}\par}}
+
+\end{fullwidth}
+
+\vspace*{1em}
+
+
+\newthought{This special section} investigates the history of communication and media
+studies across national and linguistic contexts in the Americas. It maps
+transnational entanglements that have shaped communication inquiry in
+the multiple forms it has taken in South and North America and the
+Caribbean. At the same time, the section's articles attend to political,
+institutional, and cultural dynamics that shaped the field in different
+national and local contexts. In so doing, the special section throws
+light on topics and regions that have received little attention in
+English-language literature, and draws attention to historic lines of
+hegemony, exclusion, resistance, and alternative traditions of research
+across the hemisphere. In this editors' introduction, we outline the
+origins of the collective effort, connect it to parallel projects in two
+Latin American journals, and introduce the outstanding essays that
+follow.
+
+Most of the essays have their genesis in a South-North collaboration
+begun in late 2021. Earlier that year, the editors of this journal
+
+\enlargethispage{2\baselineskip}
+
+\vspace*{2em}
+
+\noindent{\emph{History of Media Studies}, vol. 4, 2024}
+
+
+ \end{titlepage}
+
+% \vspace*{2em} | to use if abstract spills over
+
+
+
+\noindent organized a virtual preconference for the meetings of the International
+Communication Association (ICA), ``Exclusions in the History and
+Historiography of Communication Studies.''\footnote{``Exclusions in the
+  History and Historiography of Communication Studies/Exclusiones en la
+  Historia e Historiografía de los Estudios de Comunicación,''
+  International Communication Association preconference, May 26--27,
+  2021, virtual.} The gathering was of a piece with the journal's
+mission to decenter the centers that have traditionally structured the
+historiography of the fields of media and communication
+studies---especially around geographical region, language, gender, race,
+and the legacies of colonialism. The preconference turned out to be one
+of those pandemic-era events in which limitations---we couldn't meet in
+person---afforded new possibilities. Latin Americans and other scholars
+who would have been unlikely to attend ICA participated in the
+gathering, and Zoom conferencing made simultaneous Spanish-English
+interpretation easier to pull off. That event led to a special section
+of this journal, with essays in Spanish and English.\footnote{Peter
+  Simonson, David W. Park, and Jefferson Pooley, eds., ``Exclusions in
+  the History of Media Studies/Exclusiones en la historia de los
+  estudios de medios,'' special section, \emph{History of Media Studies}
+  2 (2022).} It also raised the question as to whether it might be
+productive to investigate the complex, politically fraught history of
+communication and media studies within the geopolitical context of the
+Americas writ large. That notion led to a second virtual conference in
+June 2022, ``The History of Communication Studies across the
+Americas.''\footnote{``Historia de los Estudios de Comunicación en las
+  Américas/História dos Estudos de Comunicação nas Américas/History of
+  Communication Studies across the Americas,'' History of Media Studies
+  roundtable, July 12, 2022, virtual.} It was a collaborative effort by
+three open-access journals published in three different countries:
+\emph{History of Media Studies} from the US, \emph{MATRIZes} from
+Brazil, and \emph{Comunicación y Sociedad} from Mexico.\footnote{The
+  initial incubator for the project was a Spanish-language working group
+  formed at \emph{History of Media Studies} with three advisory board
+  members (Raúl Fuentes Navarro and Claudia Magallanes Blanco of Mexico
+  and Mariano Zarowsky of Argentina) and one of the journal's editors
+  (Pete Simonson from the US). Fuentes, doyen of the historiography of
+  communication studies in Latin America, proposed and facilitated the
+  collaboration with the other two journals and their editors: Maria
+  Immacolata Vassallo de Lopes, editor of \emph{MATRIZes,} and Gabriela
+  Gómez Rodriguez, editor of \emph{Comunicación y Sociedad}.} Twenty-two
+scholars from eleven different countries participated, with simultaneous
+interpretation in Spanish, Portuguese, and English.\footnote{Participants
+  were from Argentina, Bolivia, Brazil, Canada, Colombia, Costa Rica, El
+  Salvador, Jamaica, Mexico, Puerto Rico, and the US, with simultaneous
+  interpretation by Bárbara Barisch and her Argentinian colleagues.}
+
+  \enlargethispage{\baselineskip}
+
+One of the main aims of the conference---and by extension this special
+section---was to promote communities of inquiry across regions and
+languages that had not often been in dialogue with one another.
+Professional associations in the Americas have facilitated some kinds of
+contact but limited others. As Raúl Fuentes Navarro discusses in his
+contribution to this special issue, the Asociación Latinoamericana de
+Investigadores de la Comunicación (ALAIC) has provided forums and
+created networks that span Spanish- and Portuguese-speaking Latin
+America. The International Communication Association (ICA) has
+historically done something similar for scholars from North America and
+Western Europe who publish in English, even as it has often furthered US
+hegemony.\footnote{Thomas Wiedemann and Michael Meyen,
+  ``Internationalization through Americanization: The Expansion of the
+  International Communication Association\textquotesingle s Leadership
+  to the World,'' \emph{International Journal of Communication} 10
+  (2016): 1489--1509.} Neither of those organizations has historically
+included the Anglophone (or Francophone) Caribbean in its ken.
+Additionally, national professional associations, particularly in the
+larger countries, have exercised their own kinds of centripetal force.
+The organizers of the 2022 conference asked if ``the Americas'' might
+provide a shared, if essentially contested, intellectual space for
+scholars from national contexts that have typically not been in
+conversation with one another. Was there interest in trying to develop a
+multi-layered map of the history of the field that traversed the region,
+South to North?
+
+This ``Americas'' project is one of several recent collaborations
+dedicated to advancing North-South dialogue without erasing intellectual
+and geopolitical specificity. Several years ago, US and German
+historians of the field edited volumes with global
+aspirations.\footnote{Peter Simonson and David W. Park, eds., \emph{The
+  International History of Communication Study} (New York: Routledge,
+  2016); and Stefanie Averbeck-Lietz, ed.,
+  \emph{Kommunikationswissenschaft im internationalen Vergleich:
+  Transnationale Perspektiven} (Wiesbaden, Germany: Springer Fachmedien
+  Wiesbaden, 2017).} More recently, an international group of critical
+scholars, many with ties to the Global South, have turned to history as
+a way of decolonizing the field and drawing out previously marginalized
+histories from around the world.\footnote{See, for example, a pair of
+  linked preconferences: ``Media and Communication Studies in a Global
+  Context: A Critical History,'' International Communication Association
+  preconference, Toronto, May 25, 2023; and ``Repressed Histories in
+  Communication and Media Studies,'' International Communication
+  Association preconference, Gold Coast, Australia, June 20, 2024.}
+Meanwhile, as the European Union has officially encouraged research
+collaborations with Latin America and the Caribbean, scholars have built
+bridges between the regions through collaborations among professional
+associations. One result was a joint editorial effort by ALAIC and the
+European Communication Research and Education Association (ECREA), which
+published a volume on intellectual traditions of Latin American and
+European communication studies.\footnote{Fernando Oliveira Paulino et
+  al., eds., \emph{Research Traditions in Dialogue: Communication
+  Studies in Latin America and Europe} (Porto, Portugal: Porto~Editora,
+  2020). For other studies cutting across European and Latin American
+  communication studies, see Sarah~Anne Ganter and Félix Ortega,
+  ``The~Invisibility of Latin American Scholarship in~European Media and
+  Communication Studies:~Challenges and Opportunities of
+  De-Westernization~and Academic Cosmopolitanism,''~\emph{International
+  Journal of~Communication}~13~(2019); Ana Rayen Dall'Orso,
+  ``Investigación de la~Comunicación en Iberoamérica: Una
+  Paleta~Diversa,~\emph{Cuadernos.info},\emph{~}no. 53 (2022); and María
+  Elena Rodríguez~Benito,~María Esther Pérez-Peláez, and Teresa Martín
+  García, ``Investigación~en Comunicación: Diferencias~entre Península
+  Ibérica y América Latina,''~\emph{Cuadernos.info}, no. 54 (2023).}
+Owing to significant sociocultural and linguistic similarities, there
+have also been multiple initiatives within Iberoamerican intellectual
+networks investigating shared histories of communication studies among
+Spanish- and Portuguese-speaking countries. Several of these networks
+have focused on the historical and contemporary gendering of
+communication research, including FEMICOMI (Analisis de los Roles
+Femeninos en la Investigacion de la Comunicación en Iberoamerica
+{[}Analysis of Females' Roles in Communication Research in
+Iberoamerica{]}, begun in 2022) and IBERFEMCOM (Red Iberoamericana de
+Investigacion en Comunicación y Feminismo {[}Iberoamerican Network for
+Social Justice Research in Communication and Feminism{]}, begun in
+2017). Other initiatives have opened complementary spaces for dialogue
+on the history and present state of communication studies across
+North-South lines in Iberoamerica.\footnote{See, for example,
+  ``Comunicar {[}en{]} la Historia: Panorama científico de la Historia
+  de la Comunicación Social en Iberoamérica; Intersecciones y marcos
+  comparados,'' AE-IC \& AsHisCom conference, June 17--18, 2021,
+  virtual; and ``IV Doctoral AE-IC: Taller iberoamericano de
+  investigación en comunicación,'' AE-IC predoctoral conference,
+  Pontevedra, Spain, June 15--16, 2023.}
+
+These recent collaborations are set within a contemporary moment of
+belated reckoning with the structural exclusions, inequalities, and
+injustices that have helped constitute communication studies. Among the
+many fronts for the reckoning are the historiographies and collective
+memories of the field. We have yet to fully acknowledge, much less
+historically unearth, all the ways that gender, race, language,
+colonialism, geopolitical location, and institutionally sanctioned
+privilege have shaped formal and informal accounts of our field's pasts.
+Reversing these processes and recovering lost pasts requires multiple
+methodologies and theoretical frameworks---from feminism and
+transnational studies to the historical sociology of knowledge, critical
+race theory, decolonial/postcolonial thought, and other geopolitically
+informed critique, all of which are represented in this special
+section's contributions.\footnote{This case is made more extensively in
+  Peter Simonson, David W. Park, and Jefferson Pooley,
+  ``Exclusions/Exclusiones: The Role for History in the Field's
+  Reckoning,'' \emph{History of Media Studies} 2 (2022).}
+
+\hypertarget{three-journals-in-dialogue}{%
+\section{Three Journals in
+Dialogue}\label{three-journals-in-dialogue}}
+
+This \emph{History of Media Studies} special section is a companion to
+rich collections published by \emph{MATRIZes} and \emph{Comunicación y
+Sociedad} last year.\footnote{Raúl Fuentes Navarro, ed., ``Historias de
+  los Estudios de Comunicación en las Américas,'' special section,
+  \emph{Comunicación y Sociedad} 20 (2023), with essays in Spanish and
+  English; and Maria Immacolata Vassallo de Lopes and Raúl Fuentes
+  Navarro, eds., ``Histórias da internacionalização do campo de estudos
+  da comunicação,'' special issue, \emph{MATRIZes} 17, no. 3 (2023),
+  with contributions in Portuguese, Spanish, and English.} All three
+special sections have their roots in the 2022 conference on ``The
+History of Communication Studies across the Americas.'' Like the
+conference itself, the three-journal collaboration is an enactment in
+practice of a commitment to multi-lingual, cross-hemispheric cooperation
+in charting the field's intersecting histories. Widely respected and
+well-established journals, \emph{MATRIZes} (Brazil) and
+\emph{Comunicación y Sociedad} (Mexico) are communication studies
+exemplars of the pioneering Latin American tradition of fee-free open
+access publishing.\footnote{See, for example, Dominique Babini, ``Toward
+  a Global Open-Access Scholarly Communications System: A Developing
+  Region Perspective,'' in \emph{Reassembling Scholarly Communications},
+  ed. Martin Paul Eve and Jonathan Gray (Cambridge, MA: MIT Press,
+  2020).} The two journals are models for our own commitments to diamond
+open access and multi-lingualism---and, crucially, to our mission to
+ventilate the US provincialism of much English-language historiography.
+Here we identify shared themes in the two other collections, with the
+aim to relate those themes to the six papers published here.
+
+The three collections are bound, first, by the participation of Raúl
+Fuentes Navarro, a leading historian of the field who sits on all three
+journals' editorial boards. Fuentes Navarro's introductory essay leads
+off the \emph{Comunicación y Sociedad} special section, which includes
+three additional contributions, each published in both Spanish and
+English.\footnote{Raúl Fuentes Navarro, ``Historias de los estudios de
+  comunicación en las Américas/Histories of Communication Studies in the
+  Americas,'' \emph{Comunicación y Sociedad} 20 (2023); Jesús Arroyave,
+  ``Develando las razones del diálogo asimétrico. Explorando la
+  exclusión en el campo de la comunicación/Unveiling the Reasons for
+  Asymmetrical Dialogue: Exploring Exclusion in the Field of
+  Communication,'' \emph{Comunicación y Sociedad} 20 (2023); Celia Del
+  Palacio Montiel, ``Historia de los estudios de comunicación desde las
+  regiones de América Latina. Las historias conectadas como recurso para
+  el análisis/The History of Communication Studies from Regions of Latin
+  America: Connected Histories as a Resource for the Analysis,''
+  \emph{Comunicación y Sociedad} 20 (2023); and Eliseo R. Colón Zayas,
+  ``Estudios de comunicación desde el pensamiento caribeño:
+  Contribuciones de Luis Ramiro Beltrán, Frantz Fanon y Stuart Hall
+  sobre desarrollo e identidad cultural/Communication Studies from
+  Caribbean Thought: Contributions of Luis Ramiro Beltrán, Frantz Fanon
+  and Stuart Hall on Development and Cultural Identity,''
+  \emph{Comunicación y Sociedad} 20 (2023).} The \emph{MATRIZes} issue,
+introduced by Maria Immacolata Vassallo De Lopes and Fuentes Navarro,
+contains fourteen essays from a globe-spanning range of
+contributors.\textsuperscript{15} The \emph{MATRIZes} collection
+has the widest scope: the journal commissioned essays from a number of
+scholars who had not participated in the 2022 conference, and cast the
+issue under the broader rubric of ``Histórias da internacionalização do
+campo de estudos da comunicação/Histories of the Internationalization of
+the Field of Communication Studies.'' Despite the distinctive scopes,
+the two special sections touch on a handful of shared themes.
+
+The first is the most complicated to draw out, related as it is to the
+foundational ``Americas'' framing of the 2022 conference. The premise, a
+tentative one by design, was to cast the hemisphere as a space that is
+both shared and contested. A small number of papers in the
+\emph{MATRIZes} and \emph{Comunicación y Sociedad} collections set their
+papers in full hemispheric relief.\textsuperscript{16} Only four of the seventeen papers mention the
+``Americas'' at all, however, and one of these, by Mexican press
+historian Celia del Palacio Montiel, takes up the frame in order to
+criticize its application.\textsuperscript{17} ``Is it possible, even
+pertinent, to carry out a history of communication studies throughout
+the Americas?'' Palacio Montiel doesn't rule out the possibility in the
+future, but worries\marginnote{\textsuperscript{15} Maria Immacolata Vassallo De Lopes and Raúl
+  Fuentes Navarro, ``Histórias da internacionalização do campo de
+  estudos da comunicação/Histories of the Internationalization of the
+  Field of Communication Studies,'' \emph{MATRIZes} 17, no. 3 (2023);
+  Muniz Sodré, ``A ruptura paradigmática da comunicação/A Paradigmatic
+  Rupture in Communication,'' \emph{MATRIZes} 17, no. 3 (2023); Paulo
+  Serra, ``O espaço ibero-americano de ciências da comunicação e as
+  epistemologias do Sul/The Ibero-American Space of Communication
+  Sciences and the Epistemologies of the South,'' \emph{MATRIZes} 17,
+  no. 3 (2023); Erick Rolando Torrico Villanueva, ``Colonialidade do
+  saber na internacionalização dos estudos sobre comunicação: Abordagem
+  do caso da América Latina,'' \emph{MATRIZes} 17, no. 3 (2023);
+  Francisco Rüdiger,``Adeus à crítica?: passado e presente da teoria e
+  método na pesquisa em comunicação de massa/Farewell to Critique? Past
+  and Present of Theory and Method in Mass Communication Research,''
+  \emph{MATRIZes} 17, no. 3 (2023); Carlos Sandoval García, ``Textos,
+  audiencias y medios de comunicación: La persistencia de las
+  preguntas,'' \emph{MATRIZes} 17, no. 3 (2023); Gustavo Adolfo
+  León-Duarte, ``Cruces y límites en la investigación sobre
+  comunicación: El sentido práctico interdisciplinar,'' \emph{MATRIZes}
+  17, no. 3 (2023); Miquel de Moragas Spà, ``Investigar la comunicación:
+  Entre el pasado y la prospectiva,'' \emph{MATRIZes} 17, no. 3 (2023);
+  Delia Crovi Druetta, ``Travesía de la comunicación latinoamericana
+  hacia su internacionalización,'' \emph{MATRIZes} 17, no. 3 (2023);
+  Fernando Oliveira Paulino, ``América Latina, internacionalização e
+  reciprocidade acadêmica/Latin America, Internationalization, and
+  Academic Reciprocity,'' \emph{MATRIZes} 17, no. 3 (2023); Peter
+  Simonson, Jefferson Pooley, and David Park, ``The History of
+  Communication Studies across the Americas: A View from the United
+  States,'' \emph{MATRIZes} 17, no. 3 (2023); Gabriela Rosa Cicalese,
+  ``Internacionalización y raíces identitarias de la comunicación en
+  Argentina,'' \emph{MATRIZes} 17, no. 3 (2023); Stefanie
+  Averbeck-Lietz, ``On (Missing) Links between German, Latin American,
+  and French Mediatization Research: Reflections on Diverse Research
+  Milieus and Their Traditions,'' \emph{MATRIZes} 17, no. 3 (2023); Eva
+  Da Porta, ``La internacionalización de la investigación en
+  comunicación:} that a ``generalizing project'' centered on the
+hemisphere could render the distinctive characteristics and histories of
+Latin American communication research invisible.\textsuperscript{18} Most of the other articles endorse, if only
+implicitly, Palacio Montiel's warning, through their framing choices.
+They place the Latin American tradition at their center, with other
+regions---including Europe, the US, and the Global North at large---set
+in complicated relief. The geographic footprint of the collections
+centers on Latin America, with a dotted line north to the US, and across
+the Atlantic to the Iberian peninsula and on to France.\textsuperscript{19}
+Anglophone Canada, Quebec, and the French and Anglophone Caribbean
+rarely appear.\textsuperscript{20}
+
+There are a number of very good reasons for the two collections'
+centering of Latin America. The region is the principal remit of
+\emph{MATRIZes} and \emph{Comunicación y Sociedad}, and the journals
+publish in its dominant languages.\textsuperscript{21}
+Most of the seventeen contributors are based in Latin America, moreover,
+and all but two of the papers were authored in Spanish or
+Portuguese.\textsuperscript{22} Consider, too, that the \emph{MATRIZes} special issue was
+cast in broad, ``internationalization'' terms, without foregrounding the
+``Americas'' frame.\textsuperscript{23} That was, of course, an
+editorial decision, and we note, too, the muted uptake of the
+``Americas'' formulation among the papers originating in the 2022
+conference.
+
+Thus we want to gesture at a complementary reason, in the spirit of
+self-reflexivity and with the positionalities of the US editors of this
+journal foregrounded.\textsuperscript{24} One theme that animates most of the seventeen
+articles, in different ways, is the structural inequality that has
+marked the development and reception of Latin American communication
+research.\textsuperscript{25}
+As noted above, the US does indeed appear in a number of the
+collections' essays, including our own. The context of that treatment
+reflects, in various ways, the US role as colonialist, hemispheric
+hegemon, and intellectual imperialist. A handful of papers linger on the
+imposition, in the early postwar decades, of a US model of communication
+research---quantitative, putatively universalistic, but rooted (often
+covertly) in the US Cold War project.\textsuperscript{26} Latin American resistance, in
+the 1970s and 1980s, to the mainstream US field, including its
+``modernization'' paradigm, is also widely registered across the
+essays.\textsuperscript{27} Many papers highlight, too, the
+growth of homegrown intellectual coordinates, rooted in the region's
+specific histories and the field's creative incorporation of critical
+European thought.\textsuperscript{28} This ``rich, hybrid tradition'' (``rica
+tradición híbrida''), to borrow Silvio Waisbord's phrase, flourished
+alongside the establishment of regional associations and other forms of
+patterned exchange.\textsuperscript{29}
+Many contributions, finally, take up the structural
+perversions---silences and warpings---of the neoliberal\newpage\noindent ``world academic\marginnote{Algunas notas críticas y una propuesta,''
+  \emph{MATRIZes} 17, no. 3 (2023); and Silvio Waisbord, ``¿Cómo
+  enfrentar las desigualdades de la academia global en los estudios de
+  comunicación?: colaboración, crítica y curiosidad,'' \emph{MATRIZes}
+  17, no. 3 (2023). Articles with English-language translation have
+  their English titles included above.}
+system''\marginnote{\textsuperscript{16} See, for example, Colón
+  Zayas, ``Estudios de comunicación desde el pensamiento caribeño''; and
+  Simonson, Pooley, and Park, ``The History of Communication Studies
+  across the Americas.''} with\marginnote{\textsuperscript{17} See Arroyave, ``Develando las
+  razones del diálogo asimétrico''; Colón Zayas, ``Estudios de
+  comunicación desde el pensamiento caribeño''; Palacio Montiel,
+  ``Historia de los estudios de comunicación desde las regiones de
+  América Latina''; and Simonson, Pooley, and Park, ``The History of
+  Communication Studies across the Americas.''} gathering\marginnote{\textsuperscript{18} Palacio
+  Montiel, ``Historia de los estudios de comunicación desde las regiones
+  de América Latina,'' 2. The quotations are from the English-language
+  version of the article.} momentum\marginnote{\textsuperscript{19} On
+  Spain, Portugal, and France in particular, see Serra, ``O espaço
+  ibero-americano de ciências''; Averbeck-Lietz, ``On (Missing) Links
+  between German, Latin American, and French Mediatization Research'';
+  Moragas Spà, ``Investigar la comunicación''; and Colón Zayas,
+  ``Estudios de comunicación desde el pensamiento caribeño.''} over\marginnote{\textsuperscript{20} In the Caribbean context, two important
+  exceptions are Colón Zayas, ``Estudios de comunicación desde el
+  pensamiento caribeño''; and Da Porta, ``La internacionalización de la
+  investigación en comunicación.''} the\marginnote{\textsuperscript{21} That many papers in both
+  journals are translated into English is a reflection of the language's
+  growing global hegemony in the ``internationalized'' neoliberal
+  academy---a theme addressed in a number of the collections' articles.} last\marginnote{\textsuperscript{22} The authors based outside Latin America are
+  Stefanie Averbeck-Lietz (Germany), Miquel de Moragas Spà (Spain), Paul
+  Serra (Portugal), Silvio Waisbord (US), and the authors of this
+  introduction, all based in the US. The two papers authored in English
+  are Averbeck-Lietz, ``On (Missing) Links between German, Latin
+  American, and French Mediatization Research''; and Simonson, Pooley,
+  and Park, ``The History of Communication Studies across the
+  Americas.''} three decades.\textsuperscript{30} Here again the US is implicated---as
+a pillar of the Global North formation masquerading as
+``international,'' and as the spear's tip of English-language hegemony.
+All the while, from the early postwar decades through to the present,
+the overwhelming majority of US scholars have remained blissfully
+oblivious to the work of their Latin American counterparts.
+
+We centered our own \emph{MATRIZes} contribution around this theme, the
+colonialist mix of US imperialism and indifference in its scholarly
+relations with Latin America. Our approach was to highlight the unmarked
+universalism of US historiography, in general and vis-à-vis Latin
+America. ``\emph{The} urgent task for historians of US communication
+studies,'' we wrote, ``is to provincialize and particularize the field
+as it has developed in that country and situate it within international
+movements of ideas, institutions, and peoples that have constituted the
+field globally.''\textsuperscript{31} The
+\emph{History of Media Studies} journal was founded with similar aims in
+mind. Thus we organized the 2022 ``Across the Americas'' conference with
+the hope that a pan-American frame might underwrite an overdue reckoning
+with South-North entanglements within the hemisphere. At the same time
+we registered some worries that such a project could lead to a ``new
+master narrative,'' as inadvertently influenced by our position as
+white, male US scholars.\textsuperscript{32}
+
+One lesson we take from the \emph{MATRIZes} and \emph{Comunicación y
+Sociedad} collections is to listen to these worries---to approach any
+such pan-American historiographical project with humility and in light
+of the hemisphere's histories of structural power dynamics and erasures.
+This means, among other things, foregrounding the distinctive histories
+of Latin American communication research, with respect, in particular,
+for a historiography written for and by the region's scholars. It also
+means attending to our own positions, and those of the authors in all
+three collections, in a ``global'' academic system that remains
+thoroughly Western, in the face of (largely symbolic) calls for the
+field's ``de-Westernization.'' Another way of saying this is that any
+history of communication studies in the Americas must also be a
+historical sociology of academic knowledge, one sensitive, in
+particular, to epistemological erasures past and ongoing. This is a
+theme that, fittingly, animates a large number of the \emph{MATRIZes}
+and \emph{Comunicación y Sociedad} contributions.\textsuperscript{33}
+
+\hypertarget{the-special-section-entangled-histories-across-the-americas}{%
+\section{The Special Section: Entangled Histories across the
+Americas}\label{the-special-section-entangled-histories-across-the-americas}}
+
+Given the multifarious entanglements that inform the history of media
+and communication studies across the Americas, the articles in this
+special section chart\marginnote{\textsuperscript{23} Vassallo de Lopes and Fuentes Navarro, in
+  their \emph{MATRIZes} introduction, do mention the ``Americas'' in the
+  context of the 2022 conference. ``Histórias da internacionalização do
+  campo de estudos da comunicação,'' 9.} numerous\marginnote{\textsuperscript{24} In the prose that follows, ``we'' refers
+  to the three US editors of \emph{History of Media Studies}---Park,
+  Pooley, and Simonson.} means\marginnote{\textsuperscript{25} See especially Arroyave, ``Develando las razones del
+  diálogo asimétrico''; Serra, Paulo. ``O espaço ibero-americano de
+  ciências da comunicação e as epistemologias do Sul''; Torrico
+  Villanueva, ``Colonialidade do saber na internacionalização dos
+  estudos sobre comunicação''; and Waisbord, ``¿Cómo enfrentar las
+  desigualdades de la academia global en los estudios de comunicación?''} by\marginnote{\textsuperscript{26} See Colón Zayas,
+  ``Estudios de comunicación desde el pensamiento caribeño,'' 2--5;
+  Crovi Druetta, ``Travesía de la comunicación latinoamericana hacia su
+  internacionalización,'' 159--62; Torrico Villanueva, ``Colonialidade
+  do saber na internacionalização dos estudos sobre comunicação,''
+  65--68; and Simonson, Pooley, and Park, ``The History of Communication
+  Studies across the Americas,'' 196--99.} which\marginnote{\textsuperscript{27} See for example, Arroyave, ``Develando las razones del
+  diálogo asimétrico,'' 10--11; Colón Zayas, ``Estudios de comunicación
+  desde el pensamiento caribeño''; Crovi Druetta, ``Travesía de la
+  comunicación latinoamericana hacia su internacionalización,'' 163--64;
+  and Rüdiger, ``Adeus à crítica?''} to\marginnote{\textsuperscript{28} See Averbeck-Lietz, ``On (Missing) Links
+  between German, Latin American, and French Mediatization Research,''
+  259--62; Rüdiger, ``Adeus à crítica?''; and Waisbord, ``¿Cómo
+  enfrentar las desigualdades de la academia global en los estudios de
+  comunicación?'' 296--99.} describe\marginnote{\textsuperscript{29} Waisbord, ``¿Cómo enfrentar las
+  desigualdades de la academia global en los estudios de comunicación?''
+  On the history of new associations and patterned exchanges in the
+  1970s and 1980s, see, for example, Crovi Druetta, ``Travesía de la
+  comunicación latinoamericana hacia su internacionalización,'' 166--67;
+  Moragas Spà, ``Investigar la comunicación,'' 146; and Paulino,
+  ``América Latina, internacionalização e reciprocidade acadêmica.''} and consider
+their topics.
+
+The section begins with Nova Gordon-Bell's history of communication and
+media studies in the Anglophone Caribbean, a contribution that models
+how to chart some of the shared and contested spaces and ideas one finds
+in the North-South conversation, with particular attention to the
+effects of colonial rule. In her essay, Gordon-Bell takes institutions
+to be ideological tools for domination and control, a position that
+seems quite fitting for a region where, as she relates, British colonial
+rule took knowledge to be something that could only come from the mother
+country. This approach to knowledge informed the functioning of the
+University College of the West Indies, which became the University of
+the West Indies in 1962, concurrent with Jamaican independence. The
+legacies of this colonial system remain in many ways, but the story that
+Gordon-Bell shares is one where communication study in the Anglophone
+Caribbean took inspiration from the Non-Aligned Movement and UNESCO's
+New World Information and Communication Order (NWICO) proposal.
+Jamaica's Prime Minister Michael Manley took up the Non-Aligned cause,
+and university education in communication assumed a focus on providing
+professional training for journalists and other media workers. CARIMAC,
+the Caribbean Institute of Mass Communication, was set up at the
+University of the West Indies on the updrafts provided by the political
+mood of the Non-Aligned movement and of democratic socialism. W. Aggrey
+Brown, director of CARIMAC from 1979--2002 and media polymath with
+numerous connections to local media, developed a first-year course for
+students at CARIMAC. Gordon-Bell compares this course to a Trojan Horse,
+with its seemingly innocuous title (Communication, Culture, and
+Caribbean Society) belying its critical bite, with a focus on questions
+of power, media ownership, and Caribbean identity and politics. Readings
+included Paolo Freire's \emph{Pedagogy of the Oppressed}, Jeremy
+Tunstall's \emph{The Media Are American}, and the MacBride
+Report.\textsuperscript{34} Since the 1970s, global political configurations,
+local concerns, and the pressures placed on academe have pushed Jamaican
+communication study away from more critical impulses to accommodate more
+job-relevant training and North American certification requirements.
+Gordon-Bell closes by musing on the importance of knowledge generation
+from the Anglophone Caribbean to center on change.
+
+Much as Gordon-Bell positions the Anglophone Caribbean as a focal point
+for understanding hemispheric and global dynamics of domination and
+resistance, Yamila Heram and Santiago Gándara take an individual---the
+US-born Elizabeth Fox, a pioneering critical political economist of the
+media---as their subject. They show how Fox's peregrinations across
+eleven\marginnote{\textsuperscript{30} Arroyave,
+  ``Develando las razones del diálogo asimétrico''; Porta, ``La
+  internacionalización de la investigación en comunicación,'' 277--79;
+  Waisbord, ``¿Cómo enfrentar las desigualdades de la academia global en
+  los estudios de comunicación?''} countries\marginnote{\textsuperscript{31} Simonson, Pooley, and Park, ``The History of
+  Communication Studies across the Americas,'' 190--91.} make\marginnote{\textsuperscript{32} Simonson, Pooley, and Park, 191.} her\marginnote{\textsuperscript{33}\setcounter{footnote}{33} See,
+  especially, Serra, ``O espaço ibero-americano de ciências da
+  comunicação e as epistemologias do Sul,'' and also Arroyave,
+  ``Develando las razones del diálogo asimétrico,'' 13--15; León-Duarte,
+  ``Cruces y límites en la investigación sobre comunicación''; and
+  Torrico Villanueva, ``Colonialidade do saber na internacionalização
+  dos estudos sobre comunicação,'' 59--61.} an\marginnote{\textsuperscript{34}\setcounter{footnote}{34} Paulo Freire, \emph{Pedagogy of the Oppressed}
+  (Harmondsworth, UK: Penguin, 1972); Jeremy Tunstall, \emph{The Media
+  Are American} (New York: Columbia University Press, 1977); and
+  International Commission for the Study of Communication Problems,
+  \emph{Many Voices, One World: Towards a New, More Just, and More
+  Efficient World Information and Communication Order} (New York:
+  UNESCO, 1980).} exemplary ``transnational figure,'' and one
+who was likely to collaborate with other transnational intellectuals.
+Heram and Gándara link all of this to Fox's intellectual and
+institution-building legacy. Working from a meta-analysis of Fox's work,
+and from semi-structured interviews with Fox herself, the authors
+provide a revealing portrait of Fox's emergent focus on topics in media
+studies that seem to have been prompted by her own border-crossing
+proclivities. These are apparent in the three moments the authors
+explore in Fox's career: from (1) her early studies (when she lived in
+Bogotá) on media economics and her interventions on behalf of National
+Communication Policies (NCPs) and the New World Information and
+Communication Order (NWICO) to (2) her more reflective and
+reconceptualizing work in the 1980s (when she lived in Buenos Aires and
+then Paris), to (3) her most recent work (much of it conducted in
+Washington, D.C.) on the implementation of health programs. Heram and
+Gándara point out that, like many transnational figures and like many
+women in academe, Fox has suffered from a distinct lack of visibility in
+both North and South American academic contexts, an injustice that this
+article may help to redress.
+
+The goal of identifying meaningful strands of intra-hemispheric
+influence can also be served by interrogating borders themselves, and by
+holding up borders as generative moments in constructing meaning.
+Michael Darroch makes borders and bordering behavior central to his
+article's consideration of the Canadian and Québecois histories of
+communication studies, where he asserts that border-crossings (literal
+and figurative) took on a centrality all their own at moments of the
+communication field's development. It is the ``frontier imagination''
+that Darroch identifies at work in the North American media studies
+context, an imagination within which borders supply us with some of the
+imaginary substrate that shaped how communication came to be studied.
+Darroch calls on the ideas and example of noted border-crosser Vilém
+Flusser---whose own diasporic story found him born in Prague, fleeing to
+London, moving to Brazil, then back to Europe---for terminology to
+center the acts of translation, of nomadic thinking, and of dialogue
+that set this article in motion. Borders and their crossing occupied an
+important place in the work of Marshall McLuhan and of Harold Innis, and
+also play an important role in the parallax one finds in the two
+scholars' differential uptake in Quebec and in Anglophone Canada.
+Darroch then turns to discursive and disciplinary border-crossing at
+work in the journal \emph{Media Probe}, which would later become the
+\emph{Canadian Journal of Communication} (\emph{CJC}), and at the
+University of Laval--based journal \emph{Communication Information}
+(\emph{CI}), later titled \emph{Communication, Information, Médias,
+Théories}. The same productivity of borders can be identified at work in
+the founding of the Canadian Communication Association. Darroch leaves
+us with a vivid impression of the possibilities associated with what he
+calls ``multifocal habits of vision,'' where the duality often
+associated with borders is replaced with an appreciation of the humbling
+layers of multivocality we can retrieve from properly contextualized
+histories of media studies.
+
+Raúl Fuentes Navarro, as noted above, helped set in motion this special
+section, as well as its companion collections in \emph{MATRIZes} and
+\emph{Comunicación y Sociedad}. His article here features a
+characteristically full-throttled---if also nuanced---institutional
+perspective on the history of inter-American media and communication
+studies. He begins with careful stage-setting, noting the historicity of
+the terminology we use to refer to the Americas, and then links this
+discursive instability to what he calls ``disintegrated
+internationalism''---a dynamic at work, he writes, in the institutional
+housings for communication studies across the hemisphere. Fuentes
+Navarro concentrates our attention on three major Latin America--focused
+institutions: Centro Internacional de Estudios Superiores de
+Comunicación para América Latina (CIESPAL), ALAIC, and Federación
+Latinoamericana de Facultades de Comunicación (FELAFACS). The three
+institutions acted as agents of the disintegrated internationalism that
+Fuentes Navarro points to, serving in some ways as conduits for
+transnational influence while also preserving autochthonous Latin
+American intellectual tendencies, as well as essential national
+differences in scholarship across the region. Rejecting a zero-sum model
+for US--Latin American relations in the context of the history of
+communication and media studies, Fuentes Navarro avers that we should
+(following the model and words of Luis Ramiro Beltrán) appreciate the
+complexity at work in how academic labor comes to be organized, with an
+avoidance of both dogmatism and of the self-deluding quest for a science
+``free of values.''
+
+The inter-American connections that Fuentes Navarro brings to life in an
+institutional framework can also be seen at work on the discursive
+level. In a translation of a previously-published article, Erick Torrico
+Villanueva shows how inter-America communication studies has developed
+discursively, centered on a positivist scientific inquiry that emerged
+from Western---and in particular US---scholarly traditions.\footnote{Erick
+  Rolando Torrico Villanueva, ``La comunicación `occidental,'\,''
+  \emph{Oficios Terrestres}, no. 32 (2015).} This narrow focus on one
+way of knowing led to ``abysmal thinking,'' where any other epistemology
+is positioned as something other than real knowledge. Torrico Villanueva
+explores how this understanding of knowledge traditions around the world
+finds expression in communication study in the US, Europe, and in
+Iberoamerica through a critical review of major textbooks. He finds
+relatively little in the way of reflexivity concerning intellectual
+standpoint, and an overwhelming reliance upon the ideas of figures from
+the US and from Western Europe. Torrico Villanueva concludes that the
+work before us will require seeing communication and its study through
+lenses less completely tinged by US and Western European ideas and
+practices.~
+
+The focus on dominant understandings of inter-American relations in the
+history of media studies cues Afonso de Albuquerque's carefully
+calibrated contribution, which applies the idea of \emph{intellectual
+imperialism} to these transnational relations. Albuquerque begins the
+special section's sixth and final entry with an observation that
+academic interest in cultural imperialism has waned in recent
+decades---perhaps because cultural imperialism itself has been so
+thoroughly assimilated across global academic culture. Albuquerque sets
+cultural imperialism alongside related concepts, notably \emph{media
+imperialism}---in which media outlets become tools that imperial powers
+use to assert power over others---and \emph{intellectual
+imperialism}---where powerful countries impose their own ways of knowing
+on other countries. Albuquerque describes how academic institutions
+(including universities, philanthropic organizations, and journals)
+exert a collective influence on the contours of work (academic and
+para-academic) that holds up communication scholarship from the US as
+the model for Latin America. Albuquerque illustrates this mode of
+intellectual imperialism with a case study of the (University of
+Texas--based) Knight Center for Journalism in the Americas, especially
+as the center has operated through the Brazilian organization ABRAJI
+(Associação Brasileira de Jornalismo Investigativo {[}Brazilian
+Investigative Journalism Association{]}). US models for journalism
+study, practice, and training, put to work in the political culture of
+Brazil, contributed powerfully to the destabilization of the country's
+politics. Albuquerque's broader point is the continuing relevance of
+intellectual imperialism in making sense of the field's transnational
+history.
+
+Taken together, these articles make a strong, if qualified, case for
+``the Americas'' as a frame of reference. Without smoothing over
+patterns of dominance, without sealing off the region from other sources
+of influence, and without positioning ``the Americas'' as a stable
+referent, this special section of \emph{History of Media Studies} gives
+voice to linguistic, discursive, methodological, and institutional modes
+of transnational and intra-national influence and stability. The section
+does not inaugurate this reflection, but it does pick up strands of
+scholarly attention and intellectual influence in order to braid them
+together under the hemispheric rubric. ``The Americas,'' in essays
+collected here, stands as a provocation to explore something other than
+national or global tendencies in the field's historiography---to
+consider how these received histories might be re-charted, as it were,
+from the Southern Cone to points north.
+
+
+
+
+\section{Bibliography}\label{bibliography}
+
+\begin{hangparas}{.25in}{1} 
+
+
+
+Arroyave, Jesús. ``Develando las razones del diálogo asimétrico:
+Explorando la exclusión en el campo de la comunicación/Unveiling the
+Reasons for Asymmetrical Dialogue: Exploring Exclusion in the Field of
+Communication.'' \emph{Comunicación y Sociedad} 20 (2023): 1--21.
+\url{https://doi.org/10.32870/cys.v2023.8719}.
+
+Averbeck-Lietz, Stefanie, ed. \emph{Kommunikationswissenschaft im
+internationalen Vergleich: Transnationale Perspektiven}. Wiesbaden,
+Germany: Springer Fachmedien Wiesbaden, 2017.
+
+Averbeck-Lietz, Stefanie. ``On (Missing) Links between German, Latin
+American, and French Mediatization Research: Reflections on Diverse
+Research Milieus and their Traditions.'' \emph{MATRIZes} 17, no. 3
+(2023): 241--72.
+\url{https://doi.org/10.11606/issn.1982-8160.v17i3p241-272}.
+
+Babini, Dominique. ``Toward a Global Open-Access Scholarly
+Communications System: A Developing Region Perspective.'' In
+\emph{Reassembling Scholarly Communications}, edited by Martin Paul Eve
+and Jonathan Gray, 331--41. Cambridge, MA: MIT Press, 2020.
+\url{https://doi.org/10.7551/Mitpress/11885.003.0033}.
+
+Cicalese, Gabriela Rosa. ``Internacionalización y raíces identitarias de
+la comunicación en Argentina.'' \emph{MATRIZes} 17, no. 3 (2023):
+217--40. \url{https://doi.org/10.11606/issn.1982-8160.v17i3p217-240}.
+
+Colón Zayas, Eliseo R. ``Estudios de comunicación desde el pensamiento
+caribeño: Contribuciones de Luis Ramiro Beltrán, Frantz Fanon y Stuart
+Hall sobre desarrollo e identidad cultural/Communication Studies from
+Caribbean Thought: Contributions of Luis Ramiro Beltrán, Frantz Fanon
+and Stuart Hall on Development and Cultural Identity.''
+\emph{Comunicación y Sociedad} 20 (2023): 1--25.
+\url{https://doi.org/10.32870/cys.v2023.8628}.
+
+``Comunicar {[}en{]} la Historia: Panorama científico de la Historia de
+la Comunicación Social en Iberoamérica; Intersecciones y marcos
+comparados.'' AE-IC \& AsHisCom Conference, June 17--18, 2021, virtual.
+
+Crovi Druetta, Delia. ``Travesía de la comunicación latinoamericana
+hacia su internacionalización.'' \emph{MATRIZes} 17, no. 3 (2023):
+155--72. \url{https://doi.org/10.11606/issn.1982-8160.v17i3p155-172}.
+
+Da Porta, Eva. ``La internacionalización de la investigación en
+comunicación: Algunas notas críticas y una propuesta.'' \emph{MATRIZes}
+17, no. 3 (2023): 273--94.
+\url{https://doi.org/10.11606/issn.1982-8160.v17i3p273-294}.
+
+``Exclusions in the History and Historiography of Communication
+Studies/Exclusiones en la Historia e Historiografía de los Estudios de
+Comunicación.'' International Communication Association preconference,
+May 26--27, 2021, virtual.
+\url{https://hms.mediastudies.press/pub/schedule}.
+
+Freire, Paulo. \emph{Pedagogy of the Oppressed}. Harmondsworth, UK:
+Penguin, 1972.
+
+Fuentes Navarro, Raúl, ed.~``Historias de los Estudios de Comunicación
+en las Américas.'' Special section, \emph{Comunicación y Sociedad} 20
+(2023).
+\url{https://comunicacionysociedad.cucsh.udg.mx/index.php/comsoc/issue/view/v2023}.
+
+Fuentes Navarro, Raúl. ``Historias de los estudios de comunicación en
+las Américas/Histories of Communication Studies in the Americas.''
+\emph{Comunicación y Sociedad} 20 (2023): 1--5.
+\url{https://doi.org/10.32870/cys.v2023.8737}.
+
+Ganter, Sarah Anne, and Félix Ortega. ``The~Invisibility of Latin
+American Scholarship in~European Media and Communication
+Studies:~Challenges and Opportunities of De-Westernization~and Academic
+Cosmopolitanism.''~\emph{International Journal
+of~Communication}~13~(2019).
+\url{https://ijoc.org/index.php/ijoc/article/view/8449/2523.}
+
+``Historia de los Estudios de Comunicación en las Américas/História dos
+Estudos de Comunicação nas Américas/History of Communication Studies
+across the Americas.'' History of Media Studies roundtable, July 12,
+2022, virtual. \url{https://hms.mediastudies.press/americas-roundtable}.
+
+International Commission for the Study of Communication Problems.
+\emph{Many Voices, One World: Towards a New, More Just, and More
+Efficient World Information and Communication Order}. New York: UNESCO,
+1980.
+
+``IV Doctoral AE-IC: Taller iberoamericano de investigación en
+comunicación.'' AE-IC predoctoral conference, Pontevedra, Spain, June
+15--16, 2023.
+
+León-Duarte, Gustavo Adolfo. ``Cruces y límites en la investigación
+sobre comunicación: El sentido práctico interdisciplinar.''
+\emph{MATRIZes} 17, no. 3 (2023): 117--40.
+\url{https://doi.org/10.11606/issn.1982-8160.v17i3p117-140}.
+
+``Media and Communication Studies in a Global Context: A Critical
+History.'' International Communication Association preconference,
+Toronto, May 25, 2023.
+
+Moragas Spà, Miquel de. ``Investigar la comunicación: Entre el pasado y
+la prospectiva.'' \emph{MATRIZes} 17, no. 3 (2023): 143--54.
+\url{https://doi.org/10.11606/issn.1982-8160.v17i3p143-154}.
+
+Oliveira Paulino, Fernando. ``América Latina, internacionalização e
+reciprocidade acadêmica/Latin America, Internationalization, and
+Academic Reciprocity.'' \emph{MATRIZes} 17, no. 3 (2023): 173--85.
+\url{https://doi.org/10.11606/issn.1982-8160.v17i3p173-185}.
+
+Oliveira Paulino, Fernando, Gabriel Kaplún, Miguel Vicente-Mariño, and
+Leonardo Custodio, eds. \emph{Research Traditions in Dialogue:
+Communication Studies in Latin America and Europe.} Porto, Portugal:
+Porto~Editora, 2020.
+\url{https://www.alaic.org/wp-content/uploads/2022/02/Research-Traditions-in-Dialogue.pdf}.
+
+Palacio Montiel, Celia Del. ``Historia de los estudios de comunicación
+desde las regiones de América Latina: Las historias conectadas como
+recurso para el análisis/The History of Communication Studies from
+Regions of Latin America: Connected Histories as a Resource for the
+Analysis.'' \emph{Comunicación y Sociedad} 20 (2023): 1--19.
+\url{https://doi.org/10.32870/cys.v2023.8609}.
+
+Rayen Dall'Orso, Ana. ``Investigación de la~Comunicación en
+Iberoamérica: Una Paleta~Diversa.''~\emph{Cuadernos.info},\emph{~}no. 53
+(2022). \url{http://dx.doi.org/10.7764/cdi.53.53863}.
+
+``Repressed Histories in Communication and Media Studies.''
+International Communication Association preconference, Gold Coast,
+Australia, June 20, 2024.
+
+Rodríguez~Benito,~María Elena, María Esther Pérez-Peláez, and Teresa
+Martín García. ``Investigación~en Comunicación: Diferencias~entre
+Península Ibérica y América Latina.''~\emph{Cuadernos.info},~no. 54
+(2023). \url{https://doi.org/10.7764/cdi.54.51309}.
+
+Rüdiger, Francisco. ``Adeus à crítica?: passado e presente da teoria e
+método na pesquisa em comunicação de massa/Farewell to Critique? Past
+and Present of Theory and Method in Mass Communication Research.''
+\emph{MATRIZes} 17, no. 3 (2023): 73--99.
+\url{https://doi.org/10.11606/issn.1982-8160.v17i3p73-99}.
+
+Sandoval García, Carlos. ``Textos, audiencias y medios de comunicación:
+La persistencia de las preguntas.'' \emph{MATRIZes} 17, no. 3 (2023):
+101--16. \url{https://doi.org/10.11606/issn.1982-8160.v17i3p101-116}.
+
+Serra, Paulo. ``O espaço ibero-americano de ciências da comunicação e as
+epistemologias do Sul/The Ibero-American Space of Communication Sciences
+and the Epistemologies of the South.'' \emph{MATRIZes} 17, no. 3 (2023):
+29--54. \url{https://doi.org/10.11606/issn.1982-8160.v17i3p29-54}.
+
+Simonson, Peter, David W. Park, and Jefferson Pooley, eds. ``Exclusions
+in the History of Media Studies/Exclusiones en la historia de los
+estudios de medios.'' Special section, \emph{History of Media Studies} 2
+(2022). \url{https://hms.mediastudies.press/volume-two}.
+
+Simonson, Peter, David W. Park, and Jefferson Pooley.
+``Exclusions/Exclusiones: The Role for History in the Field's
+Reckoning.'' \emph{History of Media Studies} 2 (2022): 1--27. .
+
+Simonson, Peter, and David W. Park, eds. \emph{The International History
+of Communication Study}. New York: Routledge, 2016.
+
+Simonson, Peter, Jefferson Pooley, and David Park. ``The History of
+Communication Studies across the Americas: A View from the United
+States.'' \emph{MATRIZes} 17, no. 3 (2023): 189--216.
+\url{https://doi.org/10.11606/issn.1982-8160.v17i3p189-216}.
+
+Sodré, Muniz. ``A ruptura paradigmática da comunicação/A Paradigmatic
+Rupture in Communication.'' \emph{MATRIZes} 17, no. 3 (2023): 19--27.
+\url{https://doi.org/10.11606/issn.1982-8160.v17i3p19-27}.
+
+Torrico Villanueva, Erick Rolando. ``Colonialidade do saber na
+internacionalização dos estudos sobre comunicação: Abordagem do caso da
+América Latina.'' \emph{MATRIZes} 17, no. 3 (2023): 55--72.
+\url{https://doi.org/10.11606/issn.1982-8160.v17i3p55-72}.
+
+Torrico Villanueva, Erick Rolando. ``La comunicación `occidental.'\,''
+\emph{Oficios Terrestres}, no. 32 (2015): 3--23.
+\url{http://www.perio.unlp.edu.ar/ojs/index.php/oficiosterrestres/article/view/2381}.
+
+Tunstall, Jeremy. \emph{The Media Are American}. New York: Columbia
+University Press, 1977.
+
+Vassallo de Lopes, Maria Immacolata, and Raúl Fuentes Navarro,
+eds.~``Histórias da internacionalização do campo de estudos da
+comunicação.'' Special issue, \emph{MATRIZes} 17, no. 3 (2023).
+\url{https://www.revistas.usp.br/matrizes/issue/view/13086}.
+
+Vassallo de Lopes, Maria Immacolata, and Raúl Fuentes Navarro.
+``Histórias da internacionalização do campo de estudos da
+comunicação/Histories of the Internationalization of the Field of
+Communication Studies.'' \emph{MATRIZes} 17, no. 3 (2023): 5--16.
+\url{https://doi.org/10.11606/issn.1982-8160.v17i3p5-16}.
+
+Waisbord, Silvio. ``¿Cómo enfrentar las desigualdades de la academia
+global en los estudios de comunicación?: colaboración, crítica y
+curiosidad.'' \emph{MATRIZes} 17, no. 3 (2023): 295--315.
+\url{https://doi.org/10.11606/issn.1982-8160.v17i3p295-315}.
+
+Wiedemann Thomas, and Michael Meyen. ``Internationalization through
+Americanization: The Expansion of the International Communication
+Association\textquotesingle s Leadership to the World.''
+\emph{International Journal of Communication} 10 (2016): 1489--1509.
+\url{https://ijoc.org/index.php/ijoc/article/view/4504}.
+
+
+
+\end{hangparas}
+
+
+\end{document}
