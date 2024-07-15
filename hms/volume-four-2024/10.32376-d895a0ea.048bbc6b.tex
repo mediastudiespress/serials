@@ -1,0 +1,1193 @@
+% see the original template for more detail about bibliography, tables, etc: https://www.overleaf.com/latex/templates/handout-design-inspired-by-edward-tufte/dtsbhhkvghzz
+
+\documentclass{tufte-handout}
+
+%\geometry{showframe}% for debugging purposes -- displays the margins
+
+\usepackage{amsmath}
+
+\usepackage{hyperref}
+
+\usepackage{fancyhdr}
+
+\usepackage{hanging}
+
+\hypersetup{colorlinks=true,allcolors=[RGB]{97,15,11}}
+
+\fancyfoot[L]{\emph{History of Media Studies}, vol. 4, 2024}
+
+
+% Set up the images/graphics package
+\usepackage{graphicx}
+\setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
+\graphicspath{{graphics/}}
+
+\title[Media Imperialism]{Media, Intellectual, and Cultural Imperialism Today} % longtitle shouldn't be necessary
+
+% The following package makes prettier tables.  We're all about the bling!
+\usepackage{booktabs}
+
+% The units package provides nice, non-stacked fractions and better spacing
+% for units.
+\usepackage{units}
+
+% The fancyvrb package lets us customize the formatting of verbatim
+% environments.  We use a slightly smaller font.
+\usepackage{fancyvrb}
+\fvset{fontsize=\normalsize}
+
+% Small sections of multiple columns
+\usepackage{multicol}
+
+% Provides paragraphs of dummy text
+\usepackage{lipsum}
+
+% These commands are used to pretty-print LaTeX commands
+\newcommand{\doccmd}[1]{\texttt{\textbackslash#1}}% command name -- adds backslash automatically
+\newcommand{\docopt}[1]{\ensuremath{\langle}\textrm{\textit{#1}}\ensuremath{\rangle}}% optional command argument
+\newcommand{\docarg}[1]{\textrm{\textit{#1}}}% (required) command argument
+\newenvironment{docspec}{\begin{quote}\noindent}{\end{quote}}% command specification environment
+\newcommand{\docenv}[1]{\textsf{#1}}% environment name
+\newcommand{\docpkg}[1]{\texttt{#1}}% package name
+\newcommand{\doccls}[1]{\texttt{#1}}% document class name
+\newcommand{\docclsopt}[1]{\texttt{#1}}% document class option name
+
+
+\begin{document}
+
+\begin{titlepage}
+
+\begin{fullwidth}
+\noindent\Large\emph{History of Communication Studies across the Americas
+} \hspace{18mm}\includegraphics[height=1cm]{logo3.png}\\
+\noindent\hrulefill\\
+\vspace*{1em}
+\noindent{\Huge{Media, Intellectual, and Cultural\\\noindent Imperialism Today\par}}
+
+\vspace*{1.5em}
+
+\noindent\LARGE{Afonso de Albuquerque} \href{https://orcid.org/0000-0002-2608-7605}{\includegraphics[height=0.5cm]{orcid.png}}\par\marginnote{\emph{Afonso de Albuquerque, ``Media, Intellectual, and Cultural Imperialism Today,'' \emph{History of Media Studies} 4 (2024), \href{https://doi.org/10.32376/d895a0ea.048bbc6b}{https://doi.org/ 10.32376/d895a0ea.048bbc6b}.} \vspace*{0.75em}}
+\vspace*{0.5em}
+\noindent{{\large\emph{Universidade Federal Fluminense}, \href{mailto:afonsoalbuquerque@id.uff.br}{afonsoalbuquerque@id.uff.br}\par}} \marginnote{\href{https://creativecommons.org/licenses/by-nc/4.0/}{\includegraphics[height=0.5cm]{by-nc.png}}}
+
+% \vspace*{0.75em} % second author
+
+% \noindent{\LARGE{<<author 2 name>>}\par}
+% \vspace*{0.5em}
+% \noindent{{\large\emph{<<author 2 affiliation>>}, \href{mailto:<<author 2 email>>}{<<author 2 email>>}\par}}
+
+% \vspace*{0.75em} % third author
+
+% \noindent{\LARGE{<<author 3 name>>}\par}
+% \vspace*{0.5em}
+% \noindent{{\large\emph{<<author 3 affiliation>>}, \href{mailto:<<author 3 email>>}{<<author 3 email>>}\par}}
+
+\end{fullwidth}
+
+\vspace*{1em}
+
+
+\hypertarget{abstract}{%
+\section{Abstract}\label{abstract}}
+
+Cultural imperialism was once the subject of a vibrant debate in
+international scholarship. Yet, the debate on cultural imperialism has
+lost much of its previous influence and centrality. This does not mean
+that cultural imperialism has lost its relevance. On the contrary,~in
+the wake of the neoliberal globalization process, cultural imperialism
+is now stronger than ever. This article argues that cultural imperialism
+comprises two dimensions: media imperialism and intellectual
+imperialism, and it is important to understand how they interact. To
+illustrate how their interplay works and what consequences follow, the
+article examines how US academic institutions educated and organized
+Brazilian media elites who helped to legitimate Lava Jato, a politically
+driven judicial operation that led to the downgrade of Brazilian
+democracy, and ultimately paved the way to the rise of Jair Bolsonaro to
+the presidency.
+
+\hypertarget{resumen}{%
+\section{Resumen}\label{resumen}}
+
+En un tiempo el imperialismo cultural fue tema de debate acalorado en
+los estudios internacionales. Sin embargo, dicho debate ha perdido gran
+parte de su anterior influencia~y centralidad, lo que no quiere decir
+que el imperialismo cultural carezca hoy de relevancia; al contrario,
+como secuela del proceso neoliberal global se ha fortalecido más que
+nunca. En este artículo se argumenta que el imperial-
+
+\vspace*{2em}
+
+\noindent{\emph{History of Media Studies}, vol. 4, 2024}
+
+\noindent ismo cultural abarca
+dos dimensiones---el imperialismo mediático y el imperialismo
+intelectual---y que es importante entender cómo interactúan. Para
+ilustrar dicha interacción y sus consecuencias, se analiza cómo las
+instituciones académicas estadounidenses formaron y organizaron a las
+élites mediáticas brasileñas que ayudaron a legitimar Lava Jato, una
+operación jurídica con fines políticos que terminó degradando la
+democracia brasileña y allanando el camino para que Jair Bolsonaro
+llegara a la presidencia.
+
+
+\enlargethispage{2\baselineskip}
+
+\vspace*{2em}
+
+
+
+
+ \end{titlepage}
+
+% \vspace*{2em} | to use if abstract spills over
+
+\newthought{From the 1960s} to the 1980s, cultural imperialism was the subject of a
+vibrant debate in international scholarship. At that time, intellectuals
+and activists around the world raised concerns about the threat posed by
+the US media to other cultures. In response, UNESCO published a report
+in 1980 proposing a New World Information and Communication Order.
+However, attention to this topic has declined sharply since then. To be
+sure, cultural imperialism is still a topic of interest in the
+intellectual milieu, especially with respect to media
+imperialism\footnote{Oliver Boyd-Barrett, ``Cultural Imperialism and
+  Communication,'' \emph{Oxford Research Encyclopedia of Communication},
+  June 2018; Oliver Boyd-Barrett and Tanner Mirrlees, eds., \emph{Media
+  Imperialism: Continuity and Change} (Lanham, MA: Rowman \&
+  Littlefield, 2019); and Kaarle Nordenstreng, ``How the New World Order
+  and Imperialism Challenge Media Studies,'' \emph{tripleC:
+  Communication, Capitalism \& Critique} 11, no. 2 (2013).} and, more
+recently, platform imperialism.\footnote{Stuart Davis, ``What is Netflix
+  Imperialism? Interrogating the Monopoly Aspirations of the `World's
+  Largest Television Network,'\,'' \emph{Information, Communication, and
+  Society} 26, no. 6 (2023); and Dal Y. Jin, \emph{Digital Platforms,
+  Imperialism, and Political Culture} (London: Routledge, 2015).} Yet,
+the debate on cultural imperialism has lost much of its previous
+influence and centrality. A new batch of emerging concepts, such as
+``Americanization,''\footnote{Jeremy Tunstall, \emph{The Media are
+  American: Anglo-American Media in the World} (London: Constable,
+  1977).} ``globalization,''\footnote{John Tomlinson, \emph{Cultural
+  Imperialism: A Critical Introduction} (London: Continuum, 1991).} and
+``asymmetric interdependence''\footnote{Joseph D. Straubhaar, ``Beyond Media
+  Imperialism: Asymmetrical Interdependence and Cultural Proximity,''
+  \emph{Critical Studies in Mass Communication} 8, no. 1
+  (1991).}
+came to replace cultural imperialism as an analytical tool for
+describing the cultural influence exerted by powerful countries over
+others. Furthermore, the ties between cultural imperialism scholarship
+and anti-imperialism activism are much weaker now than in the past.
+Finally, present-day Anglophone scholars (in many cases working from the
+same countries described as cultural imperialists) exert a leading role
+in the international scholarship on cultural imperialism.\footnote{Manuel
+  B. Aalbers, ``Creative Destruction through the Anglo-American
+  Hegemony: A Non-Anglo-American View on Publications, Referees, and
+  Language,'' \emph{Area} 36, no. 3 (2004); and Afonso de Albuquerque,
+  ``The Institutional Basis of Anglophone Western Centrality,''
+  \emph{Media, Culture \& Society} 43, no. 1 (2021).} There is some
+irony in that.
+
+This article proposes that this decline in the scholarly interest in
+cultural imperialism did not happen because cultural imperialism itself
+lost relevance in the real world and ceased to exist. Instead, I argue
+just the opposite: that at present, in the wake of the neoliberal
+globalization process,\footnote{Efe C. Gürkan, \emph{Imperialism after
+  the Neoliberal Turn} (London: Routledge, 2022); and David Harvey,
+  \emph{The New Imperialism} (Oxford: Oxford University Press, 2003).}
+cultural imperialism is stronger than ever. Since the 1990s, the logic
+of cultural imperialism has penetrated deeply into international
+scholarship, allowing western (especially US) institutions to set the
+standards for global scholarship. These circumstances contributed
+significantly to discouraging research on cultural imperialism. I aim
+here to discuss how this has happened and provide evidence of some
+contemporary features of cultural imperialism.
+
+To fully understand this statement, it is necessary to precisely define
+cultural imperialism. Here, the first step is to note that two scholarly
+traditions have used the term to describe different phenomena.
+\emph{Intellectual} imperialism refers to the means that certain
+countries employ to exert intellectual dominance over others. This
+effort is primarily directed at the elites of less powerful countries.
+Intellectual imperialists try to convince these elites about the
+intellectual (and moral) superiority of their own societies, which are
+presented as role models for others.\footnote{Syed Farid Alatas,
+  ``Intellectual Imperialism: Definition, Traits, and Problems,''
+  \emph{Southeast Asian Journal of Social Science} 28, no. 1 (2000); and
+  Afonso de Albuquerque, ``Transitions to Nowhere: Western Teleology and
+  Regime-Type Classification,'' \emph{International Communication
+  Gazette} 85, no. 6 (2023).} This can be accomplished via high culture,
+the academic apparatus, and think tanks. The other phenomenon is
+\emph{media} imperialism, which employs the media as a resource to
+conquer the hearts and minds of the public in general and influence
+public opinion. Although scholars sometimes refer to both as ``cultural
+imperialism,'' concretely the dialogue between them is quite limited.
+
+This article proposes a new approach to cultural imperialism that
+considers the interplay between intellectual and media imperialisms.
+Based on this, I identify an emerging dynamic of media imperialism
+operating nowadays. Here, media imperialism does not primarily have to
+do with exporting media content from imperialistic countries to others.
+Rather, this model of cultural imperialism works through education and
+network-building. Its key purpose is to prepare the local media elites
+and professionals to act as local agents, echoing the cultural
+imperialistic agenda. This article pays special attention to how the
+Knight Center for Journalism in the Americas has promoted educational
+initiatives and social networks aimed at modeling Brazilian journalistic
+practices and worldviews in accordance with US interests. The case of
+Lava Jato gives us a concrete example of how US interference in
+Brazilian politics engaged the cultural imperialism networks.
+
+\hypertarget{cultural-imperialism-media-imperialism-and-intellectual-imperialism}{%
+\section{Cultural Imperialism, Media Imperialism, and Intellectual\\\noindent Imperialism}\label{cultural-imperialism-media-imperialism-and-intellectual-imperialism}}
+
+What do cultural imperialism, media imperialism, and intellectual
+imperialism have in common? What distinguishes them? The definitions of
+these terms are mostly imprecise. Cultural imperialism has served as a
+synonym for both intellectual imperialism\footnote{Pierre Bourdieu and
+  Loic Wacquant, ``On the Cunning of the Imperialist Reason,''
+  \emph{Theory, Culture \& Society} 16, no. 1 (1999).} and media
+imperialism.\footnote{Oliver Boyd-Barrett, \emph{Media Imperialism} (Los
+  Angeles: SAGE, 2015).} However, very few studies take intellectual
+imperialism and media imperialism together as different aspects of a
+broader cultural imperialism phenomenon. For this reason, this section
+offers a conceptual framework for these concepts.
+
+The most important aspect to consider is that they are all particular
+features of a more general phenomenon: imperialism. It is worth noting
+that much of the research on media imperialism has ignored this basic
+lesson. There are different ways to approach imperialism. Lenin's
+definition of it as ``the highest stage of capitalism'' is very popular
+among many scholars. However, it is not particularly useful for our
+purposes, as it focuses mainly on the economic aspects of imperialist
+relations. By contrast, this article emphasizes the political aspects of
+imperialism, more related to the power exerted by some societies over
+others. Both state and non-state agents perform important roles in this
+respect.
+
+First of all, some conceptual clarification is needed. Recently,
+international scholarship has given a lot of attention to the need to
+decolonize media and communication research.\footnote{Antje Gluck,
+  ``De-Westernization and Decolonization in Media Studies,''
+  \emph{Oxford Research Encyclopedia of Communication}, December 2018;
+  and Last Moyo, \emph{The Decolonial Turn in Media Studies in Africa
+  and the Global South} (New York: Springer, 2020).} Colonialism and
+imperialism focus on the same problem, but from different viewpoints.
+Literature on colonialism often focuses on the societies that fell
+victim to colonization. In most cases, it is assumed that colonialism is
+an event that took place in the past but still exerts a negative
+influence on the societies that experienced it. In particular, the
+literature on decolonization primarily associates colonialism with
+Western European nations.\footnote{W. D. Mignolo, \emph{The Darker Side
+  of Western Modernity: Global Futures, Decolonial}
+
+  \emph{Options} (Durham, NC: Duke University Press, 2011); and Edward
+  Said, \emph{Orientalism} (London: Penguin Books, 1978).} In other
+cases, literature on imperialism focuses on the colonizers. Imperialism
+derivates from ``empire'' but looks at it from a negative perspective.
+Very often, it refers to societies that act as empires, although they
+pretend not to be so.\footnote{Krishan Kumar, ``Colony and Empire,
+  Colonialism and Imperialism: A Meaningful Distinction?''
+  \emph{Comparative Studies in History and Society} 63, no. 2 (2021).}
+Since the end of World War II, most references to imperialism have been
+directed to the United States.\footnote{Ariel Dorfman and Armand
+  Mattelart, \emph{Para leer al Pato Donald: Comunicación de Masa y
+  Colonialismo} (Buenos Aires: Siglo Veinteuno, 1971); and Herbert I.
+  Schiller, \emph{Mass Communications and the American Empire} (New
+  York: A. M. Kelley, 1969).} It is worth noting that, recently, the
+decolonial rhetoric has been appropriated by agents associated with the
+US industrial-military apparatus as a tool for legitimizing US interests
+in the international arena. A recent example comes from the article
+``Decolonize Russia,'' written by Casey Michel and published in
+\emph{The Atlantic}, a vehicle closely related to NATO. Michel argues
+that Russia obtained its huge territory by colonizing other people,
+which is true. He proposes that, to contain its aggression (as recently
+demonstrated in Ukraine), it would be necessary to fragment Russia into
+many independent countries.\footnote{Casey Michel, ``Decolonize
+  Russia,'' \emph{The Atlantic}, May 27, 2022,
+  \href{https://www.theatlantic.com/ideas/archive/2022/05/russia-putin-colonization-ukraine-chechnya/639428/.}{https://www.theatlantic.com/ideas/\\\noindent archive/2022/05/russia-putin-colonization-ukraine-chechnya/639428/}.}
+The ``decolonize Russia'' agenda has been given voice in several other
+sources, including the UK's BBC.\footnote{``Decolonising Russia,''
+  \emph{Sounds}, BBC Radio 4, February 27, 2024, radio broadcast, 28:00,
+  \url{https://www.bbc.co.uk/programmes/m001wq4c}.} However, the very same
+argument applies to the United States as well. The US also expanded its
+territory at the expense of native people, and its foreign policy is
+indeed much more aggressive than Russia's. This suggests that the
+``decolonial'' rhetoric has been appropriated by the US
+military-industrial complex and has thus become a tool for the US
+imperialistic agenda.
+
+Cultural imperialism refers to efforts aimed at providing cultural
+legitimacy to imperialism. It aims to make the population of the society
+subjected to imperialism arrangements---or at least some fractions of
+it---accept the imperialism domination as unavoidable or even desirable.
+They do this by presenting the culture of the imperialist countries as
+being essentially superior to the culture of the countries submitted to
+them. Cultural imperialism employs different approaches to reaching this
+objective.
+
+Intellectual imperialism refers to efforts targeting the intellectual
+elites. The international scholarship system is one of the most
+important grounds on which intellectual imperialism operates.
+Universities are an important part of this system, but other
+institutions, such as academic ranking systems, the ``quality journals''
+system, and funding institutions, among others, are very important,
+too.\footnote{Albuquerque, ``The Institutional Basis''; and Simon
+  Marginson and Marjikvan der Wende, ``To Rank or to Be Ranked: The
+  Impact of Global Rankings in Higher Education,'' \emph{Journal of
+  Studies in International Education} 11, no. 3/4 (2007).} In a general
+manner, this system pre-determines who is able to formulate
+``world-class'' theories and who is not.
+
+\newpage Media imperialism works differently. It aims to conquer the hearts and
+minds of common people through the diffusion of media content from some
+countries to others. In this case, cultural influence is exerted through
+subtle means. Media products do not frequently convey explicit political
+messages. Rather, they work by deeming a universal status for
+culture-specific values and aesthetic forms.
+
+\hypertarget{intellectual-imperialism}{%
+\section{Intellectual Imperialism}\label{intellectual-imperialism}}
+
+Syed Hussein Alatas defines intellectual imperialism as ``the domination
+of one people by another in their world of thinking.''\footnote{Alatas,
+  ``Intellectual Imperialism.''} He contends that intellectual
+imperialism has six main characteristics:
+
+\begin{enumerate}
+\item
+  \textbf{Exploitation}: peripheral societies provide raw data for the
+  central ones, and these process and manufacture them in the form of
+  books and articles.
+\item
+  \textbf{Tutelage}: the knowledge produced and consumed in the
+  peripheries is assumed to be dependent on the knowledge produced by
+  central societies.
+\item
+  \textbf{Conformity}: people working in the peripheries are compelled
+  to adhere to theories produced by imperialist societies.
+\item
+  \textbf{Uneven division of intellectual work}: When they collaborate
+  on academic projects, scholars from peripheral societies work in
+  secondary roles. For instance, they provide raw data from their
+  countries for comparative studies.
+\item
+  \textbf{Rationalization}: Imperialism justifies itself as a civilizing
+  mission.
+\item
+  \textbf{Mediocrity}: Most often, scholars from the central societies
+  who work in the colonies are not among the central societies' most
+  brilliant.
+\end{enumerate}
+
+But how does intellectual imperialism work? A vast literature has
+described how, after the end of World War II, the United States exerted
+intellectual imperialism worldwide.\footnote{Robert F. Arnove, ed.,
+  \emph{Philanthropy and Cultural Imperialism: The Foundations at Home
+  and Abroad} (Boston: G.K. Hall, 1980); Teresa Hayler, \emph{Aid as
+  Imperialism} (Middlesex, UK: Penguin Books, 1971); and Inderjeet
+  Parmar, ``The Big 3 Foundations and American Global Power,''
+  \emph{American Journal of Economics and Sociology} 74, no. 4 (2015).}
+The United States took advantage of the poor conditions in Western
+Europe to become the new intellectual hegemon. Not only did the United
+States replace the Western European colonial powers as the main
+intellectual reference for the majority world,\footnote{The concept of
+  majority world was first presented by Shahidul Alam, as a manner to
+  refer to the societies existing beyond the Western World. Contrary} but it exerted growing influence on
+Western Europe, too. Naturally, this process did not happen overnight.
+
+``Philanthropic foundations'' exerted a central role in this process.
+Since the beginning of the twentieth century, they have been key actors
+in US intellectual development.\textsuperscript{21} After World War II, they expanded the scope of their
+actions worldwide. They distribute large amounts of\marginnote{to
+  the perception implied by western-centered approaches and
+  terminologies, these societies comprise the majority of humankind. By
+  calling attention to this demographic reality, Alam's term highlights
+  absurdity of a status quo in which a very small fraction of the human
+  population presents itself as representing the highest values of the
+  humankind as a whole. See Shahidul Alam, ``Majority World: Challenging
+  the West\textquotesingle s Rhetoric of Democracy,'' \emph{Amerasia
+  Journal} 34, no. 1: 87--98.} money\marginnote{\textsuperscript{21}\setcounter{footnote}{21} Parmar, ``The Big 3
+  Foundations.''} to scholars
+and intellectuals to stimulate research on certain topics, using certain
+theoretical perspectives and methodologies.\textsuperscript{22} By doing this, they exert a tremendous influence on
+setting the agenda of the intellectual debate.
+
+The academic infrastructure providing the United States with an enormous
+advantage in setting the agenda of the global intellectual debate has
+grown in sophistication since the 1990s. After the demise of the Soviet
+Union and the Central and Eastern European regimes associated with it,
+the United States became the uncontested leader of a unipolar global
+order. Acting together with international financial institutions such as
+the World Bank and the International Monetary Fund, the United States
+promoted\marginnote{\textsuperscript{22}\setcounter{footnote}{22} Bruce Cumings,
+  ``Boundary Displacement: Area Studies and International Studies during
+  and after the Cold War,'' \emph{Bulletin of Concerned Asian Scholars}
+  29, no. 1 (1997).} the setting of a new global order based on neoliberal
+principles.\footnote{John Williamson, ``A Short History of the
+  Washington Consensus,'' in \emph{The Washington Consensus
+  Reconsidered: Towards a New Global Governance}, ed. Narcis Serra and
+  Joseph E. Stiglitz (Oxford: Oxford University Press,
+  2008).}
+
+A concrete consequence of this move was the restructuring of the entire
+logic of international scholarship around the principles of academic
+capitalism.\footnote{Sheila Slaughter and Gary Rhoades, \emph{Academic
+  Capitalism and the New Economy: Markets, State and Higher Education}
+  (Baltimore: Johns Hopkins University Press, 2004).} According to these
+principles, academic institutions must compete for resources to sustain
+teaching and research based on their efficiency. A global academic
+ranking system provides the basis for measuring that efficiency. The
+United States controls most of the ranking institutions, and
+unsurprisingly, its academic institutions and scholars occupy the most
+important positions in these rankings. Other western Anglophone
+countries also benefit from this system.\footnote{Aalbers, ``Creative
+  Destruction''; and Albuquerque, ``The Institutional Basis.''} Beyond
+this there is a series of unspoken rules that minimize the chances of
+scholars working from the Global South being published in the ``world
+class'' journals and having their work cited, among other
+aspects.\footnote{Paula Chakravartty et al., ``\#CommunicationSoWhite,''
+  \emph{Journal of Communication} 68, no. 2 (2016); and Marton Demeter,
+  \emph{Academic Knowledge Production and the Global South} (London:
+  Palgrave-Macmillan, 2020).}
+
+This structural advantage provides the United States with the power to
+``universalize particularisms linked to its singular historical
+tradition.''\footnote{Bourdieu and Wacquant, ``On the Cunning of the
+  Imperialist Reason.''} This has allowed the United States to exert
+huge normative influence over the rest of the world. In this scenario,
+the US institutions become the model to follow. Very often, the ruling
+elites of other countries are educated and socialized in US
+universities.\footnote{Marion Fourcade, ``The Construction of a Global
+  Profession: The Transnationalization of Economics,'' \emph{American
+  Journal of Sociology} 112, no. 1 (2006).} In the process, they learn
+to look at the world and their own societies through US
+lenses.\footnote{Yves Dezalay and Bryant G. Garth, \emph{The
+  Internationalization of Palace Wars: Lawyers, Economists and the
+  Contest to Transform Latin American States} (Chicago: University of
+  Chicago Press, 2002).}
+
+\hypertarget{media-imperialism}{%
+\section{Media Imperialism}\label{media-imperialism}}
+
+The debate on media imperialism originated in the 1960s in Latin
+America. There are concrete reasons for this to happen. Being considered
+the US's backyard, Latin America was the first region of the world to
+fully experience the power of US media imperialism. During World War II,
+the United States began to employ its media power as a resource for
+exerting diplomatic influence on Latin American countries. For Latin
+Americans, cultural imperialism was a matter of activism rather than
+mere intellectual interest. They reacted to what they perceived as a
+threat to their native cultures posed by a foreign agent.\footnote{Dorfman
+  and Mattelart, \emph{Para leer al Pato Donald}; and Luis Ramiro
+  Beltrán, ``TV Etchings in the Minds of Latin Americans: Conservative,
+  Materialism, and Conformism,'' \emph{International Communication
+  Gazette} 24, no. 1 (1976).}
+
+The initial debate on media imperialism drew on dependency theory.
+Dependency theory emerged as a critical response to the US-promoted
+modernization theory, a theoretical standpoint that privileged the
+United States as a model for the development of societies belonging to
+the majority world.\footnote{Peter Simonson, Jefferson Pooley, and David
+  W. Park, ``The History of Communication Studies Across the Americas: A
+  View from the United States,'' \emph{MATRIZes} 17, no. 3 (2023).} Many
+of these societies had until recently been colonies of European
+countries. According to modernization theory, these societies (rebranded
+as underdeveloped or developing societies) should follow the script
+prescribed by the United States to develop.\footnote{Zaheer Baber,
+  ``Modernization Theory and the Cold War,'' \emph{Journal of
+  Contemporary Asia} 31, no. 1 (2001).} Otherwise, for dependency
+theory, the main consequence of the policies proposed by modernization
+theory is an increasing dependence of majority world societies on the
+West. According to Latin American critics, the massive export of US
+media content to the majority world was a tool for producing cultural
+dependency.
+
+The early debate on media imperialism was not limited to the academic
+milieu. Indeed, the activism in which Latin American intellectuals
+engaged, together with colleagues from the entire world, had practical
+results.\footnote{Florencia Enghel and Martín Becerra, ``Here and There:
+  (Re)Situating Latin America in International Communication Theory,''
+  \emph{Communication Theory} 28, no. 2 (2018).} Ultimately, it led
+UNESCO's MacBride Commission to publish a document proposing a New World
+Information and Communication Order (NWICO). The US government and media
+reacted angrily and left UNESCO in protest against the NWICO
+proposals.\footnote{Abu Bhuyan, \emph{Internet Governance and the Global
+  South: A Demand for a New Framework} (London: Palgrave MacMillan,
+  2014).} In the following decades, the debate on media imperialism lost
+much of the visibility it had achieved. Several factors contributed to
+this decline. First, the consolidation of the new system of
+international scholarship---described above---contributed to erasing
+Latin American voices in favor of US and Anglophone ones.\footnote{Albuquerque,
+  ``The Institutional Basis.''} This means the authority to speak about
+media imperialism was transferred to scholars working in the very same
+countries that the Latin American intellectuals accused of perpetrating
+media imperialism. In other words, the emerging neoliberal system of
+intellectual imperialism had a decisive impact on the debate around
+media imperialism.
+
+Although the initial focus of Anglophone studies on media imperialism
+was closer to that of its Latin American counterparts---this is the case
+of the work of Herbert Schiller,\footnote{Schiller, \emph{Mass
+  Communications and the American Empire}.} for instance---it soon
+followed its own path. Progressively, studies on media imperialism began
+to emphasize the inequality in the production of media content in the
+international arena,\footnote{\hypertarget{straubhaar-beyond-media-imperialism.}{%
+  \section{Straubhaar, ``Beyond Media
+  Imperialism.''}\label{straubhaar-beyond-media-imperialism.}}} to the
+detriment of the idea that media imperialism is a particular aspect of a
+more general phenomenon.
+
+Moreover, as we have seen, the United States at that time was rapidly
+becoming the unipolar hegemon of the world. In other words, US
+imperialism reached its peak as it became able to force other countries
+to adopt neoliberal reforms. These reforms in turn shaped different
+aspects of their societies: economy,\footnote{Fourcade, ``Construction
+  of a Global Profession.''} law,\footnote{Alvaro Santos, ``The World
+  Bank's Uses of the `Rule of Law' Promise in Economic Development,'' in
+  \emph{New Law and Economic Development: A Critical Appraisal,} ed.
+  David. M. Trubek and Alvaro Santos (Cambridge: Cambridge University
+  Press, 2006).} political organization,\footnote{Michael Christensen,
+  ``Interpreting the Organizational Practices of North American
+  Democracy Assistance,'' \emph{International Political Sociology} 11,
+  no. 2 (2017).} and no less importantly, the academic
+milieu.\footnote{Slaughter and Rhoades, \emph{Academic Capitalism}.}
+
+Therefore, it is no surprise that, at that time, speaking about
+imperialism was not a popular topic. Instead, new intellectual models
+emerged to provide intellectual justification for the US-centered global
+order. One of the most influential ideologues of this new order was
+Joseph Nye, Jr. In a book affirming that the United States was ``bound
+to lead'' the global order, he coined the concept of ``asymmetrical
+interdependence'' to describe the new global order.\footnote{Straubhaar, ``Beyond Media
+  Imperialism.''} This
+logic also made its mark on studies of media imperialism. In fact,
+Joseph Straubhaar borrowed from Nye the concept of ``asymmetrical
+interdependence'' to justify why ``media imperialism'' was not a useful
+concept anymore.\footnote{Joseph S. Nye, Jr., \emph{Bound to Lead: The
+  Changing Nature of American Power} (New York: Basic Books, 1990).} His
+core argument is that, in the last few decades, numerous countries have
+begun to export their media products, too. A core example refers to
+Brazil's Rede Globo de Televisão (Globo Television Network), which
+exported its telenovelas to other countries with considerable success.
+
+What this argument loses sight of is that, contrary to what happened to
+the United States, the export of media products was not an expression of
+pre-existing patterns of imperialistic dominance. There is a rich
+literature on how Hollywood has systematically echoed the US political
+agenda in their depictions of the military, for instance.\footnote{Stacy Takacs, ``The US Military as Cold War
+  Programmer,'' \emph{Journal of Popular Culture} 50, no. 3
+  (2017).}
+Added to this, the United States has often used economic and political
+pressure to force other countries to open their markets for US-produced
+media content.\footnote{Paul Moody, ``Embassy Cinema: What WikiLeaks
+  Reveals about US State Support for Hollywood,'' \emph{Media, Culture
+  \& Society} 39, no. 7 (2017).} The manner in which the United States
+dealt with the NWICO document provides vivid evidence in this respect.
+To be sure, nothing similar happened in other countries.
+
+Recently, there has been a new wave of attention regarding media
+imperialism, specifically with reference to ``platform
+imperialism.''\footnote{Jin, \emph{Digital Platforms.}} It is worth
+pointing out that platforms and media are not exactly the same thing,
+and that digital media (originally described as ``the internet'')
+originated not only as a US project but as a US military project. The
+entire infrastructure of global digital media is centered on the United
+States. This strategic advantage allowed US platforms to
+quasi-monopolize the exchange of messages online.
+
+\vspace{2em}
+
+\hypertarget{intellectual-imperialism-meets-media-imperialism}{%
+\section{Intellectual Imperialism Meets Media
+Imperialism}\label{intellectual-imperialism-meets-media-imperialism}}
+
+As we have seen, debates on intellectual imperialism and media
+imperialism have mostly run in parallel. Each one explores the problem
+of cultural imperialism from a different angle. I argue that, to
+understand the current dynamics of cultural imperialism, we must
+consider both at the same time. There are many examples of the interplay
+between intellectual imperialism and media imperialism. Here, I intend
+to explore a specific case: the use of the academic apparatus as a
+resource for socializing media personnel of other countries into the
+values and professional culture of the imperialist culture.
+
+Recently, a professor working at the Center for Sustainable Democracy at
+the University of South Florida published a post on LinkedIn
+commemorating that his center received a \$150,000 grant for training
+Brazilian journalists.\footnote{\href{https://www.linkedin.com/posts/jscacco\_democracy-technology-futureofnews-activity-7122591167690457088-RRfZ}{https://www.linkedin.com/posts/jscacco\\\noindent\_democracy-technology-futureofnews-\\\noindent activity-7122591167690457088-RRfZ}.}
+The sponsor of that grant was the US Department of State, through the US
+Embassy and Consulates in Brazil. The obvious question is: why should a
+country provide professional training for native journalists from other
+countries? The most remarkable aspect of this initiative is that it is
+not exceptional. Indeed, several similar initiatives have occurred in
+Brazil and many other countries.
+
+In the last four decades, exporting democracy and offering media
+assistance have been common motifs in the US's strategy to exert
+influence on other countries. The landmark of this initiative was the
+launch of the National Endowment for Democracy (NED) in 1983. NED has
+founded ``democracy promotion'' initiatives around the world. It must be
+noted that NED defines ``democracy promotion'' in a very broad
+manner.\footnote{Christensen, ``Interpreting the Organizational
+  Practices.''} In Brazil, NED has provided resources for groups
+championing progressive political values but also for ultraconservative
+groups that supported the former far-right president Jair
+Bolsonaro.\footnote{Camila Felix Vidal and Jahde Lopez,
+  ``(Re)pensando a dependência latino-americana: Atlas Network e
+  institutos parceiros no governo Bolsonaro,'' \emph{Revista Brasileira
+  de Ciência Política} 38
+  (2022).}
+This indicates that, more than supporting specific political causes, NED
+attempts to control the entire scope of Brazilian politics.
+
+Recently, some initiatives have blended elements of intellectual
+imperialism and media imperialism. They profit from the structural
+advantages that the global scholarship schema offers to the United
+States as an instrument to shape acquiescent media elites in other
+countries. The Knight Center for Journalism in the Americas, located at
+the University of Texas at Austin, provides an excellent example in this
+regard. The University of Texas has a reputation as a center of
+excellence in Latin American studies. The reasons behind this reputation
+go beyond the quality of the researchers working at the university. The
+massive investments that US universities receive make it impossible for
+universities located in other countries to compete with them.\footnote{Afonso
+  de Albuquerque, ``Towards a Multipolar Communication International
+  Scholarship?'' \emph{World of Media: Journal of Russian Media and
+  Journalism Studies} 1, no. 2 (2023).} The University of Texas, for
+instance, can afford the exorbitant prices of the books published by
+commercial publishers (such as Routledge, Taylor and Francis, and
+others), while the universities located in the majority world cannot. A
+recent study found that the University of Texas counted ninety-two
+editorial board members in communication journals included on the
+Journal of Citation Reports sample. This is more than double the number
+of editorial board members from all Latin American and Caribbean
+countries together. Concretely, this gives the University of Texas the
+power to speak about Latin America with more authority than Latin
+American scholars themselves.\footnote{Afonso de Albuquerque et al.,
+  ``Structural Limits to the De-Westernization of the Communication
+  Field: The Editorial Board in Clarivate's JCR System,''
+  \emph{Communication, Culture \& Critique} 13, no. 2 (2020).}
+
+In particular, the scholars affiliated with the Knight Center for
+Journalism in the Americas write extensively about Latin American
+journalism, but they rarely cite authors working in Latin America. This
+geographic exclusion persists even though most of these scholars are
+proficient in Spanish and Portuguese and therefore have access to the
+scholarly literature published by scholars working in Latin America.
+Still more important, a growing number of scholars working in Latin
+America have published in ``prestige'' international journals.
+Nonetheless, the practice of disregarding items published by authors
+working outside Anglophone (and other Western) universities is very
+common across communication studies and in other fields as
+well.\footnote{See, for instance, Ana C. Suzina, ``English as Lingua
+  Franca: On the Sterilization of Scientific Work,'' \emph{Media,
+  Culture \& Society} 43, no. 1 (2021); and Mohan Dutta et al.,
+  ``Decolonizing Open Science: Southern Interventions,'' \emph{Journal
+  of Communication} 71, no. 5 (2021).}
+
+What makes the Knight Center's case particularly interesting is that the
+tactic of silencing local scholars' voices is coupled with the intention
+of exerting technical (and political) influence over the countries where
+these scholars live. After all, the core purpose of the Knight Center is
+to provide journalism education for societies that already have their
+own journalism courses. The first logical step to justify this intention
+is to deny importance to the education and research institutions
+existing in those societies. Offering courses for journalists and
+students living in Latin America is just one of the means that the
+Knight Center employs to achieve its ends. The play of imperial
+influence is furthered by strategic networking, which refers to
+systematic initiatives aiming to prepare local media elites to be
+attuned to the values and viewpoints of the United States. One way it
+has done this is by sponsoring professional associations designed to
+operate in other countries.
+
+The Brazilian investigative journalism association Associação Brasileira
+de Jornalismo Investigativo (ABRAJI) provides a good illustration of
+this principle. It was created in 2002 under the auspices of the Knight
+Center. Since then, it has acquired growing influence as a journalistic
+(and political) agent in Brazil. For instance, in the mid-2010s, ABRAJI
+actively promoted the idea that journalism was a key factor in fighting
+corruption. At that time, the Brazilian media was engaged in a political
+campaign against the Workers' Party (Partido dos Trabalhadores,
+hereafter PT). Politically biased accusations of corruption were a
+central part of this campaign. Indirectly, at least, ABRAJI provided
+support for this strategy. ABRAJI has also worked as a representative
+association for Brazilian journalists, in addition to FENAJ (Federação
+Nacional dos Jornalistas), the Brazilian journalists' union.
+
+Since 2018, ABRAJI has played a pivotal role as an organizer of
+multi-stakeholder initiatives aiming to fight disinformation. The most
+known example in this respect is the Comprova Project. The model for
+Comprova was the US First Draft project, which integrated universities,
+news media, civil society organizations, and platforms in a media
+coalition. ABRAJI was one of the founders of Comprova, with the
+financial support of the Facebook Journalistic Project (now Meta) and
+Google News Initiative, several news media outlets (both legacy and
+native digital vehicles), and fact-checking agencies.\footnote{Salvador
+  Strano, ``Projeto Comprova reúne 24 veículos contra a fake news,''
+  \emph{Meio \& Mensagem}, June 19, 2018.} Comprova has served as a
+truth-certifying system, which legitimizes some actors to the detriment
+of others. Essentially, ABRAJI works as an intermediary between US
+interests and the Brazilian journalistic community. There are numerous
+examples in this respect. For instance, ABRAJI sponsored a course on
+investigative journalism to be offered to Brazilian journalists in
+association with the US Embassy.\footnote{US Mission Brazil, ``U.S.
+  Embassy and Abraji Open Enrollment for Investigative Journalism
+  Course,'' US Embassy \& Consulates in Brazil, July 20, 2023,
+  https://br.usembassy.gov/pt/embaixada-dos-eua-e-abraji-abrem-inscricoes-para-curso-de-jornalismo-investigativo/.}
+
+\hypertarget{cultural-imperialism-in-practice-the-lava-jato-operation}{%
+\section{Cultural Imperialism in Practice: The Lava Jato
+Operation}\label{cultural-imperialism-in-practice-the-lava-jato-operation}}
+
+Started in 2014, the Lava Jato Judicial Operation provides a dramatic
+example of US interference in Brazilian politics,\footnote{Natália
+  Viana, Andrew Fishman, and Maryam Saleh, ``Como a Lava Jato escondeu
+  do governo federal visita do FBI e procuradores americanos,''
+  \emph{Agência Pública/Intercept Brasil}, March 12, 2020.} with
+disastrous consequences for Brazil. The PT and its political allies in
+general, and former president Luiz Inácio Lula da Silva in particular,
+were the main targets of Lava Jato investigations. Judge Sergio Moro and
+Prosecutor Deltan Dallagnol led the Lava Jato investigations. Both had
+solid ties with US agencies such as the Department of State and the
+FBI.\footnote{Viana, Fishman, and Saleh, ``Como a Lava Jato.''}
+
+The legacy media fully supported Lava Jato.\footnote{Mads Damgaard,
+  ``Cascading Corruption News: Explaining the Bias of Media Attention to
+  Brazil's Political Scandals,'' \emph{Opinião Pública} 24, no. 1
+  (2018); Liziane Guazina, Helder Prior, and Bruno Araújo, ``Framing of
+  a Brazilian Crisis: Dilma Rousseff's Impeachment in National and
+  International Editorials,'' \emph{Journalism Practice} 13, no. 5
+  (2019); Francisco P. J. Marques, Camila Mont'Alverne, and Isabele
+  Mitozo, ``Editorial Journalism and Political Interests: Comparing the
+  Coverage of Dilma Rousseff's Impeachment in Brazilian Newspa­pers,''
+  \emph{Journalism} 22, no. 11 (2021); and Teun A. van Dijk, ``How Globo
+  Media Manipulated the Impeachment of Brazilian President Dilma
+  Rousseff,'' \emph{Discourse \& Communication} 11, no. 2 (2017).} They
+provided massive coverage for Lava Jato and teamed with Judge Moro and
+the prosecutors to leak information provided by them with the purpose of
+damaging PT's and Lula's public image, making it easier for the
+prosecutors to convict him. Lava Jato succeeded in destabilizing the
+PT-led government. In 2016, President Dilma Rousseff left the presidency
+after an impeachment process, and in 2017, Judge Moro convicted Lula,
+sentencing him to a twelve-year term in prison under corruption
+allegations. A news piece published by the newspaper \emph{O Globo} was
+the main evidence for convicting Lula. This news item prominently
+featured the allegation that Lula privileged the Odebrecht construction
+company in exchange for renovations to a three-story apartment he had
+bought. Later, it was proved that Lula never acquired such an
+apartment.\footnote{Emilio P. N. Meyer, ``Judges and Courts
+  Destabilizing Constitutionalism: The Brazil­ian Judiciary Branch's
+  Political and Authoritarian Character,'' \emph{German Law Journal} 19,
+  no. 4 (2018).}
+
+Despite the fragility of the evidence against him, Lula was sent to jail
+in 2018 and prevented from running in the presidential election that
+year. ABRAJI, undeterred by this faulty judicial process, provided full
+support to the legacy media coverage of Lava Jato, presenting it as
+quality investigative journalism. In fact, the association's vice
+president, Vladimir Netto, published a book praising Judge Moro as a
+national hero. His book served as the basis for a Netflix
+series---\emph{The Mechanism}---released in 2018, the year of the
+Brazilian presidential election. Lava Jato and the legacy media coverage
+of it fostered a climate of generalized suspicion regarding
+institutional politics.\footnote{Nahuel Ribke, ``Netflix and Over the
+  Top Politics? The \emph{Mechanism} TV Series and the Dynamics of
+  Entertainment Intervention,'' \emph{Critical Studies on Television}
+  16, no. 1 (2021).} Ultimately, this created the conditions that
+allowed the far-right candidate Jair Bolsonaro to become the Brazilian
+president after a surprising victory in 2018.
+
+But how does the cultural imperialism framework proposed in this article
+help us understand how foreign powers (the United States, especially)
+meddled in Brazilian judicial and political affairs? Intellectual
+imperialism was a key element of Lava Jato, as it ultimately provided
+the rationale for it. The intellectual roots of Lava Jato lie in the
+literature that, from a neoliberal perspective, describes corruption as
+a major threat to democracy. The World Bank and Transparency
+International have been the main intellectual sources of scholarly
+discourse on corruption, understood as ``the private abuse of a public
+office.''\footnote{Williamson, ``A Short
+  History.''} This agenda came to
+exert tremendous influence in political science and law studies. In
+Brazil, this literature helped to consolidate a view that emphasized the
+so-called accountability institutions as being central to a ``good
+democracy'' at the expense of representative politics.\footnote{See, for
+  instance, Timothy J. Power and Matthew M. Taylor, eds.,
+  \emph{Corruption and Democracy in Brazil} (Notre Dame, IN: University
+  of Notre Dame Press, 2011).} This view was significant in that it
+provided legitimacy to the idea that Lava Jato would purge the sins of
+representative politics---especially those associated with the PT
+government.
+
+Still more important, US institutions had played a central role in
+training Brazilian law officials on the anticorruption
+agenda.\footnote{See Eduardo M. Menuzzi and Fabiano Engelmann, ``Elites
+  jurídicas e relações internacionais: Wilson Center e agenda
+  anticorrupção no judiciário brasileiro,'' \emph{Conjuntura Astral} 11,
+  no. 54 (2020).} In fact, their interference in Brazilian politics went
+far beyond that. US universities and scholars actively promoted Lava
+Jato as a revolutionary event in the history of Latin American justice:
+the most significant anticorruption operation in Latin American
+history.\footnote{See, for instance, Luciano Da Ros and Matthew M.
+  Taylor, \emph{Brazilian Politics on Trial: Corruption and Reform under
+  Democracy} (Boulder, CO: Lynne Rienner Publishers, 2022);
+
+  Paul Lagunes and Jan Svejnar, eds., \emph{Corruption and the Lava Jato
+  Scandal in Latin America} (New York: Routledge, 2021).} Numerous
+academic works promoted this idea, and US scholars guided Moro on visits
+to US universities.\footnote{Fausto Macedo, ``Moro e Carmen falam de
+  Lava Jato e Corrupção na Universidade Colúmbia,'' \emph{Blog do Fausto
+  Macedo}, \emph{Estado de São Paulo}, February 4, 2017.} Notre Dame
+University provided Moro with the Notre Dame Award in 2017 and an
+honorary PhD title in the following year.\footnote{JusBrasil (website),
+  ``Juiz Federal Sérgio Moro recebe Título de Doutor Honoris Causa da
+  University of Notre Dame,'' \emph{JusBrasil}, May 21, 2018.}
+
+Intellectual imperialism was not the only dimension of cultural
+imperialism influencing Lava Jato. In fact, it merged with media
+imperialism in the promotion of the anticorruption agenda. ABRAJI was
+instrumental in this regard, as it helped to legitimize a political
+campaign against Lula and PT as quality journalism. This is recognized
+by association itself. In fact, they contend that ABRAJI was part of a
+Latin American network organized around Lava Jato.\footnote{Catalina
+  Lobo-Guerrero, ``How Lava Jato Brought Together Latin America's
+  Investigative Journalists,'' \emph{Global Investigative Journalism
+  Network}, August 14, 2019.} Vladimir Netto, who served as vice
+president of ABRAJI from 2016 to 2017 was the author of a book that
+presented Judge Sergio Moro in very favorable terms.\footnote{Vladimi
+  Netto, \emph{Lava Jato: o juiz Sergio Moro e os bastidores da operação
+  que abalou o Brasil} (Rio de Janeiro: Sextante, 2016).} In 2020, a
+news series published by \emph{Intercept Brasil} showed evidence that
+Netto and other journalists colluded with Lava Jato prosecutors to
+release public information favorable to Lava Jato.
+
+\hypertarget{conclusion}{%
+\section{Conclusion}\label{conclusion}}
+
+This article sheds new light on the debate about cultural imperialism.
+Historically, scholars have employed this term to describe two different
+phenomena: intellectual imperialism and media imperialism. They have
+been explored by two academic traditions, which rarely find dialogue
+with each other. Taking a different approach, this article suggests that
+intellectual and media imperialism are complementary aspects of a more
+general phenomenon. By taking these two aspects together, it identifies
+the original dynamics of media imperialism, which differ significantly
+from those identified by the classical approach. At present, scholars
+mostly associate media imperialism with the mechanisms allowing
+imperialistic countries to inundate other countries with their media
+content. In this article, we explore a different strategy, which is one
+that takes advantage of intellectual imperialism. It works by educating
+the local media elite and journalists in accordance with the worldview
+and interests of the imperialistic countries. Added to this, it employs
+networks that consolidate and diffuse foreign practices and models among
+local journalists.
+
+To illustrate how this logic works, this article analyzes the interplay
+between intellectual imperialism and media imperialism. In particular,
+it discusses the role that the Knight Center for Journalism in the
+Americas, an institution located at the University of Texas, has played
+as an organizer of Brazilian journalists. For instance, the Knight
+Center was one of the sponsors of the creation of ABRAJI, the Brazilian
+investigative journalism association. The article takes the Lava Jato
+episode as a concrete example of how intellectual imperialism and media
+imperialism impacted Brazilian politics. As the Brazilian case
+demonstrates, scholarly research and education frequently operate as
+tools at the service of imperialistic interests.
+
+
+
+
+\section{Bibliography}\label{bibliography}
+
+\begin{hangparas}{.25in}{1} 
+
+
+
+Aalbers, Manuel B. ``Creative Destruction through the Anglo-American
+Hegemony: A Non-Anglo-American View on Publications, Referees, and
+Language.'' \emph{Area} 36, no. 3 (2004): 319--22.
+
+Alam, Shahidul. ``Majority World: Challenging the West\textquotesingle s
+Rhetoric of Democracy.'' \emph{Amerasia Journal} 34, no. 1: 87--98.
+
+Alatas, Syed Farid. ``Intellectual Imperialism: Definition, Traits, and
+Problems.'' \emph{Southeast Asian Journal of Social Science} 28, no. 1
+(2000): 23--45.
+
+Albuquerque, Afonso de. ``The Institutional Basis of Anglophone Western
+Centrality.'' \emph{Media, Culture \& Society} 43, no. 1 (2021):
+180--88.
+
+Albuquerque, Afonso de. ``Transitions to Nowhere: Western Teleology and
+Regime-Type Classification.'' \emph{International Communication Gazette}
+85, no. 6 (2023): 479--97.
+
+Albuquerque, Afonso de. ``Towards a Multipolar Communication
+International Scholarship?'' \emph{World of Media: Journal of Russian
+Media and Journalism Studies} 1, no. 2 (2023): 5--18.
+
+Albuquerque, Afonso de, Thaiane M. Oliveira, Marcelo A. Santos Junior,
+and Sofia O. F. Albuquerque. ``Structural Limits to the
+De-Westernization of the Communication Field: The Editorial Board in
+Clarivate's JCR System.'' \emph{Communication, Culture \& Critique} 13,
+no. 2 (2020): 185--203.
+
+Arnove, Robert F., ed. \emph{Philanthropy and Cultural Imperialism: The
+Foundations at Home and Abroad}. Boston: G.K. Hall, 1980.
+
+Baber, Zaheer. ``Modernization Theory and the Cold War.'' \emph{Journal
+of Contemporary Asia} 31, no. 1 (2001): 71--85.
+
+Bhuyan, Abu. \emph{Internet Governance and the Global South: A Demand
+for a New Framework}. London: Palgrave MacMillan, 2014.
+
+Bourdieu, Pierre, and Loic Wacquant. ``On the Cunning of the Imperialist
+Reason.'' \emph{Theory, Culture \& Society} 16, no. 1 (1999): 41--58.
+
+Boyd-Barrett, Oliver. ``Cultural Imperialism and Communication.''
+\emph{Oxford Research Encyclopedia of Communication}, June 2018.
+\url{https://doi.org/10.1093/acrefore/9780190228613.013.678}.
+
+Boyd-Barrett, Oliver. \emph{Media Imperialism}. Los Angeles: SAGE, 2015.
+
+Boyd-Barrett, Oliver, and Tanner Mirrlees, eds. \emph{Media Imperialism:
+Continuity and Change}. Lanham, MA: Rowman \& Littlefield, 2019.
+
+Chakravartty, Paula, Rachel Kuo, Victoria Grubbs, and Charlton Mcllwain.
+``\#CommunicationSoWhite.'' \emph{Journal of Communication} 68, no. 2
+(2016): 254--66.
+
+Christensen, Michael. ``Interpreting the Organizational Practices of
+North American Democracy Assistance.'' \emph{International Political
+Sociology} 11, no. 2 (2017): 148--65.
+
+Cumings, Bruce. ``Boundary Displacement: Area Studies and International
+Studies during and after the Cold War.'' \emph{Bulletin of Concerned
+Asian Scholars} 29, no. 1 (1997): 6--26.
+
+Damgaard, Mads. ``Cascading Corruption News: Explaining the Bias of
+Media Attention to Brazil's Political Scandals.'' \emph{Opinião Pública}
+24, no. 1 (2018): 114--43.
+
+Da Ros, Luciano, and Matthew M. Taylor. \emph{Brazilian Politics on
+Trial: Corruption and Reform under Democracy}. Boulder, CO: Lynne
+Rienner Publishers, 2022.
+
+Davis, Stuart. ``What is Netflix Imperialism? Interrogating the Monopoly
+Aspirations of the `World's Largest Television Network.'\,''
+\emph{Information, Communication, and Society} 26, no. 6 (2023):
+1143--58. \url{https://doi.org/10.1080/1369118X.2021.1993955.}
+
+Demeter, Marton. \emph{Academic Knowledge Production and the Global
+South}. London: Palgrave-Macmillan, 2020.
+
+Dezalay, Yves, and Bryant G. Garth. \emph{The Internationalization of
+Palace Wars: Lawyers, Economists and the Contest to Transform Latin
+American States}. Chicago: University of Chicago Press, 2002.
+
+Dorfman, Ariel, and Armand Mattelart. \emph{Para leer al Pato Donald:
+Comunicación de Masa y Colonialismo}. Buenos Aires: Siglo Veinteuno,
+1971.
+
+Dutta, Mohan, Srividya Ramasubramanian, Mereana Barrett, Christine
+Elers, Devina Sarwatay, Preeti Raghunath, Satveer Kaur, et al.
+``Decolonizing Open Science: Southern Interventions.'' \emph{Journal of
+Communication} 71, no. 5 (2021): 803--26.
+
+Enghel, Florencia, and Martin Becerra. ``Here and There: (Re)Situating
+Latin America in International Communication Theory.''
+\emph{Communication Theory} 28, no. 2 (2018): 111--30.
+\url{https://doi.org/10.1093/ct/qty005}.
+
+Fourcade, Marion. ``The Construction of a Global Profession: The
+Transnationalization of Economics.'' \emph{American Journal of
+Sociology} 112, no. 1 (2006): 145--94.
+
+Fuentes Navarro, Raúl. ``Institutionalization and Internationalization
+of the Field of Communication Studies in Mexico and Latin America.'' In
+\emph{The International History of Communication Study}, edited by Peter
+Simonson and David W. Park, 325--45. New York: Routledge, 2016.
+
+Gluck, Antje. ``De-Westernization and Decolonization in Media Studies.''
+\emph{Oxford Research Encyclopedia of Communication}, December 2018.
+\url{https://doi.org/10.1093/acrefore/9780190228613.013.898}.
+
+Guazina, Liziane, Helder Prior, and Bruno Araújo. ``Framing of a
+Brazilian Crisis: Dilma Rousseff's Impeachment in National and
+International Editorials.'' \emph{Journalism Practice} 13, no. 5 (2019):
+620--37. \url{https://doi.org/10.1080/17512786.2018.1541422}.
+
+Gürkan, Efe C. \emph{Imperialism after the Neoliberal Turn}. London:
+Routledge, 2022.
+
+Harvey, David. \emph{The New Imperialism}. Oxford: Oxford University
+Press, 2003.
+
+Hayler, Teresa. \emph{Aid as Imperialism}. Middlesex, UK: Penguin Books,
+1971.
+
+Jin, Dal Y. \emph{Digital Platforms, Imperialism, and Political
+Culture}. London: Routledge, 2015.
+
+JusBrasil (website). ``Juiz Federal Sérgio Moro recebe Título de Doutor
+Honoris Causa da University of Notre Dame.'' \emph{JusBrasil}, May 21,
+2018.
+\href{https://www.jusbrasil.com.br/noticias/juiz-federal-sergio-moro-recebe-titulo-de-doutor-honoris-causa-da-university-of-notre-dame/580906390}{https://www.jusbrasil.com.br/noticias/juiz-federal-sergio-moro-recebe-titulo-de-doutor-honoris-causa-da-university-of-notre-dame/580906390}.
+
+Kumar, Krishan. ``Colony and Empire, Colonialism and Imperialism: A
+Meaningful Distinction?'' \emph{Comparative Studies in History and
+Society} 63, no. 2 (2021): 280--309.
+
+Lagunes, Paul, and Jan Svejnar, eds. \emph{Corruption and the Lava Jato
+Scandal in Latin America}. New York: Routledge, 2021.
+
+Lobo-Guerrero, Catalina. ``How Lava Jato Brought Together Latin
+America's Investigative Journalists.'' \emph{Global Investigative
+Journalism Network}, August 14, 2019.
+\href{https://gijn.org/stories/how-lava-jato-brought-together-latin-americas-investigative-journalists/}{https://gijn.org/stories/how-lava-jato-brought-together-latin-americas-investigative-journalists/}.
+
+Macedo, Fausto. ``Moro e Carmen falam de Lava Jato e Corrupção na
+Universidade Colúmbia.'' \emph{Blog do Fausto Macedo. Estadão de São
+Paulo}, February 4, 2017. \href{https://politica.estadao.com.br/blogs/fausto-macedo/moro-e-carmen-falam-de-lava-jato-e-corrupcao-na-universidade-columbia/}{https://politica.estadao.com.br/blogs/fausto-macedo/moro-e-carmen-falam-de-lava-jato-e-corrupcao-na-universidade-columbia/}.
+
+Manning, Jennifer. ``Decolonial Feminist Theory: Embracing the Gendered
+Colonial Difference in Management and Organizational Studies.''
+\emph{Gender, Work \& Organization} 28, no. 4 (2021): 1203--19.
+
+Menuzzi, Eduardo M., and Fabiano Engelmann. ``Elites jurídicas e
+relações internacionais: Wilson Center e agenda anticorrupção no
+judiciário brasileiro.'' \emph{Conjuntura Astral} 11, no. 54 (2020):
+105--22.
+
+Marginson, Simon, and Marjik van der Wende. ``To Rank or to Be Ranked:
+The Impact of Global Rankings in Higher Education.'' \emph{Journal of
+Studies in International Education} 11, no. 3/4 (2007): 306--29.
+
+Marques, Francisco P. J., Camila Mont'Alverne, and Isabele Mitozo.
+``Editorial Journalism and Political Interests: Comparing the Coverage
+of Dilma Rousseff's Impeachment in Brazilian Newspa­pers.''
+\emph{Journalism} 22, no. 11 (2021): 2816--35.
+\url{https://doi.org/10.1177/1464884919894126}.
+
+Meyer, Emilio P. N. ``Judges and Courts Destabilizing Constitutionalism:
+The Brazil­ian Judiciary Branch's Political and Authoritarian
+Character.'' \emph{German Law Journal} 19, no. 4 (2018): 727--68.
+
+Mignolo, W. D. \emph{The Darker Side of Western Modernity: Global
+Futures, Decolonial Options}. Durham, NC: Duke University Press, 2011.
+
+Moody, Paul. ``Embassy Cinema: What WikiLeaks Reveals about US State
+Support for Hollywood.'' \emph{Media, Culture \& Society} 39, no. 7
+(2017): 1063--77.
+
+Moyo, Last. \emph{The Decolonial Turn in Media Studies in Africa and the
+Global South}. New York: Springer, 2020.
+
+Netto, Vladimir. \emph{Lava Jato: o juiz Sergio Moro e os bastidores da
+operação que abalou o Brasil}. Rio de Janeiro: Sextante, 2016.
+
+Nordenstreng, Kaarle. ``How the New World Order and Imperialism
+Challenge Media Studies.'' \emph{tripleC: Communication, Capitalism \&
+Critique} 11, no. 2 (2013): 348--58.
+
+Nye, Joseph S., Jr. \emph{Bound to Lead: The Changing Nature of American
+Power}. New York: Basic Books, 1990.
+
+Oliveira, Thaiane, Alves Marcelo Evangelista Simone, and Rodrigo Quinan.
+``\,`Those on the Right Take Chloroquine': The Illiberal
+Instrumentalization of Scientific Debates during the Covid‐19 Pandemic
+in Brasil.''~\emph{Javnost---The Public}~28, no. 2 (2021): 165--84.
+
+Parmar, Inderjeet. ``The Big 3 Foundations and American Global Power.''
+\emph{American Journal of Economics and Sociology} 74, no. 4 (2015):
+676--703.
+
+Ramiro Beltrán, Luis. ``TV Etchings in the Minds of Latin Americans:
+Conservative, Materialism, and Conformism.'' \emph{International
+Communication Gazette} 24, no. 1 (1976): 61--85.
+
+Recuero, Raquel, Felipe B. Soares, Otavio I. Vinhas, Taiane Volcane,
+Luis Ricardo Huttner, and Victoria Silva. ``Bolsonaro and the Far Right:
+How Disinformation about COVID-19 Circulates on Facebook in Brazil.''
+\emph{International Journal of Communication} 18 (2022): 148--71.
+
+Revista Fórum. ``Nova Vaza Jato: Jornalistas combinaram matérias e
+submeteram textos a procuradores da Lava Jato.'' \emph{Revista Fórum,}
+December 12, 2019.
+\href{https://revistaforum.com.br/politica/2019/12/20/nova-vaza-jato-jornalistas-combinaram-materias-submeteram-textos-procuradores-da-lava-jato-66235.html}{https://revistaforum.com.br/politica/2019/ 12/20/nova-vaza-jato-jornalistas-combinaram-materias-submet eram-textos-procuradores-da-lava-jato-66235.html}.
+
+Ribke, Nahuel. ``Netflix and Over the Top Politics? The \emph{Mechanism}
+TV Series and the Dynamics of Entertainment Intervention.''
+\emph{Critical Studies on Television} 16, no. 1 (2021): 47--61.
+\url{https://doi.org/10.1177/1749602020980139}.
+
+Said, Edward. \emph{Orientalism}. London: Penguin Books, 1978.
+
+Santos, Alvaro. ``The World Bank's Uses of the `Rule of Law' Promise in
+Economic Development.'' In \emph{The New Law and Economic Development: A
+Critical Appraisal}, edited by David M. Trubek and Alvaro Santos,
+253--300. Cambridge: Cambridge University Press, 2006.
+
+Schiller, Herbert I. \emph{Mass Communications and the American Empire}.
+New York: A. M. Kelley, 1969.
+
+Shome, Raka. ``When Postcolonial Studies Meets Media Studies.''
+\emph{Critical Studies in Media Communication} 33, no. 3 (2016):
+245--63. \url{https://doi.org/10.1080/15295036.2016.1183801}.
+
+Simonson, Peter, David W. Park, and Jefferson Pooley.
+``Exclusions/ Exclusiones: The Role for History in the Field's
+Reckoning.'' \emph{History of Media Studies} 2 (2022).
+\url{https://doi.org/10.32376/d895a0ea.ed348e03}.
+
+Simonson, Peter, Jefferson Pooley, and David W. Park. ``The History of
+Communication Studies Across the Americas: A View from the United
+States.'' \emph{MATRIZes} 17, no. 3 (2023): 189--216.
+
+Slaughter, Sheila, and Gary Rhoades. \emph{Academic Capitalism and the
+New Economy: Markets, State and Higher Education}. Baltimore: Johns
+Hopkins University Press, 2004.
+
+Strano, Salvador. ``Projeto Comprova reúne 24 veículos contra a fake
+news.'' \emph{Meio \& Mensagem}, June 19, 2018.
+
+Straubhaar, Joseph D. ``Beyond Media Imperialism: Asymmetrical
+Interdependence and Cultural Proximity.'' \emph{Critical Studies in Mass
+Communication} 8, no. 1 (1991): 39--59.
+
+Suzina, Ana C. ``English as Lingua Franca: On the Sterilization of
+Scientific Work.'' \emph{Media, Culture \& Society} 43, no. 1 (2021):
+171--79.
+
+Takacs, Stacy. ``The US Military as Cold War Programmer.'' \emph{Journal
+of Popular Culture} 50, no. 3 (2017): 540--60.
+
+Tomlinson, John. \emph{Cultural Imperialism}. London: Continuum, 1991.
+
+Tunstall, Jeremy. \emph{The Media are American: Anglo-American Media in
+the World}. London: Constable, 1977.
+
+Williamson, John. ``A Short History of the Washington Consensus.'' In
+\emph{The Washington Consensus Reconsidered: Towards a New Global
+Governance}, edited by Nancy Serra and Joseph E. Stiglitz, 14--30.
+Oxford: Oxford University Press, 2008.
+
+van Dijk, Teun A. ``How Globo Media Manipulated the Impeachment of
+Brazilian President Dilma Rousseff.'' \emph{Discourse \& Communication}
+11, no. 2 (2017): 199--229.
+
+Viana, Natália, Andrew Fishman, and Maryam Saleh. ``Como a Lava Jato
+escondeu do governo federal visita do FBI e procuradores americanos.''
+\emph{Agência Pública/Intercept Brasil}, March 12, 2020.
+\href{https://apublica.org/2020/03/como-a-lava-jato-escondeu-do-governo-federal-visita-do-fbi-e-procuradores-americanos/}{https://apublica.org/2020/03/como-a-lava-jato-escondeu-do-governo-federal-visita-do-fbi-e-procuradores-americanos/}.
+
+Vidal, Camila F., and Jahde Lopez. ``(Re) pensando a dependência
+latino-americana: Atlas Network e institutos parceiros no governo
+Bolsonaro.'' \emph{Revista Brasileira de Ciência Política} 38 (2022):
+1--40.
+
+
+
+\end{hangparas}
+
+
+\end{document}
