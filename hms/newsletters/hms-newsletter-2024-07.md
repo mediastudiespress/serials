@@ -42,12 +42,12 @@ Reading for discussion:
 
 *History of Media Studies* recently published a special section on [“History of Communication Studies across the Americas,”](https://hms.mediastudies.press/) which features six articles tracing transnational vectors within and across North and South America. These are preceded by [an introduction](https://doi.org/10.32376/d895a0ea.a8f26bf1) by the editors.
 
-* [“Coloniality and Resistance: The Revolutionary Moment in Communication Study in the Anglophone Caribbean,”](https://doi.org/10.32376/d895a0ea.bd98a921) by Nova Gordon-Bell
-* [“Elizabeth Fox: Intellectual Biography and History of a Field of Study,”](https://doi.org/10.32376/d895a0ea.860e9e26) by Yamila Heram and Santiago Gándara
-* [“Borderline Cases: Crossing Borders in Canadian Communication Studies, 1960s-1980s,”](https://doi.org/10.32376/d895a0ea.f76fdf03) by Michael Darroch
-* [“Notes for Historicizing the Disintegrated Internationalization of Communication Studies in Latin America,”](https://doi.org/10.32376/d895a0ea.112788b7) by Raúl Fuentes-Navarro
-* [“‘Western Communication’: Eurocentrism and Modernity: Marks of the Predominant Theories in the Field,”](https://doi.org/10.32376/d895a0ea.2097c669) by Erick R. Torrico Villanueva
-* [“Media, Intellectual, and Cultural Imperialism Today,”](https://doi.org/10.32376/d895a0ea.048bbc6b) by Afonso Albuquerque
+* [“Coloniality and Resistance: The Revolutionary Moment in Communication Study in the Anglophone Caribbean,”](https://doi.org/10.32376/d895a0ea.bd98a921) by Nova Gordon-Bell
+* [“Elizabeth Fox: Intellectual Biography and History of a Field of Study,”](https://doi.org/10.32376/d895a0ea.860e9e26) by Yamila Heram and Santiago Gándara
+* [“Borderline Cases: Crossing Borders in Canadian Communication Studies, 1960s-1980s,”](https://doi.org/10.32376/d895a0ea.f76fdf03) by Michael Darroch
+* [“Notes for Historicizing the Disintegrated Internationalization of Communication Studies in Latin America,”](https://doi.org/10.32376/d895a0ea.112788b7) by Raúl Fuentes-Navarro
+* [“‘Western Communication’: Eurocentrism and Modernity: Marks of the Predominant Theories in the Field,”](https://doi.org/10.32376/d895a0ea.2097c669) by Erick R. Torrico Villanueva
+* [“Media, Intellectual, and Cultural Imperialism Today,”](https://doi.org/10.32376/d895a0ea.048bbc6b) by Afonso Albuquerque
 
 The [special section](https://hms.mediastudies.press/) is based on a 2022 [workshop](https://hms.mediastudies.press/americas-roundtable) organized in cooperation with two leading Latin American journals, *[MATRIZes](https://www.revistas.usp.br/matrizes/)* and *[Communicación y Sociedad](https://comunicacionysociedad.cucsh.udg.mx/index.php/comsoc)*. We are honored to publish our special section alongside parallel sections from *[MATRIZes](https://www.revistas.usp.br/matrizes/issue/view/13086)* and *[Communicación y Sociedad](https://comunicacionysociedad.cucsh.udg.mx/index.php/comsoc/issue/view/v2023)*.
 
