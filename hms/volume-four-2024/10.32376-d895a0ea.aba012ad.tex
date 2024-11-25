@@ -1,0 +1,2224 @@
+% see the original template for more detail about bibliography, tables, etc: https://www.overleaf.com/latex/templates/handout-design-inspired-by-edward-tufte/dtsbhhkvghzz
+
+\documentclass{tufte-handout}
+
+%\geometry{showframe}% for debugging purposes -- displays the margins
+
+\usepackage{amsmath}
+
+\usepackage{tabularray}
+
+\usepackage{hyperref}
+
+\extrafloats{100}
+
+
+\usepackage{amssymb}
+\DeclareUnicodeCharacter{2264}{\leq}
+
+\usepackage{fancyhdr}
+
+\usepackage{hanging}
+
+
+
+
+\hypersetup{colorlinks=true,allcolors=[RGB]{97,15,11}}
+
+\fancyfoot[L]{\emph{History of Media Studies}, vol. 4, 2024}
+
+
+% Set up the images/graphics package
+\usepackage{graphicx}
+\setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
+\graphicspath{{graphics/}}
+
+\title[Field of Western Populism Studies]{The Field of Western Populism Studies from 2000 to 2022} % longtitle shouldn't be necessary
+
+% The following package makes prettier tables.  We're all about the bling!
+\usepackage{booktabs}
+
+% The units package provides nice, non-stacked fractions and better spacing
+% for units.
+\usepackage{units}
+
+% The fancyvrb package lets us customize the formatting of verbatim
+% environments.  We use a slightly smaller font.
+\usepackage{fancyvrb}
+\fvset{fontsize=\normalsize}
+
+% Small sections of multiple columns
+\usepackage{multicol}
+
+% Provides paragraphs of dummy text
+\usepackage{lipsum}
+
+% These commands are used to pretty-print LaTeX commands
+\newcommand{\doccmd}[1]{\texttt{\textbackslash#1}}% command name -- adds backslash automatically
+\newcommand{\docopt}[1]{\ensuremath{\langle}\textrm{\textit{#1}}\ensuremath{\rangle}}% optional command argument
+\newcommand{\docarg}[1]{\textrm{\textit{#1}}}% (required) command argument
+\newenvironment{docspec}{\begin{quote}\noindent}{\end{quote}}% command specification environment
+\newcommand{\docenv}[1]{\textsf{#1}}% environment name
+\newcommand{\docpkg}[1]{\texttt{#1}}% package name
+\newcommand{\doccls}[1]{\texttt{#1}}% document class name
+\newcommand{\docclsopt}[1]{\texttt{#1}}% document class option name
+
+
+\begin{document}
+
+\begin{titlepage}
+
+\begin{fullwidth}
+\noindent\LARGE\emph{Article
+} \hspace{99mm}\includegraphics[height=1cm]{logo3.png}\\
+\noindent\hrulefill\\
+\vspace*{1em}
+\noindent{\Huge{The Field of Western Populism\\\noindent Studies from 2000 to 2022\par}}
+
+\vspace*{1.5em}
+
+\noindent\LARGE{Alexis von Mirbach}\par\marginnote{\emph{Alexis von Mirbach, ``The Field of Western Populism Studies from 2000 to 2022,'' \emph{History of Media Studies} 4 (2024), \href{https://doi.org/10.32376/d895a0ea.aba012ad}{https://doi.org/ 10.32376/d895a0ea.aba012ad}.} \vspace*{0.75em}}
+\vspace*{0.5em}
+\noindent{{\large\emph{LMU München}, \href{mailto:Alexis.Mirbach@ifkw.lmu.de}{Alexis.Mirbach@ifkw.lmu.de}\par}} \marginnote{\href{https://creativecommons.org/licenses/by-nc/4.0/}{\includegraphics[height=0.5cm]{by-nc.png}}}
+
+% \vspace*{0.75em} % second author
+
+% \noindent{\LARGE{<<author 2 name>>}\par}
+% \vspace*{0.5em}
+% \noindent{{\large\emph{<<author 2 affiliation>>}, \href{mailto:<<author 2 email>>}{<<author 2 email>>}\par}}
+
+% \vspace*{0.75em} % third author
+
+% \noindent{\LARGE{<<author 3 name>>}\par}
+% \vspace*{0.5em}
+% \noindent{{\large\emph{<<author 3 affiliation>>}, \href{mailto:<<author 3 email>>}{<<author 3 email>>}\par}}
+
+\end{fullwidth}
+
+\vspace*{1em}
+
+
+\hypertarget{abstract}{%
+\section{Abstract}\label{abstract}}
+
+What are the causes for the phenomenon of populism in Western liberal
+democracies in the early twenty-first century? As a result of Donald
+Trump\textquotesingle s election victory in 2016 and the electoral
+successes of populist movements in Europe, populism studies has emerged
+as noticeable subfield in communication science. We sketch a survey of
+this subfield with an analysis of 114 articles published between 2000
+and 2022 from six journals. The field of populism studies is governed by
+the ``illusio'' that digitalization, mediatization, or populist
+communication style favors the rise of right-wing populism. This
+analysis shows that these factors are unlikely to have contributed to
+its rise. The stances taken by researchers to explain populism vary
+depending on whether the university is located in the European Union or
+the Anglophone world. Critical studies of the impact of neoliberalism as
+a cause of populism are rarely included in the research.
+
+
+
+
+
+\enlargethispage{2\baselineskip}
+
+\vspace*{18em}
+
+\noindent{\emph{History of Media Studies}, vol. 4, 2024}
+
+
+ \end{titlepage}
+
+% \vspace*{2em} | to use if abstract spills over
+
+\newthought{In the early} twenty-first century, populism is on the rise in Western
+liberal democracies. Populism itself arrives on the back of the
+neoliberalism and digitalization of the late twentieth century. These
+two meta-processes may be at the root of populism. Communication
+scholars often attribute populism to the spread of digital
+media.\footnote{Gianpetro Mazzoleni, ``Populism and the Media,'' in
+  \emph{Twenty-First Century Populism}: \emph{The Spectre of Western
+  European Democracy},'' ed. Daniele Albertazzi and Duncan McDonnell
+  (London: Palgrave Macmillan, 2008); Sven Engesser, Nicole Ernst, Frank
+  Esser, and Florin Büchl, ``Populism and Social Media: How Politicians
+  Spread a Fragmented Ideology,'' \emph{Information, Communication \&
+  Society} 20, 8 (2017).} In sociology and political science, on the
+other hand, researchers highlight changes in social structures as causes
+of populism\footnote{Ronald Inglehart and Pippa Norris, ``Trump, Brexit,
+  and the Rise of Populism: Economic Have-Nots and Cultural Backlash,''
+  paper presented at the annual meeting of the American Political
+  Science Association, Philadelphia, PA, September 2017.}---combined
+with critique of neoliberalism.\footnote{James Gwartney, Robert Lawson,
+  and Joshua Hall, ``Economic Freedom of the World 2017 Annual Report,''
+  Fraser Institute, 2017.} We contribute to this conversation by
+analyzing 114 articles from six journals in communication studies. The
+articles, which were published between 2000 and 2022, contain the word
+``populism'' or ``populist'' in the title, abstract, or as a keyword.
+Taking the epistemological standpoint that scientific facts are also
+socially constructed,\footnote{Bruno Latour and Steven Woolgar,
+  \emph{Laboratory Life}: \emph{The Social Construction of Scientific
+  Facts} (Beverly Hills, CA: Sage, 1979).} we objectify the results by
+means of a field analysis inspired by Bourdieu.\footnote{Pierre
+  Bourdieu, \emph{The Rules of the Art: Genesis and Structure of the
+  Literary Field} (Stanford: Stanford University Press, 1996).}
+
+Communication studies is a fragmented post-discipline without a
+theoretical core or sub-disciplines conducting independent research.
+Topical interconnections such as the term populism bring sub-disciplines
+together in a communication imagination.\footnote{Silvio Waisbord,
+  \emph{Communication: A Post-discipline} (Cambridge, UK: Polity Press,
+  2019).} Populism as a shared dimension particularly interconnects the
+sub-disciplines of ``political communication,'' ``journalism,''
+``cross-cultural/cross-national communication,'' and
+``critical/discourse analysis.''\footnote{Hyunjin Song, Jakob-Moritz
+  Eberl, and Olga Eisele, ``Less Fragmented Than We Thought? Toward
+  Clarification of a Subdisciplinary Linkage in Communication Science,
+  2010--2019,'' \emph{Journal of Communication} 70, no. 3 (2020).}
+Accordingly, we selected the journals for this study based on their
+thematic focus in addition to the five-year impact factor (IF) indicated
+on their website at the start of the study in April 2022. This field
+analysis includes six journals tied to the field of communication: The
+\emph{Journal of Communication} is the putative flagship journal in the
+field with the highest symbolic capital (five-year IF in April 2022:
+9.5); the \emph{International Journal of Press/Politics} (5.4) provides
+us with a communication journal that has meaningful connections to
+political science; \emph{Journalism Studies} (3.8) allows us to
+integrate the perspective of journalism studies; \emph{Media, Culture \&
+Society} (3.1) gives us a journal with an explicit critical/cultural
+view; the inclusion of \emph{New Media \& Society} (7.7) gives us a
+chance to incorporate a journal that is largely focused on
+digitalization; and \emph{Communication Theory} (5.5) programs
+theoretical and meta-perspectives into our study. By design, these
+journals' relatively high impact factors lend to this study a focus on
+the power pole in the field of communication studies. Since journal
+articles are the product of a collective process and knowledge is
+hierarchically ordered, we capture what has been deemed to be the most
+thoroughly consecrated academic knowledge of our time on the topic of
+media and populism. Major journals exert symbolic power within their
+academic field and through the consecration effect into other
+fields.\footnote{Pierre Bourdieu, \emph{Homo Academicus} (Stanford:
+  Stanford University Press, 1988).} Their assumptions and results, if
+not critically reflected, can\pagebreak
+
+\noindent be transformed into doxa, a set of beliefs
+and values accepted as true and unquestionable within a given
+society.\footnote{Pierre Bourdieu and Loïc J. D. Wacquant, \emph{An
+  Invitation to Reflexive Sociology} (Chicago: University of Chicago
+  Press, 1992).}
+
+By situating these studies in a social field, we can present conceptions
+of populism, causal contexts for populism, and research findings in an
+objectified space, weight them according to their distribution of
+capital, and identify focal points and gaps. Our analysis shows that
+theoretical perspectives on populism, choices of methods, and
+interpretations of results are partly shaped by institutional
+characteristics; and patterns in the dynamics of the field enable us to
+forecast where populism research is headed, what we can steer against,
+which perspectives are most promising based on consideration of the
+empirical results, and/or which need more institutional
+support.\footnote{Bourdieu and Wacquant, \emph{Reflexive Sociology.}}
+
+The article is structured as follows. A field analysis implies three
+interrelated, necessary moments. First, we outline the genesis of the
+field of populism studies and its position in the social space and
+identify the field's doxa and illusio. While doxa describes a set of
+common, shared beliefs within a field, ``illusio,'' in
+Bourdieu\textquotesingle s terminology, is the specific belief of actors
+or groups of actors about why it is worthwhile to invest their resources
+in the field and how they do so.\footnote{Bourdieu and Wacquant,
+  \emph{Reflexive Sociology;} Alexis von Mirbach, \emph{DigitaleIllusio:
+  Online-Journalisten in Argentinien, China, Deutschland und den USA}
+  (Berlin: LitVerlag, 2014).} In the second section we consider the
+range of positions taken by populism scholars regarding the main driver
+of populism, which is alternately identified as neoliberalism, social
+structures, mediatization, or digitalization. We establish relations
+between the studies of the field based on whether they represent
+orthodox, heterodox, or heretical actor groups and summarize the
+empirical evidence for each potential driver of populism. In a third
+step, we elaborate the habitus of the groups of actors based on their
+theoretical, regional, methodological, institutional, and temporal
+characteristics. Since the concept of habitus is complex and has largely
+been studied for the power pole of communication studies,\footnote{Michael
+  Meyen, ``International Communication Association Fellows,''
+  \emph{International Journal of Communication} 6 (2012).} it is
+noteworthy that our focus is on the second step, the field analysis. In
+the conclusion, we link our field analysis to Bourdieu\textquotesingle s
+argument to explain the rise of populist movements. In his works such as
+``The Weight of the World''\footnote{Pierre Bourdieu et al., \emph{The
+  Weight of the World: Social Suffering in Contemporary Society}, trans.
+  Priscila P. Ferguson, Susan Emanuel, Joe Johnson, and Shoggy T. Waryn
+  (Cambridge, UK: Polity Press, 1999).} or ``Firing Back,''\footnote{Pierre
+  Bourdieu, \emph{Firing Back: Against the Tyranny of the Market II}
+  (New York: The New Press, 2003).} he prognosticated today's successors
+of early European populists Le Pen, Berlusconi, Haider, and others, and
+rightly predicted that their rise would result from ongoing neoliberal
+policies. Drawing on Thomas Piketty\textquotesingle s ``Capital and
+Ideology,''\footnote{Thomas Piketty, \emph{Capital and Ideology}
+  (Cambridge, MA: Harvard University Press, 2020).} we will update
+Bourdieu\textquotesingle s arguments from more than twenty years ago and
+outline a research path for investigating the relationship between
+neoliberalism, the media, and populism.
+
+\hypertarget{the-field-of-populism-in-the-social-space-and-its-genesis}{%
+\section{The Field of Populism in the Social Space and Its
+Genesis}\label{the-field-of-populism-in-the-social-space-and-its-genesis}}
+
+Bourdieu, who gained his first academic recognition in the 1960s with a
+structuralist study of the Algerian Kabyle, was the
+world\textquotesingle s most cited social scientist at the time of his
+death in 2002. Bourdieu's thinking tools like \emph{field, habitus,} and
+\emph{capital}, and his oeuvre generally (most prominently the book
+\emph{Distinctions}\footnote{Pierre Bourdieu, \emph{Distinction}
+  (Cambridge, MA: Harvard University Press, 1984).}), are sociological
+classics and remain influential in the most diverse fields of
+academia.\footnote{Gisèle Sapiro, \emph{Dictionnaire International
+  Bourdieu} (Paris: CNRS Éditions, 2020).} However, Bourdieu's impact in
+communication studies has been uneven. Though he is regularly cited in
+the subdisciplines of journalism studies\footnote{Phoebe Maares and
+  Folker Hanusch, ``Interpretations of the Journalistic Field: A
+  Systematic Analysis of How Journalism Scholarship Appropriates
+  Bourdieusian Thought,'' \emph{Journalism}~23, no. 4 (2022).} or in the
+history of communication studies,\footnote{David W. Park, ``Pierre
+  Bourdieu und die Geschichte des Feldes der Kommunikationswissenschaft:
+  Auf dem Weg zu einem reflexiven und konfliktorientierten Verständnis
+  der Fachentwicklung,'' in~\emph{Pierre Bourdieu und die
+  Kommunikationswissenschaft: Internationale Perspektiven,} ed. Thomas
+  Wiedemann and Michael Meyen (Cologne: Halem, 2013).} he is largely
+absent in the subdiscipline of political communication, which is also
+the case for the study of populism.\footnote{Benjamin Krämer, ``How
+  German Communication Research Discovered Bourdieu but Missed His
+  Potential for the Study of (Populist) Political Communication,''
+  \emph{History of Media Studies} 3 (2023).}
+
+Bourdieu\textquotesingle s field theory posits that the structures of a
+microcosm are homologous to the structures of the macrocosm---similar to
+Russian matryoshka dolls. Accordingly, we will work our way from top to
+bottom when structuring the field of populism studies. In \emph{Homo
+Academicus}, Bourdieu describes the position of universities in the
+social space as essentially founded on cultural capital, which places
+them, like the sphere of cultural production, at the non-dominant pole.
+Universities occupy a powerful position within the sphere of cultural
+production because they represent an institutionalized form of cultural
+capital. Within the university field, two competing principles of
+legitimacy collide. On the one hand, there is a genuinely ``worldly'' or
+political principle, which is held by the ``sciences of power,'' which
+have the most influence on society. On the other hand, a principle
+founded on the autonomy of the scientific and intellectual establishment
+prevails. The social sciences occupy an intermediate position in the
+university field and have staked a claim to a monopoly on legitimate
+reflection and legitimate discourse on the social world.\footnote{Bourdieu,
+  \emph{Homo Academicus.}} Communication studies, a comparatively recent
+field, is historically closer to the heteronomous-worldly pole than to
+the autonomous-intellectual pole.\footnote{Park, ``Pierre Bourdieu und
+  die Geschichte des Feldes der Kommunikationswissenschaft''; Waisbord,
+  \emph{Communication: A Post-discipline}.} The quantitative
+socio-scientific paradigm has spread beyond the US, displacing critical
+schools such as the Frankfurt School in Central Europe\footnote{Maria
+  Löblich and Andreas M. Scheu, ``Writing the History of Communication
+  Studies,'' \emph{Communication Theory} 21, no. 1 (2011).} and
+encountering resistance in Latin America.\footnote{Jesús Martín-Barbero,
+  ``A Latin American Perspective on Communication/Cultural Mediation,''
+  \emph{Global Media and Communication} 2, no. 3 (2006).} The symbolic
+capital of communication studies in the broader academic field is
+historically low. Consequently, the collective habitus of the field
+strives for acceptance in the social sciences and social relevance
+through knowledge production for the outside world.\footnote{Meyen,
+  ``International Communication Association Fellows.''} The intense
+public debates about populism, fake news, and hate speech, and ``the
+growing realization among political scientists that discourse is crucial
+for understanding populism,''\footnote{Claes de Vreese et al., ``Populism
+  as an Expression of Political Communication Content and Style: A New
+  Perspective,'' \emph{The International Journal of Press/Politics} 23,
+  no. 4 (2018).} provide an opportunity to increase the symbolic capital
+of communication studies. This habitual disposition leads to a first
+explanation for the sharp increase in the number of populism studies
+from 2000 to 2022, as shown in figure 1 from the supply-side. Figure 2
+illustrates the demand for populism studies in the field structure. The
+table shows that Donald Trump is the most mentioned actor, with 1,002
+mentions in the field of populism studies. Since Trump is rarely
+mentioned before 2018 (10 mentions), the correlation between his victory
+in the 2016 presidential election and the boom is evident and serves as
+a showcase of the American universal in political communication and
+elite journals, where the US context is treated as a norm and shapes the
+expectations of scholars from other regions of the world.\footnote{Naiza
+  Comel et al., ``Who Navigates the ``Elite'' of Communication Journals?
+  The Participation of BRICS Universities in Top-Ranked Publications,''
+  \emph{Online Media and Global Communication} 2, no. 4 (2023).} While
+leaders such as Haider, Le Pen, Fortuyn, and Berlusconi have played a
+significant role in European politics since the 1990s, the term populism
+needed a US trigger to gain attention and acceptance in the major
+international journals we surveyed. Consequently, mentions of the
+European political parties AfD (159) and SVP (55) or the leaders Matteo
+Salvini (141) and Geert Wilders (76) trail Trump's mentions by a wide
+margin. Regardless of the geographical context, figure 2 shows that for
+the components of populist communication,\footnote{de Vreese et al.,
+  ``Populism as an Expression of Political Communication Content and
+  Style.''} the research problem is right-wing populism (782) and, to a
+lesser extent, left-wing populism (141) and anti-elite populism (76).
+The most mentioned communication channels in the context of populism are
+Facebook (495), Twitter (451), and 4/8chan (110), followed by the
+traditional media FOX News (50).
+
+When can we speak of a field? Bourdieu compares social fields to
+magnetic force fields in which individuals attract and repel each other
+like electrons. The actors, in our case the researchers, develop a
+``secret complicity'' in the field, even without knowing or citing each
+other, and engage in a knowledge struggle to determine the legitimate
+points of view---in our case concerning the definition and
+conceptualization of the phenomenon of populism.\footnote{Bourdieu and
+  Wacquant, \emph{Reflexive Sociology.}} Like major universities, major
+journals are linked by objective relations, so that a change in the
+structure of these relations has an effect within each of
+them.\footnote{Bourdieu, \emph{Homo Academicus.}} The emergence and
+limits of the field can only be determined empirically, which makes the
+research process a game of back and forth. To distinguish between a
+pre-field and the field of study, in \emph{The Rules of Art} Bourdieu
+focuses on 1898, the year of the Dreyfus Affair in France, when Émile
+Zola\textquotesingle s work ``J\textquotesingle accuse'' embodied the
+growing autonomy of the literary field from politics.\footnote{Bourdieu,
+  \emph{The Rules of the Art: Genesis and Structure of the Literary
+  Field} (Stanford: Stanford University Press, 1996).} In a pragmatic
+modification, we choose Trump\textquotesingle s election in 2016 as the
+tipping point and divide our analysis into the pre-field of populism
+studies from 2000 to 2017 and the field itself from 2018 to 2022. In
+addition to the proliferation of studies, the following presentation
+will show that, since 2018, research on populism has been limited to the
+context of populist movements, and as a result of knowledge struggles,
+we will get a dominant definition of populism, leading to the
+autonomization of the field and increasing the stakes of entering the
+field with differing approaches.
+
+\vspace{2em}
+
+\begin{figure}
+    \centering
+    \includegraphics{graphics/figure-one.jpeg}
+    \caption{Journalism articles that mention populism or populist. Articles published between January 1, 2000 and December 31, 2022,
+including ``Online First.''}
+    \label{fig:one}
+\end{figure}
+
+\vspace{.2em}
+
+\marginnote{Figure 2: Associations with populism 2018--2022.
+Eighteen of the most-mentioned actors, parties, movements, and media
+associated with the rise of ``populism,'' including the
+\emph{components} of populist
+communication (de Vreese, 2018).}\begin{tblr} {width=.9\linewidth,colspec={*{4}{X[2,l]X[-2,c]}},rowsep=4pt,rowspec={|X|}}
+\emph{Keyword} & \emph{N} & \emph{Keyword} & \emph{N} \\
+Trump & 1.002 & Podemos & 135 \\
+\emph{Right-wing} & 782 & 4/8chan & 110 \\
+Facebook & 495 & VOX & 89 \\
+Twitter & 451 & \emph{Anti-elite} & 76 \\
+Instagram & 168 & SVP & 76 \\
+Salvini & 159 & QAnon & 60 \\
+AfD & 141 & Wilders & 55 \\
+\emph{Left-wing} & 141 & FOX News & 50 \\
+Sanders & 140 & Brexit & 45 \\
+\end{tblr}
+
+
+\hypertarget{pre-field-of-populism-studies-from-20002017}{%
+\section{\texorpdfstring{Pre-field of Populism Studies from
+2000--2017
+}{Pre-field of Populism Studies from 2000--2017 }}\label{pre-field-of-populism-studies-from-20002017}}
+
+From 2000 to 2017, twenty-eight studies with the word ``populism'' or
+``populist'' in the title, abstract, or keyword were published in the
+six journals examined. Based on the varying definitions of the term
+populism, the pre-field first shows why populism has long been
+considered a notoriously vague and slippery concept.\footnote{Anastasia
+  Kavada, ``Editorial: Media and the `Populist Moment,'\,'' \emph{Media,
+  Culture \& Society} 40, no. 5 (2018).} A first group of scholars uses
+the term in the context of \emph{critiques of modernization}, for
+example of ``market populism,'' that is, the notion that the free market
+is ``on the side of the ordinary people.''\footnote{Cathy Greenfield and
+  Peter Williams, ``Financialization, Finance Rationality and the Role
+  of Media in Australia,'' \emph{Media, Culture \& Society} 29, no. 3
+  (2007); McKnight, ``The Sunday Times and Andrew Neil: The Cultivation
+  of Market Populism,'' \emph{Journalism Studies} 10, no. 6 (2009);
+  Reece Peck, ``\,`You Say Rich, I Say Job Creator': How Fox News Framed
+  the Great Recession through the Moral Discourse of Producerism,''
+  \emph{Media, Culture \& Society} 36, no. 4 (2014).} Other critiques
+address the terms ``critical populism''\footnote{Joshua Gunn and Barry
+  Brummett, ``Popular Communication after Globalization,'' \emph{Journal
+  of Communication} 54, no. 4 (2004).} and ``techno-populism,'' the
+latter of which seeks to glorify communication technology.\footnote{Paula
+  Chakravartty, ``Telecom, National Development and the Indian State: A
+  Postcolonial Critique,'' \emph{Media, Culture \& Society} 26, no. 2
+  (2004); Bo Nilsson and Eric Carlsson, ``Swedish Politicians and New
+  Media: Democracy, Identity and Populism in a Digital Discourse,''
+  \emph{New Media \& Society} 16, no. 4 (2014); Tauel Harper, ``The Big
+  Data Public and Its Problems: Big Data and the Structural
+  Transformation of the Public Sphere,'' \emph{New Media \& Society} 19,
+  no. 9 (2017).} The second group looks at populism in the context of
+the \emph{commercialization} of the media and asks whether
+``tabloidization'' is positive or negative for society.\footnote{Manuela
+  Bueno, Maria Luisa Cárdenas, and Lola Esquivias, ``The Rise of the
+  Gossip Press in Spain,'' \emph{Journalism Studies} 8, no. 4 (2007);
+  Mary Debrett, ``Branding Documentary: New Zealand's Minimalist
+  Solution to Cultural Subsidy,'' \emph{Media, Culture \& Society} 26,
+  no. 1 (2004); Stephen Harrington, ``Waking up with Friends: Breakfast
+  News, \emph{Sunrise} and the `Televisual Sphere,'\,'' \emph{Journalism
+  Studies} 11, no. 2, (2010).} The third group explores the extent to
+which \emph{digital technology} contributes to the rise of populist
+movements.\footnote{Andrew Chadwick and Jennifer Stromer-Galley,
+  ``Digital Media, Power, and Democracy in Parties and Election
+  Campaigns: Party Decline or Party Renewal?'' \emph{The International
+  Journal of Press/Politics} 21, no. 3 (2016); Niko Hatakka, ``When
+  Logics of Party Politics and Online Activism Collide: The Populist
+  Finns Party's Identity under Negotiation,'' \emph{New Media \&
+  Society} 19, no. 12 (2017).} A fourth group identifies populist
+\emph{communication styles} of ``aggressive journalists,''\textsuperscript{38} the regional
+press,\textsuperscript{39} or
+politicians.\textsuperscript{40} Comparing the impact of the groups,
+figure 3 shows that ten studies on communication style (volume of 56.8)
+and ten studies on critical theory (52.6) represent the dominant view on
+the different concepts of populism. The contexts commercialization
+(22.1) and digitalization (13.1) are comparatively low. Figure 3 shows
+in addition the regional relationship between Anglophone countries and
+the European Union (EU) with regard to publications. Studies containing
+critical theory were mainly conducted at universities in the United
+States (US), United Kingdom (UK), and Australia, while studies focusing
+on the other contexts are roughly evenly distributed across the regions.
+
+Compared to the six journals studied, the Italian Gianpetro Mazzoleni
+was the first to establish a connection between the media and political
+populist movements with his essay ``Populism and the Media'' published
+in a political science anthology.\textsuperscript{41}
+In the later field of populism studies, Mazzoleni alone is cited 133
+times. The twenty-one studies from the pre-field that do not cite
+Mazzoleni are cited three times, uniquely by Chadwick and
+Stromer-Galley.\textsuperscript{42} With this, the tradition of populism research
+that criticizes modernization is disappearing---a tradition which the
+seven studies that cite Mazzoleni and are highlighted in black do not
+follow. Thus, in its socio-geographical genesis, the field of populism
+studies is a mirror image of the overall field of communication studies,
+where the socio-scientific paradigm travelled from the US to the rest of
+the world.\textsuperscript{43} Although studies from Anglophone regions are
+higher in numbers in the pre-field, it is the Europeans who bring the
+quantitative method with media effects on a small range to the field.
+Since journals with higher\marginnote{\textsuperscript{38} Steven
+  E. Clayman, ``Tribune of the People: Maintaining the Legitimacy of
+  Aggressive Journalism,'' \emph{Media, Culture \& Society} 24, no. 2
+  (2002); Brian M. Goss, ``\,'Jeffersonian Poetry': An Ideological
+  Analysis of George F. Will's Editorials (2002--2004),''
+  \emph{Journalism Studies} 6, no. 4 (2005).} impact\marginnote{\textsuperscript{39} Meryl Aldridge, ``The Ties that Divide: Regional Press
+  Campaigns, Community and Populism,'' \emph{Media, Culture \& Society},
+  25, no. 4 (2003); Tanni Haas, ``Importing Journalistic Ideals and
+  Practices? The Case of Public Journalism in Denmark,'' \emph{The
+  International Journal of Press/Politics} 8, no. 2 (2003).} come\marginnote{\textsuperscript{40} Carlos de la Torre and Catherine Conaghan, ``The
+  Hybrid Campaign: Tradition and Modernity in Ecuador's 2006
+  Presidential Election,'' \emph{International Journal of
+  Press/Politics} 14, no. 3 (2009).} closer\marginnote{\textsuperscript{41} Gianpetro Mazzoleni,
+  ``Populism and the Media,'' in \emph{Twenty-First Century Populism}:
+  \emph{The Spectre of Western European Democracy},'' ed. Daniele
+  Albertazzi and Duncan McDonnell (London: Palgrave Macmillan, 2008).} to \marginnote{\textsuperscript{42} Chadwick and Stromer-Galley, ``Digital Media,
+  Power, and Democracy.''}the\marginnote{\textsuperscript{43}\setcounter{footnote}{43} Löblich and Scheu, ``Writing the History of
+  Communication Studies.''} field of power, one
+might expect critical theory studies to have less impact than other
+theories, but this is not the case in the pre-field of populism studies.
+A difference in the journalistic impact factor is only visible in the
+higher weighting of the digitization context (6.6) compared to the
+commercialization context (3.2), which includes traditional media.
+
+
+
+\hypertarget{mazzolenis-framework}{%
+\section{Mazzoleni's Framework}\label{mazzolenis-framework}}
+
+Mazzoleni\textquotesingle s outstanding citation record points to a
+theoretical center in the field of populism studies that offers
+hypotheses for more than fifteen years of research. We present
+Mazzoleni\textquotesingle s essay ``Populism and the Media'' in detail
+because his framework serves as a basis for organizing the substantive
+findings on the question of what causes populism. Mazzoleni adapts
+political scientist Cas Mudde\textquotesingle s observation of a close
+linkage between political populism and populist media, \footnote{Cas
+  Mudde, ``The Populist Zeitgeist,'' \emph{Government \& Opposition} 39,
+  no. 4 (2004).} creates the term media populism, combines the systemic
+concept of mediatization with actor-centered ``populist strategies'' and
+asks: ``Do the media contribute to the rise of populism?''\footnote{Mazzoleni,
+  ``Populism and the Media,'' 50.} This question is the doxa of the
+later field. In Mazzoleni's framework (figure 4), the potential cause of
+mediatization (focus 1) is triggered by the ``global shift to an
+infotainment society'' and the \emph{commercialization of media
+systems}, making it the root of populism. To gain attention and public
+goodwill, populist actors or parties (focus 2) or populist media (focus 3) employ two tactics. Distinguishing between these tactics is
+essential for understanding the root cause. The first tactic involves
+adapting to media logic (focus 4), for example, by means of criteria
+such as creating sensations, controversy, drama, personality, or
+visualization. This points toward commercialization as the cause of
+populism. The second communication tactic (focus 5) is ``populism as a
+communication style,'' which includes features such as ultra-simplified
+messages, references to the people, playing the role of the underdog, or
+aggressive attacks on the liberal media. If understood as an
+ideology,\footnote{Mudde, ``The Populist Zeitgeist.''} populist style
+can itself cause populist movements to emerge. In
+Mazzoleni\textquotesingle s framework, journalists can be subject to a
+\emph{production bias} (focus 6) or an \emph{evaluation bias} (focus 7).
+The production bias means that journalists give populists more
+opportunities to increase ratings. Empirical confirmation would support
+the commercialization hypothesis as a cause of rising populism. The
+evaluation bias means that journalists are naturally opposed to populist
+ideas. Empirical confirmation of this would argue against mediatization
+as a cause. The effects of media populism can be observed at three
+levels: the media (focus 8), citizens (focus 9), or democracy (focus
+10). Regarding the media complex, the effects can be identified through
+
+\begin{fullwidth}
+    
+
+\begin{tblr}{width=.9\linewidth,colspec={*{5}{X[2,l]X[-2,l]}},rowsep=4pt,rowspec={|X|}}
+\textit{Article} & \textit{Critical Theory} & \textit{Commercialization} & \textit{Digitalization} & \textit{Populist Style} \\
+2002--2017 \emph{(total 28)} & Chakravartty 2004, Gunn 2006, Greenfield 2007,
+McKnight 2009, Gillespie 2010, Peck 2014, Raisborough 2014, Nilsson
+2014, Graves 2017, Harper 2017 & Bueno 2007, Debrett 2004, Harrington
+2010, \textbf{Landerer 2014,} Holton 2016, \textbf{Herkman 2017} &
+Chadwick 2016, \textbf{Hatakka 2017} & Clayman 2002, Aldrige 2003, Haas 2003, Goss
+2005, Torre 2009, \textbf{Groshek 2012}, Kelsey 2016, \textbf{Krämer
+2014}, \textbf{Schmuck 2017}, \textbf{Müller 2017} \\
+AP/EU & 9 vs. 1 & 3 vs. 3 & 1 vs. 1 & 5 vs. 4 (+ Ecuador) \\
+Quanti. & 0 of 10 & 4 of 6 & 1 of 2 & 4 of 10 \\
+Impact & 52.6 (Average 5.3) & 22.1 (3.2) & 13.1 (6.6) & 56.8 (5.7) \\
+\end{tblr}
+
+\vspace{0.5em}
+
+\noindent \small{Figure 3. The pre-field of populism studies. AP =
+Anglophone (USA, UK, Australia); EU = European\\\noindent Union (including
+Switzerland); Quanti. = quantitative method; Bold = studies citing
+Mazzoleni.}
+
+\end{fullwidth}
+
+\vspace{1em}
+
+\noindent an increase in \emph{media coverage} or through \emph{soft populism}
+(focus 8b), i.e., non-populist politicians communicating in a more
+populist manner. As for citizens (focus 9), increased \emph{attention}
+to populists may lead to an identification with the ``populist stars''
+(focus 9a) or to a \emph{change in attitudes} (focus 9b). Media populism
+may have a negative impact on the ``health of Western democracies''
+(focus 10) because shifts in attitudes could result in support for
+\emph{nationalist and} \emph{xenophobic politics} in elections (focus
+10a) or because public discourse undergoes \emph{contamination through}
+\emph{populism} (focus 10b).
+
+
+
+
+At the same time, Mazzoleni narrows down his concept: ``No assumption is
+made here of a \emph{causal} \emph{link} between the media and the
+spread of populism: The media factor, of course, is by no means the only
+\textquotesingle independent variable\textquotesingle{} . . . and cannot
+be separated from the other structural factors.''\footnote{Mazzoleni,
+  ``Populism and the Media,'' 58.} The \emph{socio-structural factors}
+(focus 11) are ``the nature of the political system and the specific
+features of the social and cultural-political climates.''\footnote{Mazzoleni,
+  58.} Causality can be tested using the ``media life-cycle model''
+(focus 12) as such: If we first see an increase in coverage for
+populists and then an increase in voting for populists, the
+mediatization hypothesis is confirmed. But if populists first enter
+parliaments and then increase their coverage, this argues against the
+media as a driver of increasing populism.
+
+\setcounter{figure}{3}  
+
+\begin{figure}
+    \centering
+    \includegraphics{graphics/mirbach-3.jpg}
+    \caption{The foci of media populism, based on Mazzoleni (2008);
+Engesser et al. (2017).}
+    \label{fig:four}
+\end{figure}
+
+
+Mazzoleni does not mention neoliberalism as a possible cause, but at one
+point he refers to the challenges of globalized capitalism. He also does
+not mention \emph{digitalization} (focus 13) as a possible cause of
+populism in 2008. Engesser and colleagues added this element later, in
+an essay that is second only to Mazzoleni's inaugural essay in terms of
+influence, with 118 citations in our investigated field of populism
+studies (and, like Mazzoleni, was not published in any of the six
+journals).\footnote{Engesser et al., ``Populism and Social Media.''}
+They adopt Chadwick\textquotesingle s notion of a ``hybrid media
+system''\footnote{Andrew Chadwick, \emph{The Hybrid Media System:
+  Politics and Power} (Oxford: Oxford University Press, 2013).} and
+highlight the novelty: While populists can be critiqued by journalists
+in traditional media, social media serves as a direct linkage to the
+people and allows populists to circumvent the journalistic gatekeepers.
+In the following, we will refer to populism\textquotesingle s ``affinity
+for social media'' with the simplified term the \emph{digitalization
+hypothesis}. The cause-and-effect chain of mediatization is the
+\emph{commercialization hypothesis}. If the communication tactics of
+focus 5 are foregrounded, the study addresses the \emph{style
+hypothesis}.
+
+\hypertarget{the-field-of-populism-and-the-illusio-of-its-field-of-power}{%
+\section{The Field of Populism and the Illusio of its Field of
+Power}\label{the-field-of-populism-and-the-illusio-of-its-field-of-power}}
+
+A total of eighty-six articles with the word ``populism'' or
+``populist'' in the title, abstract, or keyword were published in the
+six journals from 2018 to 2022. Fourteen of these articles examine
+populism in non-Western systems, which we exclude to avoid the
+complexity of comparing dissimilar systems.\footnote{Daniel C. Hallin
+  and Paolo Mancini, eds., \emph{Comparing Media Systems Beyond the
+  Western World} (Cambridge: Cambridge University Press, 2011).} If we
+differentiate between the twenty-eight studies from the pre-field in
+terms of whether they cite Mazzoleni or not, the difference that emerges
+is that they either cite Mazzoleni and/or Mudde or they do not include
+citations of the two authors at all. Indeed, Mudde, author of \emph{The}
+\emph{Populist Zeitgeist},\footnote{Mudde, ``The Populist Zeitgeist.''}
+has replaced Mazzoleni as the most cited researcher among populism
+theorists, with 216 citations in our investigated field of populism. We
+can consider Mazzoleni and Mudde as the same strain, since Mudde's
+citations relate especially to foci 2, 4, and 5 in
+Mazzoleni\textquotesingle s framework. Thirty-six empirical studies in
+the field of populism studies follow the Mazzoleni-Mudde strain; we
+capture them as the field of power and the orthodox group of actors.
+Another twenty studies also examine populism empirically, but without
+reference to Mazzoleni and Mudde. This is the heterodox group of actors.
+As a third group, we identify a subfield of theorists represented by
+fourteen studies in which the reflection takes an orthodox, heterodox,
+or heretical position on the field of power. In addition, there are
+three introductions for special issues on populism (marked in italics in
+figure 5), which we assign to the field of power\footnote{de Vreese et
+  al., ``Populism as an Expression of Political Communication Content
+  and Style: A New Perspective''; Homero Gil de Zúñiga, Michalska Koc,
+  and Andrea Römmele, ``Populism in the Era of Twitter: How Social Media
+  Contextualized New Insights into an Old Phenomenon,'' \emph{New Media
+  \& Society} 22, no. 4 (2020).} and theorists.\footnote{Kavada,
+  ``Editorial.''}
+
+Reflecting the dominant conception of populism, one publication is
+representative of the field of power: the introduction for the special
+issue of \emph{International Journal of Press/Politics}.\footnote{de
+  Vreese et al., ``Populism as an Expression of Political Communication
+  Content and Style: A New Perspective.''} The text may not achieve the
+highest number of citations in the investigated field, but it is
+authored by five ``patrons'': de Vreese (87 citations), Esser (105),
+Aalberg (79), Reinemann (35), and Stanyer (18). All are professors with
+power over research funds, and their essay provides a ``conceptual basis
+for a new generation of populism researchers.''\footnote{de Vreese et
+  al., 425.} The call for this special issue attracted more than seventy
+submissions. In their conception of populism, de Vreese combines
+Mudde\textquotesingle s ideology-centered and
+Hawkin\textquotesingle s\footnote{Kirk A. Hawkins,
+  \emph{Venezuela\textquotesingle s Chavismo and Populism in Comparative
+  Perspective} (Cambridge: Cambridge University Press, 2010).}
+discourse-centered understanding of populism as an expression of
+\emph{political communication content and style}. With respect to the
+causes of populism, the authors refer to the exogenous factors of
+``economic insecurity''\footnote{Gwartney et al., ``Economic Freedom of
+  the World.''} and ``cultural backlash.''\footnote{Inglehart and Norris,
+  ``Trump, Brexit, and the Rise of Populism.''} And yet, like
+Krämer\footnote{Benjamin Krämer, ``Media Populism: A Conceptual
+  Clarification and Some Theses on its Effects: Media Populism,''
+  \emph{Communication Theory} 24, no. 1 (2014).}---the most cited
+scholar in the pre-field with 112 citations, who defined media populism
+as a phenomenology---the authors note: ``We are not so much concerned
+with a normative assessment of opportunity structures.''\footnote{de
+  Vreese et al., 425.} This focus on populist communication specifies
+the illusio in the field of power. The doxa in the field as a whole is
+based on the question ``Do the media contribute to the rise of
+populism?'' Considering the most studied form of right-wing populism, as
+explained above, and the essay by Engesser and colleagues\footnote{Engesser
+  et al., ``Populism and Social Media.''} on digitalization, which has
+been cited 118 times, the illusio of the field of power becomes: Does
+populist communication style and content contribute to the rise of
+right-wing populism through (social) media?
+
+\hypertarget{structure-of-the-field-positions-and-results}{%
+\section{\texorpdfstring{Structure of the Field, Positions, and
+Results
+}{Structure of the Field, Positions, and Results }}\label{structure-of-the-field-positions-and-results}}
+
+We propose structuring the field of populism studies following the
+classical structure of a field analysis. The ``top versus bottom'' will
+be determined based on the volume of symbolic capital, which is the
+aggregated cultural-specific, social, and economic capital. To implement
+symbolic capital empirically, we will use the journal\textquotesingle s
+five-year impact factor. The ``left-right scheme'' of the field will be
+arranged according to the relationship between the types of capital. In
+his graphic representations, Bourdieu reduces the three types of capital
+to the opposition between economic capital and culture-specific capital.
+In the university field, culture-specific capital is scientific capital.
+Thus, in figure 5, we structure the field based on two factors: economic
+capital (EC) and scientific capital (SC). The right side of the field is
+the heteronomous pole, which is more open to logic from outside of the
+field and influences from other social fields such as politics,
+economics, or the media.\footnote{Bourdieu, \emph{Rules of the Art.}}
+The left side is the autonomous pole, where the actors orient themselves
+more strongly to the internal logic of the field. In \emph{Homo
+Academicus}, Bourdieu compares science to a ``parliament of
+scholarship.''\footnote{Bourdieu, \emph{Homo Academicus}, 88.} The
+authority sits on the right, implementing the techniques and rules of
+science within the framework of the existing social order. The
+opposition party sits on the left, responding to practical matters on
+the social level by making interjections. We locate the critique of
+neoliberalism, presented as the cause of populism, at the autonomous
+pole. Then, from left to right, the contexts of populism---social
+structures, mediatization, digitalization, and populist style---follow.
+The contexts of mediatization, digitalization, and style have penetrated
+the academic field from the outside---clear evidence that the growth of
+the field of populism studies is not due to Mazzoleni\textquotesingle s
+theoretical innovation within the field in 2008. Instead, the field
+boomed in 2018 as a result of Trump\textquotesingle s election, which
+took place outside the field, with the much-discussed question of
+whether Facebook or Twitter contributed to his victory.
+
+We specify the studies in the field of power using
+Mazzoleni\textquotesingle s thirteen foci. Like de Vreese et
+al.,\footnote{de Vreese et al., ``Populism as an Expression of Political
+  Communication Content and Style.''} we group these foci together under
+the following complexes: ``political actors'' (foci 2, 4, 5, 13),
+``media'' (foci 1, 3, 6--8, 12), and ``citizens'' (foci 9--11). The
+color coding in figure 5 is based on the empirical results. Green stands
+for studies containing results that support the field of power's illusio
+that style combined with digitalization fuels right-wing populism. Red
+represents studies that contradict the field's doxa that style,
+digitalization, \emph{or} mediatization contribute to the rise of
+populism. Blue represents studies that do not confirm the style and
+digitalization hypotheses but point toward the commercialization
+hypothesis in the context of mediatization. Gray represents studies that
+do not confirm the digitalization hypothesis but report that
+digitalization has had another effect on society than right-wing
+populism. Purple stands for studies that do not confirm the style
+hypothesis but report that populist style has had another effect than
+right-wing populism. The studies that do not examine the effect of
+populist communication but explore \emph{how} populists communicate are
+highlighted in black. Studies that explicitly set a ``counter frame'' to
+the digitalization hypothesis are highlighted in yellow. Taken together,
+the seventy-three studies from the field of populism have an impact
+volume of 424.3, published by 192 authors. The thirty-eight studies in
+the field of power have an impact volume of 236.5 (137 authors), and the
+twenty studies in the heterodox actor group have an impact volume of
+110.8 (36 authors). The fifteen theoretic articles have an impact volume
+of 77 (19 authors). Regarding the vertical hierarchy within the actor
+groups, the studies are classified according to their specific journal
+impact. For instance, a study published in the \emph{Journal of
+Communication} (impact 9.5) is positioned higher than a study in
+\emph{Media, Culture \& Society} (3.1). If two studies are published in
+the same journal, the older study is positioned above the more recent
+one, as it is assumed to have a higher long-term impact.
+
+\hypertarget{the-field-of-power}{%
+\section{\texorpdfstring{\textbf{The Field of
+Power}\label{the-field-of-power}}
+
+In the field of power, there are fifteen studies in the ``populist
+actor'' complex that propose hypotheses regarding style and
+digitalization, eight studies in the ``media'' complex that investigate
+the commercialization hypothesis, and thirteen studies in the
+``citizen'' complex that examine the effects of populist communication
+within the framework of all three hypotheses. The key findings are
+positioned from left to right in the field graph.
+
+\hypertarget{actor-complex}{%
+\subsection{Actor
+Complex}\label{actor-complex}}
+
+Since Mazzoleni identified politicians and parties as populist actors in
+his 2008 essay, new actors have emerged by way of the internet (focus
+2). In social networks, for example, we experience populism ``by
+citizens,''\footnote{Sina Blassnig et al., ``Populism in Online Election
+  Coverage: Analyzing Populist Statements by Politicians, Journalists,
+  and Readers in Three Countries,'' \emph{Journalism Studies} 20, no. 8
+  (2019).} ``transnational networks,''\footnote{Jenny Hokka and Matti
+  Nelimarkka, ``Affective Economy of National-Populist Images:
+  Investigating National and Transnational Online Networks through
+  Visual Big Data,'' \emph{New Media \& Society} 22, no. 5 (2020).} or
+``hyperpartisan media.''\footnote{Anders O. Larsson, ``Right-Wingers on
+  the Rise Online: Insights from the 2018 Swedish Elections,'' \emph{New
+  Media \& Society} 22, no. 12 (2020).} Studies on the communication
+forms of \emph{a priori defined populists} focus on style and content
+(focus 5). Populists are more likely to talk about
+corruption,\footnote{Kaitlen J. Cassell, ``The Populist Communication
+  Strategy in Comparative Perspective,'' \emph{The International Journal
+  of Press/Politics}, Online First (2021).} ``dismiss the
+elites''\textsuperscript{70} by means of ``character
+
+
+    
+
+\begin{figure}
+    \centering
+    \includegraphics{graphics/mirbach-five.jpg}
+    \caption{\emph{} The field of western populism studies\textbf{.}
+\emph{} EC = Economic Capital; SC = Scientific Capital. Color coding is
+based on responses to the question: \emph{} Does populist style and/or
+digitalization contribute to the rise of right-wing populism? Yes
+(green)~\textbar{} No~(red)~\textbar~Not measured ~(black)~~\textbar{}
+Possibly as part of media logic~(blue)~\textbar{} \emph{} No, but may
+contribute to polarization (gray) \textbar{} Counter
+frame~(yellow)~\textbar{} No, but may contribute to anti-elite populism
+(purple)}
+    \label{fig:five}
+\end{figure}
+
+
+\noindent assassination,''\textsuperscript{71} use social media as a
+``double-barreled gun,''\textsuperscript{72} reinforce
+aspects of right-wing populism,\textsuperscript{73} and portray ``the
+people'' with visual content.\textsuperscript{74}Regarding media logic (focus 4), populists convey their
+messages with a higher amount of negative language.\textsuperscript{75} Taken
+together, the communications strategies of defined populists have an
+effect \emph{inside} the digital nexus. Populists receive more audience\marginnote{\textsuperscript{70} Johann Gründl, ``Populist Ideas on Social Media: A
+  Dictionary-based Measurement of Populist Communication,'' \emph{New
+  Media \& Society} 24, no. 6 (2022).}\marginnote{\textsuperscript{71} Carlo Berti and Enzo Loner, ``Character
+  Assassination as a Right-Wing Populist Communication Tactic on Social
+  Media: The Case of Matteo Salvini in Italy,'' \emph{New Media \&
+  Society}, Online First (2021).}\marginnote{\textsuperscript{72} Kristof Jacobs, Linn Sandberg, and
+  Niels Spierings, ``Twitter and Facebook: Populists' Double-Barreled
+  Gun?'' \emph{New Media \& Society} 22, no. 4 (2020).}\marginnote{\textsuperscript{73} Carlo Berti, ``Right-Wing
+  Populism and the Criminalization of Sea-Rescue NGOs: The `Sea-Watch 3'
+  Case in Italy, and Matteo Salvini's Communication on Facebook,''
+  \emph{Media, Culture \& Society} 43, no. 3 (2021).}\marginnote{\textsuperscript{74} Benjamin Moffitt, ``How Do
+  Populists Visually Represent `The People'? A Systematic Comparative
+  Visual Content Analysis of Donald Trump and Bernie Sanders' Instagram
+  Accounts,'' \emph{The International Journal of Press/Politics}, Online
+  First (2022).}\marginnote{\textsuperscript{75}\setcounter{footnote}{75} Cassell,
+  ``The Populist Communication Strategy in Comparative Perspective'';
+  Katarzyna Molek-Kozakowska and Przemyslaw Wilk, ``Casual, Colloquial,
+  Commonsensical: A News Values Stylistic Analysis of a Populist
+  Newsfeed,'' \emph{Journalism Studies} 22, no. 6 (2021).} 
+engagement (focus 9a) on Facebook,\footnote{Larsson, ``Right-Wingers on
+  the Rise''; Anders O. Larsson, ``Picture-Perfect Populism: Tracing the
+  Rise of European Populist Parties on Facebook,'' \emph{New Media \&
+  Society} 24, no. 1 (2022).} Instagram,\textsuperscript{77} and
+Twitter.\textsuperscript{78} These higher levels of
+engagement (focus 9a) point toward the ``social media affinity'' of
+populism. However, the findings of a study \emph{without an a priori
+classification} of populists paint a different picture. In twenty-six
+countries analyzed, only four percent of political leaders' Facebook
+posts contain at least one element of populist communication. Thus,
+``the populist zeitgeist \textquotesingle thesis\textquotesingle{}
+{[}focus 8a{]} does not apply to communication strategies.''\textsuperscript{79} A comparison of
+communication channels that includes talk shows, Twitter, Facebook, and
+the news media reveals that: ``It is the newspapers of all places where
+we found the highest proportion of populist statements.''\textsuperscript{80} Populists can make a breakthrough into traditional media
+through social media, but a comparison of communication tactics shows
+that their reason for doing so is not populist style, but ``the
+so-called news value bonus because their messages are controversial,
+spectacular, and taboo-breaking---and thus meet the selection criteria
+of the media.''\textsuperscript{81} Bucy and colleagues\textsuperscript{82} and Wells and colleagues\textsuperscript{83}
+also show that media logic is crucial for the transfer from social media
+to traditional media. With regard to traditional media, leaders of the
+German right-wing party Alternative for Germany (AfD) have received much
+more news media coverage about their provocation (``content that
+perfectly matches media logic'') than about their attacks on political
+elites as an element of populist style.\textsuperscript{84} As Strikovic et al. note,
+``Politicians are not becoming more populist across the political
+spectrum, but rather there is a tendency toward personalization, which
+makes \textquotesingle normal\textquotesingle{} political communication
+appear more populist.''\textsuperscript{85} summary, the results from the political actor complex do not
+support the hypothesis that digitalization and style are the drivers of
+populism. As the elements of\marginnote{\textsuperscript{77} Anders O. Larsson,
+  ``The Rise of Instagram as a Tool for Political Communication: A
+  Longitudinal Study of European Political Parties and their
+  Followers,'' \emph{New Media \& Society}, Online First (2021).} media\marginnote{\textsuperscript{78} Erik P. Bucy et al., ``Performing Populism: Trump's
+  Transgressive Debate Style and the Dynamics of Twitter Response,''
+  \emph{New Media \& Society} 22, no. 4 (2020).} logic\marginnote{\textsuperscript{79} Mattia
+  Zulianello, Alessandro Albertini, and Diego Ceccobelli, ``A Populist
+  \emph{Zeitgeist}? The Communication Strategies of Western and Latin
+  American Political Leaders on Facebook,'' \emph{The International
+  Journal of Press/Politics} 23, no. 4 (2018): 447.} function\marginnote{\textsuperscript{80} Nicole
+  Ernst, Frank Esser, Sina Blassnig, and Sven Engesser, ``Favorable
+  Opportunity Structures for Populist Communication: Comparing Different
+  Types of Politicians and Issues in Social Media, Television and the
+  Press,'' \emph{The International Journal of Press/Politics} 24, no. 2
+  (2019).} similarly\marginnote{\textsuperscript{81} Ernst et al., ``Favorable Opportunity
+  Structures,'' 183.} across\marginnote{\textsuperscript{82} Bucy et al.,
+  ``Performing Populism.''} all\marginnote{\textsuperscript{83} Chris
+  Wells et al., ``Trump, Twitter, and News Media Responsiveness: A Media
+  Systems Approach,'' \emph{New Media \& Society} 22, no. 4 (2020).}
+media\marginnote{\textsuperscript{84} Marcus Maurer et al.,
+  ``How Right-Wing Populists Instrumentalize News Media: Deliberate
+  Provocations, Scandalizing Media Coverage, and Public Awareness for
+  the Alternative for Germany (AfD),'' \emph{The International Journal
+  of Press/Politics}, Online First (2022).} sectors,\marginnote{\textsuperscript{85}\setcounter{footnote}{85} Edina Strikovic et al., ``On Behalf of
+  the People: The Use of Public Opinion and the Perception of ``the
+  People'' in Political Communication Strategies of Dutch MPs,''
+  \emph{The International Journal of Press/Politics} 25, no. 1 (2020):
+  39.} In Wells and colleagues propose that, instead of focusing on
+the ``hybrid-media hypothesis,'' more attention should be paid to the
+economy as a cause of populism.\footnote{Wells et al., ``Trump, Twitter,
+  and News Media Responsiveness.''}
+
+\hypertarget{media-complex}{%
+\subsection{Media
+Complex}\label{media-complex}}
+
+We can continue to test this commercialization hypothesis in the media
+complex, which comprises eight studies. In addition, the studies of Wirz
+and colleagues\footnote{Dominique S. Wirz et al., ``The Effects of
+  Right-Wing Populist Communication on Emotions and Cognitions toward
+  Immigrants,'' \emph{The International Journal of Press/Politics} 23,
+  no. 4 (2018).} from the citizen complex and of Müller and
+colleagues\footnote{Philipp Müller et al., ``The Polarizing Impact of
+  News Coverage on Populist Attitudes in the Public: Evidence from a
+  Panel Study in Four European Democracies: Polarizing News Effects on
+  Populist Attitudes,'' \emph{Journal of Communication} 67, no. 6
+  (2017).} from the pre-field are included in this analysis, as they
+report results of content analyses conducted in parallel.
+
+One study supports the populist zeitgeist thesis of \emph{populism by
+the media} (focus 3). Focusing on a twenty-eight-year period of media
+coverage (focus 8a) in the Netherlands, Hameleers and Vliegenthart
+observe ``clear evidence for an increasing presence of people-centric,
+anti-elitist and right- and left-exclusionist coverage in
+newspapers.''\textsuperscript{89} However, they put these
+findings into perspective. First, ``populist rhetoric is not as overtly
+dominant in media coverage,'' and, second, ``we may not be able to
+establish a clear causal relationship between the increasing trend of
+populist references in media coverage and increasing support for
+populist ideas and parties in public opinion.''\textsuperscript{90} Causality can be tested using
+Mazzoleni\textquotesingle s \emph{media life cycle model} (focus 12) and
+four content analyses of news coverage in Northern and Central European
+Countries.\textsuperscript{91}
+In an international comparison, all four studies show that in countries
+where populist parties have been present in parliament for a longer
+period of time and are thus in the zone of legitimate controversy,
+populist themes, messages, or intra-media agenda-setting are more
+prevalent in print media. In terms of causality, this suggests that the
+media are not the driver of a possible populist zeitgeist but that they
+\emph{follow} it. The studies also show that coverage is rather low in
+absolute terms (focus 8a): ``In contrast to many allegations regarding
+the news media following the last European elections, Brexit, and the
+election of Trump . . . we found populist actors (on the left and right)
+to be mostly \emph{underrepresented}.''\textsuperscript{92} ``Only a small share of
+articles'' contained statements that can be considered
+populist.\textsuperscript{93} ``Most articles had no or few (populist) style
+elements'' and ``anti-immigrant statements were relatively
+scarce.''\textsuperscript{94}
+
+Thus, according to the results, journalists are not subject to a
+\emph{production bias} (focus 6), but rather are subject to an
+\emph{evaluation bias} (focus 7). Regarding comments on populist
+alternative media ``the overwhelmingly negative coverage implies that
+the mainstream media is fulfilling its democratic role by informing and
+promoting public understanding of the motives and ideological views of
+right-wing alternative\marginnote{\textsuperscript{89} Michael Hameleers and Rens Vliegenthart, ``The
+  Rise of a Populist Zeitgeist? A Content Analysis of Populist Media
+  Coverage in Newspapers Published between 1990 and 2017,''
+  \emph{Journalism Studies} 21, no. 1 (2020).} media\marginnote{\textsuperscript{90} Hameleers and
+  Vliegenthart, 32.} while\marginnote{\textsuperscript{91} Müller et al., ``The Polarizing Impact of News
+  Coverage''; Martin Wettstein et al., ``News Media as Gatekeepers,
+  Critics, and Initiators of Populist Communication: How Journalists in
+  Ten Countries Deal with the Populist Challenge,'' \emph{The
+  International Journal of Press/Politics} 23, no. 4 (2018); Silje
+  Nygaard, ``Boundary Work: Intermedia Agenda-Setting Between Right-Wing
+  Alternative Media and Professional Journalism,'' \emph{Journalism
+  Studies} 21, no. 6 (2020); Wirz et al., ``The Effects of Right-Wing
+  Populist Communication on Emotions and Cognitions toward Immigrants.''} refraining\marginnote{\textsuperscript{92} Wettstein et al.,
+  ``News Media as Gatekeepers,'' 487.} from\marginnote{\textsuperscript{93} Müller et al., ``The Polarizing Impact of News
+  Coverage,'' 981.} legitimizing\marginnote{\textsuperscript{94}\setcounter{footnote}{94} Wirz et al., ``The Effects of Right-Wing Populist
+  Communication on Emotions and Cognitions toward Immigrants,'' 505.} these
+actors.''\footnote{Nygaard, ``Boundary Work,'' 10.} While two studies
+show that the \emph{evaluation bias} is weaker owing to the electoral
+success of populists,\footnote{Ayala Panievsky, ``The Strategic Bias:
+  How Journalists Respond to Antimedia Populism,'' \emph{The
+  International Journal of Press/Politics} 27, no. 4 (2022); Léonie de
+  Jonge, ``The Populist Radical Right and the Media in the Benelux:
+  Friend or Foe?'' \emph{The International Journal of Press/Politics}
+  24, no. 2 (2019).} the effects are evident on both private and public
+media journalists. This means that ``the differences in media strategies
+cannot simply be attributed to commercialization.''\footnote{de Jonge,
+  ``The Populist Radical Right and the Media in the Benelux,'' 205.}
+Overall, we endorse the conclusion of Wettstein and colleagues regarding
+the media complex:
+
+\begin{quote}
+The media have been criticized for providing a favorable stage for
+populist actors, and---bluntly said--- falling victim to the news value
+bonus and provocative strategies of populist actors whose main goal is
+to trigger news coverage, polarize the electorate and mobilize their own
+supporters. Although the theoretical argument sounds plausible, we do
+not find convincing empirical support for it. . . . The term ``media
+populism'' should be used with reservation.\footnote{Wettstein et al.,
+  ``News Media as Gatekeepers,'' 490--91.}
+\end{quote}
+
+\noindent Mazzoleni asked the question: ``Do the media contribute to the rise of
+populism?'' We propose formulating the question differently based on our
+findings:
+
+To what extent do the media contribute to the downplay of populism?
+
+In the citizen complex, the study reporting the largest proven media
+effect in the field of populism studies also suggests that the question
+should be posed this way. Boukes and Hameleers show that satire shows
+broadcast by mainstream media reduced support for Dutch right-wing
+populist Geert Wilders among viewers (focus 9b).\footnote{Marc Boukes
+  and Michael Hameleers, ``Shattering Populists' Rhetoric with Satire at
+  Elections Times: The Effect of Humorously Holding Populists
+  Accountable for Their Lack of Solutions,'' \emph{Journal of
+  Communication} 70, no. 4 (2020).} Thus, this result also belies the
+hypothesis that media contribute to the rise of populism.
+
+\hypertarget{citizen-complex}{%
+\subsection{Citizen Complex}
+}\label{citizen-complex}
+
+Of the thirteen studies in the citizen complex, three studies examine
+the behavior of online users and ten studies examine the effects of
+populist communication and include sociodemographic characteristics such
+as gender, age, education, or income. Hameleers and colleagues
+investigate social structures in the most depth, also including country
+structure data: unemployment and migration levels.\footnote{Michael
+  Hameleers et al., ``Start Spreading the News: A Comparative Experiment
+  on the Effects of Populist Communication on Political Engagement in
+  Sixteen European Countries,'' \emph{The International Journal of
+  Press/Politics} 23, no. 4 (2018).} We will first present the effects
+of populist communication on citizens\textquotesingle{} attitudes (focus
+9) and then its effects on democracy (focus 10).
+
+The results of the studies with real-life settings are consistent with
+those of experimental studies, and one aspect stands out: ``The
+influence of populist statements depends on media
+users\textquotesingle{} prior attitudes''\footnote{Michael Hameleers,
+  Linda Bos, and Claes H. de Vreese, ``Selective Exposure to Populist
+  Communication: How Attitudinal Congruence Drives the Effects of
+  Populist Attributions of Blame,'' \emph{Journal of Communication} 68,
+  no. 1 (2018b): 69.} or comes ``on top of pre-existing
+attitudes.''\textsuperscript{102}
+Effects are evident among people who feel relatively
+deprived,\textsuperscript{103} who already hold populist attitudes,\textsuperscript{104} who
+are disappointed by politics,\textsuperscript{105} or who
+hold anti-pluralistic world views.\textsuperscript{106} At the same time, the findings\marginnote{\textsuperscript{102} Wirz et al., ``The Effects of Right-Wing Populist
+  Communication on Emotions and Cognitions toward Immigrants,'' 509.}
+should\marginnote{\textsuperscript{103} Hameleers et al., ``Selective Exposure to Populist
+  Communication.''} be\marginnote{\textsuperscript{104} Jana
+  Laura Egelhofer et al., ``Populist Attitudes and Politicians'
+  Disinformation Accusations: Effects on Perceptions of Media and
+  Politicians,'' \emph{Journal of Communication} 72, no. 6 (2022).} ``interpreted\marginnote{\textsuperscript{105} Nayla Fawzi, ``Untrustworthy News
+  and the Media as `Enemy of the People?' How a Populist Worldview
+  Shapes Recipients' Attitudes toward the Media,'' \emph{The
+  International Journal of Press/Politics} 24, no. 2 (2019).} with\marginnote{\textsuperscript{106}\setcounter{footnote}{106} Klára Smejkal et al., ``Just
+  a `Mouthpiece of Biased Elites?' Populist Party Sympathizers and Trust
+  in Czech Public Service Media,'' \emph{The International Journal of
+  Press/Politics}, Online First (2022).} care,'' as the media effects are ``rather
+low (between 1 and 2\%)''\footnote{Müller et al., ``The Polarizing Impact
+  of News Coverage,'' 987.} or ``only explain between 1\% and 3\% of the
+variance.''\footnote{Egelhofer et al., ``Populist Attitudes and
+  Politicians' Disinformation Accusations,'' 8.} In other words,
+populist messages do not lead to an increase in right-wing populist
+attitudes, but they can have a reinforcing effect in experimental tests.
+What is a reinforcing effect?
+
+To understand what a reinforcing effect is in this context, we have to
+look more closely at the individual components of populist
+communication. The three components of \emph{populism as a communication
+style} are ``references to the people,'' ``anti-elitism,'' and
+``anti-out-groups.''\footnote{de Vreese et al., ``Populism as an
+  Expression of Political Communication Content and Style.''} The
+methodological key result is that the components only have a significant
+effect when they are combined.\footnote{Hameleers et al., ``Start
+  Spreading the News.''} In all the studies examined, it is clear which
+component is the key driver: ``A systematic relation could only be found
+for anti-elite populism, which includes both right- and left-wing
+populism.''\footnote{Fawzi, ``Untrustworthy News and the Media as `Enemy
+  of the People?'\,''} The anti-elite factor is also most frequently
+found in reader comments\footnote{Blassnig et al., ``Populism in Online
+  Election Coverage.''} and social media likes.\footnote{Giuliano Bobba
+  et al., ``Populism and the Gender Gap: Comparing Digital Engagement
+  with Populist and Non-Populist Facebook Pages in France, Italy, and
+  Spain,'' \emph{The International Journal of Press/Politics} 23, no. 4
+  (2018).} In the field of populism studies, the research problem (see
+above) is ``right-wing populism'' (766 mentions), while anti-elite
+populism receives less attention (76 mentions). However, the results
+make it clear that anti-elite populism is the more socially relevant
+phenomenon. While the anti-elite component has the strongest mobilizing
+effect, the anti-out-group factor can trigger a reaction and have a
+demobilizing effect.\footnote{Hameleers et al., ``Selective Exposure to
+  Populist Communication''; Müller et al., ``The Polarizing Impact of
+  News Coverage.''} Hence, the possible effect of populist communication
+for democracy (focus 10) is not an increase in right-wing populist
+attitudes. Rather, populist communication might have a \emph{polarizing
+effect}, widening gaps in society and increasing the problem of
+fragmented populations in democratic systems.\footnote{Hameleers et al.,
+  ``Selective Exposure to Populist Communication''; Müller et al., ``The
+  Polarizing Impact of News Coverage.''}
+
+Supposed social polarization caused by populist communication is
+connected to the digitalization hypothesis (focus 13) as well as to the
+concern that public discourse is being contaminated by populism (focus
+10b). One fear is that populist alternative media could displace the
+legacy press. However, these concerns are ``unwarranted.''\footnote{Sebastian
+  Stier et al., ``Populist Attitudes and Selective Exposure to Online
+  News: A Cross-Country Analysis Combining Web Tracking and Surveys,''
+  \emph{The International Journal of Press/Politics} 25, no. 3 (2020).}
+Legacy press outlets are notably dominant---consumed nineteen times as
+much as hyper-partisan news sources, even by citizens with populist
+attitudes in France, Germany, Italy, Spain, the UK, and the
+US.\footnote{Stier et al., ``Populist Attitudes and Selective
+  Exposure.''} The exposure to populist alternative news among voters of
+the German AfD party is relatively low,\textsuperscript{118} and
+legacy news media are still highly influential in a right-wing online
+forum in Spain.\textsuperscript{119}
+A closer look at the results reveals a difference between researchers
+from North American universities and those from continental European
+universities. Two German research teams reach a similar conclusion: As
+people with populist attitudes still consume more alternative media than
+people without populist attitudes, alternative media could have a
+polarizing effect and pose a threat to liberal democracies.\textsuperscript{120} At a US university, on the other hand, Juarez Miro
+and Toff present\marginnote{\textsuperscript{118} Philipp Müller and
+  Ruben L. Bach, ``Populist Alternative News Use and Its Role for
+  Elections: Web-Tracking and Survey Evidence from Two Campaign
+  Periods,'' \emph{New Media \& Society}, Online First (2021).} ``a\marginnote{\textsuperscript{119} Juarez Miro and Toff, ``How Right-Wing
+  Populists Engage with Cross-Cutting News on Online Message Boards.''} challenge\marginnote{\textsuperscript{120} Sebastian
+  Stier et al., ``Populist Attitudes and Selective Exposure to Online
+  News''; Müller and Bach, ``Populist Alternative News Use and Its Role
+  for Elections.''} to overly simplistic understandings of
+digital media platforms as places where people with like-minded views
+solely engage with a narrow range of information sources.''\footnote{Juarez
+  Miro and Toff, ``How Right-Wing Populists Engage with Cross-Cutting
+  News on Online Message Boards,'' 14.} Their result regarding a
+right-wing online forum suggests that the discussions there ``resemble
+normatively positive deliberative spaces---albeit in this case in
+support of illiberal political positions.''\footnote{Juarez Miro and
+  Toff, 1.} At a university in Canada, Bouliane and colleagues make a
+distinction within the polarization thesis using right-wing echo
+chambers from the internet: The effects of informational similarity
+``are online not more than offline'' and ``could push all citizens
+{[}socialists, Greens, and others{]} towards extremes.''\footnote{Shelley
+  Boulianne, Karolina Koc-Michalska, and Bruce Bimber, ``Right-Wing
+  Populism, Social Media and Echo Chambers in Western Democracies,''
+  \emph{New Media \& Society} 22, no. 4 (2020): 695.} Their key finding
+on the digitalization hypotheses is:
+
+\begin{quote}
+Overall, we do not find evidence that online/social media explain
+support for right-wing populist candidates and parties. Instead, in the
+United States, use of online media \emph{decreases} support for
+right-wing populism.\footnote{Boulianne et al., 683, emphasis added.}
+\end{quote}
+
+\noindent Therefore, it should be noted that the results in the field of power
+provide little evidence for the digitalization and style hypothesis.
+While the effects of populist messages and their share in the media are
+always small and require interpretation in order to weight them, the
+results for the connection between social determinants and populist
+attitudes are clear (focus 10). People with a lower income, a lower
+education, and a higher age are more likely to hold populist
+attitudes.\footnote{Müller et al., ``The Polarizing Impact of News
+  Coverage''; Fawzi, ``Untrustworthy News and the Media as `Enemy of the
+  People?'\,''; Stier et al., ``Populist Attitudes and Selective
+  Exposure to Online News''; Müller and Bach, ``Populist Alternative
+  News Use and Its Role for Elections.''} Male gender is also a strong
+predictor of populist behavior online.\footnote{Bobba et al., ``Populism
+  and the Gender Gap.''} The sixteen-country experiment by Hameleers
+with twenty-eight co-authors,\footnote{Hameleers et al., ``Start
+  Spreading the News.''} which examines social structure in most depth,
+shows that ``populist communication . . . resonates with the opportunity
+structures in countries.''\footnote{Hameleers et al., 533.} The
+motivating potential of populist messages increases with the
+\emph{national level of unemployment} and the \emph{overall}
+\emph{political climate}, while with regard to the \emph{level of
+immigration} of a country there is ``clearly no impact of populist cues
+on political engagement.''\footnote{Hameleers et al., 531.} This result
+also suggests that anti-elite populism, and not right-wing populism, is
+the crucial component for the rise of populist movements. Anti-elite
+populism is caused by a sense of social insecurity, which leads us to
+neoliberalism as a driver in the final section. How is the question of
+cause negotiated in the heterodox field of populism studies?
+
+\hypertarget{heterodox-group}{%
+\section{Heterodox Group}\label{heterodox-group}}
+
+In the heterodox field, almost all studies\footnote{An exception to this
+  is Leon A. Salter, ``Editorial Representations of the National
+  Standards Education Policy: Populism, the Journalistic Identity and
+  the Citizen-Consumer,'' Journalism Studies 20, no. 7 (2019).} are in
+the context of the field's doxa: ``Do the media contribute to the rise
+of populism?'' However, they use different definitions of populism,
+which is why the term sometimes becomes a slippery concept again. Ten
+studies examine populism in the context of digital media, ten studies in
+the context of traditional media. The digitalization studies differ from
+those in the field of power insofar as they all relate the rise in
+populism to changes in social structures and include socio-demographic
+variables and/or set a counter frame to the digitalization hypothesis.
+We order the studies between the autonomous and heteronomous poles,
+depending on the factor that the author highlights as the strongest
+cause of populism. Four studies highlight digitalization as a key factor
+in the rise of populism. For instance, the memes posted on the board of
+right-wing populist network 4chan contribute to the normalization of
+antisemitic content;\footnote{Marc Tuters and Sal Hagen, ``(((They)))
+  Rule: Memetic Antagonism and Nebulous Othering on 4chan,'' \emph{New
+  Media \& Society} 22, no. 12 (2020).} follower networks of the
+right-wing AfD might increase polarization;\footnote{Felix Rusche, ``Few
+  Voices, Strong Echo: Measuring Follower Homogeneity of Politicians'
+  Twitter Accounts,'' \emph{New Media \& Society}, Online First (2022).}
+Russia Today (RT) conveys an anti-elite worldview to youth in Western
+democracies;\footnote{Robert A. Saunders et al., ``ICYMI: RT and
+  Youth-Oriented International Broadcasting as (Geo)Political Culture
+  Jamming,'' \emph{The International Journal of Press/Politics} 27, no.
+  3 (2022).} and journalists should exercise caution when including
+populist leaders\textquotesingle{} tweets in their reports.\footnote{Delia
+  Dumitrescu and Andrew R. Ross, ``Embedding, Quoting, or Paraphrasing?
+  Investigating the Effects of Political Leaders' Tweets in Online News
+  Articles: The Case of Donald Trump,'' \emph{New Media \& Society} 23,
+  no. 8 (2021).} The commercialization hypothesis emerges as the
+strongest in four studies in the heterodox field. In this group, the
+one-media fallacy\footnote{Elizabeth Poole et al., ``Tactical
+  Interventions in Online Hate Speech: The Case of \#stopIslam,''
+  \emph{New Media \& Society} 23, no. 6 (2021).} in the field of
+communication studies and Mudde\textquotesingle s ``thin-centered''
+definition of populism\footnote{Jessica Baldwin-Philippi, ``The
+  Technological Performance of Populism,'' \emph{New Media \& Society}
+  21, no. 2 (2019).} are criticized. Communication studies should
+instead focus on the economic relations of social platforms\footnote{Brian
+  Judge, ``The Birth of Identity Biopolitics: How Social Media Serves
+  Antiliberal Populism,'' \emph{New Media \& Society}, Online First
+  (2022).} and on the reduction of media owners' influence, as mediated
+populism has existed for decades in the US via talk radios or Fox
+News.\footnote{Chuck Tryon, ``Sinclair Broadcasting as Mini-Media
+  Empire: Media regulation, Disinfomercials, and the Rise of Trumpism,''
+  \emph{Media, Culture \& Society} 42, no. 7 (2020).}
+
+Seven studies of the heteronomous field highlight changes in social
+structures as a major factor in the rise of populism. In this group, the
+study of McDevitt and Ferrucci provides especially clear empirical
+evidence for our ordering of the causes of populism between the
+autonomous-scientific and heteronomous poles. They compared the
+explanations of Trump's victory in 2016. While scholars mostly viewed
+his rise as predictable when considering journalists\textquotesingle{}
+low level of interest in rural communities and misunderstanding of
+populism, the journalists from outside the field implicitly argued that
+his victory was facilitated by the media illiteracy of citizens who were
+unable to resist fake news.\footnote{Michael McDevitt and Patrick
+  Ferrucci, ``Populism, Journalism, and the Limits of Reflexivity: The
+  Case of Donald J. Trump,'' \emph{Journalism Studies} 19, no. 4 (2018).}
+But, as further studies show, the frequent call for more media literacy
+is not a promising solution to the post-truth dilemma, as the media
+literacy of people using the 8chan imageboard of the right-wing
+conspiracy QAnon is relatively high.\footnote{Alice Marwick and William
+  Clyde Partin, ``Constructing Alternative Facts: Populist Expertise and
+  the QAnon Conspiracy,'' \emph{New Media \& Society}, Online First
+  (2022).} Newspapers taking a direct stand against Trump potentially
+reinforced his ``fake news'' and ``enemy of the people''
+rhetoric.\textsuperscript{138} Instead of
+social media, television news continues to play a major role in rural
+areas, with the critical components: the anti-elite ethos and widespread
+democratic dissatisfaction\textsuperscript{139} that populist projects turn into
+political power.\textsuperscript{140} An example of such a populist project is Trump's
+concept-metaphor of the border.\textsuperscript{141} Five studies in the heterodox\marginnote{\textsuperscript{138} Regina G. Lawrence and Young Eun Moon, ``\,`We Aren't
+  Fake News': The Information Politics of the 2018 \#FreePress Editorial
+  Campaign,'' \emph{Journalism Studies} 22, no. 2 (2021).}  group\marginnote{\textsuperscript{139} Chris Wells et al., ``News Media
+  Use, Talk Networks, and Anti-Elitism across Geographic Location:
+  Evidence from Wisconsin,'' \emph{The International Journal of
+  Press/Politics} 26, no. 2 (2021).} focus\marginnote{\textsuperscript{140} Lluis de Nadal, ``Populism and
+  Plebiscitarianism 2.0: How Podemos Used Digital Platforms for
+  Organization and Decision-Making,'' \emph{New Media \& Society},
+  Online First (2021).} on\marginnote{\textsuperscript{141}\setcounter{footnote}{141} Jill K. Fleuriet and Mari
+  Castellano, ``Media, Place-Making, and Concept-Metaphors: The
+  US-Mexico Border during the Rise of Donald Trump,'' \emph{Media,
+  Culture \& Society} 42, no. 6 (2020); for Italy's fascist tradition as
+  a root of populism, see Cinzia Padovani, ``Journalists' Roles and the
+  Ultra-Right: The Case of Italy,'' \emph{Journalism Studies} 23, no. 10
+  (2022).} global
+capitalism or neoliberalism as a decisive factor in the rise of
+populism. They report that the term populism is used in the legacy media
+to defend the status quo of liberal democracy. But as populism ``is a
+reaction to collapsed financial capitalism, the label masks a deeper
+conversation.''\footnote{Stephanie Brookes, ``What Do We Mean When We
+  Talk about Populism? Local Politics, Global Movements and `The People'
+  in Political Coverage of the 2016 Australian Federal and United States
+  Presidential Elections,'' \emph{Media, Culture \& Society} 40, no. 8
+  (2018); Niko Hatakka and Juha Herkman, ``Hegemonic Meanings of
+  Populism: Populism as a Signifier in Legacy Dailies of Six Countries
+  2000--2018,'' \emph{Media, Culture \& Society} 44, no. 8 (2022).}
+Similarly, the anti-elite populism of Lady Gaga and Greta Thunberg on
+Instagram prevents a serious debate about the effects of
+neoliberalism,\footnote{Antonio Kissas, ``Populist Everyday Politics in
+  the (Mediatized) Age of Social Media: The Case of Instagram Celebrity
+  Advocacy,'' \emph{New Media \& Society}, Online First (2022).} but
+``theorizing economic globalization is vital'' for understanding
+Trump\textquotesingle s distinctive brand of ``angry
+populism.''\footnote{Karin Wahl-Jorgensen, ``Media Coverage of Shifting
+  Emotional Regimes: Donald Trump's Angry Populism,'' \emph{Media,
+  Culture \& Society} 40, no. 5 (2018); for neoliberal patterns in media
+  coverage, see Leon A. Salter, ``Editorial Representations of the
+  National Standards Education Policy: Populism, the Journalistic
+  Identity and the Citizen-Consumer,'' \emph{Journalism Studies} 20, no.
+  7 (2019).} Thus, in the aggregate, the heteronomous field is
+positioned further to the left than the field of power.
+
+\hypertarget{theorists}{%
+\section{Theorists}\label{theorists}}
+
+The essays in the sub-field of the theorists have one thing in common.
+Several possible factors are always raised when examining the cause of
+populism, ``as the transition is a complex and multi-faceted
+one.''\footnote{Andrea Roemmele and Rachel Gibson, ``Scientific and
+  Subversive: The Two Faces of the Fourth Era of Political
+  Campaigning,'' \emph{New Media \& Society} 22, no. 4 (2020): 599.} The
+following representation ranks the studies according to the factor that
+authors address most strongly in their reflection. Five studies come
+closest to the digitalization hypothesis. In this group the
+``affordances framework'' serves to highlight how social media provide
+opportunities for populists.\footnote{Bruce Bimber and Homero Gil de
+  Zúñiga, ``The Unedited Public Sphere,'' \emph{New Media \& Society}
+  22, no. 4 (2020); Jeroen Hopster\textbf{,} ``Mutual Affordances: The
+  Dynamics between Social Media and Populism,'' \emph{Media, Culture \&
+  Society} 43, no. 3 (2021).} Furthermore, digital media have played an
+important role for mediated populism,\textsuperscript{147} the spread of reactionary
+populism,\textsuperscript{148} and voting for
+Trump.\textsuperscript{149}
+One study by the theorists supports the commercialization hypothesis,
+emphasizing platform economy in the post-public sphere.\textsuperscript{150} Five theorists highlight changes in
+social structures as a key factor, explicitly criticizing the ``doxa''
+in populism research\textsuperscript{151}
+and the ``highly moralistic condemnation of right-wing populist
+movements'' in academic discourses.\textsuperscript{152} As there is a constant collective
+populist identity in societies,\textsuperscript{153} the field of populism
+studies needs a ``thicker'' concept to judge the impact of
+populism\textsuperscript{154} and critical social
+theory to explore the economic and political factors promoting
+mistrust.\textsuperscript{155} This call was
+preceded by a contribution by four theorists focusing on the impact of
+neoliberalism in a special issue of \emph{Media, Culture \& Society}. In
+a ``provocative essay,''\textsuperscript{156} Gerbaudo
+criticizes Mudde\textquotesingle s definition of populism: ``It does not
+address the root causes behind this surge and the failings of the
+neoliberal system that have engendered widespread discontent.'' Instead,
+``key for a perceptive understanding of populism is the work of Ernesto
+Laclau.''\textsuperscript{157} The critical perspective encompasses nuanced views:
+``The \textquotesingle It\textquotesingle s the neoliberal economy,
+stupid\textquotesingle{} refrain is common among contemporary analysts
+of the phenomenon . . . but we need to add the \textquotesingle cultural
+backlash thesis,'\,''\textsuperscript{158} and the political left has to ``come up with
+proper responses.''\textsuperscript{159} Yet,
+neoliberalism\marginnote{\textsuperscript{147} Roemmele and Gibson,
+  ``Scientific and Subversive.''} theorists\marginnote{\textsuperscript{148} Brian McNair, ``From Control to Chaos, and Back
+  Again: Journalism and the Politics of Populist Authoritarianism,''
+  \emph{Journalism Studies} 19, no. 4 (2018).} have\marginnote{\textsuperscript{149} Maria Rae, ``Hyperpartisan News: Rethinking the Media
+  for Populist Politics,'' \emph{New Media \& Society} 23, no. 5 (2021).} little\marginnote{\textsuperscript{150} Philip
+  Schlesinger, ``After the Post-public Sphere,'' \emph{Media, Culture \&
+  Society} 42, no. 7--8 (2020).} impact\marginnote{\textsuperscript{151} Benjamin Krämer, ``Populism, Media, and
+  the Form of Society,'' \emph{Communication Theory} 28, no. 4 (2018).} with\marginnote{\textsuperscript{152} Timo Korstenbroek,
+  ``Rethinking the Public Sphere in an Age of Radical-Right Populism: A
+  Case for Building an Empathetic Public Sphere,'' \emph{Communication
+  Theory} 32, no. 1 (2022), 68.} their\marginnote{\textsuperscript{153} Maud Reveilhac and Davide
+  Morselli, ``Populism in an Identity Framework: A Feedback Model,''
+  \emph{Communication Theory} 32, no. 1 (2022).} argumentation\marginnote{\textsuperscript{154} Hallvard Moe, ``Distributed Readiness Citizenship: A
+  Realistic, Normative Concept for Citizens' Public Connection,''
+  \emph{Communication Theory} 30, no. 2 (2020).} in\marginnote{\textsuperscript{155} Terry Flew, ``The Global Trust Deficit Disorder: A
+  Communications Perspective on Trust in the Time of Global Pandemics,''
+  \emph{Journal of Communication} 71, no. 2 (2021).}
+the\marginnote{\textsuperscript{156} Kavada, ``Editorial.''} field\marginnote{\textsuperscript{157} Paolo Gerbaudo, ``Social Media and Populism: An
+  Elective Affinity?'' \emph{Media, Culture \& Society} 40, no. 5
+  (2018): 747.} of\marginnote{\textsuperscript{158} John Postill, ``Populism and Social
+  Media: A Global Perspective,'' \emph{Media, Culture \& Society} 40,
+  no. 5 (2018): 756.} populism\marginnote{\textsuperscript{159}\setcounter{footnote}{159} Christian Fuchs, ``Authoritarian
+  Capitalism, Authoritarian Movements and Authoritarian Communication,''
+  \emph{Media, Culture \& Society} 40, no. 5 (2018): 788.} research, as will be shown by the habitus
+characteristics in the third step of our field analysis.
+
+\hypertarget{habitus-and-its-characteristics}{%
+\section{Habitus and its
+Characteristics}\label{habitus-and-its-characteristics}}
+
+In figure 6, we highlight the characteristics of the habitus of populism
+studies with respect to five focal points: style and digitalization,
+commercialization, style with structural data, social structures, and
+neoliberalism. We have reduced the complex tool of habitus to its
+characteristics: journal, nationality, theory, method, funding, year.
+The results of the studies reveal a gap between the evidence and the
+impact in the field. The twenty-six studies from all three actor groups
+that examine populism combined with digitalization and/or style have the
+highest impact volume by far: 169.4 out of the total 424.3. The thirteen
+studies from the field of power that examine the effects of populist
+communication in the citizen complex have an impact volume of 85.5. This
+is followed by the commercialization hypothesis, with a total impact
+volume of 69.4 in thirteen studies and across all three groups of
+actors. The twelve studies by the theorists and heterodox scholars who
+highlight socio-structural causes as the main drivers of populism have
+an impact volume of 66.8. The nine out of the seventy-three studies in
+the field of Western populism that propose neoliberalism as the cause of
+populism have by far the lowest impact volume in the field, 33.2. In
+addition, a comparison of the average impact of the individual studies
+reveals that the studies addressing neoliberalism clearly have the
+lowest impact: 3.7. Here, the effect studies from the field of power
+have the highest average impact of 6.6 (and are positioned at the top in
+the middle of the field, like in an ideal-typical conception of the
+field). This focus is followed by digitalization and style (average
+6.5), social structures (average 5.6), and commercialization (average
+5.3). This demonstrates that, strategically, it is least worthwhile for
+researchers to explore populism in the context of neoliberalism. The
+impact factor is, of course, inextricably linked to the journal. The
+greatest contrast in the field of populism studies is between
+\emph{Media, Culture \& Society} and \emph{New Media \& Society}. Of a
+total of twenty-six studies highlighting digitalization and/or style as
+drivers of populism, sixteen were published in \emph{New Media \&
+Society}. Seven of the nine studies conducted in the context of
+neoliberalism were published in \emph{Media, Culture \& Society}. Thus,
+the effect of the journal is most pronounced with regard to studies on
+the causes of populism here. In the \emph{International} \emph{Journal
+of Press/Politics}, the context of populism style with structural data
+(seven out of twenty-three studies) is slightly ahead of the
+commercialization hypothesis (six out of twenty-three studies). The
+\emph{Journal of Communication}, on the other hand, appears to focus on
+the effects of populist communication with structural data (three out of
+four studies). \emph{Communication Theory} consistently highlights
+social structures as the strongest driver of populism (four out of four
+studies). In the ten studies published in \emph{Journalism Studies}, the
+focus is equally distributed across all contexts of populism. The
+context of neoliberalism is not mentioned in any study published in the
+\emph{Journal of Communication}, \emph{Communication Theory}, and the
+\emph{International Journal of Press/Politics}. Hence, based on the
+impact-evidence gap, we observe a second key phenomenon in the field of
+populism research: a complete void of studies addressing neoliberalism
+and social structures as causes of populism in the field of power.
+
+\hypertarget{characteristics-theory-method-authors}{%
+\subsection{Characteristics: Theory, Method,
+Authors}
+}\label{characteristics-theory-method-authors}
+
+In the field of power, the application of Mudde\textquotesingle s
+theoretical framework yields the finding that almost none of the
+thirty-six empirical studies refer to social structures as a cause of
+populism.\footnote{An important exception is Hameleers et al., ``Start
+  Spreading the News.''} In addition to our close reading of the
+studies, Ernesto Laclau\textquotesingle s citation offers quantitative
+evidence for this major finding. In Bourdieu\textquotesingle s logic,
+Laclau is Mudde\textquotesingle s symbolic opponent in the field of
+social sciences. For Laclau, populist discourse is the
+\emph{consequence} of a discursive gap between political representation
+(the signifier) and reality (the signified). He comments on the causes
+of populism: ``If I had to subsume them under one label, it would be:
+\emph{globalised capitalism}.''\footnote{Ernesto Laclau, \emph{On
+  Populist Reason} (London: Verso, 2005), 230.} Mudde and Kaltwasser
+consider Laclau\textquotesingle s theory ``extremely
+abstract.''\footnote{Cas Mudde and Cristóbal Rovira Kaltwasser, eds.,
+  \emph{Populism in Europe and the Americas: Threat or Corrective for
+  Democracy?} (Cambridge: Cambridge University Press, 2012), 7.} Mudde
+succeeds in narrowing down the slippery concepts of populism by
+providing a minimal definition for empirical testing. His focus is on
+identifying the measurable \emph{effects} of populist communication as a
+threat or counterweight to liberal democracies.\footnote{Mudde, ``The
+  Populist Zeitgeist.''} Laclau\textquotesingle s research is situated
+on the left in Mazzoleni\textquotesingle s framework,
+Mudde\textquotesingle s research is on the right. Mudde is cited 176
+times in the field of power; Laclau is cited ten times. If we consider
+that Laclau is the best-known populism researcher in the field of social
+science,\footnote{Carlos de la Torre, \emph{Routledge Handbook of Global
+  Populism} (London: Routledge, 2019).} the field of power has become an
+autonomous area of research in the field of communications which
+provides a mirror-image inside the field of social science. This
+structuralist ordering principle of opposites can hardly be imagined in
+a more ideal-typical way in Bourdieu\textquotesingle s field theory. Of
+the twenty studies in the heterodox field, Mudde is cited fifteen times;
+Laclau is cited forty-seven times. Among the fifteen theorists, Mudde is
+cited twenty-four times; Laclau is cited sixteen. This leaves us with an
+overall Laclau-Mudde ratio of 215 to 73 in the field of populism
+studies. Focusing on the Mudde paradigm also leads
+
+\begin{figure}
+    \centering
+    \includegraphics{graphics/mirbach-six.jpg}
+    \caption{Habitus in the field of Western populism studies. CT =
+\emph{Communication Theory}; JOC = \emph{Journal of Communication}; JPP
+= \emph{International Journal of Press/Politics}; JS = \emph{Journalism
+Studies}; MCS = \emph{Media, Culture \& Society}; NMS = \emph{New Media
+\& Society}. AU = Australia; CA = Canada; NZ = New Zealand; UK = United
+Kingdom; US = United States; AT = Austria; CH = Switzerland; CZ = Czech
+Republic; FL = Finland; D = Germany; IT = Italy; NL = Netherlands; NO =
+Norway; PL = Poland; SP = Spain; asterisk (*) indicates \emph{funded
+study}; quotation mark (``) indicates \emph{qualitative study}.}
+    \label{fig:6}
+\end{figure}
+
+
+\noindent to a methodological
+homogenization. In the pre-field of populism, the ratio between
+quantitative and qualitative approaches is in favor of qualitative, with
+twenty out of twenty-nine studies. In the more recent field, thirty-two
+of the thirty-six empirical studies in the field of power employ a
+quantitative research design (89 percent). In the heterodox field, the ratio is
+slightly against quantitative designs, with nine out of twenty studies
+(45 percent). Theoretical and methodological homogenization has occurred
+in the field of power, although there is a greater diversity of authors.
+The thirty-eight studies in the field of power are co-authored by 137
+authors, averaging 3.6 authors per study. The twenty studies in the
+group of heterodox actors are written by thirty-six (co-)authors (an
+average of 1.8), and the fifteen theoretical essays are written by
+nineteen (co-)authors (an average of 1.3). These differences in the
+theories and methodologies employed between the actor groups are shaped
+by institutional, especially regional, characteristics.
+
+\hypertarget{regionality-anglophone-world-versus-eu}{%
+\subsection{Regionality: Anglophone World
+versus
+EU}\label{regionality-anglophone-world-versus-eu}}
+
+As we did when addressing the pre-field, we distinguish between the
+following regions: the Anglophone world (USA, UK, Canada, Australia, and
+New Zealand) and continental Europe, which we call the European Union
+(EU) area post Brexit for simplification purposes (Germany, Netherlands,
+Austria, Italy, Sweden, Finland, Norway, and the non-EU country
+Switzerland). Overall, there is a rather balanced split of the
+seventy-three studies between the regions, with thirty-eight studies
+from the EU region and thirty-five studies from the Anglophone world.
+However, of the thirty-eight studies from the field of power,
+twenty-nine studies are from universities in the EU region, and nine
+studies are from the Anglophone world. The imbalance is even greater in
+the heterodox actor group; eighteen of the twenty studies are from the
+Anglophone world, and two studies are from the EU. Among the theorists,
+there are nine articles from the Anglophone world and six from the EU.
+
+Hence, we observe a remarkable effect of the regions regarding the
+conceptualization of the causes of populism, which is amplified when we
+look more closely at the countries within the actor groups. The three
+studies from the field of power that propose a counter frame to the
+digitalization hypotheses are from North America.\footnote{Juarez Miro
+  and Toff, ``How Right-Wing Populists Engage with Cross-Cutting News on
+  Online Message Boards''; Wells et al., ``Trump, Twitter, and News
+  Media Responsiveness; Boulianne et al., ``Right-Wing Populism, Social
+  Media and Echo Chambers in Western Democracies.''} The two studies
+from the heterodox sub-field that argue most strongly in favor of
+digitalization and style are from the EU region.\footnote{Tuters and
+  Hagen, ``(((They))) Rule: Memetic Antagonism''; Rusche, ``Few Voices,
+  Strong Echo.''} Therefore, in contrast to in the Anglophone world, in
+Europe there is a danger of an \emph{officialization effect}.\footnote{Bourdieu,
+  \emph{Homo Academicus}.} The fact that the same research question is
+repeatedly addressed can create the impression that the online world is
+fueling right-wing populist attitudes. Through the focus on
+digitalization and communication style, the field of power has
+experienced a development that Mazzoleni warned against; while it might
+be convenient to ``blame the media'' or digitalization for the rise of
+populism, ``pursuing this interpretation equates to furnishing an alibi
+for phenomena that should really be looked for elsewhere.''\footnote{Mazzoleni,
+  ``Populism and the Media,'' 53.} Until now, neoliberalism has not been
+addressed as a cause of populism in the field of power. In the
+thirty-six empirical studies, the term is mentioned twice in
+passing.\footnote{Zulianello et al., ''A Populist \emph{Zeitgeist}?,''
+  448; Molek-Kozakowska and Wilk, ``Casual, Colloquial,
+  Commonsensical,'' 771.} In addition, criticism of neoliberalism is
+described as a characteristic of left-wing populism in the introduction
+for the special issue of \emph{New Media \& Society}: ``Radical left
+movements initially focused on pre-USSR collapse, criticizing capitalism
+and neoliberalism.''\footnote{Homero Gil de Zúñiga et al., ``Populism in
+  the Era of Twitter: How Social Media Contextualized New Insights into
+  an Old Phenomenon,'' \emph{New Media \& Society} 22, no. 4 (2020):
+  587.} Hence, in the field of power, the context of neoliberalism is
+not only excluded from empirical analyses, but theoretically placed in
+the sphere of deviance.\footnote{Daniel C.~Hallin, \emph{The Uncensored
+  War: The Media and Vietnam} (New York: Oxford University Press, 1986).}
+The power of the social sciences lies in their monopoly over legitimate
+public discourse and legitimate thinking about the social world (see
+above). If we neglect the neoliberalism factor, it has implications for
+politics, the media, and society.
+
+Assuming that neoliberalism discourse is non-existent in this field in
+the EU, it becomes apparent that countries in the Anglophone world
+attribute different causes of populism. Hence, we further divide these
+studies into two regions: the US and the Commonwealth (UK, Australia,
+New Zealand). In the group of heterodox actors, seven studies from the
+US focus on societal discontent as a cause of populism, but do not
+include criticism of the neoliberal era or globalized capitalism. Nine
+studies from the Commonwealth, on the other hand, link the rise of
+populism to the effects of neoliberalism or global capitalism. This
+means that, unlike in the US and the EU, criticism of neoliberalism is
+in the legitimate zone of discourse in the UK, Australia, and New
+Zealand. Seven out of a total of thirteen studies from the UK highlight
+neoliberalism as a major factor. Therefore, neoliberalism is a
+``mainstream'' cause of populism in the UK, and the discourse there
+presents a mirror image of the focus of other studies within the field
+of populism research.
+
+One interface for heteronomous influence on the field of science is the
+funding institutions. In terms of funding, the field of power has a
+slightly higher average (0.5), with nineteen out of thirty-eight
+studies, than the heterodox group of actors, with eight out of twenty
+studies (0.4). This almost equal distribution among the groups of actors
+suggests that the regional funding institutions support the regional
+understandings of populism in the field. Within the field of power,
+however, a difference can be observed regarding the combination of
+digitalization and style versus commercialization. Only one study out of
+the eight studies in the media complex investigating the
+commercialization hypothesis received funding (12.5 percent). Studies in
+the political actor complex (nine out of seventeen studies; 53 percent)
+and citizen complex (nine out of thirteen studies; 69 percent) with a
+focus on the digitalization and style hypothesis received a
+significantly higher share of funding. This funding practice may have an
+effect on the dynamics of research in the field of populism.
+
+\hypertarget{dynamics-of-the-field-publication-year}{%
+\section[\emph{Dynamics of the Field: Publication
+Year}]{\texorpdfstring{\emph{Dynamics of the Field: Publication
+Year}\footnote{Over time, the limitation that online-first studies are
+  also included must be emphasized.}\label{dynamics-of-the-field-publication-year}}
+
+When viewed in the aggregate, the heterodox field is currently in trend,
+with a mean publication year of 2000.5, compared to the field of power
+(2019.9)---as is ideal in field theory. Theoretical articles are
+decreasing at the aggregate level (2019.5). Although the evidence points
+increasingly against digitalization and style as drivers of populism, in
+the field of power, studies in the political actor complex investigating
+\emph{how} populists communicate via social media are in trend, with an
+average publication year of 2020.3. But the average publication year is
+declining (2019.5) for studies in the citizen complex that test
+\emph{whether} populist communication has an effect on attitudes or
+democracy---or not. Studies in the media complex focusing on the
+commercialization hypothesis occupy a middle position in the field of
+power (2019.7). In the heterodox field, the four studies addressing the
+digitalization hypothesis have the most recent average publication date
+(2021). However, the seven studies that look into social structures as
+drivers of populism follow in second place (2000.7). Given the higher
+amount of studies, the trend in the field of populism studies could lead
+to a battle between the stance of empirical EU researchers, who
+forefront digitalization and style, and empirical Anglophone researchers
+who focus on social structures. The theorists concentrate on social
+structures (2020.6) more than digitalization (2019.4) and
+commercialization (2020). The context of neoliberalism has the oldest
+average publication date among both theorists (2018) and heterodox
+researchers (2019.8) and is in danger of disappearing. However,
+Kissas\footnote{Kissas, ``Populist Everyday Politics.''} from the
+heterodox group of actors seems to occupy a key position. His study was
+published in \emph{New Media \& Society,} a high-impact journal, in
+2022. Either Kissas is an isolated case or he is pointing toward a
+reversal of the trend. An argument in favor of a trend reversal is that,
+in the field of cultural production, authors on the left with low
+economic capital yet high scientific capital can rise over time from
+being penniless ``bohemians'' to join the ``established avant-garde.''
+They can then exert pressure on the field of power through the higher
+symbolic capital they have acquired.\footnote{Bourdieu, \emph{Rules of
+  the Art.}} Yet we are still in the present.
+
+\hypertarget{conclusion}{%
+\section{Conclusion}\label{conclusion}}
+
+In our conclusion, we highlight three key findings of our study, discuss
+limitations, and finally point to a framework for future research based
+on Bourdieu\textquotesingle s interventions against neoliberalism and
+its updated evidence by Thomas Piketty. The main purpose of this study
+is to contribute to the question of the most likely causes of the rise
+of populism in the liberal democracies of the Western world:
+digitalization, the populist style, mediatization, the social structure,
+or neoliberalism. Since we analyzed 114 articles from six high-impact
+journals in different sub-disciplines of communication studies, we
+provide an extract of the best available knowledge on the relationship
+between media and populist movements of our time. Having made this
+argument from a positivist point of view, we must immediately limit
+ourselves; despite the theoretical sampling, we do not cover the entire
+pole of power, nor the entire field.
+
+Thus, our first key finding is that in our sample of the six journals
+there is little to no evidence that digitalization, populist
+communication, or the commercialization of media are the cause or a
+significant factor in the rise of populist movements. To sum the
+evidence up: the use of online media and social networks may even
+decrease support for right-wing populists;\footnote{Boulianne et al.,
+  ``Right-Wing Populism, Social Media and Echo Chambers.''} the populist
+digital media do not displace the legacy press;\footnote{Stier et al.,
+  ``Populist Attitudes and Selective Exposure to Online News''; Müller
+  and Bach, ``Populist Alternative News Use and Its Role for
+  Elections''; Juarez Miro and Toff, ``How Right-Wing Populists Engage
+  with Cross-Cutting News on Online Message Boards.''} and if there are
+echo chamber effects in society, they are all political directions and
+online not bigger than offline.\footnote{Boulianne et al., ``Right-Wing
+  Populism, Social Media and Echo Chambers.''} On digital platforms, the
+share of populist messages is lower than in traditional
+media,\footnote{Zulianello et al., ``A Populist \emph{Zeitgeist}?'';
+  Ernst et al., ``Favorable Opportunity Structures.''} where the overall
+share is also low.\textsuperscript{178}
+Populist actors gain media attention not through populist style, but
+through elements of traditional media logic such as provocations, which
+points to commercialization as a cause.\textsuperscript{179} But instead of falling into the trap of commercial
+production bias, journalists form a \emph{cordon sanitaire} against
+populist actors with their evaluation bias.\textsuperscript{180} The\marginnote{\textsuperscript{178} Müller et al., ``The Polarizing Impact of
+  News Coverage on Populist Attitudes''; Wettstein et al., ``News Media
+  as Gatekeepers''; Wirz et al., ``The Effects of Right-Wing Populist
+  Communication on Emotions and Cognitions toward Immigrants'';
+  Hameleers and Vliegenthart, ``The Rise of a Populist Zeitgeist?''} causality\marginnote{\textsuperscript{179} Bucy et al.,
+  ``Performing Populism''; Wells et al., ``Trump, Twitter, and News
+  Media Responsiveness''; Marcus Maurer et al., ``How Right-Wing
+  Populists Instrumentalize News Media: Deliberate Provocations,
+  Scandalizing Media Coverage, and Public Awareness for the Alternative
+  for Germany (AfD),'' \emph{The International Journal of
+  Press/Politics}, Online First (2022); Strikovic et al., ``On Behalf of
+  the People.''} test\marginnote{\textsuperscript{180}\setcounter{footnote}{180} Ayala Panievsky,
+  ``The Strategic Bias''; de Jonge, ``The Populist Radical Right and the
+  Media in the Benelux''; Boukes and Hameleers, ``Shattering Populists'
+  Rhetoric with Satire at Elections Times.''}  through
+the media life cycle model shows that the media are not the driver of a
+possible populist zeitgeist, but that they follow it.\footnote{Müller et
+  al., ``The Polarizing Impact of News Coverage on Populist Attitudes in
+  the Public''; Nygaard, ``Boundary Work''; Wirz et al., ``The Effects
+  of Right-Wing Populist Communication on Emotions and Cognitions toward
+  Immigrants.''} While the effects of populist messages are always small
+and require interpretation to weigh them,\footnote{Hameleers et al.,
+  ``Selective Exposure to Populist Communication''; Müller et al., ``The
+  Polarizing Impact of News Coverage on Populist Attitudes in the
+  Public; Egelhofer et al., ``Populist Attitudes and Politicians'
+  Disinformation Accusations.''} the results for the link between
+populist attitudes and social determinants such as income, education,
+age, and gender are clear.\footnote{Müller et al., ``The Polarizing
+  Impact of News Coverage on Populist Attitudes in the Public''; Fawzi,
+  ``Untrustworthy News and the Media as `Enemy of the People?'\,'';
+  Stier et al., ``Populist Attitudes and Selective Exposure to Online
+  News''; Müller and Bach, ``Populist Alternative News Use and Its Role
+  for Elections.''} Furthermore, the study that examines social
+structure in the most depth, the sixteen-country experiment by Hameleers
+with twenty-eight co-authors,\footnote{Hameleers et al., ``Start
+  Spreading the News.''} shows that the motivational potential of
+populist messages increases with the national unemployment rate and the
+overall political climate, but not with a country\textquotesingle s
+level of immigration. This result is consistent with the robust finding
+that it is not the right-wing anti-outgroup component that is crucial
+for the rise of populist movements but the anti-elite component, which
+includes left and right-wing populism.\footnote{Bobba et al., ``Populism
+  and the Gender Gap''; Blassnig et al., ``Populism in Online Election
+  Coverage''; Fawzi, ``Untrustworthy News and the Media as `Enemy of the
+  People?'\,''} Taken together, these findings point to economic changes
+in the social structure as the main driver of populism with a general
+distrust of ``elites'' and open up the possibility that neoliberalism is
+a significant cause.
+
+However, and this is our second key finding, this evidence is not
+reflected in the impact of articles that consecrate our investigated
+journals, where studies that mention social structure or neoliberalism
+as the root of populism receive lower impact than studies pursuing the
+power field's illusio. Thus, instead of supporting the belief that a
+higher impact reflects the best available knowledge, our study rather
+points to the relevance of Bourdieu\textquotesingle s social
+constructivist distinction between symbolic and scientific capital. The
+focus on digitalization and style to explain the emergence of populism
+is not based on the field autonomous scientific capital, but rather
+follows a heteronomous logic to increase symbolic capital. The tendency
+to over-interpret the role of the media in the power pole may lie in the
+habitual striving to gain social relevance through knowledge production
+for the outside world\footnote{Meyen, ``International Communication
+  Association Fellows.''} or in the historical closeness to the
+heteronomous-worldly pole,\footnote{Park, ``Pierre Bourdieu und die
+  Geschichte des Feldes der Kommunikationswissenschaft.''} and becomes
+visible in the funding practice, where the focus on the digitalization
+and style hypothesis receives the highest share.
+
+What might appear disrespectful in Bourdieu\textquotesingle s conception
+(what academic would want to position themself at a distance from the
+autonomous intellectual pole?) is at the same time a strength. In times
+of hate speech, conspiracy theories, online radicalization, and events
+such as the storming of the US Capitol, it would be fatal if
+communication studies did not investigate whether social media and
+populist styles are the cause of the rise of right-wing populist
+attitudes. In comparison to the heterodox actor\textquotesingle s group
+and theorists, the great advantage of the field of power is that it has
+narrowed down the various conceptions of populism to a minimal
+definition, which has yielded an impressive body of empirical evidence.
+Based on this evidence, right-wing populism can be explained in an
+exaggerated way: Media populism and digital style are dead. This insight
+from the empirical results should be communicated to the outside world
+and prevail in the impact consecrated through the journals. Instead, the
+dynamics in the field of populism studies indicate that digitalization
+and style hypotheses continue to be the trend and that even in the
+heterodox group the neoliberalism factor is disappearing from the
+analysis. Thus, in addition to providing theoretical and empirical
+insights, this study is also an appeal to the patrons of major journals
+to promote critical perspectives. Aware of such endeavors in journals
+like the \emph{Journal of Communication},\footnote{Christian Fuchs and
+  Jack L. Qiu, ``Ferments in the Field: Introductory Reflections on the
+  Past, Present and Future of Communication Studies,'' \emph{Journal of
+  Communication} 68 (2018).} our appeal is more specifically to European
+patrons of populism research, which leads to our third key finding.
+
+We observe a remarkable regional difference in the conceptualization of
+the causes of populism, with the distinction between Anglophone scholars
+and scholars from the EU region revealing even greater differences than
+the distinction between the field of power and the heteronomous group.
+In its socio-geographical genesis, the field of populism studies is a
+mirror image of the entire field of communication studies.\footnote{Löblich
+  and Scheu, ``Writing the History of Communication Studies.''} In the
+field of populism, it has mostly been European scholars who have
+displaced critical Anglophone scholarship, not vice versa.
+
+While Mazzoleni\textquotesingle s intention with his influential article
+on media populism was to use the concept of mediatization to bridge a
+systemic approach with actor-centered populist strategies, the later
+reduction of the term media populism to Mudde\textquotesingle s
+ideology-centered understanding of populism\footnote{de Vreese et al.,
+  ``Populism as an Expression of Political Communication Content and
+  Style.''} again excluded contextual factors. The result of this
+theoretical and methodological homogenization in the European shaped
+field of power is as follows: While studies from the Anglophone world
+still problematize social structure or neoliberalism as causes of
+populism and/or set up a counter frame to the digitalization or style
+hypotheses, there is a complete void in empirical studies in the EU
+region when it comes to addressing socio-structural factors as causes.
+Having shown that 89 percent of the studies on digitalization and style
+hypotheses have been funded makes the heteronomous influence on the
+field of populism studies in the EU region evident. Bearing in mind
+Bourdieu's critiques against the commodification of public goods such as
+education in the l990s and 2000s by the European Union and their
+``anti-democratic institutions'' which are ``increasingly subjected to
+the dictates of international bodies whose aim is to strip the entire
+world of all obstacles to the exercise of an increasingly concentrated
+economic power,''\footnote{Bourdieu, \emph{Firing Back}, 71.} we call
+for an investigation of funding practices in the EU region on a larger
+scale. Future research will be needed to test whether there is a
+systematic bias in neglecting the self-initiated changes in the social
+structure as causes for the ``crisis of democracy''\footnote{Wolfgang
+  Streeck, \emph{Critical Encounters: Capitalism, Democracy, Idea}
+  (London: Verso, 2020).} and over-promoting less relevant factors such
+as the onset of social media, disinformation, or hate speech. Our final
+task follows a recent call to bring Bourdieu and his critique of
+neoliberalism into the field of populism studies.\footnote{Krämer, ``How
+  German Communication Research Discovered Bourdieu.''}
+
+Bourdieu defined neoliberalism ``as a program for destroying collective
+structures in a planned manner with the objective of paving the way for
+the free market's neoliberal utopia.''\footnote{Bourdieu, \emph{Firing
+  Back}, 68.} The ``scientifically predictable consequences'' of
+neoliberal policies, he said, are a longing for the nation-state,
+xenophobia, chiliastic reveries, and ``hordes of people who follow the
+first demagogue they come across.''\footnote{Bourdieu, 71.} The latter
+are ``cynical kitsch characters'' who appear to have political power,
+but actually only serve media mechanisms and embody the depoliticization
+of disappointed people. Readers can, if they wish, derive a
+characterization of the personified research problem of populism studies
+from this prognosis. See above.
+
+In the late 1990s, Bourdieu explained why it is so difficult to gather
+evidence for a critique of neoliberalism: Its mechanisms are subtle, and
+its consequences will only become visible twenty years later.\footnote{Bourdieu,
+  88.} Today, we confirm the rise of populist movements in Western
+liberal democracies, and the economist Piketty provides an updated
+version of Bourdieu\textquotesingle s argument to explain populist
+movements. There are semantic differences between the two French
+scholars. Instead of referring to neoliberalism, Piketty speaks of
+hyper-capitalism or of what Bourdieu calls symbolic power, which is
+similar to Piketty\textquotesingle s conception of ideology. Piketty
+shows the consequences of the ``conservative revolution'' of the 1980s
+with the shift to the ``neo-proprietarian ideology'': inequality has
+increased in all regions of the world, especially in the US, where the
+top decile\textquotesingle s share of national income was higher in 2020
+than it was in 1900.\footnote{Thomas Piketty, \emph{Capital and
+  Ideology}, 37.} Since neoliberal measures were essentially driven by
+pro-worker parties, Piketty observes ``legitimate feelings of
+abandonment''\footnote{Piketty, 33.} in populist movements and sheds
+light on a disorder in the politic-ideological sphere in Western
+democracies. Due to the academization of the traditional left parties,
+political conflict no longer takes place between top and bottom, but
+between the intellectual and cultural elite versus the commercial and
+financial elite. Piketty defines the term populism as ``a catch-all term
+frequently used by elites to discredit political movements they deem to
+be insufficiently under their control,'' and states: ``If one wants to
+explain the rise of `populism,' it might not be a bad idea to begin by
+looking at the rise of `elitist' political parties.''\footnote{Piketty,
+  33.}
+
+Using Bourdieu\textquotesingle s notion of ``homology''---that is, the
+organization of parallel social spaces around the same basic divisions
+between economic and cultural capital\footnote{Bourdieu,
+  \emph{Distinction.}}---we can apply Piketty\textquotesingle s analysis
+to journalism. A first step would be a ``field mapping''\footnote{Rodney
+  Benson, ``News Media as a `Journalistic Field' What Bourdieu Adds to
+  New Institutionalism, and Vice Versa,'' \emph{Political Communication}
+  23, no. 2 (2006).} by examining the demographic characteristics of
+audiences of the journalistic products to see if the shifting cleavages
+in the party structure are reflected in the field of journalism. In
+Bourdieu\textquotesingle s conception, the power of the media is both
+great and small. It is small because of the heteronomy of the
+journalistic field, in which journalists follow the external constraints
+of the economic and political fields, becoming ``puppets of a coercive
+context.''\footnote{Bourdieu, \emph{Firing Back}, 67.} The power of the
+media is great because of its promise of symbolic power and, in the case
+of neoliberalism, the incessant hammering of ``economic vulgarities''
+until they become collective beliefs without alternatives. The second
+step would be to identify, in a more nuanced way than Bourdieu, which
+media propagate the myths of hyper-capitalism\footnote{Piketty,
+  \emph{Capital and Ideology}.} and whether they reflect the economic
+interests of their audiences. Following Piketty\textquotesingle s ideal
+of a bottom versus top cleavage in the polit-ideological sphere,
+low-symbolic media should oppose neoliberal policies such as tax and
+welfare cuts, and high-symbolic media will favor them. In addition,
+since position holders close to the cultural pole rely more on state
+support, we expect media with higher cultural capital to be more likely
+to oppose neoliberal reforms, and conversely, media with a higher ratio
+of economic to cultural capital to favor free market policies. If this
+state of the media structure is not given, the results could indicate a
+homologous explanation for distrust in media, just as Piketty argues for
+distrust in the political field, where the lack of representation leads
+to an anger against the elites, which is called populism. This is one
+direction to investigate the relationship between media, populism, and
+neoliberalism. One could provide many more---for example, through the
+studies on ``market populism'' from the pre-field of Western populism
+studies.\footnote{Greenfield and Williams, ``Financialization, Finance
+  Rationality and the Role of Media in Australia.''}
+
+We limited our field analysis to the context of the Western world due to
+the research problem of rising populism in liberal democracies. Of the
+thirteen studies in the field which examine populism in the non-Western
+world, four studies apply the field's dominant definition of populism
+based on Mudde,\footnote{Ricardo F. Mendonça and Renato Duarte Caetano,
+  ``Populism as Parody: The Visual Self-Presentation of Jair Bolsonaro
+  on Instagram,'' \emph{The International Journal of Press/Politics} 26,
+  no. 1 (2021); Ignacio Siles et al., ``Populism, Religion, and Social
+  Media in Central America,'' \emph{The International Journal of
+  Press/Politics}, Online First (2021); Jefferson Lyndon D. Ragragio,
+  ``Mediatized Voices of Science: News Media Narratives} while nine studies
+use the term populism in manifold forms.\textsuperscript{206} Thus, the Central European concepts of
+populism have traveled around the world, albeit on a small scale, but
+the non-Western concepts of populism have not yet penetrated the
+research context of the Western democracies. A systematic global
+comparison of the meanings and equivalents of populism around the world
+is pending. In the debate about the ``De-Westernization'' of
+communication studies\textsuperscript{207} and the criticism of an
+``internationalization\marginnote{of Science and
+  Populism in the Philippines,'' \emph{Journalism Studies} 22, no. 7
+  (2022); Ayee Macaraig and Michael Hameleers, ``\#DefendPressFreedom:
+  Paradigm Repair, Role Perceptions and Filipino Journalists'
+  Counterstrategies to Anti-Media Populism and Delegitimizing Threats,''
+  \emph{Journalism Studies,} Online First (2022).} through\marginnote{\textsuperscript{206} Sallie Hughes and
+  Mireya Márquez-Ramírez, ``Local-Level Authoritarianism, Democratic
+  Normative Aspirations, and Antipress Harassment: Predictors of Threats
+  to Journalists in Mexico,'' \emph{The International Journal of
+  Press/Politics} 23, no. 4 (2018); Chin-Chuan Lee and Hongtao Li,
+  ``\,`Media Events': First Quarter of a Century and the Next,''
+  \emph{Media, Culture \& Society} 40, no. 1 (2018); Maria Luengo,
+  ``Gender Violence: The Media, Civil Society, and the Struggle for
+  Human Rights in Argentina,'' \emph{Media, Culture \& Society} 40, no.
+  3 (2018); Philipp Baugut and Katharina Neumann, ``Online News Media
+  and Propaganda Influence on Radicalized Individuals: Findings from
+  Interviews with Islamist Prisoners and Former Islamists,'' \emph{New
+  Media \& Society} 22, no. 8 (2020); Stephen Monteiro, ``\,`Welcome to
+  Selfiestan': Identity and the Networked Gaze in Indian Mobile Media,''
+  \emph{Media, Culture \& Society} 42, no. 1 (2022); Matthew Ming-Tak
+  Chew and Yi Wang, ``How Propagames Work as a Part of Digital
+  Authoritarianism: An Analysis of a Popular Chinese Propagame,''
+  \emph{Media, Culture \& Society} 43, no. 8 (2021); Tom Boellstorff,
+  ``On Tolerance: Four Indonesian Reflections on Digital Heterosexism,''
+  \emph{Media, Culture \& Society} 42, no. 1 (2020); Özlem Erkmen et
+  al., ``Worsening Safety Conditions for Women Journalists in Turkey's
+  Alternative News Media,'' \emph{Journalism Studies,} Online First
+  (2022); Tawseef Majeed, ``Embedded Authoritarianism: The Politics of
+  Poor Press Freedom in Indian Kashmir,'' \emph{Media, Culture \&
+  Society} 44, no. 3 (2022).}\marginnote{\textsuperscript{207}\setcounter{footnote}{207} Silvio Waisbord and Claudia Mellado,
+  ``De-Westernizing Communication Studies: A Reassessment,''
+  \emph{Communication Theory} 24, no. 4 (2014).} Americanization,''\footnote{Thomas
+  Wiedemann and Michael Meyen, ``Internationalization through
+  Americanization: The Expansion of the International Communication
+  Association's Leadership to the World,'' \emph{International Journal
+  of Communication} 10 (2016).} this study has shown that research of
+the Anglophone world should not be equated with the quantitative
+socio-scientific paradigm of small media effects. Moreover, the internal
+differences in the Western fields also need to be highlighted in the
+history of media studies---for example, through field reflections that
+go beyond the power pole rather than, as in our limited study, focusing
+only on the elite journals.
+
+The sharp conceptual differences between Anglophone and EU research on
+populism reflect a fragmented internationalization in communication
+studies; even though researchers from the Western world publish in the
+same journals and meet physically at conferences like the ICA,
+intellectual exchange between the two sides of the Atlantic remains low.
+It is also noteworthy that, with Bourdieu and Piketty, we are pioneers
+in introducing a French perspective on the emergence of populism into
+international communication scholarship, since there is no study from a
+French university in the field of populism studies. Thus, this field
+analysis is an empirical confirmation that the communities of two
+fundamental countries of the European Union, France and Germany, are
+largely unfamiliar with the writings on the other side of the
+Rhine.\footnote{Stefanie Averbeck-Lietz et al., ``Understanding and
+  Stimulating the (Still) Neglected German-French Milieu in
+  Communication and Media Studies,'' \emph{History of Media Studies} 3
+  (2023).}
+
+
+
+\hypertarget{acknowledgments}{%
+\subsection{Acknowledgments}\label{acknowledgments}}
+
+The author would like to thank the two anonymous reviewers. Their
+comments have significantly improved the quality of this text. I would
+also like to thank my colleagues Daria Gordeeva and Benjamin Krämer at
+the LMU Munich for their comments on an earlier draft.
+
+\hypertarget{data-availability-statement}{%
+\subsection{Data Availability
+Statement}\label{data-availability-statement}}
+
+The number of citations for authors and the calculations for the field
+graphs are disclosed in the
+\href{https://hms.mediastudies.press/pub/mirbach-supplementary/release/1}{Supplemental
+Materials Document}.
+
+\vspace{.5em}
+
+\section{Bibliography}\label{bibliography}
+
+\emph{References to the 114 articles in our field analysis are provided in the
+  \href{https://hms.mediastudies.press/pub/mirbach-supplementary/release/1}{Supplementary Materials Document}.}
+
+  \vspace{.6em}
+
+
+\begin{hangparas}{.25in}{1} 
+
+
+  
+
+Averbeck-Lietz, Stefanie, Fabien Bonnet, Sarah Cordonnier, and Carsten
+Wilhelm. ``Understanding and Stimulating the (Still) Neglected
+German-French Milieu in Communication and Media Studies.'' \emph{History
+of Media Studies} 3 (2023).
+\url{https://doi.org/10.32376/d895a0ea.9aea0574}.
+
+Benson, Rodney. ``News Media as a `Journalistic Field': What Bourdieu
+Adds to New Institutionalism, and Vice Versa.'' \emph{Political
+Communication} 23, no. 2 (2006): 187--202.
+\url{https://doi.org/10.1080/10584600600629802}.
+
+Bourdieu, Pierre. \emph{Distinction.} Cambridge, MA: Harvard University
+Press, 1984.
+
+Bourdieu, Pierre. \emph{Firing Back: Against the Tyranny of the Market
+II.} New York: The New Press, 2003.
+
+Bourdieu, Pierre. \emph{Homo Academicus}. Stanford: Stanford University
+Press, 1988.
+
+Bourdieu, Pierre. \emph{The Rules of the Art: Genesis and Structure of
+the Literary Field}. Stanford: Stanford University Press, 1996.
+
+Bourdieu, Pierre, Alain Accardo, Gabrielle Balazs, Stéphane Beaud,
+François Bonvin, Emmanuel Bourdieu, Philippe Bourgois, et al. \emph{The
+Weight of the World: Social Suffering in Contemporary Society.}
+Translated by Priscila P. Ferguson, Susan Emanuel, Joe Johnson, and
+Shoggy T. Waryn. Cambridge, UK: Polity Press, 1999.
+
+Bourdieu, Pierre, and Loïc J. D. Wacquant. \emph{An Invitation to
+Reflexive Sociology}. Chicago: University of Chicago Press, 1992.
+
+Chadwick, Andrew: \emph{The Hybrid Media System: Politics and Power.}
+Oxford: Oxford University Press, 2013.
+
+Comel, Naiza, Francisco P. J. Marques, Luiz O. P. Costa, Chirlei Kohls,
+and Maíra Orso. ``Who Navigates the ``Elite'' of Communication Journals?
+The Participation of BRICS Universities in Top-Ranked Publications.''
+\emph{Online Media and Global Communication} 2, no. 4 (2023): 497--543.
+\url{https://doi.org/10.1515/omgc-2023-0052}.
+
+de la Torre, Carlos. \emph{Routledge Handbook of Global Populism}.
+London: Routledge, 2019. \url{https://doi.org/10.4324/9781315226446}.
+
+Engesser, Sven, Nicole Ernst, Frank Esser, and Florin Büchl. ``Populism
+and Social Media: How Politicians Spread a Fragmented Ideology.''
+\emph{Information, Communication \& Society} 20, no. 8 (2017): 1109--26.
+\url{https://doi.org/10.1080/1369118X.2016.1207697}.
+
+Fuchs, Christian, and Jack L. Qiu. ``Ferments in the Field: Introductory
+Reflections on the Past, Present and Future of Communication Studies.''
+\emph{Journal of Communication} 68 (2018): 219--32.
+\href{https://doi.org\%2010.1093/joc/jqy008}{https://doi.org
+10.1093/joc/jqy008}.
+
+Gwartney, James, Robert Lawson, and Joshua Hall. ``Economic Freedom of
+the World 2017 Annual Report.'' Fraser Institute, 2017.
+\url{https://www.fraserinstitute.org/studies/2017-annual-report}.
+
+Hallin, Daniel C.~\emph{The Uncensored War: The Media and Vietnam}. New
+York: Oxford University Press, 1986.
+
+Hallin, Daniel C., and Paolo Mancini, eds. \emph{Comparing Media Systems
+Beyond the Western World}. Cambridge: Cambridge University Press, 2011.
+
+Hawkins, Kirk A. \emph{Venezuela\textquotesingle s Chavismo and Populism
+in Comparative Perspective}. Cambridge: Cambridge University Press,
+2010.
+
+Inglehart, Ronald, and Pippa Norris. ``Trump, Brexit, and the Rise of
+Populism: Economic Have-Nots and Cultural Backlash.'' Paper presented at
+the annual meeting of the American Political Science Association,
+Philadelphia, PA, September 2017.
+
+Krämer, Benjamin. ``How German Communication Research Discovered
+Bourdieu but Missed His Potential for the Study of (Populist) Political
+Communication.'' \emph{History of Media Studies} 3 (2023).
+\url{https://doi.org/10.32376/d895a0ea.7ec13efb}.
+
+Laclau, Ernesto. \emph{On Populist Reason}. London: Verso, 2005.
+
+Latour, Bruno, and Steven Woolgar. \emph{Laboratory Life}: \emph{The
+Social Construction of Scientific Facts}. Beverly Hills, CA: Sage, 1979.
+
+Löblich, Maria, and Andreas M. Scheu. ``Writing the History of
+Communication Studies.'' \emph{Communication Theory} 21, no. 1 (2011):
+1--22. \url{https://doi.org/10.1111/j.1468-2885.2010.01373.x}.
+
+Maares, Phoebe, and Folker Hanusch. ``Interpretations of the
+Journalistic Field: A Systematic Analysis of How Journalism Scholarship
+Appropriates Bourdieusian Thought.''~\emph{Journalism}~23, no. 4 (2022):
+736--54. \url{https://doi.org/10.1177/1464884920959552}.
+
+Martín-Barbero, Jesús. ``A Latin American Perspective on
+Communication/Cultural Mediation.'' \emph{Global Media and
+Communication} 2, no. 3 (2006): 279--97.
+
+Mazzoleni, Gianpetro. ``Populism and the Media.'' In \emph{Twenty-First
+Century Populism}: \emph{The Spectre of Western European Democracy},''
+edited by Daniele Albertazzi and Duncan McDonnell. London: Palgrave
+Macmillan, 2008.
+
+Meyen, Michael. ``International Communication Association Fellows.''
+\emph{International Journal of Communication} 6 (2012): 2378--96.
+\url{https://doi.org/10.1017/CBO9781139005098}.
+
+Mirbach, Alexis von. \emph{Digitale Illusio: Online-Journalisten in
+Argentinien, China, Deutschland und den USA}. Berlin: LitVerlag, 2014.
+
+Mudde, Cas. ``The Populist Zeitgeist.'' \emph{Government \& Opposition}
+39, no. 4 (2004): 541--63.
+\url{https://doi.org/:10.1111/j.1477-7053.2004.00135.x}.
+
+Mudde, Cas, and Cristóbal Rovira Kaltwasser, eds. \emph{Populism in
+Europe and the Americas: Threat or Corrective for Democracy?} Cambridge:
+Cambridge University Press, 2012.
+
+Park, David W. ``Pierre Bourdieu und die Geschichte des Feldes der
+Kommunikationswissenschaft: Auf dem Weg zu einem reflexiven und
+konfliktorientierten Verständnis der Fachentwicklung.'' In~\emph{Pierre
+Bourdieu und die Kommunikationswissenschaft: Internationale
+Perspektiven,} edited by Thomas Wiedemann and Michael Meyen. Cologne:
+Halem, 2013.
+
+Piketty, Thomas. \emph{Capital and Ideology.} Cambridge, MA: Harvard
+University Press, 2020. \url{https://doi.org/10.4159/9780674245075}.
+
+Sapiro, Gisèle. \emph{Dictionnaire International Bourdieu.} Paris: CNRS
+Éditions, 2020. \url{https://doi.org/10.7202/1096364ar}.
+
+Song, Hyunjin, Jakob-Moritz Eberl, and Olga Eisele.~``Less Fragmented
+Than We Thought? Toward Clarification of a Subdisciplinary Linkage in
+Communication Science, 2010--2019.'' \emph{Journal of Communication} 70,
+no. 3 (2020): 310--34. \url{https://doi.org/10.1093/joc/jqaa009}.
+
+Streeck, Wolfgang. \emph{Critical Encounters: Capitalism, Democracy,
+Idea}. London: Verso, 2020.
+
+Waisbord, Silvio. \emph{Communication: A Post-discipline}. Cambridge,
+UK: Polity Press, 2019.
+
+Waisbord, Silvio, and Claudia Mellado. ``De-Westernizing Communication
+Studies: A Reassessment.'' \emph{Communication Theory} 24, no. 4 (2014):
+361­­­--72.
+\href{http://dx.doi.org\%20/10\%20.1111/comt.12044}{http://dx.doi.org
+/10 .1111/comt.12044}.
+
+Wiedemann, Thomas, and Michael Meyen. ``Internationalization through
+Americanization: The Expansion of the International Communication
+Association's Leadership to the World.'' \emph{International Journal of
+Communication} 10 (2016): 1489--509.
+\url{https://ijoc.org/index.php/ijoc/article/view/4504}.
+
+
+
+
+\end{hangparas}
+
+
+\end{document}
