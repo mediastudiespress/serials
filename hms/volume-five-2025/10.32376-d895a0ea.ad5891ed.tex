@@ -1,0 +1,513 @@
+% see the original template for more detail about bibliography, tables, etc: https://www.overleaf.com/latex/templates/handout-design-inspired-by-edward-tufte/dtsbhhkvghzz
+
+\documentclass{tufte-handout}
+
+%\geometry{showframe}% for debugging purposes -- displays the margins
+
+\usepackage{amsmath}
+
+\usepackage{hyperref}
+
+\usepackage{fancyhdr}
+
+\usepackage{hanging}
+
+\hypersetup{colorlinks=true,allcolors=[RGB]{97,15,11}}
+
+\fancyfoot[L]{\emph{History of Media Studies}, vol. 5, 2025}
+
+
+% Set up the images/graphics package
+\usepackage{graphicx}
+\setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
+\graphicspath{{graphics/}}
+
+\title[The Nowness of Chairing an English Department]{The Nowness of Chairing an English Department: A Review Essay of John Guillory's \emph{Professing Criticism} and Michael J. Sproule's \emph{Democratic Vernaculars}} % longtitle shouldn't be necessary
+
+% The following package makes prettier tables.  We're all about the bling!
+\usepackage{booktabs}
+
+% The units package provides nice, non-stacked fractions and better spacing
+% for units.
+\usepackage{units}
+
+% The fancyvrb package lets us customize the formatting of verbatim
+% environments.  We use a slightly smaller font.
+\usepackage{fancyvrb}
+\fvset{fontsize=\normalsize}
+
+% Small sections of multiple columns
+\usepackage{multicol}
+
+% Provides paragraphs of dummy text
+\usepackage{lipsum}
+
+% These commands are used to pretty-print LaTeX commands
+\newcommand{\doccmd}[1]{\texttt{\textbackslash#1}}% command name -- adds backslash automatically
+\newcommand{\docopt}[1]{\ensuremath{\langle}\textrm{\textit{#1}}\ensuremath{\rangle}}% optional command argument
+\newcommand{\docarg}[1]{\textrm{\textit{#1}}}% (required) command argument
+\newenvironment{docspec}{\begin{quote}\noindent}{\end{quote}}% command specification environment
+\newcommand{\docenv}[1]{\textsf{#1}}% environment name
+\newcommand{\docpkg}[1]{\texttt{#1}}% package name
+\newcommand{\doccls}[1]{\texttt{#1}}% document class name
+\newcommand{\docclsopt}[1]{\texttt{#1}}% document class option name
+
+
+\begin{document}
+
+\begin{titlepage}
+
+\begin{fullwidth}
+\noindent\LARGE\emph{Review essay
+} \hspace{86mm}\includegraphics[height=1cm]{logo3.png}\\
+\noindent\hrulefill\\
+\vspace*{1em}
+\noindent{\Huge{The Nowness of Chairing an English \\\noindent Department: A Review Essay of John \\\noindent Guillory's \emph{Professing Criticism} and Michael J. Sproule's \emph{Democratic Vernaculars}\par}}
+
+\vspace*{1.5em}
+
+\noindent\LARGE{Kate J. Ryan}\par\marginnote{\emph{Kate J. Ryan, ``The Nowness of Chairing an English Department: A Review Essay of John Guillory's \emph{Professing Criticism} and Michael J. Sproule's \emph{Democratic Vernaculars},'' \emph{History of Media Studies} 5 (2025), \href{https://doi.org/10.32376/d895a0ea.ad5891ed}{https://doi.org/ 10.32376/d895a0ea.ad5891ed}.} \vspace*{0.75em}}
+\vspace*{0.5em}
+\noindent{{\large\emph{Montana State University}, \href{mailto:kathleen.ryan3@montana.edu}{kathleen.ryan3@montana.edu}\par}} \marginnote{\href{https://creativecommons.org/licenses/by-nc/4.0/}{\includegraphics[height=0.5cm]{by-nc.png}}}
+
+% \vspace*{0.75em} % second author
+
+% \noindent{\LARGE{<<author 2 name>>}\par}
+% \vspace*{0.5em}
+% \noindent{{\large\emph{<<author 2 affiliation>>}, \href{mailto:<<author 2 email>>}{<<author 2 email>>}\par}}
+
+% \vspace*{0.75em} % third author
+
+% \noindent{\LARGE{<<author 3 name>>}\par}
+% \vspace*{0.5em}
+% \noindent{{\large\emph{<<author 3 affiliation>>}, \href{mailto:<<author 3 email>>}{<<author 3 email>>}\par}}
+
+\end{fullwidth}
+
+\vspace*{1.3em}
+
+
+\noindent John Guillory. \emph{Professing
+Criticism: Essays on the Organization of Literary
+Study}. 456 pp. University of Chicago Press, 2022.
+\$29 (paper).
+
+\vspace*{0.15 in}
+
+\noindent J. Michael Sproule.\emph{Democratic
+Vernaculars: Rhetorics of Reading, Writing, Speaking, and Criticism
+since the Enlightenment}. 382 pp. Routledge Press,
+2020. \$42.49 (paper).
+
+\vspace*{0.2 in}
+
+\newthought{In Kathleen Blake Yancey's} ``Made Not Only in Words: Composition in a
+New Key,'' delivered March 22, 2004, as the ``Chair's Address'' to the
+Conference on College Composition and Communication and later published
+in \emph{College Composition and Communication}, Yancey draws attention
+to the ways historical practices of reading and contemporary public
+writing outside of school can inform what we do now as English
+departments. She recommends faculty in rhetoric and composition take
+advantage of the ``nowness,'' or deicity, of increased public screen
+writing to design new curricula, update writing-across-the-curriculum
+efforts, and develop majors in composition and rhetoric. Yancey's
+address kairotically invokes the deictic quality of a moment in time to
+envision a new future for writing instruction.
+
+
+
+\enlargethispage{2\baselineskip}
+
+\vspace*{5em}
+
+\noindent{\emph{History of Media Studies}, vol. 5, 2025}
+
+
+ \end{titlepage}
+
+% \vspace*{2em} | to use if abstract spills over
+
+
+I put my own nowness into play to frame this review of John Guillory's
+\emph{Professing Criticism: Essays on the Organization of Literary
+Study} and J. Michael Sproule's \emph{Democratic Vernaculars: Rhetorics
+of Reading, Writing, Speaking, and Criticism since the Enlightenment}.
+As Collin Brooke writes in ``Weblogs as Deictic Systems: Centripetal,
+Centrifugal, and Small-World Blogging,'' ``there is an immediacy to
+deixis that functions rhetorically as an invitation to shared
+experience: we are here, in this place, and now, at this time, and we
+are connected, however briefly, through the shorthand of
+deixis.''\footnote{Collin Brooke, ``Weblogs as Deictic Systems:
+  Centripetal, Centrifugal, and Small-World Blogging,'' \emph{Computers
+  and Composition Online} (Fall 2025).} And so, I invite readers to
+share this moment of time with me, when I am a rhetoric and writing
+professor reading these texts in the immediacy of my role chairing an
+English department at a rural research university in the American West.
+My tenure as a department chair has often been marked by the immediacy
+of the crisis rhetoric that haunts the humanities; I'm regularly pulled
+into concrete manifestations of this discourse because of decreased
+enrollment in our three majors (Literature, Writing, and English
+Education), concerns about student retention, and disciplinary frictions
+that arise among faculty when the stakes seem high and the rewards
+minimal. These themes are surely familiar for readers across the United
+States and abroad.
+
+Yancey's address also helps me put these seemingly disparate books---one
+an essay collection on the profession of literary studies by a
+well-regarded professor of literature and the other a monograph about
+the rhetorical history and pedagogy of the English vernacular since the
+Enlightenment by an esteemed professor emeritus in communication
+studies---into conversation with each other and my current moment. They
+invite me to think about the fields of literary studies and writing and
+rhetoric studies to consider how these histories reflect current faculty
+values and conversations and how they can inform future possibilities.
+Guillory and Yancey offer divergent takes on this moment from their
+different disciplinary commitments. Sproule's study of the rhetorics and
+pedagogies of reading, writing, and speaking in school, home, and
+business contexts is a helpful precursor to Yancey's interest in
+teaching public screen literacies, following Elizabeth Daley's argument
+that ``the screen is the language of the vernacular, that if we do not
+include it in the school curriculum, we will become as irrelevant as
+faculty professing in Latin.''\footnote{Kathleen Blake Yancey, ``Made
+  Not Only in Words: Composition in a New Key,'' \emph{College
+  Composition and Communication} 56, no. 2 (2004): 305.} According to
+Yancey, Daley thinks screen literacies should be taught in media studies
+programs to ``get in step with life practices,''\footnote{Yancey, 305.}
+and Yancey, of course, wants to see writing studies take on this role,
+too. In doing so, she updates Sproule's historicized observation that
+rhetoric is central to the modern vernacular revolution for the
+twenty-first century (2). And both Sproule and Yancey provide counter
+histories and narratives to Guillory's belief that rhetoric died with
+the rise of the vernacular and his equation of writing faculty with only
+first-year writing, whom, he opines, lack a ``fully disciplinary
+status'' (313). He envisions, in fact, doing away with first year
+composition courses altogether in favor of a suite of extracurricular
+means to elevate writing instruction out of writing studies altogether.
+
+John Guillory's dense and ambitious four-hundred-page essay collection
+offers a historical and sociological analysis and commentary on literary
+studies as a profession. The collection, whose title is a twist on
+Gerald Graff's \emph{Professing Literature}, takes as its primary
+question ``What does it mean to `profess criticism?'\,'' (ix). By way of
+answer, Guillory offers his sociological history of the rise of academia
+as a profession, and he explores the historical arc of ``professing
+criticism'' as the guiding force of literary studies. He maps the
+emergence of the concept of professions and the rise of academic
+specializations, and considers the history of criticism as the
+formalization of the discipline from the nineteenth century public,
+journalistic critic in conflict with the academic critic who emerged in
+the 1920s to the rise of the scholar critic's primacy centered largely
+on period specialization and close reading (56) and later followed by
+the emergence of political topicality in the 1960s (74). He follows this
+with a critique of how social criticism has served as a justification
+and inspiration for the literature professoriate. He argues that
+``literature needs to be \emph{recentered} by the literary professoriate
+in order to reestablish its public claim to expertise'' (80), and he
+wants this recentering to focus on the human record as the object of
+study.
+
+Guillory also establishes his overarching claim that the literary
+professoriate is marked by its historical and ongoing formation and
+deformation. In other words, Guillory understands the shaping of a
+profession as a way of seeing the world that always also entails the
+limits or biases on this specialized way of seeing. A key argument that
+he revisits over the course of the book is that elevating literary
+critique to social critique is an ``overestimation of aim,'' one that
+``deforms the discipline'' (81). Guillory wants literary studies to
+focus on records or documents as objects of study rather than using
+texts for social critique. This is a provocative claim, particularly for
+literature colleagues like mine who see social critique as a
+foundational justification and method of doing literary criticism---of
+moving discussions students encounter in novels, short stories, drama,
+and poetry into broader social interpretation and critique. His critique
+is also interesting considering the recommendation that our department's
+program reviewers made last year that we are ``behind'' in having
+sufficient DEI-inflected curricula to address low enrollment by
+capturing more students' interest. This recommendation reflects a common
+understanding within the discipline and the university that broader
+social concerns are a legitimate part of literary criticism, and yet
+outside of the university DEI commitments are currently under
+significant attack by US Republicans at the state and federal levels.
+
+Guillory's focus leads him to take up different facets and histories of
+this dynamic relationship between disciplinary formation and
+deformation, which allows him to concretize his own understanding of
+literary studies. Guillory identifies and expands on Erwin Panofsky's
+terms ``monument'' and ``document'' to argue that the humanities should
+study ``records left by man,'' located in the dialectics of
+documents/documentality and monuments/monumentality (118). He claims for
+the humanities, including literary studies and presumably writing
+studies and communications, what he sees as a more ``coherent''
+description of what the humanities study rather than arguing about why
+we should study them, which is how he frames social critique (110). He
+directs readers towards the idea that the humanities center on ``the
+study of a particular kind of object'' that ``calls to us across the
+long time of human existence, exceeding by far the duration of any one
+human life'' (123). In other words, Guillory is particularly oriented
+towards archival and historical research methods. I'm not persuaded that
+the ``what'' and ``why'' are so easily separated, and I'm also aware of
+the limits of this claim for humanities scholarship that isn't centered
+on written, historical texts, like communication scholar Natasha
+Seegert's work at the intersections between humans and more-than-humans,
+where the object of study might be coyote tracks located in human
+habitats. Or the ways scholars in the humanities conduct quantitative
+and qualitative research. The remaining chapters in this section take up
+``dead'' or failed predecessors to literary studies, including rhetoric,
+\emph{belles lettres}, and philology; historical locations of literature
+relative to the sciences and the rise of the vernacular curriculum as
+formative to the discipline; and a reflection on the decolonization of
+global literature.
+
+Guillory also focuses on four disciplinary problems that he sees
+weighing down literary studies: graduate education, evaluation of
+scholarship, first-year composition, and reading practices. Guillory is
+less interested in solving problems than he is in raising questions and
+observations that might inform future planning in English departments.
+Guillory returns to the argument that the literature profession ought to
+focus on human records---novels, drama, and poetry---as the objects of
+study with their attendant reading practices, which for him entails
+looking at the relationship between lay reading and professional reading
+practices. He raises interesting questions about the reading practices
+taught in literature classrooms, including whether the literature
+classroom is a place for reading for pleasure or if professional reading
+is meant to be work.
+
+With its five rationales for literary study, the conclusion of
+\emph{Professing Criticism} is meant to inspire hope for readers. What I
+find most interesting is how Guillory's discussion affirms his belief
+that literary study is ``a combination of positive knowledge and
+cognitive training'' (348). That is, literary studies is ``at once a
+kind of learning and the cultivation of an \emph{art},'' specifically
+the arts of reading and writing. He argues that these arts were
+``arguably the first versions of media studies in Western education''
+and ``the deepest foundation for the future development of literary
+study'' (355). This closing essay loops back effectively to the opening
+discussion of the rise of professions, kinds of knowledge valued in this
+shift, and their relationship to craft knowledge, or techne. I find this
+discussion particularly interesting given Guillory's argument that the
+``death'' of rhetoric as techne occurs in favor of the rise of
+scientific disciplinary information as evidence. As a scholar of
+feminist rhetorics, I find his claim of the death of rhetoric premature,
+and narrowly conceived, even as I'm fascinated by his discussion of the
+opposition between techne and information, since I understand rhetorical
+studies as centering on knowledge acquisition and production. I can't
+help but get the feeling he wants only the literature professoriate to
+take on teaching the arts of writing and reading.
+
+Ultimately, Guillory expresses his ``hope that this framework of
+analysis will help to explain the perennial churn in literary study''
+(ix), and the collection does this well, including underscoring how
+disciplinary perspective and preferences play out in this ``churn.'' As
+I read, I was regularly aware that Guillory is a privileged white male
+and successful scholar of literary history; it's much easier to dismiss
+rhetoric as dead, composition studies as a misguided literacy project,
+and social literary critique as overreach from his position of relative
+institutional power. I grant that the social aims of my literature
+faculty have not elevated our department's cultural capital in or beyond
+the university, but our department is an important place on campus where
+students can engage different beliefs, experiences, and perspectives
+from across the Anglophone world. Nonetheless, I encourage faculty,
+graduate students, and professionals to read Guillory's collection
+alongside academic books like \emph{Permanent Crisis: The Humanities in
+a Disenchanted Age}\footnote{Paul Reitter and Chad Wellmon,
+  \emph{Permanent Crisis: The Humanities in a Disenchanted Age}
+  (University of Chicago Press, 2021).}, the numerous public articles
+and essays proclaiming or challenging the demise of English majors
+and/or the humanities, and the 2024 World Humanities Report,\footnote{https://worldhumanitiesreport.org/.}
+but also to read other disciplinary perspectives on reading, writing,
+speaking, and listening as well.
+
+J. Michael Sproule's \emph{Democratic Vernaculars: Rhetorics of Reading,
+Writing, Speaking and Criticism since the Enlightenment}, a 350-page,
+impressive historical study of the evolution of Anglophone vernaculars
+from the seventeenth century to the early decades of the twentieth
+century, represents the kind of humanities scholarship Guillory values.
+Sproule's meticulous historical scholarship centers closely on human
+records, even as his argument and evidence effectively counter
+Guillory's claim in ``The Postrhetorical Condition'' that the ``end of
+rhetoric is concurrent with the extension of literacy to the populace as
+a whole'' (129). Guillory goes on to write, ``Vernacularization is a
+condition and a cause of the demise of rhetoric, a force undermining the
+`dead languages' of antiquity that could not be resisted forever''
+(131). Sproule's extensive study proves otherwise. Sproule argues that
+``the modern theory, pedagogy, practice, and criticism of rhetoric
+proves central to the vernacular revolution---and in no way represents
+an epiphenomenon vis-à-vis grammar and literature'' (2). I recommend
+reading Sproule's study in dialogue with Romeo Garcia and Damian Baca's
+\emph{Rhetorics Elsewhere and Otherwise: Contested Modernities,
+Decolonial Visions}, Jeffrey Ringer's \emph{Vernacular Christian
+Rhetoric and Civil Discourse: The Religious Creativity of Evangelical
+Student Writers}, and Carmen Kynard's \emph{Vernacular Insurrections:
+Race, Black Protest, and the New Century in Composition-Literacies
+Studies} to expand on the scope of theorizing and inclusivity of
+vernacular studies.\footnote{Romeo Garcia and Damian Baca, eds.,
+  \emph{Rhetorics Elsewhere and Otherwise: Contested Modernities,
+  Decolonial Visions} (NCTE, 2019); Jeffrey M. Ringer, \emph{Vernacular
+  Christian Rhetoric and Civil Discourse: The Religious Creativity of
+  Evangelical Student Writers} (Routledge Press, 2018); Carmen Kynard,
+  \emph{Vernacular Insurrections: Race, Black Protest, and the New
+  Century in Composition-Literacies Studies} (State University of New
+  York Press, 2013).} Nonetheless, Sproule's examination of 750 texts
+related to speaking, writing, and reading in school, home, and business
+is a robust and compelling study.
+
+Sproule's introduction is critical in offering his framework and
+argument; four principles he shares in the introduction form his
+operating definition of rhetoric, namely that rhetoric is a process of
+negotiating idea-communication and expression (aesthetics and
+correctness) for different audiences for different purposes. His
+plotting of the dimensions of his study along an x and y axis graph is a
+useful frame. He describes the x-axis as ``denoting the span of
+conceptual themes serving functional requisites---from simple spelling
+and penmanship books to systematic and multifaceted treatises,'' while
+the y-axis ``adds refinement by recognizing rhetoric's multilayered
+applications in primary grades, upper grammar school, academy or high
+school, college, home study, group or club, business-professional
+office, and high-level scholarship'' (4). This graph effectively
+illustrates the depth and breadth of Sproule's study and supports his
+argument that Anglophones ``built vernacular competence over the course
+of their studies by assimilating genres'' rhetorically (4). The third
+key principle that establishes rhetoric's centrality to the vernacular
+is found in the dialectical relationship he traces between
+idea-communication and expression across a number of texts, a concept he
+attributes to Locke and traces across other influential figures (2).
+Sproule writes, ``From grammar rhetoric derives its expression criterion
+of \emph{correctness}, and from literature rhetoric absorbs values
+respecting \emph{beauty} of expression'' (3). Finally, Sproule reminds
+readers that ``Theorists and teachers of the post-Lockean vernacular
+redeployed classical-era concepts, chiefly from Cicero and Quintilian,
+to such an extent that modern rhetoric represents a continuation rather
+than a full revolution'' (13). In other words, the clean break from
+classical rhetoric Guillory envisions is neither clean nor complete.
+
+The fourth of Sproule's ten operating principles identifies gaps in
+rhetoric's ``familiar archive of texts,'' including ``the working class,
+white women, and diverse ethnicities'' (6). While Sproule briefly
+addresses feminist rhetorical studies across his book, much more study
+needs to be done in the areas Sproule mentions, but also in those he
+doesn't, including sites like agriculture, domestic work, and by second
+language users, to name a few. While I sometimes lost sight of Sproule's
+larger arguments and principles within the nitty gritty of
+chapters---it's hard to see the forest for all the trees---and in the
+ways some of the relations between sections are glossed (likely due
+to the scope of the study), it's clear that vernaculars---as dynamic and
+adaptable forms of language---have played a critical role in shaping
+modern rhetoric in practical and intellectual forms. The remaining
+principles Sproule offers address themes of incompletion and
+underappreciation to underscore areas needing additional scholarly
+attention, all derived as ways of more fully understanding rhetoric's
+historical relevance, whether that means identifying the influences of
+Cicero and Quintilian or that of postmodern rhetorical studies.
+
+Sproule locates his ten principles in different Anglophone texts and
+contexts across the seventeenth to early twentieth centuries. He
+establishes John Locke's ``central{[}ity{]} to the
+communicative-rhetorical tangent of English-language vernaculars'' (24),
+as well as the influences of other figures on the modern vernacular.
+This he follows with a textual study of how ``Lockean idea-communication
+intersected with classically inflected \emph{belles lettres} to create a
+framework for new vernaculars in contexts scholarly, pedagogical,
+professional, and social'' (85). Sproule then shifts the domain of study
+beyond ``formal school'' to public contexts like debating societies, the
+home, and business, where one can ``hone skills of conversation,
+letter-writing, grammar, and speaking'' (163). For example, he surveys
+the uses of advice books, professional handbooks for secretaries, debate
+manuals, and manuals for extemporaneous speaking to trace language use
+via idea-communication and expression. Sproule then surveys the
+relationship of communication and expression across the genres of
+composition-rhetoric textbooks, composition handbooks for writing (e.g.,
+the popular \emph{The Elements of Style}) and oratory (e.g., \emph{The
+Art of Oratorical Composition}), handbooks for newspaper reporting to
+complement on-the-job learning, and criticism, providing an additional
+discussion of the professional versus academic critic. From here,
+Sproule more narrowly centers on elocution. One interesting tension
+Sproule points to at the turn of the century is between the disciplines
+of speech and English, ``the expressive culture of elocution'' and ``an
+ever more powerful English-studies establishment for whom the vernacular
+apex amounted to critical appreciation of great works silently read''
+(271). Sproule's discussion of literary criticism alongside public
+speaking explores an interesting disciplinary relationship to English
+departments, as Guillory doesn't significantly consider the discipline
+of communication studies. Sproule looks across the eighteenth and
+nineteenth centuries at the place of eloquence in communication, largely
+emphasizing it as a site of ``vernacular quality and language efficacy''
+in oratory (314) displaced by rhetorical, literary, and cultural
+criticism. These chapters are densely detailed and descriptive, although
+the book ends with a more sweeping gesture towards the importance of
+postmodern perspectives on vernaculars.
+
+\enlargethispage{\baselineskip}
+
+While Guillory proclaims the death of rhetoric, and the attendant
+failures he perceives in first-year composition (he hesitates to call it
+first-year writing), Sproule reminds us that we can also look to
+communication studies as a profession for studying the humanities and
+how the arts of writing, reading, and speaking circulate in contemporary
+vernaculars. These texts are both valuable for what they do accomplish
+as well as what they don't accomplish, pushing readers to reflect on
+disciplinary formations and deformations to inspire our reflection on
+our own departments, our own professions, and our own moments, our
+nowness. From Guillory I better understand my literature faculty and
+their desires to elevate social critique and distinguish between the
+reading they want from students versus lay reading practices. I also see
+reflected in his book the ways they devalue first-year writing and the
+writing major, imagining these programs as largely instrumental or
+workplace-oriented rather than related to the arts they profess.
+Sproule's monograph is in many ways a comfort because it points to the
+duration, functionality, and aesthetic dimension of rhetorical pedagogy
+and practice in diverse academic and public sites. Rereading Yancey's
+essay now, I'm struck by how exciting it was for me back then, as a new
+assistant professor of rhetoric and writing, listening as Kathy Yancey
+identified a moment for promoting exciting professional changes in
+college writing instruction, including the establishment of writing
+majors. While I'm more jaded now, over twenty years later as a
+department chair and a faculty member in a writing major, I'd still like
+us to see how we might jointly contribute to teaching the arts of
+reading, writing, and speaking---creating coalitions within and across
+the humanities---rather than trying to shore up our siloed departments
+or professions.
+
+
+
+
+\section{Bibliography}\label{bibliography}
+
+\begin{hangparas}{.25in}{1} 
+
+
+
+Brooke, Collin. ``Weblogs as Deictic Systems: Centripetal, Centrifugal,
+and Small-World Blogging.'' \emph{Computers and Composition Online}
+(Fall 2005). \url{http://cconlinejournal.org/brooke/index.html}.
+
+Garcia, Romeo, and Damian Baca, eds. \emph{Rhetorics Elsewhere and
+Otherwise: Contested Modernities, Decolonial Visions}. NCTE, 2019.
+
+Guillory, John. \emph{Professing Criticism: Essays on the Organization
+of Literary Study.} University of Chicago Press, 2022.
+
+Kynard, Carmen. \emph{Vernacular Insurrections: Race, Black Protest, and
+the New Century in Composition-Literacies Studies}. State University of
+New York Press, 2013.
+
+Reitter, Paul, and Chad Wellmon. \emph{Permanent Crisis: The Humanities
+in a Disenchanted Age}. University of Chicago Press, 2021.
+
+Ringer, Jeffrey M. \emph{Vernacular Christian Rhetoric and Civil
+Discourse: The Religious Creativity of Evangelical Student Writers}.
+Routledge Press, 2018.
+
+Sproule, J. Michael. \emph{Democratic Vernaculars: Rhetorics of Reading,
+Writing, Speaking, and Criticism since the Enlightenment}. Routledge
+Press, 2020.
+
+Yancey, Kathleen Blake. ``Made Not Only in Words: Composition in a New
+Key.'' \emph{College Composition and Communication} 56, no. 2 (2004):
+297--328.
+
+
+
+\end{hangparas}
+
+
+\end{document}
