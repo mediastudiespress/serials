@@ -1,0 +1,530 @@
+% see the original template for more detail about bibliography, tables, etc: https://www.overleaf.com/latex/templates/handout-design-inspired-by-edward-tufte/dtsbhhkvghzz
+
+\documentclass{tufte-handout}
+
+%\geometry{showframe}% for debugging purposes -- displays the margins
+
+\usepackage{amsmath}
+
+\usepackage{hyperref}
+
+\usepackage{fancyhdr}
+
+\usepackage{hanging}
+
+\hypersetup{colorlinks=true,allcolors=[RGB]{97,15,11}}
+
+\fancyfoot[L]{\emph{History of Media Studies}, vol. 5, 2025}
+
+
+% Set up the images/graphics package
+\usepackage{graphicx}
+\setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
+\graphicspath{{graphics/}}
+
+\title[A Note on Langer]{A Note on Langer: An Introduction to the Susanne Langer on Film Special Section} % longtitle shouldn't be necessary
+
+% The following package makes prettier tables.  We're all about the bling!
+\usepackage{booktabs}
+
+% The units package provides nice, non-stacked fractions and better spacing
+% for units.
+\usepackage{units}
+
+% The fancyvrb package lets us customize the formatting of verbatim
+% environments.  We use a slightly smaller font.
+\usepackage{fancyvrb}
+\fvset{fontsize=\normalsize}
+
+% Small sections of multiple columns
+\usepackage{multicol}
+
+% Provides paragraphs of dummy text
+\usepackage{lipsum}
+
+% These commands are used to pretty-print LaTeX commands
+\newcommand{\doccmd}[1]{\texttt{\textbackslash#1}}% command name -- adds backslash automatically
+\newcommand{\docopt}[1]{\ensuremath{\langle}\textrm{\textit{#1}}\ensuremath{\rangle}}% optional command argument
+\newcommand{\docarg}[1]{\textrm{\textit{#1}}}% (required) command argument
+\newenvironment{docspec}{\begin{quote}\noindent}{\end{quote}}% command specification environment
+\newcommand{\docenv}[1]{\textsf{#1}}% environment name
+\newcommand{\docpkg}[1]{\texttt{#1}}% package name
+\newcommand{\doccls}[1]{\texttt{#1}}% document class name
+\newcommand{\docclsopt}[1]{\texttt{#1}}% document class option name
+
+
+\begin{document}
+
+\begin{titlepage}
+
+\begin{fullwidth}
+\noindent\LARGE\emph{Article
+} \hspace{98mm}\includegraphics[height=1cm]{logo3.png}\\
+\noindent\hrulefill\\
+\vspace*{1em}
+\noindent{\Huge{A Note on Langer: An Introduction to the Susanne Langer on Film Special Section\par}}
+
+\vspace*{1.5em}
+
+\noindent\LARGE{Jefferson Pooley} \href{https://orcid.org/0000-0002-3674-1930}{\includegraphics[height=0.5cm]{orcid.png}}\par\marginnote{\emph{Jefferson Pooley and Sue Curry Jansen, ``A Note on Langer: An Introduction to the Susanne Langer on Film Special Section,'' \emph{History of Media Studies} 5 (2025), \href{https://doi.org/10.32376/d895a0ea.d27d1346}{https://doi.org/ 10.32376/d895a0ea.d27d1346}.} \vspace*{0.75em}}
+\vspace*{0.5em}
+\noindent{{\large\emph{University of Pennsylvania}, \href{mailto:jeff.pooley@asc.upenn.edu}{jeff.pooley@asc.upenn.edu}\par}} \marginnote{\href{https://creativecommons.org/licenses/by-nc/4.0/}{\includegraphics[height=0.5cm]{by-nc.png}}}
+
+\vspace*{0.75em} 
+
+\noindent{\LARGE{Sue Curry Jansen}\par}
+\vspace*{0.5em}
+\noindent{{\large\emph{Muhlenberg College}, \href{mailto:jansen@muhlenberg.edu}{jansen@muhlenberg.edu}\par}}
+
+% \vspace*{0.75em} % third author
+
+% \noindent{\LARGE{<<author 3 name>>}\par}
+\vspace*{0.5em}
+% \noindent{{\large\emph{<<author 3 affiliation>>}, \href{mailto:<<author 3 email>>}{<<author 3 email>>}\par}}
+
+\end{fullwidth}
+
+\vspace*{1em}
+
+
+\newthought{The American philosopher} Susanne K. Langer (1895--1985) came of age when
+mass media---film and radio---were still in their formative stages.
+World War I would establish their strategic significance and prioritize
+their technological development. Sustained scholarly analysis of the
+popular culture that they produced, did not, however, emerge in the U.S.
+until the 1950s. While much of Langer's work focused on aesthetics, the
+``popular artists of the screen, the jukebox, the shop-window, and the
+picture magazine'' did not attract her fierce, penetrating
+attention.\footnote{Susanne K. Langer, ``The Cultural Importance of
+  Art,'' in \emph{Philosophical Sketches} (Baltimore: Johns Hopkins
+  University Press, 1962), 93.} She made an exception just once, for
+film, which she heralded as a ``new poetic mode''---but in a mere five
+pages, as an appendix to a 1953 book on art.\footnote{Susanne K. Langer,
+  ``A Note on the Film,'' in \emph{Feeling and Form: A Theory of
+  Art} (New York: Charles Scribner's Sons, 1953), 411.}
+
+We reprint ``A Note on the Film'' here, together with a pair of
+essay-commentaries on Langer's fragment, one from 1974 and the other
+2020.\footnote{Courtenay Wyche Beinhorn, ``Susanne Langer's Film Theory:
+  Elaboration and Implications,'' \emph{Cinema Journal} 13, no. 2 (1974)
+  {[}reprinted with permission{]}; Tereza Hadravová, ``Film as a Dream
+  of the Modern Man: Interpretation of Susanne Langer's Note on the
+  Film,'\,'' \emph{Eidos. A Journal for Philosophy of Culture} 4, no. 1
+  (2020) {[}reprinted with light revisions, under the original
+  publication's Creative Commons Attribution-NonCommercial-NoDerivs 3.0
+  Unported License{]}. The only other substantial treatment is an
+  insightful 1978 dissertation, available online: Trisha Curran, ``A New
+  Note on the Film: A Theory of Film Criticism Derived from Susanne K.
+  Langer's Philosophy of Art'' (PhD diss., Columbus,
+  Ohio State University, 1978).} The book to which it was appended,
+\emph{Feeling and Form} (1953), is a masterwork---a philosophically
+confident, richly informed, and nuanced tour, medium by medium, through
+the arts: sculpture, painting, poetry, music, dance, and drama. That
+book, in turn, was a sequel to Langer's surprise 1941 bestseller
+\emph{Philosophy in a New Key}, which developed its core argument
+through the example of music.\textsuperscript{4}
+
+The new key that Langer hoped would reinvigorate philosophy was the
+study of \emph{symbolism.} She distinguished between two types:
+\emph{discursive} and \emph{presentational}. Philosophers, she said,
+have tended to fixate on the first---language and its extensions in math
+and formal
+
+\enlargethispage{2\baselineskip}
+
+\vspace*{2em}
+
+\noindent{\emph{History of Media Studies}, vol. 5, 2025}
+
+
+ \end{titlepage}
+
+% \vspace*{2em} | to use if abstract spills over
+
+
+
+\noindent logic.\textsuperscript{4}\setcounter{footnote}{4}\marginnote{Langer, \emph{Feeling and Form: A
+  Theory of Art} (New York: Charles Scribner's Sons, 1953); Langer,
+  \emph{Philosophy in a New Key: A Study in the Symbolism of Reason,
+  Rite, and Art} (Cambridge, MA: Harvard University Press, 1942).} They have largely ignored the vast sea of knowledge
+surrounding that ``tiny, grammar-bound island.''\footnote{Langer,
+  \emph{Philosophy in a New Key}, 82.}
+
+Langer's life project was to make sense of this elusive, ``ineffable''
+class of symbolism. She insisted that presentational symbols are
+rational in their own way---that they bear vital meanings that science
+and discursive language cannot express. She developed the argument in
+luminous, metaphoric prose that, in formal terms, helped exemplify her
+claims. Her analysis ranged over pre-linguistic modes like magic,
+ritual, and myth, as well as the ``riotous'' symbolism of dreams. But
+her main object of attention was art\emph{---}all kinds of art, with
+music, literature, drama, and architecture included.
+
+In \emph{Feeling and Form} Langer explained how the arts make their
+meanings. Each major form is a distinctive way of knowing, with its own
+(non-discursive) articulateness. Dance, for example, ``speaks'' through
+gesture; a dancer's movements are symbols for the living experience of
+power and agency. Music, for its part, represents time---it ``spreads
+out time for our direct and complete apprehension, by letting our
+hearing mobilize it.''\footnote{Langer, \emph{Feeling and Form}, 110.}
+Each of the arts is distinguishable, even autonomous, from the others,
+with a symbolic mode---a way of knowing---all its own.
+
+\emph{Feeling and Form}'s formalist treatment of the arts, chapter by
+chapter, has some obvious parallels with the ``medium theory'' tradition
+associated with Marshall McLuhan and his medium-is-the-message formula.
+McLuhan himself read and annotated Langer's \emph{Philosophy in a New
+Key}, yet he apparently never cited her.\footnote{The only reference to
+  Langer in McLuhan's published work is as translator of German
+  philosopher Ernst Cassirer's \emph{Language and Myth} (New York:
+  Harper, 1946). See McLuhan, \emph{The Gutenberg Galaxy: The Making of
+  Typographic Man} (Toronto: University of Toronto Press, 1962), 282. On
+  McLuhan's ``lightly annotated'' copy of \emph{Philosophy in a New
+  Key}, see Marshall McLuhan Library Collection, Thomas Fisher Rare Book
+  Library, University of Toronto Libraries,
+  \url{https://fisher.library.utoronto.ca/mcluhan-library}, 245.} And
+subsequent scholars invested in medium specificity have rarely engaged
+with Langer's work.\footnote{The eclectic media ecology movement has
+  recognized her relevance to their project, but few treatments have
+  gone beyond listing her among the movement's key figures. See, for
+  example, Casey Man Kong Lum, \RL{``}Notes Toward an Intellectual
+  History of Media Ecology,'' in \emph{Perspectives on Culture,
+  Technology, and Communication: The Media Ecology Tradition}, ed. Casey
+  Man Kong Lum (New York: Hampton Press, 2006), 22, 28. Media ecologist
+  Christine Nystrom's 2000 essay on Langer and Benjamin Lee Whorf is a
+  smart excep-}
+
+We have cited one likely reason for this neglect: Langer's relative
+indifference to commercial media. Another explanation has to do with her
+home discipline. For a variety of reasons, some of them of her own
+making, Langer did not command much influence among fellow philosophers
+during her lifetime, with the notable exception of her contributions to
+aesthetics. That subfield was coded as less central to the philosophic
+project, more intuitive, and more feminine; and much of Langer's
+marginal status otherwise can be traced to the discipline's
+well-documented hostility to women in the mid-twentieth century. Because
+she insisted that the knowledge conveyed by the arts is logical in the
+strictest sense, Langer seems to have attracted a particularly vehement
+version of that hostility.\textsuperscript{9} As a marginal
+member of the guild, her ultimate ambition---to reinvent philosophy
+itself and with it a new theory of society---would have also invited
+rejection.
+
+The relative neglect of her work is beginning to lift. The Langer
+Circle, a scholarly society launched in 2020, sponsors conferences and
+conversation\marginnote{tion, as is John Power's 2006 chapter on Langer's
+  philosophy of mind. Nystrom, ``Symbols, Thought, and Reality: The
+  Contributions of Benjamin Lee Whorf and Susanne K. Langer to Media
+  Ecology,'' \emph{New Jersey Journal of Communication} 8, no. 1 (2000);
+  and John H. Powers, ``Susanne Langer's Philosophy of Mind:
+  Some Implications for Media Ecology,'' in \emph{Perspectives on
+  Culture, Technology, and Communication: The Media Ecology Tradition},
+  ed. Casey Man Kong Lum (New York: Hampton Press, 2006).} among\marginnote{\textsuperscript{9} See Randall E. Auxier,
+  ``Foreword,'' in \emph{The Bloomsbury Handbook of Susanne K.
+  Lange}r, ed. Lona Gaikis (London: Bloomsbury, 2024), xii--xiv; Arthur
+  C. Danto, ``Three Careers,'' in \emph{The Visionary Academy of
+  Ocular Mentality: Atlas of the Iconic Turn}, ed. Luca Del Baldo
+  (Berlin: de Gruyter, 2020), 126; and Adrienne Dengerink Chaplin,
+  \emph{The Philosophy of Susanne Langer: Embodied Meaning in Logic, Art
+  and Feeling} (London: Bloomsbury, 2020), chap. 3.}\setcounter{footnote}{9} the growing ranks of the Langer-curious. Full-length
+monographs---including Adrienne Dengerink Chaplin's superb
+\emph{Philosophy of Susanne Langer} (2019)---have been published
+alongside collections like \emph{The Bloomsbury Handbook of Susanne K.
+Langer} (2024). Researchers across a range of fields are discovering, or
+re-discovering, Langer.\footnote{Susanne K. Langer Circle,
+  \url{https://langercircle.sites.uu.nl}; Chaplin, \emph{The Philosophy of
+  Susanne Langer}; and Lona Gaikis, ed., \emph{The Bloomsbury Handbook
+  of Susanne K. Langer} (London: Bloomsbury, 2024).}
+
+To date, however, media scholars have contributed little to the Langer
+renaissance now underway. This is unfortunate, since the richness and
+relevance of her work has much to contribute to a deeper understanding
+of media and communication---on multiple registers. This modest
+collection---``A Note on the Film'' and the two exegeses re-published
+here---is an invitation to probe Langer's full, rousingly generative
+writings. We think of the fragment on film as something like a
+save-the-date notice, an advertisement for the media-relevant thinking
+that permeates \emph{Philosophy in a New Key}, \emph{Feeling and Form},
+and her final, monumental project, the three-volume \emph{Mind} (1967,
+1972, and 1982).\footnote{Susanne K. Langer, \emph{Mind: An Essay on
+  Human Feeling,} 3 vols. (Baltimore: Johns Hopkins University Press,
+  1967, 1972, 1982).}
+
+\hypertarget{a-note-on-the-note}{%
+\section{A Note on `The Note'}\label{a-note-on-the-note}}
+
+Cinema, Langer declared in \emph{Feeling and Form}, is a new art. ``Our
+own age,'' she wrote, ``has seen the birth of the motion picture, which
+is not only in a new medium, but is a new mode.''\footnote{Langer,
+  \emph{Feeling and Form}, xii.} She later admitted that the spare,
+five-page ``A Note on the Film'' was ``only an impressionistic sketch''
+for a simple reason: She wasn't much of a movie-goer. The ``number of
+films I've seen in my life I could count on my fingers and toes,'' she
+said. ``If I had seen more, I would have written an extra chapter like I
+did for the other arts.''\footnote{Langer, ``A Note on the Film,'' 411.
+  The Langer quotes are from a 1978 interview conducted by Trisha
+  Curran, ``A New Note on the Film,'' 1.}
+
+Those other arts, recall, each have formal properties that, when
+realized in works, make for distinctive meanings. Film's key feature,
+she argued, is the \emph{moving camera}, its roaming through space and
+time. Drama is fixed to a stage and an audience. The movie viewer, by
+contrast, ``sees with the camera; his standpoint moves with it, his mind
+is pervasively present.''\footnote{Langer, ``A Note on the Film,''
+  413.} A film is indeed a \emph{motion} picture, a space- and
+time-machine that lends its eyes to the audience.
+
+Langer's stress on the moving camera is interesting enough, even if it
+is a point not infrequently made in the film-theory canon---the bundle
+of texts identified and extended by the then-new film studies field in
+the decades after ``A Note on the Film.'' Art historian Erwin Panofsky's
+1937 essay on cinema, for example, also centers on film's departure from
+the fixed stage---its ``dynamization of space'' and ``spatialization of
+time.''\footnote{Erwin Panofsky, ``Style and Medium in the Moving
+  Pictures,'' \emph{Transition} 26 (1937).} Langer did not cite
+Panofsky, and she only sparingly references other writers on the medium.
+A notable exception is Sergei Eisenstein, the Soviet filmmaker and
+theorist, whose 1943 \emph{The Film Sense} Langer uses to sharpen her
+crucial but counter-intuitive point about the ``virtual'' experience of
+the film-goer.\footnote{Langer, \RL{``}A Note on the Film,'' 413--15;
+  Sergei Eisenstein, \emph{The Film Sense} (London: Faber and Faber,
+  1943). See Tereza Hadravová, ``Film as a Dream of the Modern
+  Man,'' reprinted here, for a rich exploration of Langer's differences
+  with, and debts to, Eisenstein.}
+
+The term ``virtual,'' alas, now refers to expensive VR headsets. So it
+takes effort to occupy the meaning that Langer had in mind. The key to
+understanding Langer on film---and the other arts, for that matter---is
+the idea of \emph{formal} resemblance. A film, or a painting, doesn't
+directly represent experience. Instead, the film (or painting or poem)
+mimics the \emph{shape} of human activity. Art bears a likeness to human
+life, in other words, but not in the usual sense of ``looks like'' or
+``sounds like'' or ``has come to refer to.'' The relationship of art to
+life is about similarity of \emph{form}.
+
+Consider a piece of instrumental music, a defining example for Langer
+(an accomplished cellist herself). In its pitch, cadence, tone,
+orchestral arrangement---its morphology, so to speak---music may
+register aspects of life (``vital impulse, balance, conflict, the ways
+of living and dying and feeling'') without describing or depicting
+them.\footnote{Langer, \emph{Philosophy in a New Key}, 207.} All of the
+arts have this indirect, but still logical, relation to experience---a
+certain distance from lived reality, even for those modes (like film and
+photography) that are hard to pry loose from the scenes they ostensibly
+``capture.''
+
+Here, then, is the sense of ``virtual'' that Langer intends: alike, but
+distinct from, life\emph{.} The arts, including film, present virtual
+overlays of lived experience. They provide insights about human
+existence, as revealed by their formal---their virtual---re-enactments.
+The arts, film among them, provide vital knowledge---important, yes, but
+vital in the sense of life and living, the organic patterns and rhythms
+that are the condition of human existence. We cannot get to these
+insights otherwise; they escape everyday reflection and the discursive
+mode of reasoning that we are all steeped in.
+
+The distinctive sense that film creates---its ``primary illusion''---is
+``virtual history.''\footnote{Langer, ``A Note on the Film,'' 412.}
+What Langer means can be drawn out by comparison with a sibling art,
+poetry.\footnote{Indeed, Langer classifies film, poetry proper,
+  narrative, and drama as ``poetic arts,'' each with a distinctive
+  relationship to the experience of time. Langer, \emph{Feeling and
+  Form}, 266.} Despite its arrangement of words, poetry for Langer is
+non-discursive. Through its rhythms, tensions, and balances, a poem
+symbolizes experience itself. It's not about an \emph{actual}
+experience, nor is it an invitation to feel something. Instead, Langer
+writes, the poet's ``business is to create the appearance of
+`experiences,' the semblance of events lived and felt, to organize them
+so they constitute a purely and completely experienced reality, a piece
+of \emph{virtual life}.'' In contrast to the jumble of everyday
+experience, a poem pulls out---distills, in a sense---experience itself:
+``The \emph{illusion of life} is the primary illusion of all poetic
+art.''\footnote{Langer, \emph{Feeling and Form}, 212, 213.}
+
+Virtual life, virtual history---these are the primary ``illusions'' of
+poetry and film, respectively. They are illusions in that they aren't
+life or history, but instead \emph{symbols} of life, \emph{symbols} of
+history. Poetry and film both symbolize through resemblance, but their
+similarity to the symbolized is formal---the stuff of shape, pattern,
+and morphology.
+
+By ``history'' Langer means the experience of \emph{immediacy}---the
+sense of the ongoing moment, or what she calls the ``endless Now.'' It
+is a virtual present, of course, given in form. Film's symphonic,
+omnivorous character---the way it assimilates other arts as well as the
+sensory manifold---contributes to this feeling of immediacy. Film,
+Langer writes, ``swallows everything: dancing, skating, drama, panorama,
+cartooning, music,'' even as it ``enthralls and commingles all senses.''
+At the same time, the camera lends the viewer its own roving eye, in a
+space-shifting gambol through an ``eternal and ubiquitous virtual
+present.'' If the medium has a message, then, it is an abstracted sense
+of now-ness.\footnote{Langer, ``A Note on the Film,'' 415, 412,
+  414, 415.}
+
+In developing the point, Langer cites the dream-like quality of
+spectating. The analogy to dreaming is, of course, as old as film
+itself; the metaphor played midwife, among other things, to the\\\noindent 1970s
+psychoanalytic turn in cinema studies.\footnote{Laura Rascaroli,
+  \RL{``}Oneiric Metaphor in Film Theory,'' \emph{Kinema: A Journal for
+  Film and Audiovisual Media} (Fall 2002).} So Langer's reflections on
+the ``dream mode'' may come off, on first read, as yet another nod to a
+worn theme. But here again it is formal resemblance she has in
+mind---not the thick claim that, say, darkened-theater movie-goers
+regress into a dream state. What is similar about watching a film and
+dreaming is that both involve rapid and cutting shifts of location, a
+tumbling immediacy in space that ``comes and goes.''\footnote{Langer,
+  \RL{``}A Note on the Film,'' 412--15.} Film watching is also
+\emph{unlike} dreaming---the spectator isn't in the film, in contrast to
+the dreamer-protagonist. It is, instead, the space-hopping immediacy,
+the roving eye-camera, that connects film to the dream mode.
+
+\hypertarget{media-theory-in-a-new-key}{%
+\section{Media Theory in a New Key}\label{media-theory-in-a-new-key}}
+
+As Courtenay Wyche Beinhorn observes in her 1974 essay, reprinted here,
+``The value of Langer's theory is that it enables one to examine film
+from the perspective of all the arts and discover what it has in common
+with, and how it differs from, the others.''\footnote{Beinhorn,
+  \RL{``}Susanne Langer\RL{'}s Film Theory,'' 54.} Beinhorn is right,
+and we republish ``A Note on the Film'' with that aim in mind---to share
+a mostly forgotten fragment of film theory, for its original and
+intelligent meditation on the medium.
+
+We have an additional motive. Over the last two years, we have read
+through Langer's works, with gathering excitement. We started with
+\emph{Philosophy in a New Key}, after a podcast re-kindled our
+curiosity.\footnote{``Susanne Langer on Our Symbol-Making Nature,''
+  \emph{The Partially Examined Life}, March 28, 2022,
+  \url{https://partiallyexaminedlife.com/2022/03/28/ep290-1-langer-symbolism/}.}
+The book's astonishing perspicacity, its (uncredited) prescience\\\noindent---even
+the way its sentences re-enact their claims in metaphor---kept us
+reading, through \emph{Feeling and Form,} then a pair of brilliant essay
+collections, and on to Langer's three-volume opus \emph{Mind}, published
+over 15 years and cut short by Langer's failing eyesight. We recalled
+(in the first person, for one of us) \emph{Philosophy in a} \emph{New
+Key}'s ubiquity in the 1950s paperback revolution. And we registered the
+testimony of friends and colleagues, who remembered the book as an
+important, if inchoate, influence.
+
+We knew from the book's first pages what the rest of her works
+confirmed: Susanne Langer was a media theorist, set in a different, more
+expansive key. For Langer, it was symbolization all the way down, and
+all the way back. She held that most of our symbolizing, for most of
+human history, has been non-discursive, a vast ocean surrounding (once
+it surfaced, rather late) a tiny, grammar-bound island. She made that
+point in brilliant, self-exemplifying, iridescent prose.
+
+Who now reads Langer? Plenty of people, as we learned when we stumbled
+upon the Langer revival now underway. But not media scholars---not yet.
+Thus this small collection, centered on a five-page film-theory
+fragment, is a tease, an invitation, and a promissory note:
+
+\begin{quote}
+The modern mind is an incredible complex of impressions and
+transformations; and its product is a fabric of meanings that would make
+the most elaborate dream of the most ambitious tapestry-weaver look like
+a mat. The warp of that fabric consists of what we call `data,' the
+signs to which experience has conditioned us to attend, and upon which
+we act often without any conscious ideation. The woof is symbolism. Out
+of signs and symbols we weave our tissue of `reality.'\footnote{Langer,
+  \emph{Philosophy in a New Key}, 235--36.}
+\end{quote}
+
+
+\newpage\section{Bibliography}\label{bibliography}
+
+\begin{hangparas}{.25in}{1} 
+
+
+
+Auxier, Randall E. ``Foreword.'' In \emph{The Bloomsbury Handbook of
+Susanne K. Langer,} edited by Lona Gaikis, xii--xiv. London: Bloomsbury,
+2024.
+
+Beinhorn, Courtenay Wyche. ``Susanne Langer's Film Theory: Elaboration
+and Implications.'' \emph{Cinema Journal} 13, no. 2 (1974): 41--54.
+\url{https://doi.org/10.2307/1225250}.
+
+Cassirer, Ernst. \emph{Language and Myth}, translated by Susanne K.
+Langer. New York: Harper, 1946
+
+Chaplin, Adrienne Dengerink. \emph{The Philosophy of Susanne Langer:
+Embodied Meaning in Logic, Art and Feeling}. London: Bloomsbury, 2020.
+
+Curran, Trisha. ``A New Note on the Film: A Theory of Film Criticism
+Derived from Susanne K. Langer's Philosophy of Art.'' PhD diss., Ohio
+State University, 1978.
+\url{https://etd.ohiolink.edu/acprod/odb_etd/ws/send_file/send?accession=osu148707946402129\&disposition=inline}.
+
+Danto, Arthur C. ``Three Careers.'' In \emph{The Visionary Academy of
+Ocular Mentality: Atlas of the Iconic Turn}, edited by Luca Del Baldo,
+125--30. Berlin: de Gruyter, 2020.
+
+Eisenstein, Sergei. \emph{The Film Sense}. London: Faber and Faber,
+1943.
+
+Gaikis, Lona. \emph{The Bloomsbury Handbook of Susanne K. Langer}.
+London: Bloomsbury, 2024.
+
+Hadravová, Tereza. ``Film as a Dream of the Modern Man: Interpretation
+of Susanne Langer's `Note on the Film.'\,'' \emph{Eidos. A Journal for
+Philosophy of Culture} 4, no. 1 (2020): 38--48.
+\url{https://doi.org/10.14394/eidos.jpc.2020.0004}.
+
+Langer, Susanne K. \emph{Philosophy in a New Key: A Study in the
+Symbolism of Reason, Rite, and Art}. Cambridge, MA: Harvard University
+Press, 1942.
+
+Langer, Susanne K. ``A Note on the Film.'' In \emph{Feeling and Form: A
+Theory of Art}, 411--5. New York: Charles Scribner's Sons, 1953.
+
+Langer, Susanne K. \emph{Feeling and Form: A Theory of Art}. New York:
+Charles Scribner's Sons, 1953.
+
+Langer, Susanne K. \emph{Mind: An Essay on Human Feeling}. 3 vols.
+Baltimore: Johns Hopkins University Press, 1967, 1972, 1982.
+
+Langer, Susanne K. ``The Cultural Importance of Art.'' In
+\emph{Philosophical Sketches}, 83--94. Baltimore: Johns Hopkins
+University Press, 1962.
+
+Lum, Casey Man Kong. ``Notes Toward an Intellectual History of Media
+Ecology.'' In \emph{Perspectives on Culture, Technology, and
+Communication: The Media Ecology Tradition}, edited by Casey Man Kong
+Lum, 1--60. New York: Hampton Press, 2006.
+
+\enlargethispage{\baselineskip}
+
+Marshall McLuhan Library Collection, Thomas Fisher Rare Book Library,
+University of Toronto Libraries,
+\url{https://fisher.library.utoronto.ca/mcluhan-library}.
+
+McLuhan, Marshall. \emph{The Gutenberg Galaxy: The Making of Typographic
+Man}. Toronto: University of Toronto Press, 1962.
+
+Nystrom, Christine L. "Symbols, thought, and reality: The contributions
+of Benjamin Lee Whorf and Susanne K. Langer to media ecology.''
+\emph{New Jersey Journal of Communication} 8, no. 1 (2000): 8--33.
+
+Panofsky, Erwin. ``Style and Medium in the Moving Pictures.''
+\emph{Transition} 26 (1937): 121--33.
+
+Powers, John H. ``Susanne Langer's Philosophy of Mind: Some Implications
+for Media Ecology.'' In \emph{Perspectives on Culture, Technology, and
+Communication: The Media Ecology Tradition}, edited by Casey Man Kong
+Lum, 303--34. New York: Hampton Press, 2006.
+
+``Susanne Langer on Our Symbol-Making Nature.'' \emph{The Partially
+Examined Life} {[}podcast episode{]}, March 28, 2022.\\
+\hspace{.25in}\href{https://partiallyexaminedlife.com/2022/03/28/ep290-1-langer-symbolism}{https://partiallyexaminedlife.com/2022/03/28/ep290-1-langer-}\\ \hspace{.25in}\href{https://partiallyexaminedlife.com/2022/03/28/ep290-1-langer-symbolism}{symbolism}.
+
+Rascaroli, Laura. ``Oneiric Metaphor in Film Theory.'' \emph{Kinema: A
+Journal for Film and Audiovisual Media} (Fall 2002).
+\url{https://doi.org/10.15353/kinema.vi.982}.
+
+
+
+\end{hangparas}
+
+
+\end{document}
