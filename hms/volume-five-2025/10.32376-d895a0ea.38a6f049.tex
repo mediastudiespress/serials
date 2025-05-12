@@ -1,0 +1,763 @@
+% see the original template for more detail about bibliography, tables, etc: https://www.overleaf.com/latex/templates/handout-design-inspired-by-edward-tufte/dtsbhhkvghzz
+
+\documentclass{tufte-handout}
+
+%\geometry{showframe}% for debugging purposes -- displays the margins
+
+\usepackage{amsmath}
+
+\usepackage{hyperref}
+
+\usepackage{fancyhdr}
+
+\usepackage{hanging}
+
+\hypersetup{colorlinks=true,allcolors=[RGB]{97,15,11}}
+
+\fancyfoot[L]{\emph{History of Media Studies}, vol. 5, 2025}
+
+
+% Set up the images/graphics package
+\usepackage{graphicx}
+\setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
+\graphicspath{{graphics/}}
+
+\title[Film as a Dream of the Modern Man]{Film as a Dream of the Modern Man: Interpretation of Susanne Langer's ``Note on the Film''} % longtitle shouldn't be necessary
+
+% The following package makes prettier tables.  We're all about the bling!
+\usepackage{booktabs}
+
+% The units package provides nice, non-stacked fractions and better spacing
+% for units.
+\usepackage{units}
+
+% The fancyvrb package lets us customize the formatting of verbatim
+% environments.  We use a slightly smaller font.
+\usepackage{fancyvrb}
+\fvset{fontsize=\normalsize}
+
+% Small sections of multiple columns
+\usepackage{multicol}
+
+% Provides paragraphs of dummy text
+\usepackage{lipsum}
+
+% These commands are used to pretty-print LaTeX commands
+\newcommand{\doccmd}[1]{\texttt{\textbackslash#1}}% command name -- adds backslash automatically
+\newcommand{\docopt}[1]{\ensuremath{\langle}\textrm{\textit{#1}}\ensuremath{\rangle}}% optional command argument
+\newcommand{\docarg}[1]{\textrm{\textit{#1}}}% (required) command argument
+\newenvironment{docspec}{\begin{quote}\noindent}{\end{quote}}% command specification environment
+\newcommand{\docenv}[1]{\textsf{#1}}% environment name
+\newcommand{\docpkg}[1]{\texttt{#1}}% package name
+\newcommand{\doccls}[1]{\texttt{#1}}% document class name
+\newcommand{\docclsopt}[1]{\texttt{#1}}% document class option name
+
+
+\begin{document}
+
+\begin{titlepage}
+
+\begin{fullwidth}
+\noindent\LARGE\emph{Article
+} \hspace{98mm}\includegraphics[height=1cm]{logo3.png}\\
+\noindent\hrulefill\\
+\vspace*{1em}
+\noindent{\Huge{Film as a Dream of the Modern Man:\\\noindent Interpretation of Susanne Langer's\\\noindent``Note on the Film''\par}}
+
+\vspace*{1.5em}
+
+\noindent\LARGE{Tereza Hadravová} \href{https://orcid.org/0000-0002-5305-5457}{\includegraphics[height=0.5cm]{orcid.png}}\par\marginnote{\emph{Tereza Hadravová, ``Film as a Dream of the Modern Man: Interpretation of Susanne Langer's `Note on the Film','' \emph{History of Media Studies} 5 (2025), \href{https://doi.org/10.32376/d895a0ea.38a6f049}{https://doi.org/ 10.32376/d895a0ea.38a6f049}.} \vspace*{0.75em}}
+\vspace*{0.5em}
+\noindent{{\large\emph{Charles University}, \href{mailto:Tereza.Hadravova@ff.cuni.cz}{Tereza.Hadravova@ff.cuni.cz}\par}} \marginnote{\href{https://creativecommons.org/licenses/by-nc-nd/3.0/deed.en}{\includegraphics[height=0.5cm]{graphics/by-nc-nd.png}}}
+
+% \vspace*{0.75em} % second author
+
+% \noindent{\LARGE{<<author 2 name>>}\par}
+% \vspace*{0.5em}
+% \noindent{{\large\emph{<<author 2 affiliation>>}, \href{mailto:<<author 2 email>>}{<<author 2 email>>}\par}}
+
+% \vspace*{0.75em} % third author
+
+% \noindent{\LARGE{<<author 3 name>>}\par}
+% \vspace*{0.5em}
+% \noindent{{\large\emph{<<author 3 affiliation>>}, \href{mailto:<<author 3 email>>}{<<author 3 email>>}\par}}
+
+\end{fullwidth}
+
+\vspace*{2em}
+
+
+\small\noindent{Republication of Tereza Hadravová, ``Film as a Dream of
+the Modern Man: Interpretation of Susanne Langer's `Note on the
+Film,'\,''  \emph{Eidos. A Journal for Philosophy of
+Culture} 4, no. 1 (2020): 38--48,
+\url{https://doi.org/10.14394/eidos.jpc.2020.0004.}
+The author has used the opportunity of its republication to polish its
+style and structure; however, no significant additions have been made.
+{[}\href{https://creativecommons.org/licenses/by-nc-nd/3.0/deed.en}{CC
+BY-NC-ND 3.0}{]}}
+
+\vspace*{2em}
+
+\hypertarget{abstract}{%
+\section{Abstract}\label{abstract}}
+
+The paper concerns a ``Note on the Film,'' a short appendix to
+\emph{Feeling and Form} by Susanne K. Langer. The interpretation
+interweaves the Note into a larger context of Langer's philosophical
+work---primarily in terms of her understanding of the dream as a lower
+symbolic form, to which the film is compared---as well as in terms of
+her account of literary arts among which, she suggests, cinema belongs.
+Langer's references to Sergei Eisenstein are discussed, and their
+respective concepts of cinema are compared. An implicit political
+dimension of Langer's writing on film is emphasized by relating her
+critique of modern civilization, as sketched in the last chapter of
+\emph{Philosophy in a New Key}, to her film aesthetics. At the end of
+the paper, I compare my interpretation of the Note with the one that was
+offered by Trisha Curran.
+
+
+
+
+
+\enlargethispage{2\baselineskip}
+
+\vspace*{10em}
+
+\noindent{\emph{History of Media Studies}, vol. 5, 2025}
+
+
+ \end{titlepage}
+
+% \vspace*{2em} | to use if abstract spills over
+
+\newthought{In the short} ``Note on the Film,'' published as an Appendix to her book
+\emph{Feeling and Form},\footnote{Langer, \emph{Feeling and Form},
+  Appendix.} Susanne Langer extensively refers to the writings of Sergei
+Eisenstein, who was three years her junior. In
+Eisenstein\textquotesingle s ideas, she recognizes a similarity to her
+own understanding of the symbolic nature of art and, specifically, to
+what she calls a dream-like character of motion pictures. The detected
+affinity---strengthened by an unusual lack of distance and direct
+criticism from Langer\footnote{In her books, Langer often extensively
+  quotes and interprets sources coming from various fields, including
+  logic, philosophy, biology, and neuroscience; her writing style is
+  dialogic. Rather than to corroborate her own view, she, however,
+  usually looks for inadequacies and inaccuracies in the ideas of her
+  dialogic partners.}---may seem surprising since, at first sight, the
+differences prevail. While Eisenstein famously promoted montage as the
+key element of film language, Langer's interest in the art of film
+concentrates on the work of camera. Moreover, Eisenstein's film work is
+hardly separable from its political context, whereas for Langer
+film\\\noindent---as every art---is an autonomous sphere. The aim of this essay is
+to find out how close relation between Langer and Eisenstein one can
+sustain and where do their respective lines of thought potentially
+intersect.
+
+The idea that a human being is essentially a symbolic creature, which
+Langer articulates throughout her earlier book \emph{Philosophy in a New
+Key},\footnote{Langer, \emph{Philosophy in a New Key}, originally
+  published in 1942. Hereafter referred to as \emph{PNK} with page
+  number(s).} has far-reaching consequences, one of them being a claim
+that the arts---as an intentional and self-conscious symbol-making
+activity---possess the power to deeply change the world one lives in.
+The idea that humans can be transformed through the arts also deeply
+resonates with Sergei Eisenstein's artistic aspirations and commitments.
+
+Although Langer's philosophical work is, if not completely apolitical,
+then far less so than Eisenstein's famous revolutionary
+manifestos\\\noindent---such as \emph{Strike} (1925) or \emph{Battleship Potemkin}
+(1926); one can register a tone of uneasiness at the modern society in
+her writing. She considers society dangerously out of balance due to
+what represents its greatest achievement---the highly sophisticated use
+of symbols. The childhood of mankind, which she locates in myth, rite,
+and dream, is gone, but the victory of reason, however successful in
+terms of power and knowledge, is likely to be short-lived, as humanity,
+bereft of dreams, would eventually lose the ability to think creatively.
+I will argue that the worry about the state of contemporary society that
+Susanne Langer outlined in the final chapter of \emph{Philosophy in a
+New Key} is, in a way, revisited in the appendix to \emph{Feeling and
+Form}, where a remedy to the modern malaise is found.
+
+In what follows, I first introduce some of the themes Langer develops in
+\emph{Philosophy in a New Key}; especially those related to dreaming as
+a lower symbolic form. I introduce the distinction between
+sign-perception and symbol-perception and outline Langer's critique of
+modern civilization as lacking resources for symbol-perception. In the
+second part of the paper, I try to unpack the, rather inchoate, ``Note
+on the Film''---a short essay of barely twenty paragraphs---in which
+Langer alludes to similarities between the experience of film and that
+of dreaming. Similarly to Langer I then, in the third part, use
+Eisenstein's writings as a mirror of her own approach. However, unlike
+her, I also look at some aspects of Eisenstein's thought that she has
+left unaddressed; I am interested in similarities as well as differences
+between them. In the last part of the paper, I get back to her critique
+of modernity and pose film as one of the means of making the modern
+humans dream again. Finally, I compare my interpretation of Langer's
+Note with the first (and only) systematic study of Langer's film
+aesthetics by Trisha Curran.
+
+\hypertarget{i}{%
+\section{I.}\label{i}}
+
+A significant part of the \emph{Philosophy in a New Key} is devoted to
+vindicating the idea of the primitivity of symbolization. The human mind
+has a ``profoundly symbolific character'' (\emph{PNK}, 127) and,
+unavoidably, resorts to a ``perceiving as'' mode as its basis. Humans in
+Langer's understanding must relate things, abstract forms, and perceive
+connections. There is no primitive, animal-like stage; reality gives
+itself as a layered network of connections from the very beginning even
+prior to language, in either a phylogenetic or ontogenetic sense. There
+are no ``sense-data,'' no primary materials out of which the edification
+of human knowledge can be built and raised. At the beginning of the
+human mind there are, rather, ``pure'' symbols---synthetic and integral
+repositories of an open set of potential meanings. Rather than referring
+to a concrete entity in the world, their role consists in marking
+certain configurations as meaningful.
+
+One of the simplest possible, thoroughly private materializations of
+what Langer calls a ``symbolic instinct'' is found in dreaming. This is
+how she describes the experience of dreaming:
+
+\begin{quote}
+In our most primitive presentations---the metaphorical imagery of
+dreams---it is the symbols, not its meaning, that seems to command our
+emotions. We do not know it as a symbol. In dream-experience we very
+often find some fairly commonplace object---a tree, a fish, a pointed
+head, a staircase---fraught with intense value or inspiring the greatest
+terror. We cannot tell what makes the thing so important. It simply
+seems to be so in the dream. (\emph{PNK}, 131)
+\end{quote}
+
+\noindent The perceptual experience encountered in dreams is thus purely symbolic;
+the objects perceived in dreams are embodied values. This is what makes
+dreams so closely related to ritualistic and superstitious relationships
+with the world; they all belong to what Langer calls ``the lower forms
+of symbolistic thinking'' (\emph{PNK}, 114) for which it is
+characteristic that the things one encounters are, so to speak, enhanced
+with a radiating meaningfulness. While superstition and ritual are ways
+of perceiving the world typically associated with ``primitive
+societies,'' dreaming seems to be the last available form of lower
+symbolistic thinking for people living in a modern, technologically
+advanced, disenchanted civilization, where the only faith that endures
+is ``blind faith in the conquest of nature through science.''\footnote{This
+  is how Langer and her co-author characterize an intellectual
+  atmosphere of the United States before the Second World War: ``This
+  unreflecting mood of what one can only call `worldly faith'---blind
+  faith in the conquest of nature through science---was even more marked
+  in America than Europe ... partly because we had no established
+  philosophical tradition to hold the balance against so much practical
+  activity.'' And they continue: ``The blind faith in science has ended
+  in disillusion and no faith at all. ... {[}H{]}owever great
+  {[}nation's{]} scientific achievements, the greatest are always for
+  purposes of destruction.'' Susanne Langer and Eugene T. Gadol, ``The
+  Deepening Mind: A Half-Century of American Philosophy,''
+  \emph{American Quarterly} 2, no. 2 (Summer 1950): 118--32. Quoted from
+  Chaplin, \emph{The Philosophy of Susanne Langer}, 22.}
+
+In the real, waking life of modern humans, the perceptual experience
+known from dreams occurs less frequently, although, as Langer notes,
+there are certain objects that do commonly induce it, such as a cross or
+a ship (\emph{PNK}, 239--40). While dream-perception is replete with
+symbols, ordinary perceptual experience is merged with what Langer calls
+sign-perception. ``Signs,'' as defined by Langer, refer to signals or
+stimuli and, in the context of perception, can be understood as reaction
+prompts.\footnote{I find the idea that perception is predominantly
+  sign-perception strikingly similar to J. J. Gibson's concept of
+  perception in terms of what he calls ``affordances.'' See Gibson,
+  ``The Theory of Affordances.'' For more on difference of signs and
+  symbols, see Chaplin, ``Langer's Logic of Signs and Symbols.''} This
+is even more emphasized in the perception of modern humans, whose
+thinking is almost purely instrumental.
+
+With some approximation, we can thus draw a continuum between
+``sign-perception'' and ``symbol-perception.'' Pure sign-perception is
+considered by Langer mainly in relation to animals, which, in her views,
+are capable of thinking in these fairly limited ways; that is, within a
+short horizon of immediate affordances and dangers. Symbol-perception,
+on the other hand, is a uniquely human way of understanding the world.
+Dreams represent symbol-perception at its extreme (or, more precisely,
+one form of it), while everyday practically oriented perception lies
+closer to the sign pole of the continuum, though it is not equivalent to
+it.\footnote{As Langer says: ``If we have a literal conception of a
+  house, we cannot merely think of a house, but \emph{know one when we
+  see it}; for a sensory sign stimulating practical action also answers
+  to the image with which we think'' (PNK, 225). See Chaplin,
+  \emph{Philosophy of Susanne Langer}, 179.}
+
+Before proceeding, one more conceptual clarification is necessary. In
+Langer's terminology, there are two main types of symbolism that
+encompass all forms of human mental activity (from dreaming and
+believing, to perceiving, thinking, and creating art): presentational
+and discursive symbolism. This is one of the key conceptual distinctions
+she introduces; however, for reasons of space, it cannot be properly
+discussed in this paper.\footnote{An excellent discussion of discursive
+  and non-discursive symbolisms can be found in \emph{Ibid.}, 167--73.}
+Suffice it to say that while discursive symbolism, with its discrete
+elements and composite structure, is tailored ``to describe the
+external, physical and empirically observable world;'' presentational
+symbolism, with its synthetical nature, participates in formulation of
+experience and thus contributes to its development.\footnote{In this
+  sense, presentational symbolism is ``foundational to the development
+  of the mind.'' \emph{Ibid.}, 170. More on formulative role of symbols
+  in \emph{ibid.}, 173--79.} The most refined form of discursive
+symbolism is found in the sciences, while the arts, according to Langer,
+embody presentational symbolism at its best.
+
+For Langer, it is of utmost importance to argue that both types of
+symbolism, that is discursive and presentational, are equal in their
+epistemological status, and a good society acknowledges that. She claims
+that the arts are on the same footing with the sciences when it comes to
+what should be considered knowledge. However, equality in importance
+does not mean that they do not, in practice, compete for their status in
+society. An ideal society, so to speak, would hold both symbolisms as
+equal and help them to flourish with equal care. The society Langer
+lived in, however, was far from this ideal; it was marked by the acute
+dominance of discursive symbolism over presentational.\footnote{The
+  opposite disequilibrium, seen in societies that prioritize
+  presentational symbolism at the expense of discursive symbolism, is
+  characteristic of ``primitive societies.'' Langer is careful not to
+  look down at these societies; in her analysis, hers is similarly
+  flawed, though suffering from the opposite problem (\emph{PNK}, 131).}
+
+Both discursive and presentational symbolisms are primarily composed of
+symbols, not signs. Thus science, which is the most elaborated form of
+discursive symbolism, would not have been possible if humanity's
+interest in the world had been limited to its practical dimension,
+searching in nature only for ``signs for behavior.'' Science is not,
+according to Langer, born from a practical need but rather from ``the
+restless desire of an ever-imaginative mind to exploit the possibilities
+of the factual world as a field for constructive thought'' (\emph{PNK},
+229). It emerged from symbol-perception, rather than sign-perception.
+
+However, once science matured, the symbolic character and purely
+intellectual orientation of it were corrupted by the technical progress
+it had, almost coincidentally, brought about. This observation is
+elaborated, and its consequences are pursued, in the final chapter of
+\emph{Philosophy in a New Key} titled ``The Fabric of Meaning.'' In the
+modern age, the symbols of science are increasingly treated as signs,
+albeit highly complex ones; only their practical dimension is sought
+after. This conception of science, along with its dominance over
+presentational symbolism, has infiltrated all forms of human mental
+engagement with the world. The ever-growing web of practically oriented
+knowledge and the supremacy of discursive symbolism have created a
+dangerous imbalance in the mental life of society---with severe
+consequences. To repeat, it is not simply the growth of scientific
+knowledge per se that Langer regards with suspicion but rather a certain
+attitude toward knowledge; a specific, highly instrumentalized
+conception of knowledge.
+
+The original source of all knowledge, that is the ability to perceive
+connections and understand the reality as charged with meanings, has
+dried out. The modern human, ``that mighty and rather terrible figure''
+(\emph{PNK}, 232), becomes an unimportant part of their own system of
+facts and truths. ``All old symbols are gone, and thousands of average
+lives offer no new materials to a creative imagination'' (\emph{PNK},
+245), Langer complains.
+
+\begin{quote}
+Most men never see the goods they produce, but stand by a traveling band
+and turn a million identical passing screws or close a million identical
+passing wrappers in a succession of hours, days, years. This sort of
+activity is too poor, too empty, for even the most ingenious mind to
+invest it with symbolic content. ... Most people have no home that is a
+symbol of their childhood. ... Many no longer know the language that was
+once their mother-tongue. (\emph{PNK}, 245)
+\end{quote}
+
+\noindent Since its reality has been stripped of symbols, such a society, Langer
+argues, becomes liable to yield to cheap mysticism, nationalism, and
+propaganda. She suggestively describes the loss of orientation in a
+world of neutral facts and the anxiety as its natural follow-up. The
+\emph{loose, half-baked ideas} that modern humans often find so
+seductive are a poor replacement for a world replete with symbols, which
+would offer them a safe repository for their experience. The modern man,
+so to speak, is a human without dreams.
+
+\hypertarget{ii}{%
+\section{II.}\label{ii}}
+
+Film, as Susanne Langer states in the appendix to \emph{Feeling and
+Form} titled ``A Note on the Film,'' is derived from a dream. This is
+not the first time she connects dreaming with the creation of expressive
+symbolic forms. In the previously published \emph{Philosophy in a New
+Key}, the dream was characterized as providing material from which two
+distinct traditions emerged. One tradition resulting in supernatural
+narratives, such as fairy-tales or ghost stories, fills the public
+imagination with fragments that can be used to satisfy private fantasies
+of a wide scope. The other, which can be called myth, transforms private
+material into a realm that is ultimately inaccessible from a solely
+private perspective. Both myth and fairy-tale thus use the same symbolic
+material---the primitive symbolism of human dreams---yet they build
+distinct worlds. On the one hand, there is the world built from private,
+though commonly shared, fantasies; on the other, there is the world that
+transcends the individual and situates one within the perspective of a
+non-human subject (\emph{PNK}, Chapter 7).
+
+The relationship between cinema and dreaming that Langer highlights in
+the Note is, however, different. Dreaming does not provide cinema with
+material in the sense of content; it is not a repository of images and
+structures of relationships available to filmmakers. What makes film
+close to a dream is its mode of presentation, which is dream-like. This
+claim needs to be understood against the backdrop of the theory of art
+developed in \emph{Feeling and Form}.
+
+According to Langer, film is one of the poetic arts. In the book to
+which the ``Note on the Film'' is appended, she distinguishes two basic
+poetic arts: literature and drama. As poetic arts, they share what she
+calls the primary illusion---a virtual life---but, as different types of
+poetic arts, they approach virtual life from different perspectives.
+Whereas narrative (that is, fiction or literature) is essentially
+related to the past---the experience has a past character---drama
+presents its events in a future-oriented way; everything happening or
+occurring on stage is directed toward the future, carrying an air of the
+destiny. Drama and literature may thus share the same characters,
+setting, and plot, i.e., have essentially same narrative content;
+however, the content takes on quite different features in each. In the
+former case, the narrated events have a past character; even if set in
+the narrative present, they are understood as consequences of the past,
+and the past itself is what the narration is about, so to speak. In
+drama, on the other hand, the mode of presentation gives the events a
+prescient character; they contain signs of the events yet to come; the
+focal point of drama thus resides in the future.
+
+When Langer says that the film has a dream-like character, she refers to
+the sense of the present encountered in a dream. There is no sense of
+the past, no sense of the future; one is entirely in the here and now.
+Recall her description of the experience of dreaming mentioned earlier:
+one is immersed in a world, which is thoroughly meaningful, yet it does
+not refer to any specific meaning. Commonplace objects are, as she says,
+``fraught with intense value or inspiring the greatest terror,'' but
+these emotions are not related to any past or future (un)happiness or a
+threat---we do not fear these objects because of what they have caused
+or might cause. ``It is the symbol, not its meaning, that seems to
+command our emotions'' (\emph{PNK}, 131). In a film, one may encounter
+the same content as in a piece of drama or literature, but the film art
+form makes it seen anew: without a relation to the past, without a
+relation to the future. The focal point of the film, what the film
+\emph{is about}, is the present.
+
+As a consequence, film presents objects, as Langer puts it, as
+``equidistant'' from the eye. This is somewhat difficult to understand
+since, first, the camera, can of course present things in detail or in
+full frame as being literally more or less proximate to the viewer.
+Moreover, there are necessarily internal narrative emphases in the story
+of a film---some characters have leading roles while others function as
+supporting actors; some objects serve as significant props, while others
+take up only a circumstantial part of the \emph{mise-en-scène}. Thus,
+both literally and metaphorically, some elements of a film are closer to
+the eye, while others are further away, located at the periphery of
+vision or on the horizon. How then can the claim about the equidistant
+character of the objects presented in film be taken seriously?
+
+In Langer's understanding of cinema, however, no roles are minor, and no
+part of the diegetic world is accidental. By saying that film presents
+its objects as equidistant from the eye, Langer means that each and
+every part of the work is, potentially, meaningful---there are no
+insignificant elements. Everything is interconnected, necessarily and
+meaningfully present, and open to analysis. Films, like dreams, are thus
+replete with symbols.
+
+The film experience is similar to the dream experience; in both,
+commonplace objects are ``fraught with intense value and inspiring the
+greatest terror'' (\emph{PNK}, 131). The film offers modern humans a
+tool to carry out the symbolic function that the world they live in no
+longer sustains. In the context of modern society, the ability to enrich
+the lived present by a virtual dimension might be an especially valuable
+contribution of the cinematic work of art.
+
+\hypertarget{iii}{%
+\section{III.}\label{iii}}
+
+In the middle of the Note, Langer turns to Sergei Eisenstein. The common
+ground they share lies in their understanding of the nature of the film
+image. Although based on pictorial representations, film is essentially
+pictureless, as Eisenstein puts it (and Langer affirms); the film image
+is ``objectively unrepresentable---a new idea, a new conception, a new
+image.''\footnote{Eisenstein, \emph{The Film Sense}, 8. In a later
+  essay, while speaking about hieroglyphs, which Eisenstein compares to
+  the basic structural principle of the film image, he says: ``By the
+  combination of two `depictables' is achieved the representation of
+  something that is graphically undepictable.'' Eisenstein, \emph{Film
+  Form}, 30.} It has the power to ``assimilate the most diverse
+materials, and transform them into non-pictorial elements.''\footnote{Langer,
+  \emph{Feeling and Form,} 414. Interestingly, just several paragraphs
+  before the quoted sentence, she uses similar wording with slight
+  variations, saying that cinema ``seems to be omnivorous, able to
+  assimilate the most diverse materials and turn them into elements of
+  its own''; see \emph{ibid.}, 412.}
+
+This idea is, once again, difficult to grasp since it seems obvious that
+films are composed of individual frames and these, literally, are
+depictions, that is, images. However, what Eisenstein makes clear in his
+writing is that what he, as a director, attempts at creating---via
+individual frames and their juxtapositions---is an image without
+picture; an impossible image, so to speak: an image of thought. Such an
+image, as he says, is a ``psychological representation,''\footnote{Eisenstein,
+  \emph{Film Form}, 32.} existing only in the mind of the spectator. And
+that is what the film as an art form is built of; its basic structural
+element is, in Langer's vocabulary, ``virtual.'' It transcends its
+original material; it ``hovers,'' as she says with Eisenstein, ``in the
+mind of the spectator.''\footnote{Langer, \emph{Feeling and Form,} 414.}
+
+Eisenstein would thus also agree with Langer's categorization of film
+under the heading of the poetic arts. In spite of the fact that the
+literal material of film is an image, and the primary sense modality
+used in its reception is sight, film does not belong to the visual arts.
+The art form that lies closest to film, according to Eisenstein, is
+poetry. The structure of cinema, in its compressed form, is well
+exemplified by haiku---which Eisenstein even claims is more cinematic
+than the Japanese cinema of his time.
+
+All the mentioned similarities in their thinking about cinema
+notwithstanding, Langer and Eisenstein ultimately have different foci.
+Langer is not interested in particular films but rather in the deep
+structure of film as an art form---in its virtual dimension. Her claim
+that the world represented by film is dream-like does not pertain to
+individual films and cannot be used to evaluate them as more or less
+cinematic (as Eisenstein did when he, ironically, glossed over Japanese
+cinema as less cinematic than Japanese haiku). Cinema, in its virtual
+form, represents an egocentric materialization of the symbolic instinct,
+which, in actual films, can be developed in various ways.
+
+What is even more striking is that Langer does not mention montage,
+despite it being both the main subject of Eisenstein's essay she quotes
+and the key cinematographic element in his view. Instead, as she
+declares at the outset of the Note, it is camera movement that she
+regards as the fundamental cinematographic principle. How could we
+approach montage in a Langerian way?
+
+In both his films and writing, Eisenstein pursues a specific development
+of the dream-like material Langer identifies in cinema. I would like to
+argue that the elaboration Eisenstein offers in his films encompasses
+both forms mentioned earlier in the context of Langer's description of a
+dream as material for another symbolic form. Dream, Langer suggests in
+the seventh chapter of \emph{Philosophy in a New Key}, can evolve into
+supernatural narratives, such as fairy-tales, which aim at satisfying
+private fantasies, as well as into myths, which are saturated with
+impersonal or even cosmological values. In Eisenstein's film work,
+particularly in his use of montage, one can encounter both types of
+dream development.
+
+In the former case, Eisenstein uses film montage to materialize
+\emph{private} fantasies. The best example can be found in his first
+film fragment, \emph{Glumov's Diary} (screened as a part of his theatre
+production of Ostrovskij's play \emph{Enough Stupidity in Every Wise
+Man}). In this work, montage is used to represent---literally
+objectify---the secret objects of one's dreams. The power of film, which
+Eisenstein satirically comments on in the fragment, is to give one what
+he or she desires.
+
+\vspace{.3in}
+
+\begin{figure}
+    \centering
+    \includegraphics{graphics/glumov1.jpeg}
+    \label{fig:one}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics{graphics/glumov2.jpeg}
+    \label{fig:two}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics{graphics/glumov3.jpeg}
+    \label{fig:three}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics{graphics/glumov4.jpeg}
+    \label{fig:four}
+    \vspace{.2in}
+    \noindent\small{Stills from \emph{Glumov's Diary} (Wikimedia Commons)}
+\end{figure}
+
+
+
+
+\newpage In most of his films, however, Eisenstein uses montage in the opposite
+way; its main power consists in precisely \emph{not} giving one what
+they want. The spectator is instead prompted to fill in the missing
+part. This, Eisenstein believes, can help viewers to move beyond their
+personal perspective and focus on the meaning instead---entering the
+world of ideas. Using Langer's terminology, the kind of dreaming
+Eisenstein orchestrates in most of his films aims to construct a myth
+rather than to offer a satisfying image of a fantasy we happen to share.
+
+\hypertarget{iv}{%
+\section{IV.}\label{iv}}
+
+The main thread of this paper went from the final chapter of
+\emph{Philosophy in a New Key} to the appendix of \emph{Feeling and
+Form}. The crisis of modernity that Langer described almost eighty years
+ago was, in her analysis, characterized by the dominance of one symbolic
+activity over the other---discursive symbolism over presentational
+symbolism. I argued that, for Langer, the arts---and the art of film in
+particular---may be understood as playing a crucial role in revitalizing
+non-discursive thinking and thereby restoring balance to the distorted
+mental life of society.
+
+In my reading of the ``Note on the Film,'' I emphasized two related
+ideas: first, Langer's claim that cinema is like a dream, and second,
+her categorization of film under the heading of poetic arts. Looking
+back at her description of the dream experience in \emph{Philosophy in a
+New Key}, I argued that the mode of experience familiar from dreaming is
+related to the lower symbolic forms that human thought assumed in
+``primitive'' societies. I called this mode ``symbol-perception'' and
+contrasted it with ``sign-perception,'' a purely instrumental
+``survival'' mode that Langer associates with animal behavior.
+
+Film, Langer further claims in the Note, is one of the poetic arts. This
+assertion makes film an important addition to the two poetic arts Langer
+explores in greater depth in her book: the art of literature, which is
+characteristic by past-oriented narration, and the art of drama, whose
+narration is future-oriented. Film is, so to speak, the missing third,
+as its characteristic dream-like mode of presentation roots one in the
+present; ``{[}T{]}he dream mode in an endless now.''\footnote{\emph{Ibid}.\emph{,}
+  415.} I suggested that symbol-perception (as opposed to
+sign-perception) is similarly present-oriented in its understanding the
+experienced world as meaningful without assigning it any concrete
+meaning.
+
+In the final chapter of \emph{Philosophy in a New Key}, Langer describes
+her contemporary society in terms of crisis. This crisis can be analyzed
+in two steps: First, science, as the most refined form of discursive
+symbolism, has not only become the predominant epistemic relationship to
+the world but has also absorbed an instrumental orientation focused on
+effective, powerful, and profitable engagement with the world. Second,
+this conception of knowledge as instrumentalized science, materialized
+in technology, has eventually infiltrated all mental attitudes that
+humans adopt toward the world and toward themselves. As a consequence,
+the opportunities for symbol-perception, as well as the very capacity
+for it, have been weakened.
+
+I argued that Langer's analysis of moving pictures as a ``dreamed
+reality'' on the screen, which can ``move forward and backward because
+it is really an eternal and ubiquitous virtual present,''\footnote{\emph{Ibid.}}
+makes film a particularly fitting tool for an initiation and
+preservation of symbol-perception in modern humans. It is important to
+note that this is not Langer's explicit claim; she does not revisit her
+critique of modern civilization, outlined in 1942, when discussing what
+she, somewhat surprisingly, called ``a new art'' eleven years later. Her
+only suggestion in this context lies in her alluding to Sergei
+Eisenstein, who famously used his film to modify and invigorate the
+thoughts of spectators. I argued, nevertheless, that there are more
+differences than similarities between their respective views of cinema.
+
+Finally, let me compare my interpretation of the Note to the only work
+on Langer's inchoate conception of cinema known to me: \emph{A New Note
+on the Film} by Trisha Curran. Although my claim that film is an apt
+means of making modern humans dream again can be criticized as too
+far-fetched and ultimately unverifiable, it seems to have one clear
+advantage: my interpretation remains more faithful to Langer's ``Note on
+the Film'' than Curran's thorough reconstruction of Langerian film
+aesthetics.
+
+In the book, Curran argues against Langer's claim that cinematic mode of
+presentation is the same as the one known from dreams:
+
+\begin{quote}
+Film images bear as little relation to dream images as stream of
+consciousness writing bears to stream of consciousness mental activity.
+Our dreams are no more Citizen Kane than our idle thought processes are
+Mrs. Dalloway. But our dreams are ours. We possess them, and we analyze
+them. The films we view are separate from us. We go to a film. Our
+subconscious is not in control, thus we view things we would never
+dream; our inner censor is free to concede to the Motion Picture
+Association.\footnote{Curran, \emph{A New Note on the Film}, 31.}
+\end{quote}
+
+\noindent Although seemingly convincing, this critique, in my view, is based on a
+false presupposition. Curran conceives of the dream as a private affair,
+whose material is subject to psychoanalysis. For Langer, however, the
+dream is a lower symbolic form, characteristic of a specific perceptual,
+emotional, and cognitive engagement with the world. I emphasized that
+the analogy between dreams and films Langer suggested pertains not to
+the content of dreams but to their form.
+
+``She had seen far too few films,'' Curran explains in her \emph{New
+Note}: ``Thus her observation that `the immediacy of everything in a
+dream is the same for film'.'' And, Curran continues, ``nor did
+{[}Langer{]} comprehend the nature of filmic space.''\footnote{\emph{Ibid.}}
+Finally, Curran argues that film is not a poetic art at all, as Langer
+suggested, but rather a cinematic art. In essence, nearly all of
+Langer's claims about film are dismissed one by one. Curran's aim was to
+write a \emph{new} note on film and for that, I suppose, she felt it
+necessary first to discard the old one.
+
+Contrary to Trisha Curran, my intention in this paper is not to write a
+new note on film to replace the old one but rather to flesh it out and
+reinvigorate it using the resources available within Langer's
+philosophical work.
+
+
+
+\hypertarget{acknowledgments}{%
+\section{Acknowledgments}\label{acknowledgments}}
+
+The first version of the paper was written for the occasion of the
+International Philosophy of Culture Week, which took place in Warsaw in
+June 2019. I would like to thank the organizers---Randall Auxier,
+Przemysław Bursztyka, Eli Kramer and Marcin Rychter---for organizing
+this inspiring encounter of scholars, and one of the speakers at the
+event, Adrienne Dengerink Chaplin, whose deep acquaintance with Susanne
+Langer's philosophy I was happy to benefit from during personal
+conversations. Her newly published book \emph{The Philosophy of Susanne
+Langer. Embodied Meaning in Logic, Art and Feeling} (London: Bloomsbury
+Academic, 2020) would have been much more present in this essay, if I
+had chance to read it earlier than in the last stage of writing this
+paper. I am also grateful to the anonymous referees for \emph{Eidos. A
+Journal for Philosophy of Culture} for their valuable comments and
+suggestions. My work on revising the paper for its republication was
+supported by the Czech Science Foundation (GAČR) under the project
+``Susanne K. Langer: Cognitive Aesthetics'' (GA25-17273S).
+
+
+\section{Bibliography}\label{bibliography}
+
+\begin{hangparas}{.25in}{1} 
+
+
+
+Chaplin, Adrienne Dengerink. \emph{The Philosophy of Susanne Langer:
+Embodied Meaning in Logic, Art and Feeling}. London: Bloomsbury
+Academic, 2020. \url{https://doi.org/10.5040/9781350030565}.
+
+Chaplin, Adrienne Dengerink. ``Langer's Logic of Signs and Symbols: Its
+Sources and Applications.'' \emph{Eidos. A Journal for Philosophy of
+Culture} 3, no. 4 (2019): 44--54.
+\url{https://doi.org/10.14394/eidos.jpc.2019.0041}.
+
+Curran, Trisha. \emph{A New Note on the Film: A Theory of Film Criticism
+Derived from Susanne K. Langer's Philosophy of Art.} New York: Arno
+Press, 1980.
+
+Eisenstein, Sergei. \emph{Film Form: Essays in Film Theory}. Edited and
+translated by Jay Leyda. New York and London: Harcourt Brace Jovanovich,
+1949.
+
+Eisenstein, Sergei. \emph{The Film Sense.} Edited and translated by Jay
+Leyda. New York: Meridian Books, 1957.
+
+Gibson, James Jerome. ``The Theory of Affordances.'' In
+\emph{Perceiving, Acting, and Knowing: Toward an Ecological Psychology},
+edited by Robert Shaw and John Bransford, 67--82. Hillsdale, NJ:
+Lawrence Erlbaum.
+
+Langer, Susanne K. \emph{Feeling and Form.} New York: Charles Scribner's
+Sons, 1953.
+
+Langer, Susanne K. \emph{Philosophy in a New Key: A Study in Symbolism
+of Reason, Art, and Rite}. New York and Toronto: New American Library,
+1954.
+
+
+
+\end{hangparas}
+
+
+\end{document}
