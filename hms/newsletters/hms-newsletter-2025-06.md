@@ -9,7 +9,7 @@
 
 The next remote session of the [Working Group on the History of Media Studies](https://www.chstm.org/group/history-media-studies) will be Wednesday, September 17, 14:00–15:00 UTC (10am–11am EDT)—devoted to a working paper by member Angela Xiao Wu. Details, a Zoom link, and the paper download will be added to the [Working Group page](https://www.chstm.org/group/history-media-studie) soon. 
 
-Hosted by the [Consortium for History of Science, Technology and Medicine](https://www.chstm.org/history-media-studies) (CHSTM), the Working Group Open to anyone interested in the history of the media studies fields. [Instructions to join](https://hms.mediastudies.press/working-group) are [here](https://hms.mediastudies.press/working-group). Questions? [Contact us](mailto:hms@mediastudies.press)*
+Hosted by the [Consortium for History of Science, Technology and Medicine](https://www.chstm.org/history-media-studies) (CHSTM), the Working Group Open to anyone interested in the history of the media studies fields. [Instructions to join](https://hms.mediastudies.press/working-group) are [here](https://hms.mediastudies.press/working-group). Questions? [Contact us](mailto:hms@mediastudies.press)
 
 
 <br>
