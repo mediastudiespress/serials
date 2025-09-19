@@ -1,0 +1,1919 @@
+% see the original template for more detail about bibliography, tables, etc: https://www.overleaf.com/latex/templates/handout-design-inspired-by-edward-tufte/dtsbhhkvghzz
+
+\documentclass{tufte-handout}
+
+%\geometry{showframe}% for debugging purposes -- displays the margins
+
+\usepackage{amsmath}
+
+\usepackage{hyperref}
+
+\usepackage{fancyhdr}
+
+\usepackage{hanging}
+
+\usepackage{longtable}
+
+\hypersetup{colorlinks=true,allcolors=[RGB]{97,15,11}}
+
+\fancyfoot[L]{\emph{History of Media Studies}, vol. 5, 2025}
+
+
+% Set up the images/graphics package
+\usepackage{graphicx}
+\setkeys{Gin}{width=\linewidth,totalheight=\textheight,keepaspectratio}
+\graphicspath{{graphics/}}
+
+\title[Los estudios sobre medios indígenas en Argentina]{Perspectivas en torno a la configuración histórica de los estudios sobre medios indígenas en Argentina} % longtitle shouldn't be necessary
+
+% The following package makes prettier tables.  We're all about the bling!
+\usepackage{booktabs}
+
+% The units package provides nice, non-stacked fractions and better spacing
+% for units.
+\usepackage{units}
+
+% The fancyvrb package lets us customize the formatting of verbatim
+% environments.  We use a slightly smaller font.
+\usepackage{fancyvrb}
+\fvset{fontsize=\normalsize}
+
+% Small sections of multiple columns
+\usepackage{multicol}
+
+% Provides paragraphs of dummy text
+\usepackage{lipsum}
+
+% These commands are used to pretty-print LaTeX commands
+\newcommand{\doccmd}[1]{\texttt{\textbackslash#1}}% command name -- adds backslash automatically
+\newcommand{\docopt}[1]{\ensuremath{\langle}\textrm{\textit{#1}}\ensuremath{\rangle}}% optional command argument
+\newcommand{\docarg}[1]{\textrm{\textit{#1}}}% (required) command argument
+\newenvironment{docspec}{\begin{quote}\noindent}{\end{quote}}% command specification environment
+\newcommand{\docenv}[1]{\textsf{#1}}% environment name
+\newcommand{\docpkg}[1]{\texttt{#1}}% package name
+\newcommand{\doccls}[1]{\texttt{#1}}% document class name
+\newcommand{\docclsopt}[1]{\texttt{#1}}% document class option name
+
+
+\begin{document}
+
+\begin{titlepage}
+
+\begin{fullwidth}
+\noindent\LARGE\emph{Article
+} \hspace{99mm}\includegraphics[height=1cm]{logo3.png}\\
+\noindent\hrulefill\\
+\vspace*{1em}
+\noindent{\Huge{Perspectivas en torno a la configuración\\\noindent histórica de los estudios sobre medios\\\noindent indígenas en Argentina\par}}
+
+\vspace*{1.5em}
+
+\noindent\LARGE{Mariana de los Ángeles Ortega}\par\marginnote{\emph{Mariana de los Ángeles Ortega, ``Perspectivas en torno a la configuración histórica de los estudios sobre medios indígenas en Argentina,'' \emph{History of Media Studies} 5 (2025), \href{https://doi.org/10.32376/d895a0ea.19043481}{https://doi.org/ 10.32376/d895a0ea.19043481}.} \vspace*{0.75em}}
+\vspace*{0.5em}
+\noindent{{\large\emph{Universidad Nacional de Salta}, \href{mailto:marortega.012@gmail.com}{marortega.012@gmail.com}\par}} \marginnote{\href{https://creativecommons.org/licenses/by-nc/4.0/}{\includegraphics[height=0.5cm]{by-nc.png}}}
+
+% \vspace*{0.75em} % second author
+
+% \noindent{\LARGE{<<author 2 name>>}\par}
+% \vspace*{0.5em}
+% \noindent{{\large\emph{<<author 2 affiliation>>}, \href{mailto:<<author 2 email>>}{<<author 2 email>>}\par}}
+
+% \vspace*{0.75em} % third author
+
+% \noindent{\LARGE{<<author 3 name>>}\par}
+% \vspace*{0.5em}
+% \noindent{{\large\emph{<<author 3 affiliation>>}, \href{mailto:<<author 3 email>>}{<<author 3 email>>}\par}}
+
+\end{fullwidth}
+
+\vspace*{1em}
+
+
+\hypertarget{resumen}{%
+\section{Resumen}\label{resumen}}
+
+El objetivo de este artículo es analizar el curso histórico de los
+estudios sobre comunicación indígena en Argentina dentro del contexto
+amplio de Latinoamérica. Para ello, indaga en los conceptos,
+instituciones y biografías de los actores involucrados en el proceso de
+emergencia e incipiente institucionalización de un campo analítico
+propio desde principios de los 2000 hasta la actualidad. Busca
+caracterizar las dimensiones analíticas y destacar la incidencia del
+contexto socio-político en el nacimiento del interés por investigar este
+fenómeno. Por último, señala el carácter interdisciplinario, emergente y
+liminal de esta arena epistémica. El texto se apoya en el relevamiento y
+análisis de la producción bibliográfica generada y en la consulta a
+investigadores pioneros.
+
+\hypertarget{abstract}{%
+\section{Abstract}\label{abstract}}
+
+The aim of this article is to analyze the historical course of
+Indigenous communication studies in Argentina within the broader context
+of Latin America. To this end, it explores the concepts, institutions
+and biographies of the actors involved in the process of emergence and
+incipient institutionalization of an analytical field of its own from
+
+
+\vspace*{3em}
+
+\noindent{\emph{History of Media Studies}, vol. 5, 2025}
+
+\pagebreak\noindent the early 2000s to the present day. It seeks to characterize the
+analytical dimensions and to highlight the incidence of the
+socio-political context in the birth of interest in researching this
+phenomenon. Finally, it points out the interdisciplinary, emergent and
+liminal character of this incipient body of studies. The text is based
+on the survey and analysis of the bibliographical production generated
+and consultation with pioneering researchers.
+
+\enlargethispage{2\baselineskip}
+
+
+\vspace{.1in}
+
+\hypertarget{introduccin}{%
+\section{Introducción}\label{introduccin}}
+
+Este texto se propone identificar qué perspectivas analíticas se
+visualizan en torno a la configuración histórica de los estudios sobre
+comunicación indígena en Argentina.\footnote{Liliana Lizondo y Magdalena
+  Doyle, ed. \emph{Pueblos Indígenas y territorios mediáticos. Estudios
+  sobre comunicación indígena en Argentina}. (Bogotá: FES Comunicación,
+  2023).} Para ello, se basa en el modelo de «constelación de
+disciplinas y campos sociales relacionados»\footnote{Maria Löblich y
+  Andreas Matthias Scheu, «Writing the history of communication studies:
+  A sociology of science approach», \emph{Communication Theory}, n. º 21
+  (2011), 6.} propuesto para el análisis del curso histórico de los
+estudios de comunicación. El artículo se organiza del siguiente modo: en
+primer lugar, aborda los contextos, enfoques y diferentes perspectivas
+disciplinares que marcaron la constitución del campo de análisis sobre
+comunicación indígena en Latinoamérica, prestando especial atención a
+los conceptos elaborados por los propios pueblos originarios\footnote{En
+  este texto consideramos a la palabra \textless pueblo\textgreater{}
+  como sustantivo colectivo, seguida de los adjetivos
+  \textless indígena\textgreater{} u \textless originario\textgreater.
+  Nos basamos en el glosario de la guía de \textless{} Recomendaciones
+  para el tratamiento mediático sobre pueblos indígenas\textgreater{}
+  elaborada por el Instituto Nacional de Asuntos Indígenas y la
+  Defensoría del Público de Argentina. Si bien se reconocen diferencias
+  entre ambas denominaciones, se sugiere el uso de las dos categorías.
+  Asimismo, empleamos las minúsculas para referir a ambos conceptos,
+  apoyándonos en las reglas de escritura de los sustantivos colectivos
+  en español.}. En segundo lugar, presenta un recorrido temporal sobre
+los momentos que determinaron el surgimiento de las primeras
+investigaciones sobre expresiones mediáticas de pueblos indígenas en
+Argentina. A continuación, analiza las ideas/conceptos, métodos,
+instituciones y actuaciones profesionales de los actores que
+intervinieron en la formación de un campo de interés común sobre el
+fenómeno de los medios indígenas, hasta llegar al planteo de
+institucionalización. Por último, recupera las discusiones y
+anudamientos conceptuales que prevalecen en el estudio de este fenómeno.
+
+
+\hypertarget{metodologa}{%
+\section{Metodología}\label{metodologa}}
+
+Como hemos dicho, para el desarrollo de esta investigación nos apoyamos
+en el modelo de «constelación de disciplinas y campos sociales
+relacionados», el cual sugiere un formato de análisis aplicable al curso
+histórico de los estudios de comunicación. Esta propuesta es definida
+como «un marco analítico y heurístico que consiste en un sistema de
+categorías»,\footnote{Löblich y Scheu, «Writing the history of
+  communication studies», 7.} entre ellas las ideas o conceptos,
+instituciones y biografías de los investigadores. Dichas categorías «no
+solo ayudan a estructurar el tema de importancia, sino que también
+orientan todo el proceso de investigación al igual que la producción y
+elección de fuentes»\footnote{Íbid.}. La revisión de cada una de estas
+dimensiones permite una aproximación al entendimiento de la complejidad
+de las
+
+
+ \end{titlepage}
+
+% \vspace*{2em} | to use if abstract spills over
+
+
+
+\noindent  interacciones y debates que van modelando la formación de campos
+de conocimiento, en el sentido bourdieano\footnote{Pierre Bourdieu, «El
+  campo científico», \emph{Redes: revista de estudios sociales de la
+  ciencia} 1, n.º 2 (1994).} de lugares de lucha y despliegue de
+estrategias, posiciones y relaciones de fuerzas entre diferentes agentes
+en torno a la conservación o subversión de la autoridad científica.
+
+
+Para la puesta en práctica de este modelo nos basamos en la consulta y
+examinación de fuentes bibliográficas (artículos publicados en revistas
+académicas, ponencias presentadas a congresos, artículos de libros,
+tesis de posgrado y tesinas de grado) generadas por los docentes e
+investigadores que fueron aportando al abordaje del tema en cuestión,
+como así también en la realización de entrevistas a investigadores de
+las universidades nacionales de Salta y Jujuy, quienes se dedican al
+estudio del fenómeno de los medios de comunicación indígenas en la
+Argentina. Estas comunicaciones fueron hechas de modo virtual y
+presencial, entre finales de 2024 y los primeros meses de 2025. Con las
+entrevistas quisimos conocer la mirada de actores universitarios
+pioneros en la aproximación a experiencias mediáticas indígenas, a fin
+de identificar la participación de las universidades, y también de
+comprender desde cuándo y cómo dichas experiencias se convirtieron en
+objetos de interés para el estudio académico.
+
+Con este artículo no pretendemos ofrecer una lectura cerrada o acabada
+sobre la historia de los estudios de comunicación indígena en Argentina;
+simplemente queremos poner de relieve algunas consideraciones sobre los
+procesos y aportes que confluyen en la definición de un naciente campo
+académico propio.
+
+\hypertarget{caracterizacin-de-la-comunicacin-indgena-en-amrica-latina-y-perspectivas-analticas}{%
+\section{Caracterización de la comunicación indígena en América
+Latina\\\noindent y perspectivas
+analíticas}\label{caracterizacin-de-la-comunicacin-indgena-en-amrica-latina-y-perspectivas-analticas}}
+
+Tal como señalan Arcila-Calderón, Barranquero y González
+Tanco,\footnote{Carlos Arcila Calderón, Alejandro Barranquero y Eva
+  González Tanco, ``From media to buen vivir: Latin American approaches
+  to Indigenous Communication'', \emph{Communication Theory}, n.º 28
+  (2018), 181.} para abordar la temática «comunicación indígena» en
+Latinoamérica es necesario advertir que se trata de una categoría «aún
+en construcción» que se presenta como «resbaladiza y
+homogeneizadora»,\footnote{Alejandro Barranquero-Carretero y Eva
+  González-Tanco, «Editorial», \emph{Anuario Electrónico de Estudios en
+  Comunicación Social Disertaciones} 11, n.º 2 (2018).} rasgos que
+dificultan la posibilidad de ofrecer certezas, si es que ello fuera
+posible, sobre un tópico de interés que todavía no alcanzamos a
+dimensionar. Pese a ello, dentro de la Escuela Latinoamericana de
+Comunicación\footnote{José Marques de Melo, \emph{Pensamiento
+  comunicacional latinoamericano. Entre el saber y el poder} (Sevilla:
+  Comunicación Social Ediciones y Publicaciones, 2009).} se han generado
+esfuerzos por abordar el fenómeno de la comunicación de los pueblos
+indígenas a partir de esquemas de análisis que dilucidan aspectos poco
+conocidos, como los marcos históricos de surgimiento de este tipo de
+experiencias, las matrices epistemológicas predominantes en la
+generación de teoría sobre estas referencias empíricas, y contribuciones
+que permiten visualizar un emergente campo de estudio.
+
+\pagebreak La dificultad para categorizar un fenómeno tan complejo responde a la
+diversidad de atravesamientos culturales, étnicos e históricos que se
+emplazan en las diferentes formas de comunicación que ponen en prácticas
+los sujetos políticos «pueblos indígenas» en Latinoamérica. Dos factores
+resultan sobresalientes: la trama de continuidades y discontinuidades
+socio-culturales, territoriales y económicas que acarreó la conquista y
+colonización de los territorios que actualmente se inscriben en
+diferentes estados nacionales o plurinacionales; y la incorporación de
+nuevas tecnologías, entre ellas, los medios de comunicación modernos
+---tales como la radio, la televisión, los vídeos y, más recientemente,
+el fenómeno de internet--- en las existencias cotidianas de los
+innumerables espacios que habitan los pueblos indígenas de esta parte
+del continente americano.
+
+Por lo tanto, cuando se quiere abordar la comunicación de los pueblos
+indígenas es imposible soslayar su larga historia, tanto para
+referenciar al tiempo pre-hispánico, es decir, a la comunicación antes
+de Colón tal como la definen Beltrán-Salmón et al.;\footnote{Luis Ramiro
+  Beltrán-Salmón et al., \emph{La comunicación antes de Colón. Tipos y
+  formas en Mesoamérica y Los Andes} (La Paz: Centro Interdisciplinario
+  Boliviano de Estudios de la Comunicación, 2008).} como para dar cuenta
+de las imbricaciones, desplazamientos y nuevos modos de relacionamiento
+generados a partir de la adopción de tecnologías derivadas de Occidente.
+Todo esto se traduce en que aquello a lo que llamamos comunicación
+indígena aluda a un conjunto heterogéneo de prácticas, sensibilidades,
+posibilidades de conexión sensorial y espiritual entre humanos y no
+humanos que trasciende a la tecnología moderna como esquema de
+definición. En consecuencia, es preciso realizar una distinción entre
+comunicación indígena mediática o aquella que está atravesada por alguna
+forma de mediación tecnológica moderna (radio, televisión, plataformas
+digitales, entre otras) y comunicación indígena integral, que incluye
+aspectos relativos a la acción de comunicarse entre grupos humanos y
+también a la puesta en relación con agencias espirituales, que no
+necesariamente están mediadas por un dispositivo tecnológico.
+
+En América Latina, la participación de integrantes de pueblos
+originarios en la gestión de medios de comunicación se remonta al
+nacimiento de la oleada de experiencias de comunicación alternativa,
+popular, educativa, comunitaria que data de finales de 1940\footnote{Doyle
+  (2015) revela que las primeras experiencias de participación indígena
+  en medios de comunicación datan de 1950, algunas de las primeras
+  experiencias son: radio San Gabriel de Bolivia (1955); radio Onda Azul
+  de Perú (1958), radio Pío XII de Bolivia (1959), entre otras.}. Si
+bien la participación indígena en estos procesos está documentada, por
+ejemplo, en el caso de las radios mineras sindicales de Bolivia durante
+el período 1940--1950,\footnote{Karina Herrera Miller, \emph{¿Del grito
+  pionero...al silencio? Las radios sindicales mineras en la Bolivia de
+  hoy} (La Paz: Plural Editores, 2006).} en aquel momento las
+identificaciones étnicas quedaban al margen o eran eclipsadas por el
+predominio de otros factores, como los de clase o las reivindicaciones
+de sectores rurales-campesinos.\footnote{Algunas de las radios pioneras
+  en Latinoamérica son: en Bolivia, radio Mallku Quiririyá (1990,
+  Potosí); Ondas del Titicaca (1993); en Chile, la agencia de noticias
+  Prensa Indígena (1994), el boletín de noticias Mapuexpress y el portal
+  de internet Colectivo Lientur de Contrainformación (2000) que luego se
+  transformó en el periódico Azkintuwe.}
+
+Este solapamiento comenzó a cambiar recién durante las décadas de 1980 y
+1990 con la aparición de las primeras experiencias de medios
+auto-reconocidas como indígenas. En el plano regional, esta
+transformación no fue fortuita, más bien fue resultado del impacto del
+proceso definido como de «emergencia étnica»,\footnote{José Bengoa,
+  \emph{La emergencia indígena en América Latina} (Santiago de Chile:
+  Fondo de Cultura Económica, 2000).} que alude al camino progresivo por
+el cual los pueblos indígenas alcanzaron nuevas condiciones para el
+reconocimiento de derechos específicos en los sistemas nacionales e
+internacionales desde 1980 en adelante, desplazamiento que también se
+tradujo en la adquisición de herramientas para el ejercicio de
+modalidades de ciudadanía en clave étnica. Este momento,
+paradójicamente, coincidió con la consolidación del neoliberalismo como
+sistema político-económico dominante en los estados
+latinoamericanos.\footnote{Fabiola Escárzaga, «La emergencia indígena
+  contra el neoliberalismo», \emph{Política y Cultura}, n.º 22 (2004).}
+
+En torno a este nuevo escenario, durante la primera década de los 2000,
+en el contexto de Abya Yala, los pueblos indígenas articularon sus
+reclamos colectivos de larga data con la demanda por el reconocimiento
+de una comunicación propia. Fueron representantes directos de los
+pueblos originarios quienes elaboraron los primeros conceptos sobre
+comunicación indígena, entre ellos, podemos mencionar al manifiesto
+impulsado en 2003 por el Caucus Indígena del Sur, Centro y México, el
+cual expresa:
+
+\begin{quote}
+Los Pueblos Indígenas reafirmamos nuestras propias formas e instrumentos
+de comunicación tradicional, como válidos para una comunicación humana
+que enriquezca la vida social, con equilibrio y respeto entre los seres
+humanos y la Madre Naturaleza. La comunicación es una práctica social
+cotidiana y milenaria de los pueblos Indígenas que es fundamental para
+la convivencia armónica entre los seres humanos y la naturaleza. Para
+los pueblos Indígenas la comunicación es integral pues parte de una
+cosmovisión en la cual todos los elementos de la vida y la naturaleza se
+hallan permanente relacionados e influidos entre sí. Por esta razón la
+comunicación tiene como fundamento una ética y una espiritualidad en el
+que los contenidos, los sentimientos y los valores son esenciales en la
+comunicación.\footnote{Caucus Indígena del Sur, Centro y México,
+  «Declaración de los Pueblos Indígenas ante la Cumbre Mundial de la
+  Sociedad de la Información». \emph{América Latina en movimiento}, 12
+  de diciembre de 2003.}
+\end{quote}
+
+\noindent Con el mismo ánimo, la comunicación indígena también ha sido
+conceptualizada como una práctica:
+
+\begin{quote}
+Constitutiva del sujeto social indígena y de sus expresiones simbólicas,
+tejido nervioso de la trama o tejido que le da identidad sociocultural
+{[}incluyendo{]} innumerables expresiones como el habla, la vestimenta,
+los tejidos, los rituales que requieren ser más estudiados de manera
+integral y no sólo a partir del enfoque mediático o tecnológico
+moderno.\footnote{Jorge Agurto y Jahve Mescco, «La comunicación indígena
+  como dinamizadora de la comunicación para el cambio social». En
+  \emph{Actas del XI Congreso Latinoamericano de Investigadores en
+  Comunicación} (Montevideo: ALAIC, 2012), 4.}
+\end{quote}
+
+\noindent Considerando la importancia de proclamar una noción integral de
+comunicación que no remita solo a los medios de comunicación de origen
+occidental, los pueblos indígenas de Colombia han distinguido dos
+conceptos: una comunicación propia y una comunicación apropiada.
+Mientras que la primera refiere a los:
+
+\begin{quote}
+Principios consuetudinarios que están basados en la Ley de Origen o
+Derecho Mayor de los Pueblos Indígenas, y a prácticas tradicionalmente
+orales que involucran no solamente la relación entre seres humanos sino
+también entre estos y todos los demás seres y elementos de la naturaleza
+(materiales y espirituales).\footnote{Comisión Nacional de Comunicación
+  de los Pueblos Indígena, \emph{Política pública de comunicación de y
+  para los pueblos indígenas} (Bogotá: CONCIP, 2018), 8.}
+\end{quote}
+
+\noindent La comunicación apropiada alude a los «dispositivos tecnológicos y
+lenguajes provenientes de las sociedades no indígenas como la radio, la
+televisión, el cine, la internet, la telefonía, la fotografía, la
+prensa, entre otros medios».\footnote{Comisión Nacional de Comunicación
+  de los Pueblos Indígenas, \emph{Política pública de comunicación de y
+  para los pueblos indígenas,} 8\emph{.}} En estrecha conexión con este
+contraste, Agurto y Messco destacan la importancia de considerar a la
+comunicación de los pueblos indígenas no solo como experiencias
+participativas o no lucrativas. Por esta razón, proponen comprender a la
+comunicación indígena como expresión de:
+
+\begin{quote}
+La visión, demandas y propuestas de los pueblos indígenas, cuyo
+protagonismo social y político se ha incrementado en los últimos veinte
+años. Hablamos de una comunicación que responde a situaciones de
+exclusión, discriminación y hasta exterminio del sujeto histórico
+«pueblo indígena» que lucha por sobrevivir y conservar sus identidades
+en un mundo dominado por la globalización.\footnote{Agurto y Mescco,
+  \emph{La comunicación indígena como dinamizadora,} 1.}
+\end{quote}
+
+\noindent Habiendo presentado algunos acuerdos en cuanto al entendimiento de la
+comunicación indígena como una práctica integral, ancestral,
+extra-mediática o extra-tecnologías de la información modernas, en este
+artículo nos centraremos exclusivamente en las expresiones de
+comunicación mediática de los pueblos originarios o en los medios de
+comunicación indígenas. Dicho esto, en el contexto latinoamericano, los
+procesos de vinculación y adopción de instancias de acceso y uso de
+medios de comunicación tradicionales o digitales por parte de pueblos
+originarios han sido analizados desde distintas disciplinas, entre las
+que se destacan la comunicación y la antropología.
+
+En primer lugar, en cuanto a los marcos teóricos utilizados dentro del
+campo disciplinar de la comunicación, sobresalen herramientas analíticas
+derivadas de los estudios de comunicación alternativa, popular y
+comunitaria. Estos últimos han funcionado como andamiaje para el
+abordaje de medios indígenas que se definen también como comunitarios,
+permitiendo su comprensión como experiencias que persiguen fines de
+transformación y/o cambio social. Algunos análisis destacan la
+innovación o dinamismo que incorporan los medios indígenas dentro de la
+tradición de comunicación alternativa en Latinoamérica, subrayando, por
+ejemplo, cómo ciertos aportes, entre ellos el concepto del «buen
+vivir»,\footnote{Adalid Contreras-Baspineiro,
+  «Aruskipasipxañanakasakipunirakispawa: We must communicate each other,
+  despite the differences, and solve them through communication»,
+  \emph{Razón y Palabra}, n. º 93 (2016).} alientan nuevos enfoques con
+que mirar y poner en práctica la comunicación indígena y la comunicación
+para el cambio social.\footnote{Alejandro Barranquero-Carretero y Chiara
+  Sáez-Baeza, «Comunicación y buen vivir. La crítica descolonial y
+  ecológica a la comunicación para el desarrollo y el cambio social»,
+  \emph{Palabra Clave 18}, n.º 1 (2015).}
+
+Una investigación que revisa la emergencia de los estudios sobre
+comunicación indígena dentro el campo latinoamericano de la comunicación
+caracteriza a este grupo de abordajes como un ``emergente tópico de
+debates''\footnote{Arcila Calderón, Barranquero y González Tanco,
+  \emph{From media to buen vivir}, 181.} que se afianza al ritmo del
+desarrollo de los estudios indígenas en general. La formulación de este
+marco de análisis académico se fue tejiendo entre la diversidad propia
+de la riqueza cultural de cada país y los puntos en común que delimitan
+un mapa analítico regional en Latinoamérica. Según revela este texto, el
+nacimiento de los primeros estudios sobre comunicación indígena se
+produjo durante las primeras décadas del siglo XXI y su estructura gira
+en torno a los siguientes cuatro debates: el fenómeno de la apropiación
+de tecnologías de la información por parte de pueblos originarios; la
+regulación y elaboración de políticas de comunicación; la relación con
+la comunicación alternativa; y la incorporación de temáticas como el
+«buen vivir». Agregamos a este ordenamiento la creciente colocación de
+los estudios decoloniales en los corpus teóricos de investigaciones
+sobre comunicación indígena en la academia latinoamericana.\footnote{Eliana
+  Herrera Huérfano, Francisco Sierra Caballero y Carlos Del Valle Rojas,
+  «Hacia una epistemología del sur. Decolonialidad del saber/poder
+  informativo y nueva comunicología latinoamericana. Una lectura crítica
+  de la mediación desde las culturas indígenas», \emph{Chasqui. Revista
+  Latinoamericana de Comunicación}, n.º 131 (2016).}
+
+Con un interés similar, Doyle\footnote{Magdalena Doyle, «Los medios
+  masivos de comunicación en las luchas de los pueblos indígenas.
+  Abordaje desde los estudios sobre comunicación en América Latina»
+  (tesis de maestría, Universidad Nacional de Córdoba, 2013); Magdalena
+  Doyle, «Matrices y vertientes de pensamiento sobre los medios
+  indígenas en América Latina», \emph{History of Media Studies} 2
+  (2022).} precisa que recién desde de la primera década de los 2000 se
+observa la enunciación de estudios sistemáticos sobre comunicación
+indígena en Latinoamérica. Esta autora propone tres etapas para
+clasificar y organizar las trayectorias de investigación que dieron
+forma a un campo de tematización académica sobre comunicación indígena:
+el primero, que comprende el período entre 1970 hasta mediados de 1980,
+atravesado por las tensiones con los marcos analíticos de la
+comunicación alternativa, popular y comunitaria, y por el contrapunto
+entre las teorías de la dependencia y el modelo desarrollista. El
+segundo, a partir de 1985 y la primera década de los 90, momento bisagra
+para la definición posterior, cuando se visualizan las primeras
+investigaciones enfocadas en reflexionar sobre las particularidades
+culturales y étnicas de los incipientes medios de comunicación
+indígenas. Y, finalmente, una tercera etapa entre finales de los 90
+hasta 2022 aproximadamente, en la que se observan matrices definidas de
+estudios focalizados en, por un lado, los usos de las tecnologías de la
+comunicación modernas por parte de pueblos y comunidades indígenas, y,
+por otro, en la indagación de la relación entre comunicación e
+identidades étnicas en clave de negociación, construcción y
+performatividad dentro de contextos de mediatización. En este último
+período también se introdujeron pautas metodológicas centrales para el
+análisis académico, como la pertinencia de la perspectiva de los actores
+y la importancia de considerar las narrativas producidas directamente
+por los sujetos que integran las experiencias mediáticas. Por ejemplo,
+un estudio cuyo alcance se extiende a los medios indígenas de
+Latinoamérica, da cuenta del rol mediador estratégico de las tecnologías
+de la comunicación modernas en la producción y afianzamiento de los
+discursos de auto-determinación política y reconocimiento
+étnico-cultural entre el último cuarto del siglo XX y el primer decenio
+del XXI.\footnote{Juan Francisco Salazar, «Activismo indígena en América
+  Latina: estrategias para una construcción cultural de las tecnologías
+  de información y comunicación», \emph{Journal of Iberian and Latin
+  American Studies} 8, n.º 2 (2002).}
+
+En cuanto a las perspectivas teóricas preponderantes a lo largo de la
+historia de los estudios sobre comunicación indígena en América Latina,
+Doyle, Siares y Belloti\footnote{Magdalena Doyle, Emilse Siares y
+  Francesca Belloti, «Los medios de pueblos originarios en América
+  Latina: historia, aproximaciones y desafíos». En \emph{Hacia un
+  periodismo indígena}, comp. por Damián Andrada (Buenos Aires:
+  Universidad del Salvador, 2019), 203-218.} destacan tres dimensiones:
+el determinismo tecnológico ---el más frecuente--- de acuerdo al cual el
+acceso de los pueblos indígenas a las tecnologías de la información y
+comunicación supone condiciones de empoderamiento que impactan
+directamente en el mejoramiento de sus condiciones de vida; el
+instrumentalismo tecnológico y eventualmente difusionismo, que concibe
+al medio en función de su utilidad y eficacia; y, finalmente, en
+coincidencia con los trabajos precursores que marcaron la formación de
+una arena temática específica, se observa una perspectiva académica
+dispuesta a indagar en «los procesos de configuración de identidades en
+el espacio público mediatizado».\footnote{Doyle, Siares y Belloti,
+  \emph{Los medios de pueblos originarios en América Latina}, 211.}
+
+Hasta ahora, hemos mostrado que, desde la segunda mitad de los 90 hasta
+la actualidad, los estudios de comunicación indígena han disputado y
+ganado lugar en el corpus de investigaciones del campo latinoamericano
+de la comunicación. Movimiento que se hizo en paralelo a los
+levantamientos y grandes luchas encabezadas por los pueblos indígenas de
+los diferentes países de Latinoamérica, y en el escenario de
+consolidación de virajes trascendentales para el campo de la
+comunicación, como lo fueron, entre las décadas de los 80 y 90, los
+desplazamientos hacia el reconocimiento de la centralidad de la
+mediación de la cultura en los procesos comunicacionales. En parte,
+gracias a esta herencia, es que la comunicación se perfiló tempranamente
+como una de las vías analíticas para explicar el fenómeno del uso de
+medios de comunicación en pueblos indígenas.
+
+En segundo lugar, otra de las disciplinas que se interesa por el estudio
+de los medios indígenas es la antropología. Bajo el nombre de
+``antropología de medios'' se constituyó un sub-campo enfocado en el
+abordaje de las relaciones sociales y experiencias que se generan
+alrededor de los medios de comunicación. Dentro de este grupo de
+investigaciones, la etnografía se posicionó como una instancia
+metodológica privilegiada para ampliar el foco de comprensión de los
+medios de comunicación masivos, permitiendo identificar y observar:
+
+\begin{quote}
+No solo cómo los medios están impregnados en la vida cotidiana de las
+sociedades sino también cómo consumidores y productores están imbricados
+en universos discursivos, situaciones políticas, circunstancias
+económicas, marcos nacionales, momentos históricos y flujos
+transnacionales.\footnote{Faye D. Ginsburg, Lila Abu-Lughod y Brian
+  Larkin, \emph{Media worlds: Anthropology on new terrain} (Berkeley:
+  University of California Press, 2002), 2.}
+\end{quote}
+
+\noindent Aunque la «antropología de medios» sea en la actualidad una arena
+analítica con mayor grado de delimitación que en la primera década del
+siglo XXI, algunos debates generados sobre el lugar que esta disciplina
+ocupa en el marco de un escenario atravesado y compartido por las
+ciencias de la comunicación son oportunos para poner de relieve la trama
+plural y sinérgica que conforma el incipiente conjunto de estudios sobre
+medios indígenas que analizamos en este artículo. Esto es trabajado por
+la genealogía crítica de Askew,\footnote{Kelly Askew, «Introduction». En
+  \emph{The anthropology of media: a reader}, ed. por Kelly Askew y
+  Richard Wilk (Malden: Blackwell Publishers, 2002), 1-13.} quien
+identifica cuatro formas de entender a los medios desde la antropología:
+como textos mediáticos; tecnologías; contextos; o mediadores culturales.
+A su vez, estas categorías se corresponden con tradiciones epistémicas
+diferentes. Así, mientras los abordajes iniciales concebían a las
+tecnologías, en especial a las visuales, como textos, o sea como volumen
+de significados, desde las perspectivas posteriores, influenciadas por
+el giro interpretativista, los medios pasaron a ser analizados bajo el
+enfoque de la mediación cultural, por lo que las audiencias y públicos
+fueron visualizadas como agentes productores de sentidos situados en
+flujos de relaciones de poder. Finalmente, de acuerdo a esta mirada, la
+pertinencia de la antropología para tomar a los medios como objeto de
+estudio radica en el entendimiento de éstos como aspectos de la vida
+cotidiana,\footnote{Lila Abu-Lughod, «Interpretando la(s) cultura(s)
+  después de la televisión: sobre el método», \emph{Íconos}, n.º 24
+  (2006).} no demasiado diferentes a la ley, la economía o la religión,
+lo que en sus palabras se traduce en el rechazo a la «tendencia común de
+tratar al medio como separado de la vida social».\footnote{Askew,
+  «Introduction», 10.}
+
+\enlargethispage{\baselineskip}
+
+A raíz de la proximidad disciplinar que la antropología mantiene con
+poblaciones no occidentales, uno de los dominios más extendidos de este
+subcampo ha sido el de los medios indígenas o, más precisamente, el
+análisis de los procesos de apropiación e impacto de artefactos como
+radios, cámaras fotográficas, videos e internet en las dinámicas
+socio-culturales de numerosas poblaciones indígenas a lo largo del
+mundo. Pese a esta cercanía, el estudio de las mediaciones tecnológicas
+en las sociedades indígenas es aún considerado «un lugar secundario en
+las etnografías y en los estudios antropológicos sobre estos
+grupos».\footnote{Gemma Orobitg, «Antropología de los medios de
+  comunicación indígenas y afro en América Latina: una presentación»,
+  \emph{Disparidades. Revista de Antropología} 76, n.º 2 (2021): 2.}
+Trabajos como los de Ginsburg,\footnote{Faye D. Ginsburg, «Screen
+  memories: Resignifying the traditional in Indigenous Media». En
+  \emph{Media worlds. Anthropology on new terrain}, ed. por Faye D.
+  Ginsburg, Lila Abu-Lughod y Brian Larkin (Berkeley: University of
+  California Press, 2002), 39-57.} Turner\footnote{Terence Turner,
+  «Representation, politics, and cultural imagination in Indigenous
+  video. General points and Kayapo examples». En \emph{Media worlds.
+  Anthropology on new terrain}, ed. por Faye D. Ginsburg, Lila
+  Abu-Lughod y Brian Larkin (Berkeley: University of California Press,
+  2002), 75-89.} y Prins\footnote{Harald E. L. Prins, «Visual
+  anthropology». En \emph{A companion to the anthropology of American
+  Indians}, ed. por Thomas Biolsi (Malden: Blackwell Publishing, 2004),
+  506-525.} analizan los procesos de mediación cultural que se
+despliegan a partir de la incorporación y uso de tecnologías visuales,
+como el video, en sociedades indígenas. Tales indagaciones dan cuenta de
+la multiplicidad de agencias que se movilizan en torno a la apropiación
+de estos artefactos, mostrando, al igual que vimos en los estudios de
+comunicación, la importancia de centrar los abordajes en los procesos de
+mediación en que ocurren los usos de las tecnologías, desplazando así la
+centralidad asignada al término «medio». Estos análisis, además de
+introducir pautas metodológicas, muestran cómo, a través de la mediación
+cultural, los sujetos indígenas generan y recrean activamente instancias
+de representación, re-significación de memorias, resistencias y
+problematización de sus realidades e identidades en la cotidianeidad.
+
+Más cercano a nuestro interés, en Latinoamérica, el campo de estudios
+sobre comunicación indígena también recibió la influencia de
+contribuciones provenientes de la antropología. Sin pretender dar una
+mirada acabada, un conjunto de estudios se enfocó en el trabajo de campo
+con experiencias comunicacionales mediáticas lideradas por pueblos o
+comunidades indígenas,\footnote{Oscar Grillo, «Políticas de identidad en
+  internet. Mapuexpress: imaginario activista y procesos de
+  hibridación», \emph{Razón y Palabra}, n.º 54 (2006); Diego Mauricio
+  Cortés, «Radio indígenas y Estado en Colombia ¿Herramientas
+  ``políticas'' o instrumentos ``policivos''?», \emph{Chasqui. Revista
+  Latinoamericana de Comunicación}, n.º 140 (2019); Gemma Orobitg,
+  «Etnografía de los medios de comunicación indígenas y afroamericanos:
+  propuestas metodológicas», \emph{Revista Española de Antropología
+  Americana}, n.º 50 (2020); Gemma Orobitg y Roger Canals, «Hipertexto,
+  multivocalidad y multimodalidad para una etnografía sobre los medios
+  de comunicación: la web MEDIOS INDÍGENAS», \emph{Revista Española de
+  Antropología Americana}, n.º 50 (2020); Francisco Gil-García, Beatriz
+  Pérez Galán y Pedro Pitarch, «Fragmentos para una etnografía de las
+  radios comunitarias en América Latina», \emph{Disparidades. Revista de
+  Antropología} 76, n.º 2 (2021).} dando cabida a la emergencia de un
+agrupamiento conocido como «etnografía de medios indígenas».\footnote{Gemma
+  Orobitg et al., «Los medios indígenas en América Latina: Usos,
+  sentidos y cartografías de una experiencia plural», \emph{Revista de
+  Historia}, n.º 83 (2021); Orobitg, «Antropología de los medios de
+  comunicación indígenas».} En ellos sobresalen los aportes que la
+perspectiva etnográfica añade al universo de investigaciones que abordan
+fenómenos mediáticos de pueblos indígenas, especialmente, impulsando una
+crítica al énfasis puesto en el mensaje al momento de analizar estas
+instancias de mediatización. Precisamente, la etnografía viene a
+proponer un enfoque centrado en la acción de los sujetos sobre las
+tecnologías de la información modernas, buscando identificar qué
+relaciones, conexiones, usos y prácticas son habilitadas por este nexo
+en las formas de vida de cada población.
+
+A modo de resumen, presentamos las facetas o dimensiones que delinean de
+manera general los estudios de comunicación indígena en Latinoamérica.
+Primero, buscamos evidenciar las disciplinas que alimentan esta arena
+académica, destacando a la antropología y la comunicación. No alcanzamos
+a dar cuenta de la diversidad de trabajos que enriquecen este tema pues
+semejante tarea excede las finalidades de este artículo, simplemente
+quisimos esbozar los puntos de partida que cimentaron la aparición de
+investigaciones afines a este fenómeno, y su impacto en la modelación de
+un campo de estudios propio en esta región del continente americano. A
+su vez, tratamos de dar cuenta de los principales anudamientos teóricos
+que se visualizan en el estudio de la comunicación indígena.
+
+\hypertarget{breve-repaso-histrico-por-los-plazos-de-la-comunicacin-indgena-en-argentina}{%
+\section{Breve repaso histórico por los plazos de la comunicación\\\noindent indígena en
+Argentina}\label{breve-repaso-histrico-por-los-plazos-de-la-comunicacin-indgena-en-argentina}}
+
+Para ubicar el contexto de surgimiento de medios de comunicación de
+carácter indígena en la Argentina, ofrecemos algunos datos sobre el
+panorama étnico de este país. De acuerdo al último censo nacional
+realizado en el año 2022, un 2,9 \% de población (equivalente a
+1.306.730 personas) se reconoce como indígena o descendiente de pueblos
+originarios, sobre un total de 45.892.285 personas, correspondiente a la
+población total;\footnote{Instituto Nacional de Estadística y Censos,
+  Censo nacional de población, hogares y viviendas 2022\emph{.
+  Resultados definitivos. Población indígena o descendiente de pueblos
+  indígenas u originarios} (Buenos Aires: Instituto Nacional de
+  Estadística y Censos, 2024), 9.} lo que refleja un aumento con
+respecto al censo del año 2010, en el que la población indígena
+representaba un 2,4 \%.\footnote{Instituto Nacional de Estadística y
+  Censos, Censo Nacional de Población, Hogares y Viviendas 2010. Censo
+  del Bicentenario\emph{. Pueblos originarios} (Ciudad Autónoma de
+  Buenos Aires: Instituto Nacional de Estadística y Censos, 2015), 8.}
+El grupo étnico con mayor cantidad de población es el Mapuche, con
+145.783 personas, seguido por el pueblo Guaraní con 135.232 integrantes.
+En tercer y cuarto lugar se encuentran los pueblos Diaguita y Qom/Toba
+con 86.022 y 80.124 habitantes respectivamente. Las provincias con mayor
+porcentaje de pueblos indígenas son Jujuy (10,1 \%), Salta (10 \%),
+Chubut (7,9 \%), Formosa (7,8 \%), Neuquén (7,7 \%) y Río Negro (6,4
+\%). Esto indica que los extremos norte y sur de la Argentina son las
+regiones más densamente habitadas por pueblos originarios a nivel
+nacional.\footnote{Instituto Nacional de Estadística y Censos,
+  \emph{Censo 2022}, 11.} Según el mismo censo, se reconoce la presencia
+de 58 pueblos indígenas a lo largo del país.
+
+La actual taxonomía étnica de la Argentina es resultado de los procesos
+geográficos e históricos que cimentaron el nacimiento del Estado. Entre
+mediados del siglo XIX y principios del XX, el proyecto de modelación
+del Estado nacional argentino, fundado sobre pilares de blanquitud y
+herencia europea, visualizó a los indígenas desde matrices ideológicas
+como la oposición «civilización vs. barbarie», y la apelación al
+desierto para referir a sus territorios, ambas estrategias discursivas
+para justificar su exterminio.\footnote{Diana Lenton, «Política
+  indigenista argentina: una construcción inconclusa», \emph{Anuário
+  Antropológico}, n.º 35 (2010).} Hasta la actualidad, a través de
+numerosas dinámicas, los sujetos étnicos de la Argentina han sido
+alcanzados por construcciones de aboriginalidad diversas y situadas, es
+decir, por instancias de alterización y auto-marcación identitaria en
+cada jurisdicción, en torno a las cuales afirmaron su posición en el
+presente.\footnote{Claudia Briones, «Construcciones de aboriginalidad en
+  Argentina», \emph{Société suisse des Américanistes}, n.º 68 (2004).}
+Gordillo y Hirsch\footnote{Gastón Gordillo y Silvia Hirsch, «La
+  presencia ausente: invisibilizaciones, políticas estatales y
+  emergencias indígenas en la Argentina». En \emph{Movilizaciones
+  indígenas e identidades en disputa en la Argentina}, comp. por Gastón
+  Gordillo y Silvia Hirsch (Buenos Aires: La Crujía, 2010), 15-38.}
+reflexionan sobre el carácter aparentemente «ausente» de los pueblos
+originarios en la Argentina, a causa de la invisibilización hegemónica a
+la que fueron sometidos. Estos autores observan que los sujetos
+originarios representan una «presencia-ausente», esto es una «presencia
+no-visible, latente y culturalmente constitutiva de formas hegemónicas
+de nacionalidad».\footnote{Gordillo y Hirsch, \emph{La presencia
+  ausente}, 16.} Estos intentos de borramiento intencionalmente
+provocados vienen siendo cuestionados y, en algún punto, revertidos
+desde mediados del siglo XX, aunque con mayor fuerza desde 1980 en
+adelante.
+
+Para encontrar las primeras experiencias de participación de integrantes
+de pueblos originarios en iniciativas mediáticas comunitarias o de
+promoción educativa, debemos remitirnos a la década de 1970. Los
+precedentes de la comunicación indígena mediática son participaciones
+pioneras de integrantes de pueblos originarios en proyectos impulsados
+por organismos como el Instituto de Cultura Popular y el Servicio
+Pastoral para la Comunicación del Obispado de Neuquén, en el norte y sur
+de la Argentina.\footnote{Magdalena Doyle, Mariana Ortega y Liliana
+  Lizondo, «Los tiempos largos de la comunicación indígena en argentina.
+  Trayectorias nacionales y análisis de un caso», \emph{Contracorrente},
+  n.º 17 (2021): 27-52.}
+
+En términos generales, el surgimiento de experiencias mediáticas de
+pueblos indígenas en este país tuvo lugar en el contexto internacional
+de transición entre los ciclos de emergencia y re-emergencia
+étnica,\footnote{José Bengoa, «¿Una segunda etapa de la Emergencia
+  Indígena en América Latina?», \emph{Cuadernos de Antropología Social},
+  n.º 29 (2009): 7-22.} desde finales de los 90 y la primera década de
+los 2000. De forma más específica, en el plano nacional, los pueblos
+originarios también fueron alcanzados por el impulso de la oleada
+democrática que significó el final de la dictadura cívico-militar en el
+año 1983. Estas secuencias gestaron una serie de corrimientos
+fundamentales en materia de derechos humanos, como, por ejemplo: la
+incorporación dentro de los marcos normativos nacionales de herramientas
+de carácter internacional como el convenio 169 sobre Derechos de los
+Pueblos Indígenas y Tribales de la Organización Internacional del
+Trabajo (OIT), y la inclusión del artículo 75, inciso 17, que reconoce
+la preexistencia étnica de los pueblos indígenas a la formación del
+Estado argentino en la reforma constitucional de 1994.
+
+En el seno de este contexto, los pueblos indígenas desplegaron
+diferentes modalidades de organización para encausar sus procesos
+colectivos de lucha, siendo la comunicación uno de los ejes de mayor
+relevancia. Entre las primeras iniciativas de medios gestionados por
+pueblos originarios en este país se encuentran la FM Comunitaria La Voz
+Indígena (2002), y las radios del pueblo Mapuche NewenHueche (2004),
+Aletwy Wiñilfe (2005), Wajzugun (2006) y Petu Mongelein (2008).
+
+En sintonía con este proceso, observamos que la primera década de los
+2000 marcó el comienzo de un nuevo ciclo en los tiempos largos de la
+comunicación indígena en Argentina. Precisamente, fue en el año 2009
+---cuando finalmente se sancionó la Ley de Servicios de Comunicación
+Audiovisual (en adelante LSCA) tras un intenso camino previo de debates
+y movilizaciones por el planteo general de lograr democratizar la
+comunicación--- que se generaron por primera vez condiciones favorables
+para que pueblos, comunidades y organizaciones indígenas puedan acceder
+a medios de comunicación propios. A partir de este momento, que, entre
+otros aspectos, destrabó obstáculos legales para allanar el camino hacia
+la tenencia y gestión de medios para pueblos originarios, se fue
+estructurando progresivamente un conjunto de estudios motivados por la
+vocación de análisis de este fenómeno.
+
+La aprobación de la LSCA puede considerarse un momento bisagra en la
+historia del acceso de los pueblos indígenas a medios de comunicación.
+Durante el transcurso de la segunda década de los 2000 no solo se
+multiplicaron los casos de medios de comunicación en manos de pueblos y
+comunidades indígenas de todo el país,\footnote{RICCAP, \emph{Informe de
+  relevamiento de los servicios de comunicación audiovisual
+  comunitarios, populares, alternativos, cooperativos y de pueblos
+  originarios en Argentina} (Buenos Aires, RICCAP: 2019).} sino que
+también aumentaron notablemente las investigaciones sobre medios
+indígenas.
+
+En este escenario, distintas organizaciones y activistas de pueblos
+originarios se congregaron en el espacio denominado Coordinadora de
+Comunicación Audiovisual Indígena de Argentina (CCAIA) para elaborar un
+programa conceptual y modelo de lineamientos orientado a garantizar el
+cumplimiento del derecho a la comunicación indígena. Este colectivo
+propuso la categoría «Comunicación Con Identidad» (en adelante, CCI)
+para nombrar a sus prácticas de comunicación con base en los siguientes
+principios:
+
+\begin{quote}
+La Comunicación con Identidad se enmarca en un contexto de
+revalorización de la identidad originaria, con el uso de las nuevas
+tecnologías de la comunicación y la información, proceso que se viene
+desarrollando de formas muy diversas en nuestro país y todo el
+continente, en un contexto amplio donde la preparación de hombres y
+mujeres en materia de la comunicación desde una perspectiva de
+desarrollo integral con derecho, contribuye con la mayor pertinencia y
+realidad en lo referente a argumentaciones y auto-representaciones
+sólidas y legítimas de los propios Pueblos Indígenas.\footnote{Vanina
+  Baraldini et al., C\emph{omunicación con identidad: Aportes para la
+  construcción del modelo de comunicación Indígena en Argentina} (Buenos
+  Aires: INAI, 2011), 9.}
+\end{quote}
+
+\noindent Además de brindar precisión conceptual, este modelo recogió la demanda
+de articular aspectos definitorios de una «comunicación propia» que
+pueda ser distinguida de los demás modos occidentales de hacer
+comunicación. En parte, ese es uno de los motivos por el que este
+concepto gravita en torno a la identidad étnica, dado que esta categoría
+es el componente medular estratégico que habilita la diferenciación y
+proyección de fronteras para forjar un sentido de lo propio, y a su vez,
+inviste de significados y proyecta los bordes de aquellas singularidades
+que engloba la comunicación indígena: «cosmovisiones diferentes a la
+occidental {[}\ldots{]} que son horizontales, no lucrativas,
+democráticas y explícitamente colectivas {[}\ldots{]} lo que la hace
+única e irrepetible».\footnote{Vanina Baraldini et al., «Comunicación
+  con identidad». En \emph{Aportes para la construcción del modelo de
+  comunicación indígena en Argentina} (Buenos Aires: INAI, 2011), 5.}
+
+Los pueblos indígenas desempeñaron roles activos en la fundamentación de
+por qué era necesaria una ley que diera lugar a la pluralización de
+voces en los sistemas mediáticos, además de constituir uno de los
+sectores que interpeló el proyecto de ley inicial al plantear la
+incorporación de los pueblos originarios como sujetos plenos de derecho.
+La participación indígena finalmente logró que se debata e incorpore el
+reconocimiento de la atribución de los de los pueblos originarios a
+tener acceso a sus propios medios de comunicación al margen de los demás
+tipos de prestadores (públicos, privados con y sin fines de lucro). De
+este modo, la ley reconoce el estatus constitucional de los pueblos
+indígenas en tanto sujetos pre-existentes al Estado argentino y los pone
+ante el desafío de configurar una tipología específica de comunicación
+que no es ni comercial, ni pública, ni comunitaria.
+
+\enlargethispage{\baselineskip}
+
+En general, nos interesa destacar que el interés por investigar el
+fenómeno de los medios indígenas en Argentina está directamente
+relacionado con la intención de comprender las luchas y demandas en
+torno al reconocimiento del derecho a la comunicación. Buscando ordenar
+los tiempos en que se fueron generando aportes académicos a lo que hoy
+denominamos «estudios sobre comunicación indígena», proponemos dos
+períodos con en el base en el relevamiento de textos: el primer decenio
+del siglo XXI (2000--2010), y la segunda década de los 2000 en adelante
+(2010--2023).
+
+Para el primer período (2000--2010) identificamos un conjunto de
+investigaciones enfocadas en el análisis exploratorio de proyectos
+comunicacionales pioneros, como es el caso de La Voz Indígena en la
+provincia de Salta,\footnote{Liliana Lizondo y Ariel Sandoval, «La voz
+  del pueblo indígena». En \emph{Actas del VII Seminario Internacional
+  Aprendizaje y Servicio Solidario} (Buenos Aires: Ministerio de
+  Educación, ciencia y tecnología de la nación, 2004), 58-60; Leda
+  Kantor et al., «La voz indígena». \emph{Margen. Revista de Trabajo
+  Social}, n.º 42. (2006); Liliana Lizondo, «¿Extensión o
+  aprendizaje-servicio?». En \emph{Aprendizaje-servicio en la educación
+  superior. Una mirada analítica desde los protagonistas}, comp. por
+  Alba González y Rosalía Montes (Buenos Aires: EUDEBA, 2008), 103-108;
+  Fernando Bustamante, «La constitución del sujeto indígena en el Chaco
+  Salteño. Disputas simbólicas y estrategias de comunicación en torno al
+  desarrollo». En \emph{Luchas y transformaciones sociales en Salta},
+  ed. por Víctor Arancibia y Alejandra Cebrelli (Salta: Centro
+  Promocional de Investigaciones en Historia y Antropología, 2011),
+  127-153.} de una experiencia radiofónica comunitaria con integrantes
+del pueblo Wichí en la localidad El Potrillo de la provincia de
+Formosa,\footnote{Jorge Huergo, Kevin Morawicki y Lourdes Ferreira, «Los
+  medios, las identidades y el espacio de comunicación. Una experiencia
+  de radio comunitaria con aborígenes wichí», \emph{Comunicar. Revista
+  científica de comunicación y educación}, n.º 26 (2005).} y también de
+la Red de Comunicación Indígena de la provincia de Chaco.\footnote{Gabriela
+  Sosa y Liliana Lizondo, «Pensando en común II. Pueblos originarios:
+  construir la visibilidad». En \emph{Construyendo comunidades:
+  reflexiones actuales sobre comunicación comunitaria,} ed. por Área de
+  Comunicación Comunitaria de la Universidad Nacional de Entre Ríos
+  (Buenos Aires: La Crujía, 2009), 123-126.} El abordaje de estas
+experiencias, generadas a partir del diálogo entre investigadores,
+docentes y estudiantes de universidades nacionales interesados en
+brindar capacitaciones en herramientas de comunicación radiofónica,
+anticipa el rol que desempeñaron las universidades en la animación de
+estos procesos. Dichos abordajes se concentraron en el rol de la
+comunicación en tanto práctica promotora de la expresión de las
+necesidades, problemáticas y expectativas de las comunidades indígenas
+involucradas en los proyectos comunicacionales; y, al mismo tiempo,
+caracterizaron a la radio o a los talleres formativos como modalidades
+de incipiente participación política para estos actores. A pesar de
+primar el uso de categorías inscriptas en la tradición de comunicación
+popular, se observa la formulación de herramientas analíticas iniciales
+para pensar la singularidad de estos casos o se advierte la
+insuficiencia del marco popular para describir las experiencias
+indígenas de gestión de medios de comunicación.
+
+Durante el segundo período (2010--2023) en adelante, que comprende la
+aprobación de la LSCA y su impacto posterior, se produjo una importante
+expansión de los estudios interesados en las expresiones mediáticas de
+los pueblos originarios. En el transcurso de este momento tendrá lugar
+la elaboración de las principales categorías y debates que marcarán el
+desarrollo del pensamiento sobre el fenómeno de la comunicación indígena
+en la Argentina. Nos referimos al concepto de Comunicación con
+Identidad, derecho a la comunicación indígena y diferentes reflexiones
+sobre los entrecruzamientos y articulaciones generados desde y en torno
+a las iniciativas mediáticas.
+
+Recapitulando, hemos presentado dos etapas fundacionales del incipiente
+campo de estudios sobre comunicación indígena en la Argentina. El debate
+y posterior aprobación de la ley N° 26.522 constituyó un acontecimiento
+marcador, ya sea por la participación de los pueblos indígenas en las
+movilizaciones que la impulsaron o por la fuerte emergencia de medios
+que tuvo lugar con la normativa ya sancionada. De una u otra forma, este
+hecho ocupa un lugar central en el eslabón de episodios que terminaron
+desencadenando el nacimiento de un campo de análisis específico.
+Precisamente, consideramos que es recién a partir de 2009 en adelante
+que es posible visualizar un interés de investigación común sobre el
+fenómeno de los medios indígenas, por lo que nuestro análisis se
+centrará en este período, buscando dar cuenta de lo que entendemos son
+las primeras bases del pensamiento sobre manifestaciones mediáticas
+indígenas en Argentina.
+
+\hypertarget{modelacin-histrica-de-los-estudios-de-comunicacin-indgena-en-el-caso-argentino-conceptos-instituciones-y-biografas}{%
+\section{Modelación histórica de los estudios de comunicación
+indígena\\\noindent en el caso argentino: conceptos, instituciones y
+biografías}\label{modelacin-histrica-de-los-estudios-de-comunicacin-indgena-en-el-caso-argentino-conceptos-instituciones-y-biografas}}
+
+En este apartado buscaremos poner en práctica el modelo de «constelación
+de disciplinas y campos sociales relacionados»\footnote{Maria Löblich y
+  Andreas Matthias Scheu, «Writing the history of communication studies:
+  A sociology of science approach», \emph{Communication Theory}, n. º 21
+  (2011), 6.} aplicado a los estudios de comunicación indígena.
+Comenzaremos por dar cuenta de las ideas.
+
+El estudio del fenómeno de los medios de comunicación gestionados por
+pueblos indígenas se inscribió, como dijimos previamente, en un contexto
+de particular efervescencia política, marcado por el acontecimiento de
+movilización y posterior sanción de la LSCA en 2009. Muchas de las ideas
+originadas en este momento gravitan en torno al interés por identificar
+las implicancias y alcances del derecho a la comunicación indígena.
+
+En este punto, se observa el predominio de dos debates fundamentales:
+por un lado, perspectivas que problematizan el status de sujeto público
+no estatal alcanzado por los pueblos originarios en el cuerpo de la ley
+de comunicación, y su impacto en la habilitación de una serie de
+garantías, entre ellas, el derecho a acceder de forma directa a
+autorizaciones de tenencia y gestión de medios;\footnote{Anabel
+  Manasanch, «Pueblos Originarios: comunicación con identidad»,
+  \emph{Revista Tram{[}p{]}as de la comunicación y la cultura}, n.º 69
+  (2010); Claudia Villamayor, «La ley de SCA y la visibilización de los
+  pueblos originarios». En \emph{Ley 26.522. Hacia un nuevo paradigma en
+  comunicación audiovisual}, coord. por Mariana Baranchuk y Javier
+  Rodríguez Usé (Buenos Aires: AFSCA-UNLZ, 2011), 131-142; Magdalena
+  Doyle, «Debates y demandas indígenas sobre derechos a la comunicación
+  en América Latina», \emph{Temas Antropológicos Revista Científica de
+  Investigaciones Regionales} 37, n.º 2 (2015); Magdalena Doyle, «El
+  derecho a la comunicación de los pueblos originarios. Límites y
+  posibilidades de las reivindicaciones indígenas en relación al sistema
+  de medios de comunicación en Argentina» (tesis doctoral, Universidad
+  de Buenos Aires, 2016); Magdalena Doyle, «El derecho a la comunicación
+  con identidad. Aportes de los debates indígenas en Argentina para
+  pensar la noción de derecho a la comunicación», \emph{Mediaciones},
+  n.º 18 (2017); Magdalena Doyle, «Acceso y participación de los pueblos
+  indígenas} y, por otro,
+exploraciones que se centran en desentrañar las peculiaridades de la
+CCI, esto es, en reconocer los modos de organización, gestión,
+sostenibilidad e incidencia socio-política de las experiencias
+mediáticas indígenas.\textsuperscript{56}
+
+Dentro del primer grupo, buena parte de las discusiones se concentra en
+la puesta en diálogo de dos conceptos: ciudadanía y comunicación, a
+efectos de comprender cómo y mediante qué formas las prácticas
+comunicacionales ---generadoras de sentidos--- posibilitaron que sujetos
+como los pueblos indígenas adquirieran nuevos caminos para encausar sus
+activismos y movilizaciones amplias. En otras palabras, el concepto de
+ciudadanía aplicado a las interacciones comunicacionales, incluyendo a
+las mediaciones, explica la magnitud que presentan las prácticas
+públicas de comunicación en los escenarios modernos, y en añadidura,
+revela que la construcción de ciudadanía puede pensarse más allá de los
+límites asignados al derecho. En definitiva, la articulación entre
+comunicación y derecho resultó en la exploración de las diversas
+estrategias y prácticas abiertas por los proyectos de gestión y tenencia
+de medios para la acción política de los pueblos indígenas en sus
+diferentes territorios.
+
+\pagebreak Quizás\marginnote{en el sistema de medios de Argentina», \emph{Anuario
+  Electrónico De Estudios En Comunicación Social Disertaciones}
+  11\emph{,} n.º 2 (2018); Francesca Belloti, «Los medios de
+  comunicación de los pueblos originarios frente a la Ley de Servicios
+  de Comunicación Audiovisual: Experiencias, contradicciones, desafíos».
+  \emph{Informe de investigación (2016---2017)} (Buenos Aires:
+  Universidad Nacional de Quilmes, 2018); María Cecilia Hang, «Pueblos
+  originarios y Ley de Servicios de Comunicación Audiovisual. El caso
+  Wall Kintun TV», \emph{Tram{[}p{]}as de la comunicación y la cultura},
+  n.º 84 (2019); Mariana Ortega, «En primera persona. Ciudadanías
+  comunicacionales en la experiencia de la FM Comunitaria La Voz
+  Indígena», \emph{Question/Cuestión} 3, n.º 70 (2021).} el concepto\marginnote{\textsuperscript{56}\setcounter{footnote}{56} Florencia Yaniello, «Descolonizando la
+  palabra. Los medios de comunicación del Pueblo Mapuche en Puelmapu
+  (Argentina)» (tesis de licenciatura, Universidad de Buenos Aires,
+  2012); Liliana Lizondo y Mariana Ortega, «Comunicación con identidad,
+  entre la Ley de Servicios de Comunicación Audiovisual y la
+  comunicación popular». En \emph{Actas del VI Encuentro Panamericano de
+  Comunicación Industrias culturales, medios y públicos: de la recepción
+  a la apropiación en los contextos socio-políticos contemporáneos}
+  (Córdoba: Universidad Nacional de Córdoba, 2013); Paula Cecchi,
+  «Estrategias de lucha y comunalización de los pueblos indígenas en
+  torno al proyecto de Comunicación con Identidad» (tesis de
+  licenciatura, Universidad de Buenos Aires, 2014); Liliana Lizondo,
+  «Comunicación con identidad o comunicación comunitaria. El caso de la
+  FM ``La voz indigena''» (tesis de maestría, Universidad Nacional de La
+  Plata, 2015); Liliana Lizondo, «La comunicación con identidad.
+  Regulaciones y un estudio de caso», \emph{Anuario Electrónico De
+  Estudios En Comunicación Social Disertaciones} 11, n.º 3 (2018);
+  Liliana Lizondo, «Coincidencias y oposiciones entre la Comunicación
+  con Identidad y la comunitaria». En \emph{Prácticas y saberes de
+  comunicación alternativa}, comp. por Mary Esther Gardella (Tucumán:
+  Manuales Humánitas, 2018), 289-305; Emilse Siares y Francesca
+  Bielotti, «Los medios indígenas en Argentina: caracterización y
+  desafíos a partir de la experiencia de dos radios kollas», Anuario
+  Electrónico de Estudios en Comunicación Social Disertaciones 11, n.º 2
+  (2018); Magda-} de mayor relevancia generado hasta el momento sea el
+de CCI, elaborado por investigadores y activistas de pueblos indígenas
+con la finalidad de fundamentar su propuesta política de comunicación.
+Esta categoría define los valores, horizontes emancipatorios y anclajes
+culturales que convergen en una manera singular de concebir y gestionar
+sus medios, cuyo centro es justamente la identidad étnica. Las líneas de
+tematización que buscaron profundizar en este concepto destacan aspectos
+como los siguientes: que el reconocimiento y ejecución del derecho de
+los pueblos originarios a gestionar sus propios medios de comunicación
+es una vía para fortalecer y revitalizar luchas de larga data (ligadas a
+reclamos territoriales, por ejemplo), que a su vez configura una
+modalidad estratégica para establecer autonomía con respecto a la figura
+del estado-nación, y que en ese sentido la CCI es una instancia de
+ejercicio del derecho a la auto-determinación.
+
+En este aspecto, otro anudamiento central surge del interés por
+identificar las similitudes y diferencias entre la CCI y las expresiones
+de comunicación alternativa, popular, comunitaria. Bajo esta
+perspectiva, se buscó comprender las singularidades de la comunicación
+de los pueblos originarios, especialmente a causa de su explícito
+rechazo a que sea considerada como un apellido más de la comunicación
+sin fines de lucro. Si bien se destacan semejanzas y se trazan
+genealogías que dan cuenta de una raíz común, y por ende de la
+existencia de cierto emparentamiento, la mayor parte de los estudios
+sobre esta dimensión resaltan el componente autónomo de los medios
+indígenas, fundado en la diferencia cultural y la pre-existencia étnica.
+
+Con el propósito de ahondar en el señalamiento hecho por diferentes
+representantes indígenas, pero buscando ir más allá de la identidad como
+marco de referencia, se presentan indagaciones que examinan los modos en
+que efectivamente tienen lugar las prácticas de comunicación indígena
+mediática. Recurriendo al análisis de la anatomía de estas experiencias
+comunicacionales ---esto es, mirando sus lógicas organizativas, de
+sostenibilidad, los actores con los que dialogan (políticas estatales,
+por ejemplo), y sus componentes discursivos--- se visualiza que estos
+medios se enmarcan en iniciativas de organización de mayor alcance, en
+torno a las cuales el medio proyecta relaciones de poder, de disputas y
+acuerdos, dentro de cada escenario puntual.\textsuperscript{57} Por lo tanto, no se trata de experiencias
+ideales o cristalizadas que respondan a una escenificación estática de
+cultura, ni que estén guiadas por un conjunto de parámetros que indiquen
+un «deber ser», más bien se observa que son iniciativas que crean,
+dinamizan y resignifican los cursos socio-políticos de cada proyecto. Un
+dato relevante es que los trabajos de Oscar Grillo se destacan por ser
+de los primeros abordajes etnográficos ---y pocos en el caso de
+experiencias indígenas\marginnote{lena Doyle y Emilse Siares, «Indigenous Peoples' right to
+  communication with identity in Argentina, 2009--2017», \emph{Latin
+  American Perspectives} 45, n.º 3 (2018); Paula Milana y Emilia
+  Villagra, «Comunicación indígena en el noroeste argentino: el caso de
+  la radio FM Ocan (Salta, Argentina)»\emph{, Anuario Electrónico de
+  Estudios en Comunicación Social Disertaciones} 11, n.º 2 (2018);
+  Emilia Villagra, «Los procesos político-comunicacionales de una
+  organización indígena en Salta, Argentina», \emph{Comunicación y
+  Medios} 45 (2021).}--- sobre\marginnote{\textsuperscript{57}\setcounter{footnote}{57} Oscar Grillo,
+  «Políticas de identidad en internet»; Oscar Grillo, \emph{Aproximación
+  etnográfica al activismo Mapuche a partir de internet y tres viajes de
+  trabajo de campo} (Buenos Aires: Al margen, 2013); Emilia Villagra y
+  Ramón Burgos, «Radios comunitarias desde una perspectiva indígena. La
+  experiencia de la Organización de Comunidades Aborígenes de Nazareno,
+  Salta-Argentina», \emph{Logos} 1, n.º 24 (2017); Francisco Gil-García,
+  «Definir el medio. Radios comunitarias e indígenas en la Quebrada de
+  Humahuaca y la Puna de Jujuy, noroeste argentino». En \emph{Medios
+  indígenas: teorías y experiencias de la comunicación indígena en
+  América Latina}, coord. por Gemma Orobitg (Madrid: Iberoamericana
+  Verbuert, 2020), 149-178.} procesos de mediatización en el campo
+digital, especialmente en internet.
+
+Por último, de la indagación de las agencias de los sujetos que
+protagonizan estas experiencias, se identifica la diversidad de rumbos y
+objetivos que delimitan su radio de acción. Aparece aquí la idea de que
+la comunicación configura el trasfondo de manifestaciones heterogéneas,
+como, por ejemplo, de expresiones de liderazgo y luchas sexo-genéricas,
+y se establecen conexiones con otros ejes de conocimiento como la
+educación y los estudios de la memoria. De acuerdo a esta lógica, la
+comunicación resulta un nuevo «territorio» donde se despliegan redes de
+articulación entre diferentes interlocutores y procesos, lo que da
+cuenta del peso que tienen estos medios para las comunidades y grupos
+que los gestionan, incluso trascendiendo la función informativa y de
+formación de opinión pública tradicionalmente atribuida a las
+tecnologías comunicacionales modernas.\footnote{Ileana, Mamaní, «La
+  estética radiofónica en el discurso de la FM Comunitaria La Voz
+  Indígena» (tesis de licenciatura, Universidad Nacional de Salta-Sede
+  Regional Tartagal, 2017); Magdalena Doyle, «Las luchas por territorios
+  ancestrales en los medios indígenas. El caso de FM La Voz Indígena»,
+  \emph{Comunicación y medios}, n.º 38 (2018), 177-189; Soledad Amaya,
+  «Las estrategias políticas que despliegan las mujeres Wichí en FM
+  Comunitaria La Voz Indígena» (tesis de licenciatura, Universidad
+  Nacional de Salta Sede Regional Tartagal, 2018); Delfina Acosta,
+  «Comunicación para el buen vivir desde la FM comunitaria La Voz
+  Indígena» (tesis de licenciatura, Universidad Nacional de Salta-Sede
+  Regional Tartagal, 2018); Damián Andrada, comp., \emph{Hacia un
+  periodismo indígena} (Buenos Aires: Ediciones Universidad del
+  Salvador, 2019); Karen Machado y Silvana Karuchek. «La radio como
+  estrategia pedagógica en el CAJ de la Escuela EMETA II de Yacuy»
+  (tesis de licenciatura, Universidad Nacional de Salta-Sede Regional
+  Tartagal, 2018); Ana}
+Algunas de estas investigaciones son receptoras de perspectivas que se
+hicieron fuertes en las últimas décadas, como la de género y el enfoque
+ambiental. La noción de territorio empleada aquí conlleva una
+significación metafórica que asocia el movimiento de lucha por el
+territorio con la proyección y efectiva ocupación de nuevos espacios de
+reproducción de la vida y configuración de sentidos, probablemente en el
+plano de la cultura.
+
+Los métodos utilizados son prioritariamente cualitativos, se destacan la
+etnografía y el análisis del discurso y de contenido. En cuanto a las
+técnicas implementadas, en gran parte se utilizan entrevistas en
+profundidad, relevamiento y escucha de producciones radiales, digitales
+o audiovisuales, consulta e indagación de noticias y programaciones. En
+ese marco, las investigaciones etnográficas, además de considerar los
+discursos y narrativas públicas de los actores, incorporan las historias
+de vida y observaciones de las conductas de los sujetos que hacen parte
+de los proyectos comunicacionales. Mientras que otros estudios, como
+aquellos basados en análisis discursivos o de contenido, optan por
+triangular los mensajes emitidos con las dimensiones organizativas del
+medio. En resumen, las metodologías se ubican dentro de los enfoques
+interpretativistas de las ciencias sociales, y en particular, buscan dar
+cuenta del análisis del fenómeno de la producción de sentidos como
+problema central de las ciencias de la comunicación.
+
+Los hechos científicos en este conjunto de estudios son construidos a
+partir de recursos metodológicos como la perspectiva de los actores, en
+el caso de las etnografías, o la escucha e identificación de categorías
+del orden del discurso para las investigaciones basadas en análisis de
+narrativas. Concretamente, los hechos refieren a las prácticas de los
+actores, a cómo llevan adelante sus medios, a cómo significan los
+procesos\marginnote{María Siuffi, «Planificación de una radio escolar
+  en la comunidad Chorote y Wichí Lapacho II» (tesis de licenciatura,
+  Universidad Nacional de Salta-Sede Regional Tartagal, 2017); Liliana
+  Lizondo, «Para una perspectiva del debate naturaleza-cultura desde los
+  medios de comunicación. La cobertura de inundaciones del río Pilcomayo
+  en 2018 según la composición de los mundos» (tesis de doctorado,
+  Universidad Nacional de La Plata, 2021); Virginia Collivadino, «Los
+  procesos comunicacionales de la FM La Voz de la Quebrada: una mirada a
+  los sentidos sobre lo comunitario y la gestión de la emisora» (tesis
+  de licenciatura, Universidad Nacional de Salta, 2022); Gisella Murillo
+  y Evelyn Zimmermann, «La comunicación entre la comunidad Wichi de
+  Santa Rosa y el Sistema de Salud Pública. Elaboración de un protocolo
+  que contemple los sentidos de la maternidad de esa comunidad desde una
+  perspectiva intercultural, comunicativa y participativa. 2019-2020»
+  (tesis de licenciatura, Universidad Nacional de Salta, 2022);
+  Magdalena Doyle, «Recapitulando\ldots{} sobre la comunicación
+  indígena, los espacios públicos y los medios». En \emph{Pueblos
+  indígenas y territorios mediáticos. Estudios sobre comunicación
+  indígena en Argentina}, ed. por Liliana Lizondo y Magdalena Doyle
+  (Bogotá: Fundación Friedrich Ebert, 2023), 223-228; José Sajama y
+  Emilse Siares, «FM Pachakuti: comunicación, territorio y comunidad
+  kollas». En \emph{Pueblos indígenas y territorios mediáticos. Estudios
+  sobre comunicación indígena en Argentina}, ed. por Liliana Lizondo y
+  Magdalena Doyle (Bogotá: Fundación Friedrich Ebert, 2023), 113-128;
+  Ana Müller, «Antenas entre cerros: contribuciones de las radios
+  rurales populares e indígenas al campo de la comunicación en el norte
+  argentino. Salta, periodo 2012-2022» (tesis de maestría, Universidad
+  Nacional de Córdoba, 2023); Cristina Cabral, «Radios comunitarias y la
+  disputa en la construcción de memorias en pueblos originarios»,
+  \emph{Dar a Leer Revista de Educación Literaria} 6, n.º 12 (2024).} de ingreso a las arenas mediáticas de sus regiones. Es decir,
+que un hecho para los investigadores de este campo remite a las acciones
+de creación e intercambio de sentido de los agentes indígenas; lo que no
+significa que se construya una visión transparente e ingenua del
+lenguaje, sino que se incorpora dentro de esa construcción a las redes
+socio-técnicas y actores que disputan y negocian poder con los sujetos
+protagonistas de las iniciativas mediáticas.
+
+Por otro lado, no se encuentran investigaciones sobre las audiencias o
+estudios de recepción en casos de medios indígenas. Se destaca el
+predominio de análisis centrados en las experiencias mediáticas, ya sea
+sobre los procesos de organización y gestión, como en sus expresiones
+discursivas, políticas y estéticas. Las labores de investigación,
+incluyendo la pertenencia disciplinar y el desarrollo de conceptos,
+provienen mayormente de las ciencias de la comunicación, y en menor
+medida de la antropología. Aunque se utilicen métodos como la etnografía
+---particularmente en el caso de las etnografías de radios--- y se tomen
+en cuenta discusiones dadas en otras disciplinas ---como, por ejemplo,
+los aportes antropológicos al pensamiento sobre identidad y cultura---
+los conceptos son ubicados y capitalizados dentro del campo de los
+estudios de comunicación en general.
+
+Las instituciones son definidas por Löblich y Scheu como «formas de
+organización social a través de las cuales ---a largo plazo--- las ideas
+son establecidas».\footnote{Löblich y Scheu, \emph{Writing the history
+  of communication studies}, 8.} En este caso, las instituciones
+involucradas en la generación de conocimientos sobre el fenómeno de los
+medios indígenas de comunicación son mayormente universidades
+nacionales, con el apoyo eventual de organismos de financiamiento de
+proyectos de investigación como el Consejo Nacional de Investigaciones
+Científicas y Técnicas de Argentina\footnote{El Consejo Nacional de
+  Investigaciones Científicas y Técnicas es un organismo estatal
+  dedicado a la promoción de la ciencia y la tecnología en la Argentina.
+  Es la principal institución científica de este país. Funciona en}
+(CONICET). Así, son las universidades nacionales de Salta
+(principalmente la Sede Regional Tartagal), Jujuy, Tucumán, Córdoba,
+Buenos Aires, La Plata, Comahue y Río Negro los espacios de radicación
+de la mayor parte de las investigaciones que alimentan este campo. Por
+otra parte, también se destaca la presencia de estudios realizados por
+investigadores de universidades extranjeras, como el caso de la
+Universidad Complutense de Madrid y la Universidad de Barcelona.
+
+Si miramos al interior de estas instituciones, preguntándonos en qué
+consiste realmente su participación, veremos que, en el caso de las
+universidades nacionales, se trata de casas de altos estudios ubicadas
+en lugares habitados por un importante número de población indígena
+(especialmente Salta, Jujuy, Comahue y Río Negro) o de universidades que
+reciben estudiantes de todo el país, precedidas por largas trayectorias
+históricas como la Universidad de Buenos Aires y la Universidad Nacional
+de Córdoba. Por lo general, las indagaciones académicas devienen de
+incursiones particulares de docentes que por sus trayectorias\marginnote{todas
+  las regiones de la Argentina, a través del sistema de formación de
+  investigadores y becarios. Actualmente desarrolla actividades en
+  cuatro áreas de conocimiento: ciencias agrarias, de ingeniería y de
+  materiales, ciencias biológicas y de la salud, ciencias exactas y
+  naturales y ciencias sociales y humanidades. Fue creado en 1958 bajo
+  la gestión de Bernardo Houssay, Premio Nobel de Medicina en 1947.} activistas
+llegaron a conocer y formar parte de experiencias mediáticas de pueblos
+indígenas, y a partir de allí desarrollaron proyectos de extensión e
+investigación. Fueron estos mismos individuos quienes guiaron y animaron
+a estudiantes en la realización de investigaciones de grado y posgrado
+sobre esta temática. De ese modo, se fue expandiendo el interés por
+conocer más sobre los medios indígenas de comunicación, lo que
+progresivamente se plasmó en la formulación de proyectos de
+investigación financiados por las propias universidades y también por
+organismos nacionales autónomos como el CONICET. A su vez, en el seno de
+las universidades, se observa que se trata de iniciativas de
+agrupaciones específicas de docentes y estudiantes, que no
+necesariamente reflejan el compromiso ni la posición política oficial.
+
+Otras instituciones estatales que fueron parte de la constitución de
+este campo de estudios son la Secretaría de Agricultura Familiar,
+Campesina e Indígena (SAFCI) y el Instituto Nacional de Tecnología
+Agropecuaria (INTA), ambas dedicadas a la intervención en el ámbito
+rural. Su incidencia se puede apreciar en el financiamiento y apoyo
+técnico a iniciativas mediáticas de pueblos indígenas, y también en la
+realización de actividades de extensión universitaria que dieron cabida
+a discusiones académicas sobre la comunicación indígena. Asimismo,
+muchos de los trabajadores de las universidades nacionales se
+desempeñaban al mismo tiempo como técnicos de estos organismos.
+
+El crecimiento y estabilización de ciertas discusiones, como aquellas
+relacionadas con el derecho a la comunicación de los medios
+alternativos, entre ellos, los medios indígenas, y con el monitoreo de
+los avances e incumplimientos de la LSCA, han sido impulsadas desde
+organizaciones sin fines de lucro de investigadores y activistas del
+campo de la comunicación, como la Mesa de Comunicación Popular de Salta
+y Jujuy y la Red Interuniversitaria de Investigadores en Comunicación
+Comunitaria, Alternativa y Popular (RICCAP). Esta última todavía
+desarrolla iniciativas colectivas de investigación sobre los medios de
+comunicación indígenas en Argentina, dentro del mapa amplio de
+experiencias alternativas, populares y comunitarias; y reúne a
+investigadores de las universidades de Avellaneda (UNDAV), Buenos Aires
+(UBA), Quilmes (UNQ), Chilecito de la provincia de La Rioja (UNDeC), del
+Comahue en las provincias de Neuquén y Río Negro (UNCOMA), Córdoba
+(UNC), Entre Ríos (UNER), La Plata (UNLP), Río Negro (UNRN), Salta
+(UNSa), Jujuy (UNju) y Tucumán (UNT).
+
+En general, la incipiente institucionalización de los estudios sobre
+medios indígenas en la Argentina responde a los desempeños activistas y
+profesionales de diferentes docentes e investigadores. Sin intentar
+mencionar a la totalidad, las trayectorias de Oscar Grillo, Liliana
+Lizondo, Ramón Burgos y Magdalena Doyle, se caracterizan por haber dado
+los primeros pasos en el diálogo y participación dentro de iniciativas
+de comunicación indígena, por el desarrollo de proyectos de
+investigación con la finalidad de interpretar estas prácticas
+emergentes, y también por la dirección de trabajos de tesis de grado y
+posgrado. Asimismo, han buscado conseguir y fortalecer iniciativas para
+brindar apoyo técnico a los proyectos comunicacionales, a la par de
+interesarse por promover prácticas de investigación. Un dato clave de
+estas participaciones indica que el interés académico no se presenta
+separado de la intervención, por el contrario, la investigación es una
+consecuencia del activismo e involucramiento sociopolítico. Para
+precisar la dimensión generacional de los autores y su formación
+académica, brindamos algunos datos al respecto:
+
+\vspace{.2in}
+
+\begin{fullwidth}
+    
+
+\begin{table}[ht]
+\caption{}\label{n2zyn6pw6v2}
+\begin{tabular}{@{}p{0.3\textwidth}p{0.26\textwidth}p{0.358\textwidth}p{0.2\textwidth}@{}}
+\emph{Nombre y apellido} & \emph{Año de nacimiento} & \emph{Título de posgrado} & \emph{Año de egreso} \\ [.2in]
+\midrule
+\addlinespace[.2in]
+Oscar Grillo & 1950 & Doctorado sobre la Sociedad de la Información y el Conocimiento & 2009 \\ 
+\addlinespace[.1in]
+Liliana Lizondo & 1963 & Doctorado en Comunicación Social & 2020 \\
+\addlinespace[.1in]
+Ramón Burgos & 1974 & Doctorado en Comunicación Social & 2014 \\
+\addlinespace[.1in]
+Magdalena Doyle & 1983 & Doctora en Antropología & 2016 \\
+\end{tabular}
+\end{table}
+
+\end{fullwidth}
+
+\vspace{.3in}
+
+
+Los primeros indicios de institucionalización se pueden apreciar también
+en la aprobación de proyectos específicos sobre comunicación indígena
+por parte de los organismos de investigación de las universidades
+nacionales. Esto responde al esfuerzo de diferentes docentes e
+investigadores por llegar a instalar el tema en las agendas de sus
+instituciones, sometiendo a sus proyectos a instancias evaluativas
+rigurosas dentro de sus comunidades académicas. De este modo, el tema va
+ganando notoriedad, aunque todavía se trate de un tópico poco frecuente.
+
+Desde una perspectiva de comparación con otras temáticas del campo de la
+comunicación social, el interés por analizar las experiencias mediáticas
+indígenas resulta escaso, es decir que no son muchas las investigaciones
+sobre comunicación indígena, aunque han aumentado considerablemente
+luego de la sanción de la LSCA. Si llevamos esta observación al campo
+amplio de las ciencias sociales, incluyendo aquí a la antropología
+socio-cultural y la ciencia política, veremos que la estrechez se
+acentúa aún más. Asimismo, otro rasgo a destacar es que las
+contribuciones académicas provienen mayormente de universidades ubicadas
+en lugares periféricos de la Argentina, de áreas geográficas alejadas de
+los grandes centros urbanos y políticos del país.
+
+En cuanto a la relación entre las historias de vida de los autores y las
+instituciones, notamos la existencia de indicios de articulación, ya que
+se trata de docentes y estudiantes que, en el marco de sus trayectorias
+y desempeños dentro de los contextos universitarios, fueron tejiendo
+encuentros y nexos con experiencias mediáticas indígenas. En torno a
+esos intercambios fue posible poner en marcha iniciativas de militancia
+y apoyo orientadas a promover el ingreso de las voces y demandas de los
+pueblos originarios a los escenarios académicos, mediante acciones como
+la participación en congresos y la realización de jornadas de
+visibilización sobre las luchas de los pueblos indígenas por el derecho
+a la comunicación. Dicho de otro modo, consideramos que las
+universidades fueron herramientas con las que contaron los docentes e
+investigadores para construir conocimiento al mismo tiempo que para
+impulsar intervenciones en clave política.
+
+En este aspecto cabe destacar la participación de organismos dedicados a
+la regulación, control o cuidado del cumplimiento de determinadas
+prácticas de protección de derechos de la ciudadanía en el ámbito de la
+comunicación e información, como los casos de la Autoridad Federal de
+Servicios de Comunicación Audiovisual (AFSCA), la Defensoría del Público
+y el Consejo Federal de Comunicación Audiovisual, entidades creadas por
+la LSCA. Si bien no se trata de instituciones inicialmente abocadas a la
+investigación, su desempeño de hecho terminó por impactar indirectamente
+en la animación o apoyo a la generación de conocimientos sobre la
+temática, a través de acciones de auspicio a la realización de eventos
+académicos sobre los medios indígenas, y también en la recepción de
+investigadores y activistas pioneros en el estudio del fenómeno de la
+comunicación indígena, como el caso de Liliana Lizondo y Matías Melillán
+(pueblo Mapuche), integrantes del Consejo Federal en representación de
+las universidades y pueblos originarios.
+
+\hypertarget{a-modo-de-cierre}{%
+\section{A modo de cierre}\label{a-modo-de-cierre}}
+
+Nuestro interés buscó poner de relieve las trayectorias de investigación
+que hicieron posible el nacimiento de un conjunto de estudios focalizado
+en la cuestión de las experiencias mediáticas indígenas. Resaltamos que
+el acceso a la institucionalización de este campo emergente se comenzó a
+gestar en la segunda década de los 2000, en coincidencia con la
+materialización del reclamo indígena por una comunicación con identidad
+y en el fragor de las luchas por lograr un sistema democrático de
+comunicación.
+
+Podemos decir, con las evidencias presentadas, que hoy es posible
+referir a la existencia de un esquema de textos, categorías y
+discusiones que estructuran y guían modos de entrar y salir a la
+temática de los medios de comunicación de pueblos originarios, algo que,
+hasta hace menos de 20 años, era imposible sin recurrir a las
+herramientas conceptuales de la comunicación alternativa, popular,
+comunitaria. Es decir, el camino de institucionalización se perfila
+también como un gesto de autonomización de aquel campo.
+
+En lo relativo a la institucionalidad, es visible que el interés por
+investigar este fenómeno ha sido moldeado por la acción de diferentes
+instituciones. Desde el contexto singular en el que se movilizaron las
+demandas indígenas por la gestión de sus propios medios, pasando por la
+disposición de recursos estatales para dicho fin (concursos para el
+acceso a fondos a través de políticas públicas), incluyendo la
+realización de capacitaciones y asesorías, hasta el involucramiento de
+docentes e investigadores universitarios en la colaboración dentro de
+experiencias específicas y el desarrollo de tareas de investigación, se
+visualiza la formación de un campo modelado por la actuación de agentes
+heterogéneos o con inscripciones institucionales variadas.
+
+\enlargethispage{\baselineskip}
+
+Por otro lado, es notable que se trata de un naciente agrupamiento de
+estudios caracterizado por su interdisciplinariedad y por el estrecho
+nexo entre investigación y activismo. La mayoría de los investigadores
+son a su vez activistas y colaboradores con las experiencias mediáticas
+que son la base empírica de sus trabajos, muchos son incluso impulsores
+de proyectos de comunicación dentro de diferentes colectivos indígenas.
+Del mismo modo también observamos que se trata de estudios
+particularmente feminizados, es decir, la mayoría de los aportes son
+realizados por investigadoras mujeres o por diversidades sexo-genéricas
+femeninas.
+
+Retomando el sentido de campo académico entendido como lugar dinámico de
+disputas, consideramos que este campo se caracteriza por su liminalidad
+y juventud. Se trata de una arena epistémica construida desde los
+márgenes o bordes de los sectores que concentran los capitales
+académicos de este país, con aportes generados desde universidades
+pequeñas, ubicadas en regiones alejadas de las grandes urbes, como
+Salta, Jujuy, Rio Negro y Neuquén, e investigadores que fueron
+acumulando y generando los primeros capitales científicos. Por esto
+último la conservación o modificación de la autoridad científica aparece
+ligada a los esfuerzos por colocar en agenda a este fenómeno en el
+ámbito de las ciencias sociales y humanas, antes que por disputar el
+control o predominio de la legitimidad sobre el tema.
+
+Sin embargo, observamos la existencia de dinámicas de disputa
+relacionadas con la diferenciación de otros agrupamientos de estudios,
+como la comunicación alternativa. Desde sus primeros pasos, pero con
+mayor fuerza desde la segunda década de los 2000, muchos de los
+investigadores que actualmente hacen parte de los estudios sobre
+comunicación indígena se posicionan y procuran el análisis particular de
+este fenómeno. Esto ha significado el desprendimiento de otros marcos de
+referencia, y la exposición de tensiones y señalamientos críticos sobre
+tradiciones de reconocida trayectoria como los estudios de comunicación
+comunitaria.
+
+En este punto es destacable el papel de distintas instituciones, no solo
+las universidades públicas sino también organismos creados por la LSCA y
+otras dependencias estatales en especial en el período 2009--2015, para
+la formación y recepción de intereses relacionados con la posibilidad de
+acceder a recursos para favorecer el crecimiento de los proyectos de
+comunicación, y a la vez dotar de legitimidad a través de la
+investigación a esos procesos de democratización de la comunicación.
+
+Consideramos que el conjunto de investigaciones reunidas hasta la fecha
+sobre comunicación indígena no puede pensarse al margen de los procesos
+socio-políticos vivenciados en la Argentina a lo largo del siglo XXI. La
+invitación a reflexionar sobre la creciente ampliación de derechos hacia
+determinados sectores considerados como minoritarios o históricamente
+postergados, entre ellos, los pueblos originarios, es parte de la
+construcción del interés por investigar a los medios indígenas. A modo
+de síntesis, podemos decir que la emergencia de estos estudios deviene
+de la intención de dar cuenta de este movimiento de irrupción social, de
+colocación inusual de los pueblos originarios en lugares pocas veces
+ocupados.
+
+Por último, resulta necesario hacer referencia a la situación actual de
+la República Argentina. Desde finales de 2023, el gobierno de Javier
+Milei ha tomado decisiones que afectan directamente a los actores que
+integran este campo. Algunas de las medidas más concretas se observan en
+la modificación de la LSCA con el objetivo de suprimir las limitaciones
+a la tenencia múltiple de licencias audiovisuales, retomando cambios que
+ya había introducido la gestión de Mauricio Macri en diciembre de 2015.
+En consonancia con el retorno a un modelo de comunicación guiado por el
+mercado, también se eliminaron las pocas políticas públicas destinadas
+al fomento del derecho a la comunicación en medios alternativos,
+incluyendo aquí a los indígenas. En cuanto a las instituciones
+educativas y de investigación, el gobierno nacional sostiene un proceso
+de desfinanciamiento sobre las universidades públicas y el CONICET, que
+también alcanza a organismos como el INTA. El caso de la SAFCI es
+particular, ya que fue directamente cerrada. Del mismo modo, el gobierno
+quitó el financiamiento a entidades de pueblos originarios, como el
+Instituto Nacional de Asuntos Indígenas (INAI), y derogó leyes e
+instrumentos creados en función de los estándares constitucionales e
+internacionales de derecho indígena. En resumidas cuentas, las
+condiciones actuales para la generación de conocimientos en esta
+temática no son las más favorables, no solo por lo anteriormente
+mencionado, sino principalmente porque desde la estructura estatal se
+contradice y deslegitima a la investigación en ciencias sociales y
+humanas. En este escenario, cabe preguntarse por las posibilidades de
+sostenibilidad de este naciente conjunto de estudios, al menos en el
+plano institucional.
+
+
+
+
+\section{Bibliography}\label{bibliography}
+
+\begin{hangparas}{.25in}{1} 
+
+
+
+Abu-Lughod, Lila. «Interpretando la(s) cultura(s) después de la
+televisión: sobre el método», \emph{Íconos}, n.º 24 (2006): 119-141.
+
+Acosta, Delfina. «Comunicación para el buen vivir desde la FM
+Comunitaria La Voz Indígena». Tesis de licenciatura, Universidad
+Nacional de Salta-Sede Regional Tartagal, 2018.
+
+Agurto, Jorge y Jahve Mescco. «La comunicación indígena como
+dinamizadora de la comunicación para el cambio social». En \emph{Actas
+del XI Congreso Latinoamericano de Investigadores en Comunicación:
+1--26}. Montevideo: ALAIC, 2012.
+\url{https://www.servindi.org/pdf/ALAIC_comunicaci\%C3\%B3nindigena2012.pdf}
+
+Amaya, Soledad. «Las estrategias políticas que despliegan las mujeres
+Wichí en FM Comunitaria La Voz Indígena». Tesis de licenciatura,
+Universidad Nacional de Salta Sede Regional Tartagal, 2018.
+
+Andrada, Damián, comp. \emph{Hacia un periodismo indígena}. Buenos
+Aires: Universidad del Salvador, 2019.
+
+Arcila Calderón, Carlos, Alejandro Barranquero y Eva González Tanco.
+«From media to buen vivir: Latin American approaches to Indigenous
+communication», \emph{Communication Theory}, n. º 28 (2018): 180--201.
+doi:10.1093/ct/qty004
+
+Askew, Kelly. «Introduction». En \emph{Anthropology of media: A reader},
+editado por Kelly Askew y Richard Wilk, 1--13. Malden: Blackwell
+Publishers, 2002.
+
+Baraldini, Vanina, Maiten Cañicul, Chefi Cian, Juan Chico y Matías
+Melillán. «Comunicación con identidad». En \emph{Aportes para la
+construcción del modelo de comunicación indígena en Argentina}. Buenos
+Aires: INAI, 2011.
+
+Barranquero-Carretero, Alejandro y Eva González-Tanco. «Editorial»,
+\emph{Anuario Electrónico de Estudios en Comunicación Social
+Disertaciones} 11, n.º 2 (2018): 5--11.
+\url{https://revistas.urosario.edu.co/index.php/disertaciones/article/view/6838}.
+
+Barranquero-Carretero, Alejandro y Chiara, Sáez-Baeza. «Comunicación y
+buen vivir. La crítica descolonial y ecológica a la comunicación para el
+desarrollo y el cambio social», \emph{Palabra Clave} 18, n.º 1 (2015):
+41--82. doi: 10.5294/pacla.2015.18.1.3.
+
+Belloti, Francesca. \emph{Los medios de comunicación de los pueblos
+originarios frente a la Ley de Servicios de Comunicación Audiovisual:
+Experiencias, contradicciones, desafíos. Informe de investigación
+(2016--2017)}. Buenos Aires: Universidad Nacional de Quilmes, 2018.
+
+Beltrán-Salmón, Luis Ramiro, Erick Torrico-Villanueva, Karina
+Herrera-Miller y Esperanza Pinto-Sardón. \emph{La comunicación antes de
+Colón. Tipos y formas en Mesoamérica y Los Andes}. La Paz: Centro
+Interdisciplinario Boliviano de Estudios de la Comunicación, 2008.
+
+Bengoa, José. \emph{La emergencia indígena en América Latina}. Santiago
+de Chile: Fondo de Cultura Económica, 2000.
+
+Bengoa, José. «¿Una segunda etapa de la Emergencia Indígena en América
+Latina?», \emph{Cuadernos de Antropología Social}, n.º 29 (2009): 7--22.
+\url{http://www.redalyc.org/articulo.oa?id=180913914001}.
+
+Bourdieu, Pierre. «El campo científico», \emph{Redes: revista de
+estudios sociales de la ciencia} 1, n.º 2 (1994): 129--160.
+\url{https://ridaa.unq.edu.ar/bitstream/handle/20.500.11807/317/07R1994v1n2.pdf?sequence=1\&isAllowed=y}
+
+Briones, Claudia. «Construcciones de aboriginalidad en Argentina»,
+\emph{Société Suisse des Américanistes,} n.º 68 (2004): 73--90.
+
+Bustamante, Fernando. «La constitución del sujeto indígena en el Chaco
+Salteño. Disputas simbólicas y estrategias de comunicación en torno al
+desarrollo». En \emph{Luchas y transformaciones sociales en Salta},
+editado por Víctor Arancibia y Alejandra Cebrelli, 127--153. Salta:
+Centro Promocional de Investigaciones en Historia y Antropología, 2011.
+
+Cabral, Cristina. «Radios comunitarias y la disputa en la construcción
+de memorias en pueblos originarios», \emph{Dar a Leer Revista de
+Educación Literaria} 6, n.º 12 (2024): 30--42.
+\url{https://revele.uncoma.edu.ar/index.php/daraleer/article/view/5610/62501}.
+
+Caucus Indígena del Sur, Centro y México. «Declaración de los Pueblos
+Indígenas ante la Cumbre Mundial de la Sociedad de la Información».
+\emph{América Latina en movimiento}, 12 de diciembre de 2003.
+\url{https://www.alainet.org/es/articulo/108953}.
+
+Cecchi, Paula. «Estrategias de lucha y comunalización de los pueblos
+indígenas en torno al proyecto de Comunicación con Identidad». Tesis de
+licenciatura, Universidad de Buenos Aires, 2014.
+
+Collivadino, Virginia. «Los procesos comunicacionales de la FM La Voz de
+la Quebrada: una mirada a los sentidos sobre lo comunitario y la gestión
+de la emisora». Tesis de licenciatura, Universidad Nacional de Salta,
+2022.
+
+Comisión Nacional de Comunicación de los Pueblos Indígenas\emph{.
+Política pública de comunicación de y para los pueblos indígenas}.
+Bogotá: CONCIP, 2018.
+
+Contreras-Baspineiro, Adalid. «Aruskipasipxañanakasakipunirakispawa: We
+must communicate each other, despite the differences, and solve them
+through communication», \emph{Razón y Palabra}, n. º 93 (2016).
+\url{https://www.revistarazonypalabra.org/index.php/ryp/article/viewFile/3/pdf}.
+
+Cortés, Diego Mauricio. «Radio indígenas y Estado en Colombia:
+¿Herramientas ``políticas'' o instrumentos ``policivos''?»,
+\emph{Chasqui. Revista Latinoamericana de Comunicación}, n\emph{.}º 140
+(2019): 47--62. http://hdl.handle.net/10469/18225.
+
+Defensoría del Público e Instituto Nacional de Asuntos Indígenas.
+\emph{Recomendaciones para el tratamiento mediático sobre los pueblos
+indígenas}. Buenos Aires: Defensoría del Público, 2023.
+
+Doyle, Magdalena. «Los medios masivos de comunicación en las luchas de
+los pueblos indígenas. Abordaje desde los estudios sobre comunicación en
+América Latina». Tesis de maestría, Universidad Nacional de Córdoba,
+2013.
+
+Doyle, Magdalena. «Debates y demandas indígenas sobre derechos a la
+comunicación en América Latina», \emph{Temas Antropológicos Revista
+Científica de Investigaciones Regionales} 37, n.º 2 (2015): 89--118.
+\url{https://www.redalyc.org/pdf/4558/455844901004.pdf}.
+
+Doyle, Magdalena. «El derecho a la comunicación de los pueblos
+originarios. Límites y posibilidades de las reivindicaciones indígenas
+en relación al sistema de medios de comunicación en Argentina». Tesis de
+doctorado, Universidad de Buenos Aires, 2016.
+
+Doyle, Magdalena. «El derecho a la comunicación con identidad. Aportes
+de los debates indígenas en Argentina para pensar la noción de derecho a
+la comunicación», \emph{Mediaciones}, n.º 18 (2017): 40--56. doi:
+10.26620/uniminuto.mediaciones.13.18.2017.40-56.
+
+Doyle, Magdalena. «Las luchas por territorios ancestrales en los medios
+indígenas. El caso de FM La Voz Indígena», \emph{Comunicación y medios},
+n.º 38 (2018): 177--189. doi: 10.5354/0719-1529.2018.50650.
+
+Doyle, Magdalena. «Acceso y participación de los pueblos indígenas en el
+sistema de medios de Argentina», \emph{Anuario Electrónico de Estudios
+en Comunicación Social ``Disertaciones''}, n.º 11(2018), 30-49. doi:
+10.12804/revistas.urosario.edu.co/disertaciones/a.5479.
+
+Doyle Magdalena \& Emilse Siares. «Indigenous Peoples' Right to
+Communication with Identity in Argentina, 2009--2017», \emph{Latin
+American Perspectives} 45, n.º 3 (2018): 55-67.
+doi: 10.1177/\\\hspace{.267in}0094582X18766909.
+
+Doyle, Magdalena. «Matrices y vertientes de pensamiento sobre los medios
+indígenas en América Latina». \emph{History of Media Studies}, n.º 2
+(2022): 2--25. doi:10.32376/d895a0ea.292b1261.
+
+Doyle, Magdalena. «Recapitulando\ldots{} sobre la comunicación indígena,
+los espacios públicos y los medios». En \emph{Pueblos indígenas y
+territorios mediáticos. Estudios sobre comunicación indígena en
+Argentina}, editado por Liliana Lizondo y Magdalena Doyle, 223--228.
+Bogotá: Fundación Friedrich Ebert, 2023.
+
+Doyle, Magdalena, Mariana Ortega y Liliana Lizondo. «Los tiempos largos
+de la comunicación indígena en Argentina. Trayectorias nacionales y
+análisis de un caso», \emph{Contracorrente}, n.º 17 (2021): 27--52. doi:
+10.59666/cc-ppgich.v0i17.
+
+Doyle, Magdalena, Emilse Siares y Francesca Belloti. «Los medios de
+pueblos originarios en América Latina: historia, aproximaciones y
+desafíos». En \emph{Hacia un periodismo indígena}, compilado por Damián
+Andrada, 203--218. Buenos Aires: Universidad del Salvador, 2019.
+
+Escárzaga, Fabiola. «La emergencia indígena contra el neoliberalismo»,
+\emph{Política y Cultura}, n.º 22 (2004): 101--121.
+\\\hspace{.267in}\href{http://www.scielo.org.mx/scielo.php?script=sci_arttext\&pid=S0188-77422004000200006}{http://www.scielo.org.mx/scielo.php?script=sci_arttext}.
+
+Gil-García, Francisco. «Definir el medio. Radios comunitarias e
+indígenas en la Quebrada de Humahuaca y la Puna de Jujuy, noroeste
+argentino». En \emph{Medios indígenas: teorías y experiencias de la
+comunicación indígena en América Latina}, coordinado por Gemma Orobitg,
+149--178. Madrid: Iberoamericana Verbuert, 2020.
+
+Gil-García, Francisco, Beatriz Pérez Galán y Pedro Pitarch. «Fragmentos
+para una etnografía de las radios comunitarias en América Latina»,
+\emph{Disparidades. Revista de Antropología} 76, n.º 2 (2021): 2--9.
+doi: 10.3989/dra.2021.015c.
+
+Ginsburg, Faye D. «Screen memories. Resignifying the traditional in
+Indigenous media». En \emph{Media worlds: Anthropology on new terrain},
+editado por Faye D. Ginsburg, Lila Abu-Lughod y Brian Larkin, 39--57.
+Berkeley: University of California Press, 2002.
+
+Ginsburg, Faye D., Lila Abu-Lughod y Brian Larkin. «Introduction». En
+\emph{Media worlds. Anthropology of new terrain}, editado por Faye D.
+Ginsburg, Lila Abu-Lughod y Brian Larkin, 2--36. Berkeley: University of
+California Press, 2002.
+
+Gordillo, Gastón y Silvia Hirsch. «La presencia ausente:
+invisibilizaciones, políticas estatales y emergencias indígenas en la
+Argentina». En \emph{Movilizaciones indígenas e identidades en disputa
+en la Argentina}, compilado por Gastón Gordillo y Silvia Hirsch, 15--38.
+Buenos Aires: La Crujía, 2010.
+
+Grillo, Óscar. «Políticas de identidad en internet. Mapuexpress:
+imaginario activista y procesos de hibridación», \emph{Razón y Palabra},
+n.º 54 (2006): 2--19.
+\url{https://www.redalyc.org/articulo.oa?id=199520736010}.
+
+Grillo, Óscar. \emph{Aproximación etnográfica al activismo Mapuche a
+partir de internet y tres viajes de trabajo de campo}. Buenos Aires: Al
+margen, 2013.
+
+Hang, María Cecilia. «Pueblos originarios y Ley de Servicios de
+Comunicación Audiovisual. El caso Wall Kintun TV», \emph{Tram{[}p{]}as
+de la comunicación y la cultura}, n.º 84 (2019): 2--18. doi:
+10.24215/231427\\\hspace{.267in}4xe036.
+
+Herrera-Huérfano, Eliana, Francisco Sierra Caballero y Carlos Del Valle
+Rojas. «Hacia una epistemología del sur. Decolonialidad del saber/poder
+informativo y nueva comunicología latinoamericana. Una lectura crítica
+de la mediación desde las culturas indígenas»,'' \emph{Chasqui. Revista
+Latinoamericana de Comunicación}, n.º 131 (2016): 77--105.
+\url{https://dialnet.unirioja.es/servlet/articulo?codigo=5792037}.
+
+Herrera-Miller, Karina. \emph{¿Del grito pionero...al silencio? Las
+radios sindicales mineras en la Bolivia de hoy}. La Paz: Plural
+Editores, 2006.
+
+Huergo, Jorge, Kevin Morawicki y Lourdes Ferreira. «Los medios, las
+identidades y el espacio de comunicación. Una experiencia de radio
+comunitaria con aborígenes wichí», Comunicar\emph{. Revista científica
+de comunicación y educación}, n.º 26 (2005): 103--110. doi:
+\href{https://doi.org/10.3916/C26-2006-16}{10.3916/C26-2006-16}.
+
+Instituto Nacional de Estadística y Censos. \emph{Censo nacional de
+población, hogares y viviendas 2010. Censo del Bicentenario. Pueblos
+originarios.} Ciudad Autónoma de Buenos Aires: Instituto Nacional de
+Estadística y Censos, 2015.
+
+Instituto Nacional de Estadística y Censos. \emph{Censo nacional de
+población, hogares y viviendas 2022. Resultados definitivos. Población
+indígena o descendiente de pueblos indígenas u originarios}. Buenos
+Aires: Instituto Nacional de Estadística y Censos, 2024.
+
+Kantor, Leda, David Ruiz, Liliana Lizondo y Clarisa Pleguezuelos. «La
+voz Indígena», \emph{Margen. Revista de Trabajo Social}, n.º 42. (2006):
+1--3. \url{http://www.margen.org/suscri/numero42.html}.
+
+Lenton, Diana. «Política indigenista argentina: una construcción
+inconclusa», \emph{Anuário Antropológico}, n.º 35 (2010): 57--97.
+
+Lizondo, Liliana. «¿Extensión o aprendizaje-servicio?». En
+\emph{Aprendizaje-servicio en la Educación Superior. Una mirada
+analítica desde los protagonistas}, compilado por Alba González y
+Rosalía Montes, 103--108. Buenos Aires: EUDEBA, 2008.
+
+Lizondo Liliana y Mariana Ortega. «Comunicación con identidad, entre la
+Ley de Servicios de Comunicación Audiovisual y la comunicación popular».
+En \emph{Actas del VI Encuentro Panamericano de Comunicación Industrias
+culturales, medios y públicos: de la recepción a la apropiación en los
+contextos socio-políticos contemporáneos,} 1-12. Córdoba: Universidad
+Nacional de Córdoba, 2013.
+
+Lizondo, Liliana. «Comunicación con identidad o comunicación
+comunitaria. El caso de la FM ``La voz indígena''». Tesis de maestría,
+Universidad Nacional de La Plata, 2015.
+
+Lizondo, Liliana. «Coincidencias y oposiciones entre la Comunicación con
+Identidad y la comunitaria». En \emph{Prácticas y saberes de
+comunicación alternativa,} compilado por Mary Esther Gardella, 289--305.
+Tucumán: Manuales Humánitas, 2018.
+
+Lizondo, Liliana. «La comunicación con identidad. Regulaciones y un
+estudio de caso», \emph{Anuario Electrónico de Estudios en Comunicación
+Social Disertaciones} 11, n.º 2 (2018): 50--65. doi:
+10.12804/revistas.urosario.edu.co/disertaciones/a.5745.
+
+Lizondo, Liliana. «Para una perspectiva del debate naturaleza-cultura
+desde los medios de comunicación. La cobertura de inundaciones del río
+Pilcomayo en 2018 según la composición de los mundos». Tesis de
+doctorado, Universidad Nacional de La Plata, 2021.
+
+Lizondo, Liliana y Magdalena Doyle, ed. \emph{Pueblos Indígenas y
+territorios mediáticos. Estudios sobre comunicación indígena en
+Argentina}. Bogotá: FES Comunicación, 2023.
+
+Lizondo, Liliana y Ariel Sandoval. «La voz del pueblo indígena». En
+\emph{Actas del VII Seminario Internacional Aprendizaje y Servicio
+Solidario,} 58--60\emph{.} Buenos Aires: Ministerio de Educación,
+Ciencia y Tecnología de la Nación, 2004.
+\url{http://www.bnm.me.gov.ar/giga1/documentos/EL001174.pdf}.
+
+Löblich, Maria y Andreas Matthias Scheu. «Writing the history of
+communication studies: A sociology of science approach»,
+\emph{Communication Theory}, n.º 21 (2011): 1--22. doi:
+10.1111/j.1468-2885.2010.01373.x.
+
+Machado, Karen y Silvana Karuchek. «La radio como estrategia pedagógica
+en el CAJ de la Escuela EMETA II de Yacuy». Tesis de licenciatura,
+Universidad Nacional de Salta Sede Regional Tartagal, 2018.
+
+Mamaní, Ileana. «La estética radiofónica en el discurso de la FM
+Comunitaria La Voz Indígena». Tesis de licenciatura, Universidad
+Nacional de Salta-Sede Regional Tartagal, 2017.
+
+Manasanch, Anabel. «Pueblos Originarios: comunicación con identidad»,
+\emph{Revista Tram{[}p{]}as de la comunicación y la cultura}, n.º 69
+(2010): 76-81. \url{http://sedici.unlp.edu.ar/handle/10915/35582}
+
+Marques de Melo, José. \emph{Pensamiento comunicacional latinoamericano.
+Entre el saber y el poder}. Sevilla: Comunicación Social Ediciones y
+Publicaciones, 2009.
+
+Milana, Paula y Emilia Villagra. «Comunicación indígena en el noroeste
+argentino: el caso de la radio FM Ocan (Salta, Argentina)»,
+\emph{Anuario Electrónico de Estudios en Comunicación Social
+Disertaciones} 11, n.º 2 (2018): 128--142. doi:
+10.12804/revistas.urosario.edu.co/disertaciones/a.5722.
+
+Müller, Ana. «Antenas entre cerros: contribuciones de las radios rurales
+populares e indígenas al campo de la comunicación en el norte argentino.
+Salta, periodo 2012--2022». Tesis de maestría, Universidad Nacional de
+Córdoba, 2023.
+
+Murillo, Gisella y Evelyn Zimmermann. «La comunicación entre la
+comunidad Wichi de Santa Rosa y el Sistema de Salud Pública. Elaboración
+de un protocolo que contemple los sentidos de la maternidad de esa
+comunidad desde una perspectiva intercultural, comunicativa y
+participativa. 2019--2020». Tesis de licenciatura, Universidad Nacional
+de Salta, 2022.
+
+Orobitg, Gemma. «Etnografía de los medios de comunicación indígenas y
+afroamericanos: propuestas metodológicas», \emph{Revista Española de
+Antropología Americana}, n.º 50 (2020): 211--214. doi:
+10.5209/reaa.71751.
+
+Orobitg, Gemma. «Antropología de los medios de comunicación indígenas y
+afro en América Latina: una presentación», \emph{Disparidades. Revista
+de Antropología} 76, n.º 2 (2021): 1--5. doi: 10.3989/\\\hspace{.267in}dra.2021.015a.
+
+Orobitg, Gemma y Roger Canals. «Hipertexto, multivocalidad y
+multimodalidad para una etnografía sobre los medios de comunicación: la
+web MEDIOS INDÍGENAS», \emph{Revista Española de Antropología
+Americana}, n.º 50 (2020): 215--227. doi: 10.5209/reaa.\\\hspace{.267in}70398.
+
+Orobitg Gemma, Mònica Martínez-Mauri, Roger Canals, Gemma Celigueta,
+Francisco M. Gil García, Sebastián Gómez Ruiz, Gabriel Izard, Julián
+López García, Óscar Muñoz Morán, Beatriz Pérez- Galán y Pedro Pitarchk.
+«Los medios indígenas en América Latina: Usos, sentidos y cartografías
+de una experiencia plural». \emph{Revista de Historia}, n.º 83 (2021):
+132--164. doi: 10.15359/rh.83.6.
+
+Ortega, Mariana. «En primera persona. Ciudadanías comunicacionales en la
+experiencia de la FM Comunitaria La Voz Indígena»,
+\emph{Question/Cuestión} 3, n.º 70 (2021): 1--27.
+
+Prins, Harald E. «Visual anthropology». En \emph{A companion to the
+anthropology of American Indians}, editado por Thomas Biolsi, 506--525.
+Malden: Blackwell Publishing, 2004.
+
+RICCAP. \emph{Informe de relevamiento de los servicios de comunicación
+audiovisual comunitarios, populares, alternativos, cooperativos y de
+pueblos originarios en Argentina.} Buenos Aires, RICCAP: 2019.
+
+Sajama, José y Emilse Siares. «FM Pachakuti: comunicación, territorio y
+comunidad kollas». En \emph{Pueblos indígenas y territorios mediáticos.
+Estudios sobre comunicación indígena en Argentina}, editado por Liliana
+Lizondo y Magdalena Doyle, 113--128. Bogotá: Fundación Friedrich Ebert,
+2023.
+
+Salazar, Juan. «Activismo indígena en América Latina: estrategias para
+una construcción cultural de las tecnologías de información y
+comunicación», \emph{Journal of Iberian and Latin American Studies} 8,
+n.º 2 (2002), 62--80. doi: 10.1080/13260219.2002.10431783
+
+Siares, Emilse y Francesca Bielotti. «Los medios indígenas en Argentina:
+caracterización y desafíos a partir de la experiencia de dos radios
+kollas», \emph{Anuario Electrónico de Estudios en Comunicación Social
+Disertaciones} 11, n.º 2 (2018): 86--103. doi:
+10.12804/revistas.urosario.edu.co/.
+
+Siuffi, Ana María. «Planificación de una radio escolar en la comunidad
+Chorote y Wichí Lapacho II». Tesis de licenciatura, Universidad Nacional
+de Salta-Sede Regional Tartagal, 2017.
+
+Sosa, Gabriela y Liliana Lizondo. «Pensando en común II. Pueblos
+originarios: construir la visibilidad». En \emph{Construyendo
+comunidades: reflexiones actuales sobre comunicación comunitaria},
+editado por Área de Comunicación Comunitaria de la Universidad Nacional
+de Entre Ríos, 123--126. Buenos Aires: La Crujía, 2009.
+
+Turner, Terence. «Representation, politics, and cultural imagination in
+Indigenous video. General points and Kayapo examples». En \emph{Media
+worlds. Anthropology on new terrain}, editado por Faye D. Ginsburg, Lila
+Abu-lughod y Brian Larkin, 75--89. Berkeley: University of California
+Press, 2002.
+
+Villagra, Emilia. «Los procesos político-comunicacionales de una
+organización indígena en Salta, Argentina», \emph{Comunicación y Medios}
+45 (2021): 115--126. doi: 10.5354/0719-1529.2021.58759.
+
+Villagra, Emilia y Ramón Burgos. «Radios comunitarias desde una
+perspectiva indígena. La experiencia de la Organización de Comunidades
+Aborígenes de Nazareno, Salta-Argentina», \emph{Logos} 1, n.º 24 (2017),
+93--105.
+\url{https://www.e-publicacoes.uerj.br/logos/article/view/28512/21246}.
+
+Villamayor, Claudia. «La ley de SCA y la visibilización de los pueblos
+originarios». En \emph{Ley 26.522. Hacia un nuevo paradigma en
+comunicación audiovisual}, coordinado por Mariana Baranchuk y Javier
+Rodríguez Usé, 131--142. Buenos Aires: AFSCA-UNLZ, 2011.
+
+Yaniello, Florencia. «Descolonizando la palabra. Los medios de
+comunicación del Pueblo Mapuche en Puelmapu (Argentina)». Tesis de
+licenciatura, Universidad de Buenos Aires, 2012.
+
+
+
+\end{hangparas}
+
+
+\end{document}
