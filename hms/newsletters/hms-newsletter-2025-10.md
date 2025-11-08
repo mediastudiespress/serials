@@ -49,7 +49,7 @@ In our next session, we will be discussing Mariano Zarowsky’s draft paper on d
 
 Newly published in *History of Media Studies*:
 
-* Mariana de los Ángeles Ortega, [“Perspectivas en torno a la configuración histórica de los estudios sobre medios indígenas en Argentina” \ “Perspectives on the Historical Configuration of Indigenous Media Studies in Argentina”](https://hms.mediastudies.press/pub/ortega-medios-indigenas) [research article]
+* Mariana de los Ángeles Ortega, [“Perspectivas en torno a la configuración histórica de los estudios sobre medios indígenas en Argentina” | “Perspectives on the Historical Configuration of Indigenous Media Studies in Argentina”](https://hms.mediastudies.press/pub/ortega-medios-indigenas) [research article]
 
 *History of Media Studies* encourages [submissions](https://hms.mediastudies.press/author-guidelines) ([en español](https://hms.mediastudies.press/directrices-para-autores)) on the history of research, education, and reflective knowledge about media and communication—as expressed through academic institutions; through commercial, governmental, and non-governmental organizations; and through “alter-traditions” of thought and practice often excluded from the academic mainstream.
 
