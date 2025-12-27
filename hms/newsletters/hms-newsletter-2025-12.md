@@ -11,9 +11,6 @@
 
 *If you have a call or announcement relevant to the history of media studies, please [contact us](mailto:hms@mediastudies.press).*
 
-<br>
-
-
 ### 1. *CFP: International Conference on French Theory and Contemporary Screen Studies* 
 
 * In the context of contemporary Screen Studies – a field characterised by a multiplicity of disparate methods, theories, practices and research objects – it would appear that ‘French theory’ occupies a paradoxical place: on the one hand, ample cognizance of French film theory and French (post)structuralism is still viewed as a pre-requisite to the formation of film and media scholars, who may be expected to demonstrate their familiarity with, for example, the semiological writings of Christian Metz, the psychoanalytic theories of Jean-Louis Baudry, or the post-structuralist rhetoric of Julia Kristeva and Roland Barthes. On the other hand, French film theory is liable to be viewed as passé, a hangover from the ‘high theory’ battles of the 1970s and 1980s. This conference invites attendees to reflect upon any aspect of French film theory (be that its pre-war iterations, its post-war auteurist, semiotic and structuralist paradigms, or its various ‘high theoretical’ incarnations) as it pertains to 21st century Screen Studies, interrogating the contemporary tensions, uses and developments that characterise its failure to disappear.
