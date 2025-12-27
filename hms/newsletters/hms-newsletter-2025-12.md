@@ -1,5 +1,3 @@
-- [ ] delete the dummy stuff
-
 # History of Media Studies Newsletter December 2025 
 
 *Welcome to the 55th edition of the [History of Media Studies Newsletter](https://hms.mediastudies.press/newsletter). The monthly email, assembled by Dave Park, Jeff Pooley, and Pete Simonson, maintains a loose affiliation with the [*History of Media Studies*](https://hms.mediastudies.press) journal and the [Working Group on the History of Media Studies](https://www.chstm.org/group/history-media-studies). Please [contact us](mailto:hms@mediastudies.press) with any questions, suggestions, or items.*
