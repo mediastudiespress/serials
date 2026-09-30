@@ -12,7 +12,7 @@
 
 Reading for discussion:
 
-* A selection from the just-published [*Latin American Communication Theories: From Origins to Contemporary Approaches*](https://www.wiley.com/en-us/shop/general-communication-media-studies/latin-american-communication-theories-from-origins-to-contemporary-approaches-p-9781394307838), edited by Carlos A. Scolari, Sandra Valdettaro, and Leonarda García-Jiménez. The session will feature simultaneous interpretation in English and Spanish. 
+* A selection from the just-published [*Latin American Communication Theories: From Origins to Contemporary Approaches*](https://www.wiley.com/en-us/shop/general-communication-media-studies/latin-american-communication-theories-from-origins-to-contemporary-approaches-p-9781394307838), edited by Carlos A. Scolari, Sandra Valdettaro, and Leonarda García-Jiménez. All three editors will join us for the conversation, as will Raúl Fuentes Navarro, the subject of the enlightening interview at the end of the volume. The session will feature simultaneous interpretation in English and Spanish.
 
 *For the Zoom link and the reading download, visit the [Working Group page](https://www.chstm.org/history-media-studies). Instructions for joining the group are [here](https://hms.mediastudies.press/working-group). Questions? [Contact us](mailto:hms@mediastudies.press)*
 
