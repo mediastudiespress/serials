@@ -1,6 +1,6 @@
 # History of Media Studies Newsletter October 2026 
 
-*Welcome to the 634d edition of the [History of Media Studies Newsletter](https://hms.mediastudies.press/newsletter). The monthly email, assembled by Dave Park, Jeff Pooley, and Pete Simonson, maintains a loose affiliation with the [*History of Media Studies*](https://hms.mediastudies.press) journal and the [Working Group on the History of Media Studies](https://www.chstm.org/group/history-media-studies). Please [contact us](mailto:hms@mediastudies.press) with any questions, suggestions, or items.*
+*Welcome to the 63rd edition of the [History of Media Studies Newsletter](https://hms.mediastudies.press/newsletter). The monthly email, assembled by Dave Park, Jeff Pooley, and Pete Simonson, maintains a loose affiliation with the [*History of Media Studies*](https://hms.mediastudies.press) journal and the [Working Group on the History of Media Studies](https://www.chstm.org/group/history-media-studies). Please [contact us](mailto:hms@mediastudies.press) with any questions, suggestions, or items.*
 
 ## 1. Working Group on the History of Media Studies
 
